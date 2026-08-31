@@ -20,3 +20,11 @@
 | EXT-014 | Cherry VDS specs/price/availability | SRC-008 | Commercial snapshot | PASS 01 | NO |
 | EXT-015 | SDK/library versions and official support status | SRC-002/006 | Software versions evolve | implementation planning | NO |
 | EXT-016 | Academic paper claims and dataset statistics | SRC-002/003/007/008 | Citation/application verification | PASS 02/03/08 | NO |
+
+## PASS 01 — Infrastructure disposition
+
+- `EXT-002`, `EXT-005`, `EXT-006`, `EXT-007`, `EXT-008`, `EXT-009`–`EXT-015` were reviewed for Infrastructure dependencies.
+- No live external verification was performed during PASS 01.
+- Provider prices/specifications, Tokyo availability, OS/allocation/network claims, feed timestamp semantics and node/order-book-server capabilities remain historical source snapshots.
+- These facts do not block documentation reconstruction; they can block candidate admission, purchase, benchmark validity, implementation assumptions or production deployment.
+- The per-fact register is `pass01_infrastructure/INFRA_EXTERNAL_SNAPSHOTS.md`.

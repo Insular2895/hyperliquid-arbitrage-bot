@@ -788,12 +788,12 @@
 | REQ-FORMULA-0100 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 7766–7801 | NO |
 | REQ-FORMULA-0101 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 7802–7855 | NO |
 | REQ-FORMULA-0102 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 7856–7890 | NO |
-| REQ-FORMULA-0103 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 7891–7925 | NO |
+| REQ-FORMULA-0103 | LOCKED | Formula Book | Formula audit/index; consumed by Infrastructure Economics | SRC-004 lines 7891–7925 | NO |
 | REQ-FORMULA-0104 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 7926–7971 | NO |
 | REQ-FORMULA-0105 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 7972–8035 | NO |
 | REQ-FORMULA-0106 | CALIBRATED | Formula Book | Formula audit/index | SRC-004 lines 8036–8076 | NO |
 | REQ-FORMULA-0107 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 8077–8123 | NO |
-| REQ-FORMULA-0108 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 8124–8227 | NO |
+| REQ-FORMULA-0108 | LOCKED | Formula Book | Formula audit/index; consumed by Infrastructure Economics | SRC-004 lines 8124–8227 | NO |
 | REQ-FORMULA-0109 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 8228–8274 | NO |
 | REQ-FORMULA-0110 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 8275–8308 | NO |
 | REQ-FORMULA-0111 | LOCKED | Formula Book | Formula audit/index | SRC-004 lines 8309–8360 | NO |
@@ -2470,20 +2470,20 @@
 | REQ-EXEC-0327 | RESEARCH | Execution State Machine | Order/Fill/Cancel contracts | SRC-008 lines 2827–2861 | NO |
 | REQ-INFRA-0055 | LOCKED | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 2863–2928 | NO |
 | REQ-EXEC-0328 | RESEARCH | Execution State Machine | Order/Fill/Cancel contracts | SRC-008 lines 2929–3185 | NO |
-| REQ-INFRA-0056 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3186–3205 | NO |
-| REQ-INFRA-0057 | FUTURE | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3206–3238 | NO |
-| REQ-INFRA-0058 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3239–3276 | NO |
+| REQ-INFRA-0056 | CALIBRATED | Infrastructure Master | 01 Baseline and Deployment Profiles | SRC-008 lines 3186–3205 | NO |
+| REQ-INFRA-0057 | LOCKED | Infrastructure Master | 06 Node, Feed and Scale Gates | SRC-008 lines 3206–3238 | NO |
+| REQ-INFRA-0058 | CALIBRATED | Infrastructure Master | 01 Baseline and Deployment Profiles | SRC-008 lines 3239–3276 | NO |
 | REQ-INFRA-0059 | RESEARCH | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3277–3308 | NO |
 | REQ-INFRA-0060 | RESEARCH | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3309–3339 | NO |
-| REQ-INFRA-0061 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3341–3370 | NO |
-| REQ-INFRA-0062 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3371–3463 | NO |
-| REQ-INFRA-0063 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3464–3482 | NO |
-| REQ-INFRA-0064 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3483–3502 | NO |
-| REQ-INFRA-0065 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3503–3528 | NO |
-| REQ-INFRA-0066 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3529–3542 | NO |
-| REQ-INFRA-0067 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3543–3557 | NO |
-| REQ-INFRA-0068 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3558–3583 | NO |
-| REQ-INFRA-0069 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3584–3610 | NO |
+| REQ-INFRA-0061 | SOURCE_SNAPSHOT | Infrastructure Master | 02 Provider Candidates | SRC-008 lines 3341–3370 | NO |
+| REQ-INFRA-0062 | SOURCE_SNAPSHOT | Infrastructure Master | 02 Provider Candidates | SRC-008 lines 3371–3463 | NO |
+| REQ-INFRA-0063 | SOURCE_SNAPSHOT | Infrastructure Master | 02 Provider Candidates | SRC-008 lines 3464–3482 | NO |
+| REQ-INFRA-0064 | SOURCE_SNAPSHOT | Infrastructure Master | 02 Provider Candidates | SRC-008 lines 3483–3502 | NO |
+| REQ-INFRA-0065 | SOURCE_SNAPSHOT | Infrastructure Master | 02 Provider Candidates | SRC-008 lines 3503–3528 | NO |
+| REQ-INFRA-0066 | SOURCE_SNAPSHOT | Infrastructure Master | 02 Provider Candidates | SRC-008 lines 3529–3542 | NO |
+| REQ-INFRA-0067 | SOURCE_SNAPSHOT | Infrastructure Master | 02 Provider Candidates | SRC-008 lines 3543–3557 | NO |
+| REQ-INFRA-0068 | SOURCE_SNAPSHOT | Infrastructure Master | 02 Provider Candidates | SRC-008 lines 3558–3583 | NO |
+| REQ-INFRA-0069 | SOURCE_SNAPSHOT | Infrastructure Master | 02 Provider Candidates | SRC-008 lines 3584–3610 | NO |
 | REQ-BENCH-0009 | LOCKED | Infrastructure Master | Benchmark Protocol | SRC-008 lines 3611–3632 | NO |
 | REQ-INFRA-0070 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 3633–3659 | NO |
 | REQ-BENCH-0010 | LOCKED | Infrastructure Master | Benchmark Protocol | SRC-008 lines 3660–3682 | NO |
@@ -2525,7 +2525,7 @@
 | REQ-INFRA-0084 | RESEARCH | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 5178–5198 | NO |
 | REQ-INFRA-0085 | CALIBRATED | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 5199–5229 | NO |
 | REQ-INFRA-0086 | RESEARCH | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 5230–5272 | NO |
-| REQ-INFRA-0087 | EXTERNAL_REVALIDATION | Infrastructure Master | Infrastructure deep specs | SRC-008 lines 5273–5298 | NO |
+| REQ-INFRA-0087 | LOCKED | Infrastructure Master | 05 Infrastructure Economics and ROI | SRC-008 lines 5273–5298 | NO |
 | REQ-CAP-0021 | LOCKED | Inventory and Capital | Capital reachability/capacity | SRC-008 lines 5299–5356 | NO |
 | REQ-CAP-0022 | RESEARCH | Inventory and Capital | Capital reachability/capacity | SRC-008 lines 5357–5385 | NO |
 | REQ-NODE-0003 | EXTERNAL_REVALIDATION | Infrastructure Master | Node Feed and Scale Gates | SRC-008 lines 5386–5471 | NO |
@@ -2594,3 +2594,7 @@
 | REQ-PART-9001 | RESEARCH | Market Participants | Participant response model | SRC-007/SRC-008 | NO |
 | REQ-INFRA-9001 | LOCKED | Infrastructure Master | Infrastructure ROI and downgrade | SRC-004 QF-087–QF-093; SRC-008 lines 6726–6937 | NO |
 | REQ-CLIENT-9001 | LOCKED | Product and Deployment | Client distribution model | SRC-006 lines 5–40 and 1562–1573; SRC-008 lines 6715–6779 | NO |
+
+## PASS 01 — Infrastructure target overlay
+
+The authoritative per-requirement PASS 01 routing for all 514 reviewed Infrastructure requirements is `pass01_infrastructure/INFRA_REQUIREMENT_LEDGER.md`. Infrastructure-owned material targets `13_INFRASTRUCTURE.md` and one of the seven deep specs. Cross-domain requirements retain their future domain master as primary destination and are recorded as `REVIEWED_DEPENDENCY`; no primary ownership was silently moved.

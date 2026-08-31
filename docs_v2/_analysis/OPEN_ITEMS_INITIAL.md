@@ -21,3 +21,18 @@ OPEN signifie décision réellement non prise. Les paramètres simplement calibr
 | OPEN-013 | Cross-exchange activation/product scope | Explicitly future | future pass |
 | OPEN-014 | Final license provider/mechanism | Deployment contract fixed, vendor open | PASS 09 |
 | OPEN-015 | Final telemetry/export backend | Operations contract fixed, backend open | PASS 10 |
+
+## PASS 01 — Infrastructure disposition
+
+| Open ID | PASS 01 status | Evidence still required |
+|---|---|---|
+| OPEN-001 | `REMAINS OPEN` | Controlled benchmark of current, revalidated offers |
+| OPEN-002 | `REMAINS OPEN` | Current platform availability plus region comparison; Tokyo remains first direction |
+| OPEN-003 | `REMAINS OPEN` | Native/bridge/host performance evidence plus security review |
+| OPEN-004 | `REMAINS OPEN` | Valid distributions, Risk calibration, windows and hysteresis |
+| OPEN-005 | `REMAINS OPEN` | Validated `alpha`, safety factor and LCB method |
+| OPEN-006 | `FUTURE GATE / OPEN` | Current node capabilities, public-feed limitation, reliability and ROI |
+| OPEN-011 | `REMAINS OPEN; PASS 06 OWNER` | Measured Recorder throughput and retention/archive objectives |
+| OPEN-015 | `REMAINS OPEN; PASS 10 OWNER` | Operations telemetry/export decision |
+
+PASS 01 did not convert calibrated values into open architecture decisions. See `pass01_infrastructure/PASS01_FINAL_REPORT.md`.

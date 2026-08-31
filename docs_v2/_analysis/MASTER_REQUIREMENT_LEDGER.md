@@ -22747,7 +22747,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Canonical statement: 93. QF-088 — Net Upgrade Value: NetUpgradeValue = \Delta GrossPnL - \Delta Cost
 - Status: `LOCKED`
 - Primary domain: `FORMULA`
-- Secondary domains: ACCOUNTING
+- Secondary domains: ACCOUNTING, INFRA
 - Primary source: `SRC-004`
 - Supporting sources: none found mechanically; review during specialized domain pass
 - Source locations: `SRC-004` lines 7891–7925
@@ -22892,7 +22892,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Canonical statement: 98. QF-093 — Capture Ratio: CaptureRatio = \frac{ \sum_i RealizedPnL_i }{ \sum_i ExpectedExecutablePnL_i }
 - Status: `LOCKED`
 - Primary domain: `FORMULA`
-- Secondary domains: ACCOUNTING
+- Secondary domains: ACCOUNTING, INFRA
 - Primary source: `SRC-004`
 - Supporting sources: SRC-008 lines 4457–4574
 - Source locations: `SRC-004` lines 8124–8227
@@ -71523,7 +71523,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0056`
 - Canonical concept: 3. Localisation : Tokyo
 - Canonical statement: 3. Localisation : Tokyo: Pour Hyperliquid, Tokyo est notre région de référence. La documentation officielle du node indique actuellement :
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `CALIBRATED`
 - Primary domain: `INFRA`
 - Secondary domains: NODE, ARCH
 - Primary source: `SRC-008`
@@ -71552,7 +71552,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0057`
 - Canonical concept: 4. Le node n’est PAS notre infrastructure de départ
 - Canonical statement: 4. Le node n’est PAS notre infrastructure de départ: Notre architecture doit être compatible avec : mais le bot démarre avec :
-- Status: `FUTURE`
+- Status: `LOCKED`
 - Primary domain: `INFRA`
 - Secondary domains: EXECUTION, RISK, NODE, ACCOUNTING, ARCH, FUTURE
 - Primary source: `SRC-008`
@@ -71581,7 +71581,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0058`
 - Canonical concept: 5. Infrastructure minimum de départ
 - Canonical statement: 5. Infrastructure minimum de départ: Notre bot personnel n’a pas besoin aujourd’hui de : Ubuntu 24.04 x86-64 de préférence
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `CALIBRATED`
 - Primary domain: `INFRA`
 - Secondary domains: RISK, CLIENT, ACCOUNTING, ROUTING
 - Primary source: `SRC-008`
@@ -71668,7 +71668,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0061`
 - Canonical concept: TradingFXVPS — VPS standard
 - Canonical statement: TradingFXVPS — VPS standard: Leur gamme standard comprend actuellement notamment : 2 cores AMD Ryzen 9 @ 4.3 GHz
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `SOURCE_SNAPSHOT`
 - Primary domain: `INFRA`
 - Secondary domains: EXECUTION, DEPLOYMENT, ARCH
 - Primary source: `SRC-008`
@@ -71697,7 +71697,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0062`
 - Canonical concept: 9. TradingFXVPS — HFT VPS
 - Canonical statement: 9. TradingFXVPS — HFT VPS: Leur Standard HFT est actuellement : 4 cores @ 4.30 GHz+
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `SOURCE_SNAPSHOT`
 - Primary domain: `INFRA`
 - Secondary domains: EXECUTION, BENCHMARK, ACCOUNTING, ARCH
 - Primary source: `SRC-008`
@@ -71726,7 +71726,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0063`
 - Canonical concept: 10. TradingFXVPS — Semi-Dedicated
 - Canonical statement: 10. TradingFXVPS — Semi-Dedicated: Ils proposent aussi Tokyo : 10 cores Ryzen 4.30 GHz
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `SOURCE_SNAPSHOT`
 - Primary domain: `INFRA`
 - Secondary domains: EXECUTION, RISK, ARCH
 - Primary source: `SRC-008`
@@ -71755,7 +71755,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0064`
 - Canonical concept: 11. TradingFXVPS — HFT Dedicated
 - Canonical statement: 11. TradingFXVPS — HFT Dedicated: Tokyo est également disponible : 2 × 2 TB NVMe RAID1
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `SOURCE_SNAPSHOT`
 - Primary domain: `INFRA`
 - Secondary domains: NODE, ACCOUNTING
 - Primary source: `SRC-008`
@@ -71784,7 +71784,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0065`
 - Canonical concept: 12. Akamai / Linode Dedicated CPU
 - Canonical statement: 12. Akamai / Linode Dedicated CPU: Akamai propose en Asie-Pacifique, dont Tokyo, des plans Dedicated CPU. C’est un excellent benchmark parce qu’on dispose :
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `SOURCE_SNAPSHOT`
 - Primary domain: `INFRA`
 - Secondary domains: BENCHMARK
 - Primary source: `SRC-008`
@@ -71813,7 +71813,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0066`
 - Canonical concept: 13. Kamatera Type B
 - Canonical statement: 13. Kamatera Type B: Le Type B attribue un thread CPU dédié avec ressources réservées afin de réduire les fluctuations de charge. C’est également un excellent candidat pour notre gamme économique.
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `SOURCE_SNAPSHOT`
 - Primary domain: `INFRA`
 - Secondary domains: none
 - Primary source: `SRC-008`
@@ -71842,7 +71842,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0067`
 - Canonical concept: 14. AWS Lightsail Compute Optimized
 - Canonical statement: 14. AWS Lightsail Compute Optimized: AWS Tokyo mérite d’être testé, notamment parce que la Foundation Hyperliquid indique que son non-validating node tourne actuellement sur AWS apne1-az1. Cela ne signifie pas que l’API publique y est colocalisée, mais justifie au minimum un benchmark.
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `SOURCE_SNAPSHOT`
 - Primary domain: `INFRA`
 - Secondary domains: BENCHMARK
 - Primary source: `SRC-008`
@@ -71871,7 +71871,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0068`
 - Canonical concept: 15. Sakura VPS Tokyo
 - Canonical statement: 15. Sakura VPS Tokyo: Sakura est particulièrement intéressant comme challenger économique local japonais. 3 630 ¥ / mois équivalent
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `SOURCE_SNAPSHOT`
 - Primary domain: `INFRA`
 - Secondary domains: BENCHMARK, FUTURE
 - Primary source: `SRC-008`
@@ -71900,7 +71900,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0069`
 - Canonical concept: 16. Cherry Servers Performance VDS
 - Canonical statement: 16. Cherry Servers Performance VDS: Pour avoir une référence « performance Linux » sans aller directement au bare metal à 500 €, Cherry propose à Tokyo : 4 vCores @ 4.5 GHz
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `SOURCE_SNAPSHOT`
 - Primary domain: `INFRA`
 - Secondary domains: BENCHMARK, RISK, ARCH, FUTURE
 - Primary source: `SRC-008`
@@ -73118,7 +73118,7 @@ Ce registre source-first contient les exigences canoniques ou candidates. Une en
 - Requirement ID: `REQ-INFRA-0087`
 - Canonical concept: 54. Upgrade ET downgrade
 - Canonical statement: 54. Upgrade ET downgrade: L’Infrastructure ROI Engine doit fonctionner dans les deux directions. Current HFT = 65 €/mois
-- Status: `EXTERNAL_REVALIDATION`
+- Status: `LOCKED`
 - Primary domain: `INFRA`
 - Secondary domains: ACCOUNTING
 - Primary source: `SRC-008`

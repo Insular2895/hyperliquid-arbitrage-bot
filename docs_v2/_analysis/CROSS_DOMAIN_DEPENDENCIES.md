@@ -6,6 +6,10 @@
 flowchart LR
   Clock --> DataContracts --> Replay --> Simulator
   Clock --> Infrastructure --> Monitoring --> Risk
+  Infrastructure --> LatencyDistribution --> EdgeSurvival
+  EdgeSurvival --> CaptureEconomics --> InfrastructureROI
+  Infrastructure --> InfraHealth --> Risk
+  Deployment --> InfraInstanceId --> Validation
   ActualFill --> Execution --> Inventory --> Accounting
   Execution --> Recovery --> Reconciliation
   Recorder --> Replay
@@ -30,3 +34,10 @@ flowchart LR
 | SimulationConfidence | Simulator, Risk, Sizing | Low confidence reduces/refuses risk |
 | OWA comparator | Routing, Formula, Bridge, Accounting | No valid direct comparator means Bridge/relocation, not OWA |
 | InfraHealth | Risk, Execution, Operations | Unsafe infrastructure forbids new risk |
+| LatencyDistribution / LatencyTrace | Participants, Survival, Simulator, InfrastructureROI | Infrastructure supplies measured distributions; PASS 02 owns competition/survival depth |
+| InfraLostPnLRecord | Accounting, Simulator, Risk, InfrastructureROI | Versioned attribution and uncertainty; sequential marginal treatment prevents double count |
+| RunManifest / InfraInstanceId | Benchmark, Deployment, Validation, Operations | Evidence is bound to material host/build/config; machine changes require revalidation |
+| CaptureRatio / QF-093 | InfrastructureROI, Accounting, Participants | Aggregate sums, never naïve average of per-opportunity ratios |
+| RecorderPenalty / storage health | Recorder, Infrastructure, Risk, Operations | Recorder must not materially disturb hot path; retention remains PASS 06 |
+| FeedAdapter / feed health | Infrastructure, Data, Execution, Risk, Node future gate | Public feed first; node-compatible; feed semantics require revalidation |
+| Client diagnostic | Deployment, Validation, Operations, InfrastructureROI | May recommend, never auto-purchase/migrate/authorize Live |

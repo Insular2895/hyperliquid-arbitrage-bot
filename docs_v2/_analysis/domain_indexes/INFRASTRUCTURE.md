@@ -2,13 +2,18 @@
 
 `DOCUMENTATION STATUS: REBUILD IN PROGRESS`
 
-- Requirements: 510
-- Primary sources: SRC-006 (126), SRC-008 (107), SRC-002 (58), SRC-005 (55), SRC-007 (50), SRC-003 (41), SRC-004 (39), SRC-001 (34)
+- PASS 00 extracted requirements: 510
+- PASS 00 canonical anchor overlays: 2
+- PASS 01 recovered formula dependencies: 2
+- PASS 01 requirements reviewed: 514
+- PASS 01 reviewed primary sources: SRC-006 (127), SRC-008 (108), SRC-002 (58), SRC-005 (55), SRC-007 (50), SRC-003 (41), SRC-004 (41), SRC-001 (34)
 - Closure authority: SRC-004 formulas/execution; SRC-005 risk/data; SRC-006 deployment/validation as applicable
 - Cross-domain dependencies: see `../CROSS_DOMAIN_DEPENDENCIES.md`
 - Known contradictions: see `../CONTRADICTION_REGISTER.md`
 - Open items: see `../OPEN_ITEMS_INITIAL.md`
 - Planned reconstruction pass: PASS 01
+- PASS 01 canonical master: `../../13_INFRASTRUCTURE.md`
+- PASS 01 evidence ledger: `../pass01_infrastructure/INFRA_REQUIREMENT_LEDGER.md`
 
 ## Requirement IDs
 
@@ -432,20 +437,20 @@
 - `REQ-EXEC-0317` — 72. Décision d'exécution finale (SRC-008 lines 2220–2262; LOCKED)
 - `REQ-EXEC-0321` — 78. Direction que je figerais pour le projet (SRC-008 lines 2565–2620; RESEARCH)
 - `REQ-INFRA-0055` — 1. Objectif de l’infrastructure (SRC-008 lines 2863–2928; LOCKED)
-- `REQ-INFRA-0056` — 3. Localisation : Tokyo (SRC-008 lines 3186–3205; EXTERNAL_REVALIDATION)
-- `REQ-INFRA-0057` — 4. Le node n’est PAS notre infrastructure de départ (SRC-008 lines 3206–3238; FUTURE)
-- `REQ-INFRA-0058` — 5. Infrastructure minimum de départ (SRC-008 lines 3239–3276; EXTERNAL_REVALIDATION)
+- `REQ-INFRA-0056` — 3. Localisation : Tokyo (SRC-008 lines 3186–3205; CALIBRATED)
+- `REQ-INFRA-0057` — 4. Le node n’est PAS notre infrastructure de départ (SRC-008 lines 3206–3238; LOCKED)
+- `REQ-INFRA-0058` — 5. Infrastructure minimum de départ (SRC-008 lines 3239–3276; CALIBRATED)
 - `REQ-INFRA-0059` — 6. Pourquoi CPU dédié > beaucoup de vCPU partagés (SRC-008 lines 3277–3308; RESEARCH)
 - `REQ-INFRA-0060` — 7. 10 Gb/s n’est pas notre KPI principal (SRC-008 lines 3309–3339; RESEARCH)
-- `REQ-INFRA-0061` — TradingFXVPS — VPS standard (SRC-008 lines 3341–3370; EXTERNAL_REVALIDATION)
-- `REQ-INFRA-0062` — 9. TradingFXVPS — HFT VPS (SRC-008 lines 3371–3463; EXTERNAL_REVALIDATION)
-- `REQ-INFRA-0063` — 10. TradingFXVPS — Semi-Dedicated (SRC-008 lines 3464–3482; EXTERNAL_REVALIDATION)
-- `REQ-INFRA-0064` — 11. TradingFXVPS — HFT Dedicated (SRC-008 lines 3483–3502; EXTERNAL_REVALIDATION)
-- `REQ-INFRA-0065` — 12. Akamai / Linode Dedicated CPU (SRC-008 lines 3503–3528; EXTERNAL_REVALIDATION)
-- `REQ-INFRA-0066` — 13. Kamatera Type B (SRC-008 lines 3529–3542; EXTERNAL_REVALIDATION)
-- `REQ-INFRA-0067` — 14. AWS Lightsail Compute Optimized (SRC-008 lines 3543–3557; EXTERNAL_REVALIDATION)
-- `REQ-INFRA-0068` — 15. Sakura VPS Tokyo (SRC-008 lines 3558–3583; EXTERNAL_REVALIDATION)
-- `REQ-INFRA-0069` — 16. Cherry Servers Performance VDS (SRC-008 lines 3584–3610; EXTERNAL_REVALIDATION)
+- `REQ-INFRA-0061` — TradingFXVPS — VPS standard (SRC-008 lines 3341–3370; SOURCE_SNAPSHOT)
+- `REQ-INFRA-0062` — 9. TradingFXVPS — HFT VPS (SRC-008 lines 3371–3463; SOURCE_SNAPSHOT)
+- `REQ-INFRA-0063` — 10. TradingFXVPS — Semi-Dedicated (SRC-008 lines 3464–3482; SOURCE_SNAPSHOT)
+- `REQ-INFRA-0064` — 11. TradingFXVPS — HFT Dedicated (SRC-008 lines 3483–3502; SOURCE_SNAPSHOT)
+- `REQ-INFRA-0065` — 12. Akamai / Linode Dedicated CPU (SRC-008 lines 3503–3528; SOURCE_SNAPSHOT)
+- `REQ-INFRA-0066` — 13. Kamatera Type B (SRC-008 lines 3529–3542; SOURCE_SNAPSHOT)
+- `REQ-INFRA-0067` — 14. AWS Lightsail Compute Optimized (SRC-008 lines 3543–3557; SOURCE_SNAPSHOT)
+- `REQ-INFRA-0068` — 15. Sakura VPS Tokyo (SRC-008 lines 3558–3583; SOURCE_SNAPSHOT)
+- `REQ-INFRA-0069` — 16. Cherry Servers Performance VDS (SRC-008 lines 3584–3610; SOURCE_SNAPSHOT)
 - `REQ-BENCH-0009` — 17. Shortlist de benchmark initial (SRC-008 lines 3611–3632; LOCKED)
 - `REQ-INFRA-0070` — 18. Pourquoi benchmarker TradingFX Advanced ET HFT (SRC-008 lines 3633–3659; EXTERNAL_REVALIDATION)
 - `REQ-BENCH-0010` — 19. Principe du benchmark (SRC-008 lines 3660–3682; LOCKED)
@@ -481,7 +486,7 @@
 - `REQ-INFRA-0084` — Dedicated 500 € (SRC-008 lines 5178–5198; RESEARCH)
 - `REQ-INFRA-0085` — 52. Ce que doit créer un serveur 500 € (SRC-008 lines 5199–5229; CALIBRATED)
 - `REQ-INFRA-0086` — 53. Infrastructure Efficiency (SRC-008 lines 5230–5272; RESEARCH)
-- `REQ-INFRA-0087` — 54. Upgrade ET downgrade (SRC-008 lines 5273–5298; EXTERNAL_REVALIDATION)
+- `REQ-INFRA-0087` — 54. Upgrade ET downgrade (SRC-008 lines 5273–5298; LOCKED)
 - `REQ-CAP-0021` — 55. Le capital n’est pas directement le trigger d’upgrade (SRC-008 lines 5299–5356; LOCKED)
 - `REQ-CAP-0022` — 56. Capital Bands : seulement comme résultat empirique (SRC-008 lines 5357–5385; RESEARCH)
 - `REQ-NODE-0003` — 57. Quand envisager un node Hyperliquid (SRC-008 lines 5386–5471; EXTERNAL_REVALIDATION)
@@ -527,3 +532,10 @@
 
 - `REQ-INFRA-9001` — Technical benchmark improvement does not mandate upgrade
 - `REQ-CLIENT-9001` — Per-client non-SaaS deployment model
+
+## PASS 01 recovered Infrastructure formula dependencies
+
+- `REQ-FORMULA-0103` — QF-088 Net Upgrade Value (`SRC-004` lines 7891–7925; LOCKED)
+- `REQ-FORMULA-0108` — QF-093 Capture Ratio (`SRC-004` lines 8124–8227; LOCKED)
+
+These stable Formula requirements remain primarily owned by the Formula Book. PASS 01 corrected only their missing `INFRA` secondary-domain traceability; no requirement was renumbered.
