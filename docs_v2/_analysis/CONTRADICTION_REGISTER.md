@@ -72,3 +72,16 @@ Full reasoning is in `pass03_simulator/SIMULATOR_CONFLICT_RESOLUTION.md`. No unr
 | CONFLICT-035 | Maker partial exposure | Planned maker completion versus observed partial | Every actual partial immediately updates inventory and continuation/recovery | HIGH | `RESOLVED` PASS 04 |
 
 CONFLICT-006 (unbounded market language versus protected IOC/marketable limit) was also closed by PASS 04. No genuine earlier requirement mandating one giant enum was found; compressed legacy prose was not manufactured into a conflict. Full analysis: `pass04_execution/EXECUTION_CONFLICT_RESOLUTION.md`.
+
+## PASS 05 — Risk Constitution review
+
+| Conflict ID | Concept | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|
+| CONFLICT-036 | Hard risk as EV penalty | A hard violation removes the action from `A_safe`; RAEV ranks only eligible actions | HIGH | `RESOLVED` PASS 05 |
+| CONFLICT-037 | Semantic versus frozen RiskDecision fields | Dossier 4 frozen fields win; config/model/mode semantics link through RiskSnapshot/ExecutionPlan | HIGH | `RESOLVED` PASS 05 |
+| CONFLICT-038 | Seven kill scopes versus narrow ControlEvent enum | Preserve constitutional scopes; exact asset/mode/model/infra event encoding is deferred to Data closure | HIGH | `RESOLVED` PASS 05, schema gap |
+| CONFLICT-039 | Fail-open wording | Only strict reduction of a known exposure under RecoveryRiskPolicy; no generic fail-open | HIGH | `RESOLVED` PASS 05 |
+| CONFLICT-040 | Capital/server price as risk permission | Scaling remains bounded by validated capacity and all gates; infrastructure economics cannot relax safety | HIGH | `RESOLVED` PASS 05 |
+| CONFLICT-041 | PASS 00 keyword statuses inside SRC-005 | Fourteen false statuses corrected by full closure reading; source-prescriptive rules remain locked | HIGH | `RESOLVED` PASS 05 |
+
+`CONFLICT-004`, `CONFLICT-005` and `CONFLICT-023` were crosschecked. Fixed numeric examples remain calibrated; Formula Book remains PASS 11 authority; persistent supported live evidence outranks backtest. Full reasoning: `pass05_risk/RISK_CONFLICT_RESOLUTION.md`. No unresolved constitutional conflict blocks the documentary reconstruction.

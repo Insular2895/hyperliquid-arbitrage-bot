@@ -71,3 +71,16 @@ No new architecture decision was left open by PASS 03. Rejoin thresholds/horizon
 | OPEN-012 | `REMAINS OPEN; EXECUTION/RISK/VALIDATION CO-OWNER` | MT/MTT activation and all TM/MM activation/capital authority require explicit decision plus queue/adverse/recovery evidence. |
 
 No new architecture open item was created. DMS/API/nonce/precision semantics are external revalidation, while timeouts, buffer limits, retry/escalation counts and tolerances are calibrated policy parameters rather than hidden fixed defaults.
+
+## PASS 05 — Risk disposition
+
+| Open ID | PASS 05 status | Evidence still required |
+|---|---|---|
+| OPEN-004 | `REMAINS OPEN; INFRA/RISK CO-OWNER` | Measured feed/clock/network/compute/recorder distributions, false-trigger cost and hysteresis validation for health states. |
+| OPEN-007 | `REMAINS OPEN; RISK OWNER` | Exact spread/impact/participation/P+/CVaR/loss/recovery/drawdown/TTL and related limits by scope, with replay/shadow/micro-live evidence. |
+| OPEN-008 | `REMAINS OPEN; PARTICIPANTS/VALIDATION OWNER` | Promoted models, support domains, OOD/confidence/disagreement and fallback evidence consumed by Risk. |
+| OPEN-009 | `REMAINS OPEN; PASS 07 OWNER` | Exact inventory targets/bands/penalties, concentration, transit/stranded and portfolio capacity values. |
+| OPEN-010 | `REMAINS OPEN; PARTICIPANTS OWNER` | Survival parameters/horizons used in arrival gates and `TTL_risk`. |
+| OPEN-012 | `REMAINS OPEN; EXECUTION/RISK/VALIDATION CO-OWNER` | Explicit maker/MT/MTT/TM/MM activation, size limits and queue/adverse/recovery micro-live evidence. |
+
+PASS 05 creates no new architectural open item. Exact numeric thresholds are evidence-governed calibrated policies; the four identified Data schema encodings remain cross-domain closure work rather than guessed Risk decisions.

@@ -1,0 +1,32 @@
+# Risk Failure Matrix
+
+DOCUMENTATION STATUS:
+REBUILD IN PROGRESS
+
+Failure-class shorthand: `STOP` unavailable/disconnected; `LIE` corrupt or inconsistent; `LATE` outside freshness/runtime support; `DUP` repeated event/response; `OOD` outside validated model/capability support; `STALE` old version/state. Where a class is not meaningful, Risk still rejects an invalid representation rather than guessing.
+
+| Dependency | STOP / LIE / LATE / DUP / OOD / STALE handling | New risk | Existing exposure | Fallback | Kill scope | Recovery / reconciliation | Manual escalation | Source |
+|---|---|---|---|---|---|---|---|---|
+| Market feed | STOP: invalidate; LIE: cross-check/gap/corrupt; LATE/STALE: freshness fail; DUP: idempotent sequence; OOD: unsupported feed fidelity. | NO affected | Cancel/check only from valid state | Snapshot/resync, never guessed events | Market/Infra; global if systemic | Recovery only with valid exit book; reconcile feed | Persistent critical failure | 243–356, 923–951, 2900–2936, 4278–4287 |
+| Book | STOP/missing invalid; crossed/corrupt LIE invalid; LATE/STALE reject; DUP sequence-idempotent; OOD depth/size unsupported. | NO affected | Reevaluate/cancel maker | Fresh snapshot/resync | Market/Asset | Valid-book reducing exit only | Persistent corruption | 243–356, 517–565, 2900–2984 |
+| Metadata | STOP/unknown reject; LIE/inconsistent reject; LATE/STALE version invalidation; DUP idempotent; OOD unsupported rule set. | NO affected | Revalidate planned precision/rules | Refresh authoritative metadata | Market/Asset | Reconcile/replan affected intents | Unresolvable rule change | 357–396, 2884–2899 |
+| Fee Engine | STOP/unknown reject; LIE detected by accounting/current rules; LATE/STALE invalidate economics; DUP idempotent version; OOD unsupported tier. | NO affected | Reprice continuation/recovery | Current validated fee rules only | Market/Strategy | Recovery with known fees only | Unresolved applicable fee | 369–380, 2875–2883 |
+| Account feed/state | STOP/STALE unreconciled; LIE mismatch; LATE preserves locks; DUP fills idempotent; OOD schema invalid. | NO affected | Protect known exposure | REST/account query + reconciliation | Account/Global | Required; unknown capital reserved | Persistent mismatch/unknowns | 397–516, 566–707, 870–883, 4288–4295 |
+| Execution transport/exchange connectivity | STOP/LATE/lost response → UNKNOWN; LIE/inconsistent response reconcile; DUP guarded by stable CLOID/fill idempotency; stale intent refused. | NO affected | Preserve reservations; no blind retry | Query/reconcile, alternate action only by new plan | Mode/Market/Global | Bounded recovery after truth bound | Timeout/escalation exhaustion | 657–683, 4268–4277 |
+| Inventory | STOP/STALE/unknown version blocks; LIE mismatch reconciles; LATE preserves conservative exposure; DUP fills idempotent; OOD asset classification invalid. | NO affected | Actual fill updates immediately | Exchange account truth + replayed ledger | Asset/Account | Strict reducing actions; reconcile | Hard mismatch | 566–707, 1757–2077, 3818–3859 |
+| Participant model | STOP/NaN invalid; LIE by calibration monitor; LATE/STALE feature/model invalid; DUP forecast harmless by ID; OOD/disagreement gate. | NO dependent unless valid fallback | Reevaluate maker/leg | Conservative validated empirical fallback | Model/Strategy/Mode | Conservative forecast or bounded no-model exit only | Persistent drift/no fallback | 1273–1484, 2849–2874, 4021–4089 |
+| Simulator | STOP invalid for dependent sizing; LIE via bias/coverage; LATE/STALE version invalid; DUP by candidate ID; OOD size/fidelity rejects. | NO dependent | Reevaluate continuation | Validated lower-fidelity conservative path if declared | Model/Strategy | Bounded deterministic recovery policy | Persistent miscalibration | 1485–1667, 2826–2848 |
+| Cross-market model | STOP/invalid disables dependent feature; LIE correlation/inconsistency checked; LATE/STALE invalid; DUP versioned; OOD/disagreement reject. | NO dependent unless fallback | Reevaluate dependent route | Sparse validated conservative fallback or none | Model/Strategy | Exit cannot assume unsupported neighbour response | No safe fallback | 1417–1484, 2928–2984, 3282–3300 |
+| Infrastructure | STOP connectivity/host critical; LIE health inconsistency incident; LATE/STALE state invalid; DUP health event idempotent; OOD instance/capability unsupported. | NO when unsafe | Cancel/protect as channels permit | Smaller/less active validated mode only | Infra/Global | Reconcile; recover if executable | Critical/persistent state | 884–1032, 2985–3070, 3606–3643 |
+| Clock | STOP/unhealthy; LIE/drift/jump; LATE/STALE quality sample; DUP harmless by version; OOD uncertainty unsupported. | NO affected | Timers/freshness reevaluated | No favorable wall-time guess; monotonic elapsed where valid | Infra/Global | Reconcile event order/state | Cannot restore trustworthy time | 884–922, 4296–4307 |
+| Config | STOP/missing or invalid prevents READY; LIE/hash mismatch; LATE/STALE version refused; DUP idempotent activation; OOD/unsupported value rejected. | NO affected | Keep pinned version unless emergency hard stop | Last validated version or safe disabled state | Strategy/Global | Reconcile if semantics changed | Migration/compatibility unresolved | 3146–3224, 3945–4020 |
+| Storage/Recorder | STOP/full: shed recorder safely; LIE/hash/corruption marks audit gap; LATE/backlog monitored; DUP deduplicated; OOD schema invalid; STALE checkpoint not truth. | CHECK; NO if audit/state safety lost | Execution hot path never blocked | Async buffer/degraded recording within policy | Infra/Global if critical | Exchange reconciliation; preserve state evidence | Auditability/state loss | 1014–1032, 4317–4330 |
+| Reservation state | STOP/unknown locks capacity; LIE/inconsistency rejects; LATE/STALE version invalid; DUP reservation idempotent; OOD schema invalid. | NO affected | Existing claims remain consumed | Rebuild from plan/journal/exchange truth | Account/Global | Reconcile before release; recovery reserves anew | Unresolvable ownership | 397–565, 3044–3058 |
+
+## Universal expected behavior
+
+- Unknown safety never creates new risk.
+- Actual known exposure receives protection/cancel/reconciliation/recovery priority.
+- Fallback exists only when declared, validated and no less conservative.
+- Latches, reasons, state versions and incident evidence are recorded.
+- Thresholds for lateness, drift, health and escalation remain calibrated.

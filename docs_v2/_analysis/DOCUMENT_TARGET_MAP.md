@@ -2610,3 +2610,7 @@ The authoritative normalized per-requirement routing for all 231 Simulator-index
 ## PASS 04 — Execution target overlay
 
 The authoritative normalized routing for all **865** Execution-index requirements is `pass04_execution/EXECUTION_REQUIREMENT_LEDGER.md`. Closure-owned requirements target `10_EXECUTION_STATE_MACHINE.md` and `deep-specs/execution/01..12`; Risk, Data/Replay, Inventory/Sizing/Capital, Routing/Graph, Participants, Infrastructure, Operations, Validation, Security/Deployment and Formula retain their owning passes. External facts also target `EXTERNAL_REVALIDATION_REGISTER.md`. Destinationless requirements: **0**; silently moved primary ownership: **0**; stable IDs renumbered: **0**.
+
+## PASS 05 — Risk target overlay
+
+The authoritative normalized routing for all **752** Risk-index requirements is `pass05_risk/RISK_REQUIREMENT_LEDGER.md`. SRC-005 Dossier 3/6 closure material targets `09_RISK_CONSTITUTION.md` and `deep-specs/risk/01..11`; supporting Risk items target those deep specs. Formula, Data/Replay, Execution/Recovery, Inventory/Sizing/Capital/Portfolio, Routing/Graph, Participants/Simulator, Infrastructure, Operations, Validation, Security/Deployment and Product retain their owning passes. External facts also target `EXTERNAL_REVALIDATION_REGISTER.md`. Destinationless requirements: **0**; silently moved primary ownership: **0**; stable IDs renumbered: **0**.

@@ -773,3 +773,14 @@
 - `REQ-REPLAY-9001` — Replay/Live core parity
 - `REQ-SIM-9001` — Calibrated plausible outcomes, not exact alternate universe
 - `REQ-INFRA-9001` — Economic infrastructure upgrade/downgrade gate
+
+## PASS 05 closure overlay
+
+- Reviewed: **752/752** unique indexed requirements; all source locators valid.
+- SRC-005 Risk Constitution: fully reviewed, lines 1–5373, sections 1–242.
+- Canonical invariants: `INV-001..INV-030`, documented **30/30**.
+- Master/deep targets: `../../09_RISK_CONSTITUTION.md` and `../../deep-specs/risk/README.md`.
+- Row-level disposition: `../pass05_risk/RISK_REQUIREMENT_LEDGER.md`; destinationless: **0**.
+- PASS 00 corrections: 14 false keyword statuses are normalized under SRC-005 closure authority without renumbering IDs; see `../pass05_risk/RISK_CONFLICT_RESOLUTION.md`.
+- Remaining exact numeric risk limits are calibrated/open evidence questions, principally `OPEN-007`; no universal threshold was invented.
+- External exchange/API facts remain in `../EXTERNAL_REVALIDATION_REGISTER.md`; no live external revalidation occurred.

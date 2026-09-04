@@ -53,3 +53,14 @@
 - `EXT-008`: revalidate CLOID lookup/cancel behaviour, nonce/signer/API-wallet/subaccount constraints, rate limits, and `scheduleCancel` deadlines/trigger limits/scope.
 - `EXT-003`: revalidate fee schedule and debit asset for actual leg/route accounting.
 - No web research occurred in PASS 04. Internal fail-conservative semantics are locked, but these facts can block implementation, emulator fidelity, Micro-live, or Live activation.
+
+## PASS 05 — Risk disposition
+
+- `EXT-001`: current ALO/Post Only, IOC/FOK, protected-limit and order-state semantics affect maker/taker/transport gates.
+- `EXT-002`, `EXT-005`: current feed payloads, timestamp/sequence/gap/reconnect semantics determine whether market state and freshness can be valid.
+- `EXT-003`: current fees/tier/debit-asset behavior must be known before economic or Risk permission.
+- `EXT-004`: current tick/lot/minimum/precision and metadata-change behavior are mandatory inputs.
+- `EXT-008`: current rate-limit budgets, CLOID lookup/cancel and `scheduleCancel` behavior affect safety-capacity reservations and recovery.
+- `EXT-006`, `EXT-007`: node/L4 capability remains future-gated; Risk cannot assume a fidelity not supplied by the validated feed.
+- `EXT-015`, `EXT-016`: runtime/library status and external research can motivate validation but cannot create risk permission.
+- No external browsing/revalidation occurred in PASS 05. These facts do not block documentation reconstruction; they block encoding current exchange constants, emulator claims or Live activation without verification.

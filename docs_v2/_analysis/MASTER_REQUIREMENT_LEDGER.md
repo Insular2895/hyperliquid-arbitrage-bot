@@ -75149,3 +75149,13 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Canonical targets: `10_EXECUTION_STATE_MACHINE.md`, `deep-specs/execution/01..12`, and analysis matrices under `pass04_execution/`.
 - Exact per-ID provenance and PASS 04 disposition: `pass04_execution/EXECUTION_REQUIREMENT_LEDGER.md`.
 - Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 05 started: NO.
+
+## PASS 05 — Risk Constitution domain-review overlay
+
+- PASS 00 Risk-index requirements reviewed at original locators: **752/752** across SRC-001–008; invalid/missing locators: **0**.
+- SRC-005 Dossier 3/6 Risk Constitution reviewed sequentially in full: lines 1–5373, sections 1–242.
+- Canonical source invariants recovered: **30/30** (`INV-001..INV-030`); superseded/destinationless invariants: **0/0**.
+- Fourteen PASS 00 keyword-heuristic statuses inside the Constitution were corrected by closure authority; IDs and reasons are in `pass05_risk/RISK_CONFLICT_RESOLUTION.md`.
+- Canonical targets: `09_RISK_CONSTITUTION.md`, `deep-specs/risk/01..11`, and the analysis matrices under `pass05_risk/`.
+- Exact per-ID disposition: `pass05_risk/RISK_REQUIREMENT_LEDGER.md` — MASTER 253; DEEP_SPEC 67; CROSS_DOMAIN_FUTURE_PASS 344; FORMULA_REFERENCE 37; EXTERNAL_REGISTER 42; OPEN_ITEM 3; SUPERSEDED 2; REJECTED 4.
+- Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 06 started: NO.
