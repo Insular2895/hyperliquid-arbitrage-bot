@@ -53,3 +53,22 @@ Full evaluation and non-conflicts are in `pass02_participants/PARTICIPANT_CONFLI
 | CONFLICT-023 | Replay versus live evidence | Strong backtest versus poor persistent actual fills | Live evidence wins; Risk may reduce/disable via calibration kill switch | HIGH | `RESOLVED` PASS 03 |
 
 Full reasoning is in `pass03_simulator/SIMULATOR_CONFLICT_RESOLUTION.md`. No unresolved Simulator contradiction blocks documentation reconstruction.
+
+## PASS 04 — Execution State Machine review
+
+| Conflict ID | Concept | Source evolution | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|---|
+| CONFLICT-024 | Partial fill branch | Happy-path/atomic shorthand versus closure | Partial is normal; actual exposure is applied immediately | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-025 | Planned downstream quantity | Precomputed plan versus actual fills | Every later leg uses actual fills, fees and rounding after current revalidation | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-026 | Retry after timeout | Generic transport retry versus closure | Stable CLOID, query/reconcile, NO BLIND RETRY | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-027 | Timeout semantics | Timeout as failure/no fill versus economic ambiguity | Possible transmission becomes `UNKNOWN`; reservations stay locked | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-028 | Cancel finality | Cancel-send shorthand versus cancel race | `CANCEL_REQUESTED` is not `CANCELED`; racing fills remain real | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-029 | Local versus exchange truth | Checkpoint/journal inference versus observed account | Orders/fills/balances and reconciliation outrank local assumption | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-030 | Recovery destination | Finish original route versus current portfolio objective | QF-079 chooses best current permitted exit; original route has no privilege | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-031 | Recovery cardinality | Single-exit examples versus split recovery | Multiple exits allowed under atomic reservations and Risk constraints | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-032 | Restart readiness | Automatic restart/trade versus reconciliation-first | `BOOTING→SYNCING→RECONCILING`; only consistency permits `READY` | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-033 | TM/MM activation | Representable execution modes versus implied availability | Supported by types, disabled and capital-unvalidated pending explicit approval | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-034 | Journal hot-path I/O | Durability wording versus latency/single-writer requirement | Append-only asynchronous durability; reconciliation reconstructs exchange truth | HIGH | `RESOLVED` PASS 04 |
+| CONFLICT-035 | Maker partial exposure | Planned maker completion versus observed partial | Every actual partial immediately updates inventory and continuation/recovery | HIGH | `RESOLVED` PASS 04 |
+
+CONFLICT-006 (unbounded market language versus protected IOC/marketable limit) was also closed by PASS 04. No genuine earlier requirement mandating one giant enum was found; compressed legacy prose was not manufactured into a conflict. Full analysis: `pass04_execution/EXECUTION_CONFLICT_RESOLUTION.md`.

@@ -1,6 +1,6 @@
 # Domain Index — EXECUTION
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
 
 - Requirements: 865
 - Primary sources: SRC-005 (173), SRC-004 (166), SRC-006 (136), SRC-008 (105), SRC-007 (100), SRC-002 (77), SRC-003 (65), SRC-001 (43)
@@ -8,7 +8,7 @@
 - Cross-domain dependencies: see `../CROSS_DOMAIN_DEPENDENCIES.md`
 - Known contradictions: see `../CONTRADICTION_REGISTER.md`
 - Open items: see `../OPEN_ITEMS_INITIAL.md`
-- Planned reconstruction pass: PASS 04
+- Reconstruction pass: PASS 04 COMPLETE; human review required
 
 ## Requirement IDs
 
@@ -886,3 +886,12 @@
 - `REQ-RISK-9001` — Unknown means no new risk, not halt everything
 - `REQ-REPLAY-9001` — Replay/Live core parity
 - `REQ-DET-9001` — Deterministic decision identity
+
+## PASS 04 domain-review overlay
+
+- PASS 00 Execution-index IDs reviewed against original locators: **865/865**; missing/invalid locators: **0**.
+- SRC-004 execution closure reviewed sequentially: Dossier 1 §§1–142; all five state machines and 45 machine-state entries reconstructed.
+- Canonical targets: `10_EXECUTION_STATE_MACHINE.md` and `deep-specs/execution/01..12`.
+- Row-level normalized disposition, status corrections, authority, and destinations: `../pass04_execution/EXECUTION_REQUIREMENT_LEDGER.md`.
+- PASS 00 heuristic corrections include NO BLIND RETRY, OrderState/`REJECTED`, reconciliation algorithm, DMS internal use, restart, observability, Risk fail-conservative behaviour, and machine-readable rejection semantics.
+- Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 05 started: NO.

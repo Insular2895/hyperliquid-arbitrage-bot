@@ -75140,3 +75140,12 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Canonical targets: `07_COUNTERFACTUAL_SIMULATOR.md` and `deep-specs/simulator/01..12`.
 - Per-ID normalized fields, original provenance, reviewed statuses, profiles, implications, owners, and destinations: `pass03_simulator/SIMULATOR_REQUIREMENT_LEDGER.md`.
 - Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 04 started: NO.
+
+## PASS 04 — Execution State Machine domain-review overlay
+
+- PASS 00 Execution-index IDs reviewed at original locators: **865/865** across SRC-001–008; invalid/missing locators: **0**.
+- SRC-004 execution closure reviewed: Dossier 1 §§1–142; state-machine entries reconstructed: **45** across five machines.
+- Domain status corrections: NO BLIND RETRY, OrderState/`REJECTED`, reconciliation algorithm, DMS internal use, reconciliation-first restart, observability, fail-conservative Risk, and machine-readable rejects are locked by source/closure rather than OPEN/REJECTED heuristics.
+- Canonical targets: `10_EXECUTION_STATE_MACHINE.md`, `deep-specs/execution/01..12`, and analysis matrices under `pass04_execution/`.
+- Exact per-ID provenance and PASS 04 disposition: `pass04_execution/EXECUTION_REQUIREMENT_LEDGER.md`.
+- Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 05 started: NO.

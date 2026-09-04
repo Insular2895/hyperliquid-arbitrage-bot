@@ -44,3 +44,12 @@
 - `EXT-007`: current L4 availability and `order_book_server` spot support remain unverified; F2 initial capability must work from L2 uncertainty.
 - `EXT-016`: Queue-Reactive/Hawkes/OFI/resilience/ABIDES/square-root-impact literature motivates Research candidates only; transferability requires primary-source review and Hyperliquid temporal OOS evidence.
 - No web revalidation occurred in PASS 03. These snapshots do not block documentation reconstruction; they can block implementation assumptions, fidelity claims, model promotion, or production activation.
+
+## PASS 04 — Execution disposition
+
+- `EXT-001`: revalidate current IOC/FOK/ALO/GTC and marketable-limit semantics, price-time/order status behaviour, batching/action ordering, and reject/status values before encoding transport/emulator rules.
+- `EXT-002`: revalidate current HTTP/WS submit/query/cancel paths, order/open-order/fill/balance sources, subscription names, snapshots/gap recovery, and reconnect behaviour.
+- `EXT-004`: revalidate tick/lot/price/significant-figure/minimum-notional/rounding rules used by QF-007/008 and next-leg/dust decisions.
+- `EXT-008`: revalidate CLOID lookup/cancel behaviour, nonce/signer/API-wallet/subaccount constraints, rate limits, and `scheduleCancel` deadlines/trigger limits/scope.
+- `EXT-003`: revalidate fee schedule and debit asset for actual leg/route accounting.
+- No web research occurred in PASS 04. Internal fail-conservative semantics are locked, but these facts can block implementation, emulator fidelity, Micro-live, or Live activation.

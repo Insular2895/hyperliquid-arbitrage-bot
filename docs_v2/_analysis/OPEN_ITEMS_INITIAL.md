@@ -58,3 +58,16 @@ Additional Participant parameters—feature windows/weights, sparse neighbours, 
 | OPEN-012 | `REMAINS OPEN; EXECUTION/RISK OWNER` | Maker/TM/MM activation needs queue/fill/adverse/recovery Micro-live evidence. |
 
 No new architecture decision was left open by PASS 03. Rejoin thresholds/horizons, probabilistic queue allocation, scenario count, dependence method, size grid, response horizons, confidence thresholds and calibration tolerances are explicitly `CALIBRATED`/`LEARNED`, not promoted to permanent open architecture questions.
+
+## PASS 04 — Execution disposition
+
+| Open ID | PASS 04 status | Execution relevance / evidence still required |
+|---|---|---|
+| OPEN-004 | `REMAINS OPEN; INFRA/RISK OWNER` | ACK/feed/recovery/reconciliation health windows use measured distributions, not magic constants. |
+| OPEN-007 | `REMAINS OPEN; PASS 05 OWNER` | Exact route/leg/order/Recovery Risk thresholds remain unchosen. |
+| OPEN-008 | `REMAINS OPEN; PARTICIPANTS/VALIDATION OWNER` | Exact maker/continuation forecast Champion and coefficients need evidence. |
+| OPEN-009 | `REMAINS OPEN; PASS 07 OWNER` | Dust tolerances, inventory bands and PendingIntermediateBuffer bounds require calibration. |
+| OPEN-010 | `REMAINS OPEN; PARTICIPANTS OWNER` | Exact survival parameters affect maker age and continuation. |
+| OPEN-012 | `REMAINS OPEN; EXECUTION/RISK/VALIDATION CO-OWNER` | MT/MTT activation and all TM/MM activation/capital authority require explicit decision plus queue/adverse/recovery evidence. |
+
+No new architecture open item was created. DMS/API/nonce/precision semantics are external revalidation, while timeouts, buffer limits, retry/escalation counts and tolerances are calibrated policy parameters rather than hidden fixed defaults.

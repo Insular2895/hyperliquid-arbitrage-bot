@@ -2606,3 +2606,7 @@ The authoritative per-requirement PASS 01 routing for all 514 reviewed Infrastru
 ## PASS 03 — Counterfactual Simulator target overlay
 
 The authoritative normalized per-requirement routing for all 231 Simulator-index requirements and 42 checked QF dependencies is `pass03_simulator/SIMULATOR_REQUIREMENT_LEDGER.md`. Simulator-owned material targets `07_COUNTERFACTUAL_SIMULATOR.md` and `deep-specs/simulator/01..12`. Formula, Data/Replay, Risk, Execution/Recovery, Participant, Sizing and Graph requirements preserve their owning future-pass target while their Simulator-facing contract is cross-linked. Destinationless requirements: 0; primary ownership moved silently: 0.
+
+## PASS 04 — Execution target overlay
+
+The authoritative normalized routing for all **865** Execution-index requirements is `pass04_execution/EXECUTION_REQUIREMENT_LEDGER.md`. Closure-owned requirements target `10_EXECUTION_STATE_MACHINE.md` and `deep-specs/execution/01..12`; Risk, Data/Replay, Inventory/Sizing/Capital, Routing/Graph, Participants, Infrastructure, Operations, Validation, Security/Deployment and Formula retain their owning passes. External facts also target `EXTERNAL_REVALIDATION_REGISTER.md`. Destinationless requirements: **0**; silently moved primary ownership: **0**; stable IDs renumbered: **0**.
