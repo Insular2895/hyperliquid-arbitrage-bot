@@ -75129,3 +75129,14 @@ Les exigences suivantes rendent explicites les distinctions transversales imposÃ
 - Canonical targets: `06_MARKET_PARTICIPANTS.md` and `deep-specs/participants/01..09`.
 - Row-level authority, model layer, risk/validation implication and disposition: `pass02_participants/PARTICIPANT_REQUIREMENT_LEDGER.md`.
 - Destinationless: 0; renumbered requirements: 0; external facts revalidated live: 0.
+
+## PASS 03 â€” Counterfactual Simulator domain-review overlay
+
+- PASS 00 Simulator-index IDs reviewed against original locators: **231/231**.
+- Simulator-critical Formula dependencies checked: **42**, including 40 additional unique requirement IDs; total unique reviewed: **271**.
+- Domain-pass status: `PASS03_REVIEW_COMPLETE`; overall documentation remains rebuild-in-progress and requires human review.
+- `REQ-SIM-9001` is corrected from broad `RESEARCH` to `LOCKED_EPISTEMIC_AND_ARCHITECTURE_RULE`: exact alternate-world claims are rejected; plausible calibrated distributions, three layers, explicit modes/fidelity, and confidence/OOD are canonical. This does not lock estimators, coefficients, thresholds, activation, or F4.
+- SRC-008 exploratory labels do not downgrade structures closed by SRC-004 Formula/Execution, SRC-005 Data/Risk/Replay, or SRC-006 Validation.
+- Canonical targets: `07_COUNTERFACTUAL_SIMULATOR.md` and `deep-specs/simulator/01..12`.
+- Per-ID normalized fields, original provenance, reviewed statuses, profiles, implications, owners, and destinations: `pass03_simulator/SIMULATOR_REQUIREMENT_LEDGER.md`.
+- Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 04 started: NO.

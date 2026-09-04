@@ -38,3 +38,18 @@ The complete source comparison and retained history are in `pass01_infrastructur
 | CONFLICT-016 | Random/live-adaptive learning | Random row splits or live self-updating weights versus temporal scientific governance | Temporal/walk-forward OOS; offline train/validate/promote; no uncontrolled live self-learning | HIGH | `RESOLVED` PASS 02 |
 
 Full evaluation and non-conflicts are in `pass02_participants/PARTICIPANT_CONFLICT_RESOLUTION.md`.
+
+## PASS 03 — Counterfactual Simulator review
+
+| Conflict ID | Concept | Source evolution | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|---|
+| CONFLICT-010 | Exact alternate-world replay | Naive modified historical continuation versus SRC-008 epistemic correction | Only calibrated plausible distributions; exact alternate-world claim rejected | HIGH | `RESOLVED` PASS 03 |
+| CONFLICT-017 | Historical event continuation | Blind future trades/cancels versus incompatibility after `Δour` | Explicit compatibility policy; Exogenous limitation or Interactive branch/rejoin | HIGH | `RESOLVED` PASS 03 |
+| CONFLICT-018 | Triangle book mutation | Route-level intuition versus local mechanical causality | Only traded book mutates mechanically; other books use historical events/response | HIGH | `RESOLVED` PASS 03 |
+| CONFLICT-019 | Deterministic future/PnL | Point forecast versus scenarios/tail distributions | Full/partial/recovery/failure distribution plus VaR/CVaR/confidence | HIGH | `RESOLVED` PASS 03 |
+| CONFLICT-020 | Complex model first | Hawkes/agents sophistication versus empirical baseline | Conditional Empirical Champion direction; advanced models Challenger/Research | HIGH | `RESOLVED` PASS 03 |
+| CONFLICT-021 | Exact maker queue from L2 | Aggregate level changes versus unknown cancellation position | Three explicit Pessimistic/Optimistic/Probabilistic L2 modes | HIGH | `RESOLVED` PASS 03 |
+| CONFLICT-022 | Fixed rejoin horizon | Universal time versus impact-dependent decay/support | Calibrated variable horizon, explicit event, valid non-rejoin | HIGH | `RESOLVED` PASS 03 |
+| CONFLICT-023 | Replay versus live evidence | Strong backtest versus poor persistent actual fills | Live evidence wins; Risk may reduce/disable via calibration kill switch | HIGH | `RESOLVED` PASS 03 |
+
+Full reasoning is in `pass03_simulator/SIMULATOR_CONFLICT_RESOLUTION.md`. No unresolved Simulator contradiction blocks documentation reconstruction.

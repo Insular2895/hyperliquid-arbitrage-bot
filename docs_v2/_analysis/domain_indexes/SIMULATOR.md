@@ -1,6 +1,6 @@
 # Domain Index — SIMULATOR
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 03 REVIEW COMPLETE`
 
 - Requirements: 231
 - Primary sources: SRC-005 (75), SRC-006 (42), SRC-007 (30), SRC-008 (26), SRC-001 (23), SRC-003 (15), SRC-002 (13), SRC-004 (7)
@@ -250,3 +250,15 @@
 - `REQ-DET-9001` — Deterministic decision identity
 - `REQ-SIM-9001` — Calibrated plausible outcomes, not exact alternate universe
 - `REQ-PART-9001` — Collective participant effects, not synthetic identities as truth
+
+## PASS 03 domain-review overlay
+
+- PASS 00 indexed requirements reviewed: **231/231**; original locator review `YES` 231, `NO` 0.
+- Recovered Formula dependencies: **42 QF references**, 40 additional unique stable requirement IDs; total unique reviewed requirements **271**.
+- Source contributions verified: SRC-001 23; SRC-002 13; SRC-003 15; SRC-004 7; SRC-005 75; SRC-006 42; SRC-007 30; SRC-008 26.
+- Canonical target: `../../07_COUNTERFACTUAL_SIMULATOR.md` and `../../deep-specs/simulator/01..12`.
+- Full per-ID/provenance join and status corrections: `../pass03_simulator/SIMULATOR_REQUIREMENT_LEDGER.md`.
+- Formula, mode/fidelity, Data contract, validation, conflict, source, and legacy evidence: `../pass03_simulator/`.
+- `REQ-SIM-9001` reviewed status: `LOCKED_EPISTEMIC_AND_ARCHITECTURE_RULE`; calibrated models/thresholds remain learned/calibrated and F4 remains Research.
+- Destinationless requirements: 0; IDs renumbered: 0; external facts web-revalidated: 0.
+- PASS 04 started: **NO**.

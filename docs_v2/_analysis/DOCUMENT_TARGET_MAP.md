@@ -2602,3 +2602,7 @@ For the 282 requirements reviewed in PASS 02, `06_MARKET_PARTICIPANTS.md` is the
 ## PASS 01 — Infrastructure target overlay
 
 The authoritative per-requirement PASS 01 routing for all 514 reviewed Infrastructure requirements is `pass01_infrastructure/INFRA_REQUIREMENT_LEDGER.md`. Infrastructure-owned material targets `13_INFRASTRUCTURE.md` and one of the seven deep specs. Cross-domain requirements retain their future domain master as primary destination and are recorded as `REVIEWED_DEPENDENCY`; no primary ownership was silently moved.
+
+## PASS 03 — Counterfactual Simulator target overlay
+
+The authoritative normalized per-requirement routing for all 231 Simulator-index requirements and 42 checked QF dependencies is `pass03_simulator/SIMULATOR_REQUIREMENT_LEDGER.md`. Simulator-owned material targets `07_COUNTERFACTUAL_SIMULATOR.md` and `deep-specs/simulator/01..12`. Formula, Data/Replay, Risk, Execution/Recovery, Participant, Sizing and Graph requirements preserve their owning future-pass target while their Simulator-facing contract is cross-linked. Destinationless requirements: 0; primary ownership moved silently: 0.

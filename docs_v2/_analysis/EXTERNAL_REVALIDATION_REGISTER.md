@@ -36,3 +36,11 @@
 - `EXT-007`: current L2/L4 and spot support remains unverified; no exact L4 queue or fine reaction-time claim is made.
 - `EXT-016`: academic results motivate candidates only. Their dataset claims and transferability to Hyperliquid require source verification and local temporal OOS evidence.
 - No live external query was performed in PASS 02. These facts do not block documentation reconstruction but can block data collection, model fidelity, activation or production claims.
+
+## PASS 03 — Counterfactual Simulator disposition
+
+- `EXT-001`: current price-time priority, IOC, ALO/Post Only, GTC, batching/action ordering and matching details must be revalidated before Exchange Emulator implementation/claim.
+- `EXT-002`, `EXT-004`, `EXT-005`: current payloads, timestamps, sequence/block semantics, L2 granularity, metadata, precision, fees and reconnect/gap behaviour affect arrival/mechanics/Data contracts.
+- `EXT-007`: current L4 availability and `order_book_server` spot support remain unverified; F2 initial capability must work from L2 uncertainty.
+- `EXT-016`: Queue-Reactive/Hawkes/OFI/resilience/ABIDES/square-root-impact literature motivates Research candidates only; transferability requires primary-source review and Hyperliquid temporal OOS evidence.
+- No web revalidation occurred in PASS 03. These snapshots do not block documentation reconstruction; they can block implementation assumptions, fidelity claims, model promotion, or production activation.

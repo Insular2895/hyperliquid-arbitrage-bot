@@ -46,3 +46,15 @@ PASS 01 did not convert calibrated values into open architecture decisions. See 
 | OPEN-012 | `REMAINS OPEN; EXECUTION/RISK CO-OWNER` | Calibrated fill/adverse-selection, second-leg/recovery validation and explicit activation decision for maker/TM/MM |
 
 Additional Participant parameters—feature windows/weights, sparse neighbours, response horizons, OOD/drift methods and promotion gates—are `CALIBRATED`/`LEARNED`; they are not converted into new open architecture questions. P4/P5 remain Research/Future rather than unresolved production requirements.
+
+## PASS 03 — Counterfactual Simulator disposition
+
+| Open ID | PASS 03 status | Simulator relevance / evidence still required |
+|---|---|---|
+| OPEN-004 | `REMAINS OPEN; INFRA/RISK OWNER` | Exact latency/health windows affect arrival support; measured distributions required. |
+| OPEN-007 | `REMAINS OPEN; PASS 05 OWNER` | Exact CVaR/confidence/Risk limits remain unchosen. |
+| OPEN-008 | `REMAINS OPEN; PARTICIPANTS/VALIDATION OWNER` | Exact response Champion/Challenger estimator and parameters require temporal OOS, calibration and economic evidence. |
+| OPEN-010 | `REMAINS OPEN; PARTICIPANTS OWNER` | Survival horizons/parameters affect arrival and slicing scenarios. |
+| OPEN-012 | `REMAINS OPEN; EXECUTION/RISK OWNER` | Maker/TM/MM activation needs queue/fill/adverse/recovery Micro-live evidence. |
+
+No new architecture decision was left open by PASS 03. Rejoin thresholds/horizons, probabilistic queue allocation, scenario count, dependence method, size grid, response horizons, confidence thresholds and calibration tolerances are explicitly `CALIBRATED`/`LEARNED`, not promoted to permanent open architecture questions.
