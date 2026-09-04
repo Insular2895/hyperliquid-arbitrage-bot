@@ -4,10 +4,13 @@
 
 `docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception.
 
-PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01 a reconstruit le master Infrastructure et ses deep specs depuis les sources originales. Aucun document métier v2 n'est encore approuvé pour implémentation.
+PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01 a reconstruit Infrastructure. PASS 02 a reconstruit Market Participants / Competition, ses frontières de modèle et sa validation depuis les sources originales. Aucun document métier v2 n'est encore approuvé pour implémentation.
 
 - [13 — Infrastructure](13_INFRASTRUCTURE.md)
 - [Infrastructure deep specs](deep-specs/infrastructure/README.md)
 - [PASS 01 evidence](./_analysis/pass01_infrastructure/PASS01_FINAL_REPORT.md)
+- [06 — Market Participants](06_MARKET_PARTICIPANTS.md)
+- [Market Participants deep specs](deep-specs/participants/README.md)
+- [PASS 02 evidence](./_analysis/pass02_participants/PASS02_FINAL_REPORT.md)
 
 Ordre d'autorité: dossiers de fermeture 1–6 dans leurs domaines, puis sources exploratoires non contredites. Les faits externes datés exigent une revalidation ultérieure.

@@ -36,3 +36,13 @@ OPEN signifie décision réellement non prise. Les paramètres simplement calibr
 | OPEN-015 | `REMAINS OPEN; PASS 10 OWNER` | Operations telemetry/export decision |
 
 PASS 01 did not convert calibrated values into open architecture decisions. See `pass01_infrastructure/PASS01_FINAL_REPORT.md`.
+
+## PASS 02 — Market Participants disposition
+
+| Open ID | PASS 02 status | Evidence still required |
+|---|---|---|
+| OPEN-008 | `REMAINS OPEN` | Training data, temporal OOS calibration, EconomicLift, ModelValue, runtime/OOD/fallback evidence for exact Champion and Challenger variants |
+| OPEN-010 | `REMAINS OPEN` | OpportunityEpisode corpus, censor-aware fit, supported horizons/strata and validation for exact survival/hazard parameters |
+| OPEN-012 | `REMAINS OPEN; EXECUTION/RISK CO-OWNER` | Calibrated fill/adverse-selection, second-leg/recovery validation and explicit activation decision for maker/TM/MM |
+
+Additional Participant parameters—feature windows/weights, sparse neighbours, response horizons, OOD/drift methods and promotion gates—are `CALIBRATED`/`LEARNED`; they are not converted into new open architecture questions. P4/P5 remain Research/Future rather than unresolved production requirements.

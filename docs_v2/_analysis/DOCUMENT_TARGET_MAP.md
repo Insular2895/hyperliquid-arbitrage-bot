@@ -2,6 +2,10 @@
 
 `DOCUMENTATION STATUS: REBUILD IN PROGRESS`
 
+## PASS 02 canonical target overlay
+
+For the 282 requirements reviewed in PASS 02, `06_MARKET_PARTICIPANTS.md` is the Participant master and `deep-specs/participants/01..09` are the detailed targets. Formula-, Data-, Risk-, Execution-, Simulator-, Infrastructure-, Sizing-, Recorder-, Market Atlas- and Validation-owned requirements remain routed to their future owning pass while their Participant interfaces are now covered. The exact row-level mapping and disposition are in `pass02_participants/PARTICIPANT_REQUIREMENT_LEDGER.md`; no requirement ID was renumbered and no PASS 00 row below was globally regenerated.
+
 | Requirement | Status | Master Doc | Deep Spec / destination | Source | Coverage gap |
 |---|---|---|---|---|---|
 | REQ-BENCH-0001 | RESEARCH | Infrastructure Master | Benchmark Protocol | SRC-001 lines 1–19 | NO |

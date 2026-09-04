@@ -2,8 +2,9 @@
 
 `DOCUMENTATION STATUS: REBUILD IN PROGRESS`
 
-- Requirements: 261
-- Primary sources: SRC-007 (144), SRC-008 (36), SRC-004 (31), SRC-005 (23), SRC-006 (19), SRC-002 (5), SRC-003 (2), SRC-001 (1)
+- PASS 00 stable IDs: 263 (261 extracted requirements + 2 explicit overlays; stale header corrected in PASS 02)
+- PASS 02 reviewed scope: 282 (263 PASS 00 IDs + 19 recovered Formula dependencies)
+- Primary sources in PASS 02 scope: SRC-007 (145), SRC-008 (37), SRC-004 (50), SRC-005 (23), SRC-006 (19), SRC-002 (5), SRC-003 (2), SRC-001 (1)
 - Closure authority: SRC-004 formulas/execution; SRC-005 risk/data; SRC-006 deployment/validation as applicable
 - Cross-domain dependencies: see `../CROSS_DOMAIN_DEPENDENCIES.md`
 - Known contradictions: see `../CONTRADICTION_REGISTER.md`
@@ -278,3 +279,35 @@
 
 - `REQ-SIM-9001` — Calibrated plausible outcomes, not exact alternate universe
 - `REQ-PART-9001` — Collective participant effects, not synthetic identities as truth
+
+## PASS 02 — Recovered formula dependencies
+
+These existing Formula requirement IDs were omitted from the PASS 00 Participant index but are required by the canonical Participant specification. Their Formula ownership is unchanged.
+
+- `REQ-FORMULA-0041` — QF-028 Queue Imbalance (SRC-004 lines 4804–4859; LOCKED)
+- `REQ-FORMULA-0042` — QF-029 Multi-Level Imbalance (SRC-004 lines 4860–4925; LOCKED structure; weights CALIBRATED)
+- `REQ-FORMULA-0043` — QF-030 Event-Level Bid OFI Contribution (SRC-004 lines 4926–4971; LOCKED)
+- `REQ-FORMULA-0044` — QF-031 Ask OFI Contribution (SRC-004 lines 4972–5008; LOCKED)
+- `REQ-FORMULA-0045` — QF-032 OFI (SRC-004 lines 5009–5041; LOCKED)
+- `REQ-FORMULA-0047` — QF-033 Multi-Level OFI (SRC-004 lines 5051–5094; LOCKED structure; weights CALIBRATED)
+- `REQ-FORMULA-0048` — QF-034 Microprice (SRC-004 lines 5095–5154; LOCKED)
+- `REQ-FORMULA-0049` — QF-035 Microprice Dislocation (SRC-004 lines 5155–5232; LOCKED)
+- `REQ-FORMULA-0064` — QF-049 Expected Edge at Arrival (SRC-004 lines 5785–5817; LEARNED)
+- `REQ-FORMULA-0065` — QF-050 Probability Above Execution Threshold (SRC-004 lines 5818–5861; LEARNED)
+- `REQ-FORMULA-0068` — QF-053 Expected Fill Time (SRC-004 lines 5926–5971; LOCKED)
+- `REQ-FORMULA-0073` — QF-058 MT EV (SRC-004 lines 6150–6245; LOCKED; reference-only here)
+- `REQ-FORMULA-0110` — QF-095 Brier Score (SRC-004 lines 8275–8308; LOCKED)
+- `REQ-FORMULA-0111` — QF-096 Log Loss (SRC-004 lines 8309–8360; LOCKED)
+- `REQ-FORMULA-0114` — QF-099 Fill Calibration Error (SRC-004 lines 8487–8559; LOCKED)
+- `REQ-FORMULA-0115` — QF-100 Model Economic Lift (SRC-004 lines 8560–8611; LOCKED)
+- `REQ-FORMULA-0116` — QF-101 Model Value After Latency Cost (SRC-004 lines 8612–8701; LOCKED definition)
+- `REQ-FORMULA-0117` — QF-102 Model Disagreement (SRC-004 lines 8702–8750; LOCKED feature)
+- `REQ-FORMULA-0118` — QF-103 OOD Distance (SRC-004 lines 8751–8781; model-dependent method; locked contract)
+
+## PASS 02 disposition
+
+- Original-source review: 282/282 `YES`.
+- Destinationless: 0.
+- Canonical output: `docs_v2/06_MARKET_PARTICIPANTS.md` plus nine Participant deep specs.
+- Review proof: `../pass02_participants/PARTICIPANT_REQUIREMENT_LEDGER.md`.
+- Status correction: a locked architecture/interface does not imply learned coefficients or calibrated horizons are fixed.

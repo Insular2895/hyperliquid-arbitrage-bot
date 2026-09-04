@@ -25,3 +25,16 @@
 | CONFLICT-008 | `RESOLVED` — limitation/InfraLostPnL/ROI, never capital alone, drives transitions | LCB method/parameters remain `OPEN-005` | master; deep spec 05; QF-084–QF-093 |
 
 The complete source comparison and retained history are in `pass01_infrastructure/INFRA_CONFLICT_RESOLUTION.md`.
+
+## PASS 02 — Market Participants review
+
+| Conflict ID | Concept | Source evolution | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|---|
+| CONFLICT-011 | Synthetic agents as market truth | Agent-world research possibility versus SRC-007/008 explicit aggregate-first correction | Production predicts collective effects; explicit agents are P5 stress/scenario research | HIGH | `RESOLVED` PASS 02 |
+| CONFLICT-012 | Address as identity | Pseudonymous trade counterparties could be read as participant identity | Address/cluster is behaviour evidence only, never proven person/firm/strategy; P4 optional | HIGH | `RESOLVED` PASS 02 |
+| CONFLICT-013 | Dense cross-market matrix | Conceptual cross-market matrix versus explicit rejection of `N×N×horizons` live modelling | Sparse graph neighbourhood only; neighbours/horizons learned and validated | HIGH | `RESOLVED` PASS 02 |
+| CONFLICT-014 | Complex model first | Queue-Reactive/Hawkes/GBDT/deep models available versus simple empirical Champion | Simple empirical survival first; advanced models shadow Challengers until full promotion evidence | HIGH | `RESOLVED` PASS 02 |
+| CONFLICT-015 | Heavy simulation in Participant hot path | Stochastic response research could imply per-tick simulation | Small bounded inference in Participant; Monte Carlo/agents remain Simulator/research | HIGH | `RESOLVED` PASS 02 |
+| CONFLICT-016 | Random/live-adaptive learning | Random row splits or live self-updating weights versus temporal scientific governance | Temporal/walk-forward OOS; offline train/validate/promote; no uncontrolled live self-learning | HIGH | `RESOLVED` PASS 02 |
+
+Full evaluation and non-conflicts are in `pass02_participants/PARTICIPANT_CONFLICT_RESOLUTION.md`.

@@ -75117,3 +75117,15 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Current legacy coverage: `PARTIAL`
 - Domain-pass review status: CLOSURE_CANDIDATE
 - Notes: Ancre demandée par PASS 00 §48.
+
+## PASS 02 — Market Participants domain-review overlay
+
+- Domain pass: PASS 02 — Market Participants / Competition.
+- PASS 00 IDs reviewed: 263 (261 extracted requirements plus `REQ-SIM-9001` and `REQ-PART-9001`).
+- Existing Formula IDs recovered as participant dependencies: 19 (`REQ-FORMULA-0041/0042/0043/0044/0045/0047/0048/0049/0064/0065/0068/0073/0110/0111/0114/0115/0116/0117/0118`).
+- Total original-source reviewed requirements: 282/282.
+- Domain-pass review status: `PASS02_REVIEW_COMPLETE`; this does not mark the overall documentation approved.
+- Status correction rule: a locked interface/definition remains distinct from learned estimators and calibrated horizons/thresholds. Exploratory SRC-007 status does not downgrade interfaces later locked by SRC-004/005/006/008.
+- Canonical targets: `06_MARKET_PARTICIPANTS.md` and `deep-specs/participants/01..09`.
+- Row-level authority, model layer, risk/validation implication and disposition: `pass02_participants/PARTICIPANT_REQUIREMENT_LEDGER.md`.
+- Destinationless: 0; renumbered requirements: 0; external facts revalidated live: 0.

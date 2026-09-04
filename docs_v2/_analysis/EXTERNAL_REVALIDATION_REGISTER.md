@@ -28,3 +28,11 @@
 - Provider prices/specifications, Tokyo availability, OS/allocation/network claims, feed timestamp semantics and node/order-book-server capabilities remain historical source snapshots.
 - These facts do not block documentation reconstruction; they can block candidate admission, purchase, benchmark validity, implementation assumptions or production deployment.
 - The per-fact register is `pass01_infrastructure/INFRA_EXTERNAL_SNAPSHOTS.md`.
+
+## PASS 02 — Market Participants disposition
+
+- `EXT-005`: current public book/trade cadence, timestamp semantics, buyer/seller counterparty fields and completeness remain unverified source snapshots. Address behaviour and fine response horizons cannot depend on them until revalidated.
+- `EXT-006`: node raw-book-diff, order lifecycle and output semantics remain future/external-dependent.
+- `EXT-007`: current L2/L4 and spot support remains unverified; no exact L4 queue or fine reaction-time claim is made.
+- `EXT-016`: academic results motivate candidates only. Their dataset claims and transferability to Hyperliquid require source verification and local temporal OOS evidence.
+- No live external query was performed in PASS 02. These facts do not block documentation reconstruction but can block data collection, model fidelity, activation or production claims.
