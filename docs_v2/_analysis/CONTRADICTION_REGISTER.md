@@ -85,3 +85,18 @@ CONFLICT-006 (unbounded market language versus protected IOC/marketable limit) w
 | CONFLICT-041 | PASS 00 keyword statuses inside SRC-005 | Fourteen false statuses corrected by full closure reading; source-prescriptive rules remain locked | HIGH | `RESOLVED` PASS 05 |
 
 `CONFLICT-004`, `CONFLICT-005` and `CONFLICT-023` were crosschecked. Fixed numeric examples remain calibrated; Formula Book remains PASS 11 authority; persistent supported live evidence outranks backtest. Full reasoning: `pass05_risk/RISK_CONFLICT_RESOLUTION.md`. No unresolved constitutional conflict blocks the documentary reconstruction.
+
+## PASS 06 — Data / Recorder / Replay review
+
+| Conflict ID | Concept | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|
+| CONFLICT-042 | Recorder P2/P3 | SRC-005 closure wins: P2 general market events; P3 derived diagnostics | HIGH | `RESOLVED` PASS 06 |
+| CONFLICT-043 | Simplified Replay engine | Replay is the production Core with historical source/simulated transport | HIGH | `RESOLVED` PASS 06 |
+| CONFLICT-044 | Exchange time as knowledge order | Receive chronology and recorder sequence own bot knowledge; exchange time remains research chronology | HIGH | `RESOLVED` PASS 06 |
+| CONFLICT-045 | Checkpoint as truth | Compatible checkpoint + journal + exchange reconciliation; no silent READY | HIGH | `RESOLVED` PASS 06 |
+| CONFLICT-046 | Storage priority as economic order | Recorder retention/backpressure priority never reorders Core dependencies | HIGH | `RESOLVED` PASS 06 |
+| CONFLICT-047 | Parallel commit nondeterminism | One ordered coordinator commits version-checked worker results | HIGH | `RESOLVED` PASS 06 |
+| CONFLICT-048 | Derived-only historical evidence | Immutable original RAW remains source evidence; normalized/derived are versioned derivatives | HIGH | `RESOLVED` PASS 06 |
+| CONFLICT-049 | Later model in historical truth | Later artifacts require explicit `COUNTERFACTUAL_MODEL`; historical truth is point-in-time | HIGH | `RESOLVED` PASS 06 |
+
+CONFLICT-009 (Recorder implementation) is closed: capture/Core implementation is Rust-compatible and non-blocking; Python remains offline normalization/research tooling, not the source capture hot path. Full analysis: `pass06_data_recorder_replay/DATA_CONFLICT_RESOLUTION.md`. No unresolved Data/Recorder/Replay documentary conflict remains.

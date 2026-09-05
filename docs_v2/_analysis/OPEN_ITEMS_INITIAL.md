@@ -84,3 +84,15 @@ No new architecture open item was created. DMS/API/nonce/precision semantics are
 | OPEN-012 | `REMAINS OPEN; EXECUTION/RISK/VALIDATION CO-OWNER` | Explicit maker/MT/MTT/TM/MM activation, size limits and queue/adverse/recovery micro-live evidence. |
 
 PASS 05 creates no new architectural open item. Exact numeric thresholds are evidence-governed calibrated policies; the four identified Data schema encodings remain cross-domain closure work rather than guessed Risk decisions.
+
+## PASS 06 — Data / Recorder / Replay disposition
+
+| Open ID | PASS 06 status | Evidence still required |
+|---|---|---|
+| OPEN-004 | `REMAINS OPEN; INFRA/RISK CO-OWNER` | Clock/Recorder/disk/backlog health distributions and fail-safe thresholds |
+| OPEN-008 | `REMAINS OPEN; PARTICIPANTS/VALIDATION OWNER` | Exact promoted model artifacts/support consumed by RunManifest and Replay |
+| OPEN-009 | `REMAINS OPEN; PASS 07 OWNER` | Full Inventory/Capital state contracts and checkpoint materialization details |
+| OPEN-011 | `REMAINS OPEN; DATA/INFRA/OPERATIONS CO-OWNER` | Measured volume, final local capacity, archive provider and retention durations |
+| OPEN-015 | `REMAINS OPEN; OPERATIONS OWNER` | Telemetry/export backend for data-quality and incident evidence |
+
+Calibrated rather than architectural-open: RAW binary codec, 5–15-minute example chunk duration, queue capacities, disk watermarks, trade/incident window lengths, checkpoint cadence, partition sizes, checksum algorithm, source-priority table and cross-recorder merge policy. PASS 06 creates no new irreversible architecture decision.

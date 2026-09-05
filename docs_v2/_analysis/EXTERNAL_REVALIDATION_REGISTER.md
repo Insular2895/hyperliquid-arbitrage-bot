@@ -64,3 +64,11 @@
 - `EXT-006`, `EXT-007`: node/L4 capability remains future-gated; Risk cannot assume a fidelity not supplied by the validated feed.
 - `EXT-015`, `EXT-016`: runtime/library status and external research can motivate validation but cannot create risk permission.
 - No external browsing/revalidation occurred in PASS 05. These facts do not block documentation reconstruction; they block encoding current exchange constants, emulator claims or Live activation without verification.
+
+## PASS 06 — Data / Recorder / Replay disposition
+
+- `EXT-002`/`EXT-005`: verify current Hyperliquid public/account payload fields, timestamp provenance/units, sequence guarantees, block identifiers, snapshot/diff behavior, reconnect/resubscribe and gap-recovery semantics.
+- `EXT-003`/`EXT-004`: verify current fees/debit asset, metadata, tick/lot/precision/minimum rules and historical availability needed for point-in-time replay.
+- `EXT-006`/`EXT-007`: verify current node/order-book-server data fields, ordering, completeness, spot/L2/L4 support before declaring higher-fidelity Source behavior.
+- Historical archive completeness and official dataset cadence/retention must be verified before using them as a replacement or supplement for proprietary RAW.
+- No web/external revalidation occurred in PASS 06 by explicit mission rule. These facts do not block documentation reconstruction; they can block adapter schemas, dataset fidelity claims, emulator validity or Live activation.

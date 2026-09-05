@@ -2614,3 +2614,7 @@ The authoritative normalized routing for all **865** Execution-index requirement
 ## PASS 05 — Risk target overlay
 
 The authoritative normalized routing for all **752** Risk-index requirements is `pass05_risk/RISK_REQUIREMENT_LEDGER.md`. SRC-005 Dossier 3/6 closure material targets `09_RISK_CONSTITUTION.md` and `deep-specs/risk/01..11`; supporting Risk items target those deep specs. Formula, Data/Replay, Execution/Recovery, Inventory/Sizing/Capital/Portfolio, Routing/Graph, Participants/Simulator, Infrastructure, Operations, Validation, Security/Deployment and Product retain their owning passes. External facts also target `EXTERNAL_REVALIDATION_REGISTER.md`. Destinationless requirements: **0**; silently moved primary ownership: **0**; stable IDs renumbered: **0**.
+
+## PASS 06 — Data / Recorder / Replay target overlay
+
+The authoritative normalized routing for all **661** Data/Recorder/Replay-index requirements is `pass06_data_recorder_replay/DATA_REQUIREMENT_LEDGER.md`. SRC-005 Dossier 4 closure targets `11_DATA_CONTRACTS.md`, `12_RECORDER_AND_REPLAY.md` and their 19 deep specs. Supporting Data/Recorder/Replay material targets those deep specs. Execution, Risk, Simulator, Participants, Inventory/Capital/Sizing, Routing/Graph, Infrastructure, Operations, Validation, Deployment/Security, Product and Formula retain their owning pass. External facts also target `EXTERNAL_REVALIDATION_REGISTER.md`. Destinationless requirements: **0**; silently moved primary ownership: **0**; stable IDs renumbered: **0**.

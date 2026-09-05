@@ -681,3 +681,12 @@
 - `REQ-DET-9001` — Deterministic decision identity
 - `REQ-SIM-9001` — Calibrated plausible outcomes, not exact alternate universe
 - `REQ-PART-9001` — Collective participant effects, not synthetic identities as truth
+
+## PASS 06 domain-review overlay
+
+- Reviewed requirements: **661/661**; original source locator failures: **0**.
+- Authority: SRC-005 Dossier 4/6 for Data/clock/determinism and Recorder/Replay closure; SRC-003 for compatible storage detail; SRC-006 for validation.
+- Canonical targets: `../../11_DATA_CONTRACTS.md`, `../../12_RECORDER_AND_REPLAY.md`, `../../deep-specs/data/`, `../../deep-specs/recorder-replay/`.
+- Row-level owners and dispositions: `../pass06_data_recorder_replay/DATA_REQUIREMENT_LEDGER.md`.
+- Dispositions: MASTER 346; DEEP_SPEC 32; CROSS_DOMAIN_FUTURE_PASS 252; EXTERNAL_REGISTER 20; OPEN_ITEM 2; SUPERSEDED 1; REJECTED 8; destinationless 0.
+- The five explicit anchor overlays below the 661 extracted rows remain overlays and were not recounted or renumbered.

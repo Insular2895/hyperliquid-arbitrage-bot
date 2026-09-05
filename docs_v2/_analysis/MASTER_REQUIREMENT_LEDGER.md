@@ -75159,3 +75159,12 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Canonical targets: `09_RISK_CONSTITUTION.md`, `deep-specs/risk/01..11`, and the analysis matrices under `pass05_risk/`.
 - Exact per-ID disposition: `pass05_risk/RISK_REQUIREMENT_LEDGER.md` — MASTER 253; DEEP_SPEC 67; CROSS_DOMAIN_FUTURE_PASS 344; FORMULA_REFERENCE 37; EXTERNAL_REGISTER 42; OPEN_ITEM 3; SUPERSEDED 2; REJECTED 4.
 - Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 06 started: NO.
+
+## PASS 06 — Data / Recorder / Replay domain-review overlay
+
+- PASS 00 Data/Recorder/Replay-index requirements reviewed at original locators: **661/661** across SRC-001–008; invalid/missing locators: **0**.
+- SRC-005 Dossier 4/6 reviewed sequentially in full: lines 5374–9877, sections 1–338; SRC-003 Recorder material lines 1–1595 and relevant SRC-001 Recorder/Replay material were reopened contextually.
+- Canonical targets: `11_DATA_CONTRACTS.md`, `12_RECORDER_AND_REPLAY.md`, `deep-specs/data/01..09`, `deep-specs/recorder-replay/01..10`, and PASS 06 evidence matrices.
+- Exact per-ID disposition: `pass06_data_recorder_replay/DATA_REQUIREMENT_LEDGER.md` — MASTER 346; DEEP_SPEC 32; CROSS_DOMAIN_FUTURE_PASS 252; EXTERNAL_REGISTER 20; OPEN_ITEM 2; SUPERSEDED 1; REJECTED 8.
+- Owner view: DATA 349; RECORDER 11; REPLAY 20; CROSS_DOMAIN 281. Ten PASS 00 keyword-status rows inside the Dossier 4 closure are routed to the master under closure authority without locking example parameter values.
+- Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 07 started: NO.
