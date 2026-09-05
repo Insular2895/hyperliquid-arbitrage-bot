@@ -75198,3 +75198,13 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Exact deterministic disposition: MASTER 263; DEEP_SPEC 1; CROSS_DOMAIN_EXISTING_PASS 70; CROSS_DOMAIN_FUTURE_PASS 31; RESEARCH/FUTURE 41; EXTERNAL_REGISTER 14; OPEN_ITEM 3; SUPERSEDED 1; REJECTED 2.
 - Closure locks isolated client-owned delivery, immutable OCI identity, least-privilege runtime, explicit persistence/secrets, reconciliation-first startup, transactional update/rollback, single active owner, fail-safe licensing and client-controlled redacted support. Tool providers, exact thresholds and commercial parameters remain open/calibrated.
 - Destinationless: 0; stable IDs renumbered: 0; external sources added: 0; PASS 10 started: NO.
+
+## PASS 10 — Validation / Operations / Monitoring / Incidents domain-review overlay
+
+- PASS00 Validation/Operations-index primary requirements reopened at original locators: **1,048/1,048** across SRC-001–008; invalid/missing locators: **0**; ordered locator digest: `78ea76df42cc83f7`.
+- Ownership classification: VALIDATION-OWNED 378; OPERATIONS-OWNED 23; MONITORING-OWNED 13; INCIDENT-OWNED 22; CROSS-DOMAIN-EVIDENCE 82; CROSS-DOMAIN-CONTRACT 530.
+- Deterministic disposition: MASTER 342; RESEARCH/FUTURE 285; CROSS_DOMAIN_EXISTING_PASS 274; CROSS_DOMAIN_PASS11 44; CROSS_DOMAIN_PASS13/14 43; CALIBRATION_ITEM 32; CROSS_DOMAIN_PASS12 15; REJECTED 9; OPEN_ITEM 3; SUPERSEDED 1.
+- Canonical targets: `16_VALIDATION_MATRIX.md`, `18_OPERATIONS_AND_MONITORING.md`, `deep-specs/validation/01..12`, `deep-specs/operations/01..10`, and analysis under `pass10_validation_operations/`.
+- Closure freezes scoped M0–M5, the critical-dependency maturity ceiling, CapabilityManifest promotion/demotion, Replay/Shadow/Micro-live evidence boundaries, predicted/actual calibration, P0–P3 semantics, SLO/runbook/incident evidence and reversible M5.
+- Exact numeric thresholds, sample sufficiency, cadence and tooling remain calibrated/open; current external facts remain routed to external revalidation; Formula expressions/units remain PASS11-owned; the implementation journey remains PASS12-owned.
+- Destinationless: 0; stable IDs renumbered: 0; external sources added: 0; PASS 11 started: NO.

@@ -1076,3 +1076,12 @@
 - `REQ-PART-9001` — Participant-model baseline validation
 - `REQ-INFRA-9001` — Upgrade and downgrade economic validation
 - `REQ-CLIENT-9001` — Per-client deployment lifecycle validation
+
+## PASS 10 domain-review overlay
+
+- Primary indexed rows reviewed: **1,048/1,048**; source locators reopened successfully: **1,048/1,048**; stable IDs renumbered: **0**.
+- Deterministic classification: VALIDATION-OWNED 378; OPERATIONS-OWNED 23; MONITORING-OWNED 13; INCIDENT-OWNED 22; CROSS-DOMAIN-EVIDENCE 82; CROSS-DOMAIN-CONTRACT 530.
+- Deterministic disposition: MASTER 342; RESEARCH/FUTURE 285; CROSS_DOMAIN_EXISTING_PASS 274; CROSS_DOMAIN_PASS11 44; CROSS_DOMAIN_PASS13/14 43; CALIBRATION_ITEM 32; CROSS_DOMAIN_PASS12 15; REJECTED 9; OPEN_ITEM 3; SUPERSEDED 1.
+- Row-level source statements remain in this PASS00 index; complete classification/disposition rules and counts are in `../pass10_validation_operations/VALIDATION_REQUIREMENT_LEDGER.md`.
+- Canonical destinations are `../../16_VALIDATION_MATRIX.md`, `../../18_OPERATIONS_AND_MONITORING.md`, `../../deep-specs/validation/`, `../../deep-specs/operations/` and PASS10 evidence matrices.
+- The thirteen explicit anchors were crosschecked as overlays, not added to the 1,048 primary count. Destinationless requirements: **0**.

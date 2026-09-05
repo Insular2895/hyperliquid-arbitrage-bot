@@ -167,3 +167,22 @@ Detailed source-evolution review: `pass08_graph_routes_quant/CONFLICT_RESOLUTION
 | CONFLICT-095 | Exact Docker/security provider already selected | Behavior locked; base/network/signing/registry choices remain OPEN/calibrated | HIGH | RESOLVED PASS09 |
 
 Full reasoning: `pass09_deployment_security/CONFLICT_RESOLUTION.md`. Conflicts found/resolved: **18/18**. No unresolved PASS09 documentary conflict remains; open products, thresholds, commercial parameters and future standby are retained explicitly.
+
+## PASS 10 — Validation / Operations review
+
+| Conflict ID | Concept | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|
+| CONFLICT-096 | Code/release/license as validation | Independent capability intersection; scoped evidence is mandatory | HIGH | RESOLVED PASS10 |
+| CONFLICT-097 | Global maturity badge | Exact capability scope plus critical-dependency ceiling | HIGH | RESOLVED PASS10 |
+| CONFLICT-098 | Shadow as real execution proof | Live no-effect behavior only; real fills/impact require Micro-live | HIGH | RESOLVED PASS10 |
+| CONFLICT-099 | Fixed Micro-live amount as capacity | Calibration example only; new sizes need new evidence | HIGH | RESOLVED PASS10 |
+| CONFLICT-100 | Replay over live contradiction | Persistent supported live evidence wins; isolated trades remain insufficient | HIGH | RESOLVED PASS10 |
+| CONFLICT-101 | Complex model automatically Champion | Baseline/simple Champion remains without OOS calibration/economic/runtime lift | HIGH | RESOLVED PASS10 |
+| CONFLICT-102 | F4 as production truth | Explicit-agent simulation remains research/challenger | HIGH | RESOLVED PASS10 |
+| CONFLICT-103 | Capital/raw depth expands Q_validated | Only next-band all-gates evidence expands; demotion can shrink immediately | HIGH | RESOLVED PASS10 |
+| CONFLICT-104 | Uptime equals operational success | Readiness, reconciliation, execution safety, evidence and calibration SLOs are distinct | HIGH | RESOLVED PASS10 |
+| CONFLICT-105 | Alert recovery auto-restores maturity | Current health may clear; evidence re-promotion remains explicit | HIGH | RESOLVED PASS10 |
+| CONFLICT-106 | Severity/cadence examples as constants | P0–P3 semantics locked; numeric thresholds/schedules calibrated | HIGH | RESOLVED PASS10 |
+| CONFLICT-107 | PASS10 maturity equals implementation roadmap | Evidence semantics stay PASS10; journey stays PASS12 | HIGH | RESOLVED PASS10 |
+
+Full reasoning: `pass10_validation_operations/CONFLICT_RESOLUTION.md`. Conflicts found/resolved: **12/12**. Remaining formula/external/calibration questions are owned gaps, not silently resolved contradictions.

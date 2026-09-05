@@ -141,3 +141,20 @@ Remaining gaps are explicit: current exchange metadata/fee/L2 rules; exact HWC/w
 | Release provenance/channel | Validation, Operations, Client deployment | Development/Candidate/Stable and promotion sequence closed; exact signing/scanning/registry tooling OPEN |
 
 PASS09 gaps intentionally retained: PASS10 CapabilityManifest/evidence promotion; Operations runbooks/telemetry backend; PASS11 formula compatibility audit; current exchange/runtime/provider facts; exact commercial license policy; future hot-standby fencing. No prior master was materially rewritten.
+
+## PASS 10 — Validation / Operations closure interfaces
+
+| Producer/concept | Consumers | Closed PASS10 contract / remaining owner |
+|---|---|---|
+| Maturity level / dependency ceiling | every capability, Risk, release | scoped M0–M5 and minimum critical-dependency maturity closed; evidence values remain empirical |
+| CapabilityManifest / ValidatedCapability | Deployment, Risk, Execution, Operations | source-backed fields and fail-closed scope intersection closed; serialized expansion remains Data-governed |
+| EvidenceId / validation report | every domain, incident, release | immutable reproducible evidence package semantics closed; storage/tool implementation remains future work |
+| Replay/Shadow/Micro-live boundary | Models, Simulator, Execution, Sizing, Release | what each layer can and cannot prove closed; capital authority remains Risk/operator decision |
+| Predicted-versus-actual dataset | Models, Simulator, Execution, Recovery, Accounting | joins, slices, distribution/tail reporting and append-only comparison closed |
+| Q_validated promotion/demotion | Sizing, Capital, Portfolio, Risk | evidence-gated expansion and immediate shrink closed; numeric bands require calibration |
+| Health/liveness/readiness | Deployment, Execution, Risk, client operations | distinct semantics and no persisted/automatic READY closed |
+| Metrics/alerts/SLOs | Risk, Operations, Validation, Incident | required families, P0–P3 meaning and locked safety actions closed; thresholds/backend calibrated/open |
+| Runbook / IncidentId / evidence package | Execution, Data, Deployment, Security, Support | reconciliation-first operational response, timeline and redaction boundary closed |
+| Operational review/revalidation | Models, Infra, Release, Capital | trigger classes and reversible M5 closed; exact calendar cadence calibrated |
+
+Remaining PASS10 cross-domain gaps: PASS11 exact formula/unit audit; PASS12 implementation journey; current exchange/platform/security external facts; telemetry/paging/dashboard/tool choices; sample minima, thresholds, windows and final serialized evidence/manifest schema through their owners.

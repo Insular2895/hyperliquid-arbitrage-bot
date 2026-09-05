@@ -135,3 +135,20 @@ PASS08 closes architecture and semantic ownership, not numeric calibration. It c
 | OPEN-016 | `REMAINS OPEN; VALIDATION OWNER` | Capability evidence thresholds affected by release/deployment changes |
 
 Additional calibrated/tool choices—base image/linkage, registry, SBOM/signing/scanner, UID/seccomp/resource profile, exact CLI aliases/exit numbers and support-bundle tooling—are not promoted into irreversible architecture decisions. PASS09 creates no new permanent open ID.
+
+## PASS 10 — Validation / Operations disposition
+
+| Open ID | PASS 10 status | Evidence or decision still required |
+|---|---|---|
+| OPEN-004 | `REMAINS OPEN; INFRA/RISK/OPERATIONS` | measured health distributions, thresholds, hold/recovery hysteresis and safe-action validation |
+| OPEN-007 | `REMAINS OPEN; RISK` | exact risk/tail/TTL/Recovery limits with Replay/Shadow/Micro-live evidence |
+| OPEN-008 | `REMAINS OPEN; PARTICIPANTS/VALIDATION` | exact Champion/Challenger artifacts, temporal OOS/calibration/economics/OOD/runtime evidence |
+| OPEN-009 | `REMAINS OPEN; INVENTORY/CAPITAL` | exact bands, penalties, q search/allocation limits and promoted size scopes |
+| OPEN-010 | `REMAINS OPEN; PARTICIPANTS` | survival horizons/parameters and drift criteria |
+| OPEN-011 | `REMAINS OPEN; DATA/INFRA/OPERATIONS` | capacity, incident pinning, restore objectives and retention/archive durations |
+| OPEN-012 | `REMAINS OPEN; EXECUTION/RISK/VALIDATION` | explicit MT/MTT/TM/MM activation and supported size/market evidence |
+| OPEN-014 | `REMAINS OPEN; COMMERCIAL/SECURITY` | license mechanism/current service behavior and tested outage/revocation path |
+| OPEN-015 | `REMAINS OPEN; OPERATIONS` | telemetry, dashboard, paging/export backend and per-client consent model |
+| OPEN-016 | `REMAINS OPEN; VALIDATION` | HWC/Atlas/support thresholds and evidence/sample sufficiency by capability |
+
+Additional calibrated choices: SLO targets/error budgets, alert thresholds/windows/routing/response objectives, operational calendar, evidence retention, fault-injection tooling, metric names/labels, command implementation and EvidenceId/CapabilityManifest serialized storage. PASS10 creates no irreversible project decision and no new permanent open ID.
