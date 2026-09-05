@@ -123,3 +123,22 @@ CONFLICT-009 (Recorder implementation) is closed: capture/Core implementation is
 | CONFLICT-065 | Recovery equals ordinary capital move | Existing unwanted exposure uses QF-079/080 and constitutional priority | HIGH | RESOLVED PASS07 |
 
 Full reasoning and PASS00 heuristic corrections: `pass07_inventory_capital/CONFLICT_RESOLUTION.md`. No unresolved documentary conflict remains; calibration and PASS08/PASS11 dependencies are not disguised as conflicts.
+
+## PASS 08 — Market Graph / Routes / Atlas / Quant review
+
+| Conflict ID | Concept | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|
+| CONFLICT-066 | Undirected market edge | Two directed conversions with different sides/units | HIGH | RESOLVED PASS08 |
+| CONFLICT-067 | Generic search per tick | Precomputed fixed 2/3-leg routes; general search offline/future | HIGH | RESOLVED PASS08 |
+| CONFLICT-068 | Global route scan | `pair_to_routes` affected-route lookup | HIGH | RESOLVED PASS08 |
+| CONFLICT-069 | Midpoint/fixed-fee edge | Exact L2 `NetConvert(q)` with versioned fee/metadata | HIGH | RESOLVED PASS08 |
+| CONFLICT-070 | Every two-leg route is OWA | Valid direct A→B comparator required | HIGH | RESOLVED PASS08 |
+| CONFLICT-071 | No-comparator OWA | Bridge/Capital Relocation candidate, PASS07-owned | HIGH | RESOLVED PASS08 |
+| CONFLICT-072 | Graph equals Atlas/opportunity | Topology, rolling economics and transient condition remain distinct | HIGH | RESOLVED PASS08 |
+| CONFLICT-073 | COLD means ignored | Global Watcher/Recorder preserve cheap awareness | HIGH | RESOLVED PASS08 |
+| CONFLICT-074 | Capital/HOT changes topology | Capital changes reachability/activation only | HIGH | RESOLVED PASS08 |
+| CONFLICT-075 | Conversion/execution alpha merged | QF-024 and QF-025 remain separate | HIGH | RESOLVED PASS08 |
+| CONFLICT-076 | Current universe in historical Replay | point-in-time Graph/Route/Atlas/metadata versions | HIGH | RESOLVED PASS08 |
+| CONFLICT-077 | Single-venue hardcoding | venue-aware identities; cross-exchange disabled V1 | HIGH | RESOLVED PASS08 |
+
+Detailed source-evolution review: `pass08_graph_routes_quant/CONFLICT_RESOLUTION.md`. No unresolved PASS08 documentary conflict remains; calibration, external facts, PASS11 audit and future venue work remain explicitly open dependencies.

@@ -104,3 +104,21 @@ Cross-domain gaps retained: exact RiskConfig schema encoding; asset/mode/model/i
 | Inventory/Capital/PnL schemas | Replay/Accounting | PASS06 frozen bases consumed; field expansions require Data schema governance, not ad hoc PASS07 mutation |
 
 PASS07 gaps intentionally retained: PASS08 route/Atlas field finalization; PASS11 Formula Index expression/unit corrections; exact inventory/relocation/sizing/allocation parameters under validation; any Data schema expansion through the Data owner.
+
+## PASS 08 — Graph / Routes / Atlas / Quant interfaces
+
+| Producer/concept | Consumers | Closed PASS08 contract / remaining owner |
+|---|---|---|
+| Metadata → directed Graph | Route, Replay, Risk | venue-aware topology/version closed; current Hyperliquid schema external |
+| RouteDefinition / `pair_to_routes` | Opportunity, Execution, Replay | fixed precomputed route families, reverse dependency and invalidation closed |
+| Book/Feature state | Route economics, Participants, Risk, Atlas | current versioned state/feature semantics closed; PASS06 owns schemas |
+| NetConvert / QF-007–016 | all conversion consumers | single directed L2/fee/precision semantic contract closed; PASS11 audits equations/units |
+| Direct/indirect/Triangle outputs | OWA, Accounting, Sizing | QF-017–023 classification/terminal units closed |
+| ConversionAlpha / ExecutionAlpha | Strategy, Execution, Simulator | QF-024 structural and QF-025 mode advantage remain separate |
+| Edge(q) / QF-027 | PASS07 Sizing | profitable size closed as route input; QF-076 remains PASS07 all-gates owner |
+| HWC / Route Activation | Compute, Capital, Risk | reversible selective-compute policy closed; thresholds calibrated |
+| Market Atlas | HWC, Capital, Risk, research | field/evidence/version boundary closed; learned models/support remain validation-owned |
+| Participant forecasts | Atlas, Opportunity, Simulator | PASS02 owns survival/response/replenishment/competition models |
+| Point-in-time Graph/Atlas | Replay, DecisionTrace | no-lookahead/version contract closed; persistence/schema PASS06-owned |
+
+Remaining gaps are explicit: current exchange metadata/fee/L2 rules; exact HWC/window/score calibrations; PASS11 exact Formula audit; future cross-exchange/transfer architecture; any serialized field expansion through PASS06 governance.

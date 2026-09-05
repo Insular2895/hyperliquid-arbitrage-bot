@@ -592,3 +592,11 @@
 - `REQ-OWA-9001` — OWA candidate versus Bridge / Capital Relocation
 - `REQ-FORMULA-9001` — ConversionAlpha measures structural route advantage
 - `REQ-FORMULA-9002` — ExecutionAlpha measures execution-method advantage
+
+## PASS 08 review overlay
+
+- Reviewed at original locators: **574/574**; locator failures: **0**.
+- Canonical disposition/destination rules and counts: `../pass08_graph_routes_quant/GRAPH_ROUTING_REQUIREMENT_LEDGER.md`.
+- Master/deep targets: `../../03_MARKET_GRAPH_AND_ROUTES.md` and `../../deep-specs/market-graph/`.
+- Later closure corrects early exploratory status for the directed venue-aware graph, fixed route types, OWA comparator, precomputation/reverse index, HWC/Atlas boundaries and alpha separation; details are in `../pass08_graph_routes_quant/CONFLICT_RESOLUTION.md`.
+- Stable Requirement IDs renumbered: **0**. Destinationless: **0**. PASS09 started: **NO**.

@@ -617,3 +617,11 @@
 - `REQ-FORMULA-9001` — ConversionAlpha measures structural route advantage
 - `REQ-FORMULA-9002` — ExecutionAlpha measures execution-method advantage
 - `REQ-SIM-9001` — Calibrated plausible outcomes, not exact alternate universe
+
+## PASS 08 review overlay
+
+- Reviewed at original locators: **597/597**; locator failures: **0**.
+- Canonical disposition/destination rules and counts: `../pass08_graph_routes_quant/QUANT_REQUIREMENT_LEDGER.md`.
+- Master/deep targets: `../../05_MARKET_MICROSTRUCTURE.md` and `../../deep-specs/market-microstructure/`.
+- QF-001–QF-043 semantic/runtime crosscheck: `../pass08_graph_routes_quant/FORMULA_CROSSCHECK.md`; exact equations/units remain PASS11-owned.
+- Stable Requirement IDs renumbered: **0**. Destinationless: **0**. PASS09 started: **NO**.

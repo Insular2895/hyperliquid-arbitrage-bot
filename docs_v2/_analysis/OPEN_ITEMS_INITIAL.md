@@ -108,3 +108,17 @@ Calibrated rather than architectural-open: RAW binary codec, 5–15-minute examp
 | OPEN-012 | `REMAINS OPEN; EXECUTION/RISK/VALIDATION CO-OWNER` | MT/MTT/TM/MM activation and size support |
 
 PASS07 closes the architecture and ownership boundaries, not numeric policy. It creates no new irreversible decision. The PASS00 `REQ-RISK-0301` OPEN keyword remains an indexed prior-domain item; PASS07 does not decide participant-address data collection policy.
+
+## PASS 08 — Graph / Routes / Atlas / Quant disposition
+
+| Open ID | PASS 08 status | Evidence still required |
+|---|---|---|
+| OPEN-004 | `REMAINS OPEN; INFRA/RISK CO-OWNER` | freshness/skew/compute budgets used by route state consistency |
+| OPEN-007 | `REMAINS OPEN; RISK OWNER` | spread/depth/volatility/jump/impact and route-level Risk limits |
+| OPEN-008 | `REMAINS OPEN; PARTICIPANTS/VALIDATION OWNER` | promoted survival/replenishment/response/competition models consumed by Atlas |
+| OPEN-009 | `REMAINS OPEN; PASS07 CALIBRATION OWNER` | capital reachability/Bridge/terminal parameters informing HWC |
+| OPEN-010 | `REMAINS OPEN; PARTICIPANTS OWNER` | survival/correction horizons and episode parameters |
+| OPEN-012 | `REMAINS OPEN; EXECUTION/RISK/VALIDATION CO-OWNER` | MT/MTT mode capability and size support |
+| OPEN-016 | `OPEN; PASS08/VALIDATION OWNER` | exact HWC thresholds, hysteresis, Atlas horizons/score components/support minima and route-activation compute budgets |
+
+PASS08 closes architecture and semantic ownership, not numeric calibration. It creates no new irreversible execution decision. Formula rendering/unit audit remains PASS11 work; current exchange facts are external revalidation rather than guessed open constants.

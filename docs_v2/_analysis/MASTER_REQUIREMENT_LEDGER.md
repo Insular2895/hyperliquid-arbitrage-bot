@@ -75177,3 +75177,14 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Disposition: MASTER 24; DEEP_SPEC 246; CROSS_DOMAIN_PASS08 37; FORMULA_REFERENCE 39; OPEN_ITEM 1; SUPERSEDED 0; REJECTED 2; RESEARCH/FUTURE 196.
 - Closure corrections from PASS04/PASS05 and direct keyword false positives are preserved in `pass07_inventory_capital/CONFLICT_RESOLUTION.md`; original PASS00 status remains provenance.
 - Destinationless: 0; stable IDs renumbered: 0; external sources added: 0; PASS 08 started: NO.
+
+## PASS 08 — Market Graph / Routes / Atlas / Quant domain-review overlay
+
+- PASS00 Routing-index rows reopened at original locators: **574/574**; Quant-index rows: **597/597**; empty/invalid locators: **0**.
+- The indexes overlap on **158** stable IDs, yielding **1,013** unique requirements; overlap was not double-counted as independent source authority.
+- Canonical targets: `03_MARKET_GRAPH_AND_ROUTES.md`, `05_MARKET_MICROSTRUCTURE.md`, `deep-specs/market-graph/01..09`, `deep-specs/market-microstructure/01..07`, and PASS08 evidence under `pass08_graph_routes_quant/`.
+- Routing disposition: MASTER 9; DEEP_SPEC 7; FORMULA_REFERENCE 26; CROSS_DOMAIN_EXISTING_PASS 231; CROSS_DOMAIN_FUTURE_PASS 17; RESEARCH/FUTURE 233; EXTERNAL_REGISTER 37; OPEN_ITEM 1; SUPERSEDED 1; REJECTED 12.
+- Quant disposition: MASTER 8; DEEP_SPEC 27; FORMULA_REFERENCE 151; CROSS_DOMAIN_EXISTING_PASS 151; CROSS_DOMAIN_FUTURE_PASS 15; RESEARCH/FUTURE 201; EXTERNAL_REGISTER 41; REJECTED 3.
+- Later closure locks directed venue-aware conversions, fixed precomputed route families, the OWA comparator rule, `pair_to_routes`, `NetConvert(q)`, HWC/Atlas boundaries and ConversionAlpha/ExecutionAlpha separation without promoting example thresholds or current exchange constants.
+- QF-001–QF-043 and ten required cross-domain formula interfaces were crosschecked; exact expression rendering/unit audit remains PASS11-owned.
+- Destinationless: 0; stable IDs renumbered: 0; external sources added: 0; PASS 09 started: NO.

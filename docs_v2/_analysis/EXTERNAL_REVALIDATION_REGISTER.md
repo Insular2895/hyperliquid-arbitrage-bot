@@ -72,3 +72,12 @@
 - `EXT-006`/`EXT-007`: verify current node/order-book-server data fields, ordering, completeness, spot/L2/L4 support before declaring higher-fidelity Source behavior.
 - Historical archive completeness and official dataset cadence/retention must be verified before using them as a replacement or supplement for proprietary RAW.
 - No web/external revalidation occurred in PASS 06 by explicit mission rule. These facts do not block documentation reconstruction; they can block adapter schemas, dataset fidelity claims, emulator validity or Live activation.
+
+## PASS 08 — Market Graph / Routes / Atlas / Quant disposition
+
+- `EXT-003`: verify current spot fee schedule, account tiers/discounts, maker/taker treatment, pair/quote-specific treatment and fee debit asset before implementing QF-014–016 or evaluating Live route economics.
+- `EXT-004`: verify current spot metadata schema, market/base/quote identifiers, `szDecimals`, tick/lot/significant-figure/price rules, minimum quantity/notional, rounding and market status/change semantics.
+- `EXT-002`/`EXT-005`: verify public L2 subscription/payload, depth/aggregation, snapshot/diff/update ordering, timestamps, sequencing, gap/reconnect behavior and available spot-market discovery before BookVersion/freshness assumptions.
+- `EXT-001`: verify current matching/marketable-limit and protected-order mechanics needed by exact book-walk-to-execution parity.
+- `EXT-016`: academic examples/statistics remain research motivation; they do not calibrate Hyperliquid HWC, competition, survival, latency or route profitability.
+- No web research occurred in PASS08 by explicit mission rule. These items do not block documentary reconstruction, but they can block exact adapters, Formula golden vectors tied to exchange behavior, Shadow/Micro-live claims or Live activation.
