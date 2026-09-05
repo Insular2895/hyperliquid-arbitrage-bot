@@ -75188,3 +75188,13 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Later closure locks directed venue-aware conversions, fixed precomputed route families, the OWA comparator rule, `pair_to_routes`, `NetConvert(q)`, HWC/Atlas boundaries and ConversionAlpha/ExecutionAlpha separation without promoting example thresholds or current exchange constants.
 - QF-001–QF-043 and ten required cross-domain formula interfaces were crosschecked; exact expression rendering/unit audit remains PASS11-owned.
 - Destinationless: 0; stable IDs renumbered: 0; external sources added: 0; PASS 09 started: NO.
+
+## PASS 09 — Deployment / Security / Client Distribution domain-review overlay
+
+- PASS00 Deployment/Security-index requirements reopened at original locators: **426/426** across SRC-001–008; invalid/missing locators: **0**.
+- SRC-006 Dossier 5/6 deployment closure reviewed sequentially in full: lines 1–3594; relevant SRC-004 Execution, SRC-005 Risk/Data and SRC-008 deployment/operations/validation interfaces were reopened contextually.
+- Canonical targets: `14_DEPLOYMENT_AND_DOCKER.md`, `deep-specs/deployment-security/01..12`, and PASS09 analysis under `pass09_deployment_security/`.
+- Classification: Deployment-owned 220; Security-owned 21; Distribution-owned 28; Licensing-owned 7; Operations interface 6; Infrastructure interface 22; Risk interface 19; Data interface 22; Validation interface 33; other cross-domain 48.
+- Exact deterministic disposition: MASTER 263; DEEP_SPEC 1; CROSS_DOMAIN_EXISTING_PASS 70; CROSS_DOMAIN_FUTURE_PASS 31; RESEARCH/FUTURE 41; EXTERNAL_REGISTER 14; OPEN_ITEM 3; SUPERSEDED 1; REJECTED 2.
+- Closure locks isolated client-owned delivery, immutable OCI identity, least-privilege runtime, explicit persistence/secrets, reconciliation-first startup, transactional update/rollback, single active owner, fail-safe licensing and client-controlled redacted support. Tool providers, exact thresholds and commercial parameters remain open/calibrated.
+- Destinationless: 0; stable IDs renumbered: 0; external sources added: 0; PASS 10 started: NO.

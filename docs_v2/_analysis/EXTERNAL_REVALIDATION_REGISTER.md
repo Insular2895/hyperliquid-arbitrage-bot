@@ -81,3 +81,12 @@
 - `EXT-001`: verify current matching/marketable-limit and protected-order mechanics needed by exact book-walk-to-execution parity.
 - `EXT-016`: academic examples/statistics remain research motivation; they do not calibrate Hyperliquid HWC, competition, survival, latency or route profitability.
 - No web research occurred in PASS08 by explicit mission rule. These items do not block documentary reconstruction, but they can block exact adapters, Formula golden vectors tied to exchange behavior, Shadow/Micro-live claims or Live activation.
+
+## PASS 09 — Deployment / Security / Client Distribution disposition
+
+- `EXT-001`, `EXT-002`, `EXT-004` and `EXT-008`: revalidate current Hyperliquid order/cancel/status, authenticated account/feed, API-wallet/signer/nonce, rate-limit, dead-man-switch and precision/minimum behavior before preflight, reconciliation, secret-scope and safe-shutdown implementation.
+- `EXT-003`: current fees/debit behavior must remain compatible with reconciliation/accounting and any release support claim.
+- `EXT-009`–`EXT-014`: provider plans, regions, host capabilities and commercial claims remain source snapshots; client installation requires current host/runtime/network qualification.
+- `EXT-015`: revalidate supported Rust/runtime/Docker Engine/Compose/Linux/base-image versions, security support windows and library status before freezing the supported platform matrix.
+- Current OCI registry immutability/access behavior, signature/SBOM/scanner integration and vulnerability databases/policies must be revalidated when concrete tooling is selected.
+- No web research occurred in PASS09 by explicit mission rule. These items do not block clean-room documentation, but can block build implementation, installer support, security acceptance, Micro-live or Live activation.

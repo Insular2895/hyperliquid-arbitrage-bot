@@ -122,3 +122,22 @@ PASS07 gaps intentionally retained: PASS08 route/Atlas field finalization; PASS1
 | Point-in-time Graph/Atlas | Replay, DecisionTrace | no-lookahead/version contract closed; persistence/schema PASS06-owned |
 
 Remaining gaps are explicit: current exchange metadata/fee/L2 rules; exact HWC/window/score calibrations; PASS11 exact Formula audit; future cross-exchange/transfer architecture; any serialized field expansion through PASS06 governance.
+
+## PASS 09 — Deployment / Security interfaces
+
+| Producer/concept | Consumers | Closed PASS09 contract / remaining owner |
+|---|---|---|
+| DeploymentManifest | Data RunManifest, Validation, Operations, Support | Installation/image/config/model/start identity closed; PASS06 RunManifest meaning unchanged |
+| ResolvedConfig/config hash | Risk, Execution, Data, Replay | External read-only config and fail-closed compatibility closed; schema encoding remains Data-governed |
+| Secret/signer boundary | Execution, Risk, Operations | No image/log/export/vendor secret; current API-wallet/nonce permissions require external revalidation |
+| Runtime hardening/host profile | Infrastructure, Risk, Validation | Non-root/read-only/no privileged/socket rules closed; exact resources/network/profile calibrated |
+| Startup/readiness states | Execution, Risk, Operations | Boot is non-ready; sync/reconcile precede READY; state reducer remains Execution-owned |
+| Persistent mount/backup boundary | Data, Recorder, Execution, Operations | Replaceable image and protected economic evidence closed; formats/retention remain PASS06-owned |
+| Capability intersection | Validation, Risk, Execution, Licensing | Compiled/configured/licensed/channel/validated/readiness/Risk remain separate; PASS10 promotes evidence |
+| License failure envelope | Risk, Execution, Operations | New risk blocked when invalid; cancel/reconcile/Recovery/read access preserved |
+| Update/rollback/host move | Execution, Data, Risk, Operations | Risk-off/resolve/backup/owner handoff/reconcile closed; runbook/tooling remains Operations/implementation |
+| Active owner | Execution, Security, Recovery | One Live process; ambiguity blocks new risk; future distributed fencing remains FUTURE |
+| `botctl`/diagnostic bundle | Operations, Security, Client support | Local idempotent operator surface and redaction boundary closed; final CLI/API and backend remain future work |
+| Release provenance/channel | Validation, Operations, Client deployment | Development/Candidate/Stable and promotion sequence closed; exact signing/scanning/registry tooling OPEN |
+
+PASS09 gaps intentionally retained: PASS10 CapabilityManifest/evidence promotion; Operations runbooks/telemetry backend; PASS11 formula compatibility audit; current exchange/runtime/provider facts; exact commercial license policy; future hot-standby fencing. No prior master was materially rewritten.

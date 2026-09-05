@@ -9,6 +9,10 @@
 - Known contradictions: see `../CONTRADICTION_REGISTER.md`
 - Open items: see `../OPEN_ITEMS_INITIAL.md`
 - Planned reconstruction pass: PASS 09
+- Domain pass review: `PASS09_REVIEW_COMPLETE`
+- Canonical master: `../../14_DEPLOYMENT_AND_DOCKER.md`
+- Canonical detail: `../../deep-specs/deployment-security/`
+- Analysis ledger: `../pass09_deployment_security/DEPLOYMENT_REQUIREMENT_LEDGER.md`
 
 ## Requirement IDs
 
@@ -442,3 +446,23 @@
 ## Explicit canonical anchor overlays
 
 - `REQ-CLIENT-9001` — Per-client non-SaaS deployment model
+
+## PASS 09 disposition overlay
+
+All **426/426** rows were reopened against their original locators; failures: **0**. Stable IDs and PASS00 source labels remain provenance. SRC-006 Dossier 5 closure supplies the domain authority for isolated per-client operation, OCI packaging, secrets/security, onboarding, licensing, update/rollback and operations boundaries.
+
+| Disposition | Count |
+|---|---:|
+| `MASTER` | 263 |
+| `DEEP_SPEC` | 1 |
+| `CROSS_DOMAIN_EXISTING_PASS` | 70 |
+| `CROSS_DOMAIN_FUTURE_PASS` | 31 |
+| `RESEARCH/FUTURE` | 41 |
+| `EXTERNAL_REGISTER` | 14 |
+| `OPEN_ITEM` | 3 |
+| `SUPERSEDED` | 1 |
+| `REJECTED` | 2 |
+| **Total** | **426** |
+| **Destinationless** | **0** |
+
+The row-complete classification/destination rule is in `../pass09_deployment_security/DEPLOYMENT_REQUIREMENT_LEDGER.md`; no stable requirement was renumbered or silently transferred to another owner.

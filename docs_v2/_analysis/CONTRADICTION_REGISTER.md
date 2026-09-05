@@ -142,3 +142,28 @@ Full reasoning and PASS00 heuristic corrections: `pass07_inventory_capital/CONFL
 | CONFLICT-077 | Single-venue hardcoding | venue-aware identities; cross-exchange disabled V1 | HIGH | RESOLVED PASS08 |
 
 Detailed source-evolution review: `pass08_graph_routes_quant/CONFLICT_RESOLUTION.md`. No unresolved PASS08 documentary conflict remains; calibration, external facts, PASS11 audit and future venue work remain explicitly open dependencies.
+
+## PASS 09 — Deployment / Security / Distribution review
+
+| Conflict ID | Concept | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|
+| CONFLICT-078 | Centralized client execution | Isolated client VPS/container/account/signer/capital | HIGH | RESOLVED PASS09 |
+| CONFLICT-079 | Distributed service baseline | One initial image/process/container; logical modules remain separated | HIGH | RESOLVED PASS09 |
+| CONFLICT-080 | External database/broker in hot path | No Redis/Postgres/Kafka/Kubernetes baseline dependency | HIGH | RESOLVED PASS09 |
+| CONFLICT-081 | Vendor control/license in hot path | License/telemetry/control are cold or optional; vendor not required for execution | HIGH | RESOLVED PASS09 |
+| CONFLICT-082 | Tag as artifact truth | Immutable OCI digest plus provenance is authoritative | HIGH | RESOLVED PASS09 |
+| CONFLICT-083 | Production `latest` | Explicit version/digest pinning | HIGH | RESOLVED PASS09 |
+| CONFLICT-084 | Mutable client state in image | Config/secrets/state/data/logs have declared external boundaries | HIGH | RESOLVED PASS09 |
+| CONFLICT-085 | Restart resumes trading | Every restart syncs and reconciles before READY | HIGH | RESOLVED PASS09 |
+| CONFLICT-086 | Liveness equals readiness | Liveness, readiness and trading health are distinct | HIGH | RESOLVED PASS09 |
+| CONFLICT-087 | License failure disables safety | New risk stops; cancel/reconcile/Recovery/read access remain | HIGH | RESOLVED PASS09 |
+| CONFLICT-088 | Vendor-controlled diagnostics | Bundle remains local/redacted until explicit client export | HIGH | RESOLVED PASS09 |
+| CONFLICT-089 | Docker guarantees IP secrecy | Packaging is not a confidentiality guarantee; commercial/legal controls remain | HIGH | RESOLVED PASS09 |
+| CONFLICT-090 | Hot standby as baseline | Reproducible cold recovery first; standby needs future fencing validation | HIGH | RESOLVED PASS09 |
+| CONFLICT-091 | Replace-and-restart update | Transactional risk-off/resolve/backup/handoff/reconcile/health | HIGH | RESOLVED PASS09 |
+| CONFLICT-092 | Rollback restores old economic truth | Previous code reconciles against current exchange truth | HIGH | RESOLVED PASS09 |
+| CONFLICT-093 | Client config can weaken all limits | Client may tighten, never relax constitutional Risk floors | HIGH | RESOLVED PASS09 |
+| CONFLICT-094 | Broad default telemetry | Minimal opt-in telemetry excludes credentials/raw trading/account history | HIGH | RESOLVED PASS09 |
+| CONFLICT-095 | Exact Docker/security provider already selected | Behavior locked; base/network/signing/registry choices remain OPEN/calibrated | HIGH | RESOLVED PASS09 |
+
+Full reasoning: `pass09_deployment_security/CONFLICT_RESOLUTION.md`. Conflicts found/resolved: **18/18**. No unresolved PASS09 documentary conflict remains; open products, thresholds, commercial parameters and future standby are retained explicitly.

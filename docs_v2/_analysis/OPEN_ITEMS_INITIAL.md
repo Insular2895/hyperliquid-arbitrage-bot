@@ -122,3 +122,16 @@ PASS07 closes the architecture and ownership boundaries, not numeric policy. It 
 | OPEN-016 | `OPEN; PASS08/VALIDATION OWNER` | exact HWC thresholds, hysteresis, Atlas horizons/score components/support minima and route-activation compute budgets |
 
 PASS08 closes architecture and semantic ownership, not numeric calibration. It creates no new irreversible execution decision. Formula rendering/unit audit remains PASS11 work; current exchange facts are external revalidation rather than guessed open constants.
+
+## PASS 09 — Deployment / Security disposition
+
+| Open ID | PASS 09 status | Evidence or decision still required |
+|---|---|---|
+| OPEN-003 | `REMAINS OPEN; INFRA/SECURITY CO-OWNER` | Docker bridge versus host-mode latency evidence plus attack-surface review |
+| OPEN-004 | `REMAINS OPEN; INFRA/RISK OWNER` | CPU/memory/disk/clock/restart health thresholds and hysteresis |
+| OPEN-011 | `REMAINS OPEN; DATA/INFRA/OPERATIONS CO-OWNER` | Volume capacity, backup/restore target and retention values |
+| OPEN-014 | `REMAINS OPEN; COMMERCIAL/SECURITY OWNER` | License provider/mechanism, grace duration, binding and revocation delivery |
+| OPEN-015 | `REMAINS OPEN; OPERATIONS OWNER` | Telemetry/export backend and client-consent implementation |
+| OPEN-016 | `REMAINS OPEN; VALIDATION OWNER` | Capability evidence thresholds affected by release/deployment changes |
+
+Additional calibrated/tool choices—base image/linkage, registry, SBOM/signing/scanner, UID/seccomp/resource profile, exact CLI aliases/exit numbers and support-bundle tooling—are not promoted into irreversible architecture decisions. PASS09 creates no new permanent open ID.
