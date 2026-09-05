@@ -96,3 +96,15 @@ PASS 05 creates no new architectural open item. Exact numeric thresholds are evi
 | OPEN-015 | `REMAINS OPEN; OPERATIONS OWNER` | Telemetry/export backend for data-quality and incident evidence |
 
 Calibrated rather than architectural-open: RAW binary codec, 5–15-minute example chunk duration, queue capacities, disk watermarks, trade/incident window lengths, checkpoint cadence, partition sizes, checksum algorithm, source-priority table and cross-recorder merge policy. PASS 06 creates no new irreversible architecture decision.
+
+## PASS 07 — Inventory / Capital disposition
+
+| Open ID | PASS 07 status | Evidence still required |
+|---|---|---|
+| OPEN-007 | `REMAINS OPEN; RISK OWNER` | Exact P+/CVaR/impact/participation/capital-at-risk limits used by the feasible size region |
+| OPEN-008 | `REMAINS OPEN; PARTICIPANTS/VALIDATION OWNER` | Promoted forecast models/support that influence Q_validated and capital utility |
+| OPEN-009 | `REMAINS OPEN; PASS07 CALIBRATION OWNER` | Asset classifications, targets, soft/hard bands, NetFlow windows, penalty/stranded parameters, Bridge threshold/hysteresis/cooldown, search grid and allocation limits |
+| OPEN-010 | `REMAINS OPEN; PARTICIPANTS OWNER` | Survival horizons/parameters used for future opportunity value and slicing |
+| OPEN-012 | `REMAINS OPEN; EXECUTION/RISK/VALIDATION CO-OWNER` | MT/MTT/TM/MM activation and size support |
+
+PASS07 closes the architecture and ownership boundaries, not numeric policy. It creates no new irreversible decision. The PASS00 `REQ-RISK-0301` OPEN keyword remains an indexed prior-domain item; PASS07 does not decide participant-address data collection policy.

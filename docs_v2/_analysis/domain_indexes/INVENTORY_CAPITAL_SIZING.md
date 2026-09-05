@@ -564,3 +564,12 @@
 - `REQ-SIZE-9001` — Position Sizing is economic allocation
 - `REQ-EXEC-9001` — Actual fills drive real exposure
 - `REQ-RISK-9001` — Unknown means no new risk, not halt everything
+
+## PASS 07 reviewed overlay
+
+- Original locators reopened: **545/545**; failures: **0**.
+- Canonical master: `../../08_INVENTORY_AND_CAPITAL.md`.
+- Deep specifications: `../../deep-specs/inventory-capital/01..11`.
+- Row-level classification/disposition: `../pass07_inventory_capital/INVENTORY_CAPITAL_REQUIREMENT_LEDGER.md`.
+- Classification counts: INVENTORY-OWNED 27; CAPITAL-OWNED 23; BRIDGE-OWNED 16; SIZING-OWNED 11; PORTFOLIO-OWNED 5; ACCOUNTING-INTERFACE 36; CROSS-DOMAIN 427.
+- Destinationless requirements: **0**. Stable IDs were not renumbered. PASS00 heuristic status remains visible; reviewed corrections are in `../pass07_inventory_capital/CONFLICT_RESOLUTION.md`.

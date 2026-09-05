@@ -75168,3 +75168,12 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Exact per-ID disposition: `pass06_data_recorder_replay/DATA_REQUIREMENT_LEDGER.md` — MASTER 346; DEEP_SPEC 32; CROSS_DOMAIN_FUTURE_PASS 252; EXTERNAL_REGISTER 20; OPEN_ITEM 2; SUPERSEDED 1; REJECTED 8.
 - Owner view: DATA 349; RECORDER 11; REPLAY 20; CROSS_DOMAIN 281. Ten PASS 00 keyword-status rows inside the Dossier 4 closure are routed to the master under closure authority without locking example parameter values.
 - Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 07 started: NO.
+
+## PASS 07 — Inventory / Capital / Bridge / Sizing domain-review overlay
+
+- PASS00 Inventory/Capital/Sizing-index requirements reopened at original locators: **545/545** across SRC-001–008; invalid/missing locators: **0**.
+- Canonical targets: `08_INVENTORY_AND_CAPITAL.md`, `deep-specs/inventory-capital/01..11`, and PASS07 evidence matrices under `pass07_inventory_capital/`.
+- Exact per-ID classification/disposition: `pass07_inventory_capital/INVENTORY_CAPITAL_REQUIREMENT_LEDGER.md` — INVENTORY-OWNED 27; CAPITAL-OWNED 23; BRIDGE-OWNED 16; SIZING-OWNED 11; PORTFOLIO-OWNED 5; ACCOUNTING-INTERFACE 36; CROSS-DOMAIN 427.
+- Disposition: MASTER 24; DEEP_SPEC 246; CROSS_DOMAIN_PASS08 37; FORMULA_REFERENCE 39; OPEN_ITEM 1; SUPERSEDED 0; REJECTED 2; RESEARCH/FUTURE 196.
+- Closure corrections from PASS04/PASS05 and direct keyword false positives are preserved in `pass07_inventory_capital/CONFLICT_RESOLUTION.md`; original PASS00 status remains provenance.
+- Destinationless: 0; stable IDs renumbered: 0; external sources added: 0; PASS 08 started: NO.

@@ -100,3 +100,26 @@ CONFLICT-006 (unbounded market language versus protected IOC/marketable limit) w
 | CONFLICT-049 | Later model in historical truth | Later artifacts require explicit `COUNTERFACTUAL_MODEL`; historical truth is point-in-time | HIGH | `RESOLVED` PASS 06 |
 
 CONFLICT-009 (Recorder implementation) is closed: capture/Core implementation is Rust-compatible and non-blocking; Python remains offline normalization/research tooling, not the source capture hot path. Full analysis: `pass06_data_recorder_replay/DATA_CONFLICT_RESOLUTION.md`. No unresolved Data/Recorder/Replay documentary conflict remains.
+
+## PASS 07 — Inventory / Capital / Bridge / Sizing review
+
+| Conflict ID | Concept | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|
+| CONFLICT-050 | Fixed inventory percentages | Ordered targets/bands are locked; values are calibrated evidence, not examples | HIGH | RESOLVED PASS07 |
+| CONFLICT-051 | Universal holdability | `CORE_INVENTORY`, `TRANSIT`, `EXCLUDED` with versioned learned class | HIGH | RESOLVED PASS07 |
+| CONFLICT-052 | Positive route equals valid terminal | Terminal Viability/exit/stranded/hard gates can reject | HIGH | RESOLVED PASS07 |
+| CONFLICT-053 | OWA equals Bridge | OWA needs valid direct comparator; otherwise Bridge/relocation | HIGH | RESOLVED PASS07 |
+| CONFLICT-054 | Fewest-hop relocation | Use economic path/NetConvert and QF-072 | HIGH | RESOLVED PASS07 |
+| CONFLICT-055 | Bridge fees-only accounting | QF-070 plus expected exit and relocation risk; no duplicated costs | HIGH | RESOLVED PASS07 |
+| CONFLICT-056 | Chase current best edge | Point-in-time future utility plus persistence/hysteresis | HIGH | RESOLVED PASS07 |
+| CONFLICT-057 | Reallocate on each rank change | Calibrated hysteresis/cooldown prevents flip-flop | HIGH | RESOLVED PASS07 |
+| CONFLICT-058 | Sizing equals Slicing | Exposure amount and child execution are separate owners/stages | HIGH | RESOLVED PASS07 |
+| CONFLICT-059 | Profitable capacity equals validated capacity | QF-027 and QF-076 remain distinct | HIGH | RESOLVED PASS07 |
+| CONFLICT-060 | Capital increase creates capacity | Q_validated changes only with validated evidence/state | HIGH | RESOLVED PASS07 |
+| CONFLICT-061 | Route capacities independent | QF-073/074 reservations and QF-078 joint constraints | HIGH | RESOLVED PASS07 |
+| CONFLICT-062 | Highest bps wins | Optimize joint absolute RAEV inside Risk/resource constraints | HIGH | RESOLVED PASS07 |
+| CONFLICT-063 | Route-only PnL | Hierarchical attributable QF-105–108 accounting | HIGH | RESOLVED PASS07 |
+| CONFLICT-064 | Losing Rebalance hidden as alpha | Separate Rebalance purpose and PnL | HIGH | RESOLVED PASS07 |
+| CONFLICT-065 | Recovery equals ordinary capital move | Existing unwanted exposure uses QF-079/080 and constitutional priority | HIGH | RESOLVED PASS07 |
+
+Full reasoning and PASS00 heuristic corrections: `pass07_inventory_capital/CONFLICT_RESOLUTION.md`. No unresolved documentary conflict remains; calibration and PASS08/PASS11 dependencies are not disguised as conflicts.
