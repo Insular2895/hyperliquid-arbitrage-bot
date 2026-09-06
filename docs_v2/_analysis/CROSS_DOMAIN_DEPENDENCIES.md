@@ -158,3 +158,17 @@ PASS09 gaps intentionally retained: PASS10 CapabilityManifest/evidence promotion
 | Operational review/revalidation | Models, Infra, Release, Capital | trigger classes and reversible M5 closed; exact calendar cadence calibrated |
 
 Remaining PASS10 cross-domain gaps: PASS11 exact formula/unit audit; PASS12 implementation journey; current exchange/platform/security external facts; telemetry/paging/dashboard/tool choices; sample minima, thresholds, windows and final serialized evidence/manifest schema through their owners.
+
+## PASS 11 — Formula dependencies and remaining owners
+
+| Producer/concept | Consumers | Closed PASS11 contract / remaining owner |
+|---|---|---|
+| QF-001–043 deterministic market math | Graph, Quant, Simulator, Risk, Execution | equations/units/signs/failures closed; current exchange precision/fees/minimums external |
+| QF-044–055 learned survival/maker interfaces | Participants, Simulator, Execution, Infra | mathematical targets/functionals closed; artifacts, horizons and censor/tail estimators Validation-owned |
+| QF-056–063 outcome/tail/RAEV | Simulator, Risk, Sizing | sign/scenario/cost ownership closed; empirical VaR/ES estimator and calibrated penalties open |
+| QF-064–080 inventory/capital/sizing/recovery | Inventory, Bridge, Portfolio, Risk, Execution | objectives/gates/units closed; bands/search/solver parameters remain calibrated/open |
+| QF-081–104 participants/infra/calibration/confidence | Participants, Infra, Model, Validation, Ops | like-for-like and status contracts closed; estimators/thresholds/evidence remain owner-controlled |
+| QF-105–110 accounting/drawdown | Accounting, Inventory, Risk, Ops | disjoint identities/signs closed; zero-peak/empty-interval policy open |
+| FormulaVersion/golden/parity | Data, Replay, Deployment, Validation | version/change invalidation and exact/tolerance split closed; serialized implementation remains Data/Build-owned |
+
+The complete 27-item gap register is `pass11_formula_book/FORMULA_CROSS_DOMAIN_GAP_REGISTER.md`. PASS11 did not rewrite earlier masters or start implementation.

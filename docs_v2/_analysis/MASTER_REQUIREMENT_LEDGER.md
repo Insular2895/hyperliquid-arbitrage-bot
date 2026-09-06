@@ -75208,3 +75208,13 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Closure freezes scoped M0–M5, the critical-dependency maturity ceiling, CapabilityManifest promotion/demotion, Replay/Shadow/Micro-live evidence boundaries, predicted/actual calibration, P0–P3 semantics, SLO/runbook/incident evidence and reversible M5.
 - Exact numeric thresholds, sample sufficiency, cadence and tooling remain calibrated/open; current external facts remain routed to external revalidation; Formula expressions/units remain PASS11-owned; the implementation journey remains PASS12-owned.
 - Destinationless: 0; stable IDs renumbered: 0; external sources added: 0; PASS 11 started: NO.
+
+## PASS 11 — Formula Book final-audit overlay
+
+- Stable formula requirements reviewed: **153/153** (`REQ-FORMULA-0001`–`REQ-FORMULA-0151`, `REQ-FORMULA-9001`, `REQ-FORMULA-9002`); IDs renumbered: **0**.
+- Canonical formula contracts audited: **110/110** (`QF-001`–`QF-110`); missing/duplicate/unowned: **0/0/0**.
+- Authority and destination: SRC-004 Formula Book → `04_FORMULA_BOOK.md`, `deep-specs/formulas/01..12`, verified `FORMULA_INDEX.md`, golden catalog, external register, open items, or the PASS11 conflict/cross-domain registers. Every pre-existing `Target Master Doc: Formula Book` / `Target Deep Spec: Formula audit/index` row now resolves through those artifacts.
+- Status corrections: exact mixed/source labels restored; QF-099 and QF-106–110 are `SOURCE_DERIVED_FROM_CONTEXT`; QF-103 is `MODEL DEPENDENT`; QF-104 is the source-explicit gated categorical contract and not a fixed scalar score.
+- Consumer overlay: formula-to-owner/consumer mappings are canonical in `pass11_formula_book/FORMULA_CONSUMER_MATRIX.md`; formula dependencies and cost ownership are canonical in `FORMULA_DEPENDENCY_GRAPH.md` and `DOUBLE_COUNTING_AND_ACCOUNTING_LEDGER.md`.
+- Requirement disposition rule: equation/semantic rows → `MASTER` plus `DEEP_SPEC`/`FORMULA_INDEX`; deterministic example/parity rows → `GOLDEN_VECTOR`; current exchange rule rows → `EXTERNAL_REGISTER`; genuinely missing mathematical policies → `OPEN_ITEM`; prior divergent variants → `SUPERSEDED` or `REJECTED`; prior-master discrepancies → `CROSS_DOMAIN_PASS14`. No formula-related row remains without at least one allowed terminal destination.
+- Destinationless formula requirements: **0**; external sources added/revalidated: **0**; PASS 12 started: **NO**.

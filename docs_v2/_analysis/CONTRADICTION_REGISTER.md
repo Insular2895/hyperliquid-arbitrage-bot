@@ -186,3 +186,17 @@ Full reasoning: `pass09_deployment_security/CONFLICT_RESOLUTION.md`. Conflicts f
 | CONFLICT-107 | PASS10 maturity equals implementation roadmap | Evidence semantics stay PASS10; journey stays PASS12 | HIGH | RESOLVED PASS10 |
 
 Full reasoning: `pass10_validation_operations/CONFLICT_RESOLUTION.md`. Conflicts found/resolved: **12/12**. Remaining formula/external/calibration questions are owned gaps, not silently resolved contradictions.
+
+## PASS 11 — Formula Book final audit
+
+| Conflict ID | Concept | Canonical resolution | Confidence | Domain review |
+|---|---|---|---|---|
+| CONFLICT-108 | Universal `output×(1-fee)` NetConvert | Actual fee debit asset/deltas and QF-016 order govern | HIGH | RESOLVED PASS11 |
+| CONFLICT-109 | Insufficient depth erases book-walk partial | QF-009/010 return explicit fill/residual; full-fill consumer rejects separately | HIGH | RESOLVED PASS11 |
+| CONFLICT-110 | QF-046 hazard-product index | SRC-004 exact `j=1..k` supersedes legacy `j<k` | HIGH | RESOLVED PASS11 |
+| CONFLICT-111 | QF-099 source-explicit LOCKED label | No formal label; fixed equation is `SOURCE_DERIVED_FROM_CONTEXT` | HIGH | RESOLVED PASS11 |
+| CONFLICT-112 | QF-103 generic LOCKED formula | Exact status `MODEL DEPENDENT`; only range/direction contract fixed | HIGH | RESOLVED PASS11 |
+| CONFLICT-113 | QF-104 fixed scalar confidence | Six explicit gates produce categories; no arbitrary weighted score | HIGH | RESOLVED PASS11 |
+| CONFLICT-114 | QF-106–110 source-explicit LOCKED labels | Definitions retained with absent-label provenance `SOURCE_DERIVED_FROM_CONTEXT` | HIGH | RESOLVED PASS11 |
+
+Detailed source-first resolution: `pass11_formula_book/FORMULA_CONFLICT_RESOLUTION.md`. Conflicts found/resolved: **7/7**; remaining: **0**. Source-omitted numerical conventions remain open items, not manufactured conflict resolutions.

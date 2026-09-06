@@ -4,7 +4,7 @@
 
 `docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception.
 
-PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01 a reconstruit Infrastructure. PASS 02 a reconstruit Market Participants / Competition. PASS 03 a reconstruit le Counterfactual Simulator. PASS 04 a reconstruit l'Execution State Machine, ses cinq automates, ses branches de partial/dust/cancel, Recovery, Reconciliation et sa validation depuis les sources originales. PASS 05 a reconstruit la Risk Constitution, ses 30 invariants, ses gates, permissions, kills, contrats, politiques de Recovery et preuves. PASS 06 a reconstruit les Data Contracts, le Recorder, le Replay, la déterminisme, la lineage, la rétention et les règles de checkpoint/recovery. L'ensemble reste soumis à revue humaine.
+PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques, leurs unités, signes, échecs, dépendances, consommateurs et golden vectors. L'ensemble reste soumis à revue humaine.
 
 - [13 — Infrastructure](13_INFRASTRUCTURE.md)
 - [Infrastructure deep specs](deep-specs/infrastructure/README.md)
@@ -26,5 +26,14 @@ PASS 00 cartographie les exigences, formules, concepts, conflits et destinations
 - [12 — Recorder and Replay](12_RECORDER_AND_REPLAY.md)
 - [Recorder/Replay deep specs](deep-specs/recorder-replay/README.md)
 - [PASS 06 evidence](./_analysis/pass06_data_recorder_replay/PASS06_FINAL_REPORT.md)
+- [08 — Inventory and Capital](08_INVENTORY_AND_CAPITAL.md)
+- [03 — Market Graph and Routes](03_MARKET_GRAPH_AND_ROUTES.md)
+- [05 — Market Microstructure](05_MARKET_MICROSTRUCTURE.md)
+- [14 — Deployment and Docker](14_DEPLOYMENT_AND_DOCKER.md)
+- [16 — Validation Matrix](16_VALIDATION_MATRIX.md)
+- [18 — Operations and Monitoring](18_OPERATIONS_AND_MONITORING.md)
+- [04 — Formula Book](04_FORMULA_BOOK.md)
+- [Formula deep specs](deep-specs/formulas/README.md)
+- [PASS 11 evidence](./_analysis/pass11_formula_book/PASS11_FINAL_REPORT.md)
 
 Ordre d'autorité: dossiers de fermeture 1–6 dans leurs domaines, puis sources exploratoires non contredites. Les faits externes datés exigent une revalidation ultérieure.

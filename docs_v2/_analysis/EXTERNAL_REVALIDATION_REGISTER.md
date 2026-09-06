@@ -7,7 +7,7 @@
 | EXT-001 | Hyperliquid order types/matching/batching mechanics | SRC-002/004/008 | Exchange behavior can change | PASS 04/11 | NO |
 | EXT-002 | API/WS endpoints, subscriptions, snapshots and reconnect behavior | SRC-002/004/006 | API contracts evolve | PASS 04/06/09 | NO |
 | EXT-003 | Fees, tiers and debit asset behavior | SRC-002/003/004 | Commercial rules evolve | PASS 08/11 | NO |
-| EXT-004 | Metadata, precision, lot/tick/minimum rules | SRC-001/002/004 | Exchange rules evolve | PASS 06/08 | NO |
+| EXT-004 | Metadata, precision, lot/tick/minimum rules | SRC-001/002/004 | Exchange rules evolve | PASS 06/08/11 | NO |
 | EXT-005 | Public feed cadence/fields and trade identities | SRC-002/007/008 | Feed schemas/cadence evolve | PASS 02/06 | NO |
 | EXT-006 | Node requirements, flags, outputs and region recommendation | SRC-002/007/008 | Node software/docs evolve | PASS 01/06 | NO |
 | EXT-007 | order_book_server L2/L4/spot support | SRC-002/007/008 | Repository capability can change | PASS 01/03 | NO |
@@ -90,3 +90,11 @@
 - `EXT-015`: revalidate supported Rust/runtime/Docker Engine/Compose/Linux/base-image versions, security support windows and library status before freezing the supported platform matrix.
 - Current OCI registry immutability/access behavior, signature/SBOM/scanner integration and vulnerability databases/policies must be revalidated when concrete tooling is selected.
 - No web research occurred in PASS09 by explicit mission rule. These items do not block clean-room documentation, but can block build implementation, installer support, security acceptance, Micro-live or Live activation.
+
+## PASS 11 — Formula Book disposition
+
+- `EXT-003`: QF-014–016 require current official fee tier/rate/rebate fields, effective time and actual debit-asset behavior before exchange-bound implementation or Live economics.
+- `EXT-004`: QF-007/008 and all QF-016/068/070/075 consumers require current `szDecimals`, significant-figure/decimal, lot/tick, minimum quantity/notional and metadata-change semantics.
+- `EXT-001`: QF-009/010/016 fixtures must align with current protection, matching and partial-acceptance behavior when mapping pure book walks to executable orders.
+- `EXT-002`: point-in-time metadata/fee/account payload sources must retain timestamps/versions usable by Live and Replay.
+- No Internet research or external revalidation occurred during PASS11. These items do not block source reconstruction; they block current exchange constants, exchange-bound golden fixtures and Live activation.

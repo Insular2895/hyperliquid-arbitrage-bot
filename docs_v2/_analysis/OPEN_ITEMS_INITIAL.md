@@ -21,6 +21,18 @@ OPEN signifie décision réellement non prise. Les paramètres simplement calibr
 | OPEN-013 | Cross-exchange activation/product scope | Explicitly future | future pass |
 | OPEN-014 | Final license provider/mechanism | Deployment contract fixed, vendor open | PASS 09 |
 | OPEN-015 | Final telemetry/export backend | Operations contract fixed, backend open | PASS 10 |
+| OPEN-017 | QF-041 zero executed-volume behavior | Source fixes ratio but not zero-denominator output; fail-closed typed result needs human validation | PASS 11 / future cross-domain review |
+| OPEN-018 | QF-043 `D_0=D_s` resilience behavior | Source gives equation/raw clamp but no zero-denominator convention | PASS 11 / future cross-domain review |
+| OPEN-019 | Empirical QF-061/062 quantile/ES convention | Finite-sample interpolation, ties and tail weighting not fixed by source | PASS 11 / Risk validation |
+| OPEN-020 | QF-064 zero/nonpositive inventory band | Source normalization assumes a divisor but does not define invalid-case encoding | PASS 11 / Risk-Inventory review |
+| OPEN-021 | QF-047/QF-053 time-grid, censor and tail estimator | Source fixes functionals but not all discrete integration/interpolation conventions | PASS 11 / Model validation |
+| OPEN-022 | QF-077/078 deterministic search/solver details | Architecture/objective fixed; grid, refinement, solver and tie policy require evidence | PASS 11 / implementation planning |
+| OPEN-023 | QF-091 LCB estimator and calibrated alpha/SF | Strict gate fixed; estimator and values remain unselected | PASS 11 / Validation |
+| OPEN-024 | QF-092/093 zero or nonpositive diagnostic denominators | Source does not define displayed/typed result | PASS 11 / Operations review |
+| OPEN-025 | QF-094 censoring estimator and eligible cohort | Censor-aware requirement fixed; exact estimator/schema not fixed | PASS 11 / Participants-Validation |
+| OPEN-026 | QF-096 clipping epsilon | Clipping required; exact versioned epsilon not fixed | PASS 11 / Model validation |
+| OPEN-027 | QF-109 zero-peak relative drawdown | Source relative formula has zero denominator with no explicit outcome | PASS 11 / Risk-Accounting review |
+| OPEN-028 | QF-110 empty-interval MDD | Source maximum definition does not define an empty observation interval | PASS 11 / Risk-Validation review |
 
 ## PASS 01 — Infrastructure disposition
 
@@ -152,3 +164,7 @@ Additional calibrated/tool choices—base image/linkage, registry, SBOM/signing/
 | OPEN-016 | `REMAINS OPEN; VALIDATION` | HWC/Atlas/support thresholds and evidence/sample sufficiency by capability |
 
 Additional calibrated choices: SLO targets/error budgets, alert thresholds/windows/routing/response objectives, operational calendar, evidence retention, fault-injection tooling, metric names/labels, command implementation and EvidenceId/CapabilityManifest serialized storage. PASS10 creates no irreversible project decision and no new permanent open ID.
+
+## PASS 11 — Formula Book disposition
+
+The equations, units, signs, dependencies, consumers and fail-closed boundary are reconstructed. `OPEN-017`–`OPEN-028` preserve only source-omitted estimator/invalid-case choices; they do not authorize an invented numeric value. QF-099 status is resolved as `SOURCE_DERIVED_FROM_CONTEXT` and therefore does not create an open item. Current exchange rules are external revalidation, not mathematical open choices. No implementation library, integer width, solver or probability package was selected.
