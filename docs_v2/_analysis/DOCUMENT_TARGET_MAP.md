@@ -2,6 +2,10 @@
 
 `DOCUMENTATION STATUS: REBUILD IN PROGRESS`
 
+## PASS 15 source no-loss overlay
+
+All **2,590/2,590** stable requirements below were rejoined to their final physical Master/deep-spec or explicit non-active trace destination. The row-level source-item join is in `pass15_source_no_loss/FINAL_SOURCE_ITEM_TRACEABILITY.csv`. PASS 15 also created **79** separate `PASS15-SRC...-REC` items without renumbering or retroactively changing PASS 00: 2 source intervals outside extraction ranges and 77 independently implementable concepts nested inside six over-broad PASS 00 ranges. Destinationless current requirements: **0**.
+
 ## PASS 14 accounting target overlay
 
 All 67 historical rows whose `Master Doc` is the logical label `Accounting` resolve to existing canonical destinations: `08_INVENTORY_AND_CAPITAL.md` and `deep-specs/inventory-capital/10_ECONOMIC_PNL_ACCOUNTING_AND_CAPITAL_EFFICIENCY.md` own attribution semantics; `04_FORMULA_BOOK.md` and `deep-specs/formulas/10_QF105_QF110_CAPITAL_ACCOUNTING_AND_DRAWDOWN.md` own QF-105–110; Execution/FillLedger supplies actual facts; Data owns serialization and lineage. The original status of every row—including Research, Future, Rejected and External Revalidation—continues to govern. The label does not imply a missing standalone master or a duplicate state owner.

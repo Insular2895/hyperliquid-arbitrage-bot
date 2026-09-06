@@ -2,6 +2,10 @@
 
 `DOCUMENTATION STATUS: REBUILD IN PROGRESS`
 
+## PASS 15 source no-loss recheck
+
+All **128** original PASS00 external-revalidation rows and the prior PASS01 `SOURCE_SNAPSHOT` overlay were traced. PASS 15 performed no Internet verification, introduced no external fact, and added no external family. Two recovered SRC-002 concepts were joined to existing `EXT-002/005` and `EXT-006/007` families rather than treated as current truth. `EXT-001`–`EXT-016` remain unchanged and pending wherever consumed. Evidence: `pass15_source_no_loss/SOURCE_SNAPSHOT_AND_EXTERNAL_FACT_AUDIT.md`.
+
 | ID | Fact family | Source(s) | Why date-sensitive | Future pass | Blocks reconstruction? |
 |---|---|---|---|---|---|
 | EXT-001 | Hyperliquid order types/matching/batching mechanics | SRC-002/004/008 | Exchange behavior can change | PASS 04/11 | NO |

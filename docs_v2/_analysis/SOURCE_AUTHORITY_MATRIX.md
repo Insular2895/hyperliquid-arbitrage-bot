@@ -2,6 +2,8 @@
 
 `DOCUMENTATION STATUS: REBUILD IN PROGRESS`
 
+PASS 15 re-opened all eight sources and rechecked chronology for every PASS00 item and all **79** recovered source concepts. No authority order changed; no exploratory statement displaced a later closure.
+
 | Domain | Primary authority | Supporting sources | Conflict rule |
 |---|---|---|---|
 | Architecture / Product | Later explicit direction across SRC-001/002/007/008 | SRC-003/006 | Closure contracts constrain architecture |

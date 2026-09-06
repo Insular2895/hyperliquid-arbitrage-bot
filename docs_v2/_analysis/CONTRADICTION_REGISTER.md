@@ -2,6 +2,10 @@
 
 `DOCUMENTATION STATUS: REBUILD IN PROGRESS`
 
+## PASS 15 source-recovery regression audit
+
+`CONFLICT-001`–`CONFLICT-128` were rechecked after all **79** recovered source concepts. No resolved conflict regressed. In particular, the SRC-001 execution-mode scenario axis does not enable TM/MM; the SRC-003 Recorder-purpose recovery keeps recalibration offline, versioned and promotion-gated; and recovered exploratory material does not revive Python live, automatic C++, copied venue thresholds, candles-as-execution-truth or checkpoint-as-truth. Regressions found: **0**. Evidence: `pass15_source_no_loss/PASS15_CONFLICT_REGRESSION_AUDIT.md`.
+
 | Conflict ID | Concept | Source A / statement | Source B / statement | Chronology / authority | Proposed resolution | Confidence | Domain review |
 |---|---|---|---|---|---|---|---|
 | CONFLICT-001 | Live language | Earlier Python-first/live exploration | Later Rust production core | Later explicit correction; architecture direction | Rust core; Python research; old live-Python direction SUPERSEDED | HIGH | YES |

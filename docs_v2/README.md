@@ -4,12 +4,13 @@
 
 `docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception.
 
-PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques. PASS 12 reconstruit séparément l'ordre technique et le parcours scientifique qui mène de la donnée à une capacité validée. PASS 13 assemble ces autorités dans une architecture transversale sans les remplacer. PASS 14 vérifie leurs interfaces, propriétaires, unités, états, modes et dépendances comme un seul système. L'ensemble reste soumis à revue humaine.
+PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques. PASS 12 reconstruit séparément l'ordre technique et le parcours scientifique qui mène de la donnée à une capacité validée. PASS 13 assemble ces autorités dans une architecture transversale sans les remplacer. PASS 14 vérifie leurs interfaces, propriétaires, unités, états, modes et dépendances comme un seul système. PASS 15 rouvre les huit sources, vérifie leurs empreintes et leur couverture ligne par ligne, puis joint 2 577 unités PASS 00, 13 dérivations explicites et 79 récupérations documentées à leur sort final. Ces récupérations couvrent 2 intervalles hors extraction et 77 concepts imbriqués dans six plages PASS 00 trop larges. L'ensemble reste soumis à revue humaine.
 
 - [00 — Master Architecture](00_MASTER_ARCHITECTURE.md)
 - [Architecture deep specs](deep-specs/architecture/README.md)
 - [PASS 13 evidence](./_analysis/pass13_master_architecture/PASS13_FINAL_REPORT.md)
 - [PASS 14 cross-domain consistency evidence](./_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md)
+- [PASS 15 source-by-source no-loss evidence](./_analysis/pass15_source_no_loss/PASS15_FINAL_REPORT.md)
 - [13 — Infrastructure](13_INFRASTRUCTURE.md)
 - [Infrastructure deep specs](deep-specs/infrastructure/README.md)
 - [PASS 01 evidence](./_analysis/pass01_infrastructure/PASS01_FINAL_REPORT.md)

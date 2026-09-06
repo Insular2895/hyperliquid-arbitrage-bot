@@ -2,6 +2,10 @@
 
 `DOCUMENTATION STATUS: REBUILD IN PROGRESS`
 
+## PASS 15 source no-loss recheck
+
+All `OPEN-001`–`OPEN-028` remain traceable with their existing owner, evidence need and capability scope. The **79** PASS 15 recovered concepts introduce no unanswered architecture question and no new OPEN ID: current semantics already had equal/stronger owners, calibrated/external values remain gated, and the only canonical wording gap was corrected. Open source gaps: **0**; OPEN-BLOCKING source gaps: **0**.
+
 OPEN signifie décision réellement non prise. Les paramètres simplement calibrés restent `CALIBRATED`.
 
 | Open ID | Item | Why open | Review pass |

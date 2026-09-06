@@ -4,6 +4,8 @@
 
 Ce registre source-first contient les exigences canoniques ou candidates. Une entrée par unité matérielle évite la perte silencieuse; la déduplication sémantique finale appartient aux passes métier.
 
+PASS 15 audited all **2,577** atomic source items and **13** cross-domain anchors without changing their stable IDs. The audit assigns separate `PASS15-SRC...-REC` identities to **79** recovered concepts—2 outside PASS 00 ranges and 77 nested inside six ranges whose atomicity/destination was too broad. They are not backfilled into this historical ledger. Final requirement destinations: **2,590/2,590**; destinationless current requirements: **0**.
+
 ## REQ-BENCH-0001 — 23. Lock-free / ring buffers / zero-copy
 
 - Requirement ID: `REQ-BENCH-0001`

@@ -19,9 +19,9 @@
 | PASS 12 | Build / Validate / Scale Journey — COMPLETE, HUMAN REVIEW REQUIRED | SRC-006 + cross-domain requirements | `17_IMPLEMENTATION_ROADMAP.md`, `19_BUILD_VALIDATE_SCALE_ROADMAP.md`, matrices and deep specs | PASS 01–11 |
 | PASS 13 | Master Architecture Reconstruction — COMPLETE, HUMAN REVIEW REQUIRED | all resolved domain docs + 647 original architecture locators | `00_MASTER_ARCHITECTURE.md`, architecture deep specs and ownership/flow matrices | PASS 01–12 |
 | PASS 14 | Cross-Domain Consistency Audit — COMPLETE, HUMAN REVIEW REQUIRED | all canonical V2 documents and registers | conflict/dependency/ownership/interface closure | PASS 13 |
-| PASS 15 | Source-by-Source No-Loss Audit — NOT STARTED | all 8 sources | final source coverage | PASS 14 human review |
-| PASS 16 | Human Review Package | all artifacts | review bundle, no self-approval | PASS 15 |
+| PASS 15 | Source-by-Source No-Loss Audit — COMPLETE, HUMAN REVIEW REQUIRED | all 8 sources, hashes verified 8/8 | final source coverage, 79 recovered concepts, 0 unaccounted substantive intervals | PASS 14 |
+| PASS 16 | Human Review Package — NOT STARTED | all artifacts | review bundle, no self-approval | PASS 15 human review |
 
 The Technical Implementation Roadmap and Build/Validate/Scale Journey are reconstructed and remain separate. Governing philosophy: `SPECIFICATION → IMPLEMENTATION → EVIDENCE → VALIDATED CAPABILITY → CAPITAL`, with final-capable architecture and progressive capability activation rather than a throwaway MVP.
 
-**NEXT:** PASS 15 — Source-by-Source No-Loss Audit, only after human review of PASS 14. Implementation has not started and is not authorized.
+**NEXT:** PASS 16 — Human Review Package, only after human review of PASS 15. PASS 16 has not started. Implementation has not started and is not authorized.

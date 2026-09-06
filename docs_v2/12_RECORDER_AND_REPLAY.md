@@ -7,6 +7,8 @@ REBUILD IN PROGRESS
 
 Recorder preserves sufficient source, decision and execution evidence to reproduce the bot's knowledge and calibrate simulation against reality. Replay feeds that evidence into the same production Core. Research prioritizes return to the past; production prioritizes explanation of every real decision while retaining representative market evidence.
 
+Production recording has four explicit, durable purposes: reconstruct a real trade or decision from its evidence; compare predicted/simulated behaviour with what actually happened; detect regime change, drift, and loss of support; and build new point-in-time datasets for offline recalibration. These purposes do not authorize online self-training or automatic promotion.
+
 ## 2. Recorder architecture
 
 ```text
