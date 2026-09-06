@@ -219,3 +219,9 @@ Detailed source-first resolution: `pass11_formula_book/FORMULA_CONFLICT_RESOLUTI
 | CONFLICT-126 | Global M5 | Maturity is scoped and reversible | HIGH | RESOLVED PASS12 |
 
 Detailed reasoning and five bootstrap-cycle resolutions: `pass12_build_validate_scale/ROADMAP_CONFLICT_RESOLUTION.md`. Conflicts found/resolved: **12/12**; blocking cycles remaining: **0**.
+
+## PASS 13 — Architecture assembly review
+
+PASS 13 introduced no new domain conflict ID. Eight apparent cross-domain readings were resolved without changing domain truth: modular monolith versus microservices; staged Risk around sizing; distinct reducer ownership under one coordinator; capability-specific TTT/model dependency; Graph versus Atlas/HWC/Risk; Recovery proposal versus Execution effects; license failure versus safety actions; and software rollback versus exchange truth.
+
+Architecture-only issues found/resolved: **8/8**. Remaining domain-changing consistency questions: **4**, routed to PASS14 as `ARCH-GAP-001..004` in `pass13_master_architecture/ARCHITECTURE_GAP_REGISTER.md`. Prior conflict resolutions `CONFLICT-001..126` remain unchanged.

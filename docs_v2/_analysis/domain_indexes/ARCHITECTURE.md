@@ -8,7 +8,7 @@
 - Cross-domain dependencies: see `../CROSS_DOMAIN_DEPENDENCIES.md`
 - Known contradictions: see `../CONTRADICTION_REGISTER.md`
 - Open items: see `../OPEN_ITEMS_INITIAL.md`
-- Planned reconstruction pass: PASS 13
+- Reconstruction pass: PASS 13 REVIEW COMPLETE — HUMAN REVIEW REQUIRED
 
 ## Requirement IDs
 
@@ -671,3 +671,11 @@
 - The 26-phase technical sequence and hard/parallel dependencies are canonicalized in `../../17_IMPLEMENTATION_ROADMAP.md` and `../pass12_build_validate_scale/TECHNICAL_PHASE_DEPENDENCY_MATRIX.md`.
 - Final-capable interfaces plus progressive activation replace both throwaway MVP and big-bang implementation.
 - Concrete final module topology remains PASS 13-owned; PASS 12 started no implementation and created no new architecture decision.
+
+## PASS 13 canonical architecture overlay
+
+- All **647/647** stable Architecture-index requirements were reviewed; every original locator was reopened across SRC-001–008 with zero missing/out-of-range range.
+- Canonical entry point: `../../00_MASTER_ARCHITECTURE.md`; normative architecture detail: `../../deep-specs/architecture/01..12`; row-level routing: `../pass13_master_architecture/ARCHITECTURE_REQUIREMENT_LEDGER.md`.
+- One logical writer, command/event/effect separation, acyclic synchronous decision flow, hot/async/control boundaries, RunMode equivalence, CapabilityManifest integration and client deployment topology are assembled without changing domain truth.
+- `ROADMAP_CROSS_DOMAIN_GAP-001`, `003` and `004` are resolved at architecture level. Serialized evidence integration plus three other domain-authority questions are routed to PASS 14 in `ARCHITECTURE_GAP_REGISTER.md`.
+- Destinationless requirements: **0**; stable IDs renumbered: **0**; implementation started: **NO**; PASS 14 started: **NO**.

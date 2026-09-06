@@ -174,3 +174,9 @@ The equations, units, signs, dependencies, consumers and fail-closed boundary ar
 No new permanent decision was created. `OPEN-004` and `OPEN-007..012` remain the owners for health/Risk/model/inventory/data/maker calibration; `OPEN-014..016` remain commercial/operations/validation choices; `OPEN-017..028` remain formula implementation preconditions where their omitted convention is consumed. Current Hyperliquid/platform facts remain external revalidation rather than open architecture choices.
 
 TTT ordering is not a new open decision: detection/Replay/Shadow may precede sophisticated Participant models; real TTT follows TT and its own three-leg evidence. A Participant artifact is a hard dependency only for a CapabilityManifest that explicitly consumes it. Exact sample sufficiency, q bands, model horizons, infra economic thresholds, Bridge persistence and tool choices remain calibrated and human-reviewed.
+
+## PASS 13 — Master Architecture disposition
+
+PASS 13 creates no new irreversible decision and closes none of `OPEN-001..028`. Provider/region/network, health/Risk/model/inventory/survival/retention, maker/cross-exchange/license/telemetry/HWC and formula-convention questions retain their existing owners and statuses.
+
+Pure architectural topology is now explicit. Four cross-domain consistency questions are deliberately `PASS14_CROSS_DOMAIN_GAP`, not new project decisions: serialized phase/evidence-artifact integration; Accounting master authority; consolidated Infra/Risk/Operations health vocabulary; and the Position Sizer organizational boundary. See `pass13_master_architecture/ARCHITECTURE_GAP_REGISTER.md`.

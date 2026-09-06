@@ -198,3 +198,18 @@ Remaining non-blocking PASS13/14 closure families: concrete module topology; ser
 | `ROADMAP_CROSS_DOMAIN_GAP-004` | Participant-model dependency is capability-manifest specific for TTT and other consumers | PASS 13 models dependency expression; PASS 14 verifies no circular gate |
 
 All four are non-blocking for PASS 12 documentation and blocking only when their owning later pass/implementation boundary is reached.
+
+## PASS 13 — Canonical architecture assembly
+
+| Boundary | Producer → consumer rule | PASS 13 result |
+|---|---|---|
+| Core commit | adapter event → ordered coordinator → owning reducer → immutable snapshot | one logical writer; no private competing truth |
+| Decision | Book/rules/Graph → Opportunity → optional forecasts/Simulator → terminal/sizing/allocation → staged Risk → reservation/plan | synchronous DAG; expensive work bounded and capability-specific |
+| Execution | plan/reservation → transport effect → observed ACK/fill/UNKNOWN → reducers | transport grants no permission; actual fills only |
+| Recovery | actual exposure → Recovery proposal → Risk → new Execution plan | staged producer/consumer boundary removes circular mutation |
+| Replay/model | Recorder → point-in-time data/Replay/training → Validation → immutable artifact/capability → runtime snapshot | feedback is asynchronous and version-bounded |
+| Atlas/capital | evidence → later AtlasVersion → reachability/viability/Bridge proposal | current decision pins Atlas version; no call cycle |
+| Capability | evidence → Validation/CapabilityManifest → runtime intersection → Risk | implementation, license, readiness and validation remain independent narrowing axes |
+| Deployment/Operations | cross-cutting phase prerequisites → readiness/health events | no renumbering of PASS12 phases and no hot-path control dependency |
+
+Resolved: `ROADMAP_CROSS_DOMAIN_GAP-001`, `003`, `004`. Routed to PASS14: `ROADMAP_CROSS_DOMAIN_GAP-002` plus the Accounting-document authority, consolidated health vocabulary and Position-Sizer organizational boundary checks in `pass13_master_architecture/ARCHITECTURE_GAP_REGISTER.md`. Synchronous dependency cycles: **0**.

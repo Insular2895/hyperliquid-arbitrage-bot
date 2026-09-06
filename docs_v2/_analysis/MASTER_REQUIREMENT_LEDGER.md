@@ -75228,3 +75228,11 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Existing owners retained: PASS11 exact QF mathematics; PASS10 M0–M5/evidence/CapabilityManifest; domain masters for Risk, Execution, Data, capital, models, deployment and infrastructure; PASS13/14 for architecture/consistency closure.
 - Dispositions: `TECHNICAL_ROADMAP`, `BUILD_VALIDATE_SCALE_ROADMAP`, `DEEP_SPEC`, `CROSS_DOMAIN_EXISTING_PASS`, `CROSS_DOMAIN_PASS13`, `CROSS_DOMAIN_PASS14`, `OPEN_ITEM`, `EXTERNAL_REVALIDATION`, `RESEARCH/FUTURE` or prior `SUPERSEDED/REJECTED` history.
 - Destinationless PASS 12 requirements: **0**. Implementation started: **NO**. PASS 13 started: **NO**.
+
+## PASS 13 — Master Architecture overlay
+
+- Architecture-index requirements reviewed: **647/647** across SRC-001–008; missing or out-of-range original locators: **0**; 377 merged intervals and 16,538 unique original-source lines reopened; ordered digest `278dc2779e99cb1b`.
+- Canonical architecture destination: `00_MASTER_ARCHITECTURE.md`, 12 deep specs under `deep-specs/architecture/`, and PASS13 analysis under `pass13_master_architecture/`.
+- Row-level statuses, owners, master sections, destinations, dependencies and dispositions are in `pass13_master_architecture/ARCHITECTURE_REQUIREMENT_LEDGER.md`; stable requirement metadata below was not globally regenerated.
+- Domain-specific truths retain PASS01–12 ownership. Architecture resolves topology/flow only where all owners already imply the same boundary; exact serialized artifact integration and other owner questions route to PASS14.
+- Destinationless Architecture requirements: **0**; stable IDs renumbered: **0**; application/code changed: **NO**; PASS14 started: **NO**.
