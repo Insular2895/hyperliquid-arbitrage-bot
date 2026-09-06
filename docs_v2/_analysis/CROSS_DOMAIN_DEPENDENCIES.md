@@ -172,3 +172,29 @@ Remaining PASS10 cross-domain gaps: PASS11 exact formula/unit audit; PASS12 impl
 | FormulaVersion/golden/parity | Data, Replay, Deployment, Validation | version/change invalidation and exact/tolerance split closed; serialized implementation remains Data/Build-owned |
 
 The complete 27-item gap register is `pass11_formula_book/FORMULA_CROSS_DOMAIN_GAP_REGISTER.md`. PASS11 did not rewrite earlier masters or start implementation.
+
+## PASS 12 — Roadmap dependency closure
+
+| Producer / governing contract | Roadmap consumers | PASS 12 sequencing rule |
+|---|---|---|
+| Data types / adapters / Recorder | Book, Replay, all evidence and models | Capture begins before advanced consumers; invalid/unknown never becomes a usable default |
+| Book / Metadata / Fee / Precision | Graph, Formula, Opportunity, Execution | Trusted state/rules precede economic or order claims |
+| Graph / Formula Core | Opportunity, Recovery, Atlas, Sizing | Fixed precomputed structures and exact QF semantics precede candidate decisions |
+| Replay / DecisionTrace | Every downstream domain | Same-Core deterministic/no-lookahead evidence precedes advanced model and Live claims |
+| Account / Inventory / Reservations | Risk, Execution, Portfolio, Bridge | Actual fills and once-only shared-resource ownership precede capital effects |
+| Risk / Execution SM / Transport / Recovery / Reconciliation | Shadow and Micro-live | Transport never grants permission; all safety/state capabilities are hard capital dependencies |
+| Microstructure / Atlas / Simulator | Models, Sizing, capital and infra | Progressive baselines prevent evidence deadlock; missing support reduces authority |
+| Participants / maker evidence | F2/F3, MT/MTT | Learned support is capability-specific; ALO/type support is not validation |
+| Q_validated / CapabilityManifest | Every scale mode | Exact current evidence scope bridges implementation to possible capital |
+| Operations / Deployment | Micro-live, Live, scaling | Safe owner/start/stop/reconcile/update/rollback and current health precede effects |
+
+Remaining non-blocking PASS13/14 closure families: concrete module topology; serialized phase/evidence-artifact integration; explicit placement of deployment/operations work inside the 26-phase architecture; and final representation of capability-dependent model edges such as optional TTT Participant consumption. No hard dependency cycle remains.
+
+| Gap ID | Cross-domain gap | Owner / required closure |
+|---|---|---|
+| `ROADMAP_CROSS_DOMAIN_GAP-001` | Concrete module/crate/process topology is intentionally not frozen by sequencing | PASS 13 Master Architecture |
+| `ROADMAP_CROSS_DOMAIN_GAP-002` | Final serialized integration for phase/evidence artifacts extends existing Data contracts | PASS 13 interface map, then PASS 14 consistency/Data governance |
+| `ROADMAP_CROSS_DOMAIN_GAP-003` | Deployment/Operations is a hard Micro-live workstream but not a separately numbered SRC-006 technical phase | PASS 13 must place it cross-cutting without renumbering the 26 phases |
+| `ROADMAP_CROSS_DOMAIN_GAP-004` | Participant-model dependency is capability-manifest specific for TTT and other consumers | PASS 13 models dependency expression; PASS 14 verifies no circular gate |
+
+All four are non-blocking for PASS 12 documentation and blocking only when their owning later pass/implementation boundary is reached.

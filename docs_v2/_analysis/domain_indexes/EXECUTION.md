@@ -895,3 +895,7 @@
 - Row-level normalized disposition, status corrections, authority, and destinations: `../pass04_execution/EXECUTION_REQUIREMENT_LEDGER.md`.
 - PASS 00 heuristic corrections include NO BLIND RETRY, OrderState/`REJECTED`, reconciliation algorithm, DMS internal use, restart, observability, Risk fail-conservative behaviour, and machine-readable rejection semantics.
 - Destinationless: 0; stable IDs renumbered: 0; external facts web-revalidated: 0; PASS 05 started: NO.
+
+## PASS 12 roadmap overlay
+
+Risk precedes the capital-bearing path; Execution State Machine precedes real transport; Recovery/Reconciliation precede Micro-live. TT is the first normal live mode, TTT is separately validated, and MT/MTT are maker-intelligence gated. TM/MM remain type-supported/default-disabled.

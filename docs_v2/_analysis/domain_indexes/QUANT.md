@@ -625,3 +625,7 @@
 - Master/deep targets: `../../05_MARKET_MICROSTRUCTURE.md` and `../../deep-specs/market-microstructure/`.
 - QF-001–QF-043 semantic/runtime crosscheck: `../pass08_graph_routes_quant/FORMULA_CROSSCHECK.md`; exact equations/units remain PASS11-owned.
 - Stable Requirement IDs renumbered: **0**. Destinationless: **0**. PASS09 started: **NO**.
+
+## PASS 12 roadmap overlay
+
+Exact QF-001–027 route economics precede opportunity claims. QF-028–043 microstructure is observed and replay-validated before advanced models. Later QF families are mapped to their technical/evidence phases without redefining equations.

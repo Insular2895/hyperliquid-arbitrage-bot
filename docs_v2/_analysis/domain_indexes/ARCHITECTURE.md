@@ -665,3 +665,9 @@
 - `REQ-REPLAY-9001` — Replay/Live core parity
 - `REQ-DET-9001` — Deterministic decision identity
 - `REQ-CLIENT-9001` — Per-client non-SaaS deployment model
+
+## PASS 12 roadmap overlay
+
+- The 26-phase technical sequence and hard/parallel dependencies are canonicalized in `../../17_IMPLEMENTATION_ROADMAP.md` and `../pass12_build_validate_scale/TECHNICAL_PHASE_DEPENDENCY_MATRIX.md`.
+- Final-capable interfaces plus progressive activation replace both throwaway MVP and big-bang implementation.
+- Concrete final module topology remains PASS 13-owned; PASS 12 started no implementation and created no new architecture decision.

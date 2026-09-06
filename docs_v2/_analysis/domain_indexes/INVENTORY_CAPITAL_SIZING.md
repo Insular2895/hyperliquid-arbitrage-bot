@@ -573,3 +573,7 @@
 - Row-level classification/disposition: `../pass07_inventory_capital/INVENTORY_CAPITAL_REQUIREMENT_LEDGER.md`.
 - Classification counts: INVENTORY-OWNED 27; CAPITAL-OWNED 23; BRIDGE-OWNED 16; SIZING-OWNED 11; PORTFOLIO-OWNED 5; ACCOUNTING-INTERFACE 36; CROSS-DOMAIN 427.
 - Destinationless requirements: **0**. Stable IDs were not renumbered. PASS00 heuristic status remains visible; reviewed corrections are in `../pass07_inventory_capital/CONFLICT_RESOLUTION.md`.
+
+## PASS 12 roadmap overlay
+
+Inventory/reservations precede capital effects; Sizing begins in Replay/Shadow and cannot infer q from balance. Portfolio follows individual capability proof. Bridge follows Atlas/terminal/exit/sizing/Risk history and is separately validated against STAY. Horizontal scale is preferred before excessive vertical q unless evidence says otherwise; both remain bounded by reversible `Q_validated`.

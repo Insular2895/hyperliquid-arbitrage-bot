@@ -600,3 +600,7 @@
 - Master/deep targets: `../../03_MARKET_GRAPH_AND_ROUTES.md` and `../../deep-specs/market-graph/`.
 - Later closure corrects early exploratory status for the directed venue-aware graph, fixed route types, OWA comparator, precomputation/reverse index, HWC/Atlas boundaries and alpha separation; details are in `../pass08_graph_routes_quant/CONFLICT_RESOLUTION.md`.
 - Stable Requirement IDs renumbered: **0**. Destinationless: **0**. PASS09 started: **NO**.
+
+## PASS 12 roadmap overlay
+
+Graph/Routes (Phase 6) precede NetConvert (Phase 7) and Basic Opportunity (Phase 9). Initial real focus is same-venue Hyperliquid spot TT; OWA requires a direct comparator, no-comparator paths remain Bridge, and cross-exchange remains FUTURE.

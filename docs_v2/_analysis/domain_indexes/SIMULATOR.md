@@ -262,3 +262,7 @@
 - `REQ-SIM-9001` reviewed status: `LOCKED_EPISTEMIC_AND_ARCHITECTURE_RULE`; calibrated models/thresholds remain learned/calibrated and F4 remains Research.
 - Destinationless requirements: 0; IDs renumbered: 0; external facts web-revalidated: 0.
 - PASS 04 started: **NO**.
+
+## PASS 12 roadmap overlay
+
+F0/F1 precede F2/F3 and capital; F4 remains Research and does not block TT. Simulator evidence starts in Replay, is prepared in Shadow and calibrated against Micro-live/Live actuals. It produces distributions/support, never capital permission.

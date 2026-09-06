@@ -1085,3 +1085,9 @@
 - Row-level source statements remain in this PASS00 index; complete classification/disposition rules and counts are in `../pass10_validation_operations/VALIDATION_REQUIREMENT_LEDGER.md`.
 - Canonical destinations are `../../16_VALIDATION_MATRIX.md`, `../../18_OPERATIONS_AND_MONITORING.md`, `../../deep-specs/validation/`, `../../deep-specs/operations/` and PASS10 evidence matrices.
 - The thirteen explicit anchors were crosschecked as overlays, not added to the 1,048 primary count. Destinationless requirements: **0**.
+
+## PASS 12 roadmap overlay
+
+- The 95 stable closure rows `REQ-VALID-0273..0367` were sequenced into 26 technical phases and 21 evidence stages without changing PASS10 M0–M5, DoD, evidence, promotion/demotion or CapabilityManifest authority.
+- Canonical destinations: `../../17_IMPLEMENTATION_ROADMAP.md`, `../../19_BUILD_VALIDATE_SCALE_ROADMAP.md`, `../../deep-specs/roadmaps/` and `../pass12_build_validate_scale/`.
+- Capital remains none before an approved Micro-live probe; scoped M5 and `Q_validated` are reversible. Destinationless PASS12 units: **0**.

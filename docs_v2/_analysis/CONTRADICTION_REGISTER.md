@@ -200,3 +200,22 @@ Full reasoning: `pass10_validation_operations/CONFLICT_RESOLUTION.md`. Conflicts
 | CONFLICT-114 | QF-106–110 source-explicit LOCKED labels | Definitions retained with absent-label provenance `SOURCE_DERIVED_FROM_CONTEXT` | HIGH | RESOLVED PASS11 |
 
 Detailed source-first resolution: `pass11_formula_book/FORMULA_CONFLICT_RESOLUTION.md`. Conflicts found/resolved: **7/7**; remaining: **0**. Source-omitted numerical conventions remain open items, not manufactured conflict resolutions.
+
+## PASS 12 — Roadmap sequencing review
+
+| Conflict ID | Concept | Canonical resolution | Confidence | Status |
+|---|---|---|---|---|
+| CONFLICT-115 | Python-first production | Rust production Core; Python research/calibration with parity | HIGH | RESOLVED PASS12 |
+| CONFLICT-116 | Throwaway MVP | Final interfaces with progressive baseline activation | HIGH | RESOLVED PASS12 |
+| CONFLICT-117 | Advanced models before data | Recorder and Replay first; simple Champion before Challenger | HIGH | RESOLVED PASS12 |
+| CONFLICT-118 | Generic per-tick route search | General structural graph, precomputed bounded V1 routes | HIGH | RESOLVED PASS12 |
+| CONFLICT-119 | Risk after strategy | Basic candidates may exist; no capital/effect bypasses Risk | HIGH | RESOLVED PASS12 |
+| CONFLICT-120 | Live before Recovery | Recovery/Reconciliation/operations are Micro-live prerequisites | HIGH | RESOLVED PASS12 |
+| CONFLICT-121 | ALO implies MT readiness | Maker intelligence and separate mode evidence gate MT/MTT | HIGH | RESOLVED PASS12 |
+| CONFLICT-122 | Early Bridge | Atlas/terminal/exit/sizing/Risk/history and STAY precede Bridge | HIGH | RESOLVED PASS12 |
+| CONFLICT-123 | Capital drives infrastructure | Technical benchmark early; economic promotion later via InfraROI | HIGH | RESOLVED PASS12 |
+| CONFLICT-124 | Capital drives q | Current reversible `Q_validated` drives maximum q | HIGH | RESOLVED PASS12 |
+| CONFLICT-125 | One roadmap axis | Technical build order and scientific evidence journey remain separate | HIGH | RESOLVED PASS12 |
+| CONFLICT-126 | Global M5 | Maturity is scoped and reversible | HIGH | RESOLVED PASS12 |
+
+Detailed reasoning and five bootstrap-cycle resolutions: `pass12_build_validate_scale/ROADMAP_CONFLICT_RESOLUTION.md`. Conflicts found/resolved: **12/12**; blocking cycles remaining: **0**.

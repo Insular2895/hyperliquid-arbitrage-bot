@@ -539,3 +539,7 @@
 - `REQ-FORMULA-0108` — QF-093 Capture Ratio (`SRC-004` lines 8124–8227; LOCKED)
 
 These stable Formula requirements remain primarily owned by the Formula Book. PASS 01 corrected only their missing `INFRA` secondary-domain traceability; no requirement was renumbered.
+
+## PASS 12 roadmap overlay
+
+Technical provider/host benchmarking may begin early; economic infrastructure scale is Stage 20. Promotion requires same-event capture evidence, InfraLostPnL/NetUpgradeValue/InfraROI and operational stability. Capital balance, prestige, node availability or a faster ping alone are not gates; downgrade/reject remain valid outcomes.

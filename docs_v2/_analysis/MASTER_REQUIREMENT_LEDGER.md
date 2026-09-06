@@ -75217,4 +75217,14 @@ Les exigences suivantes rendent explicites les distinctions transversales impos�
 - Status corrections: exact mixed/source labels restored; QF-099 and QF-106–110 are `SOURCE_DERIVED_FROM_CONTEXT`; QF-103 is `MODEL DEPENDENT`; QF-104 is the source-explicit gated categorical contract and not a fixed scalar score.
 - Consumer overlay: formula-to-owner/consumer mappings are canonical in `pass11_formula_book/FORMULA_CONSUMER_MATRIX.md`; formula dependencies and cost ownership are canonical in `FORMULA_DEPENDENCY_GRAPH.md` and `DOUBLE_COUNTING_AND_ACCOUNTING_LEDGER.md`.
 - Requirement disposition rule: equation/semantic rows → `MASTER` plus `DEEP_SPEC`/`FORMULA_INDEX`; deterministic example/parity rows → `GOLDEN_VECTOR`; current exchange rule rows → `EXTERNAL_REGISTER`; genuinely missing mathematical policies → `OPEN_ITEM`; prior divergent variants → `SUPERSEDED` or `REJECTED`; prior-master discrepancies → `CROSS_DOMAIN_PASS14`. No formula-related row remains without at least one allowed terminal destination.
-- Destinationless formula requirements: **0**; external sources added/revalidated: **0**; PASS 12 started: **NO**.
+- Destinationless formula requirements: **0**; external sources added/revalidated: **0**; PASS 12 started after verified closure: **YES**.
+
+## PASS 12 — Technical roadmap and scientific-journey overlay
+
+- Roadmap requirement units reviewed: **142** — the 95 stable closure requirements `REQ-VALID-0273..REQ-VALID-0367`, 26 technical phase profiles and 21 evidence-stage profiles.
+- Stable IDs renumbered: **0**. PASS-local `P12-TP-*`/`P12-ES-*` audit handles do not replace stable requirements.
+- Technical destinations: `17_IMPLEMENTATION_ROADMAP.md`, `deep-specs/roadmaps/01..04`, phase dependency/DoD/maturity matrices.
+- Scientific destinations: `19_BUILD_VALIDATE_SCALE_ROADMAP.md`, `deep-specs/roadmaps/05..10`, evidence/capital/learning/stop/external matrices.
+- Existing owners retained: PASS11 exact QF mathematics; PASS10 M0–M5/evidence/CapabilityManifest; domain masters for Risk, Execution, Data, capital, models, deployment and infrastructure; PASS13/14 for architecture/consistency closure.
+- Dispositions: `TECHNICAL_ROADMAP`, `BUILD_VALIDATE_SCALE_ROADMAP`, `DEEP_SPEC`, `CROSS_DOMAIN_EXISTING_PASS`, `CROSS_DOMAIN_PASS13`, `CROSS_DOMAIN_PASS14`, `OPEN_ITEM`, `EXTERNAL_REVALIDATION`, `RESEARCH/FUTURE` or prior `SUPERSEDED/REJECTED` history.
+- Destinationless PASS 12 requirements: **0**. Implementation started: **NO**. PASS 13 started: **NO**.

@@ -466,3 +466,7 @@ All **426/426** rows were reopened against their original locators; failures: **
 | **Destinationless** | **0** |
 
 The row-complete classification/destination rule is in `../pass09_deployment_security/DEPLOYMENT_REQUIREMENT_LEDGER.md`; no stable requirement was renumbered or silently transferred to another owner.
+
+## PASS 12 roadmap overlay
+
+Safe deployment, one active owner, readiness, operations, safe shutdown and rollback are hard prerequisites for Phase-20 Micro-live even though they are not a separately numbered technical phase. This cross-cutting work can proceed against frozen interfaces but cannot be waived because probe capital is small.

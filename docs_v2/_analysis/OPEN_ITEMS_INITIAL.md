@@ -168,3 +168,9 @@ Additional calibrated choices: SLO targets/error budgets, alert thresholds/windo
 ## PASS 11 — Formula Book disposition
 
 The equations, units, signs, dependencies, consumers and fail-closed boundary are reconstructed. `OPEN-017`–`OPEN-028` preserve only source-omitted estimator/invalid-case choices; they do not authorize an invented numeric value. QF-099 status is resolved as `SOURCE_DERIVED_FROM_CONTEXT` and therefore does not create an open item. Current exchange rules are external revalidation, not mathematical open choices. No implementation library, integer width, solver or probability package was selected.
+
+## PASS 12 — Roadmap disposition
+
+No new permanent decision was created. `OPEN-004` and `OPEN-007..012` remain the owners for health/Risk/model/inventory/data/maker calibration; `OPEN-014..016` remain commercial/operations/validation choices; `OPEN-017..028` remain formula implementation preconditions where their omitted convention is consumed. Current Hyperliquid/platform facts remain external revalidation rather than open architecture choices.
+
+TTT ordering is not a new open decision: detection/Replay/Shadow may precede sophisticated Participant models; real TTT follows TT and its own three-leg evidence. A Participant artifact is a hard dependency only for a CapabilityManifest that explicitly consumes it. Exact sample sufficiency, q bands, model horizons, infra economic thresholds, Bridge persistence and tool choices remain calibrated and human-reviewed.

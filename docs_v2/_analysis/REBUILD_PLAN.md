@@ -16,10 +16,12 @@
 | PASS 09 | Deployment / Security / Client | SRC-006 Dossier 5/6 | Deployment/security master + specs | Infra/Data |
 | PASS 10 | Operations / Monitoring / Validation | SRC-006 Dossier 6/6 + Risk | Validation/operations master + runbooks | all critical domains |
 | PASS 11 | Formula Book Audit | SRC-004 Dossier 2/6 | audited QF-001..110 index/book | domain masters |
-| PASS 12 | Build / Validate / Scale Journey | SRC-006 + cross-domain requirements | scientific journey + technical roadmap links | PASS 01–11 |
+| PASS 12 | Build / Validate / Scale Journey — COMPLETE, HUMAN REVIEW REQUIRED | SRC-006 + cross-domain requirements | `17_IMPLEMENTATION_ROADMAP.md`, `19_BUILD_VALIDATE_SCALE_ROADMAP.md`, matrices and deep specs | PASS 01–11 |
 | PASS 13 | Master Architecture Reconstruction | all resolved domain docs | master architecture | PASS 01–12 |
 | PASS 14 | Cross-Domain Consistency Audit | all | conflict/dependency closure | PASS 13 |
 | PASS 15 | Source-by-Source No-Loss Audit | all 8 sources | final source coverage | PASS 14 |
 | PASS 16 | Human Review Package | all artifacts | review bundle, no self-approval | PASS 15 |
 
-The future Technical Implementation Roadmap and Build/Validate/Scale Journey remain separate. Governing philosophy: `SPECIFICATION → IMPLEMENTATION → EVIDENCE → VALIDATED CAPABILITY → CAPITAL`, with final-capable architecture and progressive capability activation rather than a throwaway MVP.
+The Technical Implementation Roadmap and Build/Validate/Scale Journey are reconstructed and remain separate. Governing philosophy: `SPECIFICATION → IMPLEMENTATION → EVIDENCE → VALIDATED CAPABILITY → CAPITAL`, with final-capable architecture and progressive capability activation rather than a throwaway MVP.
+
+**NEXT:** PASS 13 — Master Architecture Reconstruction, only after human review of PASS 12. Implementation has not started and is not authorized.

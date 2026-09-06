@@ -784,3 +784,7 @@
 - PASS 00 corrections: 14 false keyword statuses are normalized under SRC-005 closure authority without renumbering IDs; see `../pass05_risk/RISK_CONFLICT_RESOLUTION.md`.
 - Remaining exact numeric risk limits are calibrated/open evidence questions, principally `OPEN-007`; no universal threshold was invented.
 - External exchange/API facts remain in `../EXTERNAL_REVALIDATION_REGISTER.md`; no live external revalidation occurred.
+
+## PASS 12 roadmap overlay
+
+Risk Core is Phase 11: after measurable opportunity/account state and before execution transport can receive capital. Conservative hard-rule baselines resolve the model↔Micro-live bootstrap cycle. Every scale/Bridge/portfolio/maker action remains inside the current safe action set, CapabilityManifest and `Q_validated`; no roadmap stage weakens the Constitution.

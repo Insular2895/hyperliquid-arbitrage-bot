@@ -311,3 +311,7 @@ These existing Formula requirement IDs were omitted from the PASS 00 Participant
 - Canonical output: `docs_v2/06_MARKET_PARTICIPANTS.md` plus nine Participant deep specs.
 - Review proof: `../pass02_participants/PARTICIPANT_REQUIREMENT_LEDGER.md`.
 - Status correction: a locked architecture/interface does not imply learned coefficients or calibrated horizons are fixed.
+
+## PASS 12 roadmap overlay
+
+Opportunity and microstructure episodes precede serious Participant claims. A simple empirical Champion precedes challengers. Participant models are Phase 21 and do not block initial opportunity recording or a conservative TT baseline; maker evidence gates MT/MTT and any configured model becomes a critical dependency of its exact CapabilityManifest scope.

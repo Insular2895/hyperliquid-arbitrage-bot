@@ -4,7 +4,7 @@
 
 `docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception.
 
-PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques, leurs unités, signes, échecs, dépendances, consommateurs et golden vectors. L'ensemble reste soumis à revue humaine.
+PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques. PASS 12 reconstruit séparément l'ordre technique et le parcours scientifique qui mène de la donnée à une capacité validée. L'ensemble reste soumis à revue humaine.
 
 - [13 — Infrastructure](13_INFRASTRUCTURE.md)
 - [Infrastructure deep specs](deep-specs/infrastructure/README.md)
@@ -35,5 +35,9 @@ PASS 00 cartographie les exigences, formules, concepts, conflits et destinations
 - [04 — Formula Book](04_FORMULA_BOOK.md)
 - [Formula deep specs](deep-specs/formulas/README.md)
 - [PASS 11 evidence](./_analysis/pass11_formula_book/PASS11_FINAL_REPORT.md)
+- [17 — Technical Implementation Roadmap](17_IMPLEMENTATION_ROADMAP.md)
+- [19 — Build / Validate / Scale Journey](19_BUILD_VALIDATE_SCALE_ROADMAP.md)
+- [Roadmap deep specs](deep-specs/roadmaps/README.md)
+- [PASS 12 evidence](./_analysis/pass12_build_validate_scale/PASS12_FINAL_REPORT.md)
 
 Ordre d'autorité: dossiers de fermeture 1–6 dans leurs domaines, puis sources exploratoires non contredites. Les faits externes datés exigent une revalidation ultérieure.
