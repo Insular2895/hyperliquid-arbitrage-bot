@@ -213,3 +213,20 @@ All four are non-blocking for PASS 12 documentation and blocking only when their
 | Deployment/Operations | cross-cutting phase prerequisites → readiness/health events | no renumbering of PASS12 phases and no hot-path control dependency |
 
 Resolved: `ROADMAP_CROSS_DOMAIN_GAP-001`, `003`, `004`. Routed to PASS14: `ROADMAP_CROSS_DOMAIN_GAP-002` plus the Accounting-document authority, consolidated health vocabulary and Position-Sizer organizational boundary checks in `pass13_master_architecture/ARCHITECTURE_GAP_REGISTER.md`. Synchronous dependency cycles: **0**.
+
+## PASS 14 — Audited final dependency closure
+
+| Producer / owner | Contract | Principal consumers | PASS 14 result |
+|---|---|---|---|
+| adapters / ordered Core | Raw and normalized events | reducers, Recorder, Replay | producer and ordering verified |
+| Book / Metadata / Fee / Precision | coherent versioned snapshots | Formula, Graph, Risk, Execution | producer, freshness and external-rule gates verified |
+| Graph / Route | `RouteDefinition` | Opportunity, Replay, Execution | structural ownership verified; Atlas/Capital cannot mutate topology |
+| Participants / Simulator | forecasts / `ExecutionForecast(q)` | Sizer, Risk, evidence | prediction remains distinct from actual exchange truth |
+| Inventory / Capital / Sizer | actual state, reachability and bounded q proposal | Portfolio, Risk, Reservation, Accounting | Sizer ownership clarified; Risk remains final permission |
+| Risk | `RiskDecision` | Reservation, Execution, Recovery, Operations | no hard-gate bypass; three-state `InfraState` consumer fixed |
+| Execution / exchange evidence | plans/intents then order/fill events | reducers, Reconciliation, Recovery, Accounting | request is not event; actual-fill-only invariant verified |
+| Data / Validation | RunManifest, DecisionTrace, EvidenceId, ValidationReport, CapabilityManifest | Replay, Deployment, Risk, Execution, Operations | `ROADMAP_CROSS_DOMAIN_GAP-002` closed by typed references without expanding frozen schemas |
+| Infrastructure / Deployment / Operations | health, readiness and operational evidence | Risk, Execution, Validation | process state, readiness, alert severity and economic safety remain distinct |
+| Validation / Capability Manager | exact scoped maturity and permission manifest | Deployment, Risk, Execution | license/release/config cannot promote capability |
+
+Critical synchronous dependency cycles: **0**. Missing producers: **0**. Missing active consumers: **0**. Duplicate critical state owners: **0**. Unowned critical states: **0**. Remaining feedback loops are asynchronous and versioned; remaining `OPEN`/external dependencies are scoped in `pass14_cross_domain_consistency/RESIDUAL_CONSISTENCY_GAPS.md`.

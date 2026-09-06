@@ -7,7 +7,7 @@ REBUILD IN PROGRESS
 
 | Capability | Question | Inputs | Output | Owner |
 |---|---|---|---|---|
-| Position Sizing | How much total exposure is economically valid? | Size curves, Simulator distributions, Risk, inventory, balance/book capacity | `q* <= Q_validated` | Inventory/Capital Sizer inside Risk |
+| Position Sizing | How much total exposure is economically valid? | Size curves, Simulator distributions, Risk, inventory, balance/book capacity | `q* <= Q_validated` | Inventory/Capital Sizer, bounded by Risk |
 | Order Slicing | How is the fixed validated quantity executed through time/orders? | `q*`, book/queue/response, edge survival, Execution constraints | Child-order schedule whose sum does not exceed `q*` | Execution/Slicing |
 
 Sizing precedes Slicing. Slicing cannot create capacity, raise `Q_validated`, avoid shared reservations or change the approved terminal exposure. A material new quantity requires sizing/Risk revalidation.

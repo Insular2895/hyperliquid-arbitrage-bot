@@ -21,6 +21,7 @@ OPEN signifie décision réellement non prise. Les paramètres simplement calibr
 | OPEN-013 | Cross-exchange activation/product scope | Explicitly future | future pass |
 | OPEN-014 | Final license provider/mechanism | Deployment contract fixed, vendor open | PASS 09 |
 | OPEN-015 | Final telemetry/export backend | Operations contract fixed, backend open | PASS 10 |
+| OPEN-016 | Exact HWC/Atlas/support thresholds and evidence sufficiency | Architecture fixed; calibration and sample support absent | PASS 08/10 |
 | OPEN-017 | QF-041 zero executed-volume behavior | Source fixes ratio but not zero-denominator output; fail-closed typed result needs human validation | PASS 11 / future cross-domain review |
 | OPEN-018 | QF-043 `D_0=D_s` resilience behavior | Source gives equation/raw clamp but no zero-denominator convention | PASS 11 / future cross-domain review |
 | OPEN-019 | Empirical QF-061/062 quantile/ES convention | Finite-sample interpolation, ties and tail weighting not fixed by source | PASS 11 / Risk validation |

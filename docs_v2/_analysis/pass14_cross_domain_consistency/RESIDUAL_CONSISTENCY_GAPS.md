@@ -1,0 +1,18 @@
+# Residual Consistency Gaps
+
+`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+
+No unresolved cross-domain contradiction remains. The rows below are bounded input, calibration or product-decision dependencies. They are not permission to invent a default or to claim an affected capability is validated.
+
+| Gap ID | Question / IDs | Affected docs | Affected implementation phases | Affected capability | M0? | M1? | Replay? | Shadow? | MicroLive? | Live? | Source/human decision needed |
+|---|---|---|---|---|---:|---:|---:|---:|---:|---:|---|
+| `RG14-001` | Which provider, region, network mode, storage envelope and health thresholds satisfy measured support? `OPEN-001..006`, `OPEN-011`, applicable `EXT-002`, `EXT-005..015` | Infrastructure, Data, Deployment, Operations, Validation | 2–5, 13–14, 19–20, 26 | exchange adapters and production envelope | YES | YES, except provider conformance claims | YES with declared dataset/fidelity | CONDITIONAL | NO for affected probe | NO for affected scope | current benchmarks/facts plus explicit parameter promotion |
+| `RG14-002` | Which Risk, participant, inventory, maker and Atlas/HWC parameters have sufficient evidence? `OPEN-007..012`, `OPEN-016` | Risk, Participants, Simulator, Inventory/Capital, Graph/Atlas, Validation | 11, 15–25 | each consuming strategy/market/size/model scope | YES | YES | YES with versioned conservative baseline | CONDITIONAL | NO for affected probe | NO for affected scope | calibrated evidence and human promotion |
+| `RG14-003` | Which Future/commercial option is selected? `OPEN-013..015` | Future architecture, Deployment/Security, Operations | only the affected future/commercial workstream | cross-exchange, license mechanism, telemetry backend | YES | YES | YES | YES for core | YES for core | YES for core if commercial gate otherwise satisfied | explicit product/vendor decision; no effect on unrelated core capability |
+| `RG14-004` | Which source-omitted estimator, invalid-case and deterministic tie convention is canonical? `OPEN-017..028` | Formula, Risk, Participants, Simulator, Sizer/Portfolio, Infra, Accounting, Validation | 7, 11, 15, 17–18, 21–26 as consumed | exact QF consumer scope | YES | YES | CONDITIONAL | CONDITIONAL | NO when consumed by the probe | NO when consumed | human-validated, versioned formula-consumer policy and vectors |
+| `RG14-005` | What are the current exchange order, fee, precision, rate-limit and identity mechanics? `EXT-001..008` | Formula, Graph, Data, Execution, Inventory, Risk, Simulator, Deployment, Validation | 2, 5, 7, 13–14, 19–20 | exchange-bound adapters/emulator/Shadow/MicroLive/Live | YES | NO for exchange conformance | YES only with declared captured schema | NO until relevant semantics validated | NO | NO | current official/observed exchange evidence |
+| `RG14-006` | Are external academic/model claims transferable to local point-in-time data? `EXT-016` | Participants, Simulator, Validation, Roadmap | 21–23 when model is used | learned/model-dependent capabilities | YES | YES | YES as research, not production truth | CONDITIONAL | NO for model-dependent probe | NO for model-dependent scope | primary provenance plus local out-of-sample evidence |
+
+`CONDITIONAL` means the mode may proceed only for a scope that does not consume the unresolved item or that uses an already documented conservative fallback. These rows have named owners, consumers and gates.
+
+Residual blocking cross-domain inconsistencies: **0**. Residual unowned critical states: **0**. Residual destinationless requirements: **0**. Residual formula misuse, unit or sign errors: **0**. `OPEN-BLOCKING CROSS-DOMAIN ITEMS: 0`.

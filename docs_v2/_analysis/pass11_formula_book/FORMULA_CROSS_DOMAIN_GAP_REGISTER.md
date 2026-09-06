@@ -3,7 +3,7 @@
 DOCUMENTATION STATUS:
 REBUILD IN PROGRESS
 
-PASS11 records discrepancies but does not silently rewrite PASS01–10 masters. `Proposed PASS14 resolution` is future review work, not an executed pass.
+PASS11 recorded discrepancies without silently rewriting PASS01–10 masters. The `Proposed PASS14 resolution` column below is the historical handoff; PASS14 has now completed its cross-domain review, with final dispositions appended after the original register.
 
 | Gap ID | QF | Domain doc | Current statement | Canonical Formula Book statement | Severity | Implementation risk | Proposed PASS14 resolution | Source |
 |---|---|---|---|---|---|---|---|---|
@@ -36,3 +36,39 @@ PASS11 records discrepancies but does not silently rewrite PASS01–10 masters. 
 | GAP-F11-27 | 110 | Risk/Validation | MDD required without empty interval rule | nonempty interval required; source silent empty | low | invalid baseline metric | validate minimum evidence interval | SRC-004 9205–9224 |
 
 Cross-domain gaps found: `27`. None changes an older master in this pass. Critical/high gaps are fail-closed until future human resolution.
+
+## PASS 14 final disposition
+
+`OPEN` and `EXTERNAL GATED` mean the formula contract is internally consistent but the consuming capability must not guess the missing estimator or current fact.
+
+| PASS11 gap | PASS14 disposition | Canonical gate / evidence |
+|---|---|---|
+| `GAP-F11-01` | EXTERNAL GATED | QF-007/008 exact contract + `EXT-004` before exchange-bound encoding |
+| `GAP-F11-02` | RESOLVED / VERIFIED | pure QF-009/010 walk output remains distinct from full-route acceptance (`P14-008`) |
+| `GAP-F11-03` | EXTERNAL GATED | typed fee value/debit boundary + `EXT-003` (`P14-009`) |
+| `GAP-F11-04` | RESOLVED / VERIFIED | locked structure and calibrated weights remain separate |
+| `GAP-F11-05` | RESOLVED / VERIFIED | price-series reference is explicit and versioned |
+| `GAP-F11-06` | RESOLVED / VERIFIED | positive numerical safeguard and calibrated threshold remain separate versioned parameters |
+| `GAP-F11-07` | OPEN | `OPEN-017`; typed invalid/fail-closed until approved |
+| `GAP-F11-08` | OPEN | `OPEN-018`; typed invalid/fail-closed until approved |
+| `GAP-F11-09` | RESOLVED / VERIFIED | QF-046 exact `j=1..k`; no canonical regression |
+| `GAP-F11-10` | OPEN | `OPEN-021`; tail/censoring convention must be versioned |
+| `GAP-F11-11` | RESOLVED / VERIFIED | exclusive/exhaustive scenario mass and confidence evidence are explicit |
+| `GAP-F11-12` | OPEN | `OPEN-019`; empirical VaR/ES estimator and vectors required |
+| `GAP-F11-13` | OPEN | `OPEN-020`; invalid band behavior requires approval |
+| `GAP-F11-14` | OPEN | `OPEN-022`; deterministic search/refinement/tie policy required |
+| `GAP-F11-15` | OPEN | `OPEN-022`; deterministic solver/tie/failure policy required |
+| `GAP-F11-16` | RESOLVED / VERIFIED | latency boundaries are nonoverlapping and instrumentation-owned |
+| `GAP-F11-17` | OPEN | `OPEN-005`/`OPEN-023`; LCB estimator/alpha/safety factor require evidence |
+| `GAP-F11-18` | OPEN | `OPEN-024`; diagnostic is typed N/A for invalid denominator until approved |
+| `GAP-F11-19` | OPEN | `OPEN-024`; denominator/cohort contract requires approval |
+| `GAP-F11-20` | OPEN | `OPEN-025`; survival estimator/cohort eligibility requires evidence |
+| `GAP-F11-21` | OPEN | `OPEN-026`; clipping epsilon must be versioned and tested |
+| `GAP-F11-22` | RESOLVED / VERIFIED | QF-099 status provenance remains source-derived from context |
+| `GAP-F11-23` | RESOLVED / VERIFIED | QF-103 remains model-dependent and artifact-bound |
+| `GAP-F11-24` | RESOLVED / VERIFIED | QF-104 remains a categorical gate, never an invented scalar score |
+| `GAP-F11-25` | RESOLVED | Accounting authority/attribution boundary made explicit (`P14-004`) |
+| `GAP-F11-26` | OPEN | `OPEN-027`; zero-peak behavior requires approved typed policy |
+| `GAP-F11-27` | OPEN | `OPEN-028`; nonempty evidence interval required |
+
+PASS11 gaps reviewed by PASS14: **27/27**. Resolvable cross-domain inconsistencies remaining: **0**. Unresolved QF misuse: **0**. Open estimator/invalid-case choices and current exchange facts remain scoped gates, not silent defaults.

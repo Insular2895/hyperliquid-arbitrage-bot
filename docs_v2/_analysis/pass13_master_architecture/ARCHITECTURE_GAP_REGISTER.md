@@ -23,3 +23,14 @@
 | `ARCH-GAP-004` | Position Sizer organizational boundary | Inventory/Capital owns economic q; Risk owns ceilings/final permission; some prose says sizing “inside Risk” | Confirm module/API ownership without changing staged permission | No |
 
 Unowned canonical state: **0**. Duplicate logical state owners: **0**. Synchronous dependency cycles: **0**. No RunMode bypass or unversioned model feedback was found in the assembled architecture.
+
+## PASS 14 final disposition
+
+| Gap ID | PASS 14 resolution | Owning authority | Final status |
+|---|---|---|---|
+| `ARCH-GAP-001` | Immutable phase artifacts bind by `EvidenceId` to `ValidationReport` and exact `CapabilityManifest` entries while referencing, not expanding, frozen `RunManifest` | Data owns serialization/reference integrity; producers own artifact semantics; Validation owns sufficiency | RESOLVED PASS14 (`P14-003`) |
+| `ARCH-GAP-002` | Accounting remains one logical owner documented through Inventory/Capital + Formula; Execution supplies actual facts and Data supplies serialization | Inventory/Capital, Formula, Execution and Data within their existing boundaries | RESOLVED PASS14 (`P14-004`) |
+| `ARCH-GAP-003` | `InfraState` is exactly `HEALTHY / DEGRADED / UNSAFE`; critical is an alert/incident severity, not a fourth state | Infrastructure/Data state contract; Operations severity | RESOLVED PASS14 (`P14-001`) |
+| `ARCH-GAP-004` | Inventory/Capital Sizer proposes economic q; Risk bounds and grants final permission | PASS07 sizing + PASS05 Risk | RESOLVED PASS14 (`P14-002`) |
+
+PASS13 gaps resolved by PASS14: **4/4**. Residual unowned or destinationless architecture gap: **0**.

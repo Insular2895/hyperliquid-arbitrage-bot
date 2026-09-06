@@ -2,6 +2,10 @@
 
 `DOCUMENTATION STATUS: REBUILD IN PROGRESS`
 
+## PASS 14 accounting target overlay
+
+All 67 historical rows whose `Master Doc` is the logical label `Accounting` resolve to existing canonical destinations: `08_INVENTORY_AND_CAPITAL.md` and `deep-specs/inventory-capital/10_ECONOMIC_PNL_ACCOUNTING_AND_CAPITAL_EFFICIENCY.md` own attribution semantics; `04_FORMULA_BOOK.md` and `deep-specs/formulas/10_QF105_QF110_CAPITAL_ACCOUNTING_AND_DRAWDOWN.md` own QF-105–110; Execution/FillLedger supplies actual facts; Data owns serialization and lineage. The original status of every row—including Research, Future, Rejected and External Revalidation—continues to govern. The label does not imply a missing standalone master or a duplicate state owner.
+
 ## PASS 02 canonical target overlay
 
 For the 282 requirements reviewed in PASS 02, `06_MARKET_PARTICIPANTS.md` is the Participant master and `deep-specs/participants/01..09` are the detailed targets. Formula-, Data-, Risk-, Execution-, Simulator-, Infrastructure-, Sizing-, Recorder-, Market Atlas- and Validation-owned requirements remain routed to their future owning pass while their Participant interfaces are now covered. The exact row-level mapping and disposition are in `pass02_participants/PARTICIPANT_REQUIREMENT_LEDGER.md`; no requirement ID was renumbered and no PASS 00 row below was globally regenerated.

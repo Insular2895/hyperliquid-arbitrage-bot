@@ -240,7 +240,7 @@ Monitored switch families include execution-quality divergence, Simulator calibr
 
 Every strategy/capability declares mandatory dependencies, optional dependencies and validated fallbacks. Failure of a mandatory model or feed disables only dependent capabilities when narrower safe isolation is possible. Fallback must be at least as conservative as the failed capability.
 
-Infrastructure levels are `HEALTHY`, `DEGRADED`, `UNSAFE`, `CRITICAL`: progressively reduced size/higher economic threshold, then no new risk, then cancel/recover/halt as applicable. Exact transitions are calibrated. Missing support never means “ignore the feature and trade unchanged.”
+`InfraState` has exactly three values: `HEALTHY`, `DEGRADED`, `UNSAFE`. `HEALTHY` adds no infrastructure restriction; `DEGRADED` narrows permission; `UNSAFE` forbids new risk and permits only the applicable cancel/reconcile/recovery/halt actions. `CRITICAL` is an alert/incident-severity qualifier, not an `InfraState` value. Exact thresholds and transitions are calibrated. Missing support never means “ignore the feature and trade unchanged.”
 
 ## 23. Drawdown/loss controls
 

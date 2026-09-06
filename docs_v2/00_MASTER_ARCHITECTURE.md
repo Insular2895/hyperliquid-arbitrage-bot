@@ -27,7 +27,7 @@ Domain truth remains owned by its master and deep specs. The Formula Book owns m
 | How is the client product deployed? | [Deployment](14_DEPLOYMENT_AND_DOCKER.md), [Infrastructure](13_INFRASTRUCTURE.md) | `deep-specs/deployment-security`, `deep-specs/infrastructure` | Deployment validation |
 | When can a capability scale? | [Validation](16_VALIDATION_MATRIX.md), [Roadmaps](17_IMPLEMENTATION_ROADMAP.md), [Evidence Journey](19_BUILD_VALIDATE_SCALE_ROADMAP.md) | `deep-specs/validation`, `deep-specs/roadmaps` | M0–M5; `Q_validated` |
 
-Authority conflicts are handled by the owning domain and [PASS 14](./_analysis/REBUILD_PLAN.md), never by silently changing this summary.
+Authority conflicts are handled by the owning domain and the [PASS 14 consistency audit](./_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md), never by silently changing this summary.
 
 ## 4. Current V1 scope
 
@@ -214,6 +214,8 @@ Reconciliation establishes exchange truth in the order orders → fills → bala
 
 Accounting consumes unique actual fills, fees, inventory valuation and classified capital actions. It attributes Strategy/Route, Execution cost, Recovery, Inventory MTM, Rebalance, Bridge/Relocation, Infrastructure and idle-capital components without double counting. Forecast penalties never silently become realized PnL.
 
+Accounting is a logical owner, not a missing standalone V2 master. Its canonical documentation authority is [Inventory and Capital](08_INVENTORY_AND_CAPITAL.md), especially the [economic PnL/accounting deep spec](deep-specs/inventory-capital/10_ECONOMIC_PNL_ACCOUNTING_AND_CAPITAL_EFFICIENCY.md), while [Formula Book](04_FORMULA_BOOK.md) owns QF-105–110, Execution/FillLedger owns actual facts, and Data owns serialized records and lineage. A future file split may improve navigation but cannot create a second accounting truth.
+
 ## 27. Recorder / Replay
 
 Data is layered: L0 immutable RAW; L1 normalized events; L2 canonical state; L3 derived features/forecasts; L4 decisions/results. Recorder priority preserves fills/account/execution and incident evidence before general market data and derived diagnostics. Recorder non-blocking behavior is mandatory. The Execution Journal is distinct from broad RAW.
@@ -342,7 +344,7 @@ Exact wording, owner and violation response are cataloged in [Cross-domain Invar
 
 Open IDs remain `OPEN-001..016` plus formula `OPEN-017..028`, under their existing owners. They cover provider/region/network, thresholds, ROI estimator, node, Risk/model/inventory/survival, retention, maker activation, cross-exchange, licensing, telemetry, HWC/support and source-omitted formula conventions. Current Hyperliquid, platform and provider facts remain `EXTERNAL_REVALIDATION`.
 
-PASS 13 freezes no Rust crate layout, channel type, database table, thread count, CPU pinning, container network mode, vendor or calibrated number. Remaining interface consistency questions are routed in [Architecture Gap Register](./_analysis/pass13_master_architecture/ARCHITECTURE_GAP_REGISTER.md) for PASS 14.
+PASS 13 freezes no Rust crate layout, channel type, database table, thread count, CPU pinning, container network mode, vendor or calibrated number. The four former interface-consistency questions are closed by owning-domain authority in the [Architecture Gap Register](./_analysis/pass13_master_architecture/ARCHITECTURE_GAP_REGISTER.md); remaining calibrated and external dependencies stay scoped in the [PASS 14 residual register](./_analysis/pass14_cross_domain_consistency/RESIDUAL_CONSISTENCY_GAPS.md).
 
 ## 44. Deep-spec links
 

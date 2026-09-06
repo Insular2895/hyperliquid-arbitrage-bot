@@ -225,3 +225,12 @@ Detailed reasoning and five bootstrap-cycle resolutions: `pass12_build_validate_
 PASS 13 introduced no new domain conflict ID. Eight apparent cross-domain readings were resolved without changing domain truth: modular monolith versus microservices; staged Risk around sizing; distinct reducer ownership under one coordinator; capability-specific TTT/model dependency; Graph versus Atlas/HWC/Risk; Recovery proposal versus Execution effects; license failure versus safety actions; and software rollback versus exchange truth.
 
 Architecture-only issues found/resolved: **8/8**. Remaining domain-changing consistency questions: **4**, routed to PASS14 as `ARCH-GAP-001..004` in `pass13_master_architecture/ARCHITECTURE_GAP_REGISTER.md`. Prior conflict resolutions `CONFLICT-001..126` remain unchanged.
+
+## PASS 14 — Cross-domain consistency review
+
+| Conflict ID | Concept | Documents | Authority | Canonical resolution | Confidence | PASS14 status |
+|---|---|---|---|---|---|---|
+| CONFLICT-127 | Infrastructure state enum versus alert severity | Infrastructure/Data use `HEALTHY / DEGRADED / UNSAFE`; Risk prose added `CRITICAL` as state | Infrastructure owns health state; Data owns enum contract; Operations owns alert/incident severity | `InfraState` keeps three values; a critical operational condition maps to `UNSAFE` plus the applicable safe action | HIGH | RESOLVED PASS14 (`P14-001`) |
+| CONFLICT-128 | Position Sizer organizational ownership | Inventory/Capital owns economic q; one deep spec said Sizer was inside Risk | PASS07 owns sizing optimization; PASS05 owns ceilings and final permission | Inventory/Capital proposes `q`; Risk filters unsafe points and grants or denies permission | HIGH | RESOLVED PASS14 (`P14-002`) |
+
+PASS 14 reviewed `CONFLICT-001..128`. Regressions: **0**. New cross-domain conflicts found/resolved: **2/2**. The other PASS 14 findings were missing propagation, interface placement or navigation issues and therefore remain in the PASS14 audit ledger rather than being misclassified as source/domain contradictions.

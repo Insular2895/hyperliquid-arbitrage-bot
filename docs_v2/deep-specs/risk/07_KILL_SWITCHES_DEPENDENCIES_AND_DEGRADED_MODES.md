@@ -33,7 +33,7 @@ Each capability declares mandatory dependencies, optional dependencies and valid
 
 ## Degraded infrastructure
 
-`HEALTHY` imposes no independent restriction; `DEGRADED` may reduce size or require more economic margin; `UNSAFE` forbids new risk; `CRITICAL` invokes cancel/recovery/halt behavior. Feed age, clock, network, processing lag, scheduler, API, WebSocket, recorder and storage contribute. Exact thresholds, windows and hysteresis are calibrated.
+`InfraState` has exactly `HEALTHY`, `DEGRADED` and `UNSAFE`. `HEALTHY` imposes no independent restriction; `DEGRADED` may reduce size or require more economic margin; `UNSAFE` forbids new risk and invokes the applicable cancel/recovery/halt behavior. `CRITICAL` qualifies alert or incident severity and must map to an `UNSAFE` infrastructure outcome when it affects safe operation; it is not a fourth `InfraState`. Feed age, clock, network, processing lag, scheduler, API, WebSocket, recorder and storage contribute. Exact thresholds, windows and hysteresis are calibrated.
 
 ## Reset
 

@@ -19,4 +19,4 @@ These documents decompose [00 — Master Architecture](../../00_MASTER_ARCHITECT
 | [11](11_FAILURE_CONTAINMENT_AND_DEGRADATION_ARCHITECTURE.md) | Scoped fail-closed behavior and safe actions |
 | [12](12_CURRENT_V1_FUTURE_BOUNDARIES_AND_EVOLUTION.md) | Current, progressive and Future capabilities |
 
-Authority order: owning domain master/deep spec → Formula/Risk/Data/Execution closures → this cross-domain synthesis. PASS 14 audits remaining cross-domain consistency.
+Authority order: owning domain master/deep spec → Formula/Risk/Data/Execution closures → this cross-domain synthesis. The completed [PASS 14 audit](../../_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md) records cross-domain resolutions and bounded residual dependencies.

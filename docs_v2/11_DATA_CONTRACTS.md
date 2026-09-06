@@ -144,6 +144,10 @@ RunManifest {
 
 Deployment/image digest and critical environment dependency locks must be associated with the manifest where deployment/research reproducibility requires them. `ResolvedConfig`, never raw user input or hidden defaults, is addressed by `config_hash`.
 
+### Evidence and phase-artifact binding
+
+The frozen `RunManifest` is not expanded ad hoc. A phase exit produces an immutable evidence package identified by `EvidenceId`; that package references the applicable `RunManifest`, `DatasetId`, report/artifact hashes and the already-owned model, formula, schema, configuration and infrastructure identities. A `ValidationReport` aggregates those EvidenceIds, and a `CapabilityManifest` links only to the validation evidence that supports its exact `ValidatedCapability` entries. `ModelArtifact`, `AtlasVersion`, `ReplayReport`, `ShadowRun`, `MicroLiveRun`, `InfraBenchmark` and phase reports therefore integrate by typed reference and hash, not by duplicating fields into `RunManifest` or changing another owner's schema. Data owns identifier, serialization, compatibility and reference-integrity rules; the producing domain owns artifact semantics; Validation owns sufficiency and promotion.
+
 ## 17. DecisionTrace
 
 The frozen trace is:
