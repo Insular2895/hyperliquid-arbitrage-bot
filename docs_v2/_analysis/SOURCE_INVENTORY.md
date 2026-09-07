@@ -1,6 +1,6 @@
 # Source Inventory
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Identité physique vérifiée avant l’extraction. Les huit hashes correspondent à l’inventaire historique.
 

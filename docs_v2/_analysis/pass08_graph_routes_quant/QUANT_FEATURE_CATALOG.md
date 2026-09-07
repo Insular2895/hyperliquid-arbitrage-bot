@@ -1,7 +1,7 @@
 # Quant Feature Catalog
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 All expressions are authoritative in SRC-004 and `../FORMULA_INDEX.md`; this catalog specifies runtime semantics and interfaces only. `I` = incrementally maintained where applicable, `D` = derived on request, and hot-path `Yes` always means bounded in-memory computation.
 

@@ -1,6 +1,6 @@
 # SRC-001 Extraction
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 - Source ID: `SRC-001`
 - Filename: `23. Lock-free  ring buffers  zero-copy.md`

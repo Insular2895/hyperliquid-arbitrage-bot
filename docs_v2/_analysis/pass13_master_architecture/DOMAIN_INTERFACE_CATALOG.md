@@ -1,6 +1,6 @@
 # Domain Interface Catalog
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Interface | Producer | Consumers | Required semantic boundary / versioning |
 |---|---|---|---|

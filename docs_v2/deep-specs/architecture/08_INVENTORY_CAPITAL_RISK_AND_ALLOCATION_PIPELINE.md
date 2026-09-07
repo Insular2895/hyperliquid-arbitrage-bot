@@ -1,6 +1,6 @@
 # 08 — Inventory, Capital, Risk and Allocation Pipeline
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Actual fills produce Inventory deltas. Account balances minus Reservation state produce available resources. Inventory class/bands, future post-action state, exit cost, stranded risk and Atlas-supported future utility produce Terminal Viability and Capital Reachability.
 

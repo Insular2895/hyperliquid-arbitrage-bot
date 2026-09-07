@@ -1,7 +1,7 @@
 # Client Isolation Model
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Boundary | Required isolation | Failure containment | Evidence |
 |---|---|---|---|

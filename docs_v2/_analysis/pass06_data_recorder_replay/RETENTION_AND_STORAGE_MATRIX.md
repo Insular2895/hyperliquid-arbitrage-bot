@@ -1,7 +1,7 @@
 # Retention and Storage Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Evidence | Default semantic class | Local role | Archive role | Exact duration/status |
 |---|---|---|---|---|

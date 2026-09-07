@@ -1,7 +1,7 @@
 # Sizing Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This focused ledger groups the sizing obligations extracted from the 545-row domain ledger. Row-level IDs and dispositions are in `INVENTORY_CAPITAL_REQUIREMENT_LEDGER.md`.
 

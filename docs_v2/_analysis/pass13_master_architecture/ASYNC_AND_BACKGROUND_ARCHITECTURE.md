@@ -1,6 +1,6 @@
 # Async and Background Architecture
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Responsibility | Class | Input/output | Failure isolation | Re-entry to production |
 |---|---|---|---|---|

@@ -1,7 +1,7 @@
 # Terminal Viability Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Evaluation dimension | Input | Quantity-sensitive? | Owner | Result effect |
 |---|---|---:|---|---|

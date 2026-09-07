@@ -1,6 +1,6 @@
 # Unit and Dimension Crosscheck
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 PASS 11's 110/110 dimensional audit was rechecked at cross-domain consumption boundaries.
 

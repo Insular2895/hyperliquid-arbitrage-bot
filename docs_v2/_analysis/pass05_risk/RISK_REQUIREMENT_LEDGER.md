@@ -1,7 +1,7 @@
 # Risk Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This PASS 05 ledger covers all 752 unique entries in the PASS 00 RISK domain index. Original titles and locators remain in `docs_v2/_analysis/domain_indexes/RISK.md`; this file assigns exactly one allowed disposition to every entry. All 752 source ranges were checked against their source file and are in bounds.
 

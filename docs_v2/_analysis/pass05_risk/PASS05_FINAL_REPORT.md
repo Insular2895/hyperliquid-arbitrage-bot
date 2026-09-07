@@ -1,7 +1,7 @@
 # PASS 05 — RISK CONSTITUTION COMPLETE
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Risk-related requirements reviewed: **752/752** unique PASS 00 Risk-index requirements; source locator failures: **0**.
 

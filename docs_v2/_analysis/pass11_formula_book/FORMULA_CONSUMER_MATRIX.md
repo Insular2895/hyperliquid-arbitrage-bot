@@ -1,7 +1,7 @@
 # Formula Consumer Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF | Primary owner | Runtime/research consumers | Consumer count | Required output evidence |
 |---|---|---|---:|---|

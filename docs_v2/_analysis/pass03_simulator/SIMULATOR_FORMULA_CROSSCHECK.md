@@ -1,6 +1,6 @@
 # PASS 03 — Simulator Formula Crosscheck
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 03 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 03 REVIEW COMPLETE`
 
 SRC-004 Formula Book sections were reopened. This pass references formulas; it does not alter or re-ID them. **42** QF entries were checked.
 

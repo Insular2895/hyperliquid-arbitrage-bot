@@ -1,6 +1,6 @@
 # SRC-003 Extraction
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 - Source ID: `SRC-003`
 - Filename: `Concrètement, en production on doit garder au moins .md`

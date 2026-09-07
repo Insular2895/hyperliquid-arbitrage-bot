@@ -1,6 +1,6 @@
 # Legacy Untraced Register
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Ces headings/claims structurants de l’ancienne consolidation n’ont pas de correspondance lexicale suffisante dans le ledger source-first. Ils sont quarantinés: ils ne sont pas copiés dans v2 sans revue humaine.
 

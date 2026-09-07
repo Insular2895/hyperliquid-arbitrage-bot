@@ -1,7 +1,7 @@
 # Formula and Metric Crosscheck
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 PASS 10 consumes Formula authority and does not rewrite equations.
 

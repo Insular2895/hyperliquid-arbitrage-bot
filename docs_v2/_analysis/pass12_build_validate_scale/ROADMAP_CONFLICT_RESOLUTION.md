@@ -1,7 +1,7 @@
 # PASS 12 — Roadmap Conflict Resolution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Only genuine sequencing/authority conflicts are recorded. These are PASS 12 views of source evolution; existing domain masters remain authoritative.
 

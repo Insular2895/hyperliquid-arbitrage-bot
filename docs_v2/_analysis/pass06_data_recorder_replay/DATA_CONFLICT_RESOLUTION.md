@@ -1,7 +1,7 @@
 # Data / Recorder / Replay Conflict Resolution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | # | Conflict | Older/exploratory position | Canonical resolution | Authority/result |
 |---:|---|---|---|---|

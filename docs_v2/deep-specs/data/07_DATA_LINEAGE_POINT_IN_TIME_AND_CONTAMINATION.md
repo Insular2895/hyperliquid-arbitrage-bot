@@ -1,7 +1,7 @@
 # Data Lineage, Point-in-time Correctness and Contamination
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Lineage graph
 

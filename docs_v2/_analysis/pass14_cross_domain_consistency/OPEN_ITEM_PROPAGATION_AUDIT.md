@@ -1,6 +1,6 @@
 # Open-Item Propagation Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Open ID(s) | Decision family | Owner/consumer propagation | PASS 14 result |
 |---|---|---|---|

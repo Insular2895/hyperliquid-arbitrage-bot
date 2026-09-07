@@ -1,7 +1,7 @@
 # Data Layer Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Layer | Inputs | Canonical outputs | Owner | Rebuildability | Forbidden substitution |
 |---|---|---|---|---|---|

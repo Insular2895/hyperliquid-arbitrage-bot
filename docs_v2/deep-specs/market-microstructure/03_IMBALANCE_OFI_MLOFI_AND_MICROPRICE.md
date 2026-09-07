@@ -1,7 +1,7 @@
 # Imbalance, OFI, MLOFI and Microprice
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Canonical measurements
 

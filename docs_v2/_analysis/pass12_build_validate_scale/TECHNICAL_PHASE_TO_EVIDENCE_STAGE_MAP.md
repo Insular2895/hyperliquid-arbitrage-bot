@@ -1,7 +1,7 @@
 # PASS 12 — Technical Phase to Evidence-Stage Crosswalk
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Technical phase | Primary evidence stage | Secondary / ongoing stages | First real use | First possible maturity | First capital | Ongoing evidence |
 |---:|---|---|---|---|---|---|

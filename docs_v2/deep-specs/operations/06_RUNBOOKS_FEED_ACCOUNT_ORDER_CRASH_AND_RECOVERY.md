@@ -1,7 +1,7 @@
 # 06 — Runbooks: Feed, Account, Order, Crash and Recovery
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Feed/Book desync
 

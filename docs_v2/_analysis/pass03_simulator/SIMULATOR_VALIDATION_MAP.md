@@ -1,6 +1,6 @@
 # PASS 03 — Simulator Validation Map
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 03 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 03 REVIEW COMPLETE`
 
 No numerical acceptance threshold is invented. Targets marked “calibrated” require a versioned Validation/Risk decision and support analysis.
 

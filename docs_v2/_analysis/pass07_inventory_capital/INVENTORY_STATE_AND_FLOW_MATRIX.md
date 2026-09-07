@@ -1,7 +1,7 @@
 # Inventory State and Flow Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | State | Producer | Consumer | Source truth | Formula/ref | Time/version |
 |---|---|---|---|---|---|

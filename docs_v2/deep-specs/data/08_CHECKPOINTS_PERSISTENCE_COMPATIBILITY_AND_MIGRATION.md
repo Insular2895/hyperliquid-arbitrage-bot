@@ -1,7 +1,7 @@
 # Checkpoints, Persistence, Compatibility and Migration
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Persistence classes
 

@@ -1,6 +1,6 @@
 # Rationale and Edge-Case Recovery
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | ID | Source | Category | Preserved meaning | Destination | PASS15 action |
 |---|---|---|---|---|---|

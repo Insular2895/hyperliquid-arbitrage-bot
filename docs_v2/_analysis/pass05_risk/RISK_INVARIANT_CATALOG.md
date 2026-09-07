@@ -1,7 +1,7 @@
 # Risk Invariant Catalog
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Authority: SRC-005 Dossier 3/6. Search found exactly 30 identifiers, `INV-001` through `INV-030`; 30 are documented, zero are superseded, zero are destinationless.
 

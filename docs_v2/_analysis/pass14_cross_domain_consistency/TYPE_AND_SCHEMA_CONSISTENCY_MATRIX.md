@@ -1,6 +1,6 @@
 # Type and Schema Consistency Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Type/schema | Frozen or authoritative core | Producer / writer | Consumer rule | Consistency result |
 |---|---|---|---|---|

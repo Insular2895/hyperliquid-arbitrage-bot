@@ -1,7 +1,7 @@
 # 05 — SLOs, Baselines and Calibrated Thresholds
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 SLOs cover correctness/readiness, not merely uptime: Feed/Book validity, account reconciliation, decision integrity, execution safety, Recovery, Recorder/evidence, latency distributions, model/Simulator calibration, Risk enforcement and deployment/security authority.
 

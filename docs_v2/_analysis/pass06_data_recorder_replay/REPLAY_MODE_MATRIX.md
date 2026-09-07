@@ -1,7 +1,7 @@
 # Replay Mode Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Replay mode | Market evidence | Clock/order | Own execution path | Market response | Primary claim |
 |---|---|---|---|---|---|

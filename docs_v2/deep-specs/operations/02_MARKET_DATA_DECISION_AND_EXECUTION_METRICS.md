@@ -1,7 +1,7 @@
 # 02 — Market Data, Decision and Execution Metrics
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Market/data
 

@@ -1,7 +1,7 @@
 # Route Classification Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Structure/context | Classification | Required proof | If proof absent | Owner |
 |---|---|---|---|---|

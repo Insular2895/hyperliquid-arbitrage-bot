@@ -1,7 +1,7 @@
 # Supply-Chain Integrity Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Stage | Locked requirement | Evidence / rejection | Tooling status |
 |---|---|---|---|

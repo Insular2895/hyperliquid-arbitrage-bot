@@ -1,7 +1,7 @@
 # Domain Definition of Done Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Domain/capability | Definition of Done evidence |
 |---|---|

@@ -1,7 +1,7 @@
 # Risk Validation Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 SRC-006 lines 4550–4589 requires unit/property/fault testing per constitutional invariant and the explicit tests below. Exact performance/tolerance values are calibrated.
 

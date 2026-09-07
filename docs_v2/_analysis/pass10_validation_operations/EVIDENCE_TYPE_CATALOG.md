@@ -1,7 +1,7 @@
 # Evidence Type Catalog
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 An `EvidenceId` is a stable identifier for an immutable evidence package, not a mutable dashboard URL. Every package identifies scope, claim, test/metric version, run/build/config/model/formula/schema, dataset/source interval, infrastructure, start/end, seed where relevant, expected/observed outcome, validity/exclusions, artifact hashes, reviewer/decision and unresolved deviations.
 

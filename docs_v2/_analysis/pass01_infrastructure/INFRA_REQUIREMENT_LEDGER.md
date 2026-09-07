@@ -1,6 +1,6 @@
 # PASS 01 — Infrastructure Requirement Ledger
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 01 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 01 REVIEW COMPLETE`
 
 Ce registre constitue la preuve de revue exigence par exigence. Il ne remplace pas les sources : chaque interprétation a été contrôlée contre le locator original. PASS 00 a servi uniquement à naviguer vers ces locators.
 

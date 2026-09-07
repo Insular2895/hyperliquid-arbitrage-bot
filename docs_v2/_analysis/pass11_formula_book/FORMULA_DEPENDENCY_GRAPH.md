@@ -1,7 +1,7 @@
 # Formula Dependency Graph
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Edges mean the downstream formula consumes the upstream mathematical result or its exact contract. Raw inputs are listed as `root`. Model/evidence dependencies remain versioned even when no QF edge exists.
 

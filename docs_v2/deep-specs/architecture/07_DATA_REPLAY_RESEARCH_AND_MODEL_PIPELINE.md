@@ -1,6 +1,6 @@
 # 07 — Data, Replay, Research and Model Pipeline
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 L0 RAW preserves received payload bytes and provenance. L1 contains typed normalized events. L2 contains canonical state. L3 contains derived features/forecasts. L4 contains decisions/results. No later layer replaces L0 evidence.
 

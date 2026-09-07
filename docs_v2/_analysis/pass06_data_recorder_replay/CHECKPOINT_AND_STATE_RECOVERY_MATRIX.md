@@ -1,7 +1,7 @@
 # Checkpoint and State Recovery Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Situation | Checkpoint | Journal/events | Exchange reconciliation | Result |
 |---|---|---|---|---|

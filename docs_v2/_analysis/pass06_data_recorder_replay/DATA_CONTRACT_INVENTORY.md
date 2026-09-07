@@ -1,7 +1,7 @@
 # Data Contract Inventory
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This inventory indexes **68 canonical contracts/representations** recovered from SRC-005 Dossier 4. “Version” means a direct schema/version field or a mandatory link to its enclosing versioned envelope/manifest.
 

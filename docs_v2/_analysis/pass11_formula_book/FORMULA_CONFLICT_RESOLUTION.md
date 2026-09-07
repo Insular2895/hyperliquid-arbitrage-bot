@@ -1,7 +1,7 @@
 # Formula Conflict Resolution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Only actual divergent claims are conflicts; missing detail is recorded in the gap/open registers.
 

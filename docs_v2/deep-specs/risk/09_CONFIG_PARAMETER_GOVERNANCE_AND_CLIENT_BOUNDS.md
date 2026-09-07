@@ -1,7 +1,7 @@
 # Config, Parameter Governance and Client Bounds
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Constitutional versus tunable
 

@@ -1,6 +1,6 @@
 # PASS 04 — Execution Legacy Comparison
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 Compared only after V2 reconstruction: `docs/10_EXECUTION_STATE_MACHINE.md`, `09_RISK_CONSTITUTION.md`, `12_RECORDER_AND_REPLAY.md`, `14_DEPLOYMENT_AND_DOCKER.md`, `16_VALIDATION_MATRIX.md`, and relevant `docs/specs/` execution/recovery/reconciliation/reservation/transport/nonce/signer/replay/inventory files.
 

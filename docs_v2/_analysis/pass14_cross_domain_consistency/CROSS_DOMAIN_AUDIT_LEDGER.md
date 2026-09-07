@@ -1,6 +1,6 @@
 # Cross-Domain Audit Ledger
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 PASS 14 traversed 17 canonical masters (4,494 lines before fixes), 181 deep-spec Markdown files (7,084 lines), PASS 00 plus PASS 01–13 final reports, and the eight global registers named by the mission. Automated checks covered 454 Markdown files, 447 local links, 2,590 stable requirements and QF-001–110. Human semantic review concentrated on ownership, schemas, state/status vocabularies, ordering, formula consumers, run modes, evidence, current/future scope and every prior PASS 14 gap.
 

@@ -1,7 +1,7 @@
 # Participation, Impact and Liquidity Resilience
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Distinct concepts
 

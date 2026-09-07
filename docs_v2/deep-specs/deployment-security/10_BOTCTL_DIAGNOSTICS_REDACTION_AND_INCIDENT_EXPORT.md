@@ -1,7 +1,7 @@
 # 10 — `botctl`, Diagnostics, Redaction and Incident Export
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Operator interface
 

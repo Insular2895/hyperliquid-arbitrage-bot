@@ -1,7 +1,7 @@
 # PASS 07 — INVENTORY / CAPITAL / BRIDGE / SIZING COMPLETE
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Inventory/Capital requirements reviewed: **545/545** unique PASS00 domain-index requirements across SRC-001–008; unique IDs: **545**; source locator failures: **0**.
 

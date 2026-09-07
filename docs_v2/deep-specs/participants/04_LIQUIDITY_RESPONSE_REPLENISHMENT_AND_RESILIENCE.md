@@ -1,6 +1,6 @@
 # 04 — Liquidity Response, Replenishment and Resilience
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Model boundary
 

@@ -1,7 +1,7 @@
 # Container Hardening Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Control | Baseline | Failure consequence | Verification |
 |---|---|---|---|

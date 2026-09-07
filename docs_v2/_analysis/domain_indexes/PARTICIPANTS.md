@@ -1,6 +1,6 @@
 # Domain Index — PARTICIPANTS
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 - PASS 00 stable IDs: 263 (261 extracted requirements + 2 explicit overlays; stale header corrected in PASS 02)
 - PASS 02 reviewed scope: 282 (263 PASS 00 IDs + 19 recovered Formula dependencies)

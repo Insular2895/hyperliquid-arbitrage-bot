@@ -1,6 +1,6 @@
 # 06 — Market Participants and Competition
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## 1. Purpose
 

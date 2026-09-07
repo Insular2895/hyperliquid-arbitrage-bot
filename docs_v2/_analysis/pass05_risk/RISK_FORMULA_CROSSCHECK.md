@@ -1,7 +1,7 @@
 # Risk Formula Crosscheck
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 PASS 05 consumes but does not redefine Formula Book equations. SRC-004 QF entries and `docs_v2/_analysis/FORMULA_INDEX.md` remain authoritative; any earlier variant is subordinate and a formula change waits for PASS 11.
 

@@ -1,7 +1,7 @@
 # RiskDecision Contract Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Authority resolution
 

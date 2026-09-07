@@ -1,6 +1,6 @@
 # Legacy Gap Analysis
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Comparaison effectuée après les huit extractions et le ledger initial. Le score lexical mesure la présence, pas la justesse; aucune affirmation legacy n’est promue automatiquement.
 

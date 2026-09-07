@@ -1,7 +1,7 @@
 # Recorder and Replay Deep Specifications
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 These documents expand [12 — Recorder and Replay](../../12_RECORDER_AND_REPLAY.md). SRC-005 closes priority, determinism and replay semantics; SRC-003 supplies compatible storage/retention detail; SRC-006 supplies acceptance gates.
 

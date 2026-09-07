@@ -1,6 +1,6 @@
 # PASS 01 — Infrastructure External Snapshots
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 No live external validation was performed during PASS 01. Values are preserved exactly enough to explain historical candidate selection. `YES` in the revalidation column means the value must not be treated as current.
 

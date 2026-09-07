@@ -1,7 +1,7 @@
 # 06 — Micro-live Validation and Predicted versus Actual
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Preconditions
 

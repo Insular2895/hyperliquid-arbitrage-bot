@@ -1,7 +1,7 @@
 # HOT / WARM / COLD Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 HWC is a reversible compute/economic-relevance classification. It is neither topology nor Risk permission.
 

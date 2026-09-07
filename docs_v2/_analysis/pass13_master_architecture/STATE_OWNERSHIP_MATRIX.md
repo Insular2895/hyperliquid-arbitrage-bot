@@ -1,6 +1,6 @@
 # State Ownership Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Canonical state | Logical writer | Readers | Version/snapshot | Persistence | Replay reconstruction |
 |---|---|---|---|---|---|

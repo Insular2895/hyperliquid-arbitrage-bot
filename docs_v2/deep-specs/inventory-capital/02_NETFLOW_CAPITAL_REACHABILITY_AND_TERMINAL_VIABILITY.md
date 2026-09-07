@@ -1,7 +1,7 @@
 # 02 — NetFlow, Capital Reachability and Terminal Viability
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## NetFlow
 

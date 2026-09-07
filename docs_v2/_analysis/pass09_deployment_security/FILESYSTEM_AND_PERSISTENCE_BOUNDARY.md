@@ -1,7 +1,7 @@
 # Filesystem and Persistence Boundary
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Path/class | Mutable | Persistent | Backup | Loss policy |
 |---|---:|---:|---:|---|

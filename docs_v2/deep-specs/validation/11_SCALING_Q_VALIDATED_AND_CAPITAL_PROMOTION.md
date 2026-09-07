@@ -1,7 +1,7 @@
 # 11 — Scaling, Q_validated and Capital Promotion
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 `Q_validated` is the largest q for which market data, route economics, model/simulator support, Risk, inventory/capital, execution/recovery, infrastructure and operations all pass. The first failed gate bounds it; if none pass, q is zero.
 

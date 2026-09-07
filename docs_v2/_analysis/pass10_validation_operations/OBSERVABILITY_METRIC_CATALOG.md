@@ -1,7 +1,7 @@
 # Observability Metric Catalog
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Family | Mandatory signals | Safety use |
 |---|---|---|

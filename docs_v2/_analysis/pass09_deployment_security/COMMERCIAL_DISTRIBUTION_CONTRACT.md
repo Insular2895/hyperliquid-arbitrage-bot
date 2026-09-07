@@ -1,7 +1,7 @@
 # Commercial Distribution Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Canonical model
 

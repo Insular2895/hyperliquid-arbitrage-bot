@@ -1,6 +1,6 @@
 # PASS 02 — Participant Model Boundaries
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 02 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 02 REVIEW COMPLETE`
 
 | Capability | Classification | What is fixed | What is not fixed / activation boundary |
 |---|---|---|---|

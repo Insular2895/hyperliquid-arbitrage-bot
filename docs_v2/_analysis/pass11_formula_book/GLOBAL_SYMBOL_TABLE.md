@@ -1,7 +1,7 @@
 # Global Symbol Table
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Indices: `t,u,n` time/event; `i,j,k,m` level/scenario/bin/model; `a,A,B,X` asset; `s` side/server; `W` window; `h` horizon. Optional values are never represented by a magic numeric sentinel.
 

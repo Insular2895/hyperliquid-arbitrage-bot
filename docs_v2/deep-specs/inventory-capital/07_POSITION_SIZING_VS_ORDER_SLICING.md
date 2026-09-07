@@ -1,7 +1,7 @@
 # 07 — Position Sizing vs Order Slicing
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Non-overlapping questions
 

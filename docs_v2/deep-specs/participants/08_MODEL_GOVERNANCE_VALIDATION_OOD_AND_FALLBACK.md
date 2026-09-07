@@ -1,6 +1,6 @@
 # 08 — Model Governance, Validation, OOD and Fallback
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Status model
 

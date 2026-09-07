@@ -1,7 +1,7 @@
 # Failure and Recovery Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 In every row, unknown or unsafe state forbids new risk. Existing exposure is observed and handled through cancel, reconciliation and bounded Recovery whenever the required authority remains available.
 

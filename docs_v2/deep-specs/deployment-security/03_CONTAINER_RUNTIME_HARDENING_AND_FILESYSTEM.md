@@ -1,7 +1,7 @@
 # 03 — Container Runtime Hardening and Filesystem
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Runtime profile
 

@@ -1,6 +1,6 @@
 # Infrastructure Deep Specs
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 This directory is the normative detail layer for [13 — Infrastructure](../../13_INFRASTRUCTURE.md). Closure authorities still prevail where a topic belongs to the Formula Book, Risk Constitution, Data Contracts, Deployment, Validation, Recorder or Execution domains.
 

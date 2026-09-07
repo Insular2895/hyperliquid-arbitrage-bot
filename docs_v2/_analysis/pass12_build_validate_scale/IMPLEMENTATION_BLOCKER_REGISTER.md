@@ -1,7 +1,7 @@
 # PASS 12 — Implementation Blocker Register
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Blocker ID | Domain | Phase | Evidence stage | Class / severity | Why blocking | Source | Owner | Required before |
 |---|---|---:|---:|---|---|---|---|---|

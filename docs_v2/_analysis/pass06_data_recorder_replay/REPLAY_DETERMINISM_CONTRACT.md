@@ -1,7 +1,7 @@
 # Replay Determinism Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Functional identity
 

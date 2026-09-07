@@ -1,6 +1,6 @@
 # 03 — Microstructure Features, OFI and Microprice
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Role and invariants
 

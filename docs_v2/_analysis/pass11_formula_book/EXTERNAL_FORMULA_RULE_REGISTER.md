@@ -1,7 +1,7 @@
 # External Formula Rule Register
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 No Internet or external revalidation was performed during PASS11. These are dependencies to verify before implementation/Live use.
 

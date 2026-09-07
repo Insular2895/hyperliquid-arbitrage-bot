@@ -1,6 +1,6 @@
 # Domain Index — INFRASTRUCTURE
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 - PASS 00 extracted requirements: 510
 - PASS 00 canonical anchor overlays: 2

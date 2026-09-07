@@ -1,6 +1,6 @@
 # 09 — Runtime Inference and Cross-Domain Contracts
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Runtime principle
 

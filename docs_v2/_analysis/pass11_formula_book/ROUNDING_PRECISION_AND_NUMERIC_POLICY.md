@@ -1,7 +1,7 @@
 # Rounding, Precision and Numeric Policy
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Arithmetic domains
 

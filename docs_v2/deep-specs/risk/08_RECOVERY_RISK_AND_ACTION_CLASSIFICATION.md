@@ -1,7 +1,7 @@
 # Recovery Risk and Action Classification
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Action classification
 

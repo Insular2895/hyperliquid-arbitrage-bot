@@ -1,7 +1,7 @@
 # Quant Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This ledger closes all **597/597** rows of `../domain_indexes/QUANT.md`. Every original locator was reopened and returned content. Formula rows are indexed and consumed here, not rewritten.
 

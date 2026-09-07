@@ -1,7 +1,7 @@
 # Sizing vs Slicing Boundary
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Boundary | Position Sizing | Order Slicing |
 |---|---|---|

@@ -1,7 +1,7 @@
 # Verified Formula Index — PASS11
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 SRC-004 was fully reread. `M§` links the canonical master section; `D` links the individual-audit deep spec. External `Y` means revalidation required, not performed. Every QF requires a golden vector.
 

@@ -1,6 +1,6 @@
 # 06 — Execution, Recovery and Reconciliation Pipeline
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Execution consumes only a current `RiskDecision`, successful reservation and immutable plan. Transport executes effects and reports observations; it owns no business permission.
 

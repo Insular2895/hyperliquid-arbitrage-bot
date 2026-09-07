@@ -1,7 +1,7 @@
 # Maturity Dependency Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Capability | Critical dependencies | Maximum without dependency proof | Required promotion join |
 |---|---|---|---|

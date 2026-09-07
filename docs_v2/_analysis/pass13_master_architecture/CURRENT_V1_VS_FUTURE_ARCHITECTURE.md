@@ -1,6 +1,6 @@
 # Current V1 vs Future Architecture
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Capability | Classification | Activation boundary |
 |---|---|---|

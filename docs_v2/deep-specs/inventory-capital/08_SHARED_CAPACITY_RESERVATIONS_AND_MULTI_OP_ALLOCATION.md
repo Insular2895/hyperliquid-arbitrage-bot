@@ -1,7 +1,7 @@
 # 08 — Shared Capacity, Reservations and Multi-Opportunity Allocation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Resource model
 

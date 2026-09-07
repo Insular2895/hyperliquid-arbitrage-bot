@@ -1,7 +1,7 @@
 # RAW, Normalized and Domain-event Schemas
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## RAW envelope
 

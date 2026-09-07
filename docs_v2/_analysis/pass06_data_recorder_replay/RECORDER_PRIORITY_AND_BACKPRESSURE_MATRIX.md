@@ -1,7 +1,7 @@
 # Recorder Priority and Backpressure Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Priority | Canonical evidence | Preservation | Saturation action | Replay consequence if lost |
 |---|---|---|---|---|

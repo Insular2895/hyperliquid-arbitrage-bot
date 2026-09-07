@@ -1,6 +1,6 @@
 # PASS 14 — CROSS-DOMAIN CONSISTENCY AUDIT COMPLETE
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 PASS 14 audited the canonical V2 corpus as one system. It establishes internal consistency and bounded ownership; it is not the PASS 15 source-by-source no-loss audit, an implementation approval or a Live promotion.
 
@@ -183,4 +183,4 @@ PASS 15 started: **NO**
 
 **PASS 14 — CROSS-DOMAIN CONSISTENCY AUDIT COMPLETE**
 
-Human review is required before starting **PASS 15 — SOURCE-BY-SOURCE NO-LOSS AUDIT**. The documentation remains `REBUILD IN PROGRESS`.
+Human review is required before starting **PASS 15 — SOURCE-BY-SOURCE NO-LOSS AUDIT**. The documentation remains `AWAITING HUMAN REVIEW`.

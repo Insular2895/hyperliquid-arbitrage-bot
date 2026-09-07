@@ -1,6 +1,6 @@
 # Identifier and Identity Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Family | Identity rule | Producer | Cross-domain consumers | Audit result |
 |---|---|---|---|---|

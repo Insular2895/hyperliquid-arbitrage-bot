@@ -1,7 +1,7 @@
 # QF-056–QF-063 — EV, VaR, Expected Shortfall and Risk-Adjusted Value
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF | Expression | Symbols / output unit | Preconditions | Failure semantics | Golden requirements |
 |---|---|---|---|---|---|

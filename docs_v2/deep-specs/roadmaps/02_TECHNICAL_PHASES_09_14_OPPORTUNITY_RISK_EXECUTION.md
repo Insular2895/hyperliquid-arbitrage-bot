@@ -1,7 +1,7 @@
 # Technical Phases 09–14 — Opportunity, Risk and Execution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Boundary
 

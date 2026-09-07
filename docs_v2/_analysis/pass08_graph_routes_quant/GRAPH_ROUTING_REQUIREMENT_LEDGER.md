@@ -1,7 +1,7 @@
 # Graph / Routing Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This ledger closes all **574/574** rows of `../domain_indexes/ROUTING.md`. Every indexed source range was reopened; none was empty or outside its original file. The union with QUANT contains **1,013** unique requirements: the two indexes overlap on 158 IDs and are not treated as 1,171 independent requirements.
 

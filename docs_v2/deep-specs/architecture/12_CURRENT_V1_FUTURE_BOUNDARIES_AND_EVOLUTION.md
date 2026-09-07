@@ -1,6 +1,6 @@
 # 12 — Current V1, Future Boundaries and Evolution
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Current/Core architecture
 

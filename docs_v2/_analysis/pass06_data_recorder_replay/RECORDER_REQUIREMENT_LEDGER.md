@@ -1,7 +1,7 @@
 # Recorder Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This is the Recorder-focused obligation view. Row-level disposition for all 661 PASS 00 entries remains in `DATA_REQUIREMENT_LEDGER.md`.
 

@@ -1,6 +1,6 @@
 # Command, Event and Effect Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Requested operation | Command/intent owner | Effect boundary | Authoritative return event | Commit owner | Result |
 |---|---|---|---|---|---|

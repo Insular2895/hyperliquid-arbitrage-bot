@@ -1,7 +1,7 @@
 # Determinism, RNG and Hash Validation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 The system enforces:
 

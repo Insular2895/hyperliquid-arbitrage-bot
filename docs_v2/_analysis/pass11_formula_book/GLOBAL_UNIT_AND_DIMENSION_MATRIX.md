@@ -1,7 +1,7 @@
 # Global Unit and Dimension Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF ranges | Input dimensions | Output dimension | Dimensional proof / constraint | Result |
 |---|---|---|---|---|

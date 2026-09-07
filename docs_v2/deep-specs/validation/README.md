@@ -1,7 +1,7 @@
 # Validation Deep Specifications
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This directory expands [16_VALIDATION_MATRIX.md](../../16_VALIDATION_MATRIX.md). Authority order is SRC-006 Validation closure, SRC-005 Risk/Data, SRC-004 Formula/Execution, resolved PASS01–09 contracts, then exploratory and legacy material.
 

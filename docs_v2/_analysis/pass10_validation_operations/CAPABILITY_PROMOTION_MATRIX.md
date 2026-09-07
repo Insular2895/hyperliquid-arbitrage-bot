@@ -1,7 +1,7 @@
 # Capability Promotion Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | From → to | Mandatory proof | Decision record |
 |---|---|---|

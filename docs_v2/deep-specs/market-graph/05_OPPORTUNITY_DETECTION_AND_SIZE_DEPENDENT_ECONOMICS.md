@@ -1,7 +1,7 @@
 # Opportunity Detection and Size-Dependent Economics
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Pipeline
 

@@ -1,6 +1,6 @@
 # Omission Recovery Ledger
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Omission ID | Source | Lines | PASS00 item / recovered item | Missing concept | Why material | Affected domains | Severity | Canonical authority | Files corrected | Final section | Status | Validation impact | Roadmap impact |
 |---|---|---:|---|---|---|---|---|---|---|---|---|---|---|

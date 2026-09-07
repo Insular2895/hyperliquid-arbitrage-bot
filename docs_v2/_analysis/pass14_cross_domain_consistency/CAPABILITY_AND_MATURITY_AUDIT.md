@@ -1,6 +1,6 @@
 # Capability and Maturity Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ```text
 EffectiveCapability = CompiledSupport

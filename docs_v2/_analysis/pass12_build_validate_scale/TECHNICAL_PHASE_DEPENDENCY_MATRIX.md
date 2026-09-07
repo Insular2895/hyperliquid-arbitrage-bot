@@ -1,7 +1,7 @@
 # PASS 12 — Technical Phase Dependency Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 The canonical order is fixed, but the order is not a ban on safe parallel work. “Hard” means the consumer cannot meet its declared DoD without the producer contract/evidence. “Soft/parallel” means work may start against frozen interfaces while activation still waits.
 

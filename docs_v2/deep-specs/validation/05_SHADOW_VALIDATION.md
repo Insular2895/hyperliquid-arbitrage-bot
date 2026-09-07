@@ -1,7 +1,7 @@
 # 05 — Shadow Validation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Shadow is the production Core on live market/account observation with `NullShadowTransport`. Mode differences exist at source/transport/effect/config boundaries, not in strategy formulas, state machines or Risk logic.
 

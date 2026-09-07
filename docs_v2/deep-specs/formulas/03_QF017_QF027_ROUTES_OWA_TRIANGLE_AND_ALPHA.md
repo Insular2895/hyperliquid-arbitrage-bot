@@ -1,7 +1,7 @@
 # QF-017–QF-027 — Routes, OWA, Triangle and Alpha
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF | Expression | Symbols / output unit | Preconditions | Failure semantics | Golden requirements |
 |---|---|---|---|---|---|

@@ -1,7 +1,7 @@
 # Route Precomputation, `pair_to_routes` and Invalidation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Generation
 

@@ -1,6 +1,6 @@
 # 10 — Fidelity Ladder F0–F4
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 03 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 03 REVIEW COMPLETE`
 
 The ladder activates evidence-supported capabilities in one architecture. It is neither `RunMode`, `SimulationMode`, Participant P-level, validation maturity M-level, nor a sequence of disposable bot versions.
 

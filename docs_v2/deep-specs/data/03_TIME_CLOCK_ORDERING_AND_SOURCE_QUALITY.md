@@ -1,7 +1,7 @@
 # Time, Clock, Ordering and Source Quality
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Three time meanings
 

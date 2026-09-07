@@ -1,7 +1,7 @@
 # Capital Action Taxonomy
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 These are economic classifications, not a new runtime enum.
 

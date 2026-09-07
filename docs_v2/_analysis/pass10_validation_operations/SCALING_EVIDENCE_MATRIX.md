@@ -1,7 +1,7 @@
 # Scaling Evidence Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Expansion | Evidence before promotion | Demotion signal |
 |---|---|---|

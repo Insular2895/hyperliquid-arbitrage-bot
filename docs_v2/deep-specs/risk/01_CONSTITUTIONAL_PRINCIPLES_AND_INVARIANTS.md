@@ -1,7 +1,7 @@
 # Constitutional Principles and Invariants
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Governing order
 

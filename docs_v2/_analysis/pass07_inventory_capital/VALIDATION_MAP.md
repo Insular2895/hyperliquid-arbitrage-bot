@@ -1,7 +1,7 @@
 # PASS07 Validation Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Capability | Unit/property test | Replay | Shadow/Micro-live | Data/metric | OOD/failure | Promotion gate | Authority |
 |---|---|---|---|---|---|---|---|

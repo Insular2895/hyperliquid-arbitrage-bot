@@ -1,7 +1,7 @@
 # Release Channel and Promotion Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Channel | Audience | Evidence floor | New-risk posture |
 |---|---|---|---|

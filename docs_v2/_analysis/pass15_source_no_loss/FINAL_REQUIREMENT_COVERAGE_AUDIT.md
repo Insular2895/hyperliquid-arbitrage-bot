@@ -1,6 +1,6 @@
 # Final Requirement Coverage Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Population and final target status
 

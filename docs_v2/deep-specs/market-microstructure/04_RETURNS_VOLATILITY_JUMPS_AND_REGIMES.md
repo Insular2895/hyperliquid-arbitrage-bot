@@ -1,7 +1,7 @@
 # Returns, Volatility, Jumps and Regimes
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Formula references
 

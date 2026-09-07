@@ -1,7 +1,7 @@
 # PASS07 Legacy Comparison
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Comparison was performed only after V2 reconstruction against `docs/08_INVENTORY_AND_CAPITAL.md`, `docs/03_MARKET_GRAPH_AND_ROUTES.md`, `docs/04_FORMULA_BOOK.md`, `docs/09_RISK_CONSTITUTION.md`, `docs/10_EXECUTION_STATE_MACHINE.md`, `docs/16_VALIDATION_MATRIX.md` and relevant `docs/specs/**`. Legacy files were not edited.
 

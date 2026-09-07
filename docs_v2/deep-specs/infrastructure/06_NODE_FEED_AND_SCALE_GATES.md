@@ -1,6 +1,6 @@
 # 06 — Node, Feed and Scale Gates
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Canonical initial decision
 

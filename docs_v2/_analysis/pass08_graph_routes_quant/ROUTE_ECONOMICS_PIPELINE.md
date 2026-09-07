@@ -1,7 +1,7 @@
 # Route Economics Pipeline
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ```text
 RouteDefinition + coherent current state + input q

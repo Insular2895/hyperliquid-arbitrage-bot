@@ -1,7 +1,7 @@
 # 07 — Release Channels, Capabilities and Promotion
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Channels
 

@@ -1,7 +1,7 @@
 # Bridge Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This focused view contains the 16 `BRIDGE-OWNED` rows from the 545-row ledger. Earlier research remains provenance; later QF/Risk closure governs canonical behavior.
 

@@ -1,6 +1,6 @@
 # 04 — Hot Path and Asynchronous Architecture
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Compute classes
 

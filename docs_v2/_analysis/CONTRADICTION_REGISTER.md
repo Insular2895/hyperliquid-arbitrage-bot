@@ -1,6 +1,6 @@
 # Contradiction Register
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## PASS 15 source-recovery regression audit
 

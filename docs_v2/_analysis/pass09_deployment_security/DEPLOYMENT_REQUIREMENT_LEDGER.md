@@ -1,7 +1,7 @@
 # Deployment / Security Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This ledger closes all **426/426** rows of `../domain_indexes/DEPLOYMENT_SECURITY.md`. Every indexed locator was reopened against its original source; failures: **0**. Stable requirement IDs and PASS00 source statuses are preserved.
 

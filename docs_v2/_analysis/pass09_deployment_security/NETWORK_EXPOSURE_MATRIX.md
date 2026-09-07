@@ -1,7 +1,7 @@
 # Network Exposure Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Flow/interface | Direction | Default binding | Allowed data | Rule |
 |---|---|---|---|---|

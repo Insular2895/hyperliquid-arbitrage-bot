@@ -1,7 +1,7 @@
 # Capacity Reservation Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Resource | Reserver | Reservation point | Release | `UNKNOWN` | Cross-route sharing | Replay |
 |---|---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # 09 — RunModes, Capability Activation and Validation
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Replay, Paper, Shadow, MicroLive and Live share domain types, event reducers, formulas, Risk semantics, ESM transitions and evidence contracts. They differ only through explicit market/account event sources, transport/effect policy, clock and capability permission. There is no `easy_fill()` or reduced-risk Replay branch.
 

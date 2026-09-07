@@ -1,6 +1,6 @@
 # Market Participants Deep Specifications
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 These documents elaborate the canonical [Market Participants master](../../06_MARKET_PARTICIPANTS.md) without taking ownership from Formula, Data, Risk, Execution or Simulator domains.
 

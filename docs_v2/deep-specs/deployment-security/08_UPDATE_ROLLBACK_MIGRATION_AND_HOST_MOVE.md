@@ -1,7 +1,7 @@
 # 08 — Update, Rollback, Migration and Host Move
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Transactional update
 

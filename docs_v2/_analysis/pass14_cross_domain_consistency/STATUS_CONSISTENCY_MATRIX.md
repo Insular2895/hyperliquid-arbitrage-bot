@@ -1,10 +1,10 @@
 # Status Consistency Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Status family | Canonical values / rule | Must not be confused with | Result |
 |---|---|---|---|
-| documentation | `REBUILD IN PROGRESS` | implementation approval | CONSISTENT |
+| documentation | `AWAITING HUMAN REVIEW` | implementation approval | CONSISTENT |
 | requirement provenance | `LOCKED`, `CALIBRATED`, `LEARNED`, `RESEARCH`, `FUTURE`, `SOURCE_SNAPSHOT`, `EXTERNAL_REVALIDATION`, `OPEN`, `SUPERSEDED`, `REJECTED` | capability maturity | CONSISTENT |
 | maturity | M0 SPECIFIED → M1 UNIT VALIDATED → M2 REPLAY VALIDATED → M3 SHADOW VALIDATED → M4 MICRO-LIVE VALIDATED → M5 LIVE VALIDATED | whole-project status, runtime state | CONSISTENT |
 | effective capability | intersection of compiled/configured/licensed/channel/validated/readiness/Risk | any one input alone | CONSISTENT |

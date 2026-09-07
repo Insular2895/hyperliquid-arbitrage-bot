@@ -1,6 +1,6 @@
 # PASS 04 — Execution State Machine Inventory
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 SRC-004 Dossier 1 is authoritative. Exact state locators: Engine §§7–16 (source lines 161–470), Route §§17–18 (471–533), Order §§22–39 (605–1043), Recovery §§67–74 (1534–1746), Reconciliation §§75–81 (1747–1940). Line endpoints are discovery locators; section names control if rendering changes.
 

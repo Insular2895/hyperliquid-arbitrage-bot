@@ -1,7 +1,7 @@
 # QF-105–QF-110 — Capital, Accounting and Drawdown
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF | Expression | Symbols / output unit | Preconditions | Failure semantics | Golden requirements |
 |---|---|---|---|---|---|

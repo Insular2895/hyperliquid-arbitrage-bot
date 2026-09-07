@@ -1,6 +1,6 @@
 # Economic Double-Counting Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Economic item | First-entry owner | Forbidden repeat | Resolution state |
 |---|---|---|---|

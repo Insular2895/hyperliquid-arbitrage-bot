@@ -1,7 +1,7 @@
 # Double-Counting and Accounting Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | ID | Economic item | First entry / owner | May flow into | Forbidden second entry | Audit disposition |
 |---|---|---|---|---|---|

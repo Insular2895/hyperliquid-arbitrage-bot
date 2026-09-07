@@ -1,7 +1,7 @@
 # Test Family Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Family | Required use | Core assertion/artifact |
 |---|---|---|

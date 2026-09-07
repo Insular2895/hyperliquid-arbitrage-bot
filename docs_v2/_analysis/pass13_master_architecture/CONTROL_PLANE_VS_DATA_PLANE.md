@@ -1,6 +1,6 @@
 # Control Plane vs Data Plane
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Plane | Contents | Latency relation | Authority |
 |---|---|---|---|

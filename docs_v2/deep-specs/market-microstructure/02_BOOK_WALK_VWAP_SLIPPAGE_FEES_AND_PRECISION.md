@@ -1,7 +1,7 @@
 # Book Walk, VWAP, Slippage, Fees and Precision
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Formula references
 

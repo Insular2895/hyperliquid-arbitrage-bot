@@ -1,6 +1,6 @@
 # 04 — Clock and Measurement Contract
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Authority and purpose
 

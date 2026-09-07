@@ -1,6 +1,6 @@
 # Synchronous Dependency DAG Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ```text
 Adapter/Normalizer

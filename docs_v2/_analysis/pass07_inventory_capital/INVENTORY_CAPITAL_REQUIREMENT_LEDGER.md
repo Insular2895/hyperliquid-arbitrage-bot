@@ -1,7 +1,7 @@
 # Inventory / Capital Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This ledger classifies every one of the **545/545** unique PASS00 Inventory/Capital/Sizing domain-index rows. Original titles remain in `../domain_indexes/INVENTORY_CAPITAL_SIZING.md`; all 545 source ranges were reopened and returned content. PASS00 status remains visible as provenance; reviewed closure corrections determine the PASS07 disposition and are listed in `CONFLICT_RESOLUTION.md`.
 

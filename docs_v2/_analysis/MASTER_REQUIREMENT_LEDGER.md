@@ -1,6 +1,6 @@
 # Master Requirement Ledger
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Ce registre source-first contient les exigences canoniques ou candidates. Une entrée par unité matérielle évite la perte silencieuse; la déduplication sémantique finale appartient aux passes métier.
 

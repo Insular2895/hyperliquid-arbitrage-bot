@@ -1,7 +1,7 @@
 # Route Types: Direct, OWA, Triangle and Bridge Boundary
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Structural families
 

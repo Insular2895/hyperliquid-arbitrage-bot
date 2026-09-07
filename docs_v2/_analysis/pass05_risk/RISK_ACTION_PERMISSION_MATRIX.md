@@ -1,7 +1,7 @@
 # Risk Action Permission Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Legend: `YES` permitted subject to ordinary checks; `CHECK` only after a fresh contextual RiskDecision; `REDUCE` only if strictly reducing known exposure under RecoveryRiskPolicy; `NO` forbidden; `REVIEW` exact deployment/operator procedure requires future owner decision. A cancel is not assumed neutral: racing fills and market validity still matter.
 

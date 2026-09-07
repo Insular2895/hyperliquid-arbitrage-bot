@@ -1,7 +1,7 @@
 # QF-044–QF-055 — Survival, Capture, Maker Fill and Adverse Selection
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF | Expression | Symbols / output unit | Preconditions | Failure semantics | Golden requirements |
 |---|---|---|---|---|---|

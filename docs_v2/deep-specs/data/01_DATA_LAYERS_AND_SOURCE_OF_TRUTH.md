@@ -1,7 +1,7 @@
 # Data Layers and Source of Truth
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Contract
 

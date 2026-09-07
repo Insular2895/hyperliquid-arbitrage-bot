@@ -1,7 +1,7 @@
 # Formula Deep Specifications
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This directory is the implementation audit layer for the canonical [Formula Book](../../04_FORMULA_BOOK.md). It preserves one QF identity per source contract and supplies the conditions, failures and test requirements that a compact master table cannot fully express.
 

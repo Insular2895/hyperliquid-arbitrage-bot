@@ -1,7 +1,7 @@
 # QF-095–QF-104 — Calibration, Model Value, OOD and Confidence
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF | Expression | Symbols / output unit | Preconditions | Failure semantics | Golden requirements |
 |---|---|---|---|---|---|

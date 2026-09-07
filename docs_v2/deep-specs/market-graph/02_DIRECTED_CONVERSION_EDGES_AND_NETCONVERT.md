@@ -1,7 +1,7 @@
 # Directed Conversion Edges and NetConvert
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Two operations per market
 

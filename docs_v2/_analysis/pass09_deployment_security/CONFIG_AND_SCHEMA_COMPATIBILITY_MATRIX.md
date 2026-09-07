@@ -1,7 +1,7 @@
 # Configuration and Schema Compatibility Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Surface | Compatibility declaration | Migration | Rollback impact | Startup action / owner |
 |---|---|---|---|---|

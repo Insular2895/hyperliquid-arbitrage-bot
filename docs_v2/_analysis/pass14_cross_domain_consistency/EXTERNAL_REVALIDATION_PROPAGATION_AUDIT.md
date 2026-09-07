@@ -1,6 +1,6 @@
 # External Revalidation Propagation Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | External ID | Fact family | Required consumers/gates | Propagation result |
 |---|---|---|---|

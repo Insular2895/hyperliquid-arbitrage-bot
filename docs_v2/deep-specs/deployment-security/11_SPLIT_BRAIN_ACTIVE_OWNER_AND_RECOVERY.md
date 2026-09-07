@@ -1,7 +1,7 @@
 # 11 — Split Brain, Active Owner and Recovery
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Invariant
 

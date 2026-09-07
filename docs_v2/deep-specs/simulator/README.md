@@ -1,6 +1,6 @@
 # Counterfactual Simulator — Deep Specifications
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 03 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 03 REVIEW COMPLETE`
 
 These documents elaborate the canonical [Counterfactual Simulator](../../07_COUNTERFACTUAL_SIMULATOR.md). They preserve ownership of Formula (SRC-004), Data/Risk/Replay (SRC-005), Validation (SRC-006), Participant forecasts (PASS 02), and future Execution/Recovery/Sizing/Graph passes.
 

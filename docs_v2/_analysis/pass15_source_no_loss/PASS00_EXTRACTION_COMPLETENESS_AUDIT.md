@@ -1,6 +1,6 @@
 # PASS00 Extraction Completeness Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 This is the independent original-lines → PASS00 layer. The scanner expanded all 2,577 `Location` ranges against the eight originals, then reviewed every line not covered by a range in sequential context. It did not change the historical PASS00 item count.
 

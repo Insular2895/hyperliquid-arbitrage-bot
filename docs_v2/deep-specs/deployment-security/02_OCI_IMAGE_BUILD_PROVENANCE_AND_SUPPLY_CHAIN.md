@@ -1,7 +1,7 @@
 # 02 — OCI Image, Build Provenance and Supply Chain
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Artifact contract
 

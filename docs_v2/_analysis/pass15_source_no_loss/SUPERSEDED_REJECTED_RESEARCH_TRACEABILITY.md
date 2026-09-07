@@ -1,6 +1,6 @@
 # Superseded, Rejected and Research Traceability
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Provenance status | PASS00/overlay requirement rows | PASS15 recovered rows | Permitted final fate | Audit result |
 |---|---:|---:|---|---|

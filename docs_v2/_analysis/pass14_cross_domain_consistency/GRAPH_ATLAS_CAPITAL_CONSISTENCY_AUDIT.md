@@ -1,6 +1,6 @@
 # Graph–Atlas–Capital Consistency Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Concept | Owner | Meaning | Must not mutate/claim | Result |
 |---|---|---|---|---|

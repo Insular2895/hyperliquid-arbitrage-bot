@@ -1,7 +1,7 @@
 # Validation, Property Tests and Failure Modes
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Mandatory properties
 

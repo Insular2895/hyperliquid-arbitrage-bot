@@ -1,7 +1,7 @@
 # Golden Vector Requirement Catalog
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Vector family | QFs | Required cases | Equality |
 |---|---|---|---|

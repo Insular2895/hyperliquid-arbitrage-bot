@@ -1,6 +1,6 @@
 # PASS 04 — Execution Validation Map
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 Maturity labels follow the existing validation ladder: M1 unit/contract, M2 deterministic Replay/emulator, M3 Shadow, M4 Micro-live, M5 scaled Live. No capability skips required evidence and no numeric threshold is invented here.
 

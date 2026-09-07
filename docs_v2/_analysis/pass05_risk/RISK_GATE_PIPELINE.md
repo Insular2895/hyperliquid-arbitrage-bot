@@ -1,7 +1,7 @@
 # Risk Gate Pipeline
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Authority: SRC-005 sections 38–61, 111–148 and 201–204. Gate ordering is constitutional; individual values remain calibrated/learned/exchange-defined.
 

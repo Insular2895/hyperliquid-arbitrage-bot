@@ -1,7 +1,7 @@
 # Point-in-Time Replay, Versioning and Data Contracts
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Required versions
 

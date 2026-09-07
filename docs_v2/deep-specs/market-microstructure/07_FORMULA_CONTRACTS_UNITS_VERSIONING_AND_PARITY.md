@@ -1,7 +1,7 @@
 # Formula Contracts, Units, Versioning and Parity
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Authority
 

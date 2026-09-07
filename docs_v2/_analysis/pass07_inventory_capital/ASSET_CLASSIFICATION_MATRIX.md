@@ -1,7 +1,7 @@
 # Asset Classification Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Frozen Data enum: `CoreInventory`, `Transit`, `Excluded`. Economic labels below preserve source vocabulary. Classification values are learned/versioned; no example asset is pre-classified.
 

@@ -1,6 +1,6 @@
 # 11 — Failure Containment and Degradation Architecture
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Failure makes the system less active. New risk fails closed; safe cancel, evidence preservation, bounded Recovery, Reconciliation and shutdown remain when their inputs are valid.
 

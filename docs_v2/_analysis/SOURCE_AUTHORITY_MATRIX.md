@@ -1,6 +1,6 @@
 # Source Authority Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 PASS 15 re-opened all eight sources and rechecked chronology for every PASS00 item and all **79** recovered source concepts. No authority order changed; no exploratory statement displaced a later closure.
 

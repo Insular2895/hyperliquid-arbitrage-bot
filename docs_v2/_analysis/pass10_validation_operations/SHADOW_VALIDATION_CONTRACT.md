@@ -1,7 +1,7 @@
 # Shadow Validation Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Shadow runs the production Core against current live market/account observation and replaces only the execution effect boundary with `NullShadowTransport`. It records opportunities, forecasts, Risk decisions, plans, would-submit intents, latency, subsequent market evolution, stability and drift. `ActualAccountState` and `ShadowCounterfactualState` remain separate.
 

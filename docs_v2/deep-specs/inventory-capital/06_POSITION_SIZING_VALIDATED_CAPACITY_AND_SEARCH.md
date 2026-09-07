@@ -1,7 +1,7 @@
 # 06 — Position Sizing, Validated Capacity and Search
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Definitions
 

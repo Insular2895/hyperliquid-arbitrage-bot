@@ -1,6 +1,6 @@
 # 01 — Objective, Scope and Fidelity Ladder
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Production objective
 

@@ -1,6 +1,6 @@
 # Orphan and Dead Contract Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Check | Scope/result before targeted fixes | Correction/result |
 |---|---|---|

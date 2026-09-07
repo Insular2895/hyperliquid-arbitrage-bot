@@ -1,6 +1,6 @@
 # Event and Command Ownership Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Command/intent | Accepting owner | Requested effect | Authoritative return event | State owner that commits |
 |---|---|---|---|---|

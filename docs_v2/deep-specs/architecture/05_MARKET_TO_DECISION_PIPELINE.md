@@ -1,6 +1,6 @@
 # 05 — Market-to-Decision Pipeline
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ```mermaid
 flowchart LR

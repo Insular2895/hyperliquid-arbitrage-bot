@@ -1,7 +1,7 @@
 # Data / Recorder / Replay Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This ledger assigns an owner and exactly one allowed PASS 06 disposition to every one of the **661/661** unique rows in the PASS 00 Data/Recorder/Replay domain index. Original titles remain in `../domain_indexes/DATA_RECORDER_REPLAY.md`; all source locators were range-validated.
 

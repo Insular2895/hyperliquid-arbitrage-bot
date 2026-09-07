@@ -1,7 +1,7 @@
 # Data / Recorder / Replay Validation Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Validation | Evidence/assertion | Maturity owner |
 |---|---|---|

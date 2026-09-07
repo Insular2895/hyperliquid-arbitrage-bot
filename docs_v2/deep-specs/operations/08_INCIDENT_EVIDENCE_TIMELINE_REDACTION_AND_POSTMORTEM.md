@@ -1,7 +1,7 @@
 # 08 — Incident Evidence, Timeline, Redaction and Postmortem
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 `IncidentRecord` is keyed by IncidentId and contains severity, affected markets/executions, start/end, triggers, actions and resolution. Alerts, state transitions and operator actions link to it.
 

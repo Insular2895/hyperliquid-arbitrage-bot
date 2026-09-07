@@ -1,7 +1,7 @@
 # Micro-live Validation Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Micro-live is the Live engine with real market, real transport, real fills and real account, constrained by small calibrated capital/size/frequency and narrow market/mode scope. The historical EUR 40–50 example is a calibration probe, not a universal threshold or business phase.
 

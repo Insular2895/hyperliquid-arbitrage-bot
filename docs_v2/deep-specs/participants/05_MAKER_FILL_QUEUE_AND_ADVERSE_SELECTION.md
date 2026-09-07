@@ -1,6 +1,6 @@
 # 05 — Maker Fill, Queue and Adverse Selection
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Predictive boundary
 

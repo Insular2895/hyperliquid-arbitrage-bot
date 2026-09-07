@@ -1,7 +1,7 @@
 # Economic PnL Classification
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Component | Expected / realized | Formula/ref | Event source | Timing | Consumer | Must not be hidden inside |
 |---|---|---|---|---|---|---|

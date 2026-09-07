@@ -1,7 +1,7 @@
 # 01 — Commercial Model, Client Isolation and Ownership
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Contract
 

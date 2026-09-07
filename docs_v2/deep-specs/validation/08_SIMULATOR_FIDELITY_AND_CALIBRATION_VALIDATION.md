@@ -1,7 +1,7 @@
 # 08 — Simulator Fidelity and Calibration Validation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 F0 historical/exogenous, F1 latency/mechanical, F2 local ShadowBook intervention, F3 learned stochastic response and F4 explicit-agent research are separate fidelity claims. Availability of F3/F4 code does not validate their use.
 

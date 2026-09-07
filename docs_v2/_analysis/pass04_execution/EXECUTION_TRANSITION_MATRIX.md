@@ -1,6 +1,6 @@
 # PASS 04 — Execution Transition Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 Legend: `hold` = retain conservative reservation; `convert` = reservation portion becomes actual exposure; `release` only after terminal proof. Every transition is reduced by the single writer and recorded asynchronously. “Recon?” says whether reconciliation is mandatory before resource release/readiness.
 

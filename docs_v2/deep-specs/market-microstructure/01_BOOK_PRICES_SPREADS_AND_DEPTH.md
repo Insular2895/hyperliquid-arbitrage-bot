@@ -1,7 +1,7 @@
 # Book Prices, Spreads and Depth
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Formula references
 

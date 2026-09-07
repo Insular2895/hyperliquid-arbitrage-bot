@@ -1,7 +1,7 @@
 # Formula Crosscheck
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 SRC-004 and `../FORMULA_INDEX.md` remain authoritative. PASS08 crosschecked names, direction, semantic inputs/outputs and consumers; it did not alter equations. PASS11 must audit exact rendering, variables and units, especially entries whose generated Formula Index locator is incomplete.
 

@@ -1,7 +1,7 @@
 # Graph Domain Model
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Type | Identity and meaning | Mutability/version | Producer | Consumers | Authority |
 |---|---|---|---|---|---|

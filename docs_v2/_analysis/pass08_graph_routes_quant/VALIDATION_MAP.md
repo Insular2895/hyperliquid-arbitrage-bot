@@ -1,7 +1,7 @@
 # Validation Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 `U` unit, `P` property/fuzz, `G` Formula golden, `R` Replay, `S` Shadow, `M` Micro-live. Micro-live is required only after upstream governance and never implied by this document.
 

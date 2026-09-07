@@ -1,7 +1,7 @@
 # 06 — Startup, Preflight, Readiness and Onboarding
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Startup state machine
 

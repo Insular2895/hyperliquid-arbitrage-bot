@@ -1,7 +1,7 @@
 # PASS 12 — Evidence Stage Exit Criteria
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 No elapsed time or capital balance completes a stage. Evidence sufficiency follows PASS 10 and remains scope-specific.
 

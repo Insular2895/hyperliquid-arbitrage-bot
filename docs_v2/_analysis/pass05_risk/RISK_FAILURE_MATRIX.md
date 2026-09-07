@@ -1,7 +1,7 @@
 # Risk Failure Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Failure-class shorthand: `STOP` unavailable/disconnected; `LIE` corrupt or inconsistent; `LATE` outside freshness/runtime support; `DUP` repeated event/response; `OOD` outside validated model/capability support; `STALE` old version/state. Where a class is not meaningful, Risk still rejects an invalid representation rather than guessing.
 

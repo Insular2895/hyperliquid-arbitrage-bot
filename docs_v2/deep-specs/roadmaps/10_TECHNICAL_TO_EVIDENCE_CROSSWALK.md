@@ -1,7 +1,7 @@
 # Technical-to-Evidence Crosswalk
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Why the axes differ
 

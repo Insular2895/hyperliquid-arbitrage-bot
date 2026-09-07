@@ -1,6 +1,6 @@
 # 02 — Edge Survival, Hazard and Capture
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Economic lifetime
 

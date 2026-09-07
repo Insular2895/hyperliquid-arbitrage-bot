@@ -1,7 +1,7 @@
 # PASS 12 — Legacy Roadmap Comparison
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Comparison occurred only after source-first reconstruction. `docs/17_IMPLEMENTATION_ROADMAP.md` is useful scaffolding, not authority. No legacy file was edited.
 

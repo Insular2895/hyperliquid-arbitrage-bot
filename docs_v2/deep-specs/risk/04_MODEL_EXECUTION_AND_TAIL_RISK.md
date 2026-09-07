@@ -1,7 +1,7 @@
 # Model, Execution and Tail Risk
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Model gate sequence
 

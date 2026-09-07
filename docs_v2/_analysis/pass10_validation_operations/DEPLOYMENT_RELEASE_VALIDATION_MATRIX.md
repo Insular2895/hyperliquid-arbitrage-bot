@@ -1,7 +1,7 @@
 # Deployment and Release Validation Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Surface | Required evidence | Blocking failure |
 |---|---|---|

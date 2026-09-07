@@ -1,7 +1,7 @@
 # 03 — Risk, Capital, Model and Infrastructure Metrics
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Risk/capital/economics
 

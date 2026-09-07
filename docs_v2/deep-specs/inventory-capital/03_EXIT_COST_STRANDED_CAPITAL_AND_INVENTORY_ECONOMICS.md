@@ -1,7 +1,7 @@
 # 03 — Exit Cost, Stranded Capital and Inventory Economics
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Expected Exit Cost
 

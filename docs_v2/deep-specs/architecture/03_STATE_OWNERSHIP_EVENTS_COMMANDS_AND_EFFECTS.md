@@ -1,6 +1,6 @@
 # 03 — State Ownership, Events, Commands and Effects
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Single-writer rule
 

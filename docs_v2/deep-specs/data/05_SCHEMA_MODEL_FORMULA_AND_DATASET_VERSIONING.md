@@ -1,7 +1,7 @@
 # Schema, Model, Formula and Dataset Versioning
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Version families
 

@@ -1,7 +1,7 @@
 # PASS 10 Conflict Resolution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Conflict | Resolution | Authority |
 |---|---|---|

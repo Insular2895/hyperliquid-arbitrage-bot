@@ -1,7 +1,7 @@
 # Predicted-versus-Actual Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Object | Prediction | Actual | Comparison/slices |
 |---|---|---|---|

@@ -1,7 +1,7 @@
 # PASS 10 Legacy Comparison
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Legacy was inspected only after source-first reconstruction. Files compared: `docs/16_VALIDATION_MATRIX.md`, `docs/18_OPERATIONS_AND_MONITORING.md`, and the legacy `ReplayEngine`, `InfrastructureMonitor`, and `ShadowBook` specs. Legacy remains read-only reference.
 

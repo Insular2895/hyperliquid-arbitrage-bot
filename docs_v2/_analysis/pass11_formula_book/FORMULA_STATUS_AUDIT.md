@@ -1,7 +1,7 @@
 # Formula Status Audit
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 SRC-004 status labels were read at each QF heading. The former discovery index normalized labels to broad classes; this audit preserves source specificity.
 

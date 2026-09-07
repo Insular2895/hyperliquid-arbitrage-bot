@@ -1,7 +1,7 @@
 # Golden Datasets, Checkpoints and Replay Seeking
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 GoldenDatasets are small, permanent, versioned and checksummed. The corpus covers normal, volatile, thin, opportunity-rich, empty, gap, book anomaly, partial/cancel race, recovery, reconnect and incident periods. Each fixture specifies input manifests, expected normalized stream, final books/state, decisions/rejects/intents and economically tolerated PnL.
 

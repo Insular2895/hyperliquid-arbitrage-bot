@@ -1,6 +1,6 @@
 # PASS 02 — Participant Conflict Resolution
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 02 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 02 REVIEW COMPLETE`
 
 The requested tensions were checked against original sources. They are mostly explicit design evolution or scope boundaries, not competing current rules.
 

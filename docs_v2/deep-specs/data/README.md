@@ -1,7 +1,7 @@
 # Data Deep Specifications
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 These documents expand [11 — Data Contracts](../../11_DATA_CONTRACTS.md). SRC-005 Dossier 4/6 owns the closure contracts; execution, formulas and validation retain their own authorities.
 

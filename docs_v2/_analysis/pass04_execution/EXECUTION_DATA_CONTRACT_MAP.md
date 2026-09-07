@@ -1,6 +1,6 @@
 # PASS 04 — Execution Data Contract Map
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 SRC-005 Data Contracts is authoritative. Field lists below reproduce only fields explicitly present there; `NOT FROZEN IN SRC-005` prevents accidental schema invention.
 

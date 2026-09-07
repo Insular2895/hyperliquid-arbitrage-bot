@@ -1,7 +1,7 @@
 # PASS 12 — Experiment and Data Requirement Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Learning target | Required data | Earliest stage | Replay? | Shadow? | Micro-live / Live? | Label / source of truth | Bias risk | Consumer |
 |---|---|---:|---|---|---|---|---|---|

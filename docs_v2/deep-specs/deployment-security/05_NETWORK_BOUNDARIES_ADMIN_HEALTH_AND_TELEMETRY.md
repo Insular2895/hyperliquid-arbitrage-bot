@@ -1,7 +1,7 @@
 # 05 — Network Boundaries, Admin, Health and Telemetry
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Flows
 

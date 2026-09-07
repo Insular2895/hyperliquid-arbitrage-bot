@@ -1,6 +1,6 @@
 # PASS 03 — Simulator Data Contract Map
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 03 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 03 REVIEW COMPLETE`
 
 PASS 03 maps semantic contracts only. PASS 06 owns exact fields, types, units, serialization, compatibility, and migrations. Names below follow SRC-005.
 

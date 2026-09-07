@@ -1,7 +1,7 @@
 # Inventory, Capital, Portfolio and Sizing Gates
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Inventory regions
 

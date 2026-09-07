@@ -1,7 +1,7 @@
 # Runbook Index
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Every runbook begins with safety posture and evidence capture, identifies automated versus human steps, and ends with explicit reconciliation/revalidation. Commands are conceptual until the implementation/API pass freezes them.
 

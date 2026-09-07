@@ -1,6 +1,6 @@
 # 10 — Runtime, Deployment, Security and Client Topology
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 The baseline is one client VPS, one OCI trading container, one Rust process, one account/signer/capital context and one active economic owner. Config, secrets, mutable state, data and logs use explicit external mounts/boundaries; the immutable digest contains software only. Host clock synchronization and local `botctl`/diagnostics support the container.
 

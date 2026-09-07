@@ -1,7 +1,7 @@
 # Secret and Signer Threat Model
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Protected assets
 

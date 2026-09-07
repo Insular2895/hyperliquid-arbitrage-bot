@@ -1,7 +1,7 @@
 # OCI Image Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Artifact identity
 

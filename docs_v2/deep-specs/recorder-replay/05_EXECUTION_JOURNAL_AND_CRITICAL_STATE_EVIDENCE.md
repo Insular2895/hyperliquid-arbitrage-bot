@@ -1,7 +1,7 @@
 # Execution Journal and Critical-state Evidence
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ExecutionJournal is append-only, ordered independently by `journal_seq`, timestamped and optionally per-record/checkpoint checksummed. Its minimum closure events are `ExecutionCreated`, `ReservationCreated`, `OrderIntentCreated`, `OrderSent`, `FillApplied`, `CancelRequested`, `RecoveryStarted`, and `ExecutionCompleted`; PASS 04 expands the state-machine event vocabulary.
 

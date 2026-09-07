@@ -1,7 +1,7 @@
 # 04 — Alert Severities, Automated Actions and Escalation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Severity | Operational meaning | Action |
 |---|---|---|

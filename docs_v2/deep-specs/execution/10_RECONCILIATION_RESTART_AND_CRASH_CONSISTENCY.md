@@ -1,6 +1,6 @@
 # 10 — Reconciliation, restart, and crash consistency
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 ## Authority of observed exchange state
 

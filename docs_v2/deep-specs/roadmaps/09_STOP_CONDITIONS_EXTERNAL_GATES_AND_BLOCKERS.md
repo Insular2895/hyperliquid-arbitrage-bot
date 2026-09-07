@@ -1,7 +1,7 @@
 # Stop Conditions, External Gates and Blockers
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Three distinct controls
 

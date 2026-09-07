@@ -1,7 +1,7 @@
 # Capability Activation and Maturity Mapping
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Independent axes
 

@@ -1,7 +1,7 @@
 # Build / Validate / Scale Evidence Stages
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Scientific order
 

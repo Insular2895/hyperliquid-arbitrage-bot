@@ -1,6 +1,6 @@
 # External Revalidation Register
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## PASS 15 source no-loss recheck
 

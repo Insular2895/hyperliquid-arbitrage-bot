@@ -1,6 +1,6 @@
 # Recovery and Reconciliation Pipeline
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Boundary
 

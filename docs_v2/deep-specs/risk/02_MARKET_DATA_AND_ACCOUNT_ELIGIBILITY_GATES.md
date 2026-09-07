@@ -1,7 +1,7 @@
 # Market, Data and Account Eligibility Gates
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Fast eligibility path
 

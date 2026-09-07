@@ -1,6 +1,6 @@
 # PASS 02 — Participant Legacy Comparison
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 02 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 02 REVIEW COMPLETE`
 
 Comparison was performed only after the V2 master/deep specs were drafted. Legacy remained reference-only and never overrode original sources.
 

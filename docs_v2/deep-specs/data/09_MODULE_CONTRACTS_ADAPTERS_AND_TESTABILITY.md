@@ -1,7 +1,7 @@
 # Module Contracts, Adapters and Testability
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Dependency direction
 

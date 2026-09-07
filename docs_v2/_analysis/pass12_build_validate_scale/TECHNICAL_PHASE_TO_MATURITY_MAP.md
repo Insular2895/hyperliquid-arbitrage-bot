@@ -1,7 +1,7 @@
 # PASS 12 — Technical Phase to Maturity Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Maturity is capability-scoped. A technical phase can finish its implementation/early evidence while later evidence stages continue to raise or lower that capability.
 

@@ -1,7 +1,7 @@
 # Bridge vs OWA vs Rebalance vs Recovery
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Test | OWA | Bridge/Relocation | Rebalance | Recovery |
 |---|---|---|---|---|

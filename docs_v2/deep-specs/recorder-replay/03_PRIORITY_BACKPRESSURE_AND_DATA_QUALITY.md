@@ -1,7 +1,7 @@
 # Priority, Backpressure and Data Quality
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 The closure hierarchy is P0 fills/account/execution, P1 market windows around executions/incidents, P2 general market events, P3 derived diagnostics. The older SRC-003 inversion of P2/P3 is superseded. Priorities govern capture/retention pressure, never economic event application order.
 

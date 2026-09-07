@@ -1,6 +1,6 @@
 # Final Source Item Traceability
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 The machine-readable companion [FINAL_SOURCE_ITEM_TRACEABILITY.csv](FINAL_SOURCE_ITEM_TRACEABILITY.csv) is the authoritative row-level join. It contains **2,669 rows**: 2,577 PASS00 atomic source items, 13 explicit PASS00 cross-domain derivations, and 79 PASS15 recovered source items. Requirement IDs are unchanged.
 

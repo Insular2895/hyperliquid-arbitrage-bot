@@ -1,6 +1,6 @@
 # Capital and Inventory Pipeline
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ```mermaid
 flowchart TD

@@ -1,7 +1,7 @@
 # PASS 12 — Evidence Stage Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Stage | Name | Primary question | Technical center | Capital permission | Maturity relation | Persistent evidence |
 |---:|---|---|---|---|---|---|

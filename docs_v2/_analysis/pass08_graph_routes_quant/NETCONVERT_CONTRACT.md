@@ -1,7 +1,7 @@
 # NetConvert Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 `NetConvert` is the single canonical economic conversion primitive. QF-016 in SRC-004 owns its equation; this document defines the implementation-facing contract without duplicating that equation.
 

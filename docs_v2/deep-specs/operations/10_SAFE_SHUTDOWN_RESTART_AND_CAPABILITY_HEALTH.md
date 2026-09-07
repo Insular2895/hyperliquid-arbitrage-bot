@@ -1,7 +1,7 @@
 # 10 — Safe Shutdown, Restart and Capability Health
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Safe shutdown
 

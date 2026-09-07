@@ -1,6 +1,6 @@
 # Data–Replay–Live Consistency Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Invariant | Replay | Shadow | MicroLive/Live | Result |
 |---|---|---|---|---|

@@ -1,7 +1,7 @@
 # 02 — CapabilityManifest, Promotion and Demotion
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Source-backed entry
 

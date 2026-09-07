@@ -1,7 +1,7 @@
 # Shadow, Micro-live and Predicted-versus-actual Data
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Shadow uses real market/account observation and the production Core with `NullShadowTransport`. It records Opportunities, FeatureSnapshots, forecasts, RiskDecisions, ExecutionPlans, would-submit intents, latency and subsequent market outcomes. `ActualAccountState` and `ShadowCounterfactualState` are separate and never reconciled into one truth.
 

@@ -1,6 +1,6 @@
 # Cross-domain Dependency Map
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ```mermaid
 flowchart LR

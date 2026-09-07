@@ -1,7 +1,7 @@
 # OWA Comparator Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 An indirect A→X→B route is an OWA candidate only when a valid direct A→B conversion exists. The comparison asks whether the indirect route produces more **B** than the direct route for the same starting amount of **A**.
 

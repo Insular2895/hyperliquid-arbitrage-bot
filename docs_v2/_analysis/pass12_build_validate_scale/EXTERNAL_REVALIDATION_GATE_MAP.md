@@ -1,7 +1,7 @@
 # PASS 12 — External Revalidation Gate Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 No external fact was revalidated during PASS 12. This map routes current-fact checks to the existing external register and the future implementation/activation owner.
 

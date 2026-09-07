@@ -1,7 +1,7 @@
 # Risk Kill-Switch Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 The seven exact scope names come from SRC-005 lines 3225–3237. Specialized quality/change switches choose one of these scopes. Exact quantitative triggers, reset windows and most final enum reason members are calibrated/Data-owned rather than invented here.
 

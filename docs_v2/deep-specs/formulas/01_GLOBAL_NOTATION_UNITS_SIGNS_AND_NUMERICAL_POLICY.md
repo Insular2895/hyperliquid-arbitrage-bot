@@ -1,7 +1,7 @@
 # Global Notation, Units, Signs and Numerical Policy
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Contract
 

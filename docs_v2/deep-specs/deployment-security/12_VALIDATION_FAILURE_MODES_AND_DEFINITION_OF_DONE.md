@@ -1,7 +1,7 @@
 # 12 — Validation, Failure Modes and Definition of Done
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Evidence families
 

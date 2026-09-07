@@ -1,7 +1,7 @@
 # Data / Recorder / Replay Legacy Comparison
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Legacy review occurred only after the V2 masters/deep specs were written. Reviewed read-only: `docs/11_DATA_CONTRACTS.md`, `docs/12_RECORDER_AND_REPLAY.md`, `docs/13_INFRASTRUCTURE.md`, `docs/16_VALIDATION_MATRIX.md`, `docs/18_OPERATIONS_AND_MONITORING.md`, and relevant specs for Recorder, ReplayEngine, Normalizer, ClockAndRng and FeedAdapter.
 

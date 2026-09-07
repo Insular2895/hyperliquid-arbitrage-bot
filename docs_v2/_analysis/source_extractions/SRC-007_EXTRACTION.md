@@ -1,6 +1,6 @@
 # SRC-007 Extraction
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 - Source ID: `SRC-007`
 - Filename: `Oui, dans le modèle qu’on vient de définir, le plus propre est que….md`

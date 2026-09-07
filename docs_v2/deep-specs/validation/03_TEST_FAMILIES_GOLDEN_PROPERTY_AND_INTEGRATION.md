@@ -1,7 +1,7 @@
 # 03 — Test Families: Golden, Property and Integration
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Common test contract
 

@@ -1,7 +1,7 @@
 # Data, Learning and Experiment Dependencies
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Target-before-model rule
 

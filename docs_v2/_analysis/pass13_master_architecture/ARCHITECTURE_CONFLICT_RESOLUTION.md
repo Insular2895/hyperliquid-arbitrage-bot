@@ -1,6 +1,6 @@
 # Architecture Conflict Resolution
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 PASS 13 did not reopen domain-resolved conflicts 001–126. It verified that their cross-domain consequences are consistently representable and recorded the following architecture-only clarifications.
 

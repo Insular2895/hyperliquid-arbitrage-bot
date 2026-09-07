@@ -1,6 +1,6 @@
 # Risk–Execution Consistency Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Boundary | Risk responsibility | Execution responsibility | Invariant/result |
 |---|---|---|---|

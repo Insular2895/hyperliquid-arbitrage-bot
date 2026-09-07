@@ -1,7 +1,7 @@
 # `botctl` Command Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 The source-exact baseline commands are `status`, `health`, `benchmark`, `config validate`, `start`, `stop`, `reconcile`, `update check`, `update`, `rollback`, `support-bundle` and `emergency-stop`. The broader public vocabulary below normalizes mission-required aliases/workflows without claiming that every spelling was already frozen in SRC-006.
 

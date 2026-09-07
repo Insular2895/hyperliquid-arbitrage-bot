@@ -1,6 +1,6 @@
 # Residual Consistency Gaps
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 No unresolved cross-domain contradiction remains. The rows below are bounded input, calibration or product-decision dependencies. They are not permission to invent a default or to claim an affected capability is validated.
 

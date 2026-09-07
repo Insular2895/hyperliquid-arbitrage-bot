@@ -1,7 +1,7 @@
 # Formula Precondition and Failure Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 The per-QF ledger and deep-spec rows are normative. This matrix groups identical failure controls without erasing formula identities.
 

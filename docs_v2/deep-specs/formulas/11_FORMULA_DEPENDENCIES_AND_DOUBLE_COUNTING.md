@@ -1,7 +1,7 @@
 # Formula Dependencies and Double Counting
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Dependency composition
 

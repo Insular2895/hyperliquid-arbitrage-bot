@@ -1,7 +1,7 @@
 # Formula Legacy Comparison
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Compared only after the SRC-004 source-first reconstruction. Legacy file: `docs/04_FORMULA_BOOK.md`; it was not edited.
 

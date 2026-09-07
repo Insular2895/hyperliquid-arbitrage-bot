@@ -1,7 +1,7 @@
 # 09 — Domain Definition of Done
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Each domain DoD combines:
 

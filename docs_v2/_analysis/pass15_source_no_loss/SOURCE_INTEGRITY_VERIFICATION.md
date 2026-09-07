@@ -1,6 +1,6 @@
 # Source Integrity Verification
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 All eight source byte streams were reopened from the first byte through EOF, decoded line-sequentially, hashed, and joined to their PASS00 extraction before semantic review. “Read completely” below means the sequential scanner consumed every physical line and the audit reviewed every logical extraction interval plus every uncovered interval; it does not mean keyword-only search.
 

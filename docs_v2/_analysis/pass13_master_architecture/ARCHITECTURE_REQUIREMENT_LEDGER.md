@@ -1,6 +1,6 @@
 # Architecture Requirement Ledger
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 All **647** stable PASS 00 requirements indexed under ARCHITECTURE were reviewed. Original locators were reopened from SRC-001–008: 377 merged intervals, 16,538 unique original-source lines, zero missing/out-of-range locators; ordered source digest `278dc2779e99cb1b`. Domain-owned semantics and corrections remain governed by PASS 01–12. The indexed status is retained here for source traceability; the owning master governs final interpretation.
 

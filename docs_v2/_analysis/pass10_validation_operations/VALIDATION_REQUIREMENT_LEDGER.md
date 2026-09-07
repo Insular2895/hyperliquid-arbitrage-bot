@@ -1,7 +1,7 @@
 # PASS 10 Validation / Operations Requirement Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Scope and completeness
 

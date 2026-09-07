@@ -1,7 +1,7 @@
 # Diagnostic and Redaction Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Data class | Collect locally | Export | Treatment | Support-safe | Client confirmation |
 |---|---:|---:|---|---:|---:|

@@ -1,7 +1,7 @@
 # Risk Conflict Resolution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | ID | Apparent conflict | Authority analysis | Resolution | Status |
 |---|---|---|---|---|

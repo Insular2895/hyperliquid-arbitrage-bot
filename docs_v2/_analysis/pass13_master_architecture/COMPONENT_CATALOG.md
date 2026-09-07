@@ -1,6 +1,6 @@
 # Component Catalog
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Logical component does not mean process, crate or microservice. `HP` = hot path; `NL` = near-line; `BG` = background/control; `OFF` = offline. All runtime readers consume immutable snapshots and all decision outputs retain input versions.
 

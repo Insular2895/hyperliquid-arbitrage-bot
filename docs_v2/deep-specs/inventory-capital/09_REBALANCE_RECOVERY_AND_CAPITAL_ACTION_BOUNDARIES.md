@@ -1,7 +1,7 @@
 # 09 — Rebalance, Recovery and Capital-Action Boundaries
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Action taxonomy
 

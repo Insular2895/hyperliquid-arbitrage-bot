@@ -1,6 +1,6 @@
 # 11 — Execution transport and Replay/Shadow/Live parity
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 ## Interface and effect boundary
 

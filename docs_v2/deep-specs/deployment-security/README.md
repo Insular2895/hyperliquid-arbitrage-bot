@@ -1,7 +1,7 @@
 # Deployment and Security Deep Specs
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 These specifications refine [the Deployment/Docker master](../../14_DEPLOYMENT_AND_DOCKER.md). They define contracts and evidence boundaries; they do not select unfrozen vendors/tools, implement deployment automation or authorize Live use.
 

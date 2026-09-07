@@ -1,6 +1,6 @@
 # Current / Future Status Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Capability | Canonical status | Activation boundary | Audit result |
 |---|---|---|---|

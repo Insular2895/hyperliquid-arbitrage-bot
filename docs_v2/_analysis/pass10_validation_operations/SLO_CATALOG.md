@@ -1,7 +1,7 @@
 # SLO Catalog
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | SLO class | Good event / outcome | Why uptime alone fails |
 |---|---|---|

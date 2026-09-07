@@ -1,7 +1,7 @@
 # 04 — Bridge and Capital Relocation Engine
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Definition and boundary
 

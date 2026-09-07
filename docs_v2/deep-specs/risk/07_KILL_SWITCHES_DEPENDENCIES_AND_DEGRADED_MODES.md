@@ -1,7 +1,7 @@
 # Kill Switches, Dependencies and Degraded Modes
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Scope taxonomy
 

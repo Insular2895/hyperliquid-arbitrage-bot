@@ -1,6 +1,6 @@
 # 08 — Cancel races, timers, and order uncertainty
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 ## Cancel is a request, not truth
 

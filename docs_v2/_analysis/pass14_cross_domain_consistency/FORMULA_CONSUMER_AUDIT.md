@@ -1,6 +1,6 @@
 # Formula Consumer Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 PASS 14 rechecked the PASS11 110-row consumer matrix against canonical masters/deep specs. Every QF has one primary owner, at least one consumer, units/sign/preconditions and a version/evidence boundary.
 

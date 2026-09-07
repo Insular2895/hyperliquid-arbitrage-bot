@@ -1,7 +1,7 @@
 # 07 — Model Walk-forward, Calibration, OOD and Drift
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Random row splits are forbidden for temporal market data. Use chronological train/validation/test and repeated walk-forward windows. Slice later regimes, new assets, volatility/liquidity, size/depth, feed mode, horizons and censoring. Point-in-time feature neighbourhoods are mandatory.
 

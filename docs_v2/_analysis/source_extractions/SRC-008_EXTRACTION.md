@@ -1,6 +1,6 @@
 # SRC-008 Extraction
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 - Source ID: `SRC-008`
 - Filename: `Oui. Et en creusant le sujet, je corrigerais une chose fondamentale….md`

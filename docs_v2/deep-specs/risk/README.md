@@ -1,7 +1,7 @@
 # Risk Deep Specifications
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 These specifications expand [09 — Risk Constitution](../../09_RISK_CONSTITUTION.md) without changing its authority. SRC-005 Dossier 3/6 owns constitutional policy; Dossier 4/6 owns frozen data fields; SRC-004 owns formulas; SRC-006 owns validation acceptance.
 

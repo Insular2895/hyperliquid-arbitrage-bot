@@ -1,7 +1,7 @@
 # Simulator Validation Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Fidelity | Meaning | Minimum validation | Prohibited claim |
 |---|---|---|---|

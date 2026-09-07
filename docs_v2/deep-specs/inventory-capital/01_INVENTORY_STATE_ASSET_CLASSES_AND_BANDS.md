@@ -1,7 +1,7 @@
 # 01 — Inventory State, Asset Classes and Bands
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Truth and state separation
 

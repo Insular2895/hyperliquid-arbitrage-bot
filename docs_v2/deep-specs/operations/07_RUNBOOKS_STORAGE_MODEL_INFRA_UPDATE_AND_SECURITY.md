@@ -1,7 +1,7 @@
 # 07 — Runbooks: Storage, Model, Infrastructure, Update and Security
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Storage/Recorder
 

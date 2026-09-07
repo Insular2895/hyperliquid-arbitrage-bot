@@ -1,7 +1,7 @@
 # Conflict Resolution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | ID | Earlier variant | Canonical resolution | Status/authority |
 |---|---|---|---|

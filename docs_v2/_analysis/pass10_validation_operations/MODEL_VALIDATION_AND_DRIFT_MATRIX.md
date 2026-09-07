@@ -1,7 +1,7 @@
 # Model Validation and Drift Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Gate | Required evidence | Failure response |
 |---|---|---|

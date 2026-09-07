@@ -1,6 +1,6 @@
 # Overcompression Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 “Headline present” was not accepted as coverage. Each priority family was checked for branches, precedence, fallback, ordering, units, versioning, evidence and negative rules.
 

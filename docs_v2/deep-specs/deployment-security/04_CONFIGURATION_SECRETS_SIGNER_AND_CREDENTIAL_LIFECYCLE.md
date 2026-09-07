@@ -1,7 +1,7 @@
 # 04 — Configuration, Secrets, Signer and Credential Lifecycle
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Configuration
 

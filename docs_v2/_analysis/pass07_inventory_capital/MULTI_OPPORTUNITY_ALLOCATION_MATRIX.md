@@ -1,7 +1,7 @@
 # Multi-Opportunity Allocation Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Scenario | Required allocation constraint | Expected behavior |
 |---|---|---|

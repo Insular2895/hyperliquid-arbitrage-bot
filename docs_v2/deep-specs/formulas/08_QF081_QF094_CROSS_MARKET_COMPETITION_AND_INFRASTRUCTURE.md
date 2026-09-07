@@ -1,7 +1,7 @@
 # QF-081–QF-094 — Cross-Market, Competition and Infrastructure
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF | Expression | Symbols / output unit | Preconditions | Failure semantics | Golden requirements |
 |---|---|---|---|---|---|

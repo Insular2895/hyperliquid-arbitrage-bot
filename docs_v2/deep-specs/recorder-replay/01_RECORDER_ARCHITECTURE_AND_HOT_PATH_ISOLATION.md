@@ -1,7 +1,7 @@
 # Recorder Architecture and Hot-path Isolation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Recorder observes adapter/account events and Core decisions through bounded non-blocking capture paths. It owns serialization, compression, chunk lifecycle, disk writes, archive handoff and completeness metrics. Core owns economic order and state; Recorder cannot delay or reorder it.
 

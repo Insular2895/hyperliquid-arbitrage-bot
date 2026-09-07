@@ -1,6 +1,6 @@
 # PASS 02 — Participant Validation Map
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 02 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 02 REVIEW COMPLETE`
 
 No numerical threshold below is invented. “Positive” and “acceptable” require a later versioned validation decision with uncertainty.
 

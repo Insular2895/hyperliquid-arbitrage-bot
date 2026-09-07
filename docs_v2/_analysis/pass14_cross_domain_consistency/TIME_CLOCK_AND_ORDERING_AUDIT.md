@@ -1,6 +1,6 @@
 # Time, Clock and Ordering Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Concept | Authority/use | Forbidden use | Result |
 |---|---|---|---|

@@ -1,6 +1,6 @@
 # Source-to-Document Coverage Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 A number denotes the corresponding canonical Master. “yes” under Deep Specs means material detail is routed below the Master; Analysis/Trace means non-active status/provenance or row evidence is retained.
 

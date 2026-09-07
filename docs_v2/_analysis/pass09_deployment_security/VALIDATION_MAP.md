@@ -1,7 +1,7 @@
 # PASS 09 Validation Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This map specifies evidence expected by the future Validation pass; it does not claim that implementation tests already exist.
 

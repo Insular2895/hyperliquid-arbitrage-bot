@@ -1,7 +1,7 @@
 # Failure Modes, Tests and Definition of Done
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Failure rule
 

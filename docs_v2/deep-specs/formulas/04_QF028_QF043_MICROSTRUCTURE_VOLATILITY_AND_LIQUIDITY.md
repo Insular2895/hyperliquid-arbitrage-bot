@@ -1,7 +1,7 @@
 # QF-028–QF-043 — Microstructure, Volatility and Liquidity
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF | Expression | Symbols / output unit | Preconditions | Failure semantics | Golden requirements |
 |---|---|---|---|---|---|

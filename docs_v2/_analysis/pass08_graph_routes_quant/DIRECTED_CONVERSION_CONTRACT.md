@@ -1,7 +1,7 @@
 # Directed Conversion Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Direction | Input | Output | Exchange action | Consumed side | Formula reference |
 |---|---|---|---|---|---|

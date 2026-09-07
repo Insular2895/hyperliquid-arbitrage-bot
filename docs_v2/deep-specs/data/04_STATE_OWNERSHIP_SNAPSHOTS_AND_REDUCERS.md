@@ -1,7 +1,7 @@
 # State Ownership, Snapshots and Reducers
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Ownership
 

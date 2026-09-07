@@ -1,7 +1,7 @@
 # Legacy Comparison
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Comparison was performed only after V2 reconstruction. Files under `docs/**` remain unmodified and non-authoritative.
 

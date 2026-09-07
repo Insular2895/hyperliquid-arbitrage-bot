@@ -1,6 +1,6 @@
 # 07 — Participant Signatures and Address Behaviour
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Status
 

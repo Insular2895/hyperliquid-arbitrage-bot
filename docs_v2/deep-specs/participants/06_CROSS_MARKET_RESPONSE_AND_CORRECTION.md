@@ -1,6 +1,6 @@
 # 06 — Cross-Market Response and Correction
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Purpose and mechanical boundary
 

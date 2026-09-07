@@ -1,6 +1,6 @@
 # Cross-domain Invariant Catalog
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Invariant | Status | Primary owner | Violation response |
 |---|---|---|---|

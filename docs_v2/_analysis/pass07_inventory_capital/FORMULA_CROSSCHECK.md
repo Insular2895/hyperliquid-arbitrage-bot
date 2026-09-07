@@ -1,7 +1,7 @@
 # Formula Crosscheck
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 SRC-004 is authoritative. PASS07 checked consumer semantics and status; it does not create alternative formulas. `FORMULA_INDEX.md` locator extraction defects are explicitly routed to PASS11.
 

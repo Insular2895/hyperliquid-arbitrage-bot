@@ -1,6 +1,6 @@
 # 02 — Component Model and Domain Boundaries
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Logical components are contracts, not necessarily processes or crates. The initial runtime is a modular Rust monolith.
 

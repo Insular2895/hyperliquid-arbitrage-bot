@@ -1,7 +1,7 @@
 # 05 — Hysteresis, Cooldown and Relocation Governance
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Purpose
 

@@ -1,7 +1,7 @@
 # PASS 12 — Capability Activation Sequence
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 “First possible” is not “automatically permitted.” Every transition needs current dependencies, evidence and explicit authorization.
 

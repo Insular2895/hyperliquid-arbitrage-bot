@@ -1,6 +1,6 @@
 # 01 — Baseline and Deployment Profiles
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Decision frame
 

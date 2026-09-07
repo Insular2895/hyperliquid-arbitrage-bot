@@ -1,7 +1,7 @@
 # Replay, Audit, Reject Dataset and Calibration
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Observable deterministic decisions
 

@@ -1,7 +1,7 @@
 # 10 — Economic PnL, Accounting and Capital Efficiency
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Attribution buckets
 

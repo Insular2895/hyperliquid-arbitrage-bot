@@ -1,7 +1,7 @@
 # Risk Parameter Governance
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 No numerical value below is invented. `Atomic only` means an authenticated, validated, logged version switch outside a critical transition; every active ExecutionPlan retains its pinned version. Emergency hard stops are not ordinary hot reloads. All records require `name`, `unit`, `scope`, `owner`, `valid range`, `provenance`, `version`, `effective_at`, evidence, update/rollback procedure, hot-reload policy and plan pinning.
 

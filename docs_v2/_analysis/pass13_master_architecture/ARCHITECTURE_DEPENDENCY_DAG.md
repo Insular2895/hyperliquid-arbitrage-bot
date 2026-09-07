@@ -1,6 +1,6 @@
 # Architecture Dependency DAG
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Synchronous decision DAG
 

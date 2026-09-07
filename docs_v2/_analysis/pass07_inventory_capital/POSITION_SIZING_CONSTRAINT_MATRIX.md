@@ -1,7 +1,7 @@
 # Position Sizing Constraint Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Constraint | Hard? | Soft objective? | Formula | Owner | Calibrated? | Learned? | Reduce size? | Reject? | Source |
 |---|---:|---:|---|---|---:|---:|---:|---:|---|

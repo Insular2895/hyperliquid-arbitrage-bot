@@ -1,7 +1,7 @@
 # Market Atlas: Structure, Features and Rolling State
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Definition
 

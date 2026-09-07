@@ -1,7 +1,7 @@
 # Formula Cross-Domain Gap Register
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 PASS11 recorded discrepancies without silently rewriting PASS01–10 masters. The `Proposed PASS14 resolution` column below is the historical handoff; PASS14 has now completed its cross-domain review, with final dispositions appended after the original register.
 

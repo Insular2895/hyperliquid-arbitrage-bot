@@ -1,7 +1,7 @@
 # Update and Rollback State Machine
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Update
 

@@ -1,7 +1,7 @@
 # RiskSnapshot, RiskDecision, TTL and Revalidation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Point-in-time boundary
 

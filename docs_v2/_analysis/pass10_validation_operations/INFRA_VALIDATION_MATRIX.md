@@ -1,7 +1,7 @@
 # Infrastructure Validation Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Evidence family | Required measurements | Gate |
 |---|---|---|

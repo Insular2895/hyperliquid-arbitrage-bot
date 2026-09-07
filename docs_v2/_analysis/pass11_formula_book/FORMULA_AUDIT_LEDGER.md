@@ -1,7 +1,7 @@
 # Formula Audit Ledger
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 This table has exactly one canonical primary entry for each QF. `Invalid` denotes typed failure/unknown and fail-closed use. `Y*` external means point-in-time exchange validation. Consumer names are defined in the consumer matrix; full per-row conditions are in the linked deep specs.
 

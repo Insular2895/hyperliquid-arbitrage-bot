@@ -1,7 +1,7 @@
 # Schema Version Compatibility Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Family/change | Read old? | Write behavior | Startup/replay action |
 |---|---|---|---|

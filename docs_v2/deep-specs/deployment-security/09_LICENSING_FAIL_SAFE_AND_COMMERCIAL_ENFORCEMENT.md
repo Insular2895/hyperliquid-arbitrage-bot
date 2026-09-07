@@ -1,7 +1,7 @@
 # 09 — Licensing Fail-Safe and Commercial Enforcement
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Entitlement
 

@@ -1,7 +1,7 @@
 # Route Activation, HOT/WARM/COLD and Global Watcher
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Three independent questions
 

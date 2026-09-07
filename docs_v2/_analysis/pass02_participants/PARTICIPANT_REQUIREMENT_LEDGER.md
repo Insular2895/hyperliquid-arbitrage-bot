@@ -1,6 +1,6 @@
 # PASS 02 — Participant Requirement Ledger
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 02 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 02 REVIEW COMPLETE`
 
 This is the requirement-by-requirement proof of review. PASS 00 located each stable ID; PASS 02 reopened the original source and applied closure authority. Formula/Data/Risk/Execution ownership is preserved.
 

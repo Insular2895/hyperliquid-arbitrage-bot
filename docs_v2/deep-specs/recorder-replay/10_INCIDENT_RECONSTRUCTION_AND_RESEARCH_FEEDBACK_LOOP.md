@@ -1,7 +1,7 @@
 # Incident Reconstruction and Research Feedback Loop
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 An `IncidentRecord` identifies severity, affected markets/executions, start/end, triggers, actions and resolution. It is a domain object, not merely an error log. Creating an incident pins relevant P0/P1 evidence and a calibrated market pre/post window.
 

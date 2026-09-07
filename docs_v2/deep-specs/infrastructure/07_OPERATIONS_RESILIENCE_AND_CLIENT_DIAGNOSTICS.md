@@ -1,6 +1,6 @@
 # 07 — Operations, Resilience and Client Diagnostics
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Boundary
 

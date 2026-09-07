@@ -1,6 +1,6 @@
 # Producer–Consumer Interface Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Contract | Producer | Consumers | Cross-domain guarantee |
 |---|---|---|---|

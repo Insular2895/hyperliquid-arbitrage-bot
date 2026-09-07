@@ -1,7 +1,7 @@
 # Retention, Storage, Archive and Incident Windows
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Classes
 

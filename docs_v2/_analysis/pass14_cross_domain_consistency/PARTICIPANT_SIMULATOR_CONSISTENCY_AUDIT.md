@@ -1,6 +1,6 @@
 # Participant–Simulator Consistency Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Layer | Owns | Does not own | Consumer boundary | Result |
 |---|---|---|---|---|

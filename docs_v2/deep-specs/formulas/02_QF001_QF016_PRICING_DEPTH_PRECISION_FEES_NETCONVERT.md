@@ -1,7 +1,7 @@
 # QF-001–QF-016 — Pricing, Depth, Precision, Fees and NetConvert
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Each row is an individual audit. “Invalid” means a typed non-value and fail-closed consumer behavior; it never means silently return zero.
 

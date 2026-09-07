@@ -1,7 +1,7 @@
 # 01 — Runtime State, Health, Liveness and Readiness
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Liveness reports whether the process/control loop can respond and progress. Readiness answers whether a named action is currently permitted in a named scope. Therefore `live=true, ready=false` is normal during boot, sync, reconciliation, degraded operation, update and incident hold.
 

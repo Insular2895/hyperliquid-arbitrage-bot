@@ -1,7 +1,7 @@
 # Market Atlas Dependency Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ```mermaid
 flowchart LR

@@ -1,7 +1,7 @@
 # Risk Legacy Comparison
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Comparison was performed only after the V2 master and deep specifications existed. Legacy files remain `LEGACY_REFERENCE_ONLY` and were not modified.
 

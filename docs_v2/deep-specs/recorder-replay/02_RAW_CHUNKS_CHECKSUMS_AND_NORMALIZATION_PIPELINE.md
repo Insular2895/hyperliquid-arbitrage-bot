@@ -1,7 +1,7 @@
 # RAW Chunks, Checksums and Normalization Pipeline
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 RAW stores exact payload bytes and the full RawEvent envelope. It is written locally in compact binary chunks and compressed with ZSTD. The exact codec and nominal 5–15 minute exploratory chunk range remain implementation/calibration choices; boundaries must be independently recoverable and measured under real event volume.
 

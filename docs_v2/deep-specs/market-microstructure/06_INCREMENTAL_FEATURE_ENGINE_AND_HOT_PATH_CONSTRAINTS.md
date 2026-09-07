@@ -1,7 +1,7 @@
 # Incremental Feature Engine and Hot-Path Constraints
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Ownership
 

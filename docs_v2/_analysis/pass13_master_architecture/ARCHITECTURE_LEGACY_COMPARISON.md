@@ -1,6 +1,6 @@
 # Architecture Legacy Comparison
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Legacy file reviewed after V2/source-first reconstruction: `docs/00_MASTER_ARCHITECTURE.md`. It remains `LEGACY_REFERENCE_ONLY` and was not edited.
 

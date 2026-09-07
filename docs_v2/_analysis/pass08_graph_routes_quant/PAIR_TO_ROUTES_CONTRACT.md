@@ -1,7 +1,7 @@
 # `pair_to_routes` Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Contract
 

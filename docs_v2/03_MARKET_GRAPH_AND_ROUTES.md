@@ -1,7 +1,7 @@
 # 03 — Market Graph and Routes
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## 1. Purpose
 

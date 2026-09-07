@@ -1,7 +1,7 @@
 # Inventory / Capital Deep Specifications
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 These specifications expand [08 — Inventory and Capital](../../08_INVENTORY_AND_CAPITAL.md). Formula authority remains SRC-004 and the Formula Index; Risk, Execution, Data, Simulator and PASS08 route/Atlas ownership are referenced, not duplicated.
 

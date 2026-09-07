@@ -1,6 +1,6 @@
 # Document-to-Source Reverse Traceability
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Canonical Master | Material supporting sources | Closure authority | PASS15 recovery effect |
 |---|---|---|---|

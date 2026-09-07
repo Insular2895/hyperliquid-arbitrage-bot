@@ -1,7 +1,7 @@
 # Alert Severity and Action Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 P0–P3 is the PASS 10 normalized operational severity model. Numeric trigger thresholds, windows, routing targets and response-time objectives are `CALIBRATED`; locked safety actions derive from Risk/Execution/Deployment contracts.
 

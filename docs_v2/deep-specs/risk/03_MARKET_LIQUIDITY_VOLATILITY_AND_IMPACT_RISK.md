@@ -1,7 +1,7 @@
 # Market Liquidity, Volatility and Impact Risk
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Ordered market gates
 

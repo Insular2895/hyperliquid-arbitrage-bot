@@ -1,7 +1,7 @@
 # PASS07 Conflict Resolution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | ID | Source evolution/conflict | Resolution | Authority | Remaining? |
 |---|---|---|---|---:|

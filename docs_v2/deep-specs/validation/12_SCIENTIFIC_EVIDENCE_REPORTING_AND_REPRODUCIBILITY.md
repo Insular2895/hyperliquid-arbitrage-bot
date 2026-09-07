@@ -1,7 +1,7 @@
 # 12 — Scientific Evidence Reporting and Reproducibility
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Pre-registration
 

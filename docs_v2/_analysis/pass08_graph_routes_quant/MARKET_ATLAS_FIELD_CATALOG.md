@@ -1,7 +1,7 @@
 # Market Atlas Field Catalog
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Exact serialized names are Data Contracts-owned. Rows below are required semantic fields, not a premature schema. Learned rows carry horizon, support/confidence, model version and dataset/manifest lineage; structural rows carry Graph/Route/Metadata versions.
 

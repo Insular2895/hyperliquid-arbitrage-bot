@@ -1,6 +1,6 @@
 # RunMode Architecture Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Dimension | Replay | Paper | Shadow | MicroLive | Live |
 |---|---|---|---|---|---|

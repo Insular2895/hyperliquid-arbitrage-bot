@@ -1,7 +1,7 @@
 # Route Generation and Invalidation Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Family | Generation condition | Metadata dependencies | Precomputed | Hot-path generation | Invalidation/version | `pair_to_routes` | Replay |
 |---|---|---|---:|---:|---|---|---|

@@ -1,6 +1,6 @@
 # Concept Index
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Concept | Candidate definition / locator | Requirements | Sources | Target domain |
 |---|---|---|---|---|

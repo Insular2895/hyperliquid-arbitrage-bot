@@ -1,6 +1,6 @@
 # Failure Containment Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 `Existing exposure` means cancel/Recovery/safe shutdown remain where inputs are valid; it never authorizes new risk.
 

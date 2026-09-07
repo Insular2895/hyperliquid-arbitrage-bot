@@ -1,7 +1,7 @@
 # Capital Permission, Scaling and Demotion
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Capital law
 

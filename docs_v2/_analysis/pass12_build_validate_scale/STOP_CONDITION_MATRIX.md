@@ -1,7 +1,7 @@
 # PASS 12 — Stop Condition Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 A stop prevents promotion of the affected capability; it does not necessarily stop independent safe research. Risk Constitution remains authoritative.
 

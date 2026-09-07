@@ -1,7 +1,7 @@
 # Maturity Model Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Level | Exact name | Required evidence | Permission boundary |
 |---|---|---|---|

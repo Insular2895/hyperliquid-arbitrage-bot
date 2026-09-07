@@ -1,7 +1,7 @@
 # Incident Evidence Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 An `IncidentId` groups related domain events into one operational object. Source-backed `IncidentRecord` fields are incident ID, severity, affected markets/executions, start, optional end, triggers, actions and optional resolution. It is not merely an error-log entry.
 

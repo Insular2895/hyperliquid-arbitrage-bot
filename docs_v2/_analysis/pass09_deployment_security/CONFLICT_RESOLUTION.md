@@ -1,7 +1,7 @@
 # PASS 09 Conflict Resolution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 The authority order is SRC-006 Dossier 5 closure, then later compatible source detail, PASS00 provenance and legacy documentation. The following documentary conflicts are resolved without turning open implementation choices into decisions.
 

@@ -1,7 +1,7 @@
 # Operational Review Cadence
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Exact wall-clock schedules remain `CALIBRATED`. The mandatory review layers are:
 

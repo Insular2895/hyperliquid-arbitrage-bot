@@ -1,7 +1,7 @@
 # Structural Graph, Venues, Assets and Markets
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Contract
 

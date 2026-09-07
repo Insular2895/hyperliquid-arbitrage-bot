@@ -1,6 +1,6 @@
 # PASS 04 — Execution Failure Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 | Failure | Known / unknown | Exposure | Allowed next action | New risk | Reservation | Transition | Recovery / reconciliation | Source |
 |---|---|---|---|---:|---|---|---|---|

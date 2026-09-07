@@ -1,7 +1,7 @@
 # Fault Injection Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Injection | Expected safe behavior | Required proof |
 |---|---|---|

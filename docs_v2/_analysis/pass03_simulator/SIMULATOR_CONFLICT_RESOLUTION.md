@@ -1,6 +1,6 @@
 # PASS 03 — Simulator Conflict Resolution
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 03 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 03 REVIEW COMPLETE`
 
 | Conflict | Earlier implication | Later/closure evidence | Canonical PASS 03 resolution | Status |
 |---|---|---|---|---|

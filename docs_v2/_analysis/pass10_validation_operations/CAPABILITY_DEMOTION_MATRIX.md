@@ -1,7 +1,7 @@
 # Capability Demotion Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Trigger | Minimum response | Possible target | Resume condition |
 |---|---|---|---|

@@ -1,7 +1,7 @@
 # Sign Convention Constitution
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Quantity | Positive means | Negative means | Zero | Enforced QFs |
 |---|---|---|---|---|

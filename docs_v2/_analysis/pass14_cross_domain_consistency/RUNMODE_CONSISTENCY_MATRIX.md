@@ -1,6 +1,6 @@
 # RunMode Consistency Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | `RunMode` | Market/account source | Effect transport | Real account mutation | Clock | Same Core/Risk/reducers? | Claim limit |
 |---|---|---|---:|---|---:|---|

@@ -1,7 +1,7 @@
 # Market Graph Deep Specifications
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 These specifications refine [`03_MARKET_GRAPH_AND_ROUTES.md`](../../03_MARKET_GRAPH_AND_ROUTES.md) without changing Formula, Data, Participant, Simulator, Risk, Execution or Capital ownership.
 

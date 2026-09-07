@@ -1,7 +1,7 @@
 # PASS 12 — Technical Phase Definition-of-Done Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 PASS 10 remains the authority for evidence sufficiency. These are phase exits, not authorization to start the next capital-bearing mode.
 

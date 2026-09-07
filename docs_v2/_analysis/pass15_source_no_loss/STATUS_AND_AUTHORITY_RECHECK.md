@@ -1,6 +1,6 @@
 # Status and Authority Recheck
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Source | Authority role | PASS15 outcome |
 |---|---|---|

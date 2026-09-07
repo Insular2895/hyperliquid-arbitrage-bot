@@ -1,6 +1,6 @@
 # PASS15 Conflict Regression Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Conflict range | Recovery-sensitive subjects rechecked | Regressions | Result |
 |---|---|---:|---|

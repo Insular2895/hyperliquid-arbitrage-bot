@@ -1,6 +1,6 @@
 # Execution deep specifications
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 04 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 04 REVIEW COMPLETE`
 
 These specifications expand [10 — Execution State Machine](../../10_EXECUTION_STATE_MACHINE.md). SRC-004 Dossier 1 is the execution-closure authority; SRC-005 controls Risk/Data contracts. They specify documentation, not implementation approval.
 

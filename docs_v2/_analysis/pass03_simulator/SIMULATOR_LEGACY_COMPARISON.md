@@ -1,6 +1,6 @@
 # PASS 03 — Simulator Legacy Comparison
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 03 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 03 REVIEW COMPLETE`
 
 Comparison was performed only after the V2 master/deep specifications were written. Legacy is evidence of prior compression, not design authority.
 

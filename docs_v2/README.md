@@ -1,10 +1,13 @@
 # Documentation v2 — Clean-room rebuild
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
-`docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception.
+`docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception. La reconstruction, l'audit transversal et la vérification source sans perte sont terminés comme **candidat**; l'approbation humaine, le basculement documentaire et toute implémentation restent en attente.
 
-PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques. PASS 12 reconstruit séparément l'ordre technique et le parcours scientifique qui mène de la donnée à une capacité validée. PASS 13 assemble ces autorités dans une architecture transversale sans les remplacer. PASS 14 vérifie leurs interfaces, propriétaires, unités, états, modes et dépendances comme un seul système. PASS 15 rouvre les huit sources, vérifie leurs empreintes et leur couverture ligne par ligne, puis joint 2 577 unités PASS 00, 13 dérivations explicites et 79 récupérations documentées à leur sort final. Ces récupérations couvrent 2 intervalles hors extraction et 77 concepts imbriqués dans six plages PASS 00 trop larges. L'ensemble reste soumis à revue humaine.
+PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques. PASS 12 reconstruit séparément l'ordre technique et le parcours scientifique qui mène de la donnée à une capacité validée. PASS 13 assemble ces autorités dans une architecture transversale sans les remplacer. PASS 14 vérifie leurs interfaces, propriétaires, unités, états, modes et dépendances comme un seul système. PASS 15 rouvre les huit sources, vérifie leurs empreintes et leur couverture ligne par ligne, puis joint 2 577 unités PASS 00, 13 dérivations explicites et 79 récupérations documentées à leur sort final. PASS 16 fournit enfin un package fini de revue, de décisions, d'autorisation et de basculement sans s'auto-approuver.
+
+- [PASS 16 — Start here](./_review/00_REVIEW_START_HERE.md)
+- [PASS 16 final report](./_analysis/pass16_human_review/PASS16_FINAL_REPORT.md)
 
 - [00 — Master Architecture](00_MASTER_ARCHITECTURE.md)
 - [Architecture deep specs](deep-specs/architecture/README.md)
@@ -46,3 +49,5 @@ PASS 00 cartographie les exigences, formules, concepts, conflits et destinations
 - [PASS 12 evidence](./_analysis/pass12_build_validate_scale/PASS12_FINAL_REPORT.md)
 
 Ordre d'autorité: dossiers de fermeture 1–6 dans leurs domaines, puis sources exploratoires non contredites. Les faits externes datés exigent une revalidation ultérieure.
+
+**NEXT:** HUMAN REVIEW. Aucun successeur automatique. L'implémentation, le basculement `docs_v2` → `docs`, Micro-live et Live ne sont pas autorisés.

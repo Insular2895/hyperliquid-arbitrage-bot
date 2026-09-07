@@ -1,7 +1,7 @@
 # Replay Engine Modes, Clock and Ordering
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Replay replaces the source and ExecutionTransport; it does not replace Core. Market/account events, reducers, formulas, Strategy, Simulator, Risk, Execution, Recovery, Inventory and Reservations remain shared.
 

@@ -1,7 +1,7 @@
 # 08 — Inventory and Capital
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## 1. Purpose
 

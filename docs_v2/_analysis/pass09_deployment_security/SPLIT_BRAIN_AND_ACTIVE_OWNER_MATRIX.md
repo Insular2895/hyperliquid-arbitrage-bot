@@ -1,7 +1,7 @@
 # Split-Brain and Active-Owner Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Scenario | Detection | Process allowed to trade | New-risk block | Reconciliation / intervention |
 |---|---|---|---|---|

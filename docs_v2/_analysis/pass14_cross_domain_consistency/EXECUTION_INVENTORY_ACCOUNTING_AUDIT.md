@@ -1,6 +1,6 @@
 # Execution–Inventory–Accounting Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ```text
 OrderIntent → observed order/fill events → deduplicated FillLedger

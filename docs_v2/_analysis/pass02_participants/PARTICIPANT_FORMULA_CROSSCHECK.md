@@ -1,6 +1,6 @@
 # PASS 02 — Participant Formula Crosscheck
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS — PASS 02 REVIEW COMPLETE`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW — PASS 02 REVIEW COMPLETE`
 
 SRC-004 is authoritative. Expressions below were reopened in the original Formula Book, not copied from legacy documentation. `LOCKED` means mathematical definition/structure; `LEARNED` means the distribution or coefficients require data; `CALIBRATED` parameters remain versioned.
 

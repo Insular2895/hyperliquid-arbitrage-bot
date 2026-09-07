@@ -1,6 +1,6 @@
 # Canonical Terminology Dictionary
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Canonical term | Exact meaning | Permitted prose alias | Forbidden conflation | Owner |
 |---|---|---|---|---|

@@ -1,7 +1,7 @@
 # Clock and Time Contract
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Concept | Authority/meaning | Required use | Failure/uncertainty behavior |
 |---|---|---|---|

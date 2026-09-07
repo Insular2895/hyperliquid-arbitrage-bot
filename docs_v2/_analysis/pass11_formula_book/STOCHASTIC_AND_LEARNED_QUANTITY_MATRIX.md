@@ -1,7 +1,7 @@
 # Stochastic and Learned Quantity Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | QF | Quantity | Status | Target / estimator boundary | Required provenance | Calibration/validation |
 |---|---|---|---|---|---|

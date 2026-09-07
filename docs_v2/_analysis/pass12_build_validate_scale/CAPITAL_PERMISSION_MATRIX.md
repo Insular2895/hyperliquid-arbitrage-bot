@@ -1,7 +1,7 @@
 # PASS 12 — Capital Permission Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Capital permission is the intersection of compiled, configured, licensed, release-channel, validated, ready and Risk-permitted scope. “Maximum concept” is qualitative; the actual maximum is always the current lower bound across Risk, inventory, book, model, operations and `Q_validated`.
 

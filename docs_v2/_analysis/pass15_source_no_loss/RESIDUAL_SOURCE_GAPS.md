@@ -1,6 +1,6 @@
 # Residual Source Gaps
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Gap ID | Source | Lines | Question | Why unresolved | Current V2 behaviour | Affected domain | Technical phase | Blocks M0? | M1? | Replay? | Shadow? | Micro-live? | Live? | Human decision needed? |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|

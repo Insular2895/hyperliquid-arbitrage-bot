@@ -1,7 +1,7 @@
 # RunManifest, DecisionTrace and Reproducibility
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Run identity
 

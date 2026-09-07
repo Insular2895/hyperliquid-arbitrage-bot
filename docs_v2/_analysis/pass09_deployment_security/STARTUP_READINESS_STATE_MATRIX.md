@@ -1,7 +1,7 @@
 # Startup / Readiness State Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Automatic restart is process supervision, not authorization to trade. Every boot starts without new-risk permission.
 

@@ -1,7 +1,7 @@
 # PASS 06 — DATA / RECORDER / REPLAY COMPLETE
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Data/Recorder/Replay requirements reviewed: **661/661** unique PASS 00 domain-index requirements across SRC-001–008; unique IDs: **661**; source locator failures: **0**.
 

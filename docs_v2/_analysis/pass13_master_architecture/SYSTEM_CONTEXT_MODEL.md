@@ -1,6 +1,6 @@
 # System Context Model
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Actors and boundaries
 

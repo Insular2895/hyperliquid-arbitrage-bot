@@ -1,7 +1,7 @@
 # 11 — Validation, Replay, Shadow, Micro-live and Scaling
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Evidence ladder
 

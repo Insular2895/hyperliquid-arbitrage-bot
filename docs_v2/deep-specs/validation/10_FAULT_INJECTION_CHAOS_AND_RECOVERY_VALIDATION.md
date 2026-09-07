@@ -1,7 +1,7 @@
 # 10 — Fault Injection, Chaos and Recovery Validation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 For every meaningful dependency, test stopped/unavailable, late, stale, corrupt/lying, duplicate, reordered, overloaded and OOD behavior. Cover feed/book/account/order/fill, lost submit response, cancel race, crash at every persistence/effect boundary, Recovery crash/failure, balance/reservation mismatch, models/Simulator, clock/CPU/memory/disk/Recorder/network, signer/license/config/schema, update/migration, ownership and exchange-rule change.
 

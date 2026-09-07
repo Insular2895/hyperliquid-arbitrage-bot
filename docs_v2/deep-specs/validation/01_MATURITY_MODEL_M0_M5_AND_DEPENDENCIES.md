@@ -1,7 +1,7 @@
 # 01 — Maturity Model M0–M5 and Dependencies
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Exact levels
 

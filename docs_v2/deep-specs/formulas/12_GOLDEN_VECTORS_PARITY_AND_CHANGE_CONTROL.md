@@ -1,7 +1,7 @@
 # Golden Vectors, Parity and Change Control
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Golden vector schema
 

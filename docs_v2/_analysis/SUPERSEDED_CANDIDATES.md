@@ -1,6 +1,6 @@
 # Superseded Candidates
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Candidate | Prior direction | Replacing direction | Source authority / review pass |
 |---|---|---|---|

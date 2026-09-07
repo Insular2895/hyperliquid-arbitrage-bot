@@ -1,6 +1,6 @@
 # Source Snapshot and External Fact Audit
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Population | Count | Final treatment |
 |---|---:|---|

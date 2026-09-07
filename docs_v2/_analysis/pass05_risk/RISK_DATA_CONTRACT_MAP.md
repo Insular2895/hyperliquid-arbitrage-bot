@@ -1,7 +1,7 @@
 # Risk Data Contract Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Frozen fields below come from SRC-005 Dossier 4. Where Dossier 3 requires semantics but Dossier 4 has no dedicated frozen object, PASS 05 records the owner/reference and does not invent fields.
 

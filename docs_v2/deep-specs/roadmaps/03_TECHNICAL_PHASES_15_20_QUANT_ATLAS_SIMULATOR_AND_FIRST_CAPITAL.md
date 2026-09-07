@@ -1,7 +1,7 @@
 # Technical Phases 15–20 — Quant, Atlas, Simulator and First Capital
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## Boundary
 

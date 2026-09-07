@@ -1,7 +1,7 @@
 # Data Lineage Map
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ```text
 RawChunkManifest/checksum

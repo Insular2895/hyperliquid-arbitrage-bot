@@ -1,7 +1,7 @@
 # Route Type Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 | Type | Input → terminal | Closed? | Comparator | Strategy/capital meaning | Formula family | Modes | Risk/accounting |
 |---|---|---:|---|---|---|---|---|

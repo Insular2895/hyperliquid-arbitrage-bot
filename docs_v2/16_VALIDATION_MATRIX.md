@@ -1,7 +1,7 @@
 # 16 — Validation Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 ## 1. Purpose and authority
 

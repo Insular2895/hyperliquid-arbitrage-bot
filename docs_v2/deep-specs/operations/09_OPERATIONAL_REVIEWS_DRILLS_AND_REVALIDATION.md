@@ -1,7 +1,7 @@
 # 09 — Operational Reviews, Drills and Revalidation
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 Mandatory review layers are continuous alerts, recent operator exceptions, periodic model/simulator/Q_validated/incident review, monthly/periodic capability/SLO/infra/security review, release/change impact review and post-incident review. Exact calendar timing is calibrated.
 

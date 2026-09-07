@@ -1,6 +1,6 @@
 # 01 — System Context and Architectural Principles
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 ## Product boundary
 

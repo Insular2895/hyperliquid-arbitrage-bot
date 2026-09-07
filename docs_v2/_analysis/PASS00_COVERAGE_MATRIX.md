@@ -1,6 +1,6 @@
 # PASS 00 Coverage Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 | Source | Fully read | Extraction complete | Requirements | Superseded | Research | External | Unclassified |
 |---|---:|---:|---:|---:|---:|---:|---:|

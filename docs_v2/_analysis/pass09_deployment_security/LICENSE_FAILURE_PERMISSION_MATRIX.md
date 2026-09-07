@@ -1,7 +1,7 @@
 # License Failure Permission Matrix
 
 DOCUMENTATION STATUS:
-REBUILD IN PROGRESS
+AWAITING HUMAN REVIEW
 
 The license mechanism is outside the hot path. A locally cached, signed entitlement is verified with an embedded public key. It may identify `license_id`, `installation_id`, features, validity/expiration and signature. It never receives the client's exchange private key.
 

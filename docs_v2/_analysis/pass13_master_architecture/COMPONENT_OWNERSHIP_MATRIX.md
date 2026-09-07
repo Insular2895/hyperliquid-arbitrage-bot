@@ -1,6 +1,6 @@
 # Component Ownership Matrix
 
-`DOCUMENTATION STATUS: REBUILD IN PROGRESS`
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 `Y*` means the component mutates only its owned logical family. `Effect` means it requests/sends external action; external observations still return as events.
 
