@@ -131,7 +131,7 @@ Core ordering follows receive chronology and `recorder_seq` within a capture con
 
 ## 13. Hot path
 
-The opportunity-to-order path is: valid market event → Book update → affected `pair_to_routes` lookup → cheap BBO/filter gates → exact size-dependent `NetConvert` → required bounded features/forecasts/Simulator fidelity → terminal/inventory effects → feasible size curve and allocation → staged Risk gates → atomic reservation → immutable `ExecutionPlan` → order effect.
+The opportunity-to-order path is: valid market event → Book update → affected `pair_to_routes` lookup → BBO C1–C4 classification → exact size-dependent `NetConvert` via full L2 or proved-equivalent FastL1 → required bounded features/forecasts/Simulator fidelity → terminal/inventory effects → feasible size curve and allocation → staged Risk gates → atomic reservation → immutable `ExecutionPlan` → order effect.
 
 All inputs are in-memory, versioned and freshness checked. Work is bounded by affected routes, configured q grids and activated capabilities. No generic graph traversal, large Monte Carlo, history scan, training, synchronous disk/database, object storage, license call, remote admin or log flush may sit on this path.
 
@@ -153,7 +153,7 @@ The Formula Book owns QF-001–QF-110, units, sign conventions, failures and gol
 
 ## 18. Opportunity Engine
 
-Opportunity owns current candidate detection and reject episodes. It combines coherent route/book/rule versions with direct, indirect or cycle economics. BBO may reject cheaply but never accept in place of L2. It does not authorize capital, execute orders, train models or own accounting.
+Opportunity owns current candidate detection and reject episodes. It combines coherent route/book/rule versions with direct, indirect or cycle economics. BBO may apply canonical state invalidity or a proved conservative economic rejection, but never accept in place of L2; all other cases continue to exact economics. It does not authorize capital, execute orders, train models or own accounting.
 
 OWA requires a fair direct A→B comparator for the same input, terminal asset and conventions. Without it, A→X→B is not OWA and may only be a Bridge/relocation candidate. Triangle is A→X→B→A and returns to the start asset. `ConversionAlpha` and `ExecutionAlpha` remain separate.
 
@@ -357,3 +357,13 @@ Changing a domain boundary, state owner, ordered-event rule, Risk priority, Exec
 The canonical analytical chain is `observed -> reevaluated -> cheap-screened -> exact-valid -> Opportunity -> forecast-valid -> candidate -> Risk-eligible -> positive-size -> reserved -> planned -> attempted`, followed by an outcome DAG for legs, fills, partial exposure, `UNKNOWN`, original-route completion, Recovery, reconciliation and complete economic PnL. These stages are not interchangeable.
 
 This is a read-only evidence projection over existing domain owners, not a Capture Engine, command path or sixth state machine. It may be reconstructed from typed linked records and `DecisionTrace`; conflict with canonical state invalidates the projection. Identity, timing, denominators, outcome labels and overhead are canonicalized in [Capture Funnel and Latency Attribution](deep-specs/operations/11_CAPTURE_FUNNEL_AND_LATENCY_ATTRIBUTION.md). `HDC-001..006` remain pending final human review.
+
+## 46. CORR-02 — Hot-path performance doctrine
+
+Performance work follows `less work → locality/layout → allocation/copy reduction → safe reuse → exact specialization → measured Rust/compiler tuning → proven contention removal → possible foreign-kernel review`. Semantic parity precedes speed; a faster wrong answer fails.
+
+BBO has four roles: C1 state validity, C2 proved conservative reject, C3 exact L1-specialization eligibility and C4 heuristic priority. Only C1 or a complete no-false-negative C2 proof can permanently reject. C3 ineligibility—including quantity beyond L1—falls back to canonical full-L2 `NetConvert`; it is not an economic rejection. FastL1 changes traversal only and returns exactly the same QF-016 result/reasons/versions.
+
+`pair_to_routes` keeps canonical stable IDs and deterministic membership while a measured implementation may use generation-local dense/contiguous storage. Work dedup requires equality of the complete economic input tuple; distinct ordered states are retained. Cross-event coalescing is a versioned semantic decision, not a transparent optimization.
+
+Critical state retains one logical writer. Lock-free queues are bounded evidence-gated handoffs, never new state owners. Rust remains baseline; C++ is neither V1 nor planned baseline and may be considered only for a pure bounded measured hotspot after the complete escalation/FFI gate. See [Hot-Path Performance and Work Elimination](deep-specs/architecture/13_HOT_PATH_PERFORMANCE_AND_WORK_ELIMINATION.md) and [CORR-02 analysis](_analysis/corr02_hot_path_performance/BASELINE_AND_SCOPE.md). `HDC-007..019` await final human review.

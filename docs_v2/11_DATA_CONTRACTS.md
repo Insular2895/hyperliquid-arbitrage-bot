@@ -237,3 +237,11 @@ Equal events, resolved config, artifacts, formula semantics and seed must produc
 The frozen `RunManifest` and `DecisionTrace` shapes are not expanded ad hoc. Capture evidence integrates through typed, versioned linked records for reevaluation/evaluation, immutable Opportunity, optional derived episode, forecast bundle, candidate, sizing/Risk decisions, reservation, plan/execution, leg/intent/order/fill, Recovery, reconciliation and accounting outcome.
 
 Local timing records use named `T_*` points in one monotonic clock domain and retain optional wall/source timestamps separately. Every projected row exposes lineage, timing, outcome, economic and forecast/actual completeness. Missing joins are never repaired by timestamp proximity as canonical truth; inferred repairs are labeled and versioned. Required contracts are [Correlation and Lineage](./_analysis/corr01_capture_observability/CORRELATION_AND_LINEAGE_CONTRACT.md), [Timing Points](./_analysis/corr01_capture_observability/TIMING_POINT_CONTRACT.md) and [Storage/Cardinality](./_analysis/corr01_capture_observability/OBSERVABILITY_STORAGE_AND_CARDINALITY_POLICY.md).
+
+## 28. CORR-02 — Runtime indices and performance evidence
+
+A dense runtime index is not a canonical ID. It is valid only with its immutable Graph/index generation, must round-trip to the authoritative canonical ID and must never be persisted or exposed alone. Index width is checked; mapping/order is deterministic; Replay reconstructs the mapping at event time or uses canonical IDs in durable evidence.
+
+Transparent dedup equality binds the complete consumed input tuple: route and ordered book versions, fee, metadata, graph/index, FormulaVersion, q, execution/protection context and any feature/model/config versions. A hash collision or equal visible price is not equality. Distinct ordered events remain distinct.
+
+Performance records link to existing RunManifest/build/config/dataset identities through compatible typed artifacts rather than expanding frozen schemas ad hoc. They declare benchmark workload, instrumentation and cold/warm/steady population. See [Dense Runtime ID Contract](_analysis/corr02_hot_path_performance/DENSE_RUNTIME_ID_CONTRACT.md).

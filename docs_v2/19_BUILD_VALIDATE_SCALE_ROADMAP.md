@@ -105,7 +105,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **OBJECTIVE / WHY:** detect exact economic candidates and their rejection reasons without claiming execution success.
 - **WE MUST ALREADY KNOW:** coherent book, graph, fees, precision and FormulaVersion.
 - **COMPONENTS / ACTIVATE:** NetConvert/Formula Core and Basic Opportunity Engine.
-- **RECORD / MEASURE / LEARN:** affected-route evaluations, BBO rejects, exact L2 direct/indirect/triangle output, `Edge(q)`, fees/rounding/minimum failures and opportunity episodes. Learn frequency and size dependence.
+- **RECORD / MEASURE / LEARN:** affected-route evaluations, BBO C1–C4 dispositions, full-L2/FastL1/fallback counts, exact direct/indirect/triangle output, `Edge(q)`, fees/rounding/minimum failures and opportunity episodes. Learn frequency, safe-filter quality and size dependence.
 - **CAPITAL / M0–M5:** none; M1 formulas and M2 opportunity evidence.
 - **DATA / FORMULAS / MODELS:** QF-001–027; no advanced Participant model required.
 - **FAILURE / EXIT / NEXT:** parity/unit/sign/precision/depth or comparator failure stops the economic claim. Exit with reproducible candidate/reject episodes. Next receives a measurable deterministic baseline.
@@ -362,3 +362,11 @@ The path is: specify final contracts; record source truth; reconstruct state; ma
 CORR-01 adds no evidence stage. Stage 0 freezes funnel/metric/label/timing definitions; Stage 1 records bounded evidence; Stage 2 proves deterministic reconstruction and episode derivation; Stages 4–6 identify opportunities and forecasts without conflating them with attempts; Stage 7 reports only `would_*`; Stage 8 freezes join/calibration policy; Stage 10 obtains actual fills/reconciliation/economics under existing authority; Stages 11–20 use comparable funnel and economic evidence for capability/scale decisions.
 
 The recurring doctrine is `measure -> attribute -> change -> remeasure -> capture-stage effect -> actual economic effect`. A technically faster system that cannot prove a comparable funnel/economic improvement remains unvalidated for scale.
+
+## 40. CORR-02 — Optimization evidence loop
+
+Every performance change follows:
+
+`BASELINE → PROFILE → IDENTIFY HOTSPOT → FORM HYPOTHESIS → MAKE SEMANTICALLY SAFE CHANGE → PARITY → MICROBENCH → REPLAY → SHADOW → CAPTURE COMPARISON → ECONOMIC VALIDATION IF MATERIAL`.
+
+Stages 1–4 establish realistic event, book, graph, BBO and NetConvert workloads; Stage 5 supplies deterministic parity; later stages establish behavior under forecasts, Shadow and bounded capital only through their existing gates. A transparent optimization must retain the same DecisionTrace. A scheduling/coalescing change is explicitly semantic, versioned and human-reviewed. A local latency win without stable end-to-end, capture and robust economic evidence cannot justify promotion or infrastructure/language escalation. See the [Profiling and Bottleneck Protocol](_analysis/corr02_hot_path_performance/PROFILING_AND_BOTTLENECK_PROTOCOL.md).

@@ -202,3 +202,24 @@ These items originate from `HUMAN_POST_RECONSTRUCTION`; they are not retroactive
 | `CORR01-CAL-007` | attempt-level accounting component allocation/valuation details consumed by economic outcome | `DEFERRED TO CORR-05` | Accounting/Inventory/Execution; no positivity claim until complete |
 
 CORR-01 selects none of these values or tools. Missing choices cannot be replaced by undocumented defaults.
+
+## CORR-02 — Performance calibration and implementation choices
+
+These choices implement `HDC-007..019` only after evidence and approval. CORR-02 fixes the gates, not their values or tools.
+
+| Item ID | Choice | Status | Owner / evidence required |
+|---|---|---|---|
+| `CORR02-CAL-001` | exact fee/rule-aware BBO C2 bound set | `PROOF + CALIBRATION REQUIRED` | Graph/Formula/Validation; zero false negatives over declared domain |
+| `CORR02-CAL-002` | physical `pair_to_routes` representation | `IMPLEMENTATION_CHOICE` | Graph/Architecture; logical parity, topology and realistic benchmarks |
+| `CORR02-CAL-003` | dense runtime-index width and generation storage | `IMPLEMENTATION_CHOICE` | Data/Graph; maximum topology, overflow and round-trip evidence |
+| `CORR02-CAL-004` | dirty generation/cancellation representation | `IMPLEMENTATION_CHOICE` | Architecture/Data; concurrency, wrap and distinct-state preservation |
+| `CORR02-CAL-005` | steady-state allocation/copy performance targets | `CALIBRATED` | Infrastructure/Operations/Validation; representative distributions and overhead |
+| `CORR02-CAL-006` | buffer/pool/queue preallocation capacities | `CALIBRATED` | owning component; burst, growth, fallback, footprint and failure tests |
+| `CORR02-CAL-007` | user-space allocator profiling tool/mode | `IMPLEMENTATION_CHOICE` | Infrastructure/Validation; attribution accuracy and perturbation measurement |
+| `CORR02-CAL-008` | lock-free queue implementation, if any | `EVIDENCE-GATED IMPLEMENTATION_CHOICE` | Architecture/Recorder; topology, contention, ordering, loss/backpressure and supply chain |
+| `CORR02-CAL-009` | LTO/codegen/panic/target profile | `IMPLEMENTATION + DEPLOYMENT CHOICE` | Infrastructure/Deployment; runtime, build, diagnostics and client portability |
+| `CORR02-CAL-010` | representative PGO workflow and training corpus | `IMPLEMENTATION_CHOICE` | Infrastructure/Data/Validation; held-out reproducibility and drift |
+| `CORR02-CAL-011` | materiality threshold for possible C++ escalation | `CALIBRATED HUMAN DECISION` | Architecture/Infrastructure/Economics; end-to-end gain net of FFI/complexity |
+| `CORR02-CAL-012` | first C++ pure bounded candidate, if ever needed | `NONE SELECTED` | human approval after all 12 escalation conditions; RED domains excluded |
+
+No undocumented default may convert one of these open choices into production behavior.

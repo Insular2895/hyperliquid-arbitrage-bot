@@ -13,6 +13,7 @@ This directory is the normative detail layer for [13 — Infrastructure](../../1
 | [05 — Infrastructure Economics and ROI](05_INFRA_ECONOMICS_AND_ROI.md) | QF-084–QF-093, InfraLostPnL, upgrade and downgrade gates. |
 | [06 — Node, Feed and Scale Gates](06_NODE_FEED_AND_SCALE_GATES.md) | Public-feed-first, node compatibility and evidence-gated escalation. |
 | [07 — Operations, Resilience and Client Diagnostics](07_OPERATIONS_RESILIENCE_AND_CLIENT_DIAGNOSTICS.md) | Health outputs, rolling metrics, alerts, recovery, standby and client benchmark. |
+| [08 — Rust Performance and C++ Escalation](08_RUST_PERFORMANCE_AND_CXX_ESCALATION.md) | CORR-02 CPU/work/allocation evidence, Rust ladder and foreign-language gate. |
 
 ## Reading order
 

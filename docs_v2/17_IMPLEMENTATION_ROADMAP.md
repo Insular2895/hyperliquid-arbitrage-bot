@@ -157,9 +157,9 @@ Canonical order governs integration and exit gates. Work may overlap when a prod
 
 - **WHY NOW / OBJECTIVE:** produce a measurable deterministic baseline before Participant sophistication.
 - **INPUTS / OUTPUTS:** affected active routes + coherent books/formulas → exact `Opportunity` or machine-readable reject episode.
-- **IMPLEMENT / NOT YET:** `pair_to_routes`, cheap BBO reject, exact L2/fees/precision/economics and route classification; no live submit or required advanced prediction.
+- **IMPLEMENT / NOT YET:** `pair_to_routes`, BBO C1–C4 classification, exact L2/fees/precision/economics and route classification; no unproved permanent BBO reject, live submit or required advanced prediction.
 - **DEPENDENCIES / QF:** 4–8; QF-016–027.
-- **DATA / TESTS:** affected-only equivalence, BBO false-accept prohibition, direct comparator/triangle closure, replay reproducibility.
+- **DATA / TESTS:** affected-only equivalence, BBO false-accept prohibition, zero C2 false negatives, C3 fast/full parity and fallback, direct comparator/triangle closure, Replay reproducibility.
 - **MATURITY / EVIDENCE:** M1 deps→M2; opportunity/reject episode dataset.
 - **STOP / OPEN / EXTERNAL:** stale/incoherent inputs or invalid math reject; thresholds remain calibrated.
 - **DOWNSTREAM:** Inventory/Risk, Atlas, survival labels, Simulator.
@@ -412,3 +412,9 @@ Only after PASS 13, PASS 14, PASS 15, PASS 16 and explicit human approval may a 
 CORR-01 creates no Phase 27. If Phase 1 is later authorized, typed identity/projection/label/timing version contracts belong there. Non-blocking capture and critical-evidence priority map to Phase 3; evaluation/Opportunity hooks to Phases 6 and 9; deterministic reconstruction/episodes to Phase 8; permission and actual outcome linkage to Phases 10–14; forecast-label freeze to Phase 18; Shadow population evidence to Phase 19; actual predicted-versus-actual calibration to Phase 20; economic optimization/scale comparisons to Phase 26.
 
 Each affected phase adds tests for exact populations, lineage completeness, clock/timing validity, backpressure/overhead and mode truth. This mapping changes no dependency order and authorizes none of the phases.
+
+## 44. CORR-02 — Progressive performance work in existing phases
+
+No Phase 27 is added. Phase 1 defines strong canonical IDs and interfaces capable of later generation-local dense mapping without prematurely selecting it. Phase 4 measures Book update/layout. Phase 6 proves reverse-index membership and representation parity. Phase 7 builds full-L2 QF-016 first, then only an exact eligible FastL1 challenger. Phase 8 supplies deterministic Replay/DecisionTrace parity. Phase 9 measures BBO filter quality, work amplification and exact-tuple dedup. Phase 15 profiles bounded feature work. Phase 19 compares transparent/scheduling changes in Shadow. Phase 26 applies the complete optimization/economic gate.
+
+Each optimization follows the [Rust ladder](_analysis/corr02_hot_path_performance/RUST_OPTIMIZATION_LADDER.md). Early simple correct implementations are champions; dense storage, reuse, lock-free queues, compiler profiles, PGO and C++ remain evidence-gated candidates. Implementation is still unauthorized.

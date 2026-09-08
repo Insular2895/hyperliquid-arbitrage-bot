@@ -20,7 +20,7 @@ Opportunity/reject episode
 
 | Phase | Required invariant | Evidence produced | Cannot claim yet |
 |---:|---|---|---|
-| 9 | BBO may reject but never accept; exact L2 decides candidate economics | Accepted and rejected opportunity episodes | Fill/capture/profitability |
+| 9 | BBO C1/C2 may reject only with canonical validity/conservative proof; C3 FastL1 equals full-L2 and C4 cannot reject | Accepted and rejected opportunity episodes plus full/fast parity | Fill/capture/profitability |
 | 10 | Actual fills change inventory; reservations are distinct and UNKNOWN stays locked | Replayed account/inventory/resource trace | Safe Live account operation |
 | 11 | Hard failures remove unsafe actions before optimization | Deterministic Risk/reject/kill evidence | Calibrated large limits |
 | 12 | Actual previous output drives the next leg; no blind retry | Five-machine Execution trace suite | Real exchange conformance |

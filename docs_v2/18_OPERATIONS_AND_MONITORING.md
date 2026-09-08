@@ -184,3 +184,9 @@ Telemetry backend, dashboard product, paging provider, numeric thresholds, windo
 Operations reports explicit stage counts/conversions and outcome branches; it never reports bare “capture” or “success.” Every metric declares numerator, denominator, unique-ID population, exclusions, unit, event/cohort time, window/maturity/`AS_OF`, dimensions, source records, missingness, minimum sample, status and bias. `UNKNOWN`, unresolved, censored, invalid-clock and missing-join counts remain visible.
 
 Required views include observation→evaluation amplification, BBO/exact dispositions, Opportunity observations and versioned episodes, forecast/candidate/Risk/size/reservation/plan/attempt selection, any/conditional fill, intermediate exposure, original full-route completion, Recovery, reconciliation, economic completeness/positivity, forecast-actual joins and named latency tails. Raw IDs stay in traces/journal, never unbounded metric labels. See [Operations deep spec 11](deep-specs/operations/11_CAPTURE_FUNNEL_AND_LATENCY_ATTRIBUTION.md) and the [Metric Catalog](_analysis/corr01_capture_observability/CAPTURE_METRIC_CATALOG.md).
+
+## 46. CORR-02 — Performance operating signals
+
+Bounded operational views include route lookup duration/degree, evaluations per event, BBO C1–C4 dispositions, full-L2 survivor and FastL1 eligibility/fallback rates, levels walked, duplicate work avoided, stale proposal/discard/revalidation, queue wait/full/backpressure and capacity-growth anomalies. Allocation/copy/cache/CPU/PMU evidence is collected in declared benchmark or sampled diagnostic modes when useful; unsupported or perturbing instruments are not represented as continuous production truth.
+
+Labels use bounded route family/direction/reason/build/profile cohorts, not raw RouteId/EventId/OpportunityId. Performance anomalies never weaken Risk, version checks, reservations, UNKNOWN handling, Recovery or evidence priority.

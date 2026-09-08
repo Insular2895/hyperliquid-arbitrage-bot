@@ -14,5 +14,7 @@ These specifications refine [`03_MARKET_GRAPH_AND_ROUTES.md`](../../03_MARKET_GR
 7. [Market Atlas](07_MARKET_ATLAS_STRUCTURE_FEATURES_AND_ROLLING_STATE.md)
 8. [Point-in-time versioning](08_POINT_IN_TIME_REPLAY_VERSIONING_AND_DATA_CONTRACTS.md)
 9. [Validation and failure modes](09_VALIDATION_PROPERTY_TESTS_AND_FAILURE_MODES.md)
+10. [BBO, L1 and L2 evaluation](10_BBO_L1_L2_EVALUATION.md)
+11. [Route index and work deduplication](11_ROUTE_INDEX_AND_WORK_DEDUP.md)
 
 Canonical analysis contracts and matrices are under [`_analysis/pass08_graph_routes_quant`](../../_analysis/pass08_graph_routes_quant/).

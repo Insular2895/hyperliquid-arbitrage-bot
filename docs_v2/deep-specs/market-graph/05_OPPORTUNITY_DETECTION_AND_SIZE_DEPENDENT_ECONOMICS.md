@@ -5,9 +5,9 @@ AWAITING HUMAN REVIEW
 
 ## Pipeline
 
-`BookUpdate → canonical book publication → affected active RouteIds → BBO prefilter → exact L2 survivors → fees/precision/minimums → route economics → Participants/Simulator → Risk → PASS07 Sizing/Capital`.
+`BookUpdate → canonical book publication → affected active RouteIds → BBO C1–C4 classification → exact QF-016 FastL1 or full-L2 fallback → fees/precision/minimums → route economics → Participants/Simulator → Risk → PASS07 Sizing/Capital`.
 
-The BBO stage is a cheap rejector only. Exact opportunity proof uses current valid books and sequential QF-016 conversions. Common false arbitrage causes are midpoint multiplication, wrong side, stale leg, wrong fee, precision/minimum error, unavailable depth and inconsistent snapshots.
+The BBO stage separates C1 state invalidity, C2 proved conservative rejection, C3 exact FastL1 eligibility and C4 heuristic priority. Only C1/C2 may reject permanently; exact opportunity proof uses current valid books and sequential QF-016 conversions. Common false arbitrage causes are midpoint multiplication, wrong side, stale leg, wrong fee, precision/minimum error, unavailable depth and inconsistent snapshots.
 
 ## Outputs by family
 

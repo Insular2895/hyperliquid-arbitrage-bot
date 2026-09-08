@@ -1,4 +1,4 @@
-# CORR-01 — Final Report
+# CORR-01 — CAPTURE FUNNEL / OBSERVABILITY COMPLETE
 
 DOCUMENTATION STATUS: COMPLETE — AWAITING HUMAN REVIEW
 
@@ -21,10 +21,22 @@ CORR-01 adds a canonical Capture Funnel, Opportunity lifecycle/episode identity,
 | Named timing points | `23` |
 | Capture/economic metric families | `43` |
 | Latency metric families | `28` |
+| Metric denominators | `EXPLICIT` |
+| Latency stages | `EXPLICIT` |
+| Timing points | `EXPLICIT` |
+| Predicted-vs-actual | `SPECIFIED` |
+| New QF formulas | `0` |
+| New Risk gates | `0` |
+| Execution behavior changes | `0` |
+| BBO behavior changes | `0` |
+| NetConvert behavior changes | `0` |
 | QF changes | `0` |
 | Execution/Risk transition changes | `0` |
 | Source-inventory changes | `0` |
 | Implementation/benchmark/optimization executed | `NO` |
+| Human approval | `PENDING` |
+| Implementation | `NOT AUTHORIZED` |
+| CORR-02 started | `NO` |
 
 ## Final semantics
 

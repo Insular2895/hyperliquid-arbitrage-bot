@@ -101,8 +101,8 @@ Book update
 → publish canonical BookState
 → pair_to_routes lookup
 → active affected routes only
-→ cheap BBO rejection filter
-→ exact L2 NetConvert(q) for survivors
+→ BBO C1–C4 classification
+→ exact QF-016 via proved-equivalent FastL1 or full-L2 fallback
 → fees, precision, minimums and version checks
 → direct / indirect / cycle economics
 → Participants and Simulator forecasts
@@ -111,7 +111,7 @@ Book update
 → immutable candidate/decision trace
 ```
 
-BBO rejects obvious losers cheaply; it never proves executable edge. Current BookState is truth, not a stale Atlas aggregate. All hot-path inputs are bounded and in memory; no blocking REST/service call is allowed.
+BBO permanently rejects only canonical invalid state (C1) or a proved conservative loser with no full-L2 false negative (C2); it never proves executable edge. C3 selects exact FastL1 or full-L2 fallback, and C4 only prioritizes. Current BookState is truth, not a stale Atlas aggregate. All hot-path inputs are bounded and in memory; no blocking REST/service call is allowed.
 
 ## 18. NetConvert
 
@@ -190,3 +190,11 @@ Original sources SRC-001–SRC-008 as inventoried in [`_analysis/SOURCE_INVENTOR
 One usable market observation may trigger many route reevaluations. `RouteEvaluationId` identifies one cheap/exact evaluation at explicit state and formula versions. Cheap-screen pass, exact-evaluation completion, exact-valid candidate and emitted `OpportunityId` are separate evidence boundaries; none implies Risk eligibility or an attempted order.
 
 `OpportunityId` denotes one immutable exact-valid observation. Repeated observations may be grouped offline/near-line into a versioned `OpportunityEpisodeId` for one directed route/strategy/mode/predicate. Episode segmentation, gaps, hysteresis and censoring are calibrated and never block the hot path. See [Market Episode Identity](./_analysis/corr01_capture_observability/MARKET_EPISODE_IDENTITY_CONTRACT.md) and the [canonical event map](./_analysis/corr01_capture_observability/FUNNEL_STAGE_TO_CANONICAL_EVENT_MAP.md).
+
+## 33. CORR-02 — BBO/L1/L2 and route-work contract
+
+The BBO stage classifies, rather than vaguely “rejects”: C1 applies existing invalid/stale-state rules; C2 permanently rejects only under a documented conservative proof with no false negatives against full L2; C3 selects an exact L1 traversal specialization; C4 only prioritizes/schedules. A heuristic, midpoint/product or learned rank is never C2. `q` beyond best-level quantity makes C3 ineligible and requires full L2 unless a separate C2 proof applies.
+
+FastL1 is QF-016 implemented on a proved one-level domain. Both directions retain fees/debit asset, quantization, minima, protected price, outputs/deltas, residual, reasons and versions. An ineligible case returns only fallback; full L2 remains the oracle. See [BBO/L1/L2 evaluation](deep-specs/market-graph/10_BBO_L1_L2_EVALUATION.md).
+
+The logical `pair_to_routes` contract is unchanged. HashMap/vector, dense arrays, CSR-like storage and activation masks are physical candidates only. Dense indices are deterministic, generation-local and round-trip to stable canonical IDs. Dedup can skip only an equal complete input tuple; distinct ordered book/fee/rule/model/q states cannot be coalesced silently. See [Route Index and Work Deduplication](deep-specs/market-graph/11_ROUTE_INDEX_AND_WORK_DEDUP.md).

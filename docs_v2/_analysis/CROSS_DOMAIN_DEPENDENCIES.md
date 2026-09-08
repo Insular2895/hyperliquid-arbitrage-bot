@@ -245,3 +245,19 @@ Critical synchronous dependency cycles: **0**. Missing producers: **0**. Missing
 | Validation / Operations | metric populations, joins, calibration, overhead and trial evidence | Capability/Infra/Review | no automatic promotion or new `p_full` gate |
 
 Asynchronous cycle: actual outcomes train/calibrate later model versions only through Recorder/Research/Validation promotion. Synchronous critical cycles added: **0**.
+
+## CORR-02 — Hot-path performance dependency overlay
+
+| Producer / owner | Performance contract | Consumers | Boundary preserved |
+|---|---|---|---|
+| Book / ordered Core | valid versioned BBO/L2 state | Graph, NetConvert, workers | single writer and ordered truth unchanged |
+| Graph / Route | reverse-index generation and canonical↔dense map | Opportunity, Replay, Operations | canonical IDs/topology authority retained |
+| Formula / NetConvert | full-L2 oracle and exact eligible FastL1 result | Route economics, Validation | QF-016/FormulaVersion unchanged |
+| Opportunity | C1–C4 disposition and complete evaluation tuple | Participants, Risk, evidence | C4 cannot reject; C3 ineligible falls back |
+| Data / Replay | ordered events, versions, DecisionTrace | every optimization gate | distinct states not coalesced silently |
+| Recorder / queues | bounded prioritized evidence handoff | Replay, Operations | queue does not own state; critical evidence retained |
+| Infrastructure | controlled CPU/work/allocation/compiler benchmarks | Validation, Roadmap | technical evidence grants no economic permission |
+| Validation | parity, Replay, Shadow, capture/economic reports | Capability/Review | no direct Live or capital promotion |
+| Execution/Risk/Recovery/Accounting | canonical economic authority | future C++ review | excluded from first foreign-language candidates |
+
+Synchronous critical dependency cycles added: **0**. Critical multi-writer states added: **0**. New QF or Risk gates: **0**. Any cross-event scheduling/coalescing proposal is outside transparent optimization and requires a new reviewed semantic version.

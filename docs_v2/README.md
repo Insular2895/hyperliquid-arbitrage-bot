@@ -2,7 +2,11 @@
 
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
+> **POST-RECONSTRUCTION CORRECTIONS IN PROGRESS.** The PASS16 review baseline is stale after CORR-01 and CORR-02. Do not approve or implement it until the correction series is complete and the review package is refreshed.
+
 `docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception. La reconstruction, l'audit transversal et la vérification source sans perte sont terminés comme **candidat**; l'approbation humaine, le basculement documentaire et toute implémentation restent en attente.
+
+Les corrections postérieures `HDC-001..019` ont une origine humaine explicitement séparée; elles ne sont pas rétro-attribuées aux huit sources. Voir [CORR-01](_analysis/corr01_capture_observability/CORR01_FINAL_REPORT.md), [CORR-02](_analysis/corr02_hot_path_performance/CORR02_FINAL_REPORT.md) et le [registre des décisions humaines](_analysis/POST_RECONSTRUCTION_HUMAN_DECISIONS.md).
 
 PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques. PASS 12 reconstruit séparément l'ordre technique et le parcours scientifique qui mène de la donnée à une capacité validée. PASS 13 assemble ces autorités dans une architecture transversale sans les remplacer. PASS 14 vérifie leurs interfaces, propriétaires, unités, états, modes et dépendances comme un seul système. PASS 15 rouvre les huit sources, vérifie leurs empreintes et leur couverture ligne par ligne, puis joint 2 577 unités PASS 00, 13 dérivations explicites et 79 récupérations documentées à leur sort final. PASS 16 fournit enfin un package fini de revue, de décisions, d'autorisation et de basculement sans s'auto-approuver.
 
@@ -50,4 +54,4 @@ PASS 00 cartographie les exigences, formules, concepts, conflits et destinations
 
 Ordre d'autorité: dossiers de fermeture 1–6 dans leurs domaines, puis sources exploratoires non contredites. Les faits externes datés exigent une revalidation ultérieure.
 
-**NEXT:** HUMAN REVIEW. Aucun successeur automatique. L'implémentation, le basculement `docs_v2` → `docs`, Micro-live et Live ne sont pas autorisés.
+**NEXT:** attendre une autorisation explicite pour CORR-03. Aucun successeur automatique. L'implémentation, le basculement `docs_v2` → `docs`, Micro-live et Live ne sont pas autorisés.

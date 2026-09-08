@@ -19,7 +19,7 @@ flowchart LR
   Z --> P[immutable ExecutionPlan]
 ```
 
-Graph is structural; Books are current; Atlas is rolling evidence; HWC is compute relevance; none substitutes for another. BBO can reject but cannot accept. `NetConvert(q)` owns exact L2/fee/precision conversion. Opportunity classifies OWA only with a valid direct comparator and Triangle only when returning to the start asset.
+Graph is structural; Books are current; Atlas is rolling evidence; HWC is compute relevance; none substitutes for another. BBO can permanently reject only canonical invalid state or a proved conservative loser and cannot accept; other cases continue to exact economics. `NetConvert(q)` owns exact L2/fee/precision conversion. Opportunity classifies OWA only with a valid direct comparator and Triangle only when returning to the start asset.
 
 The Participant engine is optional unless the exact capability declares it critical. Simulator fidelity is likewise explicit; conservative F0/F1 and Risk baselines prevent bootstrap cycles. Sizer evaluates candidate q states; it does not recursively ask Simulator to choose q. Portfolio receives individually valid candidates and shared constraints. Risk applies early eligibility and final T1/T2 authorization, with later T3–T5 checks during Execution.
 

@@ -2658,3 +2658,7 @@ The authoritative PASS 12 routing for **142** reviewed roadmap units is `17_IMPL
 ## PASS 13 — Master Architecture target overlay
 
 The authoritative routing for all **647** stable Architecture-index requirements is `pass13_master_architecture/ARCHITECTURE_REQUIREMENT_LEDGER.md`. Cross-domain orientation targets `00_MASTER_ARCHITECTURE.md`; detailed architecture boundaries target `deep-specs/architecture/01..12`; domain semantics remain in their existing PASS01–12 masters/deep specs; current facts remain in `EXTERNAL_REVALIDATION_REGISTER.md`; open/calibrated/research/future history retains its original owner. Four true consistency questions target `pass13_master_architecture/ARCHITECTURE_GAP_REGISTER.md` for PASS14. Destinationless Architecture requirements: **0**; silently moved primary ownership: **0**; stable IDs renumbered: **0**; PASS14 started: **NO**.
+
+## CORR-02 — Human performance refinement target overlay
+
+`HDC-007..019` originate from `HUMAN_POST_RECONSTRUCTION` and target Masters 00/03/11/12/13/16/17/18/19; Architecture deep spec 13; Market Graph deep specs 10–11; Infrastructure deep spec 08; and `corr02_hot_path_performance/`. Formula equations, Risk, Execution, Recovery, Accounting, PASS14 and PASS15 historical reports, legacy docs and source ledgers remain unchanged. External Rust/Linux/Harjus material is comparative/implementation research only and does not enter the SRC inventory. Destinationless HDC items: **0**; stable original requirements renumbered: **0**; implementation started: **NO**; CORR-03 started: **NO**.

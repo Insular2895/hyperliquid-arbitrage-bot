@@ -352,6 +352,7 @@ These checks do not block documentary reconstruction; they block treating histor
 - [Infrastructure Economics and ROI](deep-specs/infrastructure/05_INFRA_ECONOMICS_AND_ROI.md)
 - [Node, Feed and Scale Gates](deep-specs/infrastructure/06_NODE_FEED_AND_SCALE_GATES.md)
 - [Operations, Resilience and Client Diagnostics](deep-specs/infrastructure/07_OPERATIONS_RESILIENCE_AND_CLIENT_DIAGNOSTICS.md)
+- [Rust Performance and C++ Escalation](deep-specs/infrastructure/08_RUST_PERFORMANCE_AND_CXX_ESCALATION.md)
 
 ## Traceability
 
@@ -362,3 +363,9 @@ PASS 01 reviewed 514 Infrastructure-relevant requirements against original sourc
 Named local timing points refine instrumentation without changing QF-084. Fine stages map non-overlapping work to its compute components. External `L_feed`, network `L_send` and `L_exchange` remain unavailable when timestamp semantics/clock evidence cannot separate them; an ACK round trip is not silently decomposed.
 
 Infrastructure promotion still requires like-for-like QF-084..093 evidence. A lower mean or benchmark minimum is only technical evidence: the required chain is valid measurement, controlled attribution, remeasurement, comparable funnel effect, actual economic effect, cost/uncertainty and rollback safety. See [Latency Taxonomy](_analysis/corr01_capture_observability/LATENCY_STAGE_TAXONOMY.md) and [Optimization Economic Value](_analysis/corr01_capture_observability/OPTIMIZATION_ECONOMIC_VALUE_CONTRACT.md).
+
+## CORR-02 — Real hot-path CPU and work evidence
+
+The Real Hot-Path CPU benchmark consumes CORR-01 timing stages and CORR-02 component profiles. It records received-event→affected-route amplification, BBO dispositions/filter quality, full-L2/FastL1 counts, levels walked, stale work, queue wait, allocations/copies and bytes, capacity growth, memory footprint, cycles/instructions/IPC, cache/branch misses, context switches, migrations, scheduler delay and page faults where the host supports valid counters.
+
+Comparisons bind commit, config, dataset/order, formulas/models/routes, toolchain, build/profile, host/PMU and instrumentation, and separate cold, warm and steady state. Rust LTO/codegen/target/PGO variants are candidates, not defaults. `target-cpu=native` is incompatible with an unspecified client-host fleet. Lock-free and C++ remain evidence-gated; no provider, kernel, container or build configuration is chosen here. See [Rust Performance and C++ Escalation](deep-specs/infrastructure/08_RUST_PERFORMANCE_AND_CXX_ESCALATION.md).

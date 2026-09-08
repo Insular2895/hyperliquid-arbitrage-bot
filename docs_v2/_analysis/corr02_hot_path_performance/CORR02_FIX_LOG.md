@@ -1,0 +1,17 @@
+# CORR-02 Fix Log
+
+DOCUMENTATION STATUS: AWAITING FINAL HUMAN REVIEW
+
+| Fix ID | HDC ID | File / section | Old semantics | New semantics | Why | Performance effect | Correctness effect | Formula impact | Risk impact | Execution impact | Validation impact | Deferred follow-up |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| `C02-FIX-001` | 007–009 | 00, 03, 17, 19 and graph/architecture specs | BBO cheap reject and exact L2 stated without role taxonomy | C1–C4 separated; FastL1 exact/fallback | prevent unsafe shortcut ambiguity | enables safe filtering/specialization | no false-negative or alternate QF-016 | none | none | none | proof + parity suites | exact C2 set |
+| `C02-FIX-002` | 010–012 | 03, 11, graph specs | reverse index logical contract only | physical candidates, dense-generation IDs and exact-tuple dedup bounded | make optimization surface explicit | possible locality/work reduction | stable IDs/order/state preserved | none | none | none | index/dedup Replay parity | representation/index width |
+| `C02-FIX-003` | 013 | 00, architecture spec | allocation-light/unbounded-allocation prohibition | steady-state measurable allocation/copy objectives and safe reuse | replace slogan with evidence contract | fewer allocations/copies if measured | no truncation/stale reuse | none | none | none | poison/growth/alloc tests | targets/capacities/tool |
+| `C02-FIX-004` | 014–015 | 00, 12, architecture spec | single writer/nonblocking queue stated | writer preserved; lock-free requires bounded evidence gate | avoid architecture-by-slogan | contention optimization only when proven | ordering/loss/backpressure explicit | none | preserved | preserved | stress/model/Replay | queue choice |
+| `C02-FIX-005` | 016–017 | 00, 13, architecture/infrastructure specs | Rust baseline/C++ absent unless profiling | R0–R11 and 12-condition C++/FFI gate with RED domains | make escalation decision auditable | prevents premature rewrite | Rust oracle and fault boundary | none | Risk excluded | Execution/Recovery excluded | ABI/fuzz/sanitizer/Replay/Shadow | materiality/first candidate |
+| `C02-FIX-006` | 018–019 | 13, 16–19 and roadmap deep spec 02 | profile/benchmark before optimization broadly stated | semantic parity precedes perf; full capture/economic loop | connect technical win to value | comparable attribution | faster wrong answer fails | none | no bypass | no bypass | expanded matrix | calibrated guardrails |
+| `C02-FIX-007` | 007–019 | global analysis registers + two stale review notices | only HDC-001..006/CORR-01 tracked | HDC-007..019, CORR-02 opens/dependencies/targets/status; review explicitly stale after CORR-02 | preserve origin and review trail | none directly | no silent semantic change | none | none | none | review remains stale | CORR-06 re-audit |
+| `C02-FIX-008` | 018 | CORR01 final report | prerequisite report lacked brief's exact completion control rows | exact prerequisite controls added | permit deterministic CORR-02 preflight | none | documentary auditability | confirms 0 | confirms 0 | confirms 0 | prerequisite verified | none |
+| `C02-FIX-009` | 007–019 | `docs_v2/README.md` | landing page described only original reconstruction and direct human review next | distinguishes HDC origin, marks PASS16 stale and points to CORR-01/02 | prevent source-origin/review ambiguity | none | traceability strengthened | none | none | none | review gate explicit | CORR-06 refresh |
+
+No edit changes equations, Risk gates, execution states, source code or legacy documentation.
