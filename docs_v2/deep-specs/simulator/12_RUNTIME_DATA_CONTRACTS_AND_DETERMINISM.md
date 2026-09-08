@@ -52,3 +52,7 @@ Every `ExecutionForecast` used by a plan binds its horizon, route objective and 
 ## CORR-03 resolved route-outcome profile
 
 `ROUTE_OUTCOME_RESOLVED_V1` partitions eventual real-attempt terminal outcomes into original-route completion without Recovery (`p_full`), non-completion with strategy fill and no Recovery (`p_partial`), non-completion with Recovery entry (`p_recovery`), and residual resolved zero-fill/no-Recovery non-completion (`p_failure`). UNKNOWN/unresolved at an analysis cutoff is missing terminal observation, not failure mass. Other label versions retain separate-binary semantics unless their partition is proven. See [ExecutionForecast Probability Audit](../../_analysis/corr03_execution_completion/EXECUTION_FORECAST_PROBABILITY_AUDIT.md).
+
+## CORR-04 source/profile determinism
+
+Replay/Shadow results link canonical/challenger role, `FeedProfileId`, `InfraProfileId`, node build/flags and event-alignment version. Speculative events replay separately and never enter committed ordered input unless a later canonical event independently does so. Exact reusable precompute output must equal fresh canonical recomputation; otherwise it is discarded.

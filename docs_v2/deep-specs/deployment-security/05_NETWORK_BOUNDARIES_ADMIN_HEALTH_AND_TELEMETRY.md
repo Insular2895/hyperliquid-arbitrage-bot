@@ -22,3 +22,5 @@ Supervision may restart a dead process but must not restart a healthy reconciler
 Telemetry is minimal, opt-in and independently consented. Candidate fields include version, coarse health, crash class, benchmark summary and anonymous performance aggregates. It excludes credentials, raw orders, full balances, full history and arbitrary files.
 
 A support bundle is generated locally, allowlisted, redacted, scanned and reviewed by the client before explicit transfer. Temporary support access is client-enabled, least-privilege, time-bounded and audited. Future remote dashboard work should prefer outbound client-initiated data flow and requires its own threat model/validation.
+
+CORR-04 records bridge/host/native mode and every node gossip/local-service port in deployment evidence. Node peers and any node→bot link are distinct untrusted network dependencies with authentication, health and reconnect policy; the node receives no signer secret by default. Packet-I/O/kernel tuning cannot bypass TLS certificate validation or inbound exposure review.

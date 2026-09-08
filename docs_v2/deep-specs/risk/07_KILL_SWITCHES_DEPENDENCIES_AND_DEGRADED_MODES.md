@@ -40,3 +40,5 @@ Each capability declares mandatory dependencies, optional dependencies and valid
 Reset requires trigger clearance, dependency health, required state rebuild/reconciliation, configuration/model validation, and manual acknowledgement where severity/policy requires. Resetting a latch does not enter `READY`; startup/readiness gates run again. No remote or operator override bypasses constitutional checks.
 
 Source: SRC-005 lines 2812–2899, 2985–3070, 3225–3317 and 3875–3944.
+
+CORR-04 feeds node lag/catch-up, canonical gaps/mismatch, state age, reconnect, scheduler/resource contention and critical evidence loss into existing `InfraState`; it does not add a state or threshold. Challenger/speculative failure is isolated unless it harms a shared canonical dependency. Feed-profile fallback still requires state rebuild/readiness/reconciliation and cannot clear a latch by source switching alone.

@@ -35,3 +35,5 @@ Software updates, configuration changes and model promotions have distinct ident
 ## Demotion
 
 Breaking exchange changes, vulnerabilities, drift, incompatibility or field incidents may demote a channel/capability or set no-new-risk. Demotion preserves cancel, reconciliation, Recovery and data access. Promotion/demotion is audited and never inferred solely from artifact availability.
+
+A feed/node or native/tuned profile is an exact capability dependency and does not inherit another profile’s maturity. Node begins observe-only at M3; a canonical Micro-live feed switch requires N1–N9/P1–P9, one owner and tested rollback/reconciliation. Kernel-bypass research cannot enter a Candidate/Stable release without its complete protocol/security evidence.

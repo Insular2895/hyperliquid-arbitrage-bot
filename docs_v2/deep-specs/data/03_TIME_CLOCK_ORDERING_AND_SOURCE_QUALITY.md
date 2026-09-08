@@ -26,3 +26,5 @@ Core uses `Clock`, implemented by `LiveClock`, `ReplayClock`, `TestClock`. Timer
 ## Tests
 
 Test identical timestamps, late exchange timestamps, wall-clock jump, monotonic order, source reconnect, missing source sequence, clock uncertainty, acceleration and future-event isolation. Expected result is identical ordered input and DecisionTrace across runs.
+
+Cross-feed pairing follows shared documented identity or a strict versioned semantic fingerprint; nearest timestamps are never identity. Same-host paired receipt uses one monotonic clock. Cross-host lead within combined uncertainty is inconclusive. Speculative receive time controls research availability, while later commit/change/disappear labels remain future outcomes and cannot alter the point-in-time input.

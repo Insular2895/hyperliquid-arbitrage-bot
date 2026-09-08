@@ -22,3 +22,9 @@ Start with the master, then Baseline. Provider Candidates and Benchmark Protocol
 ## Requirement evidence
 
 The per-ID PASS 01 review is maintained in [INFRA_REQUIREMENT_LEDGER.md](../../_analysis/pass01_infrastructure/INFRA_REQUIREMENT_LEDGER.md). Deep specs synthesize those requirements; they do not erase cross-domain destinations or historical statuses.
+
+## Post-reconstruction strengthening
+
+[CORR-04](../../_analysis/corr04_infrastructure_execution_path/BASELINE_AND_SCOPE.md) adds dated current-source evidence and contracts for public/node dual-feed ownership, speculative input, provider/Docker/CPU/network comparisons, kernel-bypass applicability, sequencing/FIX disposition and N1–N9/P1–P9 promotion. These additions remain pending final human review and authorize no implementation.
+
+Post-reconstruction feed/node/provider/container/CPU/network/kernel research and promotion contracts are in the [CORR-04 analysis](../../_analysis/corr04_infrastructure_execution_path/BASELINE_AND_SCOPE.md). Those current-source snapshots strengthen these specs without authorizing implementation or changing QF-084–QF-093.

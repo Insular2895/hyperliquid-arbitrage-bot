@@ -231,3 +231,7 @@ Run an untuned baseline first. Record every later tuning treatment and change on
 ## Transition to economics
 
 Phase A/B can identify technical finalists. Production change additionally requires shadow/counterfactual InfraLostPnL evidence, QF-084–QF-093 economic evaluation, uncertainty/LCB, and appropriate micro-live validation. Technical benchmark improvement alone never mandates upgrade.
+
+## CORR-04 feed/host treatments
+
+Add controlled treatments for public-versus-node matched arrival/state age, node/bot/Recorder interference, provider-region-AZ-route, Docker bridge/host/native, CPU affinity/scheduler and applicable IRQ/network settings. Same-host paired feed receipt is preferred; nearest-time events are invalid matches and cross-host leads within clock uncertainty are inconclusive. Each experiment predeclares one primary metric plus correctness, gap/reorder/reconnect, P0/P1 Recorder, `UNKNOWN`, Recovery, security and readiness guardrails. Kernel bypass requires a protocol-applicability gate before benchmarking.

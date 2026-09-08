@@ -30,3 +30,5 @@ Upgrade DoD proves active and no-exposure cases, failures at each step and compa
 ## Ownership and limits
 
 PASS10 will freeze CapabilityManifest/evidence promotion and final test ownership. Operations will turn failure behavior into runbooks. Current exchange, platform and vulnerability facts require external revalidation. Exact thresholds and products remain calibrated/open. This specification authorizes neither implementation nor Live activation.
+
+CORR-04 adds bridge/host/native equivalence, node port/link/build/lag, one-feed-writer, no-dual-owner, speculative isolation, CPU starvation, dual-feed Recorder pressure and kernel-bypass protocol/privilege tests. Security controls are guardrails; a performance result obtained by weakening them fails promotion.

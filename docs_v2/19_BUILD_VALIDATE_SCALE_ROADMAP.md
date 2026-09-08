@@ -376,3 +376,9 @@ Stages 1–4 establish realistic event, book, graph, BBO and NetConvert workload
 The completion sequence is `observe real attempts → reconcile → derive path and terminal labels → build constant/simple empirical baseline → chronological OOS → Shadow observe-only → Micro-live actual calibration → compare Challengers → explicitly promote only if useful → recalibrate or demote on drift`. TT, TTT and maker modes do not inherit one another’s evidence; q/infra/policy distribution changes trigger support review.
 
 The model remains data/offline baseline until the [Promotion Gate](_analysis/corr03_execution_completion/COMPLETION_MODEL_PROMOTION_GATE.md) is passed. CORR-03 adds no hard Risk gate, formula integration, sizing authority or online learning. Harjus is comparative evidence only. CORR-04 may later compare infrastructure against actual completion evidence; CORR-05 owns economic composition and double-count review.
+
+## 42. CORR-04 — Public baseline to evidence-gated infrastructure scale
+
+`PUBLIC BASELINE -> MEASURE -> NODE/FEED CHALLENGER OBSERVE-ONLY -> STRICTLY ALIGN/COMPARE -> PROVE CORRECTNESS AND CAPTURE -> PROVE ROBUST NET VALUE -> EXPLICITLY PROMOTE -> ONLY THEN CONSIDER DEEPER OS/NETWORK COMPLEXITY`.
+
+Speculative data remains a separate Research lane through parity/Replay/Shadow and cannot affect real send without a future explicit design. Docker stays baseline; native, affinity, scheduler/IRQ/network tuning and AF_XDP/DPDK/F-Stack do not inherit maturity and cannot block early V1. QF-084–QF-093 stay authoritative; CORR-05 must reconcile survival, actual completion, infrastructure capture and any future priority cost without double counting.

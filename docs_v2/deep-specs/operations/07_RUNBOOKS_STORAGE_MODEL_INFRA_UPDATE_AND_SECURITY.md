@@ -22,3 +22,7 @@ Keep current verified owner if failure precedes stop; otherwise restore the know
 ## Secret/owner compromise
 
 Risk-off, fence/revoke/rotate, preserve sanitized evidence, audit unauthorized effects, rebuild from trusted artifacts, prove exactly one owner and reconcile the account. Security approval and capability revalidation precede resume.
+
+## CORR-04 feed/node profile response
+
+On node/challenger lag, gap, mismatch, disconnect or shared-resource pressure, isolate the challenger first; if canonical state is affected, block affected new risk, preserve evidence, rebuild/resync and reconcile before readiness. A feed-profile rollback or container/network/CPU/kernel change is versioned and never hot-fused. Speculative-lane failure only discards research work unless it harms a shared safety dependency.

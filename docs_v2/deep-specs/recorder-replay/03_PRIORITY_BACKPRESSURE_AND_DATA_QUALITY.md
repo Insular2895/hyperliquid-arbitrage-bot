@@ -17,3 +17,5 @@ No drop is silent. Minimum counters are `events_received`, `events_written`, `ev
 `INVALID_FOR_REPLAY` means the evidence cannot sustain the requested semantics, such as missing canonical order/book continuity. `LOW_FIDELITY` permits an explicitly limited use with the limitation carried into RunManifest/results. Unknown quality is not treated as valid.
 
 Tests exceed input/write capacity, starve disk, corrupt chunks and drop each class. They assert P0/P1 preservation order, bounded enqueue, accurate counters, quality marking and no false completeness claim.
+
+Challenger/speculative evidence never outranks P0/P1 because it appears earlier. It carries source/epistemic-specific received/written/dropped/gap counters. Recorder priority remains storage priority and is unrelated to node gossip, block inclusion or order-book price-time priority.

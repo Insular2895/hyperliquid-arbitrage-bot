@@ -102,3 +102,25 @@ All **128** original PASS00 external-revalidation rows and the prior PASS01 `SOU
 - `EXT-001`: QF-009/010/016 fixtures must align with current protection, matching and partial-acceptance behavior when mapping pure book walks to executable orders.
 - `EXT-002`: point-in-time metadata/fee/account payload sources must retain timestamps/versions usable by Live and Replay.
 - No Internet research or external revalidation occurred during PASS11. These items do not block source reconstruction; they block current exchange constants, exchange-bound golden fixtures and Live activation.
+
+## CORR-04 — Current infrastructure/feed revalidation snapshot
+
+CORR-04 performed current primary-source research on 2026-09-08. The reproducible claim ledger is [EXTERNAL_HYPERLIQUID_INFRA_RESEARCH.md](corr04_infrastructure_execution_path/EXTERNAL_HYPERLIQUID_INFRA_RESEARCH.md). Repository snapshots: `hyperliquid-dex/node@405cc08b17a727ee51b0f9128918955a84439915`; `hyperliquid-dex/order_book_server@8b4f237904f683aca2dba21a07d87e831ead2a97`.
+
+| ID | Revalidated family | CORR-04 result | Activation consequence | Future revalidation |
+|---|---|---|---|---|
+| `EXT-001` | matching/order priority | HyperCore price-time priority confirmed; ALO-only batching receives documented validator priority, but no deterministic relative action/fill guarantee is inferred | no new Formula/Risk/Execution rule | before adapter/emulator/economic encoding |
+| `EXT-002` | public API/WS transports | public subscriptions plus HTTP `/exchange` and WebSocket post requests confirmed | public feed remains initial baseline; ACK remains distinct from fill/completion | before implementation and release |
+| `EXT-005` | public feed cadence/identity | current channel semantics inspected; no universal one-to-one ID with node outputs established | strict alignment or unmatched; no nearest-time matching | on API/schema change |
+| `EXT-006` | node requirements/flags/outputs | validator/non-validator, Ubuntu 24.04, resource table, ports, outputs/flags and high log volume verified at pinned commit | node is heavy observe-only challenger, never assumed to fit baseline VPS | before rental/prototype/upgrade |
+| `EXT-007` | local book service | official repository disclaimer and current lack of spot support confirmed | cannot supply canonical V1 spot L4 claim | before any dependency |
+| `EXT-008` | nonce/API wallet/rate limit | signer-scoped nonce rules and request-weight reservation reviewed; reservation is not documented order priority | one owner/signer isolation retained | before Live adapter |
+| `EXT-017` | `split_client_blocks` | current field streams uncommitted mempool transactions without responses; full peer path must enable; default order random | separate NON-CANONICAL speculative lane only | before any prototype; feature may change/remove config |
+| `EXT-018` | gossip/sequencing priority | node operator can enable on-chain gossip-auction ordering; no V1 user-facing paid/numeric per-order priority field verified | future evidence hook only; no QF/Risk gate | CORR-05 only if official support/semantics emerge |
+| `EXT-019` | FIX order entry | no current official Hyperliquid FIX interface found; published order transports remain HTTP/WS | `NOT_CURRENT / REJECTED FOR V1` | periodic release/API review |
+| `EXT-020` | Docker networking | official bridge and host semantics reviewed; performance is workload-specific and host mode reduces isolation | controlled security-preserving benchmark only | on runtime/platform version change |
+| `EXT-021` | Linux CPU/IRQ/network | affinity, scheduler, RSS/RPS/RFS, IRQ and busy-poll semantics reviewed from kernel/man-page sources | bottleneck-triggered research; no blanket tuning | per kernel/host/driver profile |
+| `EXT-022` | AF_XDP/DPDK/F-Stack | packet/user-space stack capabilities and prerequisites reviewed; none automatically supplies the complete current TCP/TLS/WebSocket app path | Research only behind protocol/security/economic gate | before prototype and on version change |
+| `EXT-009`–`EXT-014` | provider products | not refreshed in CORR-04; historical snapshots remain non-current | discover/revalidate exact offer immediately before benchmark rental | mandatory before spend |
+
+Current-source revalidation closes documentary ambiguity only for the dated snapshot. It does not prove measured latency, capture benefit, production reliability or economic value and therefore authorizes neither node/tuning deployment nor infrastructure promotion.

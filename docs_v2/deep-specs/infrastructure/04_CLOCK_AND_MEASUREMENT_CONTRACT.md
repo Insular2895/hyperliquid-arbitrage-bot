@@ -189,3 +189,7 @@ Names are documentary concepts unless Data/Validation closure defines an exact e
 ## Requirement anchors
 
 Primary anchors include `REQ-CLOCK-0015`, `REQ-INFRA-0090`, `REQ-INFRA-0091`, QF-084, SRC-005 timing/data requirements, and all benchmark requirements marked clock-dependent in the PASS 01 ledger.
+
+## CORR-04 cross-feed rule
+
+Two feeds on one benchmark host share the same monotonic domain and are the preferred arrival comparison. Different hosts require stable semantic event identity, synchronized wall clocks and combined uncertainty; leads not exceeding uncertainty are `INCONCLUSIVE_CLOCK`. No nearest-timestamp substitution is allowed. Feed/node build/profile and matching/fingerprint version are attached to the timing evidence.

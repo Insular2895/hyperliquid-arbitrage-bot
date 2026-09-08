@@ -31,3 +31,5 @@ The host supplies clock discipline, disk durability/capacity, kernel/runtime pat
 ## Verification
 
 Installation evidence includes runtime UID, mount modes, root write probes, capability/privilege/namespace/socket inspection, resource-pressure behavior, restart/reconciliation behavior and absence of secrets from layers. Exact seccomp/AppArmor profile, UID, limits, affinity and swap policy are calibrated/open implementation details.
+
+CORR-04 allows bridge/host/native comparison only with the same security meaning. Host network does not permit public admin or secret expansion; native does not remove least privilege/firewall/TLS. AF_XDP/DPDK/F-Stack device, hugepage or capability requirements are Research and cannot make privileged mode, host root/PID or Docker-socket access baseline.

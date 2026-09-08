@@ -17,3 +17,5 @@ Cross-exchange/transfer routing, perpetual hedging, private node, shared feed se
 ## Change control
 
 Stable venue/source/transport/artifact IDs make evolution possible without V1 branching. Any change to domain boundaries, state owners, event ordering, Risk priority, actual-fill truth, RunMode equivalence or active-owner semantics requires architecture/domain/Validation impact review and cross-domain consistency audit. A future capability may add an adapter or promoted contract but may not weaken existing invariants.
+
+CORR-04 classification: public feed and Docker are Current V1 baselines; node/dual-feed comparison and speculative precompute are Research/Shadow until scoped promotion; native, CPU/scheduler/IRQ/network tuning are evidence-gated optimizations; AF_XDP/DPDK/F-Stack and FIX are not Current V1. None blocks the early V1 vertical slice.

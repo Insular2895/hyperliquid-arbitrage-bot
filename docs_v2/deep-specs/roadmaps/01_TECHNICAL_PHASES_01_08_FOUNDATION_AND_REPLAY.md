@@ -57,3 +57,5 @@ A payload error fails at Phase 2; a data gap makes Phase-4 state invalid; an unk
 - Phase 8: repeatable `ReplayReport` and `DecisionTrace` hash.
 
 No phase in this group authorizes real strategy capital.
+
+CORR-04 mapping: Phase 2 validates the public HTTP/WebSocket feed/API baseline and versioned source profile; Phase 3 records canonical/challenger/speculative and infra evidence without P0/P1 loss; Phase 8 replays epistemic lanes separately and proves speculative reuse equals fresh canonical computation. Node/kernel bypass do not block these phases.

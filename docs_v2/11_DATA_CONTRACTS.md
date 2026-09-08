@@ -253,3 +253,9 @@ Under existing schema evolution rules, a `DecisionTimeFeatureSnapshot` freezes p
 `ExecutionOutcomeLabel` is a derived, revisioned record from actual unique exchange/account events plus Execution/Recovery/Reconciliation. It carries path flags, terminal class, `Y_full_route`, resolution/censoring/evidence-validity and separate economic linkage. Missing, not-applicable, unresolved, invalid and OOD are distinct. Replay/Shadow/counterfactual records carry mode/fidelity and never become Live actual labels. See [Dataset Requirements](_analysis/corr03_execution_completion/CORR03_DATASET_SCHEMA_REQUIREMENTS.md), [Snapshot Contract](_analysis/corr03_execution_completion/DECISION_TIME_FEATURE_SNAPSHOT_CONTRACT.md) and [Join Contract](_analysis/corr03_execution_completion/PREDICTED_ACTUAL_JOIN_CONTRACT.md).
 
 Absent fields require schema version, compatibility and migration review; CORR-03 silently mutates no frozen structure.
+
+## 30. CORR-04 — Feed profile and epistemic provenance
+
+Canonical, challenger and speculative sources retain `FeedProfileId`, source/adapter/schema, canonical role, node build/flags where applicable, receive/clock/order quality and linked `InfraProfileId`. Frozen core schemas are not expanded ad hoc: new evidence uses compatible versioned extension records or linked research datasets with referential integrity.
+
+Cross-feed alignment requires a shared authoritative ID or strict versioned semantic fingerprint; nearest timestamps do not establish identity. Speculative RAW/normalized data is immutable evidence of an uncommitted observation, not canonical `MarketEvent` or economic truth. Any future canonical feed switch is a visible versioned material change and revalidates ordering, Replay, models and consumers.

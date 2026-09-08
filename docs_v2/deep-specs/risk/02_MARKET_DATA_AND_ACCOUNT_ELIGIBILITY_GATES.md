@@ -30,3 +30,5 @@ Capital, inventory room, API/action/connection budget, clock, feeds, compute and
 Eligibility produces explicit metrics, reason codes and one of the canonical Risk actions. Unknown safety means no new risk, not necessarily global shutdown: scope follows the affected dependency while known-exposure safety actions remain governed by RecoveryRiskPolicy.
 
 Source: SRC-005 lines 243–1032, 2900–3070 and 4396–4458.
+
+CORR-04 clarification: only the one declared canonical feed/state can satisfy market-data eligibility. Node/feed challengers and speculative mempool input are not substitutes for a valid canonical book. Speculative state cannot authorize or increase risk; canonical feed lag/gap/mismatch uses existing fail-closed scope and thresholds, with no new Risk action or numeric gate.

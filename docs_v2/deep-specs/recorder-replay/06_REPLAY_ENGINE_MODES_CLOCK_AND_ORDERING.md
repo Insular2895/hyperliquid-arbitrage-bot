@@ -17,3 +17,5 @@ EventTime (`exchange_ts`) is source chronology; ReceiveTime is bot knowledge. La
 The local order key is `(recv_monotonic_ns, source_priority, recorder_seq)` and recorder sequence is the definitive final tie-break. Equal timestamp batches use the same key. Priority queues for persistence cannot reorder Core economic evidence.
 
 RunMode remains `Replay|Paper|Shadow|MicroLive|Live`. Replay mode, RunMode and Simulator fidelity/SimulationMode are independent fields and must all be reported where relevant.
+
+Speculative/uncommitted input replays in a separate `NON-CANONICAL` source lane from committed events. Its local receive time permits research use from that time, but later commit/change/disappear labels are outcomes and cannot leak backward. A canonical DecisionTrace is unchanged when the speculative lane is disabled or discarded; reuse must match fresh canonical computation exactly.

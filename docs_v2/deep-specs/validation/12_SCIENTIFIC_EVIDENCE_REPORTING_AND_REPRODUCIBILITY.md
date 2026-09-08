@@ -16,3 +16,5 @@ Record EvidenceId, requirements/claim, RunManifest/DatasetId, code/build/config/
 An independent run must resolve all referenced artifacts, execute the declared procedure and reproduce the trace/result under the numeric contract. A material mismatch is located and classified, not waived. Notebook-only conclusions, silent dataset filtering, random temporal split, unavailable future artifacts and missing failed trades invalidate promotion evidence.
 
 Evidence supports a scoped decision; it does not make an idea a project decision without explicit validation/approval.
+
+CORR-04 feed experiments predeclare one primary metric and preserve all unmatched/inconclusive events, clock quality, source/node/kernel/container/CPU profiles and reliability/security guardrails. A technical latency result is reported separately from funnel/capture, completion and economic effects. Current external facts cite retrieval date and version/commit.

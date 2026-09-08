@@ -424,3 +424,9 @@ Each optimization follows the [Rust ladder](_analysis/corr02_hot_path_performanc
 No Phase 27 is added. Phase 3 preserves outcome/prediction evidence; Phase 8 reconstructs labels and HJ fixtures; Phases 12–14 prove failure, transport, Recovery and Reconciliation semantics; Phase 18 maps Simulator probabilities and builds the constant/simple baseline; Phase 19 runs observe-only; Phase 20 supplies first deliberate actual TT calibration. TTT is separately evidenced; Phase 21 may add validated Participant features; Phase 22 compares higher fidelity; Phase 23 separately validates maker completion; Phase 26 evaluates decision/economic value and runtime.
 
 See [CORR-03 Roadmap Impact](_analysis/corr03_execution_completion/CORR03_ROADMAP_IMPACT.md). This mapping authorizes no implementation or capital.
+
+## 46. CORR-04 — Infrastructure work in existing phases
+
+No Phase 27 is added. Phase 2 owns current public API/feed adapter conformance; Phase 3 captures bounded feed/infra/challenger evidence; Phase 8 preserves source and speculative epistemic Replay; Phase 13 measures HTTP/WS transport/ACK without changing outcome truth; Phase 19 is the primary observe-only node challenger stage; Phase 20 may test only a separately promoted canonical feed with one owner; Phase 26 houses advanced provider/node/native/CPU/network/kernel escalation.
+
+Node and kernel bypass do not block early V1. The order is public baseline, measure, paired observe-only challenger, correctness/capture/value comparison, explicit promotion, then deeper host/network complexity if still justified. FIX is rejected for current V1 absent official support. See [CORR-04 Roadmap Impact](_analysis/corr04_infrastructure_execution_path/CORR04_ROADMAP_IMPACT.md).

@@ -238,3 +238,9 @@ Upgrade/rollback DoD includes wrong-digest rejection, active-exposure handling, 
 - [Validation and failure modes](deep-specs/deployment-security/12_VALIDATION_FAILURE_MODES_AND_DEFINITION_OF_DONE.md)
 
 Human validation is still required before any runtime, release, migration, license or Live-trading implementation decision is applied.
+
+## 30. CORR-04 — Runtime performance and node boundaries
+
+Docker/OCI remains the baseline. User-defined bridge, host network and production-equivalent native are controlled benchmarks, not deployment decisions. Host mode’s reduced network isolation is part of the result; native is a reference only. Non-root, read-only root, explicit mounts, dropped capabilities, no privileged mode/Docker socket, local/private admin, firewall, TLS and signer least privilege cannot be disabled to win a benchmark.
+
+A node may share the host, use a dedicated nearby host or be region-local only as a researched topology. Node gossip ports, resources, peer link, build/flags, lag/catch-up and failure surface require explicit security/readiness evidence; the node has no signer secret by default. Kernel-bypass candidates requiring device/hugepage/capability access remain Research and cannot make `--privileged` a baseline.

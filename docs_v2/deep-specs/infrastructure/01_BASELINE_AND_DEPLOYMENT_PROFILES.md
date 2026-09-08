@@ -160,3 +160,7 @@ A provider, region, offer, CPU allocation, runtime network mode or other materia
 ## Requirement anchors
 
 Primary anchors include `REQ-INFRA-9001`, `REQ-CLIENT-9001`, `REQ-INFRA-0056`–`REQ-INFRA-0060`, `REQ-INFRA-0088`, `REQ-INFRA-0093`–`REQ-INFRA-0095`, and the deployment/client requirements mapped in the PASS 01 ledger.
+
+## CORR-04 current boundary
+
+The public feed and Docker remain initial baselines. Provider, region/AZ, route, host, container network and CPU profile are versioned treatments; Tokyo is not permanent. A node is observe-only until N1–N9 and P1–P9 pass. The dated official non-validator requirements (16 cores/128 GB/500 GB SSD, with stronger latency guidance) explicitly invalidate any assumption that the 4 GB trading VPS also hosts it. CPU/scheduler/IRQ/network tuning and native/kernel-bypass paths remain research challengers.

@@ -33,3 +33,7 @@ Phase and evidence artifacts bind through existing typed identities. The produce
 ## CORR-01 evidence projection
 
 Capture-funnel, episode, timing and outcome artifacts follow the same evidence-reference boundary: they link to the frozen manifest/trace and domain records rather than expanding them ad hoc. Projection, metric, segmentation, forecast-label and outcome-label versions are mandatory. Replay equality includes stage facts, denominator populations, derived episode IDs and timing validity. Detailed identity is canonical in [Operations deep spec 11](../operations/11_CAPTURE_FUNNEL_AND_LATENCY_ATTRIBUTION.md).
+
+## CORR-04 linked infrastructure evidence
+
+Infrastructure runs link `FeedProfileId`, `InfraProfileId`, provider/region/AZ/host, CPU/OS/kernel, container/runtime/network mode, node build/flags, bot/config/model/formula and instrumentation. These are compatible evidence artifacts rather than silent frozen-field additions. Reproduction also resolves event-alignment/fingerprint version and canonical/challenger/speculative role.

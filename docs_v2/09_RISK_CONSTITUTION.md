@@ -335,3 +335,9 @@ Funnel stages, empirical rates and latency dashboards do not grant Risk permissi
 CORR-03 adds no hard `p_full` threshold, automatic reject or permissive fallback. Completion artifacts begin in observe/calibrate mode and may influence no ranking, sizing, ExecutionEV, RAEV or capacity decision until Validation proves point-in-time integrity, resolved support, temporal OOS calibration, baseline/economic lift, slice stability, OOD/fallback, runtime safety, Shadow and capital-relevant Micro-live evidence.
 
 Missing/OOD prediction never means permission. A future hard threshold is a separate Risk-owned, human-reviewed policy after CORR-05 composition review. UNKNOWN/Recovery scopes retain all existing restrictions. See [Completion Model Promotion Gate](_analysis/corr03_execution_completion/COMPLETION_MODEL_PROMOTION_GATE.md).
+
+## 35. CORR-04 — Feed and speculative-input safety boundary
+
+Only the declared canonical feed/state may support current risk-increasing permission. Node/feed challengers are observe-only until promoted; uncommitted/speculative state never authorizes, pre-signs or sends new risk and never mutates account, fill, inventory, reservation, PnL, Recovery or Reconciliation truth.
+
+Invalid, lagging, gapped, ambiguous or unreconciled canonical feed/node evidence fails closed for affected new risk under the existing `InfraState` and scoped kill hierarchy. It does not create a new action, threshold or hard gate. A speculative/challenger loss cannot make the system more active; known-exposure cancel/Recovery/Reconciliation remain governed by existing policy.

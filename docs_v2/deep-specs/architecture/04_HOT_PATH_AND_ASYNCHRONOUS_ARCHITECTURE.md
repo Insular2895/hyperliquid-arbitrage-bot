@@ -15,3 +15,5 @@
 No synchronous disk/database/object storage/license/admin call, model training, large Monte Carlo, whole-universe graph traversal, unbounded allocation/loop or hidden network dependency belongs in the trading path. `pair_to_routes`, precomputation, incremental state, activated HWC scope and bounded q/model budgets control work.
 
 Lock-free/zero-copy, affinity, kernel tuning and C++ are profiling/economic candidates, not universal architecture requirements. Latency targets remain benchmark/calibration hypotheses. Details: [Hot Path](../../_analysis/pass13_master_architecture/HOT_PATH_ARCHITECTURE.md) and [Async Architecture](../../_analysis/pass13_master_architecture/ASYNC_AND_BACKGROUND_ARCHITECTURE.md).
+
+CORR-04 adds a Research-only speculative lane. It may prepare pure structural/economic work off canonical state ownership, but the canonical path never waits for it and reuses economic output only after exact canonical fingerprint/version equality and fresh-result parity. Public and challenger feeds cannot concurrently own `BookState`; feed fusion remains outside the architecture.

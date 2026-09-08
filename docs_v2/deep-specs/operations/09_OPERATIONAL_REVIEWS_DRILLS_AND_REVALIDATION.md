@@ -10,3 +10,5 @@ Review inputs include health/unsafe time by cause; reconciliation/unknown/recove
 Restore drills prove backups, manifests, journals/checkpoints and evidence can be recovered. Reconciliation drills prove orders→fills→balances→reservations under missing/duplicate/late evidence. Safe-stop, crash, update/rollback, secret rotation and ownership/fencing drills apply to the deployed profile.
 
 Each drill emits EvidenceId, expected/actual state/actions, timing, artifacts, deviations, owner and rerun. Revalidation triggers include material code/config/model/formula/schema/data/infra/exchange changes, size/market/mode expansion, drift/SLO breach, incident and evidence expiry.
+
+CORR-04 reviews additionally cover dated node/API/priority facts, feed-profile comparison, node lag/catch-up and cost, event-alignment validity, speculative isolation/parity, Docker/native security, host tuning rollback and kernel-bypass applicability. Commercial provider facts are refreshed before spend; current technical facts are refreshed before implementation/promotion.

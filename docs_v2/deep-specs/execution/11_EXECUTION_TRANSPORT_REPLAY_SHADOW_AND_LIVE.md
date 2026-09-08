@@ -37,3 +37,7 @@ These are transport implementation candidates. The coordinator stays compatible 
 ## Required parity tests
 
 Given the same ordered event fixture, assert identical intents, state transitions, Risk-decision references, fill application, recovery selection, reservation/accounting outputs, and trace hash across supported non-effecting runs. Inject lost/duplicate/out-of-order transport events, clock/timer replay, crash/restart, and stale worker versions. Any hidden wall-clock, random source, or mode-specific shortcut fails parity.
+
+## CORR-04 current transport disposition
+
+Current official Hyperliquid order-entry evidence supports HTTP `/exchange` and WebSocket post requests; no official FIX order entry or user-facing paid/numeric per-order priority field for the V1 spot API-wallet path was verified on 2026-09-08. FIX therefore remains rejected for current V1 and the priority evidence hook is Future-only. Node gossip/ALO-batch priority cannot be conflated with price-time matching or treated as a deterministic order/fill guarantee. These facts do not change ACK, status, fill, UNKNOWN, Recovery or completion semantics.

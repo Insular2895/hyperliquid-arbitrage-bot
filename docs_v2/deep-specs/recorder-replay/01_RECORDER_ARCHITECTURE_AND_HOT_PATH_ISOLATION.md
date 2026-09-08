@@ -12,3 +12,5 @@ Recorder health includes process state, queue depth/age, enqueue loss, write lat
 Critical journal/evidence may use an independent durable path, but it must also avoid unbounded blocking and expose inability to preserve P0. The specification does not claim trading can continue indefinitely without critical audit data.
 
 Acceptance requires fault injection for slow/full/corrupt disk, queue saturation, Recorder crash/restart, cloud outage and process shutdown. Each failure produces explicit quality/health state and preserves P0 before lower classes.
+
+CORR-04 permits challenger/speculative capture only through bounded non-blocking paths tagged with feed profile, node build and epistemic class. Dual-feed/node volume is a stress treatment; it cannot delay canonical Core or cause P0/P1 execution/account evidence loss. Canonical processing never waits for speculative recording.

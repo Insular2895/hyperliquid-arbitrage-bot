@@ -179,3 +179,9 @@ Recorder handoff may compare bounded blocking/non-blocking and lock-free impleme
 Recorder retains every real attempt, including known zero fill, partial/later-leg fill or reject, cancel race, UNKNOWN/query history, Recovery partial/failure, negative PnL, residual exposure and safe no-exposure terminal, plus the frozen prediction/feature snapshot. Success-only or completed-only datasets are invalid.
 
 Replay reconstructs path flags and terminal labels from the same ordered canonical events without a second truth store. HJ-001..010 fault fixtures reproduce state, unique-fill ledger, Inventory, Reservations, Recovery, Reconciliation and DecisionTrace. Emulator/counterfactual labels remain truth only inside their declared run and cannot be pooled as Live actual. See [Retention Contract](_analysis/corr03_execution_completion/ZERO_PARTIAL_UNKNOWN_DATA_RETENTION_CONTRACT.md) and [HJ Validation Matrix](_analysis/corr03_execution_completion/HJ_FAILURE_SUITE_VALIDATION_MATRIX.md).
+
+## 31. CORR-04 — Challenger/speculative evidence
+
+Recorder may capture a node/feed challenger and speculative source for research only when it preserves source/build/profile, canonical role, epistemic class, receive time, ordering/sequence quality, gaps/duplicates and payload lineage. Speculative and committed streams replay separately; later commit/disappear/change labels cannot leak into knowledge available at original receive time.
+
+Dual-feed volume is a measured pressure treatment. It may shed only according to existing priority policy and must never cause loss of P0/P1 account, fill, Execution, Recovery or incident evidence. Recorder priority cannot reorder Core or promote a challenger/speculative source.

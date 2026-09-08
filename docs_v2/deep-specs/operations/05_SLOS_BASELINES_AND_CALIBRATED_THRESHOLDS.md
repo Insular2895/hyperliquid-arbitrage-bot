@@ -10,3 +10,5 @@ Each SLO declares indicator/event population, numerator/denominator, scope, miss
 Baselines come from valid comparable measurements with count, distribution and regime. Threshold provenance is exchange rule, safety default, user tightening or calibrated evidence; magic constants are forbidden. Recovery thresholds use hysteresis and often reconciliation.
 
 Error-budget review may slow promotion or demote a capability. It never authorizes continuation across a hard safety failure. A process may meet uptime while failing every economically relevant SLO.
+
+Feed-profile SLOs separate continuity/correctness, matched arrival/state age, reconnect, node lag/catch-up, resource/interference and downstream capture/economics. A faster median cannot spend correctness/security error budget. Exact thresholds remain calibrated; CORR-04 adds none.

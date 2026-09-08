@@ -24,3 +24,5 @@ The release manifest links entries to immutable validation evidence. Runtime int
 Promotion records old/new scope and maturity, EvidenceIds, dependency state, restrictions, reviewer/approver, validity/review trigger, fallback and rollback. A model/version/release does not inherit another artifact’s maturity silently.
 
 Automatic demotion is permitted for locked safety failures. It may shrink size, restrict market/mode, fall back model, suspend strategy/release or block new risk. Clear alerts do not re-promote. Safe cancel, Recovery, reconciliation and read access remain available per Risk.
+
+Feed/Infra profile, node build/flags and runtime/network/CPU profile are linked capability dependencies. Promotion requires correctness, valid measurement, reliability/security, downstream capture/economics, operability and rollback. Demotion applies when node lag/gaps, interference, software/security drift or economic value invalidate that exact profile.

@@ -10,3 +10,5 @@ Each scenario specifies injection, pre-exposure state, expected engine/Risk/capa
 Chaos combines failures only after single-fault behavior is proven and with bounded blast radius. Live fault work uses the minimum authorized scope and stop controls. It must never become an excuse for uncontrolled production experiments.
 
 Recovery is valid only when current exchange orders/fills/balances, local journal/checkpoint, inventory/reservations and ownership reconcile. Unresolved state remains locked and prevents affected new risk.
+
+CORR-04 adds public/node loss, lag/resync, feed mismatch, speculative S-01–S-10, canonical-before-speculative completion, dual-feed Recorder overload, container network fault, CPU starvation and tuning rollback. Assertions include one canonical writer, no speculative effect, no P0/P1 loss and continued account/fill/reconciliation progress under hot-thread priority.

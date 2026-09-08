@@ -146,3 +146,9 @@ Node activation must preserve a validated rollback path to the prior feed/topolo
 ## Requirement anchors
 
 `REQ-NODE-0001`–`REQ-NODE-0003`, `REQ-INFRA-0057`, `REQ-INFRA-0058`, `REQ-INFRA-0088`, `CONFLICT-002`, `EXT-005`–`EXT-007`, and public-feed/node dependencies mapped in the PASS 01 ledger.
+
+## CORR-04 current-source refinement
+
+At `hyperliquid-dex/node@405cc08b17a727ee51b0f9128918955a84439915`, validator/non-validator roles, heavy resource/output requirements, flags and limited local `/info` behavior are current snapshots. The official `order_book_server` snapshot is non-core/as-is and lacks spot support. `split_client_blocks` streams uncommitted mempool transactions without responses and therefore enters only a separately typed `NON-CANONICAL` Research lane.
+
+Initial dual-feed architecture is public canonical plus node observe-only, with exactly one canonical writer and no fusion. Strict event alignment, state reconstruction, Replay, paired Shadow, interference, capture/economic value, security and rollback are the N1–N9 gates. A canonical switch is a material versioned transition with rebuild/readiness/reconciliation; fallback is never a silent hot switch.

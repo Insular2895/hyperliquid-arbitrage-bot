@@ -23,3 +23,5 @@ AWAITING HUMAN REVIEW
 Maturity keys strategy/capability, market/route family, size band, execution mode, model versions and restrictions. Build/config/formula/schema/infra changes are linked impact dimensions. Capital-bearing capabilities move sequentially. Only components with no independent live behavioral effect may mark Shadow/Micro-live not applicable, with rationale and contract proof.
 
 M5 is not an absorbing state. Drift, incidents, evidence expiry or material change can demote it. Re-promotion is explicit.
+
+CORR-04 maps node gates N1–N9 and infrastructure gates P1–P9 into this existing ladder. Challenger feeds are observe-only for M3. Any canonical feed/profile, container/native, CPU/network/kernel or node-build change has exact scope and cannot inherit maturity. Speculative real-send influence would require a new explicit design before M4.

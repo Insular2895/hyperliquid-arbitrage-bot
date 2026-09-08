@@ -50,3 +50,5 @@ A stage exits only when its evidence is sufficient, reproducible, supported and 
 - Horizontal before excessive vertical size because one route has finite nonlinear capacity.
 - Benchmark infra before paying more; economic promotion waits for captured/lost-PnL evidence.
 - Validate Bridge separately because it moves capital for future utility rather than arbitrage alpha.
+
+CORR-04 infrastructure order is `public baseline → measure → observe-only feed/node challenger → strict correctness/alignment → downstream capture evidence → robust net value → explicit promotion → deeper host/network complexity`. Shadow is the primary challenger stage. Docker remains baseline; native/tuning/kernel bypass are independent scoped candidates and cannot inherit maturity.

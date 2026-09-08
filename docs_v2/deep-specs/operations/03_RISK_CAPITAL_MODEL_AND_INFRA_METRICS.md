@@ -16,3 +16,5 @@ Observe model/fidelity/support versions, prediction/invalid counts, OOD/disagree
 Observe InfraState, feed arrival/age, RTT/reconnect, compute/sign/send tails, jitter/contention, CPU/memory/network/clock, disk/fsync/free/backlog, runtime/digest/config/schema/capability/owner/license and update state. Provider labels remain bounded and installation-scoped.
 
 Every signal includes unit, observation/event time, scope, source/version and validity. Threshold policy consumes the signal but does not change its meaning.
+
+CORR-04 adds bounded Feed/Infra/Node/ContainerNetwork/CPU profile labels, canonical/challenger role, node lag/build, matched/unmatched arrival, state age at decision/send, gaps/reorder/duplicates, scheduler/run-queue/migrations/steal and dual-feed Recorder pressure. Raw event/host identities stay in traces. Observability never fuses feeds or grants promotion.

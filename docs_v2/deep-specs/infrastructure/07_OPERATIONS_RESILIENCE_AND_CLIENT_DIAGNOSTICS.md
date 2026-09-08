@@ -198,3 +198,7 @@ Any backup/failover topology must preserve one active owner/writer for the same 
 ## Requirement anchors
 
 `REQ-INFRA-0091`, `REQ-INFRA-0095`, `REQ-INFRA-0096`, `REQ-INFRA-0099`, `REQ-OPS-0019`–`REQ-OPS-0023`, `REQ-RISK-0329`, `REQ-CLIENT-0025`–`REQ-CLIENT-0028`, `REQ-CLIENT-9001`, SRC-005 risk/data contracts and SRC-006 deployment/validation requirements mapped in the PASS 01 ledger.
+
+## CORR-04 challenger signals
+
+Expose bounded feed/infra profile identity, canonical/challenger role, node build/flags, applied-block lag/catch-up, matched/unmatched arrival, state age at send, gaps/reorder/duplicates, reconnect, scheduler/run-queue/migrations/steal, container mode and dual-feed Recorder pressure. Invalid challenger evidence cannot change permission; invalid canonical feed/node evidence maps through the existing Infra/Risk policy. Node or profile changes trigger runbook, state rebuild and revalidation.

@@ -30,3 +30,5 @@ F4 agents, private node, hot standby, full cross-exchange, dense response models
 - [Operations and Monitoring](../../18_OPERATIONS_AND_MONITORING.md)
 
 An unverified external fact never silently becomes a default. An unresolved but non-required future fact never blocks unrelated safe research.
+
+CORR-04 gates current node/public/source/order/priority/FIX and platform semantics before implementation. Node, `split_client_blocks`, native deployment, affinity/IRQ/network tuning and kernel bypass are not early-V1 blockers. Canonical feed invalidity blocks affected new risk; challenger/speculative invalidity blocks only its research unless shared-resource safety is harmed.

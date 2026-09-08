@@ -42,3 +42,5 @@ Unsupported data/fidelity/model support produces explicit `LOW`, `OOD`, or `REJE
 ## Authority
 
 SRC-005 fixes mode/provenance semantics; SRC-008 fixes the epistemic correction and simulator decomposition; SRC-006 fixes evidence maturity. Exact schemas remain PASS 06.
+
+CORR-04 adds no SimulationMode or math. A feed/infra profile is an explicit provenance/input treatment. Uncommitted node input remains a separate `NON-CANONICAL` Research lane; a simulated or speculative lead cannot become actual state, fill or completion truth.

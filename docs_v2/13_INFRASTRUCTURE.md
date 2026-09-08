@@ -369,3 +369,11 @@ Infrastructure promotion still requires like-for-like QF-084..093 evidence. A lo
 The Real Hot-Path CPU benchmark consumes CORR-01 timing stages and CORR-02 component profiles. It records received-event→affected-route amplification, BBO dispositions/filter quality, full-L2/FastL1 counts, levels walked, stale work, queue wait, allocations/copies and bytes, capacity growth, memory footprint, cycles/instructions/IPC, cache/branch misses, context switches, migrations, scheduler delay and page faults where the host supports valid counters.
 
 Comparisons bind commit, config, dataset/order, formulas/models/routes, toolchain, build/profile, host/PMU and instrumentation, and separate cold, warm and steady state. Rust LTO/codegen/target/PGO variants are candidates, not defaults. `target-cpu=native` is incompatible with an unspecified client-host fleet. Lock-free and C++ remain evidence-gated; no provider, kernel, container or build configuration is chosen here. See [Rust Performance and C++ Escalation](deep-specs/infrastructure/08_RUST_PERFORMANCE_AND_CXX_ESCALATION.md).
+
+## CORR-04 — Feed, node and host/network escalation gates
+
+The public feed remains initial canonical baseline. A non-validating node begins as an isolated observe-only challenger with exactly one canonical MarketState writer, strict event alignment and no feed fusion. Current official node requirements/outputs and `split_client_blocks` were revalidated at dated commits: uncommitted mempool input stays `NON-CANONICAL`, has no order-send authority and may reuse pure computation only after exact canonical parity.
+
+Provider/region/AZ/route, Docker bridge/host/native, CPU affinity/scheduler, IRQ/RSS/RPS/RFS and Linux network settings are controlled treatments. Tokyo is not permanent; native is reference only. AF_XDP, DPDK and F-Stack remain Research behind a full TCP/TLS/WebSocket applicability, least-privilege, reliability and economic gate.
+
+Node promotion requires N1–N9; any infrastructure promotion requires P1–P9: correctness, measurement validity, technical improvement, reliability/security guardrails, capture/RecoverablePnL, robust net value, operability and rollback. QF-084–QF-093 remain unchanged; latency alone and account size never promote. Detailed contracts: [CORR-04 analysis](_analysis/corr04_infrastructure_execution_path/BASELINE_AND_SCOPE.md).

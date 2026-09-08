@@ -196,3 +196,9 @@ Labels use bounded route family/direction/reason/build/profile cohorts, not raw 
 Expose actual full-route completion with attempt/resolved/unresolved denominators; zero-fill, partial-fill, UNKNOWN and Recovery entry/success/failure rates; residual exposure; exact predicted/actual join completeness; QF-095/096 and reliability buckets; support/OOD/fallback, drift and inference latency. Slice by bounded strategy/mode, size-depth, route/market family, latency/regime, infra and model version where support permits.
 
 Raw Execution/Opportunity/Route/CLOID IDs remain in traces, never metric labels. Alerts may cover completion collapse, UNKNOWN/Recovery spikes, join failure or calibration drift, with calibrated thresholds and market/infra attribution. New evidence feeds offline recalibration; Live weights and promotion never self-modify. See [Completion Calibration Contract](_analysis/corr03_execution_completion/COMPLETION_CALIBRATION_CONTRACT.md).
+
+## 48. CORR-04 — Feed and infrastructure challenger operations
+
+Bounded labels include `InfraProfileId`, `FeedProfileId`, node/public mode, container network mode and CPU profile; raw host/event/order IDs stay in traces. Observe canonical/challenger continuity, matched/unmatched arrival lead with clock validity, state age at decision/send, node applied-block lag/catch-up/build, gaps/reorder/duplicates, reconnect/time-to-healthy, scheduler/run-queue/migrations/steal, IRQ/network queues where visible, resources and dual-feed Recorder pressure.
+
+Operations reports evidence and health; it does not fuse feeds or promote a challenger. Invalid canonical feed/node state maps through existing Infra/Risk policy. A profile switch, node restart/resync, host/runtime/kernel/network change or security deviation triggers scoped revalidation and runbook evidence. Current external facts remain dated and versioned.

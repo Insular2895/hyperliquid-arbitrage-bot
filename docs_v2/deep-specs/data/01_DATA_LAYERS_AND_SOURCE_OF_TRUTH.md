@@ -28,3 +28,5 @@ L0 is immutable evidence of receipt. It does not assert that an exchange message
 ## Acceptance
 
 A lineage query must walk from any DecisionTrace item to RAW source IDs and from any real Fill to intent, risk decision, state versions, formulas/models/config and final PnL. Unknown links fail validation; they are not inferred heuristically.
+
+CORR-04 preserves a sixth concept only as source epistemic metadata, not a new data layer: challenger and speculative observations remain L0/L1 evidence tagged with feed profile, canonical role and `NON-CANONICAL` status. They cannot enter canonical L2 state unless a future declared feed profile is promoted and rebuilt. If frozen schemas cannot express this safely, use a linked versioned research dataset.
