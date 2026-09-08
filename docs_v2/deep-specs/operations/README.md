@@ -15,5 +15,6 @@ This directory expands [18_OPERATIONS_AND_MONITORING.md](../../18_OPERATIONS_AND
 8. [Incident evidence and postmortem](08_INCIDENT_EVIDENCE_TIMELINE_REDACTION_AND_POSTMORTEM.md)
 9. [Operational reviews, drills and revalidation](09_OPERATIONAL_REVIEWS_DRILLS_AND_REVALIDATION.md)
 10. [Safe shutdown, restart and capability health](10_SAFE_SHUTDOWN_RESTART_AND_CAPABILITY_HEALTH.md)
+11. [Capture funnel and latency attribution](11_CAPTURE_FUNNEL_AND_LATENCY_ATTRIBUTION.md)
 
 Backend products, exact thresholds, schedules and command implementations remain open/calibrated. These contracts are vendor-neutral and per-client by design.

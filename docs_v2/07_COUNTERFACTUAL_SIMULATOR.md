@@ -257,3 +257,9 @@ Before implementation or production reliance, revalidate current Hyperliquid pri
 ## Sources and authority
 
 Primary detailed source: SRC-008. Closure authority: SRC-004 for formulas/execution definitions, SRC-005 for Risk/Data/Replay contracts, SRC-006 for validation, and PASS 02/SRC-007 for participant forecast semantics. SRC-001–003 provide uncontradicted historical architecture and workflow requirements. PASS 00 and legacy `/docs` are locators/comparison material, not design authority.
+
+## 33. CORR-01 — Frozen forecast and actual-label semantics
+
+`ExecutionForecast.p_full`, `p_partial`, `p_recovery` and `p_failure` are predictions, never actual outcomes. Each bundle binds a `ForecastLabelVersion`, forecast horizon, route objective, candidate size and all point-in-time versions. The probabilities form a mutually exclusive exhaustive partition only when that label version explicitly guarantees it; consumers never silently renormalize.
+
+The forecast used for a committed plan is immutable and joins by typed candidate/execution identifiers to later fill, original-route completion, Recovery, reconciliation and economic labels. A post-outcome run is `COUNTERFACTUAL_MODEL`. Primary calibration retains zero fills, rejects, ambiguity, Recovery and negative outcomes and reports exact-join/missing/censored counts. See [Predicted vs Actual Capture Calibration](./_analysis/corr01_capture_observability/PREDICTED_ACTUAL_CAPTURE_CALIBRATION.md).

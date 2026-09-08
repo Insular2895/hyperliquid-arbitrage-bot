@@ -214,3 +214,7 @@ An upgrade/downgrade report states:
 ## Requirement anchors
 
 QF-084–QF-093, `REQ-INFRA-0075`–`REQ-INFRA-0087`, `REQ-CAP-0021`, `REQ-CAP-0022`, `REQ-INFRA-0092`, `REQ-INFRA-0096`–`REQ-INFRA-0098`, and their Risk/Data/Validation dependencies in the PASS 01 ledger.
+
+## CORR-01 measurement qualification
+
+Fine `T_*` timing points refine QF-084 only through a documented non-overlapping map. Local send-to-ACK is an observed combined duration unless valid external semantics separate network and exchange time; no residual attribution is allowed. Candidate promotion requires technical distribution, comparable funnel effect and actual economic evidence under this QF-084–QF-093 framework. See [Latency Stage Taxonomy](../../_analysis/corr01_capture_observability/LATENCY_STAGE_TAXONOMY.md).

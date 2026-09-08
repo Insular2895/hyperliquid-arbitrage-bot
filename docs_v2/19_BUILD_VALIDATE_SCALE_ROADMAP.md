@@ -356,3 +356,9 @@ The path is: specify final contracts; record source truth; reconstruct state; ma
 - [Validation Matrix](16_VALIDATION_MATRIX.md)
 - [Operations and Monitoring](18_OPERATIONS_AND_MONITORING.md)
 - [PASS 12 report](_analysis/pass12_build_validate_scale/PASS12_FINAL_REPORT.md)
+
+## 39. CORR-01 — Evidence journey integration
+
+CORR-01 adds no evidence stage. Stage 0 freezes funnel/metric/label/timing definitions; Stage 1 records bounded evidence; Stage 2 proves deterministic reconstruction and episode derivation; Stages 4–6 identify opportunities and forecasts without conflating them with attempts; Stage 7 reports only `would_*`; Stage 8 freezes join/calibration policy; Stage 10 obtains actual fills/reconciliation/economics under existing authority; Stages 11–20 use comparable funnel and economic evidence for capability/scale decisions.
+
+The recurring doctrine is `measure -> attribute -> change -> remeasure -> capture-stage effect -> actual economic effect`. A technically faster system that cannot prove a comparable funnel/economic improvement remains unvalidated for scale.

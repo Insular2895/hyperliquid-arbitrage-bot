@@ -12,3 +12,5 @@ Champion output may affect decisions; Challenger output is recorded but never en
 The comparison dataset is append-only evidence. Research creates new model artifacts and validation reports; production does not silently self-train or promote. Simulation underestimation, drift, OOD or unexplained tail outcomes feed Risk/Validation downgrade paths.
 
 Acceptance demonstrates stable Shadow, complete would-action capture, bounded MicroLive exposure, prediction/outcome join completeness and zero contamination between actual and counterfactual balances.
+
+CORR-01 requires the plan-time forecast and `ForecastLabelVersion` to remain immutable. The actual record is multi-axis: attempt, ACK/reject/unknown, fill, original-route completion, exposure, Recovery, reconciliation and economics. Zero, partial, failed, unknown and negative outcomes stay in the originating cohort. Shadow records only `would_*`; actual labels require actual or explicitly simulated source/mode truth. Episode projection, trace joining and metric export remain non-blocking near-line/offline work.

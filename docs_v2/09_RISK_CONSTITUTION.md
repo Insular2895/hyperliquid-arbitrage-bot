@@ -325,3 +325,7 @@ Exact schema definitions remain Data Contracts authority; exact formula expressi
 - [Failures, Tests and Definition of Done](deep-specs/risk/11_FAILURE_MODES_TESTS_AND_DEFINITION_OF_DONE.md)
 
 Traceability and source locators are in `docs_v2/_analysis/pass05_risk/`.
+
+## 33. CORR-01 — Observability is not permission
+
+Funnel stages, empirical rates and latency dashboards do not grant Risk permission. `RISK_ELIGIBLE` is projected only from a current immutable allowed `RiskDecision`; absence of a reject is not an allow. CORR-01 introduces no `p_full` threshold or new gate. Any future decision-use threshold remains calibrated, versioned, Risk-owned and subject to the existing hierarchy, validation and capability scope.

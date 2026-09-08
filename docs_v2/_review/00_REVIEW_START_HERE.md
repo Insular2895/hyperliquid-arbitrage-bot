@@ -1,5 +1,13 @@
 # PASS 16 — Review Start Here
 
+> **POST-RECONSTRUCTION CORRECTIONS IN PROGRESS.**
+>
+> **DO NOT APPROVE THIS REVIEW BASELINE.**
+>
+> **FINAL REVIEW PACKAGE WILL BE REFRESHED AFTER CORR-06.**
+
+CORR-01 changed canonical documentation after the PASS16 baseline. All approval remains pending; implementation and legacy switchover remain unauthorized.
+
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 This package turns the reconstructed corpus into a finite human decision. It is documentary evidence only: implementation, the `docs_v2` → `docs` switchover, Micro-live and Live all remain unauthorized.

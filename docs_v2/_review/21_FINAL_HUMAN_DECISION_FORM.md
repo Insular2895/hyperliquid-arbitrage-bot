@@ -1,5 +1,13 @@
 # Final Human Decision Form
 
+> **POST-RECONSTRUCTION CORRECTIONS IN PROGRESS.**
+>
+> **DO NOT APPROVE THIS REVIEW BASELINE.**
+>
+> **FINAL REVIEW PACKAGE WILL BE REFRESHED AFTER CORR-06.**
+
+This form is stale after CORR-01. Leave every approval box unchecked. Human approval remains `PENDING`; implementation and legacy switchover remain `NOT AUTHORIZED`.
+
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
 Reviewed documentation commit: `PENDING — copy the exact PASS 16 commit SHA from the final handoff`

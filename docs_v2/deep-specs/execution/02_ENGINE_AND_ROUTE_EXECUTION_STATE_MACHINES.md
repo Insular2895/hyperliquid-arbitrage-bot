@@ -79,3 +79,7 @@ No direct startup-to-`READY`, timeout-to-`READY`, or `UNKNOWN`-to-`READY` transi
 | `RECOVERY_REQUIRED` | Recovery `RECOVERY_FAILED` | keep evidence/locks as required; escalate | `FAILED_SAFE` |
 
 `ABORTED` means a known safe non-completion, not a synonym for network error. `FAILED_SAFE` is a fail-conservative route outcome, not proof of zero exposure.
+
+## CORR-01 analytical mapping
+
+The capture funnel does not alter this machine. `ATTEMPTED` begins at first possible transmission, including a later-ambiguous send. For empirical `FullRouteCompletionRate`, the stricter analytical label requires `COMPLETED`, satisfaction of the original revalidated route objective from actual fills and no Recovery entry. A route reaching `COMPLETED` after `RECOVERED` remains a valid safe state closure and is reported as recovered, not as original-route full completion.

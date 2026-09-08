@@ -24,4 +24,11 @@
 
 The Technical Implementation Roadmap and Build/Validate/Scale Journey are reconstructed and remain separate. Governing philosophy: `SPECIFICATION → IMPLEMENTATION → EVIDENCE → VALIDATED CAPABILITY → CAPITAL`, with final-capable architecture and progressive capability activation rather than a throwaway MVP.
 
-**NEXT:** HUMAN REVIEW of [`docs_v2/_review/00_REVIEW_START_HERE.md`](../_review/00_REVIEW_START_HERE.md). There is no automatic PASS 17. Implementation has not started; Phase 1, the legacy switchover, Micro-live and Live remain unauthorized.
+## Post-reconstruction correction sequence
+
+| Correction | Status | Scope | Review effect |
+|---|---|---|---|
+| CORR-01 | COMPLETE — HUMAN REVIEW REQUIRED | capture funnel, episode identity, latency attribution, metric populations, predicted/actual, optimization evidence | PASS16 review baseline is stale |
+| CORR-02..CORR-06 | NOT STARTED | separately authorized future correction briefs | no work performed here |
+
+**NEXT:** Await explicit direction for the next correction. The PASS16 review package is marked stale and must not be approved until it is refreshed after CORR-06. There is no automatic PASS 17. Implementation, Phase 1, legacy switchover, Micro-live and Live remain unauthorized.

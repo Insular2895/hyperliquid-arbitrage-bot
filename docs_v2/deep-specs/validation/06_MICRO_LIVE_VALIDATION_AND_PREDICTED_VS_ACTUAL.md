@@ -14,3 +14,5 @@ Each attempt preserves immutable prediction, DecisionTrace and actual outcome: s
 Analyze counts, missing joins, calibration buckets, signed errors, quantiles/coverage/tails and support slices. A predicted 95% interval targets approximate 95% comparable coverage under valid assumptions; tolerance/sample sufficiency is calibrated. Means do not conceal tail errors.
 
 Micro-live probes model/execution reality, not short-term profit. One amount/market/regime/mode cannot authorize another. Stop on safety failure, preserve evidence and demote/reconcile before any resume.
+
+CORR-01 fixes the comparable primary labels: `p_full` targets original-route `CF-27 FULL_ROUTE_COMPLETED`; Recovery entry and safe recovered closure remain separate; PnL positivity requires complete reconciled economics at the forecast horizon/numeraire. Report attempted forecast count, exact joins, inferred joins, unresolved/censored labels and every invalid version before calibration scores. Missing outcomes cannot be dropped as complete cases without the resulting bias being explicit.

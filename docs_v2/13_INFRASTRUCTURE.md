@@ -356,3 +356,9 @@ These checks do not block documentary reconstruction; they block treating histor
 ## Traceability
 
 PASS 01 reviewed 514 Infrastructure-relevant requirements against original source locators. The evidence is in [Infrastructure Requirement Ledger](_analysis/pass01_infrastructure/INFRA_REQUIREMENT_LEDGER.md), including cross-domain requirements deliberately routed to future passes.
+
+## CORR-01 — Fine latency attribution and economic proof
+
+Named local timing points refine instrumentation without changing QF-084. Fine stages map non-overlapping work to its compute components. External `L_feed`, network `L_send` and `L_exchange` remain unavailable when timestamp semantics/clock evidence cannot separate them; an ACK round trip is not silently decomposed.
+
+Infrastructure promotion still requires like-for-like QF-084..093 evidence. A lower mean or benchmark minimum is only technical evidence: the required chain is valid measurement, controlled attribution, remeasurement, comparable funnel effect, actual economic effect, cost/uncertainty and rollback safety. See [Latency Taxonomy](_analysis/corr01_capture_observability/LATENCY_STAGE_TAXONOMY.md) and [Optimization Economic Value](_analysis/corr01_capture_observability/OPTIMIZATION_ECONOMIC_VALUE_CONTRACT.md).

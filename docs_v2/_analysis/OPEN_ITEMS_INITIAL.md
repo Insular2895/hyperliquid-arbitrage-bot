@@ -185,3 +185,20 @@ TTT ordering is not a new open decision: detection/Replay/Shadow may precede sop
 PASS 13 creates no new irreversible decision and closes none of `OPEN-001..028`. Provider/region/network, health/Risk/model/inventory/survival/retention, maker/cross-exchange/license/telemetry/HWC and formula-convention questions retain their existing owners and statuses.
 
 Pure architectural topology is now explicit. Four cross-domain consistency questions are deliberately `PASS14_CROSS_DOMAIN_GAP`, not new project decisions: serialized phase/evidence-artifact integration; Accounting master authority; consolidated Infra/Risk/Operations health vocabulary; and the Position Sizer organizational boundary. See `pass13_master_architecture/ARCHITECTURE_GAP_REGISTER.md`.
+
+## CORR-01 — Post-reconstruction calibration and implementation choices
+
+These items originate from `HUMAN_POST_RECONSTRUCTION`; they are not retroactive source gaps and do not renumber `OPEN-001..028`.
+
+| Item ID | Choice | Status | Owner / evidence required |
+|---|---|---|---|
+| `CORR01-CAL-001` | exact OpportunityEpisode gap, hysteresis, bridging and censoring policy | `CALIBRATED` | Participants/Data/Validation; replay stability and censor-aware empirical evidence |
+| `CORR01-CAL-002` | concrete timestamp/trace record representation and instrumentation library | `IMPLEMENTATION_CHOICE` | Data/Architecture after Phase 1 authorization; performance and compatibility tests |
+| `CORR01-CAL-003` | high-cardinality analytical trace sampling/retention policy | `CALIBRATED` | Recorder/Operations/Validation; bias, loss, incident and storage tests; critical journal unsampled |
+| `OPEN-015 / CORR01-REF-001` | metric/tracing/export/dashboard backend | `REMAINS OPEN` | Operations; must satisfy bounded-cardinality, client isolation and non-blocking contracts |
+| `CORR01-CAL-004` | histogram buckets, percentile estimator and tail minimum sample | `CALIBRATED` | Operations/Validation; accuracy, mergeability and low-sample behavior |
+| `CORR01-CAL-005` | acceptable instrumentation overhead and degradation thresholds | `CALIBRATED` | Infrastructure/Operations/Risk/Validation; disabled/enabled normal/stress comparison |
+| `CORR01-CAL-006` | any future decision-use threshold involving `ExecutionForecast.p_full` | `CALIBRATED; NO CURRENT GATE` | Risk/Simulator/Validation; label-version calibration, economic lift and scoped approval |
+| `CORR01-CAL-007` | attempt-level accounting component allocation/valuation details consumed by economic outcome | `DEFERRED TO CORR-05` | Accounting/Inventory/Execution; no positivity claim until complete |
+
+CORR-01 selects none of these values or tools. Missing choices cannot be replaced by undocumented defaults.

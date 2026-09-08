@@ -230,3 +230,18 @@ Resolved: `ROADMAP_CROSS_DOMAIN_GAP-001`, `003`, `004`. Routed to PASS14: `ROADM
 | Validation / Capability Manager | exact scoped maturity and permission manifest | Deployment, Risk, Execution | license/release/config cannot promote capability |
 
 Critical synchronous dependency cycles: **0**. Missing producers: **0**. Missing active consumers: **0**. Duplicate critical state owners: **0**. Unowned critical states: **0**. Remaining feedback loops are asynchronous and versioned; remaining `OPEN`/external dependencies are scoped in `pass14_cross_domain_consistency/RESIDUAL_CONSISTENCY_GAPS.md`.
+
+## CORR-01 — Capture observability dependency overlay
+
+| Producer / owner | New evidence contract | Consumers | Boundary preserved |
+|---|---|---|---|
+| Market Data / Graph | observation, reevaluation, cheap/exact evaluation and immutable Opportunity identities | Operations, Replay, Participants, Strategy | no dashboard or episode projector mutates topology/book/opportunity logic |
+| offline/near-line episode projector | versioned `OpportunityEpisodeId`, censoring and membership | Participants, Research, Operations | not exchange truth, runtime gate or hot-path dependency |
+| Simulator / Participants | frozen forecast bundle and label/horizon | Risk, Execution, Validation | prediction never becomes actual fill/completion |
+| Sizing / Risk | bounded size disposition and immutable permission | Execution, funnel projection | observability cannot infer or grant allow |
+| Execution / Recovery / Reconciliation | possible-send attempt, actual fills, state and final truth | Inventory, Accounting, Validation, Operations | projection changes no machine/transition |
+| Accounting | complete attempt PnL and valuation status | Risk, Validation, Operations, Infra economics | partial components do not imply positive PnL |
+| Data / Recorder | typed lineage, timing points, critical journal and projection versions | Replay, Operations, Validation | metric backend is not system of record; export never blocks Core |
+| Validation / Operations | metric populations, joins, calibration, overhead and trial evidence | Capability/Infra/Review | no automatic promotion or new `p_full` gate |
+
+Asynchronous cycle: actual outcomes train/calibrate later model versions only through Recorder/Research/Validation promotion. Synchronous critical cycles added: **0**.

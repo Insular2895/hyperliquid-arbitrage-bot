@@ -231,3 +231,9 @@ Equal events, resolved config, artifacts, formula semantics and seed must produc
 - [Replay Determinism Contract](_analysis/pass06_data_recorder_replay/REPLAY_DETERMINISM_CONTRACT.md)
 - [Schema Compatibility Matrix](_analysis/pass06_data_recorder_replay/SCHEMA_VERSION_COMPATIBILITY_MATRIX.md)
 - [Recorder and Replay](12_RECORDER_AND_REPLAY.md)
+
+## 27. CORR-01 — Funnel, timing and lineage evidence
+
+The frozen `RunManifest` and `DecisionTrace` shapes are not expanded ad hoc. Capture evidence integrates through typed, versioned linked records for reevaluation/evaluation, immutable Opportunity, optional derived episode, forecast bundle, candidate, sizing/Risk decisions, reservation, plan/execution, leg/intent/order/fill, Recovery, reconciliation and accounting outcome.
+
+Local timing records use named `T_*` points in one monotonic clock domain and retain optional wall/source timestamps separately. Every projected row exposes lineage, timing, outcome, economic and forecast/actual completeness. Missing joins are never repaired by timestamp proximity as canonical truth; inferred repairs are labeled and versioned. Required contracts are [Correlation and Lineage](./_analysis/corr01_capture_observability/CORRELATION_AND_LINEAGE_CONTRACT.md), [Timing Points](./_analysis/corr01_capture_observability/TIMING_POINT_CONTRACT.md) and [Storage/Cardinality](./_analysis/corr01_capture_observability/OBSERVABILITY_STORAGE_AND_CARDINALITY_POLICY.md).

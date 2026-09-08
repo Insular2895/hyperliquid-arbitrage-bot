@@ -31,3 +31,7 @@ Opportunity Engine owns deterministic current conversion outputs. Participants o
 ## Provenance
 
 Each candidate records RouteId/Version, GraphVersion, BookVersions, Metadata/Fee/Formula/Model versions, q/unit, direct/indirect/cycle outputs, classification and freshness. Stale results are not sent onward as current opportunities.
+
+## CORR-01 identities and boundaries
+
+Each route evaluation receives a stable `RouteEvaluationId`. Cheap completion/pass, exact completion/validity and emitted `OpportunityId` are separate stage facts. An `OpportunityId` represents one immutable exact-valid observation, not a continuous duration or attempt. Offline/near-line analytics may group repeated observations into a versioned `OpportunityEpisodeId`; grouping never changes this pipeline or hot-path permission.

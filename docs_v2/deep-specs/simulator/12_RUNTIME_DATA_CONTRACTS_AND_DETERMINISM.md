@@ -44,3 +44,7 @@ Critical states have one logical writer and immutable versioned snapshots. Paral
 ## Tests and failure
 
 Golden replay hash, 100-run determinism, multi-thread transition equality, clock/timer tests, seed repeatability, schema roundtrip, duplicate event/fill rejection, invalid region handling, point-in-time model/fee/config checks, and restart reconstruction are mandatory before authority. Any missing version/seed/fidelity/mode makes a result non-reproducible and therefore non-canonical evidence.
+
+## CORR-01 forecast-label binding
+
+Every `ExecutionForecast` used by a plan binds its horizon, route objective and `ForecastLabelVersion`. `p_full`, `p_partial`, `p_recovery` and `p_failure` are predictions and may be treated as one partition only when the label version defines mutually exclusive exhaustive actual classes. Plan-time output is immutable; later evaluation is a separately labeled counterfactual. See [Predicted vs Actual Capture Calibration](../../_analysis/corr01_capture_observability/PREDICTED_ACTUAL_CAPTURE_CALIBRATION.md).

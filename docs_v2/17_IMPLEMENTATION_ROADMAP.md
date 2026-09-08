@@ -406,3 +406,9 @@ Only after PASS 13, PASS 14, PASS 15, PASS 16 and explicit human approval may a 
 - [Validation Matrix](16_VALIDATION_MATRIX.md)
 - [Formula Book](04_FORMULA_BOOK.md)
 - [Source inventory](_analysis/SOURCE_INVENTORY.md)
+
+## 43. CORR-01 — Work mapped into existing phases
+
+CORR-01 creates no Phase 27. If Phase 1 is later authorized, typed identity/projection/label/timing version contracts belong there. Non-blocking capture and critical-evidence priority map to Phase 3; evaluation/Opportunity hooks to Phases 6 and 9; deterministic reconstruction/episodes to Phase 8; permission and actual outcome linkage to Phases 10–14; forecast-label freeze to Phase 18; Shadow population evidence to Phase 19; actual predicted-versus-actual calibration to Phase 20; economic optimization/scale comparisons to Phase 26.
+
+Each affected phase adds tests for exact populations, lineage completeness, clock/timing validity, backpressure/overhead and mode truth. This mapping changes no dependency order and authorizes none of the phases.

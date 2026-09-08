@@ -29,3 +29,7 @@ Every experiment saves a manifest and result containing run_id/dataset_id/strate
 ## Evidence-reference boundary
 
 Phase and evidence artifacts bind through existing typed identities. The producer emits an immutable artifact/report and `EvidenceId`; the evidence package references the applicable `RunManifest`, `DatasetId`, artifact hashes and domain-owned versions; `ValidationReport` aggregates EvidenceIds; `CapabilityManifest` links the evidence supporting each exact `ValidatedCapability`. This preserves the frozen `RunManifest` field set and prevents duplicated model, Atlas, infrastructure or phase-report schemas. Data owns serialization/version compatibility and referential integrity, each domain owns its artifact meaning, and Validation owns evidence sufficiency and promotion.
+
+## CORR-01 evidence projection
+
+Capture-funnel, episode, timing and outcome artifacts follow the same evidence-reference boundary: they link to the frozen manifest/trace and domain records rather than expanding them ad hoc. Projection, metric, segmentation, forecast-label and outcome-label versions are mandatory. Replay equality includes stage facts, denominator populations, derived episode IDs and timing validity. Detailed identity is canonical in [Operations deep spec 11](../operations/11_CAPTURE_FUNNEL_AND_LATENCY_ATTRIBUTION.md).

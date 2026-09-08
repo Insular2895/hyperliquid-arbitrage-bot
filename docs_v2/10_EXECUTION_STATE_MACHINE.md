@@ -288,3 +288,9 @@ Before implementation or Live reliance, revalidate current Hyperliquid support a
 - [Failures, reason codes, validation](deep-specs/execution/12_FAILURE_MODES_REASON_CODES_AND_VALIDATION.md)
 
 Analysis evidence, formula/data crosschecks, transition/failure matrices, requirement dispositions, external facts, conflicts, and legacy comparison are under `_analysis/pass04_execution/`.
+
+## 37. CORR-01 — Attempt and outcome projection
+
+An execution is analytically `ATTEMPTED` only when the first risk-increasing intent enters `SENT` or equivalent evidence shows transmission may have occurred. A proven pre-transmission failure is not an attempt; an exception/timeout after possible transmission is an attempt and may be `UNKNOWN`. The attempt remains in all originating cohorts.
+
+Actual any-fill, order partial fill, leg full fill, intermediate exposure, Recovery, terminal reconciliation and economic outcome are independent axes. `FULL_ROUTE_COMPLETED` for empirical rate purposes requires actual satisfaction of the original revalidated route objective, canonical `COMPLETED`, and no Recovery entry. The existing route machine may reach `COMPLETED` after Recovery; that safe closure is reported as recovered, not retroactively as original-route full completion. No transition or Recovery/Reconciliation behavior changes. See [Outcome Label Contract](./_analysis/corr01_capture_observability/OUTCOME_LABEL_CONTRACT.md).

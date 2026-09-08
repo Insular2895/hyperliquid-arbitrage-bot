@@ -189,3 +189,9 @@ Predeclare hypothesis, primary/guardrail metrics, scope, validity rules and stop
 ## 42. PASS boundary and remaining work
 
 PASS 10 defines evidence maturity and operations contracts. The later build/validate/scale journey owns implementation sequencing; the Formula audit owns exact equation/unit verification. Current exchange/platform/security facts require external revalidation. Thresholds, windows, sample sufficiency and tool choices remain calibrated/open.
+
+## 43. CORR-01 — Capture observability validation
+
+M1/M2 evidence must cover deterministic stage projection, unique-ID counts, every rejection/disposition boundary, fan-out/fan-in correlation, episode segmentation/censoring, missing/inferred joins, named timing endpoints/clock validity, non-overlap and denominator-zero/small-sample behavior. Fixtures include proven pre-send failure, ambiguous send, known reject, zero/partial/full fills, intermediate exposure, `UNKNOWN` with late resolution, Recovery success/failure, reconciliation delay and complete positive/zero/negative PnL.
+
+Shadow validates `would_*` completeness/latency only. MicroLive/Live validation freezes decision-time predictions, joins exact actual labels and reports join completeness, calibration, coverage/tails and bias by comparable slice. Instrumentation is tested disabled/enabled under normal/stress load for latency, scheduler, drops, backlog and correctness. Optimization promotion requires the full technical→funnel→economic chain and no safety/replay regression. Details: [Capture Funnel and Latency Attribution](deep-specs/operations/11_CAPTURE_FUNNEL_AND_LATENCY_ATTRIBUTION.md).

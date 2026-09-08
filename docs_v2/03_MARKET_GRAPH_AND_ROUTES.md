@@ -184,3 +184,9 @@ Required properties include bid/ask direction, round-trip spread cost, depth bou
 ## Sources
 
 Original sources SRC-001–SRC-008 as inventoried in [`_analysis/SOURCE_INVENTORY.md`](./_analysis/SOURCE_INVENTORY.md). No external web research was performed in PASS08.
+
+## 32. CORR-01 — Evaluation, Opportunity and episode semantics
+
+One usable market observation may trigger many route reevaluations. `RouteEvaluationId` identifies one cheap/exact evaluation at explicit state and formula versions. Cheap-screen pass, exact-evaluation completion, exact-valid candidate and emitted `OpportunityId` are separate evidence boundaries; none implies Risk eligibility or an attempted order.
+
+`OpportunityId` denotes one immutable exact-valid observation. Repeated observations may be grouped offline/near-line into a versioned `OpportunityEpisodeId` for one directed route/strategy/mode/predicate. Episode segmentation, gaps, hysteresis and censoring are calibrated and never block the hot path. See [Market Episode Identity](./_analysis/corr01_capture_observability/MARKET_EPISODE_IDENTITY_CONTRACT.md) and the [canonical event map](./_analysis/corr01_capture_observability/FUNNEL_STAGE_TO_CANONICAL_EVENT_MAP.md).

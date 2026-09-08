@@ -163,3 +163,9 @@ Still calibrated/open: binary RAW codec; chunk duration; batching; queue capacit
 - [Replay Mode Matrix](_analysis/pass06_data_recorder_replay/REPLAY_MODE_MATRIX.md)
 - [Replay Determinism Contract](_analysis/pass06_data_recorder_replay/REPLAY_DETERMINISM_CONTRACT.md)
 - [Data Contracts](11_DATA_CONTRACTS.md)
+
+## 28. CORR-01 — Reconstructible funnel evidence
+
+Recorder priority preserves the critical execution journal while capturing bounded IDs/timing markers sufficient to reconstruct funnel stages and denominators. Episode construction, trace joins, formatting, aggregation and export remain offline/near-line; they do not block Core. Any sampling/loss is explicit, counted and prohibited for safety-critical order/fill/Risk/Recovery/Reconciliation evidence.
+
+Replay of the same ordered evidence and projection/segmentation/label versions must reproduce stage facts, `OpportunityEpisodeId`s, timing validity and outcome labels. Replay, Shadow, MicroLive and Live populations retain mode provenance; `would_*`, simulated and actual outcomes are never pooled. See [Funnel Stage Event Map](./_analysis/corr01_capture_observability/FUNNEL_STAGE_TO_CANONICAL_EVENT_MAP.md).

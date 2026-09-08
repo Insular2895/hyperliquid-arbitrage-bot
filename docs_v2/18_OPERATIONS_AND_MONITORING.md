@@ -178,3 +178,9 @@ Continuously join predictions to outcomes, monitor support/error/coverage/econom
 ## 44. Open/calibrated operations choices
 
 Telemetry backend, dashboard product, paging provider, numeric thresholds, windows, response-time objectives, retention capacities, exact cadence and final command/API spellings remain calibrated/open. Their chosen implementations must honor these contracts and client isolation.
+
+## 45. CORR-01 — Canonical funnel and latency views
+
+Operations reports explicit stage counts/conversions and outcome branches; it never reports bare “capture” or “success.” Every metric declares numerator, denominator, unique-ID population, exclusions, unit, event/cohort time, window/maturity/`AS_OF`, dimensions, source records, missingness, minimum sample, status and bias. `UNKNOWN`, unresolved, censored, invalid-clock and missing-join counts remain visible.
+
+Required views include observation→evaluation amplification, BBO/exact dispositions, Opportunity observations and versioned episodes, forecast/candidate/Risk/size/reservation/plan/attempt selection, any/conditional fill, intermediate exposure, original full-route completion, Recovery, reconciliation, economic completeness/positivity, forecast-actual joins and named latency tails. Raw IDs stay in traces/journal, never unbounded metric labels. See [Operations deep spec 11](deep-specs/operations/11_CAPTURE_FUNNEL_AND_LATENCY_ATTRIBUTION.md) and the [Metric Catalog](_analysis/corr01_capture_observability/CAPTURE_METRIC_CATALOG.md).

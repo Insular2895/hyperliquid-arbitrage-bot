@@ -2,6 +2,10 @@
 
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
+## CORR-01 post-reconstruction target overlay
+
+`HDC-001..006` are routed to Masters 00/03/07/09/10/11/12/13/16/17/18/19 and canonical `deep-specs/operations/11_CAPTURE_FUNNEL_AND_LATENCY_ATTRIBUTION.md`. Detailed analysis resides in `_analysis/corr01_capture_observability/`. This overlay adds no `REQ-*` row, changes no PASS 00 source destination and modifies no QF. Data/Recorder own typed evidence and reconstruction; owning runtime domains retain state; Operations/Validation own projection, metrics and evidence sufficiency. Destinationless CORR-01 human decisions: **0**.
+
 ## PASS 15 source no-loss overlay
 
 All **2,590/2,590** stable requirements below were rejoined to their final physical Master/deep-spec or explicit non-active trace destination. The row-level source-item join is in `pass15_source_no_loss/FINAL_SOURCE_ITEM_TRACEABILITY.csv`. PASS 15 also created **79** separate `PASS15-SRC...-REC` items without renumbering or retroactively changing PASS 00: 2 source intervals outside extraction ranges and 77 independently implementable concepts nested inside six over-broad PASS 00 ranges. Destinationless current requirements: **0**.
