@@ -173,3 +173,9 @@ Replay of the same ordered evidence and projection/segmentation/label versions m
 ## 29. CORR-02 — Queue and performance evidence boundary
 
 Recorder handoff may compare bounded blocking/non-blocking and lock-free implementations only after profiling. Lock-free is not mandatory. Any candidate preserves priority, order, duplicate/loss accounting, capacity, overflow, shutdown and backpressure semantics; critical account/fill/execution evidence is never dropped to preserve lower-priority market telemetry. Allocation/copy or queue instrumentation declares its overhead and missingness. See the [Lock-Free Evidence Gate](_analysis/corr02_hot_path_performance/LOCK_FREE_EVIDENCE_GATE.md).
+
+## 30. CORR-03 — Failure retention and label replay
+
+Recorder retains every real attempt, including known zero fill, partial/later-leg fill or reject, cancel race, UNKNOWN/query history, Recovery partial/failure, negative PnL, residual exposure and safe no-exposure terminal, plus the frozen prediction/feature snapshot. Success-only or completed-only datasets are invalid.
+
+Replay reconstructs path flags and terminal labels from the same ordered canonical events without a second truth store. HJ-001..010 fault fixtures reproduce state, unique-fill ledger, Inventory, Reservations, Recovery, Reconciliation and DecisionTrace. Emulator/counterfactual labels remain truth only inside their declared run and cannot be pooled as Live actual. See [Retention Contract](_analysis/corr03_execution_completion/ZERO_PARTIAL_UNKNOWN_DATA_RETENTION_CONTRACT.md) and [HJ Validation Matrix](_analysis/corr03_execution_completion/HJ_FAILURE_SUITE_VALIDATION_MATRIX.md).

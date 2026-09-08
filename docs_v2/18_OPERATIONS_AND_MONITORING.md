@@ -190,3 +190,9 @@ Required views include observation→evaluation amplification, BBO/exact disposi
 Bounded operational views include route lookup duration/degree, evaluations per event, BBO C1–C4 dispositions, full-L2 survivor and FastL1 eligibility/fallback rates, levels walked, duplicate work avoided, stale proposal/discard/revalidation, queue wait/full/backpressure and capacity-growth anomalies. Allocation/copy/cache/CPU/PMU evidence is collected in declared benchmark or sampled diagnostic modes when useful; unsupported or perturbing instruments are not represented as continuous production truth.
 
 Labels use bounded route family/direction/reason/build/profile cohorts, not raw RouteId/EventId/OpportunityId. Performance anomalies never weaken Risk, version checks, reservations, UNKNOWN handling, Recovery or evidence priority.
+
+## 47. CORR-03 — Execution outcome and completion-model health
+
+Expose actual full-route completion with attempt/resolved/unresolved denominators; zero-fill, partial-fill, UNKNOWN and Recovery entry/success/failure rates; residual exposure; exact predicted/actual join completeness; QF-095/096 and reliability buckets; support/OOD/fallback, drift and inference latency. Slice by bounded strategy/mode, size-depth, route/market family, latency/regime, infra and model version where support permits.
+
+Raw Execution/Opportunity/Route/CLOID IDs remain in traces, never metric labels. Alerts may cover completion collapse, UNKNOWN/Recovery spikes, join failure or calibration drift, with calibrated thresholds and market/infra attribution. New evidence feeds offline recalibration; Live weights and promotion never self-modify. See [Completion Calibration Contract](_analysis/corr03_execution_completion/COMPLETION_CALIBRATION_CONTRACT.md).

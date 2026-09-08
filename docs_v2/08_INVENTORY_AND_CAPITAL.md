@@ -203,3 +203,9 @@ Promotion proceeds Replay -> Shadow -> Micro-live -> stepped Live capacity. Requ
 - [Capital action boundaries](deep-specs/inventory-capital/09_REBALANCE_RECOVERY_AND_CAPITAL_ACTION_BOUNDARIES.md)
 - [PnL and capital efficiency](deep-specs/inventory-capital/10_ECONOMIC_PNL_ACCOUNTING_AND_CAPITAL_EFFICIENCY.md)
 - [Validation and scaling](deep-specs/inventory-capital/11_VALIDATION_REPLAY_SHADOW_MICROLIVE_AND_SCALING.md)
+
+## 34. CORR-03 — Prediction cannot override actual capital state
+
+Completion probabilities and empirical rates never mutate Inventory, Reservations, balances or Recovery exposure. Actual unique fills and reconciled account events remain authority. A route may complete with negative PnL; a non-completion may have little loss; Recovery success remains separate from original-route completion and economic positivity.
+
+Any future use of calibrated completion probability in sizing or `Q_validated` is deferred to CORR-05 and requires size/depth support plus a no-double-count audit of QF-056/057/063. CORR-03 defines no `q × p_full` rule. See [Actual Outcome Taxonomy](_analysis/corr03_execution_completion/ACTUAL_EXECUTION_OUTCOME_TAXONOMY.md).

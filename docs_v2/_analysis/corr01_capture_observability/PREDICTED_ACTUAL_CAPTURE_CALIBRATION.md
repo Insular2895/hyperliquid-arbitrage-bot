@@ -22,16 +22,16 @@ The join preserves zero-fill, reject, `UNKNOWN`, Recovery and negative-PnL outco
 
 | Forecast object | Primary actual label |
 |---|---|
-| `p_full` | `CF-27 FULL_ROUTE_COMPLETED` by forecast horizon |
-| `p_partial` | nonzero fill/exposure without `CF-27`, excluding Recovery label if the frozen partition says so |
-| `p_recovery` | `CF-28 RECOVERY_ENTERED` by horizon |
-| `p_failure` | exact residual failure class under the same mutually exclusive `ForecastLabelVersion` |
+| `p_full` | for `ROUTE_OUTCOME_RESOLVED_V1`, eventual `CF-27 FULL_ROUTE_COMPLETED`, actual-fill proved, no Recovery |
+| `p_partial` | eventual resolved non-completion with nonzero strategy fill and no Recovery entry |
+| `p_recovery` | eventual resolved non-completion with `CF-28 RECOVERY_ENTERED`, regardless of recovery result/PnL |
+| `p_failure` | residual eventual resolved zero-fill/no-Recovery non-completion; never `UNKNOWN` or negative PnL merely by itself |
 | expected/quantile fill quantity | actual unique fill quantity by order/leg/route scope |
 | expected fill time | actual local send-to-fill duration, with censoring |
 | expected fees/slippage | reconciled actual components in identical units |
 | expected PnL/quantiles/probability positive | economically complete attempt PnL at identical horizon/numeraire |
 
-If the four `p_*` labels are not mutually exclusive and exhaustive, report them as separate binary forecasts; do not force a multinomial score or renormalize.
+`ROUTE_OUTCOME_RESOLVED_V1` is mutually exclusive/exhaustive over eventual terminal classes; unresolved/censored/invalid outcomes at a cutoff remain unscored coverage. If another `ForecastLabelVersion` does not prove an exclusive/exhaustive partition, report separate binary forecasts; do not force a multinomial score or renormalize.
 
 ## Required diagnostics
 

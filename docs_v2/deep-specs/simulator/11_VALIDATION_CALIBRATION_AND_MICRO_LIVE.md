@@ -40,3 +40,7 @@ New response/queue/simulator versions run on the same point-in-time data and cos
 ## Drift, precedence, and kill switch
 
 Monitor calibration error, PnL bias, distribution coverage, model disagreement, OOD frequency, and support drift by slice. `Backtest Cannot Override Live Evidence`: persistent statistically supported live contradiction wins. Risk consumes model/version/confidence/drift and owns the `Simulator Calibration Kill Switch`: reduce size, fall back conservatively, or disable dependent strategies. Three isolated trades are not automatically persistent drift.
+
+## CORR-03 completion baseline
+
+Completion calibration freezes the exact decision-time `p_full`, joins it to authoritatively resolved `Y_full_route`, and evaluates chronologically with QF-095/096, reliability/support/slice evidence and unresolved/invalid coverage. The first comparators are a compatible-scope constant rate and a transparent empirical hierarchy; GBDT or deeper models remain Challengers. TT, TTT and maker modes require separate evidence. No completion output affects Live decisions before explicit promotion, and weights never self-modify online. See [Completion Calibration Contract](../../_analysis/corr03_execution_completion/COMPLETION_CALIBRATION_CONTRACT.md).

@@ -118,3 +118,7 @@ Promotion evidence follows `measure -> attribute -> change -> remeasure -> funne
 - [Metric catalog](../../_analysis/corr01_capture_observability/CAPTURE_METRIC_CATALOG.md)
 - [Outcome labels](../../_analysis/corr01_capture_observability/OUTCOME_LABEL_CONTRACT.md) and [predicted/actual calibration](../../_analysis/corr01_capture_observability/PREDICTED_ACTUAL_CAPTURE_CALIBRATION.md)
 - [Storage/cardinality](../../_analysis/corr01_capture_observability/OBSERVABILITY_STORAGE_AND_CARDINALITY_POLICY.md), [overhead](../../_analysis/corr01_capture_observability/INSTRUMENTATION_OVERHEAD_CONTRACT.md), and [optimization economics](../../_analysis/corr01_capture_observability/OPTIMIZATION_ECONOMIC_VALUE_CONTRACT.md)
+
+## CORR-03 outcome/calibration extension
+
+Operations keeps zero, partial, UNKNOWN, Recovery and residual-exposure incidence beside attempt/resolution denominators, joins frozen forecasts to terminal labels, and reports QF-095/096, reliability support, OOD/fallback, drift and inference latency by bounded slices. `RECOVERED` is never counted as original-route completion. See the [Outcome Taxonomy](../../_analysis/corr03_execution_completion/ACTUAL_EXECUTION_OUTCOME_TAXONOMY.md) and [Calibration Contract](../../_analysis/corr03_execution_completion/COMPLETION_CALIBRATION_CONTRACT.md).

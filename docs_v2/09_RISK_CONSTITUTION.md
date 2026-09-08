@@ -329,3 +329,9 @@ Traceability and source locators are in `docs_v2/_analysis/pass05_risk/`.
 ## 33. CORR-01 — Observability is not permission
 
 Funnel stages, empirical rates and latency dashboards do not grant Risk permission. `RISK_ELIGIBLE` is projected only from a current immutable allowed `RiskDecision`; absence of a reject is not an allow. CORR-01 introduces no `p_full` threshold or new gate. Any future decision-use threshold remains calibrated, versioned, Risk-owned and subject to the existing hierarchy, validation and capability scope.
+
+## 34. CORR-03 — Completion prediction has no current Risk authority
+
+CORR-03 adds no hard `p_full` threshold, automatic reject or permissive fallback. Completion artifacts begin in observe/calibrate mode and may influence no ranking, sizing, ExecutionEV, RAEV or capacity decision until Validation proves point-in-time integrity, resolved support, temporal OOS calibration, baseline/economic lift, slice stability, OOD/fallback, runtime safety, Shadow and capital-relevant Micro-live evidence.
+
+Missing/OOD prediction never means permission. A future hard threshold is a separate Risk-owned, human-reviewed policy after CORR-05 composition review. UNKNOWN/Recovery scopes retain all existing restrictions. See [Completion Model Promotion Gate](_analysis/corr03_execution_completion/COMPLETION_MODEL_PROMOTION_GATE.md).

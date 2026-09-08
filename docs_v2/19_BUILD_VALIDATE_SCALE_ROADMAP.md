@@ -370,3 +370,9 @@ Every performance change follows:
 `BASELINE → PROFILE → IDENTIFY HOTSPOT → FORM HYPOTHESIS → MAKE SEMANTICALLY SAFE CHANGE → PARITY → MICROBENCH → REPLAY → SHADOW → CAPTURE COMPARISON → ECONOMIC VALIDATION IF MATERIAL`.
 
 Stages 1–4 establish realistic event, book, graph, BBO and NetConvert workloads; Stage 5 supplies deterministic parity; later stages establish behavior under forecasts, Shadow and bounded capital only through their existing gates. A transparent optimization must retain the same DecisionTrace. A scheduling/coalescing change is explicitly semantic, versioned and human-reviewed. A local latency win without stable end-to-end, capture and robust economic evidence cannot justify promotion or infrastructure/language escalation. See the [Profiling and Bottleneck Protocol](_analysis/corr02_hot_path_performance/PROFILING_AND_BOTTLENECK_PROTOCOL.md).
+
+## 41. CORR-03 — Observe, resolve, calibrate, then consider influence
+
+The completion sequence is `observe real attempts → reconcile → derive path and terminal labels → build constant/simple empirical baseline → chronological OOS → Shadow observe-only → Micro-live actual calibration → compare Challengers → explicitly promote only if useful → recalibrate or demote on drift`. TT, TTT and maker modes do not inherit one another’s evidence; q/infra/policy distribution changes trigger support review.
+
+The model remains data/offline baseline until the [Promotion Gate](_analysis/corr03_execution_completion/COMPLETION_MODEL_PROMOTION_GATE.md) is passed. CORR-03 adds no hard Risk gate, formula integration, sizing authority or online learning. Harjus is comparative evidence only. CORR-04 may later compare infrastructure against actual completion evidence; CORR-05 owns economic composition and double-count review.

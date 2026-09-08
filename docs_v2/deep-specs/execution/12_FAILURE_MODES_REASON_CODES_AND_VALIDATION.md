@@ -48,3 +48,7 @@ Each transition emits a structured record with entity, from/to, reason, timestam
 ## Promotion/failure criteria
 
 Capabilities advance only when required lower-layer evidence passes and observed Micro-live behaviour remains calibrated. Failure includes invariant violation, duplicate economic application, terminal regression, theoretical-size continuation, false zero/cancel, reservation leak/reuse, unresolved mismatch admitted to `READY`, mode divergence, or missing provenance. Numeric tolerances/maturity gates are set by Validation/Risk/Data owners and are not invented here.
+
+## CORR-03 HJ failure evidence
+
+`HJ-001..010` are deterministic project validation scenarios covering first-leg zero/partial, later-leg zero/partial, lost response/UNKNOWN, cancel race, maker partial/cancel, crash/restart, duplicate/late fill and constrained Recovery. They assert existing states only and retain path flags separately from terminal analytical class. Only HJ-001 and HJ-003 are directly evidenced by primary Harjus production material; the remaining IDs are project-derived scenarios. See [HJ Failure Suite](../../_analysis/corr03_execution_completion/HJ_FAILURE_SUITE.md) and [Validation Matrix](../../_analysis/corr03_execution_completion/HJ_FAILURE_SUITE_VALIDATION_MATRIX.md).

@@ -12,10 +12,10 @@ No metric, alert, gate or report may use bare `capture`, `capture rate` or `succ
 |---|---|---|---|
 | `EdgeSurvivalAtArrivalProbability` | QF-048 `E_L[S(L)]` | model distribution, not an empirical count cohort | full-route capture probability |
 | `InfrastructureEdgeSurvivalAtArrivalProbability` | QF-085 `E_{L_s}[S(L_s)]` for infrastructure candidate `s` | aligned model and infrastructure latency distribution | execution success rate |
-| `ExecutionForecast.p_full` | frozen model probability that the candidate reaches the forecast’s explicitly versioned full-completion label within its horizon | forecast distribution for one candidate | actual full-route completion |
-| `ExecutionForecast.p_partial` | frozen probability of nonzero actual fill/exposure without forecast-label full completion within horizon | same candidate/horizon and mutually exclusive label version | observed partial-fill rate |
-| `ExecutionForecast.p_recovery` | frozen probability that Recovery becomes required within horizon | same candidate/horizon | observed recovery-entry rate |
-| `ExecutionForecast.p_failure` | frozen residual mutually exclusive failure-label probability under the forecast label/version | same candidate/horizon | any exchange reject or negative PnL |
+| `ExecutionForecast.p_full` | under `ROUTE_OUTCOME_RESOLVED_V1`, frozen probability of eventual original-route completion proved by actual fills with no Recovery entry | one real-attempt candidate and frozen features | actual full-route completion |
+| `ExecutionForecast.p_partial` | under that profile, frozen probability of eventual non-completion with strategy fill and no Recovery entry | same attempt population; not conditional on prior-leg success | observed partial-fill incidence |
+| `ExecutionForecast.p_recovery` | under that profile, frozen probability of eventual non-completion that enters Recovery, irrespective of Recovery success/PnL | same attempt population | probability Recovery succeeds |
+| `ExecutionForecast.p_failure` | under that profile, frozen residual eventual zero-fill/no-Recovery non-completion probability | same attempt population | `UNKNOWN`, any reject, or negative PnL |
 | `FullRouteCompletionRate` | attempts meeting `CF-27` | `ExecutionAttemptCount` in identical mode/scope/window, with unresolved shown separately | QF-048/QF-085 capture |
 | `FirstLegAnyFillRate` | attempts with at least one actual fill on first intended leg | attempts that reached/attempted first leg, as explicitly selected | full-route completion |
 | `ConditionalLegNFullFillRate` | leg-N full fills | executions that actually reached and attempted leg N | unconditional attempt success |
@@ -28,6 +28,8 @@ No metric, alert, gate or report may use bare `capture`, `capture rate` or `succ
 ## Forecast label version
 
 `ExecutionForecast` must bind `ForecastLabelVersion`, forecast horizon, route objective, execution mode, candidate size, market/config/model/formula/schema versions and issue time. `p_full + p_partial + p_recovery + p_failure = 1` only when that exact label version declares a mutually exclusive exhaustive partition. Missing/invalid labels invalidate the probability vector; consumers may not silently renormalize it.
+
+CORR-03 closes `ROUTE_OUTCOME_RESOLVED_V1` as an eventual-terminal partition. Unresolved/censored/invalid at the analysis cutoff is observation coverage, not `p_failure`; scoring discloses it separately. Other versions retain the general rule above.
 
 For CORR-01, the comparable actual `full` label is `CF-27 FULL_ROUTE_COMPLETED`. Recovery entry is separately observable. A safe route closure reached after Recovery remains canonical Execution `COMPLETED` where the existing state machine says so, but it does not retroactively satisfy the original full-route label.
 

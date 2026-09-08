@@ -11,14 +11,19 @@ DOCUMENTATION STATUS: AWAITING FINAL HUMAN REVIEW
 | Rust primary sources inspected | Cargo profiles; rustc codegen/PGO; std atomic/Vec; Rust Nomicon FFI/layout |
 | Linux performance sources inspected | perf stat/event/sched/list; kernel allocation profiling |
 | Current hot path mapped | `YES` |
+| BBO: safe filter classification complete | `YES` |
 | BBO classifications | `BBO-C1..C4 SPECIFIED` |
 | Safe BBO permanent rejectors proven | existing C1 validity; no complete new economic C2 promoted |
 | BBO heuristic-only candidates | products/midpoints/learned rankings and unproved bounds are C4 |
 | BBO size gate semantics | `FAST-PATH ELIGIBILITY / FULL-L2 FALLBACK`, never route rejection alone |
 | L1 NetConvert specialization | `SPECIFIED` |
+| L2/NetConvert remains economic authority | `YES` |
 | Fast/full parity | `EXACT` |
 | New QF | `0` |
+| Formula changes | `0` |
 | Formula semantic changes | `0` |
+| Risk changes | `0` |
+| Execution behavior changes | `0` |
 | NetConvert economic semantic changes | `0` |
 | `pair_to_routes` logical semantic changes | `0` |
 | Dense runtime index | candidate/specification only; generation-local |
@@ -34,8 +39,10 @@ DOCUMENTATION STATUS: AWAITING FINAL HUMAN REVIEW
 | Lock-free | `EVIDENCE-GATED` |
 | Lock-free mandatory components | `0` |
 | Rust baseline | `PRESERVED` |
+| Rust: production baseline | `YES` |
 | Rust optimization ladder | `R0–R11 SPECIFIED` |
 | C++ baseline | `NO` |
+| C++: not baseline | `YES` |
 | C++ escalation gate | `12 CONDITIONS SPECIFIED` |
 | C++ first-candidate exclusions | BBO C2, NetConvert, Risk, Inventory, Reservations, Execution, Recovery, Reconciliation, Accounting, nonce/signer/capability |
 | Risk moved to C++ | `NO` |

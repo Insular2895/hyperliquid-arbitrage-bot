@@ -418,3 +418,9 @@ Each affected phase adds tests for exact populations, lineage completeness, cloc
 No Phase 27 is added. Phase 1 defines strong canonical IDs and interfaces capable of later generation-local dense mapping without prematurely selecting it. Phase 4 measures Book update/layout. Phase 6 proves reverse-index membership and representation parity. Phase 7 builds full-L2 QF-016 first, then only an exact eligible FastL1 challenger. Phase 8 supplies deterministic Replay/DecisionTrace parity. Phase 9 measures BBO filter quality, work amplification and exact-tuple dedup. Phase 15 profiles bounded feature work. Phase 19 compares transparent/scheduling changes in Shadow. Phase 26 applies the complete optimization/economic gate.
 
 Each optimization follows the [Rust ladder](_analysis/corr02_hot_path_performance/RUST_OPTIMIZATION_LADDER.md). Early simple correct implementations are champions; dense storage, reuse, lock-free queues, compiler profiles, PGO and C++ remain evidence-gated candidates. Implementation is still unauthorized.
+
+## 45. CORR-03 — Work mapped into existing phases
+
+No Phase 27 is added. Phase 3 preserves outcome/prediction evidence; Phase 8 reconstructs labels and HJ fixtures; Phases 12–14 prove failure, transport, Recovery and Reconciliation semantics; Phase 18 maps Simulator probabilities and builds the constant/simple baseline; Phase 19 runs observe-only; Phase 20 supplies first deliberate actual TT calibration. TTT is separately evidenced; Phase 21 may add validated Participant features; Phase 22 compares higher fidelity; Phase 23 separately validates maker completion; Phase 26 evaluates decision/economic value and runtime.
+
+See [CORR-03 Roadmap Impact](_analysis/corr03_execution_completion/CORR03_ROADMAP_IMPACT.md). This mapping authorizes no implementation or capital.

@@ -313,3 +313,9 @@ This pass does not browse or revalidate live facts. Before depending on them, re
 ## Sources
 
 Original sources SRC-001..008, with SRC-004 authoritative for formulas, SRC-005 for Risk/Data contracts, SRC-006 for validation/activation and SRC-008 for Simulator interaction. SRC-007 is the principal detailed participant-model source. PASS 00 is a locator, not design authority.
+
+## 25. CORR-03 — Route-completion boundary
+
+Participant models may provide point-in-time survival, liquidity response, competition, maker-fill, regime and cross-market features to the Simulator’s completion forecast. They do not own full-route actual truth, `Y_full_route`, the F/P/R/X partition, Execution state or model promotion.
+
+Route-level completion is calibrated directly against authoritative real-attempt outcomes. Per-leg rates remain conditional diagnostics and are never multiplied under an unproved independence assumption. New Participant versions require point-in-time temporal OOS validation before use as completion features. See [ExecutionForecast Probability Audit](_analysis/corr03_execution_completion/EXECUTION_FORECAST_PROBABILITY_AUDIT.md).

@@ -245,3 +245,11 @@ A dense runtime index is not a canonical ID. It is valid only with its immutable
 Transparent dedup equality binds the complete consumed input tuple: route and ordered book versions, fee, metadata, graph/index, FormulaVersion, q, execution/protection context and any feature/model/config versions. A hash collision or equal visible price is not equality. Distinct ordered events remain distinct.
 
 Performance records link to existing RunManifest/build/config/dataset identities through compatible typed artifacts rather than expanding frozen schemas ad hoc. They declare benchmark workload, instrumentation and cold/warm/steady population. See [Dense Runtime ID Contract](_analysis/corr02_hot_path_performance/DENSE_RUNTIME_ID_CONTRACT.md).
+
+## 29. CORR-03 — Completion evidence contracts
+
+Under existing schema evolution rules, a `DecisionTimeFeatureSnapshot` freezes point-in-time inputs before first possible risk-increasing transport effect and binds the exact frozen `ExecutionForecast`. The predicted/actual join uses typed candidate/execution/opportunity identities and all relevant label/model/formula/config/book/fee/metadata/infra versions. Post-outcome reconstruction cannot overwrite the frozen side.
+
+`ExecutionOutcomeLabel` is a derived, revisioned record from actual unique exchange/account events plus Execution/Recovery/Reconciliation. It carries path flags, terminal class, `Y_full_route`, resolution/censoring/evidence-validity and separate economic linkage. Missing, not-applicable, unresolved, invalid and OOD are distinct. Replay/Shadow/counterfactual records carry mode/fidelity and never become Live actual labels. See [Dataset Requirements](_analysis/corr03_execution_completion/CORR03_DATASET_SCHEMA_REQUIREMENTS.md), [Snapshot Contract](_analysis/corr03_execution_completion/DECISION_TIME_FEATURE_SNAPSHOT_CONTRACT.md) and [Join Contract](_analysis/corr03_execution_completion/PREDICTED_ACTUAL_JOIN_CONTRACT.md).
+
+Absent fields require schema version, compatibility and migration review; CORR-03 silently mutates no frozen structure.

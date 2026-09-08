@@ -48,3 +48,7 @@ Golden replay hash, 100-run determinism, multi-thread transition equality, clock
 ## CORR-01 forecast-label binding
 
 Every `ExecutionForecast` used by a plan binds its horizon, route objective and `ForecastLabelVersion`. `p_full`, `p_partial`, `p_recovery` and `p_failure` are predictions and may be treated as one partition only when the label version defines mutually exclusive exhaustive actual classes. Plan-time output is immutable; later evaluation is a separately labeled counterfactual. See [Predicted vs Actual Capture Calibration](../../_analysis/corr01_capture_observability/PREDICTED_ACTUAL_CAPTURE_CALIBRATION.md).
+
+## CORR-03 resolved route-outcome profile
+
+`ROUTE_OUTCOME_RESOLVED_V1` partitions eventual real-attempt terminal outcomes into original-route completion without Recovery (`p_full`), non-completion with strategy fill and no Recovery (`p_partial`), non-completion with Recovery entry (`p_recovery`), and residual resolved zero-fill/no-Recovery non-completion (`p_failure`). UNKNOWN/unresolved at an analysis cutoff is missing terminal observation, not failure mass. Other label versions retain separate-binary semantics unless their partition is proven. See [ExecutionForecast Probability Audit](../../_analysis/corr03_execution_completion/EXECUTION_FORECAST_PROBABILITY_AUDIT.md).
