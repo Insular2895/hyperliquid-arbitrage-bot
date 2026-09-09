@@ -20,7 +20,12 @@ Research may produce evidence but has no production authority. Future means comp
 | TM/MM modes | Future/type-supported, default-disabled | no initial activation/evidence sequence | explicit product choice and mode-specific safety/evidence plan |
 | Bridge/Capital Relocation | later V1, separately gated | needs history, exits, persistence and `STAY` comparison | phases/stages 25/17 evidence and approval |
 | Horizontal/vertical capital scale | later evidence scope | current validation does not transfer automatically | new market/route or next-q-band CapabilityManifest |
+| Strategy Discovery / Feature Registry / StrategySpec | Future, activation-forbidden | baseline and deterministic evidence/reporting must exist first | complete baseline gate plus point-in-time and OOS evidence |
+| Parameter search | Future Research | search can amplify overfit and cannot tune Risk gates | declared family/budget, untouched temporal OOS, stability and multiplicity controls |
+| Monte Carlo robustness | Future Research | calibrated distributions and canonical Simulator integration are prerequisites | Replay first; support/correlation/convergence/exact-once validation |
+| Champion/Challenger | Future last layer | promotion/ownership/rollback must remain explicit | Replay/OOS/MC, Shadow, separately authorized Micro-live, human decision |
+| Strategy drift research | Future final layer | no online Live self-learning or automatic mutation | calibrated detectors, hysteresis, safe demotion/fallback and human authority |
 
 Rejected production claims include: exact alternate-world simulation; invented competitor identities; generic graph search on every tick; BBO-only acceptance; planned fills as Inventory; blind order retry; unbounded Recovery; license as safety authority; “more capital means more size”; and a throwaway MVP that bypasses final-capable interfaces.
 
-The human may approve the documentation and Phase 1 while every non-blocking Research/Future item remains open.
+The human may approve the documentation and Phase 1 while every non-blocking Research/Future item remains open. The detailed [strategy-research specification](../deep-specs/strategy-research/README.md) documents compatibility only; it is not an activation backlog commitment.

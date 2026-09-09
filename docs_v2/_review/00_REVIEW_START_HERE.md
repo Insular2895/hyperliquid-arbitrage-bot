@@ -1,6 +1,6 @@
 # Final Human Review — Start Here
 
-> **CURRENT REVIEW PACKAGE — CORR-01 THROUGH CORR-06 INTEGRATED.**
+> **CURRENT REVIEW PACKAGE — CORR-01 THROUGH CORR-06 AND SCIENTIFIC ITERATION EXTENSION INTEGRATED.**
 >
 > Human approval is `PENDING`. Implementation and legacy switchover are `NOT AUTHORIZED`.
 
@@ -28,6 +28,7 @@ The reviewer may approve the documentation baseline and, separately, authorize *
 5. [Execution, Risk and Recovery](07_EXECUTION_RISK_AND_RECOVERY_REVIEW.md)
 6. [Data, Replay and evidence](08_DATA_REPLAY_AND_EVIDENCE_REVIEW.md)
 7. [Implementation and scale roadmaps](13_IMPLEMENTATION_AND_SCALE_ROADMAP_REVIEW.md)
+8. [Deferred scientific iteration and strategy research](../deep-specs/strategy-research/README.md)
 
 ## Should review
 
@@ -45,14 +46,15 @@ The reviewer may approve the documentation baseline and, separately, authorize *
 
 - [CORR-06 final human-review handoff](../_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md)
 - [CORR-06 final report](../_analysis/corr06_final_consistency/CORR06_FINAL_REPORT.md)
+- [Scientific iteration extension report](../_analysis/future_strategy_research_and_lifecycle/FINAL_REPORT.md)
 - [Source and traceability certificate](18_SOURCE_AND_TRACEABILITY_CERTIFICATE.md)
 - [PASS 15 final report](../_analysis/pass15_source_no_loss/PASS15_FINAL_REPORT.md)
 - [PASS 14 consistency report](../_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md)
-- [Formula Book](../04_FORMULA_BOOK.md), 17 [canonical Masters](../README.md), 181 deep specs and PASS00–PASS16 analysis artifacts.
+- [Formula Book](../04_FORMULA_BOOK.md), 17 [canonical Masters](../README.md), indexed deep specs and PASS00–PASS16/post-reconstruction analysis artifacts.
 
 ## Review protocol
 
-1. Record the exact pushed CORR-06 commit from Git/the delivery receipt in the decision form.
+1. Record the exact pushed scientific-iteration extension commit from Git/the delivery receipt in the decision form.
 2. Read Tier 1 and Tier 2 in order.
 3. Resolve or explicitly defer each scoped item in the decision form.
 4. Perform the prepared spot checks and red-team questions.

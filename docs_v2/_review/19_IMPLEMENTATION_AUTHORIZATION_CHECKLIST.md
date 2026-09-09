@@ -29,6 +29,7 @@ All boxes are intentionally unchecked. Documentary reconstruction is not self-ap
 - [ ] CORR-04 feed/node/speculative boundaries accepted
 - [ ] CORR-05 economic composition accepted
 - [ ] CORR-06 final consistency/current facts/InfraProfile closure accepted
+- [ ] Scientific iteration / future strategy-research extension accepted
 
 ## Human review gates
 
@@ -38,7 +39,7 @@ All boxes are intentionally unchecked. Documentary reconstruction is not self-ap
 - [ ] 29 safety invariants reviewed
 - [ ] Eight human decision families individually approved, deferred or rejected
 - [ ] External revalidation register and 2026-09-09 priority/fast-cancel dispositions understood as scoped gates
-- [ ] `HDC-001..079` disposition recorded or accepted with baseline
+- [ ] `HDC-001..090` disposition recorded or accepted with baseline
 - [ ] Red-team questions answered with no blocking unsafe path
 - [ ] Source/recovery disclosures accepted
 - [ ] Final switchover plan accepted
@@ -58,5 +59,7 @@ The following remain deliberately unauthorized by any current documentation appr
 - [ ] MT/MTT authorized
 - [ ] Bridge authorized
 - [ ] Scaling authorized
+- [ ] Strategy Discovery / parameter search / Monte Carlo authorized
+- [ ] Champion/Challenger or strategy drift automation authorized
 
 Authorization is valid only for the exact reviewed commit. Any semantic change requires a new review record. The final executable action after approval is the [switchover plan](20_FINAL_SWITCHOVER_PLAN.md), then Phase 1 only.

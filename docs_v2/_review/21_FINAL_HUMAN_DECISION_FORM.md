@@ -1,10 +1,10 @@
 # Final Human Decision Form
 
-> **CURRENT CORR-06 REVIEW PACKAGE.** All boxes are intentionally unchecked. Human approval remains `PENDING`; implementation and legacy switchover remain `NOT AUTHORIZED`.
+> **CURRENT CORR-06 + SCIENTIFIC ITERATION EXTENSION REVIEW PACKAGE.** All boxes are intentionally unchecked. Human approval remains `PENDING`; implementation, research activation and legacy switchover remain `NOT AUTHORIZED`.
 
 `DOCUMENTATION STATUS: CURRENT — AWAITING HUMAN REVIEW`
 
-Reviewed documentation commit: `PENDING — copy the exact pushed CORR-06 commit SHA from Git/the delivery receipt`
+Reviewed documentation commit: `PENDING — copy the exact pushed extension commit SHA from Git/the delivery receipt`
 
 Reviewer / date: `PENDING`
 
@@ -33,7 +33,8 @@ Reviewer / date: `PENDING`
 - [ ] CORR-04 public/node challenger and speculative-state boundary accepted
 - [ ] CORR-05 one `Π_exec`, no-double-count and `Q_validated` semantics accepted
 - [ ] CORR-06 QF global close, current priority facts and reusable InfraProfile method accepted
-- [ ] `HDC-001..079` origin/approval treatment accepted
+- [ ] Scientific iteration, research knowledge, reporting and maintenance extension accepted
+- [ ] `HDC-001..090` origin/approval treatment accepted
 - [ ] Fast-cancel documentation conflict accepted as external revalidation item
 
 Unresolved non-blocking Research/Future items may remain open: [ ] YES  [ ] NO
@@ -59,6 +60,8 @@ Explicitly not authorized by this form unless a later evidence gate and separate
 - [ ] MT/MTT
 - [ ] Bridge
 - [ ] Scaling
+- [ ] Strategy Discovery / parameter search / Monte Carlo
+- [ ] Champion/Challenger / strategy drift automation
 
 Reviewer notes / required changes: `PENDING`
 

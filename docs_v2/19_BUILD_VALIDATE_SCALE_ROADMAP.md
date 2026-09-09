@@ -394,3 +394,11 @@ Model demotion selects only a supported declared fallback and may contract capac
 The existing journey gains no new stage. OBSERVE/RECORD can run a bounded simultaneous VPS campaign; RECONSTRUCT/REPLAY creates and tests versioned profiles; SHADOW compares current policy/profile decisions without effects; MICRO-LIVE obtains actual fills, completion, Recovery and priority charges; INFRASTRUCTURE SCALE chooses robust net value rather than lowest latency. A selected winner then runs normally with continuous light monitoring and occasional event-driven or justified periodic challenger reactivation.
 
 Stored profiles can be reused across GoldenDatasets and new recordings, saving recurring rental cost, but every result retains actual/counterfactual provenance and profile freshness. Passive Replay cannot replace actual capital-bearing evidence. `HDC-077..079` remain pending final human review and authorize no implementation.
+
+## 45. Baseline first, scientific iteration last
+
+The existing journey remains unchanged and contains 26 phases. Complete and evidence the one-strategy end-to-end baseline first. Only then may the future loop add feature/strategy registries, bounded search, temporal OOS/walk-forward, calibrated Monte Carlo through the existing Simulator, Shadow Champion/Challenger, separately authorized Micro-live comparison and finally drift-driven research/demotion governance.
+
+The later operating loop is `OPERATE -> MONITOR -> RESEARCH -> CHALLENGER -> VALIDATE -> PROMOTE OR REJECT -> OPERATE`. A drift path is `detect -> scope/demote if required -> ResearchTrigger -> offline candidate -> Replay/Simulator/Monte Carlo/OOS -> Shadow -> Micro-live if required -> explicit decision`; never `drift -> optimizer -> Live`.
+
+Promotion is explicit and human-controlled. AI can propose and summarize but cannot change Risk, capital, q, Live thresholds or strategy status. There is no automatic promotion, no online Live self-learning and no second economic engine. External/infra change and drift can force revalidation, scope contraction, safe rollback or NON-READY. See [Scientific Iteration](deep-specs/strategy-research/01_SCIENTIFIC_ITERATION_LOOP.md). `HDC-080..090` are pending final review and authorize no implementation or capital.

@@ -28,6 +28,6 @@ PASS 15 verified physical source identity and then reopened the full source corp
 
 The 79 recoveries were disclosed rather than backfilled into historical PASS00 IDs. One canonical overcompression issue and six PASS00 atomicity/destination issues were corrected with traceability preserved. There were no new decisions, source-authority changes or external-current claims introduced by PASS 15.
 
-CORR-06 recomputed all eight physical SHA-256 values on 2026-09-09: `8/8 MATCH`. PASS15 source lineage remains unchanged. `HDC-001..079` and current external fact refreshes remain explicit overlays and are not retroactively attributed to SRC-001..008.
+CORR-06 recomputed all eight physical SHA-256 values on 2026-09-09: `8/8 MATCH`. PASS15 source lineage remains unchanged. `HDC-001..090` and current external fact refreshes remain explicit overlays and are not retroactively attributed to SRC-001..008. The scientific-iteration extension adds no original-source claim and does not change any source hash or PASS15 disposition.
 
 Authority: [PASS 15 final report](../_analysis/pass15_source_no_loss/PASS15_FINAL_REPORT.md), [source inventory](../_analysis/SOURCE_INVENTORY.md) and per-source audit artifacts.

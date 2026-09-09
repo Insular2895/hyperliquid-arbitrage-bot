@@ -1,18 +1,21 @@
 # Documentation v2 — Clean-room rebuild
 
-`DOCUMENTATION STATUS: CORR-01..06 COMPLETE — HUMAN REVIEW PENDING`
+`DOCUMENTATION STATUS: CORR-01..06 + SCIENTIFIC ITERATION EXTENSION COMPLETE — HUMAN REVIEW PENDING`
 
-> **CURRENT REVIEW CANDIDATE.** CORR-01 through CORR-06 are complete and the review package has been regenerated. Human approval, implementation and the `docs_v2` → `docs` switchover remain unauthorized.
+> **CURRENT REVIEW CANDIDATE.** CORR-01 through CORR-06 and the deferred scientific-iteration/strategy-research extension are complete. Human approval, implementation, research activation and the `docs_v2` → `docs` switchover remain unauthorized.
 
 `docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception. La reconstruction, l'audit transversal et la vérification source sans perte sont terminés comme **candidat**; l'approbation humaine, le basculement documentaire et toute implémentation restent en attente.
 
-Les corrections postérieures `HDC-001..079` ont une origine humaine explicitement séparée; elles ne sont pas rétro-attribuées aux huit sources. Voir [CORR-01](_analysis/corr01_capture_observability/CORR01_FINAL_REPORT.md), [CORR-02](_analysis/corr02_hot_path_performance/CORR02_FINAL_REPORT.md), [CORR-03](_analysis/corr03_execution_completion/CORR03_FINAL_REPORT.md), [CORR-04](_analysis/corr04_infrastructure_execution_path/CORR04_FINAL_REPORT.md), [CORR-05](_analysis/corr05_economic_integration/CORR05_FINAL_REPORT.md), [CORR-06](_analysis/corr06_final_consistency/CORR06_FINAL_REPORT.md) et le [registre des décisions humaines](_analysis/POST_RECONSTRUCTION_HUMAN_DECISIONS.md).
+Les corrections et extensions postérieures `HDC-001..090` ont une origine humaine explicitement séparée; elles ne sont pas rétro-attribuées aux huit sources. Voir [CORR-01](_analysis/corr01_capture_observability/CORR01_FINAL_REPORT.md), [CORR-02](_analysis/corr02_hot_path_performance/CORR02_FINAL_REPORT.md), [CORR-03](_analysis/corr03_execution_completion/CORR03_FINAL_REPORT.md), [CORR-04](_analysis/corr04_infrastructure_execution_path/CORR04_FINAL_REPORT.md), [CORR-05](_analysis/corr05_economic_integration/CORR05_FINAL_REPORT.md), [CORR-06](_analysis/corr06_final_consistency/CORR06_FINAL_REPORT.md), l'[extension scientifique](_analysis/future_strategy_research_and_lifecycle/FINAL_REPORT.md) et le [registre des décisions humaines](_analysis/POST_RECONSTRUCTION_HUMAN_DECISIONS.md).
 
 PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques. PASS 12 reconstruit séparément l'ordre technique et le parcours scientifique qui mène de la donnée à une capacité validée. PASS 13 assemble ces autorités dans une architecture transversale sans les remplacer. PASS 14 vérifie leurs interfaces, propriétaires, unités, états, modes et dépendances comme un seul système. PASS 15 rouvre les huit sources, vérifie leurs empreintes et leur couverture ligne par ligne, puis joint 2 577 unités PASS 00, 13 dérivations explicites et 79 récupérations documentées à leur sort final. PASS 16 fournit enfin un package fini de revue, de décisions, d'autorisation et de basculement sans s'auto-approuver.
 
 - [Final human review — Start here](./_review/00_REVIEW_START_HERE.md)
 - [CORR-06 final handoff](./_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md)
 - [PASS 16 final report](./_analysis/pass16_human_review/PASS16_FINAL_REPORT.md)
+- [Scientific iteration / future strategy research](./deep-specs/strategy-research/README.md)
+- [Research knowledge base and templates](./research/README.md)
+- [Extension final report](./_analysis/future_strategy_research_and_lifecycle/FINAL_REPORT.md)
 
 - [00 — Master Architecture](00_MASTER_ARCHITECTURE.md)
 - [Architecture deep specs](deep-specs/architecture/README.md)

@@ -98,4 +98,4 @@ Documentation acceptance and Phase 1 authorization are separate gates in the [fi
 
 ## Post-reconstruction approval overlay
 
-`HDC-001..079` remain separately pending final review. In particular, `HDC-077..079` ask the reviewer to accept bounded simultaneous VPS calibration, reusable but expiring/non-truth InfraProfiles, and the absence of a permanent challenger-rental requirement. Current Hyperliquid priority facts are external evidence rather than HDC decisions; any activation policy remains separately evidence- and Risk-gated.
+`HDC-001..090` remain separately pending final review. `HDC-077..079` cover bounded VPS calibration and expiring/non-truth InfraProfiles. `HDC-080..090` cover the scientific loop, durable experiment evidence, deferred advanced research, failure retention, StrategySpec authority, canonical-Simulator Monte Carlo, temporal OOS/multiplicity, human Champion/Challenger, AI limits and drift/online-learning boundaries. These entries specify a future compatible direction but authorize no research runtime, implementation or capital. Current Hyperliquid facts remain external evidence rather than HDC decisions.

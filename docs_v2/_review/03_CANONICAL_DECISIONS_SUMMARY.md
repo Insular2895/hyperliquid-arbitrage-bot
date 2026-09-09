@@ -26,5 +26,6 @@ These are already canonical documentary decisions. Changing one is an explicit d
 | CD-018 | One `Π_exec(q,state)` owns execution outcomes; no blind probability stacking | LOCKED correction boundary | Simulator + Formula | completion/survival/priority evidence calibrates one distribution | No |
 | CD-019 | Priority read/write scopes and costs remain typed and exact-once | current external fact plus pending policy | Infra + Simulator + Accounting | no generic priority multiplier/optimizer | Review HDC/external evidence |
 | CD-020 | InfraProfile is expiring evidence, not truth or a Live dependency | pending `HDC-077..079` | Data + Recorder + Infra + Validation | no permanent challenger rental or actual-label leakage | Review HDC |
+| CD-021 | Advanced strategy research is deferred, uses the same Core/Simulator and has no automatic/AI promotion | pending `HDC-080..090` | Architecture + Data + Simulator + Validation | baseline first; OOS/Shadow/Micro-live evidence; 26 phases only | Review HDC |
 
 Human review confirms or rejects this baseline as a whole in the [decision form](21_FINAL_HUMAN_DECISION_FORM.md). Individual overrides must name the affected authorities, invariants, tests and traceability.
