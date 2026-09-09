@@ -34,3 +34,9 @@ Risk evaluates at T0 detection, T1 pre-reservation, T2 pre-send, T3 after each f
 Recovery ignores the planned route’s sunk costs because they cannot be recovered and must not rationalize added risk. It chooses a bounded, Risk-approved exit from current exposure, possibly split and possibly negative-EV. Reconciliation restores exchange truth at startup and after UNKNOWN, reconnect, crash, update, rollback or material inconsistency.
 
 Reviewer must reject the baseline if any path permits blind retry, planned-fill propagation, premature reservation release, hard-gate bypass, unresolved exposure reaching READY or license/telemetry failure preventing safe containment.
+
+## CORR-03→06 completion and priority boundary
+
+Actual outcomes retain zero fill, partials, later-leg failures, `UNKNOWN`, Recovery entry/result, reconciliation and PnL as separate evidence axes. `p_full` predicts original-route completion; it cannot update state or grant Risk. Current Hyperliquid IOC and ALO write priorities are optional typed policies with different mechanics/cost bases. A charge is not a fill and payment does not guarantee completion.
+
+The latency guide recommends fast cancels, while the exchange endpoint says `f:true` currently has no other effect and expects a future upgrade. The current measurable advantage remains `DOC-SCOPE CONFLICT / REVALIDATION REQUIRED`; no execution assumption is invented. Every state invariant above remains unchanged.

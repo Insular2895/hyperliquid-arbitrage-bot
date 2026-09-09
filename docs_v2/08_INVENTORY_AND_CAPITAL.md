@@ -215,3 +215,7 @@ CORR-03 deferred any use of calibrated completion probability in sizing or `Q_va
 `Q_validated` remains QF-076's largest q satisfying all evidence, economic, Risk, capital, tail, model/fidelity and operational gates. It is not QF-027, account balance, top-of-book depth, Risk limit or completion-discounted size. Completion support is q/state-specific; more capital and order slicing do not expand validated evidence.
 
 QF-065 prices inventory deviation outside `Π_exec`; QF-068 ExpectedExitCost is a component of QF-069 StrandedPenalty and is not deducted beside the complete QF-069; QF-105 idle cost is likewise not repeated. Bridge/relocation QF-070–072 remains a separate action and ledger from Strategy ExecutionEV. See [Q_validated Contract](_analysis/corr05_economic_integration/Q_VALIDATED_INTEGRATION_CONTRACT.md) and [Inventory/Exit Audit](_analysis/corr05_economic_integration/INVENTORY_EXIT_STRANDED_DOUBLECOUNT_AUDIT.md).
+
+## 36. CORR-06 — Global accounting close
+
+QF-106 is the general global close. QF-108's `StrategyPnL` is the source-defined subtotal of Route, Recovery, Rebalance and Inventory PnL and excludes the separately owned Bridge/Relocation bucket. Its compact economic equality is bridge-free scoped. Any period with Bridge uses QF-106, where Bridge must appear exactly once—never omitted and never duplicated.

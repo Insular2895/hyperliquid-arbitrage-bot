@@ -323,3 +323,9 @@ Route-level completion is calibrated directly against authoritative real-attempt
 ## 26. CORR-05 — Participant evidence in economic composition
 
 Survival, response, competition, maker fill and adverse-selection models are versioned inputs to the Simulator's one joint `Π_exec(q,state)` distribution. Their headline probabilities or scores are not applied again as independent EV multipliers. QF-042 mechanical impact, L2 book walk, participant response and maker adverse selection retain distinct horizons/owners so one price move is not charged several times. See [Slippage, Impact and Adverse Selection](_analysis/corr05_economic_integration/SLIPPAGE_IMPACT_ADVERSE_SELECTION_AUDIT.md).
+
+## 27. CORR-06 — Hyperliquid effective-sequencing evidence
+
+Current official evidence retrieved 2026-09-09 makes receive/send latency alone insufficient. Cancels precede immediately executable orders in the documented IOC ordering model; ALO actions are processed with low transaction latency and obtain priority only within the documented recent tail of a price-level queue, whereas IOC priority changes temporal/mempool preference. Participant/survival features may condition on typed policy, action class, effective sequencing point and support, but do not claim a deterministic fill advantage.
+
+Read/gossip priority is a separate feed-propagation mechanism and cannot be treated as an order-fill feature without a validated causal join. Observed sequencing, queue and fill evidence calibrates the single Simulator outcome distribution; no headline priority multiplier or duplicate probability product is permitted. See the [current fact audit](_analysis/corr06_final_consistency/CURRENT_HYPERLIQUID_PRIORITY_AND_SEQUENCING_AUDIT.md).

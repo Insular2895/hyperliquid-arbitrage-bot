@@ -124,3 +124,19 @@ CORR-04 performed current primary-source research on 2026-09-08. The reproducibl
 | `EXT-009`–`EXT-014` | provider products | not refreshed in CORR-04; historical snapshots remain non-current | discover/revalidate exact offer immediately before benchmark rental | mandatory before spend |
 
 Current-source revalidation closes documentary ambiguity only for the dated snapshot. It does not prove measured latency, capture benefit, production reliability or economic value and therefore authorizes neither node/tuning deployment nor infrastructure promotion.
+
+## CORR-06 — Current priority/sequencing refresh
+
+CORR-06 revalidated official sources on 2026-09-09. Repository HEADs were `hyperliquid-dex/node@405cc08b17a727ee51b0f9128918955a84439915`, `hyperliquid-dex/order_book_server@8b4f237904f683aca2dba21a07d87e831ead2a97`, and `hyperliquid-dex/hyperliquid-python-sdk@2fdb18f9517675ea03695a0962bd19eece9c83f0`. Official GitBook pages expose no immutable document version, so retrieval date and page scope are the version evidence. The full ledger is [CURRENT_HYPERLIQUID_PRIORITY_AND_SEQUENCING_AUDIT.md](corr06_final_consistency/CURRENT_HYPERLIQUID_PRIORITY_AND_SEQUENCING_AUDIT.md).
+
+| ID | Refreshed family | Current result | Consequence | Revalidate |
+|---|---|---|---|---|
+| `EXT-001` | IOC/ALO/cancel/order semantics | IOC cancels unfilled rest; ALO cancels rather than immediately match; current priority guide distinguishes cancel, IOC and ALO sequencing | emulator/model must keep action-specific mechanics; no stronger guarantee | before implementation and on doc/network change |
+| `EXT-002/005` | WebSocket/feed behavior | public WS subscriptions and reconnect/snapshot duties remain current | public feed baseline preserved | before adapter implementation/release |
+| `EXT-006/017` | node, Foundation non-validating node and split client blocks | node HEAD still documents uncommitted/no-response mempool stream, all-path enablement and random default ordering; Foundation service remains best effort and not a sole authoritative time-sensitive source | speculative `NON-CANONICAL` lane and challenger-only treatment unchanged | before prototype/access/rental |
+| `EXT-007/015` | local book service and official SDK snapshots | order-book server still lacks spot support and batches by block; SDK remains an implementation reference rather than protocol authority | neither may silently define V1 spot truth | before adapter or local-book implementation |
+| `EXT-008` | nonce/API wallet/rate limits | signer-scoped nonces and published request/WS limits remain current | current transport preflight required; rate capacity is not priority | before Live adapter |
+| `EXT-018` | gossip/read and order/write priority | current official page verifies independent auction-based read priority and grouped IOC/ALO write priority with typed cost bases | old “no numeric paid priority” absence finding superseded; capability still unvalidated/unapproved | immediately before any priority experiment/activation |
+| `EXT-023` | fast cancel | endpoint supports `fast`; latency guide recommends it; endpoint says it currently has no other effect and future upgrade may prioritize it | `DOC-SCOPE CONFLICT / REVALIDATION REQUIRED`; assume no measurable benefit | before implementation and on either page change |
+
+External fact verification authorizes no priority policy, node, order, Risk change or production deployment.

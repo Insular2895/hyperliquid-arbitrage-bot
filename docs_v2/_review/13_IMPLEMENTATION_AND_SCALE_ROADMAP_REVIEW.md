@@ -48,3 +48,5 @@ Phase 1 is implementable from the reviewed documents: **YES, pending explicit hu
 The 21 stages are: SPECIFY; OBSERVE/RECORD; RECONSTRUCT; MAP; IDENTIFY; REPLAY; SIMULATE; SHADOW LIVE; PREDICTED VS ACTUAL PREPARATION; LEARN COMPETITION/SURVIVAL; MICRO-LIVE; VALIDATE TT; VALIDATE TTT; MAKER INTELLIGENCE; VALIDATE MT/MTT; CAPITAL INTELLIGENCE; PORTFOLIO ALLOCATION; BRIDGE/CAPITAL RELOCATION; HORIZONTAL SCALE; VERTICAL SCALE; INFRASTRUCTURE SCALE.
 
 The governing chain remains `SPECIFICATION → IMPLEMENTATION → EVIDENCE → VALIDATED CAPABILITY → CAPITAL`. See the two canonical [roadmaps](../17_IMPLEMENTATION_ROADMAP.md) and [evidence journey](../19_BUILD_VALIDATE_SCALE_ROADMAP.md).
+
+CORR-06 adds no Phase 27 or evidence stage. Phase 3 records multi-VPS/priority evidence, Phase 8 applies stored profiles, Phase 19 compares without effects, Phase 20 obtains actual priority/fill/completion evidence only after separate authorization, and Phase 26 selects/revalidates the winner. Permanent challenger rental is not required; profiles are reusable but freshness-gated.

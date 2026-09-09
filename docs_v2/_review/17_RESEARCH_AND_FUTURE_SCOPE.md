@@ -15,6 +15,8 @@ Research may produce evidence but has no production authority. Future means comp
 | Private node / higher fidelity feed | Future/evidence-gated | capability, reliability and ROI current facts absent | official revalidation and robust benchmark economics |
 | Hot standby / HA | Future | dual-owner and reconciliation risks | fencing/failover design and fault evidence |
 | High-end/low-latency infrastructure | Future/evidence-gated | prestige/median latency is not net value | positive robust incremental value after all costs |
+| Priority policy optimization | Research/evidence-gated | current mechanisms exist, but optimal rate/slot and outcome value are unvalidated | matched policy evidence, actual charge/outcomes, Risk and human promotion |
+| Reusable InfraProfile replay | Research/selection evidence | historical profile is not current network truth | simultaneous calibration, freshness and actual/counterfactual provenance |
 | TM/MM modes | Future/type-supported, default-disabled | no initial activation/evidence sequence | explicit product choice and mode-specific safety/evidence plan |
 | Bridge/Capital Relocation | later V1, separately gated | needs history, exits, persistence and `STAY` comparison | phases/stages 25/17 evidence and approval |
 | Horizontal/vertical capital scale | later evidence scope | current validation does not transfer automatically | new market/route or next-q-band CapabilityManifest |

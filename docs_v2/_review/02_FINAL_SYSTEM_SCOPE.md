@@ -20,6 +20,8 @@
 | F4 interactive world, explicit agents, deep Hawkes/Queue-Reactive | D — Research | Research only | No | primary provenance and local OOS evidence |
 | Cross-exchange, transfer edges, perp hedge | E — Future | no V1 phase | No | new venue/settlement/Risk/Data/Ops specification |
 | Private node, hot standby/HA, high-end infrastructure | E — Future/evidence-gated | Phase 26 candidate | No direct grant | current capability facts and robust incremental economics |
+| Gossip/read and IOC/ALO write priority | C/E — current external mechanism, capability-gated | phases 2/3/8/13/18/19/20/26 as consumed | No automatic grant | current facts, typed policy, matched outcomes, cost-once, Risk/Validation approval |
+| Reusable InfraProfile laboratory | A/C — research/evidence support | Recorder/Replay/Shadow/Infra scale | No | simultaneous calibration, freshness, provenance and counterfactual labels |
 | TM/MM | E — Future/type-supported | no initial activation | No | separate product decision and evidence program |
 
 Scope semantics are strict: implemented ≠ validated; licensed ≠ validated; running ≠ ready. A capability is active only at the intersection of declared scope, dependency maturity, evidence, operations readiness, `CapabilityManifest`, Risk and capital authorization.

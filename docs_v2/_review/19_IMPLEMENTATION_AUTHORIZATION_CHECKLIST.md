@@ -23,15 +23,22 @@ All boxes are intentionally unchecked. Documentary reconstruction is not self-ap
 - [ ] PASS 14 cross-domain consistency accepted
 - [ ] PASS 15 source no-loss evidence accepted
 - [ ] PASS 16 finite human review package accepted
+- [ ] CORR-01 capture/observability accepted
+- [ ] CORR-02 hot-path boundaries accepted
+- [ ] CORR-03 actual outcomes/completion evidence accepted
+- [ ] CORR-04 feed/node/speculative boundaries accepted
+- [ ] CORR-05 economic composition accepted
+- [ ] CORR-06 final consistency/current facts/InfraProfile closure accepted
 
 ## Human review gates
 
 - [ ] Exact reviewed commit recorded
 - [ ] Tier 1 required files reviewed
 - [ ] Tier 2 domain files reviewed
-- [ ] 28 safety invariants reviewed
+- [ ] 29 safety invariants reviewed
 - [ ] Eight human decision families individually approved, deferred or rejected
-- [ ] 16 external revalidation families understood as future scoped gates
+- [ ] External revalidation register and 2026-09-09 priority/fast-cancel dispositions understood as scoped gates
+- [ ] `HDC-001..079` disposition recorded or accepted with baseline
 - [ ] Red-team questions answered with no blocking unsafe path
 - [ ] Source/recovery disclosures accepted
 - [ ] Final switchover plan accepted
@@ -42,7 +49,7 @@ All boxes are intentionally unchecked. Documentary reconstruction is not self-ap
 - [ ] Phase 1 Domain Types / Schemas explicitly authorized
 - [ ] Phase 1 scope excludes Phase 2, network, exchange effects, strategy, capital and deployment
 
-The following remain deliberately unauthorized by any PASS 16 approval:
+The following remain deliberately unauthorized by any current documentation approval:
 
 - [ ] Phase 2 authorized
 - [ ] Shadow authorized

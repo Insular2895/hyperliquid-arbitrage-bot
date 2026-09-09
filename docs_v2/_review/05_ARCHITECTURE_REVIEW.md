@@ -36,6 +36,8 @@ flowchart LR
 
 The apparent return is an event-cycle boundary, not a synchronous dependency cycle. Background workers return immutable version-tagged results; stale results are discarded or revalidated.
 
+BBO is explicitly C1 state validity, C2 proved conservative reject, C3 FastL1 eligibility and C4 heuristic priority. Full-L2 QF-016 remains the economic oracle; FastL1 must be exactly equal and falls back when ineligible. A dense `pair_to_routes` representation remains generation-local implementation detail. Rust is baseline; lock-free and C++ remain evidence-gated.
+
 ## Critical state ownership
 
 | State | Single logical owner | Readers | Persistence | Reconstruction |
@@ -57,3 +59,5 @@ The apparent return is an event-cycle boundary, not a synchronous dependency cyc
 | Recorder sequence | Recorder coordinator | Operations, Validation | control records/chunks | recorder-control evidence |
 
 PASS 14 result: 0 duplicate critical owners, 0 unowned critical states and an acyclic synchronous decision path. Review the authoritative [Master Architecture](../00_MASTER_ARCHITECTURE.md) and [PASS 14 report](../_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md) for detail.
+
+CORR-06 adds no owner. `InfraProfile` is immutable research evidence and priority policy is a typed treatment; neither becomes a state writer, execution authority or production dependency.

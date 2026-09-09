@@ -27,6 +27,10 @@ Risk-adjusted expected value combines explicit scenario outcomes and costs; it d
 - Forecast slippage/adverse penalties are decision inputs, not realized PnL.
 - Strategy, Execution cost, Recovery, Inventory MTM, Rebalance, Bridge/Relocation, Infrastructure and idle-capital attribution remain disjoint.
 - Actual PnL consumes unique fills, actual fees and explicit valuations; predicted and actual ledgers reconcile but never merge silently.
+- QF-106 owns the general global close. QF-108 `StrategyPnL` excludes Bridge/Relocation; its compact EconomicPnL equality is bridge-free scoped. Bridge appears exactly once through QF-106.
+- Gossip/read auction spend belongs once to feed/infrastructure economics. IOC/ALO write-priority charges belong once in their execution scenarios and are not also normal exchange fees or InfraCost.
+
+Priority benefit changes the one supported `Π_exec(q,state)` distribution; it is not an additional `P_capture`, `p_full` or priority multiplier. Formula count remains 110 and equation changes remain zero.
 
 ## Human-gated conventions
 

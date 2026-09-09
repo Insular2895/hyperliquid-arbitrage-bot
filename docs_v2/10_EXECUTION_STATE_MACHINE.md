@@ -306,3 +306,7 @@ Execution emits actual events/state; it does not predict or train. CORR-03 deriv
 Execution and Recovery continue to emit actual path truth; they do not compute predicted scenario probabilities. The F/P/R/X projection consumes their reconciled outcomes for calibration. `p_recovery` means Recovery entry, while QF-080 and the R-scenario cashflow carry actual economic loss once; `RECOVERED` remains operational success and can have any PnL sign.
 
 Original Strategy, Recovery, Rebalance and Bridge actions retain distinct identities so Accounting can map each fill/fee once. No state, transition, retry, sizing, price-protection or transport behavior changes. See [Recovery Cost Ownership](_analysis/corr05_economic_integration/RECOVERY_COST_OWNERSHIP_AUDIT.md) and [Accounting Map](_analysis/corr05_economic_integration/ACCOUNTING_RECONCILIATION_MAP.md).
+
+## 40. CORR-06 — Current priority/cancel boundary
+
+Current official documentation retrieved 2026-09-09 supports optional typed write-priority grouping for eligible IOC and non-reduce-only ALO batches. This does not change `OrderState`, actual-fill authority, `UNKNOWN`, no-blind-retry, reservation or Recovery semantics. A priority charge is evidence/cashflow, not a fill. The latency guide recommends the optional fast-cancel flag, while the exchange endpoint says it currently has no other effect and anticipates future prioritization; therefore no measurable advantage is assumed until revalidated. Cancels remain safety actions and priority never bypasses Risk.

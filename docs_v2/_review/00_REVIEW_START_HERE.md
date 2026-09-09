@@ -1,14 +1,10 @@
-# PASS 16 — Review Start Here
+# Final Human Review — Start Here
 
-> **POST-RECONSTRUCTION CORRECTIONS IN PROGRESS.**
+> **CURRENT REVIEW PACKAGE — CORR-01 THROUGH CORR-06 INTEGRATED.**
 >
-> **DO NOT APPROVE THIS REVIEW BASELINE.**
->
-> **FINAL REVIEW PACKAGE WILL BE REFRESHED AFTER CORR-06.**
+> Human approval is `PENDING`. Implementation and legacy switchover are `NOT AUTHORIZED`.
 
-CORR-01 through CORR-05 changed canonical documentation after the PASS16 baseline. All approval remains pending; implementation and legacy switchover remain unauthorized.
-
-`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: CURRENT — AWAITING HUMAN REVIEW`
 
 This package turns the reconstructed corpus into a finite human decision. It is documentary evidence only: implementation, the `docs_v2` → `docs` switchover, Micro-live and Live all remain unauthorized.
 
@@ -47,6 +43,8 @@ The reviewer may approve the documentation baseline and, separately, authorize *
 
 ## Evidence tier
 
+- [CORR-06 final human-review handoff](../_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md)
+- [CORR-06 final report](../_analysis/corr06_final_consistency/CORR06_FINAL_REPORT.md)
 - [Source and traceability certificate](18_SOURCE_AND_TRACEABILITY_CERTIFICATE.md)
 - [PASS 15 final report](../_analysis/pass15_source_no_loss/PASS15_FINAL_REPORT.md)
 - [PASS 14 consistency report](../_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md)
@@ -54,7 +52,7 @@ The reviewer may approve the documentation baseline and, separately, authorize *
 
 ## Review protocol
 
-1. Record the exact PASS 16 commit from the final handoff.
+1. Record the exact pushed CORR-06 commit from Git/the delivery receipt in the decision form.
 2. Read Tier 1 and Tier 2 in order.
 3. Resolve or explicitly defer each scoped item in the decision form.
 4. Perform the prepared spot checks and red-team questions.

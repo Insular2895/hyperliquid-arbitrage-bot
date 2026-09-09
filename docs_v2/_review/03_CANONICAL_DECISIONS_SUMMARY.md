@@ -22,5 +22,9 @@ These are already canonical documentary decisions. Changing one is an explicit d
 | CD-014 | Client account, signer, capital and persistent data remain client-isolated | LOCKED product/security model | Deployment | no vendor custody or shared multi-tenant execution baseline | No |
 | CD-015 | No SaaS/license/storage call synchronously blocks the trading hot path | LOCKED containment rule | Architecture + Deployment | external service failure can only reduce activity safely | No |
 | CD-016 | Evidence precedes capital | LOCKED governing sequence | Validation + Roadmaps | implementation or uptime alone grants no capital | No |
+| CD-017 | BBO cannot replace full-L2 QF-016; FastL1 is exact or falls back | LOCKED correction boundary | Graph + Formula | q above L1 is not a reject | No |
+| CD-018 | One `Π_exec(q,state)` owns execution outcomes; no blind probability stacking | LOCKED correction boundary | Simulator + Formula | completion/survival/priority evidence calibrates one distribution | No |
+| CD-019 | Priority read/write scopes and costs remain typed and exact-once | current external fact plus pending policy | Infra + Simulator + Accounting | no generic priority multiplier/optimizer | Review HDC/external evidence |
+| CD-020 | InfraProfile is expiring evidence, not truth or a Live dependency | pending `HDC-077..079` | Data + Recorder + Infra + Validation | no permanent challenger rental or actual-label leakage | Review HDC |
 
 Human review confirms or rejects this baseline as a whole in the [decision form](21_FINAL_HUMAN_DECISION_FORM.md). Individual overrides must name the affected authorities, invariants, tests and traceability.

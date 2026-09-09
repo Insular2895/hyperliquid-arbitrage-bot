@@ -34,5 +34,6 @@ Every review box is intentionally unchecked. Evidence references are documentary
 | [ ] | SI-026 | Software rollback is not exchange rollback | software cannot undo prior fills/orders | Deployment | Recovery, Reconciliation | external exposure is forgotten | rollback drill | Deployment; Execution |
 | [ ] | SI-027 | No dual active economic owner | duplicate truth races and diverges | Architecture | all modules | duplicate effects/state corruption | ownership audit | Master Architecture |
 | [ ] | SI-028 | Failure makes the system less active | faults cannot expand authority | Risk + Operations | all capabilities | failure increases exposure/permission | fault injection | Risk; Validation |
+| [ ] | SI-029 | Priority payment and InfraProfile evidence cannot bypass Risk or create actual truth | performance evidence is not permission/state | Risk + Execution + Validation | Simulator, Infra, Accounting | unsafe permission or false fill/PnL | HP/VP and provenance fixtures | CORR-05/06 |
 
 Reviewer red-team prompts: What happens during ambiguous submit plus restart? Can any telemetry/license outage strand exposure? Can a second instance share an account? Can stale worker output commit? Can a model or larger balance expand permission without a new manifest? Any “yes” is a blocking rejection.

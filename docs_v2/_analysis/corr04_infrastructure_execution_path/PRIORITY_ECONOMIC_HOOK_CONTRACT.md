@@ -1,20 +1,24 @@
 # Priority Economic Hook Contract
 
-`STATUS: FUTURE / EXTERNAL_REVALIDATION — NO RUNTIME REQUIREMENT`
+`STATUS: CURRENT MECHANISMS VERIFIED 2026-09-09 — CAPABILITY/EVIDENCE-GATED`
 
-No current V1 per-order paid priority control was verified. The following is a provenance hook only, not a Formula, configuration or Risk gate:
+This remains a provenance/evidence contract, not a Formula, autonomous optimizer, Risk gate or activation decision.
 
 ```text
 PriorityEvidence {
   PriorityPolicyId
-  verified_venue_scope
-  requested_priority_level?
-  actual_charged_cost?
-  unit_or_asset?
+  scope: GOSSIP_READ | IOC_WRITE | ALO_WRITE
+  verified_venue_product_action_scope
+  eligibility_and_grouping
+  requested_slot_or_rate
+  charge_basis: AUCTION | FILLED_NOTIONAL | RESTING_NOTIONAL
+  actual_charged_amount?
+  charged_asset_and_source_balance?
   charge_time?
-  observed_sequencing_evidence?
-  source_and_revalidation_id
+  observed_sequencing_ack_fill_evidence?
+  source_retrieval_and_revalidation_id
+  evidence_class
 }
 ```
 
-CORR-05 must decide whether a verified future cost belongs to fees, execution, transport or infrastructure economics and prevent double counting. No priority-value/optimization formula, additional QF identifier or Formula Book change exists. Priority could never bypass Risk, price protection, sizing or Reservations and would require a bounded cost policy before activation.
+`GOSSIP_READ` auction cost is owned once by the corresponding feed/infrastructure experiment. `IOC_WRITE` and `ALO_WRITE` charges belong once in the affected execution scenario cashflow; IOC zero-fill has zero priority charge under the documented filled-notional basis, while ALO is charged on resting notional at placement regardless of later fill. Benefit is represented only through the changed validated outcome distribution. No priority payment bypasses Risk, price protection, sizing or Reservations.

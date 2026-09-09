@@ -1,39 +1,40 @@
 # Hyperliquid Arbitrage Bot
 
-Documentation canonique d'un moteur spot de routing/arbitrage Hyperliquid.
+Documentation canonique candidate d'un moteur spot de routing/arbitrage Hyperliquid.
 
-Le dépôt décrit l'architecture, les contrats, les invariants, les formules, la
-gestion du risque, l'exécution, le replay, le déploiement et la validation. Aucun
-bot de production n'est encore implémenté : la documentation doit d'abord être
-revue et approuvée.
+| État | Valeur |
+|---|---|
+| Current review candidate | [`docs_v2/`](docs_v2/README.md) |
+| Legacy reference | [`docs/`](docs/README.md) |
+| Switchover | `NOT PERFORMED` |
+| Human approval | `PENDING` |
+| Implementation | `NOT AUTHORIZED` |
 
-## Commencer ici
+Le dépôt décrit l'architecture, les contrats, les invariants, les formules, le
+risque, l'exécution, le Replay, le déploiement et la validation. La reconstruction
+PASS00–PASS16 et les corrections CORR-01→CORR-06 sont terminées comme candidat de
+revue. Elles n'autorisent ni code de production, ni ordre, ni capital, ni
+basculement de `docs_v2/` vers `docs/`.
 
-1. [Index de la documentation](docs/README.md)
-2. [Architecture maîtresse](docs/00_MASTER_ARCHITECTURE.md)
-3. [Périmètre produit](docs/01_PRODUCT_AND_SCOPE.md)
-4. [Formula Book — QF-001 à QF-110](docs/04_FORMULA_BOOK.md)
-5. [Risk Constitution](docs/09_RISK_CONSTITUTION.md)
-6. [Execution State Machine](docs/10_EXECUTION_STATE_MACHINE.md)
-7. [Roadmap d'implémentation](docs/17_IMPLEMENTATION_ROADMAP.md)
-8. [Revue requise](docs/REVIEW_REQUIRED.md)
+## Revue actuelle
 
-## Contenu
-
-- 19 documents maîtres numérotés `00` à `18`;
-- 46 spécifications de modules;
-- 18 Architecture Decision Records proposés pour revue;
-- un inventaire sourcé, une matrice de traçabilité et un audit final;
-- aucune dépendance ou logique de trading de production.
+1. [Commencer la revue finale](docs_v2/_review/00_REVIEW_START_HERE.md)
+2. [Handoff CORR-06](docs_v2/_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md)
+3. [Architecture maîtresse](docs_v2/00_MASTER_ARCHITECTURE.md)
+4. [Formula Book — QF-001 à QF-110](docs_v2/04_FORMULA_BOOK.md)
+5. [Risk Constitution](docs_v2/09_RISK_CONSTITUTION.md)
+6. [Execution State Machine](docs_v2/10_EXECUTION_STATE_MACHINE.md)
+7. [Roadmap d'implémentation](docs_v2/17_IMPLEMENTATION_ROADMAP.md)
+8. [Formulaire de décision humaine](docs_v2/_review/21_FINAL_HUMAN_DECISION_FORM.md)
 
 ## Gouvernance
 
-Les décisions architecturales restent `PROPOSED FOR REVIEW`. Les paramètres
-marqués `CALIBRATED`, `LEARNED` ou `OPEN` ne doivent pas devenir des constantes
-implicites. Les règles Hyperliquid susceptibles d'évoluer doivent être
-revalidées contre les sources officielles avant implémentation.
+Les décisions post-reconstruction `HDC-001..079` restent `PENDING FINAL REVIEW`.
+Les paramètres `CALIBRATED`, `LEARNED`, `OPEN` ou `EXTERNAL_REVALIDATION` ne sont
+pas des constantes implicites. Les faits Hyperliquid courants ont été rafraîchis
+le 2026-09-09, mais doivent être revalidés avant leur consommateur et lors d'un
+changement documentaire, réseau ou logiciel pertinent.
 
-Voir [l'ordre de revue recommandé](docs/REVIEW_REQUIRED.md#recommended-review-order)
-et [l'audit documentaire](docs/_analysis/FINAL_AUDIT.md).
+`DOCUMENTATION STATUS: CORR-01..06 COMPLETE — HUMAN REVIEW PENDING`
 
-`DOCUMENTATION STATUS: REVIEW REQUIRED`
+**NEXT: FINAL HUMAN REVIEW.**

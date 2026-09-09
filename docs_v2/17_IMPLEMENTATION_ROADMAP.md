@@ -436,3 +436,9 @@ Node and kernel bypass do not block early V1. The order is public baseline, meas
 No Phase 27 is added. Phase 7 locks deterministic scenario composition; Phase 8 adds double-count/accounting fixtures; Phase 9 enforces ExecutionAlpha; Phases 10/11 separate capital accounting and hard permission; Phase 14 validates Recovery economics; Phase 17 establishes q/state model support; Phase 18 owns `Π_exec`; Phases 19/20 validate Shadow then actual Micro-live economics; Phases 21–23 add survival/fidelity/maker evidence; Phases 24/25 preserve allocation and Bridge boundaries; Phase 26 scales only within validated capacity and robust net infrastructure value.
 
 See [CORR-05 Roadmap Impact](_analysis/corr05_economic_integration/CORR05_ROADMAP_IMPACT.md). This mapping changes no dependency order and authorizes no implementation or capital.
+
+## 48. CORR-06 — Work mapped into existing phases
+
+No Phase 27 is added. Phase 2 revalidates current priority/cancel/API schemas; Phase 3 captures priority evidence and simultaneous multi-VPS samples without losing P0/P1; Phase 8 applies versioned `InfraProfile` treatments in deterministic Counterfactual Replay; Phase 13 records typed priority policy/charge/ACK evidence without altering execution truth; Phase 18 models IOC and ALO through distinct supported mechanics; Phase 19 compares profiles and policies without orders; Phase 20 supplies actual fill/completion/priority evidence under separate authorization; Phase 26 selects and refreshes the winning infrastructure using robust economics and reliability.
+
+Candidate VPS rental is bounded to calibration/revalidation campaigns. Profiles are reusable evidence artifacts, not a Live dependency. The existing 26-phase order and all authorization gates remain unchanged. See the [CORR-06 handoff](_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md).

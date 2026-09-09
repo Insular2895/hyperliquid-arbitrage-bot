@@ -28,8 +28,11 @@ The Technical Implementation Roadmap and Build/Validate/Scale Journey are recons
 
 | Correction | Status | Scope | Review effect |
 |---|---|---|---|
-| CORR-01 | COMPLETE — HUMAN REVIEW REQUIRED | capture funnel, episode identity, latency attribution, metric populations, predicted/actual, optimization evidence | PASS16 review baseline is stale |
-| CORR-02 | COMPLETE — HUMAN REVIEW REQUIRED | hot-path work elimination, BBO/L1/L2, route index/dedup, memory/lock-free, Rust/C++ evidence gates | PASS16 review baseline remains stale |
-| CORR-03..CORR-06 | NOT STARTED | separately authorized future correction briefs | no work performed here |
+| CORR-01 | COMPLETE — HUMAN REVIEW PENDING | capture funnel, episode identity, latency attribution, metric populations, predicted/actual, optimization evidence | integrated in current review package |
+| CORR-02 | COMPLETE — HUMAN REVIEW PENDING | hot-path work elimination, BBO/L1/L2, route index/dedup, memory/lock-free, Rust/C++ evidence gates | integrated in current review package |
+| CORR-03 | COMPLETE — HUMAN REVIEW PENDING | actual outcomes, failure evidence, completion calibration | integrated in current review package |
+| CORR-04 | COMPLETE — HUMAN REVIEW PENDING | public/node challenger, speculative inputs, execution-path infrastructure | current facts superseded where CORR-06 revalidated them |
+| CORR-05 | COMPLETE — HUMAN REVIEW PENDING | one execution distribution, probability conditioning, accounting and no-double-count composition | integrated in current review package |
+| CORR-06 | COMPLETE — HUMAN REVIEW PENDING | final consistency, current Hyperliquid priority/sequencing, reusable InfraProfile/replay laboratory, refreshed review | current review authority |
 
-**NEXT:** Await explicit direction for CORR-03. The PASS16 review package is marked stale and must not be approved until it is refreshed after CORR-06. There is no automatic PASS 17. Implementation, Phase 1, legacy switchover, Micro-live and Live remain unauthorized.
+**NEXT: FINAL HUMAN REVIEW.** The review package is current. There is no automatic PASS 17 or CORR-07. Implementation, Phase 1, legacy switchover, Micro-live and Live remain unauthorized.

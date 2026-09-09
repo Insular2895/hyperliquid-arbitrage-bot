@@ -95,3 +95,7 @@ The 28 stable `OPEN` IDs collapse into eight genuine decision families. None nee
 - Decision: [ ] approve policy  [ ] retain simple fallback  [ ] defer
 
 Documentation acceptance and Phase 1 authorization are separate gates in the [final decision form](21_FINAL_HUMAN_DECISION_FORM.md); they are not counted as unresolved architecture.
+
+## Post-reconstruction approval overlay
+
+`HDC-001..079` remain separately pending final review. In particular, `HDC-077..079` ask the reviewer to accept bounded simultaneous VPS calibration, reusable but expiring/non-truth InfraProfiles, and the absence of a permanent challenger-rental requirement. Current Hyperliquid priority facts are external evidence rather than HDC decisions; any activation policy remains separately evidence- and Risk-gated.

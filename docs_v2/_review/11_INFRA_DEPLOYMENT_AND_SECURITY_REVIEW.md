@@ -24,3 +24,9 @@ Infrastructure economics compare incremental captured value with incremental all
 Deployment rollback reverts software/config artifacts, not exchange effects. After crash, update or rollback, Reconciliation must restore orders→fills→balances before readiness. Critical vulnerability, secret exposure, signature failure, unsupported runtime, storage exhaustion or owner-fence loss causes a scoped less-active state and incident/runbook flow.
 
 All numerical defaults in this domain are either calibration candidates, measured limits or external facts to revalidate. None is certified by this documentation package.
+
+## Current priority and profile boundary
+
+Official facts refreshed 2026-09-09 verify independent gossip/read and IOC/ALO write priority. Read-auction cost belongs to infrastructure; write charges belong to execution scenarios. Availability does not mean maximum/default activation or a production optimizer. The fast-cancel guidance/endpoint conflict remains explicit.
+
+Candidate VPS should be observed simultaneously, scored on distributions/tails/reliability/security/net economics, then represented by immutable empirical profiles for Counterfactual Replay. Profiles expire; the winning VPS is monitored and challengers are re-rented only for short justified refreshes. No old profile is permanent network ground truth.

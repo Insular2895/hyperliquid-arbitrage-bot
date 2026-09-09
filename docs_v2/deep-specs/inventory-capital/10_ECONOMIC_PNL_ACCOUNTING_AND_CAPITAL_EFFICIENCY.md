@@ -38,3 +38,7 @@ Sources: SRC-001/002 hierarchical PnL reasoning; SRC-003 §§56–63; SRC-004 QF
 ## CORR-05 disjoint accounting close
 
 Strategy, Recovery, Rebalance, Bridge/Relocation, InfraCost and InventoryMTM are disjoint action buckets. A broad StrategyPnL view may aggregate named buckets but cannot recreate them as a second ledger. QF-106 and QF-108 reconcile to one EconomicPnL; infrastructure cost is subtracted once. Predicted/Shadow/Replay economics never enter realized buckets. See [Accounting Reconciliation Map](../../_analysis/corr05_economic_integration/ACCOUNTING_RECONCILIATION_MAP.md).
+
+## CORR-06 global-close scope
+
+QF-106 is the general global close for every accounting period. QF-108's source-defined `StrategyPnL` subtotal excludes the separately owned Bridge/Relocation bucket; its compact `EconomicPnL=StrategyPnL-InfraCost` equality is therefore bridge-free scoped. When Bridge applies, the QF-106 close is mandatory and records Bridge exactly once. This resolves the consumer scope without altering either source equation.

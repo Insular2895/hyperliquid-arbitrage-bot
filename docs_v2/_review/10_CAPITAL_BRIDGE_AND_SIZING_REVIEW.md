@@ -23,3 +23,5 @@ Bridge/Capital Relocation compares `STAY` with all permitted destination, exit a
 ## Action taxonomy and accounting
 
 `Strategy`, `Bridge/Relocation`, `Rebalance`, `Recovery`, Inventory MTM and infrastructure/idle-capital effects remain separately classified and reconciled. A transient route edge cannot be counted simultaneously as strategy alpha and relocation value. Exact risk thresholds, inventory bands/penalties and support sizes remain evidence-calibrated before the affected Micro-live/Live scope.
+
+QF-106 is the global close and always includes an applicable Bridge bucket once. QF-108 is a Strategy subtotal/bridge-free view, not permission to omit Bridge. `Q_validated` remains distinct from profitable size, balance, depth, slicing, completion probability and positive EV; neither priority nor a favorable/stale InfraProfile can expand it without full scoped evidence.

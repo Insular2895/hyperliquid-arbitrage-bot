@@ -388,3 +388,9 @@ Speculative data remains a separate Research lane through parity/Replay/Shadow a
 The evidence loop is `freeze candidate and distribution semantics -> validate scenario probabilities/cashflows -> validate q/state support -> validate tails and external penalties -> enforce Risk gates -> reconcile predicted versus actual economics -> promote a versioned model -> scale only inside Q_validated`. Shadow produces counterfactual evidence; only reconciled Micro-live/Live events produce realized PnL.
 
 Model demotion selects only a supported declared fallback and may contract capacity. Profile or capital scaling cannot outrun completion, fidelity, OOD or accounting evidence. Bridge and infrastructure decisions use their separate economic/accounting boundaries. See [CORR-05 Roadmap Impact](_analysis/corr05_economic_integration/CORR05_ROADMAP_IMPACT.md).
+
+## 44. CORR-06 — Calibrate, reuse, monitor, revalidate
+
+The existing journey gains no new stage. OBSERVE/RECORD can run a bounded simultaneous VPS campaign; RECONSTRUCT/REPLAY creates and tests versioned profiles; SHADOW compares current policy/profile decisions without effects; MICRO-LIVE obtains actual fills, completion, Recovery and priority charges; INFRASTRUCTURE SCALE chooses robust net value rather than lowest latency. A selected winner then runs normally with continuous light monitoring and occasional event-driven or justified periodic challenger reactivation.
+
+Stored profiles can be reused across GoldenDatasets and new recordings, saving recurring rental cost, but every result retains actual/counterfactual provenance and profile freshness. Passive Replay cannot replace actual capital-bearing evidence. `HDC-077..079` remain pending final human review and authorize no implementation.

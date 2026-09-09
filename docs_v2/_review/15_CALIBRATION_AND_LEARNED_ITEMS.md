@@ -17,3 +17,5 @@ The final target map contains 60 `CALIBRATED` requirement rows and 6 `LEARNED` r
 | COMMERCIAL POLICY | license grace/revocation, consent/export and support retention policies | approved policy/threat model | distribution/telemetry scope only |
 
 Calibration may only narrow or parameterize an already approved mechanism. A learned artifact is not a decision until promoted. Unsupported data returns UNKNOWN/LOW/OOD or the documented conservative fallback; it never becomes a guessed zero or increased permission.
+
+InfraProfile empirical distributions, correlations, validity scope, uncertainty and freshness are calibrated evidence. Start with coherent empirical samples/quantiles/resampling; use conditional or generative models only after support and validation. No fixed profile expiry cadence, campaign duration or priority rate is hard-coded. `UNAVAILABLE` is distinct from zero.

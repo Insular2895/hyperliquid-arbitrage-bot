@@ -2,12 +2,17 @@
 
 ## Current disposition
 
-`NOT VERIFIED / NOT CURRENTLY DOCUMENTED FOR THE V1 USER ORDER PATH`.
+`GOSSIP_READ`, `IOC_WRITE` and `ALO_WRITE` are verified as separate current official mechanisms as of 2026-09-09. The previous CORR-04/CORR-05 absence finding is historically valid but superseded.
 
-CORR-05 introduces no priority formula, configuration, Risk gate, fee amount or execution behavior. The CORR-04 research hook remains provenance-only.
+## Composition rule
 
-## Future verified mechanism
+```text
+typed PriorityPolicy
+→ supported change in arrival/effective sequencing/queue state
+→ one Π_exec(q,state) distribution
+→ QF-056/057 and derived outcomes
+```
 
-A future policy would act through the latency/sequencing distribution, which can change arrival survival, attempt outcome and ultimately `Π_exec`. The actual charge is recorded once in the affected attempt/action scenario. Technical priority, requested level, charged cost, observed inclusion/ACK/fill order and economic benefit are distinct fields.
+Independently, the actual or scenario priority charge is included once in its owner cashflow. Gossip/read auction spend is a feed/infrastructure experiment cost. IOC and ALO charges are execution-action costs with distinct documented bases. There is no `EV × P_capture × p_full × priority_multiplier` chain.
 
-Evaluation compares matched policies and full outcome distributions. No guaranteed benefit, no double counting with QF-085 or completion, and no bypass of protected price, Risk, sizing, Reservations or canonical truth is permitted.
+Evaluation compares matched policy A/B/C observations and counterfactual distributions with actual/counterfactual labels, support and uncertainty. Paying more can lose economically. No guaranteed benefit, Risk bypass or production PriorityOptimizer is introduced. See the [CORR-06 ownership audit](../corr06_final_consistency/PRIORITY_COST_AND_OUTCOME_OWNERSHIP_AUDIT.md).

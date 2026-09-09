@@ -25,3 +25,5 @@ Start with transparent empirical baselines. A Champion must beat a naive baselin
 Every forecast carries artifact/version, horizon, support, confidence/OOD, source-state versions and fallback. Drift, disagreement or missing support causes fallback/rejection/demotion, never increased capital.
 
 TT detection, Replay, Shadow and a bounded TT evidence chain do not require F4 or sophisticated Participant models. A Participant artifact is a hard dependency only for a manifest that consumes it. F4 must not block initial TT.
+
+Current sequencing evidence is action-specific: read/gossip priority changes feed arrival; IOC write priority changes temporal/mempool ordering; ALO priority changes position within a recent price-level queue. Participants/Simulator may condition the single execution-outcome distribution on these supported treatments, but never apply one generic priority multiplier or promise fills. Profile Replay is counterfactual and yields to actual Micro-live calibration.

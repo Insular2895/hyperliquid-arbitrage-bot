@@ -31,3 +31,9 @@ Replay reconstructs recorded history through the same Core. The Simulator instea
 A `CapabilityManifest` must pin exact market, route, strategy mode, size band, code/config/schema/formula/model versions, evidence references and expiry/demotion conditions. Changed semantics invalidate dependent evidence; a new reviewed version and rerun are required.
 
 Evidence maturity is M0 specified, M1 component correct, M2 integrated deterministic Replay, M3 sustained live-input Shadow, M4 bounded real-effect evidence and M5 scoped/reversible validated capability. None is a global “bot safe” certificate.
+
+## Infrastructure laboratory
+
+A simultaneous bounded multi-VPS Recorder campaign aligns the same events by authoritative ID, deterministic fingerprint or explicit ambiguous/unmatched result. Monotonic clocks measure local stages; synchronized wall clock plus uncertainty gates cross-machine claims. It creates empirical versioned `InfraProfile` artifacts without rewriting RAW.
+
+Later Counterfactual Replay pins Dataset/Profile/modes/fidelity/build/config/formulas/models/feed/seed/clock/policy and labels results `COUNTERFACTUAL`. Profiles expire or drift and are not Live dependencies. Winner monitoring plus occasional brief challenger revalidation replaces permanent rental. Passive Replay cannot prove actual IOC/partial/completion/Recovery/priority benefit; Micro-live remains required. Multi-VPS pressure that loses P0/P1 invalidates the experiment.

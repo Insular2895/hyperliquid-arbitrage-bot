@@ -1,16 +1,10 @@
 # Final Human Decision Form
 
-> **POST-RECONSTRUCTION CORRECTIONS IN PROGRESS.**
->
-> **DO NOT APPROVE THIS REVIEW BASELINE.**
->
-> **FINAL REVIEW PACKAGE WILL BE REFRESHED AFTER CORR-06.**
+> **CURRENT CORR-06 REVIEW PACKAGE.** All boxes are intentionally unchecked. Human approval remains `PENDING`; implementation and legacy switchover remain `NOT AUTHORIZED`.
 
-This form is stale after CORR-01 through CORR-05. Leave every approval box unchecked. Human approval remains `PENDING`; implementation and legacy switchover remain `NOT AUTHORIZED`.
+`DOCUMENTATION STATUS: CURRENT — AWAITING HUMAN REVIEW`
 
-`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
-
-Reviewed documentation commit: `PENDING — copy the exact PASS 16 commit SHA from the final handoff`
+Reviewed documentation commit: `PENDING — copy the exact pushed CORR-06 commit SHA from Git/the delivery receipt`
 
 Reviewer / date: `PENDING`
 
@@ -30,6 +24,17 @@ Reviewer / date: `PENDING`
 - [ ] HD-06 License/telemetry disposition recorded
 - [ ] HD-07 Formula convention dispositions recorded individually
 - [ ] HD-08 Search/solver policy disposition recorded
+
+## Post-reconstruction corrections
+
+- [ ] CORR-01 Capture Funnel/latency evidence accepted
+- [ ] CORR-02 BBO C1–C4, FastL1/full-L2 and Rust/C++ gates accepted
+- [ ] CORR-03 actual outcomes, UNKNOWN/Recovery and completion evidence accepted
+- [ ] CORR-04 public/node challenger and speculative-state boundary accepted
+- [ ] CORR-05 one `Π_exec`, no-double-count and `Q_validated` semantics accepted
+- [ ] CORR-06 QF global close, current priority facts and reusable InfraProfile method accepted
+- [ ] `HDC-001..079` origin/approval treatment accepted
+- [ ] Fast-cancel documentation conflict accepted as external revalidation item
 
 Unresolved non-blocking Research/Future items may remain open: [ ] YES  [ ] NO
 

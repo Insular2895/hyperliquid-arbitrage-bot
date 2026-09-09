@@ -258,9 +258,9 @@ QF-007, QF-008, QF-014–016 and every minimum/fee/debit-asset/precision assumpt
 | ID | Canonical name | Source status | Exact canonical equation | Essential semantics / invalid case |
 |---|---|---|---|---|
 | QF-105 | Expected Idle Capital Cost | CALIBRATED | `IdleCost=C×OpportunityRate×T` | Numeraire; nonnegative capital/time; empirically calibrated foregone-opportunity rate, not arbitrary interest. |
-| QF-106 | Global Economic PnL | SOURCE_DERIVED_FROM_CONTEXT | `EconomicPnL=ExecutionPnL+InventoryMTM+RebalancePnL+BridgePnL-InfrastructureCost` | Common numeraire/period; components disjoint and reconciled. Formal status line absent; fixed accounting identity is context-derived LOCKED. |
+| QF-106 | Global Economic PnL | SOURCE_DERIVED_FROM_CONTEXT | `EconomicPnL=ExecutionPnL+InventoryMTM+RebalancePnL+BridgePnL-InfrastructureCost` | Global close authority. Common numeraire/period; every applicable disjoint component, including Bridge, appears exactly once. Formal status line absent; fixed accounting identity is context-derived LOCKED. |
 | QF-107 | Inventory Mark-to-Market | SOURCE_DERIVED_FROM_CONTEXT | `MTM_a=I_aP_a^numeraire`; `ΔMTM_a=MTM_{a,t}-MTM_{a,t-1}-ExternalFlow_a` | Numeraire; point-in-time price policy and external flows explicit. Formal status line absent; identity context-derived LOCKED. |
-| QF-108 | Total Strategy PnL | SOURCE_DERIVED_FROM_CONTEXT | `StrategyPnL=ΣRoutePnL+ΣRecoveryPnL+ΣRebalancePnL+InventoryPnL`; `EconomicPnL=StrategyPnL-InfraCost` | Common numeraire/period; disjoint ownership. Formal status line absent; identity context-derived LOCKED. |
+| QF-108 | Total Strategy PnL | SOURCE_DERIVED_FROM_CONTEXT | `StrategyPnL=ΣRoutePnL+ΣRecoveryPnL+ΣRebalancePnL+InventoryPnL`; `EconomicPnL=StrategyPnL-InfraCost` | `StrategyPnL` is the source-defined strategy subtotal and excludes the separately owned Bridge bucket. Its second equality is a bridge-free scoped view; for any period with Bridge/Relocation, QF-106 owns global close. Formal status line absent; identity context-derived LOCKED. |
 
 ## 33. Drawdown / MDD — QF-109–110
 
@@ -314,3 +314,7 @@ SRC-004 lines 3350–9520, with QF-001–QF-110 at lines 3519–9224 and post-fo
 All QF-001–QF-110 were reviewed as one economic composition; equation and semantic changes are zero. QF-056/QF-057 consume one F/P/R/X execution PnL distribution. QF-063 subtracts InventoryPenalty, StrandedPenalty and ModelUncertaintyPenalty only as external, non-overlapping terms; it never repeats scenario fees, slippage, partial-path or Recovery economics.
 
 QF-048/QF-085 arrival survival is not `p_full`; QF-059 positive-PnL probability is derived from the same distribution; QF-093 is a diagnostic/accounting ratio rather than an event probability. QF-027 profitable size and QF-076 validated capacity remain distinct. The QF namespace remains exactly QF-001–QF-110 and no human-derived formula is required. See [QF Composition Audit](_analysis/corr05_economic_integration/QF_COMPOSITION_AUDIT.md) and [Term Owner Registry](_analysis/corr05_economic_integration/ECONOMIC_TERM_OWNER_REGISTRY.md).
+
+## 41. CORR-06 — QF-106/QF-108 accounting scope
+
+The source states both equations but does not place `BridgePnL` inside QF-108's `StrategyPnL` subtotal. CORR-06 therefore makes no equation change and creates no identifier above QF-110: QF-106 is the general global economic-close authority; QF-108's first equality is a strategy/accounting subtotal; its compact `EconomicPnL=StrategyPnL-InfraCost` view is valid only for a scope with no applicable Bridge/Relocation bucket. General reconciliation is QF-106, with Bridge present exactly once. See the [accounting scope audit](_analysis/corr06_final_consistency/QF106_QF108_ACCOUNTING_SCOPE_AUDIT.md).

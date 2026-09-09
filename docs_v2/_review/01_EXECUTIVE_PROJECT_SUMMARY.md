@@ -32,4 +32,6 @@ Replay and Live share the same Core. A decision is reproducible from ordered eve
 
 ## Current result
 
-The documentation is a reconstruction-complete candidate: 8/8 source hashes, 61,645 source lines, 2,577/2,577 PASS00 items, 79/79 PASS15 recoveries, 110/110 formulas, 17 Masters and 181 deep specs. PASS 14 found zero residual cross-domain contradictions. This is not a profitability or safety guarantee and is not implementation authorization.
+The documentation is a reconstruction-complete, correction-integrated candidate: 8/8 source hashes, 61,645 source lines, 2,577/2,577 PASS00 items, 79/79 PASS15 recoveries, 110/110 formulas, 17 Masters and 181 deep specs. CORR-01..06 add capture observability, exact hot-path boundaries, actual outcome evidence, infrastructure epistemics, one economic distribution, current priority facts and reusable InfraProfile research without changing core Risk/Execution truth.
+
+QF-106 is the global accounting close; QF-108 is a bridge-free strategy subtotal view. Current Hyperliquid read/write priority mechanisms are documented as distinct evidence-gated treatments. Candidate VPS can be calibrated simultaneously, represented by expiring versioned profiles and later replayed counterfactually; challengers need not stay rented. Passive Replay still cannot replace Micro-live fill/completion evidence. This is not a profitability or safety guarantee and is not implementation authorization.

@@ -2,7 +2,7 @@
 
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
-No Internet check was performed during reconstruction or PASS 16. Snapshot date: **unknown / historical source capture** for every row until a future owner records a current official citation, retrieval date and observed fixture. No EXT item blocks Phase 1 domain types/schemas.
+Reconstruction/PASS16 performed no Internet check. CORR-04 created a dated snapshot and CORR-06 refreshed priority/sequencing/node/API facts on **2026-09-09**. A dated documentary refresh is not runtime conformance or activation evidence; each consumer still revalidates current official sources and observed fixtures. No EXT item blocks Phase 1 domain types/schemas.
 
 | Check | ID | Fact family | Earliest technical phase | Coding / Replay / Shadow / Micro-live / Live effect | Required artifact and later official source |
 |---:|---|---|---:|---|---|
@@ -22,5 +22,8 @@ No Internet check was performed during reconstruction or PASS 16. Snapshot date:
 | [ ] | EXT-014 | Cherry VDS specs/price/availability | 19/26 | no / no / host admission / affected profile / affected profile | dated vendor offer + controlled benchmark |
 | [ ] | EXT-015 | SDK/library/runtime official support | 2 or chosen implementation phase | affected dependency yes / compatibility / host readiness / yes / yes | official release/support/security matrix |
 | [ ] | EXT-016 | academic claims/dataset statistics | 21 when consumed | baseline no / research allowed / model-dependent only / same / same | primary paper provenance + local temporal OOS report |
+| [ ] | EXT-017 | `split_client_blocks` uncommitted/no-response/all-peer-path/default-order semantics | 3/8/19/26 | no canonical mutation / speculative replay / node Shadow only / separately promoted source only / same | node commit + configuration/capture conformance |
+| [ ] | EXT-018 | gossip/read auction and IOC/ALO write priority | 2/3/8/13/18/19/20 | schema/evidence only / counterfactual / policy Shadow / actual Micro-live separately authorized / promoted scope only | official priority page + matched HP fixtures + actual charge evidence |
+| [ ] | EXT-019 | fast-cancel guidance versus endpoint current-effect statement | 13 | preserve verified field / no assumed advantage / observe / actual controlled evidence / revalidated promotion only | both official pages + dated conflict disposition |
 
 An unverified fact blocks only its consumer. Public-feed TT is not blocked by an unselected node when current public-feed contracts are separately verified. Revalidation cannot itself promote a capability; it only removes a current-fact uncertainty.

@@ -2,6 +2,8 @@
 
 `EXTERNAL_REVALIDATION_SNAPSHOT — retrieved 2026-09-08`
 
+> **HISTORICAL_VALID / CURRENTLY SUPERSEDED IN PART.** This preserves the CORR-04 evidence state. `HF-022` and the old Priority A–M disposition are superseded by the official priority-fee material revalidated on 2026-09-09 in [CORR-06 current priority audit](../corr06_final_consistency/CURRENT_HYPERLIQUID_PRIORITY_AND_SEQUENCING_AUDIT.md). Other rows remain dated snapshots and must still be revalidated at their consumer.
+
 ## Method and limits
 
 Official Hyperliquid documentation and the official `hyperliquid-dex` GitHub organization are primary. Linux kernel, Docker, IETF, DPDK and F-Stack primary materials cover general transport/host questions. Absence of documented FIX or per-order paid priority is an evidence result, not proof that a private interface cannot exist. Every current fact must be revalidated before implementation or activation.
@@ -77,3 +79,7 @@ Local source snapshots used for reproducibility:
 ## Research stop condition
 
 Primary sources answered the material architecture questions. Remaining gaps concern unpublished topology, real measured latency/capture, provider-specific behavior and future software changes; more generic web material would not close them. They therefore remain benchmark/revalidation items rather than inferred facts.
+
+## CORR-06 supersession record
+
+Fresh official documentation now verifies separate gossip/read and order/write mechanisms, including numeric auction/grouping controls and charge bases. This invalidates only CORR-04's absence-of-evidence conclusion; it does not invalidate the public-feed baseline, one-writer rule, speculative-data boundary, no-guarantee rule, actual-fill authority or need for controlled economic validation. The `hyperliquid-dex/node` main commit remained `405cc08b17a727ee51b0f9128918955a84439915` when rechecked on 2026-09-09.

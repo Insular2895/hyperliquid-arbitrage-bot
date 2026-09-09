@@ -208,3 +208,9 @@ Operations reports evidence and health; it does not fuse feeds or promote a chal
 Operations exposes arrival survival, `p_full/p_partial/p_recovery/p_failure`, empirical FullRouteCompletionRate, `P(PnL>0)`, Recovery-entry and Recovery-success rates, ExecutionEV/RAEV, `Q_validated` and QF-093 as separately named metrics with their own denominators. It never collapses them into generic “success” or multiplies them in a dashboard-derived PnL.
 
 Predicted/counterfactual and reconciled realized economics remain separate. Action-bucket totals reconcile Strategy, Recovery, Rebalance, Bridge/Relocation, InfraCost and InventoryMTM without duplicate fills/costs. Support/OOD/demotion and q/state coverage remain adjacent to economic metrics. See [Probability Conditioning Matrix](_analysis/corr05_economic_integration/PROBABILITY_CONDITIONING_MATRIX.md) and [Accounting Map](_analysis/corr05_economic_integration/ACCOUNTING_RECONCILIATION_MAP.md).
+
+## 50. CORR-06 — Profile freshness and priority operations
+
+Infra operations retain empirical P50/P95/P99/P99.9 and meaningful maxima with sample support, jitter, availability, disconnect/reconnect, gaps/reorder/duplicates, scheduler delay, steal/migrations, memory pressure, Recorder backlog/drops and Book freshness. Actual execution scopes additionally report `UNKNOWN` incidence. Labels use bounded profile/policy/result classes; detailed host/event/order identities remain in traces.
+
+Profiles transition among `FRESH`, `AGING`, `REVALIDATION_REQUIRED`, `STALE` and `INVALID` using versioned evidence, not an invented calendar constant. Significant exchange/topology/route/host/kernel/container/build changes, deterioration, unexpected capture degradation or a promising new candidate can trigger a brief paired rebenchmark. Winner monitoring continues; all challengers need not remain rented. The fast-cancel documentation conflict remains a dated revalidation item and no latency advantage is reported as fact.
