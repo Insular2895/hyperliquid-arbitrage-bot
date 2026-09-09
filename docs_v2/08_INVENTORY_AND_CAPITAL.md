@@ -208,4 +208,10 @@ Promotion proceeds Replay -> Shadow -> Micro-live -> stepped Live capacity. Requ
 
 Completion probabilities and empirical rates never mutate Inventory, Reservations, balances or Recovery exposure. Actual unique fills and reconciled account events remain authority. A route may complete with negative PnL; a non-completion may have little loss; Recovery success remains separate from original-route completion and economic positivity.
 
-Any future use of calibrated completion probability in sizing or `Q_validated` is deferred to CORR-05 and requires size/depth support plus a no-double-count audit of QF-056/057/063. CORR-03 defines no `q × p_full` rule. See [Actual Outcome Taxonomy](_analysis/corr03_execution_completion/ACTUAL_EXECUTION_OUTCOME_TAXONOMY.md).
+CORR-03 deferred any use of calibrated completion probability in sizing or `Q_validated` to CORR-05. Section 35 now closes the boundary: size/depth support and a no-double-count audit of QF-056/057/063 are mandatory, and no completion-discount sizing rule is created. See [Actual Outcome Taxonomy](_analysis/corr03_execution_completion/ACTUAL_EXECUTION_OUTCOME_TAXONOMY.md).
+
+## 35. CORR-05 — Capacity and capital-cost ownership
+
+`Q_validated` remains QF-076's largest q satisfying all evidence, economic, Risk, capital, tail, model/fidelity and operational gates. It is not QF-027, account balance, top-of-book depth, Risk limit or completion-discounted size. Completion support is q/state-specific; more capital and order slicing do not expand validated evidence.
+
+QF-065 prices inventory deviation outside `Π_exec`; QF-068 ExpectedExitCost is a component of QF-069 StrandedPenalty and is not deducted beside the complete QF-069; QF-105 idle cost is likewise not repeated. Bridge/relocation QF-070–072 remains a separate action and ledger from Strategy ExecutionEV. See [Q_validated Contract](_analysis/corr05_economic_integration/Q_VALIDATED_INTEGRATION_CONTRACT.md) and [Inventory/Exit Audit](_analysis/corr05_economic_integration/INVENTORY_EXIT_STRANDED_DOUBLECOUNT_AUDIT.md).

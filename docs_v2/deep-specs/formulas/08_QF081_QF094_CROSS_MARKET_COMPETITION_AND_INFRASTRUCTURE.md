@@ -21,3 +21,5 @@ AWAITING HUMAN REVIEW
 | QF-094 | `N_alive(h)/N_eligible` | probability | eligible cohort, horizon, censoring policy; N_eligible>0 | empty cohort invalid; censored naïve count forbidden | all/none/some alive and censored cohort |
 
 Infrastructure comparisons are like-for-like experiments, not raw host scorecards. Latency components must have nonoverlapping boundaries; attribution uncertainty remains evidence, not a hidden correction term. QF-093 is explicitly a ratio of sums.
+
+CORR-05 assigns one coherent outcome distribution to each profile. QF-085, completion evidence and lost/recoverable-PnL attribution inform or validate that distribution; they are not stackable multipliers. QF-086 compares its gross outcomes, QF-087/QF-090 charge incremental infrastructure cost once, and QF-093 remains diagnostic rather than completion probability.

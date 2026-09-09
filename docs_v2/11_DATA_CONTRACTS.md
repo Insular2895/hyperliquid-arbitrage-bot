@@ -259,3 +259,9 @@ Absent fields require schema version, compatibility and migration review; CORR-0
 Canonical, challenger and speculative sources retain `FeedProfileId`, source/adapter/schema, canonical role, node build/flags where applicable, receive/clock/order quality and linked `InfraProfileId`. Frozen core schemas are not expanded ad hoc: new evidence uses compatible versioned extension records or linked research datasets with referential integrity.
 
 Cross-feed alignment requires a shared authoritative ID or strict versioned semantic fingerprint; nearest timestamps do not establish identity. Speculative RAW/normalized data is immutable evidence of an uncommitted observation, not canonical `MarketEvent` or economic truth. Any future canonical feed switch is a visible versioned material change and revalidates ordering, Replay, models and consumers.
+
+## 31. CORR-05 — Economic conditioning and provenance
+
+Compatible versioned analysis records bind the E0–E9 event label, frozen q/state/label/scope, F/P/R/X probabilities and scenario cashflows, unresolved coverage, support/OOD/confidence and formula/model/fee/book/infra versions. They link without silently mutating frozen core schemas.
+
+Every monetary observation maps by stable action and accounting-entry identity to exactly one of Strategy, Recovery, Rebalance, Bridge/Relocation, InfraCost or InventoryMTM before aggregate reconciliation. Predicted, Replay, Simulator and Shadow economics retain counterfactual provenance and never enter realized ledgers. See [Execution PnL Distribution Contract](_analysis/corr05_economic_integration/EXECUTION_PNL_DISTRIBUTION_CONTRACT.md) and [Counterfactual versus Realized](_analysis/corr05_economic_integration/COUNTERFACTUAL_VS_REALIZED_ECONOMICS.md).

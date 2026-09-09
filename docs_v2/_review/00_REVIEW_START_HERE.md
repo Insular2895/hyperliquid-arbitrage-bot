@@ -6,7 +6,7 @@
 >
 > **FINAL REVIEW PACKAGE WILL BE REFRESHED AFTER CORR-06.**
 
-CORR-01 and CORR-02 changed canonical documentation after the PASS16 baseline. All approval remains pending; implementation and legacy switchover remain unauthorized.
+CORR-01 through CORR-05 changed canonical documentation after the PASS16 baseline. All approval remains pending; implementation and legacy switchover remain unauthorized.
 
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 

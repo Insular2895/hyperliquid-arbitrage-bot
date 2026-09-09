@@ -37,3 +37,7 @@ VaR alone is insufficient because it does not characterize the tail beyond the q
 Persistent actual-versus-predicted slippage, fill, PnL or recovery error can reduce size or trigger an execution-mode/strategy/market kill. Persistent Simulator or Participant miscalibration disables only dependent capabilities where safe. Backtest evidence never overrules persistent live contradiction, while isolated live samples are not sufficient proof of drift.
 
 Source: SRC-005 lines 1273–1756, 2172–2512, 2812–2899 and 4021–4089.
+
+## CORR-05 economic-distribution boundary
+
+Risk consumes QF-056/057 EV, QF-059, VaR/CVaR and confidence from one canonical `Π_exec` distribution. It does not multiply completion or survival again and does not convert its hard gates to soft penalties. OOD or insufficient support can remove q from the valid domain without defining a numeric `p_full` gate. See [Risk Permission versus Economic Score](../../_analysis/corr05_economic_integration/RISK_PERMISSION_VS_ECONOMIC_SCORE.md).

@@ -34,3 +34,7 @@ The 40–50 EUR example is `MICRO_LIVE_PROBE`, not normal size. Promotion uses b
 Persist the entire candidate curve, not only the winner: quantity, executable conversion, edge/EV/RAEV, fill/completion, impact/participation, P+, CVaR, confidence/OOD, future inventory, resource demand, gate results and structured rejection reason.
 
 Sources: SRC-003 §§39–47; SRC-004 QF-026–027/QF-040–042/QF-056–063/QF-073–077; SRC-005 §§59–61/145–152; SRC-006 §§78–82/138–147/272–277; SRC-007 §§53–60; SRC-008 §§44–48/75.
+
+## CORR-05 completion/support boundary
+
+`p_full` and the complete execution distribution are q/state-dependent where supported. A small-q cohort cannot validate a larger q, and no monotonicity is assumed. QF-027 is the profitable-size bound; QF-076 is the all-gates validated-capacity bound. Account capital, top-of-book depth, a Risk limit or slicing cannot substitute for model/fidelity/evidence support. See [Model Support and Validated Capacity](../../_analysis/corr05_economic_integration/MODEL_SUPPORT_AND_VALIDATED_CAPACITY_CONTRACT.md).

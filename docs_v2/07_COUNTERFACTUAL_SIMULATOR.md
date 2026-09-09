@@ -272,10 +272,16 @@ Initial TT/TTT binds this profile to a versioned canonical-terminal resolution p
 
 The initial completion model is a constant then transparent hierarchical empirical baseline over comparable real attempts, initially TT and separately TTT. It is a calibration baseline/Challenger/input candidate; Simulator remains owner of final `ExecutionForecast`. Per-leg fill diagnostics cannot be multiplied naïvely. GBDT and deeper models are optional Challengers only. Training/recalibration is offline, artifacts are immutable/versioned, and live weights never self-modify. See [Probability Audit](_analysis/corr03_execution_completion/EXECUTION_FORECAST_PROBABILITY_AUDIT.md), [Empirical Baseline](_analysis/corr03_execution_completion/EMPIRICAL_COMPLETION_BASELINE_CONTRACT.md) and [Calibration Contract](_analysis/corr03_execution_completion/COMPLETION_CALIBRATION_CONTRACT.md).
 
-CORR-03 does not decide how the distribution affects QF-056/057/063, sizing or QF-076. CORR-05 must first prove the existing scenario composition and prevent double counting.
+CORR-03 did not decide how the distribution affects QF-056/057/063, sizing or QF-076. CORR-05 section 36 now closes that composition without changing Simulator math.
 
 ## 35. CORR-04 — Feed and infrastructure provenance
 
 Latency/counterfactual results bind the declared `FeedProfileId`, `InfraProfileId`, canonical/challenger role, source/node build, container/network/CPU profile and timing validity through linked RunManifest evidence. Speculative events, when researched, retain `NON-CANONICAL` epistemic class and are never silently replayed as committed inputs.
 
-The Simulator may estimate downstream effects of a feed/infra profile, but it cannot make a challenger canonical, create actual execution outcomes or authorize a speculative send. QF-085 and CORR-03 completion evidence remain distinct inputs pending CORR-05 double-counting review; Simulator math is unchanged.
+The Simulator may estimate downstream effects of a feed/infra profile, but it cannot make a challenger canonical, create actual execution outcomes or authorize a speculative send. QF-085 and CORR-03 completion evidence remain distinct inputs whose economic ownership is closed by CORR-05 section 36; Simulator math is unchanged.
+
+## 36. CORR-05 — One execution-outcome distribution
+
+The Simulator owns one versioned `Π_exec(q,state)` distribution. Under `ROUTE_OUTCOME_RESOLVED_V1`, F/P/R/X are conditional on an execution attempt and the frozen q/state/label/scope: F completes the original route without Recovery; P is noncomplete with strategy fill and no Recovery; R is noncomplete with Recovery entry; X is the resolved zero-fill/no-Recovery residual. Unknown/unresolved/censored/invalid coverage remains outside the partition.
+
+QF-048/QF-085 survival and empirical completion evidence calibrate or condition this distribution. They are not multiplied onto its QF-056/057 EV unless a separately validated factorization proves distinct conditional events and no overlap. QF-059 and tail measures derive from the same distribution. Each scenario cashflow includes fees, executable book walk and path/Recovery economics once. See [Execution PnL Distribution Contract](_analysis/corr05_economic_integration/EXECUTION_PNL_DISTRIBUTION_CONTRACT.md).

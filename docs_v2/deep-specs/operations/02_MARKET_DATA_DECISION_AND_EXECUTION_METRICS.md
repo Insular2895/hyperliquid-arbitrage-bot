@@ -20,3 +20,7 @@ Distributions include count, valid/invalid, P50/P95/P99/P99.9/MAX where meaningf
 ## CORR-01 qualification
 
 The words `opportunity`, `capture`, `fill`, `completion` and `success` cannot stand alone in a metric name. Use the stage/count/rate definitions and exact populations from [Capture Funnel and Latency Attribution](11_CAPTURE_FUNNEL_AND_LATENCY_ATTRIBUTION.md). Conditional leg rates, attempt-cohort rates, episode rates and QF-048/QF-085/QF-093 are different objects. Every distribution includes endpoint-complete, invalid-clock, censored/unresolved and total population counts.
+
+## CORR-05 economic metric separation
+
+Expose QF-048/QF-085 survival, F/P/R/X forecasts, empirical FullRouteCompletionRate, QF-059 positive-PnL probability, Recovery success, RAEV, QF-076 capacity and QF-093 ratio separately. Each retains event, population, q/state scope, support and maturity. No dashboard defines a generic success score or transforms these views into an ungoverned EV multiplier.

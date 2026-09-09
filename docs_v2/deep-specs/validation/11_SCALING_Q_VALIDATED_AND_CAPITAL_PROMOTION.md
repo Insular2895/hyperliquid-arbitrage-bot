@@ -11,4 +11,8 @@ Market expansion repeats metadata/fees/Graph/formulas, liquidity/support, Replay
 
 Q_validated may shrink on drift, OOD, regime/liquidity change, dependency demotion, incidents or rule/infrastructure change. More account capital, book depth, elapsed time or profitable aggregate PnL does not increase validated capacity.
 
-An infrastructure/feed profile contributes evidence to `Q_validated` only after its exact N1–N9/P1–P9 scope is validated. Account balance cannot select a node or larger server. CORR-05 will decide how completion/capture evidence is consumed without redefining actual truth or double counting QF-085, completion and infrastructure effects.
+An infrastructure/feed profile contributes evidence to `Q_validated` only after its exact N1–N9/P1–P9 scope is validated. Account balance cannot select a node or larger server. The CORR-05 closure below defines how completion/capture evidence is consumed without redefining actual truth or double counting QF-085, completion and infrastructure effects.
+
+## CORR-05 closure
+
+Completion/capture evidence is consumed through the one q/state-specific `Π_exec` distribution and its support domain. QF-085, actual completion and infrastructure attribution are not stacked. QF-027 remains profitable size; QF-076 remains the complete validated-capacity bound evaluated without a monotonicity assumption. Demotion, OOD or missing next-band evidence contracts capacity regardless of account balance.

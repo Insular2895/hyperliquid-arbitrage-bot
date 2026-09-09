@@ -221,4 +221,8 @@ Fine `T_*` timing points refine QF-084 only through a documented non-overlapping
 
 ## CORR-04 capture/economic chain
 
-Feed/node/host improvement must propagate through matched arrival and valid state age to EventToSend, funnel movement, modeled QF-085 survival and independently observed CORR-03 completion/economic outcomes. Do not multiply survival, completion and an extra infrastructure capture factor before CORR-05 assigns ownership. Node/host/storage/bandwidth plus operational and security burden enter incremental cost. `UNKNOWN_ATTRIBUTION` is valid; sequential marginal attribution prevents one loss being charged repeatedly.
+Feed/node/host improvement must propagate through matched arrival and valid state age to EventToSend, funnel movement, modeled QF-085 survival and independently observed CORR-03 completion/economic outcomes. Survival, completion and an extra infrastructure capture factor cannot be multiplied; CORR-05 ownership below closes them through one profile distribution. Node/host/storage/bandwidth plus operational and security burden enter incremental cost. `UNKNOWN_ATTRIBUTION` is valid; sequential marginal attribution prevents one loss being charged repeatedly.
+
+## CORR-05 economic ownership
+
+The assignment is one coherent profile-specific outcome distribution followed by one incremental infrastructure-cost close. QF-085 survival, actual completion, InfraLostPnL/RecoverablePnL and QF-093 are model/evidence/diagnostic views of this chain, not stackable profit factors. A future verified per-action priority charge belongs once in the affected execution scenario; its benefit remains a separately validated distribution change. See [Infrastructure Capture Economic Composition](../../_analysis/corr05_economic_integration/INFRA_CAPTURE_ECONOMIC_COMPOSITION.md).

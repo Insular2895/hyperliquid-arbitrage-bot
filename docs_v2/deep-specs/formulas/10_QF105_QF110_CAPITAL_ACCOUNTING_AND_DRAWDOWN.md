@@ -13,3 +13,5 @@ AWAITING HUMAN REVIEW
 | QF-110 | `MDD=max_tDD_t` | equity units | valid nonempty QF-109 series and interval | empty interval source-unspecified: invalid/open | monotone up 0, known trough, interval boundary |
 
 SRC-004 supplies these fixed identities but contains no formal status line for QF-106–110; their audit label is `SOURCE_DERIVED_FROM_CONTEXT`. That label preserves source certainty accurately while retaining the equations. PnL components must be mutually reconcilable: QF-108 strategy attribution plus infrastructure cost must equal QF-106 global EconomicPnL under the same scope.
+
+CORR-05 makes that compatibility explicit through disjoint Strategy, Recovery, Rebalance, Bridge/Relocation, InfraCost and InventoryMTM buckets. `StrategyPnL` may be a presentation aggregate, never an overlapping ledger. Each fill/cost is attributed once and infrastructure cost closes once. See [Accounting Reconciliation Map](../../_analysis/corr05_economic_integration/ACCOUNTING_RECONCILIATION_MAP.md).

@@ -308,3 +308,9 @@ Exchange price validity, size quantum, market minimums, fee schedules/tiers/reba
 ## Source
 
 SRC-004 lines 3350–9520, with QF-001–QF-110 at lines 3519–9224 and post-formula governance/golden requirements thereafter. Source statuses and exceptional omissions are recorded without invention.
+
+## 40. CORR-05 — Composition audit
+
+All QF-001–QF-110 were reviewed as one economic composition; equation and semantic changes are zero. QF-056/QF-057 consume one F/P/R/X execution PnL distribution. QF-063 subtracts InventoryPenalty, StrandedPenalty and ModelUncertaintyPenalty only as external, non-overlapping terms; it never repeats scenario fees, slippage, partial-path or Recovery economics.
+
+QF-048/QF-085 arrival survival is not `p_full`; QF-059 positive-PnL probability is derived from the same distribution; QF-093 is a diagnostic/accounting ratio rather than an event probability. QF-027 profitable size and QF-076 validated capacity remain distinct. The QF namespace remains exactly QF-001–QF-110 and no human-derived formula is required. See [QF Composition Audit](_analysis/corr05_economic_integration/QF_COMPOSITION_AUDIT.md) and [Term Owner Registry](_analysis/corr05_economic_integration/ECONOMIC_TERM_OWNER_REGISTRY.md).

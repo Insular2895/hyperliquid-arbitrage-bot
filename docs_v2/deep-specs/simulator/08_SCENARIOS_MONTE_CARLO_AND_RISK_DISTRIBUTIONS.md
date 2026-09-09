@@ -38,3 +38,7 @@ Candidate slicing scenarios are single immediate, same-time fragments, time-spac
 ## Failure behaviour
 
 Non-finite samples, impossible state, invalid dataset region, unsupported distribution, or unreproducible paths invalidate the affected run. OOD tails reduce authority; they are not clipped into favourable outcomes.
+
+## CORR-05 economic partition
+
+Under `ROUTE_OUTCOME_RESOLVED_V1`, F/P/R/X is the sole resolved-attempt scenario partition and each sample/scenario returns one complete path PnL. QF-048/QF-085 survival may shape the joint sample population or features but is not multiplied onto the finished EV. QF-059 and tail measures are projections from the same `Π_exec` distribution. Recovery entry, Recovery success and Recovery PnL remain separate axes. See [ExecutionForecast Economic Mapping](../../_analysis/corr05_economic_integration/EXECUTION_FORECAST_ECONOMIC_MAPPING.md).

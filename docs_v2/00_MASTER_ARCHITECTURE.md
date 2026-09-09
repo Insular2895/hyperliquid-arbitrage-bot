@@ -379,3 +379,9 @@ Execution/Recovery/Reconciliation remain actual-truth authorities; Simulator own
 The initial hierarchy is `public feed canonical baseline -> isolated node/feed challenger -> paired correctness/arrival/capture evidence -> economic/security/operations gate -> explicit scoped promotion`. Every run has exactly one canonical MarketState writer and one active economic execution owner. Dual-feed means canonical plus observe-only comparison, never feed fusion.
 
 Uncommitted inputs live in a separately typed `NON-CANONICAL` speculative lane. They may prepare pure structural/economic computation, but cannot mutate canonical Book/Account/Order/Fill/Inventory/Reservations/PnL/Recovery/Reconciliation state, create canonical funnel counts or authorize/sign/send new risk. Reuse waits for exact canonical fingerprint/version equality and fresh-computation parity. See [CORR-04 baseline](_analysis/corr04_infrastructure_execution_path/BASELINE_AND_SCOPE.md). `HDC-033..050` await final human review.
+
+## 49. CORR-05 — Canonical economic composition
+
+The canonical chain is `frozen candidate/state/q -> survival and participant evidence -> one Simulator Π_exec(q,state) distribution -> QF-056/057 EV and scenario outcomes -> QF-059/tails -> QF-063 external non-overlapping penalties -> QF-076 validated capacity -> Risk permission -> actual Execution/Recovery/Reconciliation -> disjoint Accounting`. Prediction, permission, execution truth and accounting truth never substitute for one another.
+
+QF-048/QF-085 are arrival-survival probabilities; `p_full/p_partial/p_recovery/p_failure` form the declared attempt-conditional resolved partition; QF-059 is positive-PnL probability; QF-093 is a ratio of sums. No generic success metric or blind probability product is canonical. Risk hard gates remain gates and cannot be purchased by positive RAEV. See [CORR-05 analysis](_analysis/corr05_economic_integration/BASELINE_AND_SCOPE.md). `HDC-051..076` await final human review.

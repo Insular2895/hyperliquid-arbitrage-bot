@@ -40,3 +40,7 @@ Fees/slippage already present in actual route results or NetConvert are not dedu
 Compare predicted exit cost with executed exits, predicted idle duration with realized capital unavailability, and stranded penalty with later exit/utility outcomes. Persistent error reduces confidence and may shrink Q_validated or terminal eligibility.
 
 Sources: SRC-003 §§18–31/56–63; SRC-004 QF-063/QF-068–069/QF-105–108; SRC-005 §§70–74/Data §§148–155; SRC-007 §§61–68/91–93.
+
+## CORR-05 exact-once ownership
+
+QF-065 InventoryPenalty prices inventory deviation. QF-068 ExpectedExitCost is a component of QF-069 StrandedPenalty, together with expected idle and risk cost; QF-105 is not separately deducted when used through this composition. These state/future-cost terms remain outside execution path cashflows and are calibrated to avoid sharing the same liquidation/risk amount. See [Inventory, Exit and Stranded Audit](../../_analysis/corr05_economic_integration/INVENTORY_EXIT_STRANDED_DOUBLECOUNT_AUDIT.md).

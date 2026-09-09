@@ -213,3 +213,9 @@ Completion models use chronological/walk-forward OOS, episode-aware leakage cont
 M1/M2 prove public-feed ordering/book/gap/reconnect/freshness, strict cross-feed alignment, one canonical writer, deterministic source/epistemic Replay, `S-01..S-10` safety and exact speculative-reuse parity. M3 supplies paired node/challenger Shadow evidence. M4 is possible only after the challenger becomes a validated canonical candidate with one economic owner; no dual-account-owner A/B is permitted.
 
 Docker bridge/host/native and CPU/scheduler/IRQ/network treatments require semantic parity before performance, starvation/resource/reconnect/security guardrails and rollback. Kernel bypass cannot prototype before complete TCP/TLS/WebSocket applicability and least-privilege review. Promotion follows N1–N9/P1–P9 and end-to-end capture/economic evidence, never advertised latency. See [CORR-04 Validation Matrix](_analysis/corr04_infrastructure_execution_path/CORR04_VALIDATION_MATRIX.md).
+
+## 47. CORR-05 — Economic-composition validation
+
+M1/M2 add E0–E9 label goldens, F/P/R/X partition and unresolved-coverage tests, probability-conditioning lint, scenario probability/cashflow exact-once vectors, Recovery-entry/success/loss separation, inventory/exit/stranded and Bridge ownership fixtures, q/state support grids, QF-027/QF-076 divergence cases, disjoint accounting reconciliation and prediction-versus-realized provenance tests.
+
+No product of QF-048/QF-085 and `p_full` passes without an explicitly validated joint decomposition. Infrastructure profiles compare one coherent distribution and incremental cost once. OOD/demotion contracts capacity; positive RAEV never overrides Risk. See [CORR-05 Validation Matrix](_analysis/corr05_economic_integration/CORR05_VALIDATION_MATRIX.md).

@@ -52,3 +52,5 @@ A stage exits only when its evidence is sufficient, reproducible, supported and 
 - Validate Bridge separately because it moves capital for future utility rather than arbitrage alpha.
 
 CORR-04 infrastructure order is `public baseline → measure → observe-only feed/node challenger → strict correctness/alignment → downstream capture evidence → robust net value → explicit promotion → deeper host/network complexity`. Shadow is the primary challenger stage. Docker remains baseline; native/tuning/kernel bypass are independent scoped candidates and cannot inherit maturity.
+
+CORR-05 economic order is `define E0–E9 and conditioning → build one Π_exec distribution → prove exact-once cashflow/penalty ownership → validate q/state support and tails → enforce Risk permission → reconcile actual action buckets → promote → scale inside Q_validated`. Completion, survival and infrastructure diagnostics do not form parallel EV systems.

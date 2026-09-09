@@ -377,3 +377,9 @@ The public feed remains initial canonical baseline. A non-validating node begins
 Provider/region/AZ/route, Docker bridge/host/native, CPU affinity/scheduler, IRQ/RSS/RPS/RFS and Linux network settings are controlled treatments. Tokyo is not permanent; native is reference only. AF_XDP, DPDK and F-Stack remain Research behind a full TCP/TLS/WebSocket applicability, least-privilege, reliability and economic gate.
 
 Node promotion requires N1–N9; any infrastructure promotion requires P1–P9: correctness, measurement validity, technical improvement, reliability/security guardrails, capture/RecoverablePnL, robust net value, operability and rollback. QF-084–QF-093 remain unchanged; latency alone and account size never promote. Detailed contracts: [CORR-04 analysis](_analysis/corr04_infrastructure_execution_path/BASELINE_AND_SCOPE.md).
+
+## CORR-05 — Infrastructure economics composition
+
+Each infrastructure profile is evaluated through one comparable counterfactual outcome distribution. QF-085 survival, completion evidence, InfraLostPnL/RecoverablePnL and QF-093 explain or validate the same economic chain; they are not stacked as separate bonuses or multipliers. QF-086 uses coherent profile gross-outcome differences and QF-087/QF-090 charge incremental infrastructure cost once.
+
+The current user-controlled numeric paid per-order priority mechanism remains unverified for the V1 path. If a future mechanism is verified, its actual action-level cost belongs once in the affected execution scenario; benefit is separately evidenced through outcome-distribution change and is never guaranteed. See [Infrastructure Capture Composition](_analysis/corr05_economic_integration/INFRA_CAPTURE_ECONOMIC_COMPOSITION.md).

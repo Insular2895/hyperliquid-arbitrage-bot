@@ -15,3 +15,5 @@ AWAITING HUMAN REVIEW
 | QF-063 | `RAEV=EV_execution-InventoryPenalty-StrandedPenalty-ModelUncertaintyPenalty` | common numeraire | all components aligned/disjoint; calibrated penalties | duplicated or unit-mismatched cost invalidates value | each penalty isolated; fee/slippage/recovery already in EV not subtracted again |
 
 `Loss=-PnL` is the sole tail-risk sign conversion. ExpectedShortfall is the internal term. The robust quantile-integral definition is canonical; a finite-sample interpolation/tie rule must be closed and versioned before an implementation can claim identical empirical ES.
+
+CORR-05 fixes the consumer semantics: F/P/R/X supplies one `Π_exec(q,state)` distribution; QF-059 and QF-060–062 derive from it. Arrival survival and empirical completion calibrate that distribution rather than discount it again. QF-063's three penalties remain external and non-overlapping. See [ExecutionEV Scenario Ownership](../../_analysis/corr05_economic_integration/EXECUTION_EV_SCENARIO_OWNERSHIP.md).

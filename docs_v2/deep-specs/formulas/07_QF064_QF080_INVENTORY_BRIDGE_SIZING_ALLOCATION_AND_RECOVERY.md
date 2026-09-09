@@ -24,3 +24,5 @@ AWAITING HUMAN REVIEW
 | QF-080 | `PortfolioValue_beforeRecovery-PortfolioValue_afterRecovery` | numeraire | consistent before/after valuation and action boundary | missing valuation/account mismatch invalid | no change 0; worse positive; sunk prior loss excluded |
 
 QF-064–080 separate soft preference, constitutional hard limits, physical capacity, evidence-backed validated capacity and recovery. A recursive definition in which InventoryPenalty depends on the final size that it is itself selecting is prohibited; each candidate `q` produces a candidate post-state and penalty before comparison.
+
+CORR-05 further locks: QF-068 is not repeated beside full QF-069; QF-105 idle cost is a QF-069 component where used; QF-070–072 Bridge remains outside Strategy ExecutionEV; QF-080 appears once in the Recovery scenario; and QF-027 profitability is not QF-076 evidence capacity. Completion/model support is q/state-specific and no monotonicity is assumed.

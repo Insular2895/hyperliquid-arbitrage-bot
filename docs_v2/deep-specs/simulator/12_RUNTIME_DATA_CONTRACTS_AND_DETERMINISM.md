@@ -56,3 +56,7 @@ Every `ExecutionForecast` used by a plan binds its horizon, route objective and 
 ## CORR-04 source/profile determinism
 
 Replay/Shadow results link canonical/challenger role, `FeedProfileId`, `InfraProfileId`, node build/flags and event-alignment version. Speculative events replay separately and never enter committed ordered input unless a later canonical event independently does so. Exact reusable precompute output must equal fresh canonical recomputation; otherwise it is discarded.
+
+## CORR-05 distribution provenance
+
+The frozen economic artifact binds event/conditioning profile, q/state/scope, F/P/R/X mass and scenario cashflows, support/OOD/confidence, unresolved coverage and every formula/model/fee/book/infra version. Replay equality covers the complete distribution and QF-056/059/tail projections. Counterfactual mode is explicit and cannot serialize as realized accounting truth.

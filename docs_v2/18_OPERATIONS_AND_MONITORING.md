@@ -202,3 +202,9 @@ Raw Execution/Opportunity/Route/CLOID IDs remain in traces, never metric labels.
 Bounded labels include `InfraProfileId`, `FeedProfileId`, node/public mode, container network mode and CPU profile; raw host/event/order IDs stay in traces. Observe canonical/challenger continuity, matched/unmatched arrival lead with clock validity, state age at decision/send, node applied-block lag/catch-up/build, gaps/reorder/duplicates, reconnect/time-to-healthy, scheduler/run-queue/migrations/steal, IRQ/network queues where visible, resources and dual-feed Recorder pressure.
 
 Operations reports evidence and health; it does not fuse feeds or promote a challenger. Invalid canonical feed/node state maps through existing Infra/Risk policy. A profile switch, node restart/resync, host/runtime/kernel/network change or security deviation triggers scoped revalidation and runbook evidence. Current external facts remain dated and versioned.
+
+## 49. CORR-05 — Separate economic observables
+
+Operations exposes arrival survival, `p_full/p_partial/p_recovery/p_failure`, empirical FullRouteCompletionRate, `P(PnL>0)`, Recovery-entry and Recovery-success rates, ExecutionEV/RAEV, `Q_validated` and QF-093 as separately named metrics with their own denominators. It never collapses them into generic “success” or multiplies them in a dashboard-derived PnL.
+
+Predicted/counterfactual and reconciled realized economics remain separate. Action-bucket totals reconcile Strategy, Recovery, Rebalance, Bridge/Relocation, InfraCost and InventoryMTM without duplicate fills/costs. Support/OOD/demotion and q/state coverage remain adjacent to economic metrics. See [Probability Conditioning Matrix](_analysis/corr05_economic_integration/PROBABILITY_CONDITIONING_MATRIX.md) and [Accounting Map](_analysis/corr05_economic_integration/ACCOUNTING_RECONCILIATION_MAP.md).

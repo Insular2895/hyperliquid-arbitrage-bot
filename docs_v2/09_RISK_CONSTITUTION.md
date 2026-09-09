@@ -341,3 +341,9 @@ Missing/OOD prediction never means permission. A future hard threshold is a sepa
 Only the declared canonical feed/state may support current risk-increasing permission. Node/feed challengers are observe-only until promoted; uncommitted/speculative state never authorizes, pre-signs or sends new risk and never mutates account, fill, inventory, reservation, PnL, Recovery or Reconciliation truth.
 
 Invalid, lagging, gapped, ambiguous or unreconciled canonical feed/node evidence fails closed for affected new risk under the existing `InfraState` and scoped kill hierarchy. It does not create a new action, threshold or hard gate. A speculative/challenger loss cannot make the system more active; known-exposure cancel/Recovery/Reconciliation remain governed by existing policy.
+
+## 36. CORR-05 — Permission remains separate from value
+
+Risk hard gates remain Boolean permission and are never converted to finite economic penalties. Positive ExecutionEV or RAEV cannot override an invalid state, OOD/unsupported model, capital/inventory breach or denied `RiskDecision`. Conversely, an allowed gate is not a command to trade when economics are negative.
+
+CORR-05 adds no `p_full` threshold or hard gate. Model support/OOD may restrict the QF-076 domain without inventing such a threshold. Any future post-reconstruction probability gate needs validated scope, failure/OOD semantics and material human review. See [Risk Permission versus Economic Score](_analysis/corr05_economic_integration/RISK_PERMISSION_VS_ECONOMIC_SCORE.md).

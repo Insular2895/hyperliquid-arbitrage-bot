@@ -300,3 +300,9 @@ Actual any-fill, order partial fill, leg full fill, intermediate exposure, Recov
 Execution emits actual events/state; it does not predict or train. CORR-03 derives sticky path flags and one terminal analytical class only after sufficient canonical evidence. `UNRESOLVED` is non-terminal; Recovery reaching `RECOVERED` maps to recovered-after-strategy-failure, not original route completion. Labels never change actual state.
 
 `HJ-001..010` now specify acceptance evidence for known zero fill, first/later partials, later-leg failure, lost response/UNKNOWN, cancel race, maker partial/cancel, crash/restart, duplicate/late fill and constrained Recovery. They add no transition. See [HJ Failure Suite](_analysis/corr03_execution_completion/HJ_FAILURE_SUITE.md), [Expected-State Matrix](_analysis/corr03_execution_completion/HJ_FAILURE_SUITE_EXPECTED_STATE_MATRIX.md) and [Outcome Taxonomy](_analysis/corr03_execution_completion/ACTUAL_EXECUTION_OUTCOME_TAXONOMY.md).
+
+## 39. CORR-05 — Execution truth versus economic projection
+
+Execution and Recovery continue to emit actual path truth; they do not compute predicted scenario probabilities. The F/P/R/X projection consumes their reconciled outcomes for calibration. `p_recovery` means Recovery entry, while QF-080 and the R-scenario cashflow carry actual economic loss once; `RECOVERED` remains operational success and can have any PnL sign.
+
+Original Strategy, Recovery, Rebalance and Bridge actions retain distinct identities so Accounting can map each fill/fee once. No state, transition, retry, sizing, price-protection or transport behavior changes. See [Recovery Cost Ownership](_analysis/corr05_economic_integration/RECOVERY_COST_OWNERSHIP_AUDIT.md) and [Accounting Map](_analysis/corr05_economic_integration/ACCOUNTING_RECONCILIATION_MAP.md).

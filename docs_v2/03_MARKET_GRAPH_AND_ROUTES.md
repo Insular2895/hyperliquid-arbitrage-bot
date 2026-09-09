@@ -198,3 +198,9 @@ The BBO stage classifies, rather than vaguely “rejects”: C1 applies existing
 FastL1 is QF-016 implemented on a proved one-level domain. Both directions retain fees/debit asset, quantization, minima, protected price, outputs/deltas, residual, reasons and versions. An ineligible case returns only fallback; full L2 remains the oracle. See [BBO/L1/L2 evaluation](deep-specs/market-graph/10_BBO_L1_L2_EVALUATION.md).
 
 The logical `pair_to_routes` contract is unchanged. HashMap/vector, dense arrays, CSR-like storage and activation masks are physical candidates only. Dense indices are deterministic, generation-local and round-trip to stable canonical IDs. Dedup can skip only an equal complete input tuple; distinct ordered book/fee/rule/model/q states cannot be coalesced silently. See [Route Index and Work Deduplication](deep-specs/market-graph/11_ROUTE_INDEX_AND_WORK_DEDUP.md).
+
+## 34. CORR-05 — Route economics and decision boundary
+
+ConversionAlpha describes deterministic conversion geometry; ExecutionAlpha includes execution-aware economics. A route can have positive ConversionAlpha and negative ExecutionAlpha, so only the execution-aware candidate may proceed to economic/Risk evaluation. Completion alone is not profit evidence.
+
+Opportunity evaluation supplies the frozen E0 candidate and exact QF-016 path mechanics. It does not multiply arrival survival or completion probabilities onto an already composed QF-056/057 distribution. See the [Decision-Value Pipeline](_analysis/corr05_economic_integration/DECISION_VALUE_PIPELINE.md).

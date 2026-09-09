@@ -34,3 +34,7 @@ Every component links to run/config/formula/model versions, action/route/executi
 Capital efficiency is assessed with attributable capture, validated utilization, missed opportunity and idle cost—not forced 100% deployment. Surplus capital may remain idle when no valid capacity exists. A route can profit while portfolio economics worsen; a relocation can lose immediately while improving future utility. Both facts remain visible.
 
 Sources: SRC-001/002 hierarchical PnL reasoning; SRC-003 §§56–63; SRC-004 QF-105–108; SRC-005 §§167–168/Data §§148–155; SRC-006 §§165–169; SRC-007 §§91–93.
+
+## CORR-05 disjoint accounting close
+
+Strategy, Recovery, Rebalance, Bridge/Relocation, InfraCost and InventoryMTM are disjoint action buckets. A broad StrategyPnL view may aggregate named buckets but cannot recreate them as a second ledger. QF-106 and QF-108 reconcile to one EconomicPnL; infrastructure cost is subtracted once. Predicted/Shadow/Replay economics never enter realized buckets. See [Accounting Reconciliation Map](../../_analysis/corr05_economic_integration/ACCOUNTING_RECONCILIATION_MAP.md).

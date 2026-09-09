@@ -26,3 +26,7 @@ For each candidate size, evaluate EV, Expected Shortfall, probability positive, 
 More capital or realized profit cannot raise validated capacity automatically. Scaling requires data volume, Simulator calibration/confidence, micro-live evidence, tails, recovery quality, market capacity and infrastructure stability. Operational bands are evidence-derived, not fixed currency ladders.
 
 Formula references: `QF-064`–`QF-069`, `QF-073`–`QF-078`, `QF-109`–`QF-110`. Source: SRC-005 lines 1757–2171, 2513–2800, 3071–3179 and 3475–3643.
+
+## CORR-05 validated-capacity gate
+
+QF-076 is evaluated at every candidate q with q/state-specific distribution support. QF-027 profitability, QF-073 available balance and QF-074 shared capacity are necessary scoped inputs, not substitutes for full validated capacity. Model demotion or OOD contracts the eligible domain; additional capital cannot expand it. No completion-rate hard threshold is added.

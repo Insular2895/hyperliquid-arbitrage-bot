@@ -319,3 +319,7 @@ Original sources SRC-001..008, with SRC-004 authoritative for formulas, SRC-005 
 Participant models may provide point-in-time survival, liquidity response, competition, maker-fill, regime and cross-market features to the Simulator’s completion forecast. They do not own full-route actual truth, `Y_full_route`, the F/P/R/X partition, Execution state or model promotion.
 
 Route-level completion is calibrated directly against authoritative real-attempt outcomes. Per-leg rates remain conditional diagnostics and are never multiplied under an unproved independence assumption. New Participant versions require point-in-time temporal OOS validation before use as completion features. See [ExecutionForecast Probability Audit](_analysis/corr03_execution_completion/EXECUTION_FORECAST_PROBABILITY_AUDIT.md).
+
+## 26. CORR-05 — Participant evidence in economic composition
+
+Survival, response, competition, maker fill and adverse-selection models are versioned inputs to the Simulator's one joint `Π_exec(q,state)` distribution. Their headline probabilities or scores are not applied again as independent EV multipliers. QF-042 mechanical impact, L2 book walk, participant response and maker adverse selection retain distinct horizons/owners so one price move is not charged several times. See [Slippage, Impact and Adverse Selection](_analysis/corr05_economic_integration/SLIPPAGE_IMPACT_ADVERSE_SELECTION_AUDIT.md).

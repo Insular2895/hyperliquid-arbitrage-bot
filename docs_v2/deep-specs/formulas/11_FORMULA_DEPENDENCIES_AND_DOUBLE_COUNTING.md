@@ -59,3 +59,7 @@ Formula Engine computes typed outputs but does not grant permission. Feature/Mod
 ## Recursive dependency guard
 
 For candidate size `q`, compute projected inventory → QF-064 → QF-065, then QF-063(q), then compare candidates under QF-075. InventoryPenalty cannot depend on the final `q*` before candidates are evaluated. Shared QF-074 capacity is reserved atomically outside the pure formula result.
+
+## CORR-05 composition closure
+
+QF-056/QF-057 consume one F/P/R/X `Π_exec(q,state)` distribution. Arrival survival, completion calibration and participant/infra evidence are inputs to that distribution, not downstream multipliers. QF-063 subtracts only its three external non-overlapping terms. QF-068 and QF-105 are not repeated beside complete QF-069; QF-080 is not repeated outside the Recovery scenario; QF-087/QF-090 infrastructure cost closes once. The normative audit is [CORR-05 Economic Double-Count Matrix](../../_analysis/corr05_economic_integration/ECONOMIC_DOUBLE_COUNT_MATRIX.md).

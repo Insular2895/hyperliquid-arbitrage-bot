@@ -381,4 +381,10 @@ The model remains data/offline baseline until the [Promotion Gate](_analysis/cor
 
 `PUBLIC BASELINE -> MEASURE -> NODE/FEED CHALLENGER OBSERVE-ONLY -> STRICTLY ALIGN/COMPARE -> PROVE CORRECTNESS AND CAPTURE -> PROVE ROBUST NET VALUE -> EXPLICITLY PROMOTE -> ONLY THEN CONSIDER DEEPER OS/NETWORK COMPLEXITY`.
 
-Speculative data remains a separate Research lane through parity/Replay/Shadow and cannot affect real send without a future explicit design. Docker stays baseline; native, affinity, scheduler/IRQ/network tuning and AF_XDP/DPDK/F-Stack do not inherit maturity and cannot block early V1. QF-084–QF-093 stay authoritative; CORR-05 must reconcile survival, actual completion, infrastructure capture and any future priority cost without double counting.
+Speculative data remains a separate Research lane through parity/Replay/Shadow and cannot affect real send without a future explicit design. Docker stays baseline; native, affinity, scheduler/IRQ/network tuning and AF_XDP/DPDK/F-Stack do not inherit maturity and cannot block early V1. QF-084–QF-093 stay authoritative; CORR-05 section 43 now reconciles survival, actual completion, infrastructure capture and any future priority cost without double counting.
+
+## 43. CORR-05 — Calibrate economics before scaling
+
+The evidence loop is `freeze candidate and distribution semantics -> validate scenario probabilities/cashflows -> validate q/state support -> validate tails and external penalties -> enforce Risk gates -> reconcile predicted versus actual economics -> promote a versioned model -> scale only inside Q_validated`. Shadow produces counterfactual evidence; only reconciled Micro-live/Live events produce realized PnL.
+
+Model demotion selects only a supported declared fallback and may contract capacity. Profile or capital scaling cannot outrun completion, fidelity, OOD or accounting evidence. Bridge and infrastructure decisions use their separate economic/accounting boundaries. See [CORR-05 Roadmap Impact](_analysis/corr05_economic_integration/CORR05_ROADMAP_IMPACT.md).

@@ -52,3 +52,7 @@ Capabilities advance only when required lower-layer evidence passes and observed
 ## CORR-03 HJ failure evidence
 
 `HJ-001..010` are deterministic project validation scenarios covering first-leg zero/partial, later-leg zero/partial, lost response/UNKNOWN, cancel race, maker partial/cancel, crash/restart, duplicate/late fill and constrained Recovery. They assert existing states only and retain path flags separately from terminal analytical class. Only HJ-001 and HJ-003 are directly evidenced by primary Harjus production material; the remaining IDs are project-derived scenarios. See [HJ Failure Suite](../../_analysis/corr03_execution_completion/HJ_FAILURE_SUITE.md) and [Validation Matrix](../../_analysis/corr03_execution_completion/HJ_FAILURE_SUITE_VALIDATION_MATRIX.md).
+
+## CORR-05 economic failure evidence
+
+Failure class, loss magnitude, Recovery entry, Recovery success and final PnL are independently asserted. R-scenario accounting includes QF-080 incremental Recovery loss once; unresolved outcomes remain outside X. Validation includes full-route negative-PnL and noncomplete zero/small-loss cases and proves each actual fill/fee maps to one action ledger.

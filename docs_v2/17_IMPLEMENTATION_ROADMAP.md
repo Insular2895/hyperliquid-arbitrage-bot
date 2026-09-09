@@ -430,3 +430,9 @@ See [CORR-03 Roadmap Impact](_analysis/corr03_execution_completion/CORR03_ROADMA
 No Phase 27 is added. Phase 2 owns current public API/feed adapter conformance; Phase 3 captures bounded feed/infra/challenger evidence; Phase 8 preserves source and speculative epistemic Replay; Phase 13 measures HTTP/WS transport/ACK without changing outcome truth; Phase 19 is the primary observe-only node challenger stage; Phase 20 may test only a separately promoted canonical feed with one owner; Phase 26 houses advanced provider/node/native/CPU/network/kernel escalation.
 
 Node and kernel bypass do not block early V1. The order is public baseline, measure, paired observe-only challenger, correctness/capture/value comparison, explicit promotion, then deeper host/network complexity if still justified. FIX is rejected for current V1 absent official support. See [CORR-04 Roadmap Impact](_analysis/corr04_infrastructure_execution_path/CORR04_ROADMAP_IMPACT.md).
+
+## 47. CORR-05 — Economic work in existing phases
+
+No Phase 27 is added. Phase 7 locks deterministic scenario composition; Phase 8 adds double-count/accounting fixtures; Phase 9 enforces ExecutionAlpha; Phases 10/11 separate capital accounting and hard permission; Phase 14 validates Recovery economics; Phase 17 establishes q/state model support; Phase 18 owns `Π_exec`; Phases 19/20 validate Shadow then actual Micro-live economics; Phases 21–23 add survival/fidelity/maker evidence; Phases 24/25 preserve allocation and Bridge boundaries; Phase 26 scales only within validated capacity and robust net infrastructure value.
+
+See [CORR-05 Roadmap Impact](_analysis/corr05_economic_integration/CORR05_ROADMAP_IMPACT.md). This mapping changes no dependency order and authorizes no implementation or capital.

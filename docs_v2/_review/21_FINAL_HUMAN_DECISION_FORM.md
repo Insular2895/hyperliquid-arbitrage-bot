@@ -6,7 +6,7 @@
 >
 > **FINAL REVIEW PACKAGE WILL BE REFRESHED AFTER CORR-06.**
 
-This form is stale after CORR-01 and CORR-02. Leave every approval box unchecked. Human approval remains `PENDING`; implementation and legacy switchover remain `NOT AUTHORIZED`.
+This form is stale after CORR-01 through CORR-05. Leave every approval box unchecked. Human approval remains `PENDING`; implementation and legacy switchover remain `NOT AUTHORIZED`.
 
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 

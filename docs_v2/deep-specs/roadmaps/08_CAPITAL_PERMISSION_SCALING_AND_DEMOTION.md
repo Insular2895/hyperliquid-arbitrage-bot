@@ -48,3 +48,7 @@ The source's `€40–50` example illustrates a measurement probe only. Actual p
 `Q_validated` and M5 are dynamic. Prediction drift, fill/slippage/recovery degradation, unsupported tails, OOD, inventory/infra instability, security/state inconsistency or incident can shrink q or disable a scope immediately. Down-scale, fallback, revert and capital withdrawal are correct outcomes—not failures of project ambition.
 
 Re-promotion requires current reconciliation, containment/fix or rollback, affected Replay/Shadow/Micro-live evidence and explicit approval. No cleared alert or profitable trade auto-promotes.
+
+## CORR-05 economic demotion effect
+
+The fallback must own a versioned supported `Π_exec(q,state)` scope. A demoted or OOD completion/economic model can contract `Q_validated` even without a numeric completion threshold; capital and prior profit cannot preserve unsupported size. Bridge, Strategy and infrastructure promotion keep separate economic/accounting gates.
