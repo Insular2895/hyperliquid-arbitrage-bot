@@ -29,6 +29,7 @@ The reviewer may approve the documentation baseline and, separately, authorize *
 6. [Data, Replay and evidence](08_DATA_REPLAY_AND_EVIDENCE_REVIEW.md)
 7. [Implementation and scale roadmaps](13_IMPLEMENTATION_AND_SCALE_ROADMAP_REVIEW.md)
 8. [Deferred scientific iteration and strategy research](../deep-specs/strategy-research/README.md)
+9. [Async/concurrency architecture finalization](../_analysis/async_concurrency_architecture/ASYNC_ARCHITECTURE_FINAL_REPORT.md)
 
 ## Should review
 
@@ -47,6 +48,7 @@ The reviewer may approve the documentation baseline and, separately, authorize *
 - [CORR-06 final human-review handoff](../_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md)
 - [CORR-06 final report](../_analysis/corr06_final_consistency/CORR06_FINAL_REPORT.md)
 - [Scientific iteration extension report](../_analysis/future_strategy_research_and_lifecycle/FINAL_REPORT.md)
+- [Async/concurrency final report](../_analysis/async_concurrency_architecture/ASYNC_ARCHITECTURE_FINAL_REPORT.md)
 - [Source and traceability certificate](18_SOURCE_AND_TRACEABILITY_CERTIFICATE.md)
 - [PASS 15 final report](../_analysis/pass15_source_no_loss/PASS15_FINAL_REPORT.md)
 - [PASS 14 consistency report](../_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md)
@@ -54,7 +56,7 @@ The reviewer may approve the documentation baseline and, separately, authorize *
 
 ## Review protocol
 
-1. Record the exact pushed scientific-iteration extension commit from Git/the delivery receipt in the decision form.
+1. Record the exact pushed async/concurrency finalization commit from Git/the delivery receipt in the decision form.
 2. Read Tier 1 and Tier 2 in order.
 3. Resolve or explicitly defer each scoped item in the decision form.
 4. Perform the prepared spot checks and red-team questions.

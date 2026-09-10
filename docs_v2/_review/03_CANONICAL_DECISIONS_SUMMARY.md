@@ -27,5 +27,6 @@ These are already canonical documentary decisions. Changing one is an explicit d
 | CD-019 | Priority read/write scopes and costs remain typed and exact-once | current external fact plus pending policy | Infra + Simulator + Accounting | no generic priority multiplier/optimizer | Review HDC/external evidence |
 | CD-020 | InfraProfile is expiring evidence, not truth or a Live dependency | pending `HDC-077..079` | Data + Recorder + Infra + Validation | no permanent challenger rental or actual-label leakage | Review HDC |
 | CD-021 | Advanced strategy research is deferred, uses the same Core/Simulator and has no automatic/AI promotion | pending `HDC-080..090` | Architecture + Data + Simulator + Validation | baseline first; OOS/Shadow/Micro-live evidence; 26 phases only | Review HDC |
+| CD-022 | Async I/O and bounded snapshot compute feed one ordered single-writer commit; completion order never chooses a trade | pending `HDC-091..094` | Architecture + Data + Execution + Validation | inline baseline first; all queues/tasks bounded; route policy Replay + Shadow | Review HDC |
 
 Human review confirms or rejects this baseline as a whole in the [decision form](21_FINAL_HUMAN_DECISION_FORM.md). Individual overrides must name the affected authorities, invariants, tests and traceability.

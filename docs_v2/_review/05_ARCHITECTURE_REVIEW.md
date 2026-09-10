@@ -61,3 +61,5 @@ BBO is explicitly C1 state validity, C2 proved conservative reject, C3 FastL1 el
 PASS 14 result: 0 duplicate critical owners, 0 unowned critical states and an acyclic synchronous decision path. Review the authoritative [Master Architecture](../00_MASTER_ARCHITECTURE.md) and [PASS 14 report](../_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md) for detail.
 
 CORR-06 adds no owner. `InfraProfile` is immutable research evidence and priority policy is a typed treatment; neither becomes a state writer, execution authority or production dependency.
+
+The async/concurrency finalization classifies responsibilities C0–C5. External I/O is asynchronous; full L2/small q-grid remain inline initially; expensive pure snapshot work may use bounded workers; disk/telemetry are background; research is offline. Only C0 commits after current-version revalidation, Risk and Reservation. Worker completion never sets economic priority. `BATCH_SELECT` and deterministic `EARLY_COMMIT` remain pending Replay + Shadow comparison. See [Architecture spec 14](../deep-specs/architecture/14_ASYNC_CONCURRENCY_AND_ORDERED_COMMIT.md).

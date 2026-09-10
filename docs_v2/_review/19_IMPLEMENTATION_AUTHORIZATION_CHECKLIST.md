@@ -30,6 +30,7 @@ All boxes are intentionally unchecked. Documentary reconstruction is not self-ap
 - [ ] CORR-05 economic composition accepted
 - [ ] CORR-06 final consistency/current facts/InfraProfile closure accepted
 - [ ] Scientific iteration / future strategy-research extension accepted
+- [ ] Async/concurrency architecture finalization accepted
 
 ## Human review gates
 
@@ -39,7 +40,7 @@ All boxes are intentionally unchecked. Documentary reconstruction is not self-ap
 - [ ] 29 safety invariants reviewed
 - [ ] Eight human decision families individually approved, deferred or rejected
 - [ ] External revalidation register and 2026-09-09 priority/fast-cancel dispositions understood as scoped gates
-- [ ] `HDC-001..090` disposition recorded or accepted with baseline
+- [ ] `HDC-001..094` disposition recorded or accepted with baseline
 - [ ] Red-team questions answered with no blocking unsafe path
 - [ ] Source/recovery disclosures accepted
 - [ ] Final switchover plan accepted

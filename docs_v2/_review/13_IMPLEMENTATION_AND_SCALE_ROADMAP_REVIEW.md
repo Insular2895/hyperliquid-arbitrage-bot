@@ -50,3 +50,5 @@ The 21 stages are: SPECIFY; OBSERVE/RECORD; RECONSTRUCT; MAP; IDENTIFY; REPLAY; 
 The governing chain remains `SPECIFICATION → IMPLEMENTATION → EVIDENCE → VALIDATED CAPABILITY → CAPITAL`. See the two canonical [roadmaps](../17_IMPLEMENTATION_ROADMAP.md) and [evidence journey](../19_BUILD_VALIDATE_SCALE_ROADMAP.md).
 
 CORR-06 adds no Phase 27 or evidence stage. Phase 3 records multi-VPS/priority evidence, Phase 8 applies stored profiles, Phase 19 compares without effects, Phase 20 obtains actual priority/fill/completion evidence only after separate authorization, and Phase 26 selects/revalidates the winner. Permanent challenger rental is not required; profiles are reusable but freshness-gated.
+
+Async/concurrency adds no Phase 27 and changes no responsibility. The first baseline is mostly inline and ordered; async adapters/effects, bounded Recorder/background work and scheduler-permuted Replay are integrated into their existing phases. Worker fanout, parallel q-grid, pool sizing and route policy remain profiling/Replay/Shadow candidates. Phase 1 remains types/schemas only and is still unauthorized.

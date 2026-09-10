@@ -402,3 +402,9 @@ The existing journey remains unchanged and contains 26 phases. Complete and evid
 The later operating loop is `OPERATE -> MONITOR -> RESEARCH -> CHALLENGER -> VALIDATE -> PROMOTE OR REJECT -> OPERATE`. A drift path is `detect -> scope/demote if required -> ResearchTrigger -> offline candidate -> Replay/Simulator/Monte Carlo/OOS -> Shadow -> Micro-live if required -> explicit decision`; never `drift -> optimizer -> Live`.
 
 Promotion is explicit and human-controlled. AI can propose and summarize but cannot change Risk, capital, q, Live thresholds or strategy status. There is no automatic promotion, no online Live self-learning and no second economic engine. External/infra change and drift can force revalidation, scope contraction, safe rollback or NON-READY. See [Scientific Iteration](deep-specs/strategy-research/01_SCIENTIFIC_ITERATION_LOOP.md). `HDC-080..090` are pending final review and authorize no implementation or capital.
+
+## 46. Async baseline before parallel scale
+
+The evidence loop is `mostly-inline ordered baseline -> profile -> bounded pure-compute challenger -> semantic/replay proof -> end-to-end queue/scheduler comparison -> Shadow capture/economic comparison -> explicit promotion or rejection`. Full L2 and a small q-grid begin inline; route fanout, parallel q, Participant/F2/F3 and worker-count variants remain challengers. `BATCH_SELECT` and deterministic `EARLY_COMMIT` are separately versioned policies with no current winner.
+
+Scaling never means adding workers by core count alone. It preserves one ordered commit authority, actual-fill leg dependencies, current Risk/Reservation and bounded queues while measuring two-vCPU oversubscription, safety-event starvation, stale/deadline rates and Recorder interference. Offline research cannot consume Live resources without an explicit isolated deployment/budget. The journey and roadmap remain 21 evidence stages and 26 technical phases.

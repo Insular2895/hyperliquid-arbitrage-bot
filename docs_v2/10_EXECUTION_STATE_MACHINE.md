@@ -310,3 +310,9 @@ Original Strategy, Recovery, Rebalance and Bridge actions retain distinct identi
 ## 40. CORR-06 — Current priority/cancel boundary
 
 Current official documentation retrieved 2026-09-09 supports optional typed write-priority grouping for eligible IOC and non-reduce-only ALO batches. This does not change `OrderState`, actual-fill authority, `UNKNOWN`, no-blind-retry, reservation or Recovery semantics. A priority charge is evidence/cashflow, not a fill. The latency guide recommends the optional fast-cancel flag, while the exchange endpoint says it currently has no other effect and anticipates future prioritization; therefore no measurable advantage is assumed until revalidated. Cancels remain safety actions and priority never bypasses Risk.
+
+## 41. Async effects and later-leg dependency
+
+Submit, cancel, order-status and reconciliation network calls are asynchronous effects. The ordered coordinator records the intention/state transition and continues processing account/fill/safety events; it never waits synchronously for ACK or HTTP. Each outcome, timeout or disconnect re-enters as a normalized ordered event. `ACK != Fill`, `CancelRequested != Canceled`, and ambiguous transmission retains `UNKNOWN` plus no-blind-retry semantics.
+
+Leg 2/3 executable quantity, final Risk, signing and send depend on the actual unique prior-leg fill committed through Account/Fill/Inventory/Reservation owners. Pure route/rule/template/scenario preparation may run concurrently, but predicted output cannot drive a later leg. See [Async Effect Executor](./_analysis/async_concurrency_architecture/ASYNC_EFFECT_EXECUTOR_CONTRACT.md).

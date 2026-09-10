@@ -204,3 +204,9 @@ The logical `pair_to_routes` contract is unchanged. HashMap/vector, dense arrays
 ConversionAlpha describes deterministic conversion geometry; ExecutionAlpha includes execution-aware economics. A route can have positive ConversionAlpha and negative ExecutionAlpha, so only the execution-aware candidate may proceed to economic/Risk evaluation. Completion alone is not profit evidence.
 
 Opportunity evaluation supplies the frozen E0 candidate and exact QF-016 path mechanics. It does not multiply arrival survival or completion probabilities onto an already composed QF-056/057 distribution. See the [Decision-Value Pipeline](_analysis/corr05_economic_integration/DECISION_VALUE_PIPELINE.md).
+
+## 35. Async route evaluation policy
+
+`pair_to_routes`, BBO, FastL1 and full-L2 QF-016 run inline in the initial baseline. A bounded route/q worker pool is a benchmark challenger only; every job/result carries the complete Graph/index, ordered Book, fee, metadata, Formula, q, feature/model/config and generation identity consumed. Current C0 revalidation precedes deterministic sizing/allocation, final Risk and Reservation.
+
+Worker arrival cannot choose a route. `BATCH_SELECT` and a deterministically prioritized `EARLY_COMMIT` are both safe candidates under bounded deadlines and explicit missing/stale dispositions; the current architecture selects neither. Replay + Shadow must compare them before human approval. See the [Route Fanout Policy](./_analysis/async_concurrency_architecture/ROUTE_FANOUT_DECISION_POLICY_CONTRACT.md).
