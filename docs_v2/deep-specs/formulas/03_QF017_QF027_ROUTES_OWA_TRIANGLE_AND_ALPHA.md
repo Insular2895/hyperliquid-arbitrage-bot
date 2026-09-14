@@ -18,3 +18,5 @@ AWAITING HUMAN REVIEW
 | QF-027 | `Q_profitable=sup{q:E(q)≥E_min}` | input-size unit | QF-026 evaluated on valid quantities; calibrated E_min | empty feasible set → no profitable size; unbounded/not sampled not invented | threshold equality, disjoint regions, empty set |
 
 Direct, indirect and triangular results are economic outputs, not execution permission. QF-027 is profitability capacity, distinct from QF-076 validated capacity and QF-075 optimal size.
+
+QF-017/QF-018 preserve terminal physical B output plus the complete composed asset-delta evidence from QF-016. QF-019 and QF-020 compare matched terminal B outputs; QF-020 is specifically additional terminal B, not necessarily realized total profit. If Direct and Indirect have different side-asset fee/rebate deltas, any total-economic comparison requires explicit common-numeraire valuation of those deltas. The source fixes `Gain_B=I-D` but does not fully fix that valuation convention, so consumers must not silently infer one.

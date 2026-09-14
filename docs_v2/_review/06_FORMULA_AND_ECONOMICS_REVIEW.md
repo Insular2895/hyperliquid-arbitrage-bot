@@ -17,7 +17,7 @@ The [Formula Book](../04_FORMULA_BOOK.md) owns 110/110 uniquely identified contr
 
 ## Canonical economic chain
 
-`NetConvert(route, q, point-in-time books/rules)` walks exact L2, applies precision/minimum/fee rules in canonical order and returns typed output, residuals, costs and validity. `Edge(q)` compares like-for-like terminal economic value. `QF-027` finds profitable capacity from economics; `QF-076` (within the Sizing block) limits permitted exposure after all constraints and evidence. Profitable capacity is therefore not permission and not `Q_validated`.
+`NetConvert(route, q, point-in-time books/rules)` walks exact L2, applies precision/minimum/fee rules in canonical order and returns terminal physical output, the complete actual asset-delta vector, residuals, costs and validity. QF-019/QF-020 compare like-for-like terminal B output; QF-020 is additional B, not total realized profit when side-asset deltas differ. Total economic comparison retains every fee/rebate exactly once and values unlike assets under an explicit point-in-time common-numeraire convention; missing valuation evidence fails closed. `QF-027` finds profitable capacity from economics; `QF-076` limits permitted exposure after all constraints and evidence.
 
 Risk-adjusted expected value combines explicit scenario outcomes and costs; it does not conceal a magic score. Bridge compares `STAY` with permitted destination/exit/relocation paths after all costs, Risk and terminal constraints. Recovery may deliberately accept negative immediate economic value to reduce current exposure safely.
 
@@ -35,3 +35,5 @@ Priority benefit changes the one supported `Π_exec(q,state)` distribution; it i
 ## Human-gated conventions
 
 `OPEN-017..028` preserve source-omitted invalid-denominator, finite-sample, censoring, deterministic search/solver, clipping and drawdown conventions. The affected formula must fail closed until its versioned convention and golden vectors are approved. These do not block Phase 1; they block the consuming formula/capability phase.
+
+Phase 06 adds two scoped OPEN boundaries without changing an equation: the exact semantic partition between QF-070 `RiskCost(P)` and QF-072 `RelocationRiskCost`, and QF-071 behavior for a zero/negative numerator. Until resolved, affected Bridge evaluation is unavailable. A universal numeraire and mark/executable valuation policy remain intentionally unspecified. These issues do not permit duplicate cost, missing fee or silent negative break-even cycles.

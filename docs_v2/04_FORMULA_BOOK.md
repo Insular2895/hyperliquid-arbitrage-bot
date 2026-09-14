@@ -77,7 +77,7 @@ QF-007, QF-008, QF-014–016 and every minimum/fee/debit-asset/precision assumpt
 | QF-017 | Direct Route Output | LOCKED | `D(q_A)=NetConvert(A,B,q_A)` | B units; exact same input/state conventions as comparator. |
 | QF-018 | Two-Leg Indirect Output | LOCKED | `q_X=NetConvert(A,X,q_A)`; `I(q_A)=NetConvert(X,B,q_X)` | B units; valid net/quantized leg-1 output is leg-2 input. |
 | QF-019 | OWA Relative Edge | LOCKED | `Edge_OWA(q_A)=I(q_A)/D(q_A)-1`; bps `=10^4Edge_OWA` | Dimensionless; `D(q_A)>0`; same q, terminal B, books, fees, precision and time policy. |
-| QF-020 | OWA Absolute Gain | LOCKED | `Gain_B(q_A)=I(q_A)-D(q_A)` | B units; positive favors indirect route. |
+| QF-020 | OWA Absolute Gain | LOCKED | `Gain_B(q_A)=I(q_A)-D(q_A)` | B units; additional terminal B relative to Direct. It is not total EconomicPnL when side-asset deltas differ. |
 | QF-021 | Triangular Output | LOCKED | `q_X=NC(A,X,q_A)`; `q_B=NC(X,B,q_X)`; `q'_A=NC(B,A,q_B)` | Returns A; every net valid output feeds the next leg. |
 | QF-022 | Triangle Return | LOCKED | `R_triangle(q_A)=q'_A/q_A-1` | Dimensionless; `q_A>0`, closed A→X→B→A path. |
 | QF-023 | Triangle PnL | LOCKED | `PnL_A(q_A)=q'_A-q_A` | A units; positive is gain. |
@@ -178,7 +178,7 @@ QF-007, QF-008, QF-014–016 and every minimum/fee/debit-asset/precision assumpt
 | ID | Canonical name | Source status | Exact canonical equation | Essential semantics / invalid case |
 |---|---|---|---|---|
 | QF-070 | Bridge Cost | LOCKED STRUCTURE | `BridgeCost(P)=V_start-V_end^net+RiskCost(P)` | Common numeraire; end value uses sequential NetConvert; no repeated conversion costs. |
-| QF-071 | Bridge Break-Even Cycles | LOCKED | `N_BE=(BridgeCost+ExpectedExitCost)/E[PnL_cycle]` | Cycles; denominator must be positive, otherwise conceptual `+∞`/never break even. |
+| QF-071 | Bridge Break-Even Cycles | LOCKED EQUATION / OPEN NUMERATOR BOUNDARY | `N_BE=(BridgeCost+ExpectedExitCost)/E[PnL_cycle]` | Cycles; denominator must be positive, otherwise conceptual `+∞`/never break even. Source does not define the operational result for a zero/negative numerator; affected use is typed unresolved/fail-closed until governed. |
 | QF-072 | Capital Relocation Value | LOCKED STRUCTURE | `Value(move)=EV_destination-EV_stay-BridgeCost-ExpectedExitCost-RelocationRiskCost` | Numeraire; move only above calibrated threshold with hysteresis/cooldown; like-for-like horizon. |
 
 ## 24. Balance / book capacity — QF-073–074

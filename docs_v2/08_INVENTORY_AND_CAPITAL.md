@@ -116,6 +116,8 @@ QF-071 measures how many positive expected future cycles are required to amortiz
 
 QF-072 compares `EV_destination` with `EV_stay`, then accounts for `BridgeCost`, `ExpectedExitCost` and `RelocationRiskCost`. `STAY` is always a candidate. Movement requires the locked positive-advantage structure plus calibrated threshold, hysteresis/cooldown and Risk approval. A destination's single transient edge is insufficient evidence.
 
+The source does not prove a disjoint semantic boundary between QF-070 `RiskCost(P)` and QF-072 `RelocationRiskCost`, nor define QF-071's operational result when `BridgeCost + ExpectedExitCost <= 0`. Both are OPEN conventions. Bridge must therefore fail closed when ownership cannot be proved exact-once or when that numerator boundary is reached; no negative cycle count, clamp or “already ahead” state is silently selected.
+
 ## 19. Hysteresis / cooldown
 
 Existence of anti-flip-flop governance is locked; threshold, cooldown, persistence horizon and evidence windows are calibrated. Relocation and dynamic asset reclassification require persistent evidence across suitable horizons. Decisions are reversible: adverse calibration, OOD or changed utility may demote a destination or shrink allocated capital.

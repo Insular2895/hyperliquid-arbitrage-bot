@@ -29,7 +29,7 @@ No dedicated formal correction prompt for Phases 01–04 is present in the suppl
 | Sequence | Prompt container and lines | Phase | Primary target | Depends on | Status |
 |---:|---|---:|---|---|---|
 | 001 | `part 1/L’idée…md:2695–3383` | 05 | `_review/05_ARCHITECTURE_REVIEW.md` | current Masters; async correction | `PASS` |
-| 002 | `part 1/L’idée…md:3384–4551` | 06 | `_review/06_FORMULA_AND_ECONOMICS_REVIEW.md` | corrected 05 | `PENDING` |
+| 002 | `part 1/L’idée…md:3384–4551` | 06 | `_review/06_FORMULA_AND_ECONOMICS_REVIEW.md` | corrected 05 | `PASS` |
 | 003 | `part 1/L’idée…md:4552–6100` | 07 | `_review/07_EXECUTION_RISK_AND_RECOVERY_REVIEW.md` | corrected 05–06 | `PENDING` |
 | 004 | `part 1/L’idée…md:6101–7639` | 08 | `_review/08_DATA_REPLAY_AND_EVIDENCE_REVIEW.md` | corrected 05–07 | `PENDING` |
 | 005 | `part 1/L’idée…md:7640–9618` | 09 | `_review/09_PARTICIPANTS_SIMULATOR_AND_MODELS_REVIEW.md` | corrected 05–08 | `PENDING` |
@@ -62,8 +62,9 @@ There is no dependency cycle, unexplained duplicate phase or missing predecessor
 
 | Sequence | Phase | Result | Input commit/tree | Output commit/tree | Files changed | OPEN | Blocker | Regression check |
 |---:|---:|---|---|---|---|---|---|---|
-| 001 | 05 | `PASS` | `bcb84af` / `78f9d6f` | recorded after commit | master, Graph, review 05, route matrix, Phase 05 report | calibrated activation/threshold/representation matters retained | none | four axes; async ownership; repo-wide terms PASS |
-| 002–017 | 06–21 | `PENDING` | — | — | — | — | — | — |
+| 001 | 05 | `PASS` | `bcb84af` / `78f9d6f` | `fa32a99` / `6a0662b` | master, Graph, review 05, route matrix, Phase 05 report | calibrated activation/threshold/representation matters retained | none | four axes; async ownership; repo-wide terms PASS |
+| 002 | 06 | `PASS` | `fa32a99` / `6a0662b` | recorded after commit | Formula/Graph/Capital/review/deep specs + 9 artifacts | Bridge risk partition; QF-071 numerator; valuation policy | none outside scoped Bridge consumers | equations/fees/units/accounting PASS |
+| 003–017 | 07–21 | `PENDING` | — | — | — | — | — | — |
 
 ## 6. Final audit
 

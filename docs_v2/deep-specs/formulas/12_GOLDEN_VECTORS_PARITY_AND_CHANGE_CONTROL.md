@@ -14,6 +14,8 @@ Each vector records `vector_id`, QF ID/version, exact input values and units, st
 
 The catalog adds mandatory vectors for QF-007/008 precision, both walk directions/partial fills, fee debit assets/rebates, NetConvert sequential composition, OWA/Triangle denominators and closure, OFI equality branches, hazard product index `1..k`, censored half-life, EV partitions, Loss/VaR/ES, hard limits, discrete sizing, shared capacity, Recovery sunk-cost exclusion, like-for-like infrastructure comparisons, log clipping, QF-099 sign, categorical confidence, accounting and drawdown.
 
+The fee/Bridge suite explicitly includes fees and rebates in output, input and third assets; equal terminal outputs with unequal side-asset deltas; a slightly larger B output that is economically worse after an explicit common-numeraire fee valuation; complete asset-delta-vector inequality; proved non-overlap or typed unresolved `RiskCost(P)`/`RelocationRiskCost`; and QF-071 positive, zero and negative numerator plus non-positive denominator. OPEN boundary vectors expect a typed unresolved/fail-closed result, never an invented numeric answer.
+
 ## Equality and tolerance
 
 Ticks, lots, quantized sizes/prices, actual fee-asset deltas, reservations/capacity, identifiers, categories, booleans, state transitions and expected failure codes require exact equality. Rational examples representable in the selected exact scale also require equality. Learned/continuous distribution outputs, logs, integrals, roots and other floating analytics use per-QF absolute and relative tolerances derived from reference conditioning and documented in the vector. Probability range/normalization and sign invariants remain exact predicates. No global epsilon masks semantic drift.
