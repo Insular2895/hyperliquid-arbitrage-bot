@@ -2,6 +2,10 @@
 
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
+## Current consumer index
+
+The current canonical ID space is `EXT-001..023`. The table below for EXT-001..016 is the original PASS15 source register; CORR-04 added EXT-017..022 and CORR-06 added EXT-023 without repurposing IDs. The current consumer/status checklist is `_review/16_EXTERNAL_REVALIDATION_CHECKLIST.md`. A dated verification is not local conformance, capability validation, maturity or promotion.
+
 ## PASS 15 source no-loss recheck
 
 All **128** original PASS00 external-revalidation rows and the prior PASS01 `SOURCE_SNAPSHOT` overlay were traced. PASS 15 performed no Internet verification, introduced no external fact, and added no external family. Two recovered SRC-002 concepts were joined to existing `EXT-002/005` and `EXT-006/007` families rather than treated as current truth. `EXT-001`–`EXT-016` remain unchanged and pending wherever consumed. Evidence: `pass15_source_no_loss/SOURCE_SNAPSHOT_AND_EXTERNAL_FACT_AUDIT.md`.
