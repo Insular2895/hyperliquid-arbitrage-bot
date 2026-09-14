@@ -36,7 +36,7 @@ No dedicated formal correction prompt for Phases 01–04 is present in the suppl
 | 006 | `part 2/# CORRECTION…md:1–2107` | 10 | `_review/10_CAPITAL_BRIDGE_AND_SIZING_REVIEW.md` | corrected 05–09 | `PASS` |
 | 007 | `part 2/# CORRECTION…md:2108–4509` | 11 | `_review/11_INFRA_DEPLOYMENT_AND_SECURITY_REVIEW.md` | corrected 05–10 | `PASS` |
 | 008 | `part 2/# CORRECTION…md:4510–6782` | 12 | `_review/12_VALIDATION_AND_OPERATIONS_REVIEW.md` | corrected 05–11 | `PASS` |
-| 009 | `part 2/# CORRECTION…md:6783–8807` | 13 | `_review/13_IMPLEMENTATION_AND_SCALE_ROADMAP_REVIEW.md` | corrected 05–12 | `PENDING` |
+| 009 | `part 2/# CORRECTION…md:6783–8807` | 13 | `_review/13_IMPLEMENTATION_AND_SCALE_ROADMAP_REVIEW.md` | corrected 05–12 | `PASS` |
 | 010 | `part 2/# CORRECTION…md:8808–9574` | 14 | `_review/14_OPEN_HUMAN_DECISIONS.md` | corrected 05–13 | `PENDING` |
 | 011 | `repository 2/…md:1–940` | 15 | `_review/15_CALIBRATION_AND_LEARNED_ITEMS.md` | corrected 14 | `PENDING` |
 | 012 | `repository 2/…md:941–1900` | 16 | `_review/16_EXTERNAL_REVALIDATION_CHECKLIST.md` | corrected 14–15 | `PENDING` |
@@ -69,8 +69,9 @@ There is no dependency cycle, unexplained duplicate phase or missing predecessor
 | 005 | 09 | `PASS` | `61f91d4` / `9cfa11d` | `881bcfd` / `f90675d` | Formula/Participants/Simulator/review + 12 artifacts | QF-051–053 event target | maker-dependent activation | labels/dependence/cohort/fallback/P-F PASS |
 | 006 | 10 | `PASS` | `881bcfd` / `f90675d` | `3cb2725` / `c9adeda` | Capital/review/deep specs + 12 artifacts | Bridge completion/destination value plus Phase06 OPENs | material Bridge activation | q-set/slicing/dependence/capacity/scaling PASS |
 | 007 | 11 | `PASS` | `3cb2725` / `c9adeda` | `1490d9f` / `5314052` | Deployment/review/deep specs + 12 artifacts | fencing/trust/time/resource mechanisms | consuming deployment scopes | owner/trust/threat/DR/license/resources PASS |
-| 008 | 12 | `PASS` | `1490d9f` / `5314052` | recorded after commit | Validation/Operations/review + 12 artifacts | thresholds, exact N/A records, sample sufficiency | none for documentation review | N/A/q/M4/alerts/namespaces/freshness/censoring PASS |
-| 009–017 | 13–21 | `PENDING` | — | — | — | — | — | — |
+| 008 | 12 | `PASS` | `1490d9f` / `5314052` | `311aed7` / `61d03a7` | Validation/Operations/review + 12 artifacts | thresholds, exact N/A records, sample sufficiency | none for documentation review | N/A/q/M4/alerts/namespaces/freshness/censoring PASS |
+| 009 | 13 | `PASS` | `311aed7` / `61d03a7` | recorded after commit | roadmaps/review/PASS12 matrices + 11 artifacts | codec/width choices; scoped current facts | none for documentation review | 26 phases/Graph/bootstrap/models/auth/TTT PASS |
+| 010–017 | 14–21 | `PENDING` | — | — | — | — | — | — |
 
 ## 6. Final audit
 

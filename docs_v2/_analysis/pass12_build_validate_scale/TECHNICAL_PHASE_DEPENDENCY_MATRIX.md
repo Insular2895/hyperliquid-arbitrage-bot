@@ -12,7 +12,7 @@ The canonical order is fixed, but the order is not a ban on safe parallel work. 
 | 3 | Recorder | 1–2 | 4–5 using fixtures | Immutable RAW, sequence, quality, chunks, priority/backpressure | M1 + soak | Codec/capacity calibrated | 4, 8, all evidence |
 | 4 | Book Engine | 1–3 | 5 metadata fixtures | Ordered snapshot/diff→versioned valid BookState | M1 | Current sequencing/snapshot semantics | 6–9, 15–22 |
 | 5 | Metadata / Fee / Precision | 1–3 | 4 | Point-in-time rules, quantizers, invalidation | M1 | Current fees/precision/minimums | 6–9, 12–26 |
-| 6 | Graph / Routes | 1, 4–5 | Atlas schema | GraphVersion, fixed route definitions, `pair_to_routes` | M1 | Market/status metadata | 7, 9, 14–26 |
+| 6 | Graph / Routes | 1, 4–5 | Atlas schema | GraphVersion, structural Direct/Route2/Cycle3 paths and `pair_to_routes`; no economic/mode label by shape | M1 | Market/status metadata | 7, 9, 14–26 |
 | 7 | NetConvert / Formula Core | 1, 4–6, PASS11 | Replay harness design | Versioned exact QF implementation with parity | M1 | External fee/precision rules | 8–26 |
 | 8 | Replay Engine | 1, 3–7 | Opportunity fixtures | Ordered same-Core execution, ReplayClock/RNG/RunManifest/trace | M2 | Dataset validity | 9–26 |
 | 9 | Basic Opportunity Engine | 4–8 | 10–11 schemas | Affected route→BBO reject→exact L2 Opportunity/reject | M2 | None beyond inputs | 10–26 |
@@ -23,8 +23,8 @@ The canonical order is fixed, but the order is not a ban on safe parallel work. 
 | 14 | Recovery / Reconciliation | 6–13 | 15–18 research | Exchange truth→resolved exposure/state; bounded best exit | M2 replay; M3 later in Shadow | Current query/account semantics | 19–26 |
 | 15 | Quant Microstructure | 3–8 | 9/16 in observe-only mode | Point-in-time QF-028–043 feature snapshot | M2 | Windows calibrated | 16–26 |
 | 16 | Market Atlas | 3, 6–9, 15 | Later survival enrichment | Versioned structural/empirical support map | M2 | Support/windows calibrated | 17, 21, 24–26 |
-| 17 | Sizing | 7–11, 14–16 | 18 simulator curves | Feasible q curve bounded by Q_validated/all gates | M2 | Grid/support calibrated | 18–26 |
-| 18 | Simulator F0 / F1 | 4–17 | Phase-21 model interface | Historical + latency/mechanical distributions | M2 | Calibration/support | 19–26 |
+| 17 | Sizing | 7–11, 14–16 | 18 simulator curves | Provisional candidate-q mechanics; typed unresolved distribution gates | M2 mechanics | Grid/support calibrated | 18–26 |
+| 18 | Simulator F0 / F1 | 4–17 | Phase-21 model interface | q-dependent distributions returned to Phase-17 Sizer for authoritative all-gates support | M2 | Calibration/support | 17, 19–26 |
 | 19 | Shadow | Phases 2–18 at required M2/M1 technical exits + deployment/ops/rollback | Phase 21 observe-only | Same Core, live inputs, no strategy submit, full evidence | M3 for the integrated live-input scope | Host/exchange readiness | 20–26 |
 | 20 | Micro-live TT | 3, 10–14, 17–19 + Risk/Ops/rollback | Phase 21 data capture | Protected bounded TT with predicted↔actual chain | M4 (TT scope) | Explicit approval; current exchange facts | 21–26 |
 | 21 | Survival / Participant Models | 3, 8–9, 15–16, 19–20 data as available | May begin with pre-capital episodes | Calibrated simple Champion plus governed challengers | M2/M3 | Horizon/support/economic lift | 22–26 |

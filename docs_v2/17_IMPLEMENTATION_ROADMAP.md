@@ -26,7 +26,7 @@ Every early implementation uses final identities, events, versions, state owners
 
 ## 5. Phase model
 
-Every phase below states: ID/name, why now, objective, input/output contracts, implementation scope, explicit non-scope, dependencies, Formula IDs, data, tests, entering/exit maturity, evidence, stop conditions, open/external gates and downstream consumers. Phase exit means its DoD is evidenced; it does not imply capital permission.
+Every phase below states: ID/name, why now, objective, input/output contracts, implementation scope, explicit non-scope, dependencies, Formula IDs, data, tests, entering/exit maturity, evidence, stop conditions, open/external gates and downstream consumers. Phase exit means its DoD is evidenced; it does not authorize the next phase and does not imply capital permission. Each next phase requires a separate human authorization record binding the reviewed commit, exact scope, prerequisites, non-scope, evidence obligations, stop conditions and approver.
 
 ## 6. Parallelism versus hard dependencies
 
@@ -52,8 +52,8 @@ Canonical order governs integration and exit gates. Work may overlap when a prod
 | 14 | Recovery / Reconciliation | M2 replay; later M3 in Shadow | None |
 | 15 | Quant Microstructure | M2 point-in-time features | None |
 | 16 | Market Atlas | M2 structural/empirical map | None |
-| 17 | Sizing | M2 supported q curves | None |
-| 18 | Simulator F0 / Simulator F1 | M2 distributions | None |
+| 17 | Sizing | M2 candidate-q mechanics; authoritative curve after Phase 18 feedback | None |
+| 18 | Simulator F0 / Simulator F1 | M2 q-dependent distributions and Sizer re-evaluation | None |
 | 19 | Shadow | M3 full no-effect chain | None |
 | 20 | Micro-live TT | M4 TT probe | Probe only |
 | 21 | Survival / Participant Models | M2/M3 model support | None directly |
@@ -123,8 +123,8 @@ Canonical order governs integration and exit gates. Work may overlap when a prod
 ## 13. Phase 6 — Graph / Routes
 
 - **WHY NOW / OBJECTIVE:** enumerate legal, venue-aware conversion structures before evaluating economics.
-- **INPUTS / OUTPUTS:** valid metadata + Book identities → `GraphVersion`, fixed Direct/Route2/Cycle3 definitions, comparator links, `pair_to_routes` and invalidation.
-- **IMPLEMENT / NOT YET:** precompute bounded routes on topology change; distinguish OWA, Triangle and Bridge; no unbounded hot-path graph search, future venue execution or profitability claim.
+- **INPUTS / OUTPUTS:** valid metadata + Book identities → `GraphVersion`, structural DirectRoute/Route2Leg/Cycle3Leg definitions, adjacency, `pair_to_routes` and invalidation.
+- **IMPLEMENT / NOT YET:** precompute bounded structural paths on topology change; do not label a Route2Leg as OWA, Bridge or Recovery by shape. Opportunity/Economics applies comparator/economic context, Capital owns Bridge classification, Recovery owns its intent, and Execution owns TT/TTT/MT/MTT mode. No unbounded hot-path graph search, future venue execution or profitability claim.
 - **DEPENDENCIES / QF:** 1, 4–5; QF-017–023 structure.
 - **DATA / TESTS:** continuity, direction, exact cycle closure, direct comparator, duplicates, deterministic generation, affected-only lookup.
 - **MATURITY / EVIDENCE:** M0→M1; route-generation report.
@@ -244,8 +244,8 @@ Canonical order governs integration and exit gates. Work may overlap when a prod
 ## 24. Phase 17 — Sizing
 
 - **WHY NOW / OBJECTIVE:** choose total exposure only after exact economics, Risk, inventory and early support exist.
-- **INPUTS / OUTPUTS:** candidate q curve, balances/book/reservations, forecasts, inventory and Risk → validated feasible q or zero.
-- **IMPLEMENT / NOT YET:** nonlinear RAEV curve, all-gates `Q_validated`, candidate grid/refinement and shared-capacity checks; do not infer q from account capital or use slicing to create capacity.
+- **INPUTS / OUTPUTS:** economic candidate, balances/book/reservations, inventory and deterministic constraints → provisional candidate-q grid and typed unresolved distribution gates; after Phase 18, calibrated distributions feed the same Sizer to produce authoritative all-gates support or zero.
+- **IMPLEMENT / NOT YET:** grid/refinement/quantization, deterministic constraints, non-monotonic validity and shared-capacity checks; do not invent probabilities, tail values, default-pass missing gates, infer q from capital or use slicing to create capacity. Initial output is provisional, not capital authority.
 - **DEPENDENCIES / QF:** 7–11, 14–16; QF-056–063, 073–077.
 - **DATA / TESTS:** exhaustive-small-case comparison, discontinuities, boundary/minimums, no-valid-size, shared capacity and OOD.
 - **MATURITY / EVIDENCE:** M0/M1→M2; real bands mature in Stages 10–19.
@@ -255,7 +255,7 @@ Canonical order governs integration and exit gates. Work may overlap when a prod
 ## 25. Phase 18 — Simulator F0 / F1
 
 - **WHY NOW / OBJECTIVE:** establish reproducible historical and latency/mechanical outcome distributions before live claims.
-- **INPUTS / OUTPUTS:** same Core, Replay data, plans/q, latency/arrival/book mechanics → F0/F1 distributions, confidence and failure/recovery outcomes.
+- **INPUTS / OUTPUTS:** Phase-17 candidate q points, same Core, Replay data and latency/arrival/book mechanics → q-dependent F0/F1 distributions, confidence and failure/recovery outcomes, then mandatory re-evaluation by the same Phase-17 Sizer.
 - **IMPLEMENT / NOT YET:** historical book/fees/rounding/simple fills, then arrival latency, mechanical impact and partials; no F4 truth or deterministic single-PnL claim.
 - **DEPENDENCIES / QF:** 4–17; QF-009–016, 026–027, 040–043, 056–063, 076, 079–080, 084–085, 095–104.
 - **DATA / TESTS:** determinism, mechanics/golden cases, distribution/tail/coverage reporting, fidelity limitations and OOD.
@@ -288,10 +288,10 @@ Canonical order governs integration and exit gates. Work may overlap when a prod
 
 ## 28. Phase 21 — Survival / Participant Models
 
-- **WHY NOW / OBJECTIVE:** turn accumulated opportunity/microstructure/shadow/probe episodes into calibrated competition forecasts.
+- **WHY NOW / OBJECTIVE:** enrich observed completion/response after the deterministic TT baseline exists; avoid making learned complexity a universal prerequisite for the first conservative TT evidence.
 - **INPUTS / OUTPUTS:** labeled point-in-time episodes → survival/capture/liquidity/cross-market/maker-support forecasts with confidence/OOD/version.
 - **IMPLEMENT / NOT YET:** naive baseline then simplest empirical Champion and governed challengers; no fictional identity requirement or complex agent prerequisite.
-- **DEPENDENCIES / QF:** 3, 8–9, 15–16, 19–20 data as available; QF-044–055, 081–083, 095–104.
+- **DEPENDENCIES / QF:** 3, 8–9, 15–16 and available Shadow/Micro-live data; QF-044–055, 081–083, 095–104. A configured consumer makes the exact model artifact a critical dependency, but an initial conservative TT path that does not consume it remains independent.
 - **DATA / TESTS:** temporal OOS, right-censoring, Brier/LogLoss/calibration, ablation, EconomicLift, OOD/drift/fallback/runtime.
 - **MATURITY / EVIDENCE:** M0/M1→M2/M3; capital only through a separately promoted consumer.
 - **STOP / OPEN / EXTERNAL:** no target/label/support or no lift retains baseline; models/horizons are `OPEN-008/010`.

@@ -3,6 +3,8 @@
 DOCUMENTATION STATUS:
 AWAITING HUMAN REVIEW
 
+Technical exit, evidence maturity and authorization are separate axes. No stage begins merely because its predecessor passed. TTT reuses generic taker machinery but has its own Replay, Shadow and bounded Micro-live evidence/authorization scope; TT evidence does not authorize TTT, and Phase 23 remains the maker MT/MTT phase.
+
 ## 1. Purpose
 
 This document explains the evidence journey from an empty data directory to sustained, scoped Live trading. It defines what the project must observe, reconstruct, learn and validate before capital permission can expand. It is not a calendar, capital target or implementation authorization.

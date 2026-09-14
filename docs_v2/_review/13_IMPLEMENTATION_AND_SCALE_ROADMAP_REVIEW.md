@@ -41,11 +41,15 @@ Implement only strong venue/asset/market/route/execution/order/fill/evidence IDs
 
 Do not implement network access, Hyperliquid parsing, books, formulas, opportunity logic, strategy, Risk behavior, order transport/signing, execution effects, capital or deployment automation. Inputs are approved specs and small canonical fixtures. Phase 1 ends only when unit types cannot be mixed, schemas round-trip/version correctly, hidden time/randomness and incompatible/invalid/overflow inputs fail, and a versioned domain-contract M1 test report exists. Any ambiguous unit, owner or schema blocks the affected type.
 
-Phase 1 is implementable from the reviewed documents: **YES, pending explicit human authorization of the exact reviewed commit.** Approval of Phase 1 does not approve Phase 2.
+Phase 1 contract audit status is **READY FOR SEPARATE HUMAN AUTHORIZATION**, because the Phase-08 canonical ordering issue is resolved in the current candidate and the remaining integer-width/codec choices are bounded implementation choices. This is not authorization. Any new ambiguity in IDs, units, envelopes, versions, ordering, Clock, RNG, RunManifest or serialization reopens the gate. Phase-1 exit would still not authorize Phase 2.
+
+Phase 6 emits structural paths only. OWA requires Opportunity/Economics comparator context; Bridge belongs to Capital; Recovery to Recovery; and TT/TTT/MT/MTT to Execution. Phase 17 first implements candidate-q mechanics with unresolved distribution gates. Phase 18 produces q-dependent distributions and feeds them back into the same Sizer; only that re-evaluation can produce authoritative all-gates support. No Phase 27 or fake probability default exists.
 
 ## Evidence journey
 
 The 21 stages are: SPECIFY; OBSERVE/RECORD; RECONSTRUCT; MAP; IDENTIFY; REPLAY; SIMULATE; SHADOW LIVE; PREDICTED VS ACTUAL PREPARATION; LEARN COMPETITION/SURVIVAL; MICRO-LIVE; VALIDATE TT; VALIDATE TTT; MAKER INTELLIGENCE; VALIDATE MT/MTT; CAPITAL INTELLIGENCE; PORTFOLIO ALLOCATION; BRIDGE/CAPITAL RELOCATION; HORIZONTAL SCALE; VERTICAL SCALE; INFRASTRUCTURE SCALE.
+
+Participant/Survival is a parallel enrichment lane, not a universal gate for conservative TT; it becomes a hard dependency only for a configured consumer. TTT needs a separate activation and evidence scope despite reusing taker machinery. Technical phase exit, next-phase authorization and capital permission are three different records.
 
 The governing chain remains `SPECIFICATION → IMPLEMENTATION → EVIDENCE → VALIDATED CAPABILITY → CAPITAL`. See the two canonical [roadmaps](../17_IMPLEMENTATION_ROADMAP.md) and [evidence journey](../19_BUILD_VALIDATE_SCALE_ROADMAP.md).
 
