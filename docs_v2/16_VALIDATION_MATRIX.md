@@ -49,6 +49,8 @@ M5 requires sustained acceptable economic value after costs, Risk/tail behavior,
 Maturity(component) <= min(Maturity(critical dependencies))
 ```
 
+A capability cannot exceed the applicable validated evidence of any critical dependency. `NOT_APPLICABLE` is neither failed, unvalidated nor a low numeric maturity: it is excluded from the minimum only when that stage has no independent economic/live meaning for the dependency, the rationale and substitute contract/integration proof are recorded, and a reviewer accepts that the dependency cannot introduce unvalidated behavior at that stage. N/A cannot be used to skip relevant Replay, Shadow or Micro-live evidence.
+
 A model cannot outgrow its data/feature contracts; sizing cannot outgrow Simulator/Risk/inventory support; execution cannot outgrow reconciliation; a release cannot outgrow deployment integrity/readiness.
 
 ## 12. Level skipping
@@ -65,7 +67,7 @@ An EvidenceId identifies an immutable package containing claim/scope, requiremen
 
 ## 15. CapabilityManifest
 
-Source-backed `ValidatedCapability` fields are `strategy`, `market_scope`, `size_range`, `execution_mode`, `model_versions`, `validation_level`, `valid_from`, `last_review`, and `restrictions`. A release carries zero or more entries linked to evidence. Other version identities remain in linked manifests unless Data governance extends the schema.
+Source-backed `ValidatedCapability` fields are `strategy`, `market_scope`, `size_range`, `execution_mode`, `model_versions`, `validation_level`, `valid_from`, `last_review`, and `restrictions`. `size_range` is a declared envelope, not proof that every interior quantity is valid. Every requested exact `q` must be in the manifest envelope, in the evidenced `Q_validated` support set, and pass all current gates. A release carries zero or more entries linked to evidence. Other version identities remain in linked manifests unless Data governance extends the schema.
 
 ## 16. Runtime capability intersection
 
@@ -87,7 +89,7 @@ Promotion is explicit, scoped and audited. The decision references evidence, dep
 
 ## 18. Promotion progression
 
-M0→M1 requires local deterministic tests; M1→M2 realistic deterministic Replay; M2→M3 live no-effect evidence; M3→M4 readiness plus bounded intervention plan; M4→M5 supported sustained real evidence. Scope expansion repeats the affected gates.
+M0→M1 requires local deterministic tests; M1→M2 realistic deterministic Replay; M2→M3 live no-effect evidence; M3→M4 readiness plus a pre-registered bounded intervention plan. M4 may collect real-effect evidence only inside immutable market/mode/q/time/loss/exposure/stop limits; it cannot expand its own envelope or operate as unlimited Live. Full, zero, partial, Recovery, stopped, `UNKNOWN`, data-loss and right-censored attempts remain in the campaign population. M4→M5 requires explicit human promotion from supported sustained real evidence for the exact scope. Scope expansion repeats the affected gates.
 
 ## 19. Demotion
 
@@ -168,7 +170,13 @@ DoD is evidence-backed completion of a declared scope, not a global project labe
 
 ## 37. Q_validated and scaling
 
-`Q_validated` is the largest q that passes every gate in current support. Increase only q1→q2→q3-style evidence steps with next-band Simulator, execution, impact/tail/inventory and operational proof. It shrinks on drift, incidents or lost support. Larger account capital and raw book depth do not increase it.
+`Q_validated` is the set of exact quantities that pass every gate in current support. Its supremum may be reported, but it does not imply a continuous interval: `100` and `200` can be valid while `150` is invalid. Increase only through evidenced quantity points/bands with next-scope Simulator, execution, impact/tail/inventory and operational proof. It contracts on drift, incidents, stale evidence or lost support. Larger account capital and raw book depth do not increase it.
+
+## 49. Phase 12 — current evidence and permission
+
+Manifest presence is not evidence freshness. Mandatory evidence that is stale, invalid, expired, unobservable or linked to an invalid critical dependency removes the affected runtime permission or demotes/contracts the scope according to its safety contract. `AGING` may open review without immediate demotion only where its versioned policy explicitly permits it; missing monitoring is never interpreted as healthy. Recovery of a health signal clears that health blocker only and never auto-promotes a demoted capability.
+
+Incident alert delivery and severity describe notification/escalation. Canonical Risk, Execution, Recovery, Reconciliation, Infrastructure and Deployment owners determine state and permission; their safety transition proceeds even if paging is unavailable. `IncidentSeverity.P0..P3` and `RecorderPriority.P0..P3` are distinct qualified namespaces with no implied mapping.
 
 ## 38. Market/mode/capital expansion
 

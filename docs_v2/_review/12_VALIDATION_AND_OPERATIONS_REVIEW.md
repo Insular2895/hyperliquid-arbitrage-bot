@@ -15,15 +15,19 @@
 
 Maturity belongs to a versioned capability scope, never the whole bot. `CapabilityManifest` binds dependencies and their maturity, market/route/mode/q band, artifacts, evidence, expiry and demotion rules. A dependency regression, drift, incident or semantic change demotes or disables dependent scopes.
 
+`NOT_APPLICABLE` excludes a dependency stage from the maturity minimum only with recorded rationale, substitute proof and review showing that the stage has no independent live-economic meaning. It is not a low maturity or a testing bypass. `size_range` is only an envelope; exact-q membership in the evidenced, potentially non-monotonic `Q_validated` set and current `Gates(q)` remain mandatory.
+
 ## Required evidence progression
 
 Specification → component tests → deterministic Replay → live-input Shadow → pre-registered predicted-versus-actual plan → bounded Micro-live → scoped validation. Fault injection must cover stale/gap data, malformed events, slow/full disk, backpressure, disconnect, ambiguous submit, partial fill, cancel races, crash/restart, reconciliation mismatch, unsafe infrastructure and model OOD/drift.
 
 Shadow uses the same Core but cannot emit strategy effects. Micro-live is a tiny bounded intervention with declared market/mode/q/time/loss/exposure/stop limits and complete intent→fill→fee→recovery→PnL joins. Prediction-versus-actual metrics and stops are frozen before the probe.
 
+M4 accumulates real-effect evidence only inside that pre-registered envelope. Full/zero/partial, Recovery, stopped, `UNKNOWN`, data-loss and right-censored attempts remain visible. M5 requires explicit exact-scope promotion; recovery of health or expiry remediation never auto-promotes.
+
 ## Operations
 
-P0–P3 incident severity is distinct from `InfraState = HEALTHY / DEGRADED / UNSAFE`. Runbooks must exist for feed gaps, order UNKNOWN, reconciliation mismatch, stuck exposure, risk trip, disk/recorder degradation, clock problems, secret/security incidents, deployment rollback and capability demotion. Alert ownership, escalation and evidence preservation are explicit.
+`IncidentSeverity.P0..P3` is distinct from `RecorderPriority.P0..P3` and from `InfraState = HEALTHY / DEGRADED / UNSAFE`. There is no implied mapping. Runbooks must exist for feed gaps, order UNKNOWN, reconciliation mismatch, stuck exposure, risk trip, disk/recorder degradation, clock problems, secret/security incidents, deployment rollback and capability demotion. Canonical domain owners determine state/permission even when alert delivery fails; Operations only observes, routes and preserves evidence.
 
 M5 is not permanent. It requires continuous calibration, observed support and reversible demotion. Larger size, new market, new mode, new model, new infrastructure or semantic version is a new evidence scope. Rollback never rewinds exchange truth.
 
