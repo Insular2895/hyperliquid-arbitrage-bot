@@ -1,9 +1,11 @@
-# Route Type Matrix
+# Route Structure and Classification Matrix
 
 DOCUMENTATION STATUS:
 AWAITING HUMAN REVIEW
 
-| Type | Input → terminal | Closed? | Comparator | Strategy/capital meaning | Formula family | Modes | Risk/accounting |
+The rows below are examples of valid compositions across four independent axes. They are not variants of one route-type enum.
+
+| Structure / classification example | Input → terminal | Closed? | Comparator | Strategy/capital meaning | Formula family | Modes | Risk/accounting |
 |---|---|---:|---|---|---|---|---|
 | `DirectRoute` | A→B | No | itself/reference | executable direct conversion; OWA benchmark | QF-016/017 | T; maker use only where supported | current conversion cost/output |
 | `Route2Leg` | A→X→B | No | context-dependent | structural path only; not automatically OWA | QF-016/018 | TT or MT | route execution exposure; classification required |
@@ -14,3 +16,5 @@ AWAITING HUMAN REVIEW
 | Cross-exchange route | venue-aware endpoints | varies | strategy-specific | `FUTURE`; disabled in V1 | future governed family | disabled | separate XEX/transfer risks |
 
 Classification is semantic, never inferred from leg count. A three-leg open path is not a triangle; a multi-leg relocation may be a Bridge; Recovery is owned by the Execution/Recovery state machine.
+
+Canonical representation is conceptually `RouteStructure + EconomicClassification + ExecutionMode + AccountingClassification`. Graph owns structure; Opportunity/Capital/Recovery owns classification by intent; Execution owns T/TT/MT/TM/MM/TTT/MTT; Accounting owns disjoint attribution. This contract does not freeze a specific implementation enum.

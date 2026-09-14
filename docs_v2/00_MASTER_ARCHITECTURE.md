@@ -147,6 +147,17 @@ Hyperliquid market/account payloads are first captured as immutable RAW, then no
 
 Metadata defines venue-aware asset locations, markets and two directed conversion edges per spot market. The structural Graph answers what can exist. Topology changes precompute fixed `DirectRoute`, `Route2Leg` and `Cycle3Leg` definitions and the `pair_to_routes` reverse dependency index. Capital/HOT state changes reachability or activation, never structural truth. Generic graph search is offline/Future, not per tick.
 
+Every executable decision is described on four orthogonal axes; no axis may be inferred from another:
+
+| Axis | Canonical values / question | Owner |
+|---|---|---|
+| Route structure | `DirectRoute` A→B, `Route2Leg` A→X→B, `Cycle3Leg` A→X→B→A | Graph/Routes |
+| Economic classification | OWA, Triangle, Bridge/Capital Relocation, Recovery | Opportunity, Capital or Recovery according to meaning |
+| Execution mode | T, TT, MT, TM, MM, TTT, MTT | Execution |
+| Capital/accounting intent | Strategy, Bridge/Relocation, Recovery, Inventory, Rebalance, Infrastructure | Capital/Accounting |
+
+The composition is therefore `RouteStructure + EconomicClassification + ExecutionMode + AccountingClassification`. It is a semantic contract, not a requirement to freeze one Rust enum. In particular, two legs do not imply OWA; a valid OWA also needs the fair direct A→B comparator for the same input, output asset and conventions. A Bridge reuses ordinary conversion/execution primitives to compare MOVE against STAY; it is neither a Hyperliquid order type nor automatically arbitrage. Recovery starts only from actual existing exposure and is not a planned relocation strategy.
+
 ## 17. Quant / Formula Core
 
 The Formula Book owns QF-001–QF-110, units, sign conventions, failures and golden/parity rules. `NetConvert(q)` walks exact L2, applies current fee/precision/minimum rules in the canonical order and returns typed economic outputs. No “simple price” shortcut may diverge. `Edge(q)`, profitable capacity, `Q_validated`, tail risk and accounting remain distinct formula concepts.

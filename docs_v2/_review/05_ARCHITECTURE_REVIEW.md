@@ -38,6 +38,17 @@ The apparent return is an event-cycle boundary, not a synchronous dependency cyc
 
 BBO is explicitly C1 state validity, C2 proved conservative reject, C3 FastL1 eligibility and C4 heuristic priority. Full-L2 QF-016 remains the economic oracle; FastL1 must be exactly equal and falls back when ineligible. A dense `pair_to_routes` representation remains generation-local implementation detail. Rust is baseline; lock-free and C++ remain evidence-gated.
 
+## Four-axis route contract
+
+| Independent axis | Meaning |
+|---|---|
+| Structure | `DirectRoute`, `Route2Leg`, `Cycle3Leg` |
+| Economic classification | OWA, Triangle, Bridge/Capital Relocation, Recovery |
+| Execution | T, TT, MT, TM, MM, TTT, MTT |
+| Capital/accounting | Strategy, Bridge/Relocation, Recovery, Inventory, Rebalance, Infrastructure |
+
+The axes compose; they never collapse into a leg-count enum. OWA requires a valid matched Direct A→B comparator. Triangle is the closed A→X→B→A cycle. Bridge compares MOVE with STAY using ordinary conversions and is not an order type or automatically arbitrage. Recovery starts from actual existing exposure. `ConversionAlpha` and `ExecutionAlpha`, and Strategy/Bridge/Recovery/Inventory/Rebalance PnL, remain distinct.
+
 ## Critical state ownership
 
 | State | Single logical owner | Readers | Persistence | Reconstruction |

@@ -50,6 +50,8 @@ The V1 hot path uses fixed source-backed structures:
 | Bridge | intentional capital relocation A→…→B for future utility |
 | Recovery path | bounded response to already-unwanted exposure, Execution-owned |
 
+This catalog describes different axes, not one flattened route enum. A complete candidate carries its structural route independently from its economic classification, execution mode and accounting intent. The Graph owns only structure and reverse dependencies; it cannot label every two-leg route OWA, every multi-leg path Bridge, or TT/MT as topology.
+
 Leg count never determines economic class. See [route matrix](./_analysis/pass08_graph_routes_quant/ROUTE_TYPE_MATRIX.md).
 
 ## 8. Direct routes
@@ -79,6 +81,8 @@ A Triangle is an exact `Cycle3Leg` A→X→B→A. QF-021 produces the final amou
 ## 13. Bridge classification boundary
 
 A structurally valid A→X→B without an executable direct A→B comparator may be a Bridge/Capital Relocation candidate. Bridge asks whether paying the conversion/exit/risk costs to move capital creates greater future utility than STAY; PASS07 owns that decision, terminal viability, QF-068/070/072 and accounting. Multi-leg does not imply arbitrage. Recovery begins from existing unwanted exposure and remains constitutionally distinct.
+
+Bridge is an economic/capital intention implemented with ordinary conversions and supported Execution modes. It is not an exchange order type, a new execution primitive or a synonym for arbitrage. Recovery can follow a failed Bridge only after actual unwanted exposure exists; that transition changes the action/accounting class without rewriting the original route structure.
 
 ## 14. Route precomputation
 
