@@ -38,7 +38,7 @@ No dedicated formal correction prompt for Phases 01–04 is present in the suppl
 | 008 | `part 2/# CORRECTION…md:4510–6782` | 12 | `_review/12_VALIDATION_AND_OPERATIONS_REVIEW.md` | corrected 05–11 | `PASS` |
 | 009 | `part 2/# CORRECTION…md:6783–8807` | 13 | `_review/13_IMPLEMENTATION_AND_SCALE_ROADMAP_REVIEW.md` | corrected 05–12 | `PASS` |
 | 010 | `part 2/# CORRECTION…md:8808–9574` | 14 | `_review/14_OPEN_HUMAN_DECISIONS.md` | corrected 05–13 | `PASS` |
-| 011 | `repository 2/…md:1–940` | 15 | `_review/15_CALIBRATION_AND_LEARNED_ITEMS.md` | corrected 14 | `PENDING` |
+| 011 | `repository 2/…md:1–940` | 15 | `_review/15_CALIBRATION_AND_LEARNED_ITEMS.md` | corrected 14 | `PASS` |
 | 012 | `repository 2/…md:941–1900` | 16 | `_review/16_EXTERNAL_REVALIDATION_CHECKLIST.md` | corrected 14–15 | `PENDING` |
 | 013 | `repository 2/…md:1901–3026` | 17 | `_review/17_RESEARCH_AND_FUTURE_SCOPE.md` | corrected 01–16 | `PENDING` |
 | 014 | `repository/…md:1–874` | 18 | `_review/18_SOURCE_AND_TRACEABILITY_CERTIFICATE.md` | corrected 01–17 | `PENDING` |
@@ -71,8 +71,9 @@ There is no dependency cycle, unexplained duplicate phase or missing predecessor
 | 007 | 11 | `PASS` | `3cb2725` / `c9adeda` | `1490d9f` / `5314052` | Deployment/review/deep specs + 12 artifacts | fencing/trust/time/resource mechanisms | consuming deployment scopes | owner/trust/threat/DR/license/resources PASS |
 | 008 | 12 | `PASS` | `1490d9f` / `5314052` | `311aed7` / `61d03a7` | Validation/Operations/review + 12 artifacts | thresholds, exact N/A records, sample sufficiency | none for documentation review | N/A/q/M4/alerts/namespaces/freshness/censoring PASS |
 | 009 | 13 | `PASS` | `311aed7` / `61d03a7` | `bc6e8e6` / `e900ea4` | roadmaps/review/PASS12 matrices + 11 artifacts | codec/width choices; scoped current facts | none for documentation review | 26 phases/Graph/bootstrap/models/auth/TTT PASS |
-| 010 | 14 | `PASS` | `bc6e8e6` / `e900ea4` | recorded after commit | review/OPEN/HDC + 15 governance artifacts | 2 scoped policy families; 26 non-policy residuals | none for docs/Phase 1 | 28/28 OPEN; 94/94 HDC; approval ceiling PASS |
-| 011–017 | 15–21 | `PENDING` | — | — | — | — | — | — |
+| 010 | 14 | `PASS` | `bc6e8e6` / `e900ea4` | `27f2756` / `91d6776` | review/OPEN/HDC + 15 governance artifacts | 2 scoped policy families; 26 non-policy residuals | none for docs/Phase 1 | 28/28 OPEN; 94/94 HDC; approval ceiling PASS |
+| 011 | 15 | `PASS` | `27f2756` / `91d6776` | recorded after commit | review/calibration map + ledger/report | candidate values/artifacts remain unselected | none for documentation review | four axes/QF targets/q/fallback/freshness PASS |
+| 012–017 | 16–21 | `PENDING` | — | — | — | — | — | — |
 
 ## 6. Final audit
 
