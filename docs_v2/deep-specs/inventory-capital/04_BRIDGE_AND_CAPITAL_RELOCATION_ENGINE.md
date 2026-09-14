@@ -33,6 +33,10 @@ PASS08 supplies candidate route/Atlas facts. Paths are evaluated economically th
 
 - QF-070 `Bridge Cost` compares starting value with net destination value and adds path risk; NetConvert already incorporates fees/spread/slippage.
 - QF-071 `Bridge Break-Even Cycles` amortizes Bridge plus expected exit cost using positive expected future cycle PnL; non-positive expected cycle PnL means infinity.
+
+A multi-leg Bridge is non-atomic. Full destination, partial/intermediate, Recovery and failure outcomes must not receive certain intended-destination utility unless their probability/path composition is explicitly supported and counted once. Source does not currently resolve that composition or the Phase 06 risk-cost partition; material Bridge fails closed under `OPEN — BRIDGE COMPLETION / DESTINATION VALUE COMPOSITION`.
+
+QF-071 is diagnostic only. A finite result neither proves the required opportunities will occur nor that regime persistence supports them or QF-072 beats STAY.
 - QF-072 `Capital Relocation Value` compares `EV_destination` and `EV_stay`, then bridge, exit and relocation risk costs.
 
 The exact QF expressions remain in SRC-004/Formula Index. Future cycle PnL is learned by regime and current evidence, not copied from a stale unconditional average. `STAY` is always valid unless a higher-priority safety action is required.

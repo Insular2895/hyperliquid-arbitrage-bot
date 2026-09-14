@@ -12,6 +12,8 @@ AWAITING HUMAN REVIEW
 
 Sizing precedes Slicing. Slicing cannot create capacity, raise `Q_validated`, avoid shared reservations or change the approved terminal exposure. A material new quantity requires sizing/Risk revalidation.
 
+The validation is also scoped to material slicing policy. A switch in child timing, waiting/repricing, cancel behavior, maker/taker choice or exposure duration changes economics and requires affected revalidation. A representation-only decomposition proven equivalent does not; materiality remains governed/calibrated.
+
 ## Execution-plan examples
 
 | Mode | Sizing consideration | Slicing consideration |

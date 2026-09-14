@@ -43,6 +43,8 @@ individual viability
 
 The Portfolio Optimizer cannot relax constraints, authorize rejected routes or invert PASS05 priority. Two concurrent opportunities must never spend the same balance or book capacity.
 
+Any claims containing the same executable L2 liquidity share capacity, including overlapping price/level/depth bands. BookVersion change requires revalidation. Resource disjointness is not statistical independence: QF-078 consumes portfolio Risk/stress supplied by the owning domains and never invents a missing joint-risk model.
+
 ## Replay and race properties
 
 Replay reproduces allocation/reservation from ordered events, immutable snapshots and policy version. Property tests cover balance overspend, shared-depth double count, stale candidate release, `UNKNOWN` retention, final revalidation and brute-force equivalence on small optimization cases.

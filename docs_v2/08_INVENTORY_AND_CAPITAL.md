@@ -128,6 +128,8 @@ Position Sizing answers: how much exposure should an already eligible opportunit
 
 The feasible region is the intersection of available balance, available book capacity, `Q_validated`, Risk maximum, future inventory capacity and strategy/mode capability. `max_allowed_size` is a ceiling, not a target. If no size passes, `q*=0`.
 
+`Q_validated` is the supremum/boundary of the exact validated set, not proof that every smaller q is valid. Holes are permitted; every selected q must independently satisfy all gates at the current version. Only separately proved/versioned monotonicity can support interval inference. Candidate-curve evidence remains authoritative.
+
 ## 21. Q_validated
 
 QF-076 defines `Q_validated` as the largest quantity for which all required gates remain true. It is not visible depth and is not QF-027 Maximum Profitable Size. `Q_validated` is route-, state-, execution-mode-, regime-, liquidity-, model-, inventory- and Risk-dependent. It can increase or decrease as evidence changes; more account capital alone does not increase it.
@@ -140,6 +142,8 @@ QF-077 locks a candidate-grid, best-region, local-refinement method because book
 
 Position Sizing outputs total validated quantity. Order Slicing takes that fixed upper bound and chooses child timing/shape under Execution rules. Splitting one simultaneous order does not create liquidity; same-time children must consume approximately the same mechanical depth as the equivalent total size.
 
+Size evidence is bound to the material execution/slicing assumptions that produced its distribution. Semantically equivalent mechanical decomposition needs no economic revalidation; changed timing, waiting, repricing, maker/taker behavior or exposure horizon requires affected Simulator/Risk/evidence revalidation.
+
 TT, MT, TTT and MTT have different size curves because fill, latency, intermediate exposure and Recovery differ. Slicing cannot enlarge `Q_validated`, bypass reservations, or turn a calibration probe into strategic size.
 
 ## 24. Shared balance/book capacity
@@ -150,11 +154,15 @@ Two routes sharing a balance or L2 side cannot both consume the full resource. R
 
 Shared book capacity is always computed jointly for routes that consume the same market side/depth band.
 
+Overlapping claims on the same executable L2 levels/segments share capacity exactly once even when their declared bands differ. Representation is an implementation choice; overlap detection and final BookVersion revalidation are invariants.
+
 ## 25. Multi-opportunity allocation
 
 After individual viability, Risk eligibility and size-curve construction, QF-078 chooses quantities jointly to maximize the sum of Risk-Adjusted EV inside shared capital, book, inventory and Risk constraints. The optimizer is subordinate to hard gates and action priority. It cannot select a Risk-rejected route.
 
 The final sequence is: individual viability -> Risk eligibility -> size curves -> portfolio allocation -> reservation -> final pre-send revalidation. Recovery and protection of existing exposure receive constitutional priority over Bridge, Rebalance and new opportunities.
+
+Distinct physical resources do not prove independent economic/tail risk. Shared regime, asset, liquidity withdrawal or Recovery loss needs a Risk/Simulator joint constraint, stress or supported bound. Unsupported material dependence cannot be replaced by covariance invented by Portfolio.
 
 ## 26. Horizontal / vertical scaling
 

@@ -9,6 +9,8 @@ Position Sizing chooses total exposure for an already viable, Risk-eligible oppo
 
 QF-027 Maximum Profitable Size is an edge/profitability boundary. QF-076 Validated Capacity, `Q_validated`, is the largest quantity for which every required gate is true. They are not interchangeable.
 
+That largest/supremum quantity is an upper boundary, never a sufficient predicate `q <= Q_validated`. The validated set may contain holes; every candidate point must pass exact gates. Any interval shortcut requires separately proved, versioned monotonicity.
+
 ## Feasible region
 
 The selected quantity must not exceed available/reservable balance (QF-073), available book capacity (QF-074), `Q_validated` (QF-076), Risk maximum, future inventory capacity or supported strategy/execution capability. It must also satisfy impact/participation, completion, P+, CVaR/ES, SimulationConfidence, OOD and minimum economic requirements. Risk's max is a ceiling, never the requested size.
