@@ -9,6 +9,8 @@ At most one process may take new risk for an installation/account/signer authori
 
 Ownership is acquired only after artifact/config prerequisites and before effects, and Live authority arrives only after sync/reconciliation/readiness. It is released after risk-off, active-work resolution and persistence. A stale lock can be removed only after checking process identity and exchange/account activity.
 
+Local/process ownership release does not release economic reservations or resolve `UNKNOWN`. Possible orders/fills and Recovery/Reconciliation duties survive death/restart/migration until exchange truth closes them. Persistent-data recovery and signer/trading-authority recovery are separate: restored data alone cannot trade, and a valid signer with unreconciled state cannot become READY.
+
 ## Ambiguity rule
 
 If two processes, hosts or manifests might be active, all contenders lose new-risk permission. Safe actions remain cancel, reconcile, reduce/Recovery and stop. Operators isolate the old host or revoke/fence its signer, establish exchange truth and then perform a full startup cycle. There is no optimistic winner election.

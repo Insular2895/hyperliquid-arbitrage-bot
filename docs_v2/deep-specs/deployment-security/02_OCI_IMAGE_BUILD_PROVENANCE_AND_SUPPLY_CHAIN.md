@@ -22,6 +22,8 @@ Git revision + Cargo.lock + toolchain + build config
 
 Semantic version and channel are labels; the OCI digest is the byte identity. Release metadata records Git revision, dependency lock, builder/toolchain, build timestamp, platform, schema ranges, SBOM, scan and signer identity. Production selects a version/digest pair and never follows `latest`.
 
+The trust anchor/verifier exists independently of the candidate image; candidate-contained verification cannot establish candidate trust. Key/root rotation is a versioned trust transition that neither invalidates all historical releases silently nor trusts every new candidate. Exact tooling is OPEN.
+
 ## Promotion controls
 
 1. Produce the candidate from declared immutable inputs.

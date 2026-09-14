@@ -13,6 +13,10 @@
 - Licensing and optional telemetry remain outside the hot path. Failure can narrow/stop new activity but cannot block Recovery/Reconciliation or strand exposure.
 - No baseline vendor custody, centralized multi-tenant trading engine or mandatory remote admin.
 
+Local lock is same-host protection, not cross-host fencing. Host migration is cold/ordered; ambiguous old-host authority blocks new risk until revocation/fencing and reconciliation. Process exit never resolves economic UNKNOWN or reservations. Data backup, signer recovery and trading-authority recovery are independent gates.
+
+OCI trust is anchored outside the candidate image and key rotation is versioned. Container hardening contains ordinary process compromise but does not protect against malicious host root/VPS control plane. License grace cannot be extended by unsafe clock behavior. Resource pressure sheds optional work and stops new risk before consuming capacity needed for fills, Risk, cancel, Recovery, Reconciliation, P0 evidence and shutdown.
+
 ## Evidence-gated choices
 
 Provider, region, bridge versus host networking, CPU/memory/storage, retention, health windows, telemetry backend, license mechanism, runtime/base-image/toolchain and node/private-feed options are not universal constants. Source prices/specifications are historical snapshots. Selection requires current revalidation, comparable controlled benchmarks, security review and robust net economic evidence.

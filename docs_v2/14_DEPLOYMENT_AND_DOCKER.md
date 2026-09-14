@@ -100,6 +100,8 @@ Source revision, dependency lock, builder/toolchain, image, SBOM, scan, signatur
 
 Exact registry, signature, SBOM and scanner products remain `OPEN`, but local fail-closed verification before owner replacement is locked. A staged download cannot alter the current active owner.
 
+Verification is anchored outside the untrusted candidate image: an independently trusted host/bootstrap component validates immutable digest, signer/provenance and compatibility before ownership replacement. The candidate cannot certify itself. Trust-root/key rotation is an explicit versioned transition; exact product and rotation mechanism remain OPEN.
+
 ## 13. Startup / preflight / readiness
 
 Every process starts without new-risk authority:
@@ -143,6 +145,8 @@ Licensing is outside the trading hot path. A locally cached signed entitlement, 
 
 A temporary service outage may use a bounded grace policy. Expired, revoked, invalid or unbound entitlement forbids new risk and transitions to `NO_NEW_RISK` or `RECOVERY_ONLY`; cancel, reconciliation, exposure reduction, safe shutdown and access to client-owned data remain available. Exact grace, binding and revocation-delivery policy require commercial/security validation.
 
+Entitlement time evaluation requires clock-quality evidence and monotonic anti-rollback policy. Clock jumps, reboot during unresolved grace or unsafe wall time cannot extend permission; they narrow to no-new-risk while safety actions remain. Exact trusted-time representation is OPEN.
+
 ## 17. `botctl`
 
 Source-exact commands are `status`, `health`, `benchmark`, `config validate`, `start`, `stop`, `reconcile`, `update check`, `update`, `rollback`, `support-bundle` and `emergency-stop`. The normalized public surface also covers `install`, `preflight`, `diagnose`, `logs`, `stop --safe`, `risk-off`, `export-incident` and `version`, either as stable commands or documented aliases once implementation freezes naming.
@@ -158,6 +162,8 @@ Container health checks must not kill a useful recovery/reconciliation process m
 ## 19. Safe shutdown
 
 On `SIGTERM` or `stop --safe`, the engine disables new risk, cancels/resolves active executions according to Execution/Risk, persists journal/checkpoint state, releases active ownership and exits. A timeout or force-kill is recorded; the next start performs full sync/reconciliation.
+
+Process/lock release proves neither terminal orders nor resolved economics. `UNKNOWN`, possible fills, reservations and Recovery/Reconciliation obligations survive process death/handoff until exchange evidence resolves them.
 
 `risk-off`/`emergency-stop` emits the applicable global kill before cancel and Recovery policies. Repetition is idempotent and audited.
 
@@ -183,6 +189,8 @@ Destructive migrations require coherent backup, migration marker and tested reco
 ## 22. Split-brain prevention
 
 At most one process owns Live authority for an installation/account/signer tuple. A local exclusive owner lock covers the initial single-host baseline. Update/rollback require positive old-process shutdown before new ownership. Unknown ownership blocks all new risk.
+
+The local lock protects only the same host. Cross-host/account-signer authority requires ordered cold handoff and positive fencing/revocation/proof; different installation IDs cannot bypass the economic scope. If old-host inactivity is unproved, every contender loses new-risk permission.
 
 A future hot standby or distributed owner requires explicit lease/fencing and partition/recovery validation. It is not implied by Docker restart or an exchange API wallet.
 

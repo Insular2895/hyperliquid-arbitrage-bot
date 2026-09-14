@@ -9,6 +9,8 @@ The runtime verifies a locally cached signed entitlement with an embedded vendor
 
 License validation runs outside the order/decision hot path. Temporary service unavailability may use a bounded cached grace policy; exact duration, renewal cadence, revocation transport and hardware binding are commercial/security decisions. Binding must tolerate planned recovery/migration through a controlled process.
 
+Expiration/grace evaluation requires acceptable wall-clock quality plus monotonic anti-rollback evidence. Backward/forward jumps, reboot with unresolved grace history or unsafe time never extend entitlement; new risk stops conservatively. Exact secure-time persistence is OPEN, while cancel/Recovery/Reconciliation remain license-independent.
+
 ## Permission rule
 
 Commercial entitlement is a necessary but insufficient input for new-risk capability. It cannot add a strategy, size or mode absent from compiled/configured/validated/current-Risk support.
