@@ -199,6 +199,8 @@ created_at
 
 The action enum is exactly `ALLOW`, `ALLOW_REDUCED_SIZE`, `ALLOW_RECOVERY_ONLY`, `REJECT`, `HALT_MARKET`, `HALT_STRATEGY`, `HALT_GLOBAL`. Dossier 3 additionally requires semantics for execution mode, risk-config version and model versions; the frozen schema carries these through snapshot/plan/version references rather than inventing extra `RiskDecision` fields. Reject reasons are closed, versioned and machine-readable.
 
+`action` is semantic authority; `allowed` is only a frozen compatibility field and can never be evaluated alone. Source material does not define its Boolean mapping for every action, especially `ALLOW_RECOVERY_ONLY`; that mapping is `OPEN — FROZEN SCHEMA SEMANTIC RECHECK`. A contradictory or unresolved pair is invalid and fails closed. `ALLOW_RECOVERY_ONLY` can never authorize ordinary new risk. A real Recovery effect additionally requires provable Recovery lifecycle context, `RISK_REDUCING` classification, a current matching decision, reservation, immutable plan/intent lineage, market protection and pre-send revalidation. If context or the Boolean/action contract cannot be proved, no economic effect is sent.
+
 ## 18. TTL/revalidation
 
 `TTL_risk` is calibrated by regime, edge survival and feed fidelity; no fixed universal duration is specified. Expiry requires a new RiskSnapshot and decision before send. Risk is evaluated at all exact checkpoints:

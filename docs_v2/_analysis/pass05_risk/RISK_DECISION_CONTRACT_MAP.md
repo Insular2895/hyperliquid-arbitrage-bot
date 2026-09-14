@@ -11,7 +11,7 @@ SRC-005 Dossier 3 section 139 defines semantic requirements; Dossier 4 sections 
 |---|---|---|
 | `decision_id` | Risk | Stable decision identity for plan/audit. |
 | `risk_snapshot_id` | RiskSnapshot | Exact immutable input snapshot. |
-| `allowed` | Risk | Boolean compatibility field; action remains authoritative for mode. |
+| `allowed` | Risk | Boolean compatibility field; action remains authoritative. Complete mapping, especially `ALLOW_RECOVERY_ONLY`, is OPEN and cannot be consumed independently. |
 | `action` | Risk | One exact canonical action enum. |
 | `max_allowed_size` | Risk/Sizing boundary | Upper bound; ExecutionTransport verifies actual plan size. |
 | `required_price_limits` | Risk/Execution | Protected price bounds; plural frozen spelling wins over Dossier 3 singular. |
@@ -37,6 +37,8 @@ No additional canonical action was found. Taxonomy-specific asset/mode/model/inf
 ## Transport acceptance
 
 ExecutionTransport may send a real new-risk OrderIntent only for current `ALLOW` or `ALLOW_REDUCED_SIZE`; the latter must respect the size cap. It verifies snapshot/plan linkage, TTL/invalidation state, required price limits and pinned config. `ALLOW_RECOVERY_ONLY` authorizes only the separately classified recovery path, not a normal OrderIntent.
+
+The source proves the enum and the new-risk restriction but not the Boolean value for every enum case or whether plain `ALLOW` covers Recovery. Contradictory/unresolved `allowed`/`action` pairs are invalid. Recovery transport must prove context, classification, current Risk, reservations and plan lineage; otherwise it fails closed.
 
 ## Reject reason authority
 

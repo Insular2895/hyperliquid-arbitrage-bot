@@ -35,6 +35,13 @@ Recovery ignores the planned route’s sunk costs because they cannot be recover
 
 Reviewer must reject the baseline if any path permits blind retry, planned-fill propagation, premature reservation release, hard-gate bypass, unresolved exposure reaching READY or license/telemetry failure preventing safe containment.
 
+## Phase 07 ambiguity closures
+
+- Exchange-proven inactive IOC residual: `PARTIALLY_FILLED -> CANCELED -> TERMINAL_RECONCILED`; actual fills apply immediately, while unknown status locks the remainder.
+- Actual-fill continuation: the prior plan never mutates; material downstream changes create a new linked `plan_version`, fresh Risk/reservation basis and intent using actual quantity.
+- Recovery transport: `ALLOW_RECOVERY_ONLY` is never generic permission and requires proven Recovery context plus `RISK_REDUCING`, bounds, protection, reservation and current revalidation.
+- Frozen dual field: `action` is authority; `allowed` alone never authorizes. The source does not fix every Boolean/action pairing, so the unresolved mapping fails closed and remains a scoped source-recheck blocker.
+
 ## CORR-03→06 completion and priority boundary
 
 Actual outcomes retain zero fill, partials, later-leg failures, `UNKNOWN`, Recovery entry/result, reconciliation and PnL as separate evidence axes. `p_full` predicts original-route completion; it cannot update state or grant Risk. Current Hyperliquid IOC and ALO write priorities are optional typed policies with different mechanics/cost bases. A charge is not a fill and payment does not guarantee completion.

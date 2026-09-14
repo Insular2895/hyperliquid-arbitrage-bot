@@ -25,6 +25,8 @@ HALT_STRATEGY
 HALT_GLOBAL
 ```
 
+`action` owns semantics. `allowed` is a compatibility field whose complete source-defined truth table is absent; the `ALLOW_RECOVERY_ONLY` Boolean value is explicitly OPEN. Consumers validate the pair and fail closed on contradiction or unresolved mapping. No consumer may send because `allowed == true`.
+
 Dossier 3's semantic `required_execution_mode`, `risk_config_version` and `model_versions` are enforced through snapshot/ExecutionPlan references because they are not frozen fields in the Dossier 4 RiskDecision schema. This avoids silently expanding the contract. `required_price_limit` in Dossier 3 is normalized to the frozen plural `required_price_limits`.
 
 `hard_rejects[]` and `warnings[]` use the versioned `RejectReason` enum families; free-form strings are explanatory telemetry only. A decision stores enough referenced state and calculated gate evidence to explain an allow/reduce/reject months later.
@@ -47,5 +49,7 @@ Each check creates or refers to a new immutable snapshot as needed. Size reducti
 ## Transport defense
 
 Before a real order, ExecutionTransport requires an unexpired, matching decision with `ALLOW` or `ALLOW_REDUCED_SIZE`, verifies `size <= max_allowed_size`, required price limits and immutable plan references, then applies its own safety checks. Other actions cannot transmit a new-risk OrderIntent.
+
+This new-risk rule does not erase bounded Recovery. A Recovery order is eligible only through a separately proven Recovery context and action classification; until the frozen `allowed` mapping is source-resolved, transport must not guess. `ALLOW_RECOVERY_ONLY` alone is insufficient, plain `ALLOW` is not presumed to cover Recovery, and cancel/query/reconciliation safety effects are not reclassified as new orders.
 
 Source: SRC-005 lines 3330–3474, 4459–4484 and 5010–5029; frozen fields SRC-005 Dossier 4 lines 6433–6508.

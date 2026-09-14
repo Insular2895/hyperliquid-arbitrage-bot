@@ -135,6 +135,8 @@ Normal pre-send transitions are `CREATED -> NONCE_ASSIGNED -> SIGNED -> SENT`. F
 
 `RESTING` applies to a known live maker/resting order. `PARTIALLY_FILLED` records `q_remaining = q_requested - q_filled`, actual VWAP, fees, and asset delta. `FILLED` closes only the individual order within lot/rounding tolerance. Final states converge to `TERMINAL_RECONCILED` only after final status, all known fills, and balance effect are accounted.
 
+For protected IOC, a partial fill does not require a locally initiated `CANCEL_REQUESTED`: when exchange evidence proves the order inactive and the unfilled residual canceled, the existing representation is `PARTIALLY_FILLED -> CANCELED -> TERMINAL_RECONCILED`. The filled portion remains actual exposure; only the proven terminal unused remainder may be released after reconciliation. A timeout, local IOC assumption or missing response instead yields `UNKNOWN`/resolution with the reservation locked. No new partial-terminal state is introduced.
+
 Monotonicity is mandatory: `FILLED` cannot become `RESTING`. A late incompatible event is recorded as `OUT_OF_ORDER_EVENT` and reconciled; the machine does not regress.
 
 ## 15. Send/ACK uncertainty
@@ -160,6 +162,8 @@ Reduce(Reduce(S, e), e) = Reduce(S, e)
 ```
 
 Every accepted fill immediately updates order totals, actual inventory, used reservation, leg accounting, and continuation/recovery inputs. It is never deferred until route completion.
+
+If actual output materially changes a downstream executable field, the immutable earlier `ExecutionPlan` remains historical evidence and a new `plan_version` is built through the existing lineage/evidence relations. It pins fresh state and Risk, uses only actual available output, reconciles/updates reservations without double claim, and creates a new downstream intent only after current pre-send checks. Expected output remains planning evidence and never sizes a live later leg once an actual fill exists.
 
 ## 18. Partial fills
 
