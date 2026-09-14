@@ -44,7 +44,7 @@ No dedicated formal correction prompt for Phases 01–04 is present in the suppl
 | 014 | `repository/…md:1–874` | 18 | `_review/18_SOURCE_AND_TRACEABILITY_CERTIFICATE.md` | corrected 01–17 | `PASS` |
 | 015 | `repository/…md:875–1908` | 19 | `_review/19_IMPLEMENTATION_AUTHORIZATION_CHECKLIST.md` | corrected 14–18 | `PASS` |
 | 016 | `repository/…md:1909–2952` | 20 | `_review/20_FINAL_SWITCHOVER_PLAN.md` | corrected 18–19 | `PASS` |
-| 017 | `repository/…md:2953–4002`; duplicate `4003–5052` | 21 | `_review/21_FINAL_HUMAN_DECISION_FORM.md` | corrected 14–20 | `PENDING` |
+| 017 | `repository/…md:2953–4002`; duplicate `4003–5052` | 21 | `_review/21_FINAL_HUMAN_DECISION_FORM.md` | corrected 14–20 | `PASS` |
 
 There is no dependency cycle, unexplained duplicate phase or missing predecessor inside the formal 05–21 corpus.
 
@@ -77,8 +77,8 @@ There is no dependency cycle, unexplained duplicate phase or missing predecessor
 | 013 | 17 | `PASS` | `df23164` / `ad13b38` | `caaa251` / `4375c50` | scope reviews/research trigger + audit/report | Research/Future items remain inactive | none for documentation review | strict classes/baseline/q/MC/authority PASS |
 | 014 | 18 | `PASS` | `caaa251` / `4375c50` | `0cbe2f6` / `7f12d49` | traceability review + manifest/report | later L3 semantic deltas require recertification | none for documentation review | 8/8 hashes; L0–L4/count/snapshot PASS |
 | 015 | 19 | `PASS` | `0cbe2f6` / `7f12d49` | `0d74da7` / `0353f76` | authorization review/invariant map + manifest/audit/report | final Candidate A freeze and human decisions pending | none for documentation review | gates A–G/SHA/scope/stops/default deny PASS |
-| 016 | 20 | `PASS` | `0d74da7` / `0353f76` | recorded after commit | switchover review + manifest/link/record templates/report | A freeze and all human gates pending | none for documentation review | A/B/retention/equivalence/rollback/STOP PASS |
-| 017 | 21 | `PENDING` | — | — | — | — | — | — |
+| 016 | 20 | `PASS` | `0d74da7` / `0353f76` | `d7546a4` / `8d5c971` | switchover review + manifest/link/record templates/report | A freeze and all human gates pending | none for documentation review | A/B/retention/equivalence/rollback/STOP PASS |
+| 017 | 21 | `PASS` | `d7546a4` / `8d5c971` | recorded after commit | final form/Start Here + stage audit/report | all human decisions pending/not available | none for documentation review | stages 0–8/default deny/A-B/Phase1 STOP PASS |
 
 ## 6. Final audit
 

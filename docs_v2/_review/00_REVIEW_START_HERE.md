@@ -1,6 +1,6 @@
 # Final Human Review — Start Here
 
-> **CURRENT REVIEW PACKAGE — CORR-01 THROUGH CORR-06 AND SCIENTIFIC ITERATION EXTENSION INTEGRATED.**
+> **CURRENT REVIEW PACKAGE — CORRECTIONS 05–21, CORR-01 THROUGH CORR-06, SCIENTIFIC ITERATION AND ASYNC/CONCURRENCY INTEGRATED.**
 >
 > Human approval is `PENDING`. Implementation and legacy switchover are `NOT AUTHORIZED`.
 
@@ -8,9 +8,9 @@
 
 This package turns the reconstructed corpus into a finite human decision. It is documentary evidence only: implementation, the `docs_v2` → `docs` switchover, Micro-live and Live all remain unauthorized.
 
-## Decision at the end
+## Decision sequence
 
-The reviewer may approve the documentation baseline and, separately, authorize **technical Phase 1 only**. Phase 1 contains domain types, units, identifiers, schema/version contracts, `Clock`, explicit RNG, `RunManifest` foundations and tests. It contains no network connection, exchange adapter, strategy decision, order, signer or capital effect.
+First freeze/review exact Candidate A. Documentation approval does not authorize switchover. A separate switchover authorization permits only the Phase-20 procedure; generated Commit B then requires separate human acceptance. Only after B acceptance can a later record authorize **technical Phase 1 only** on exact B. Phase 1 contains domain types, units, identifiers, schema/version contracts, `Clock`, explicit RNG, `RunManifest` foundations and tests. It contains no network connection, exchange adapter, strategy decision, order, signer or capital effect.
 
 ## Required reading — first
 
@@ -56,13 +56,14 @@ The reviewer may approve the documentation baseline and, separately, authorize *
 
 ## Review protocol
 
-1. Record the exact pushed async/concurrency finalization commit from Git/the delivery receipt in the decision form.
+1. Record exact Candidate A, tree, manifest and Phase-18 delta certificate in the decision form.
 2. Read Tier 1 and Tier 2 in order.
 3. Resolve or explicitly defer each scoped item in the decision form.
 4. Perform the prepared spot checks and red-team questions.
-5. Approve or reject the documentation baseline.
-6. Separately authorize or reject Phase 1.
-7. Only after explicit approval, follow the deterministic switchover plan.
+5. Approve, request changes to, or reject Candidate A documentation.
+6. If approved, separately authorize or reject the deterministic switchover.
+7. Review and separately accept or reject resulting Commit B.
+8. Stop. Only after B acceptance may a later record authorize or reject Phase 1 on exact B.
 
 All approval boxes are intentionally unchecked. Semantic edits after approval require a new reviewed commit.
 

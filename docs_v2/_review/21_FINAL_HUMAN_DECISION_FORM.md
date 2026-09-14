@@ -1,71 +1,110 @@
 # Final Human Decision Form
 
-> **CURRENT CORR-06 + SCIENTIFIC ITERATION + ASYNC/CONCURRENCY REVIEW PACKAGE.** All boxes are intentionally unchecked. Human approval remains `PENDING`; implementation, research activation and legacy switchover remain `NOT AUTHORIZED`.
+`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
-`DOCUMENTATION STATUS: CURRENT — AWAITING HUMAN REVIEW`
+## Purpose and decision invariants
 
-Reviewed documentation commit: `PENDING — copy the exact pushed async/concurrency commit SHA from Git/the delivery receipt`
+This form records decisions; it executes none. `DEFAULT STATE = NOT_AUTHORIZED`. Anything without a valid, scope-specific, non-stale DecisionRecord remains not authorized. Decisions are mutually exclusive, exact-commit, non-transitive and non-widening.
 
-Reviewer / date: `PENDING`
+## Stage 0 — Review Package Identity
 
-## Documentation baseline
+| Field | Value / status |
+|---|---|
+| Candidate commit A | `PENDING FINAL FREEZE — recorded by the post-Phase-21 attestation; never moving HEAD` |
+| Candidate tree / manifest hash | `PENDING` |
+| Phase-18 delta certificate for A | `PENDING` |
+| review package completeness | `PENDING` |
+| reviewer / date | `PENDING` |
 
-- [ ] APPROVE the exact reviewed documentation commit
-- [ ] APPROVE WITH RECORDED CHANGES — create and review a new commit before promotion
-- [ ] REJECT / RETURN FOR REVISION
+No later stage is available until one exact A/tree/manifest and non-stale certificate are verified.
 
-## Open decision families
+## Stage 1 — Documentation Decision
 
-- [ ] HD-01 Infrastructure profile disposition recorded
-- [ ] HD-02 Risk/inventory/support policy disposition recorded
-- [ ] HD-03 Model/survival promotion disposition recorded
-- [ ] HD-04 Maker mode disposition recorded
-- [ ] HD-05 Cross-exchange future-scope disposition recorded
-- [ ] HD-06 License/telemetry disposition recorded
-- [ ] HD-07 Formula convention dispositions recorded individually
-- [ ] HD-08 Search/solver policy disposition recorded
+Prerequisite: Stage 0 complete. Current status: `PENDING` once Stage 0 is complete. Choose exactly one in a future DecisionRecord:
 
-## Post-reconstruction corrections
+- `APPROVE(A)`;
+- `REQUEST_CHANGES(A)` — A is not approved; create A2 and restart review;
+- `REJECT(A)`.
 
-- [ ] CORR-01 Capture Funnel/latency evidence accepted
-- [ ] CORR-02 BBO C1–C4, FastL1/full-L2 and Rust/C++ gates accepted
-- [ ] CORR-03 actual outcomes, UNKNOWN/Recovery and completion evidence accepted
-- [ ] CORR-04 public/node challenger and speculative-state boundary accepted
-- [ ] CORR-05 one `Π_exec`, no-double-count and `Q_validated` semantics accepted
-- [ ] CORR-06 QF global close, current priority facts and reusable InfraProfile method accepted
-- [ ] Scientific iteration, research knowledge, reporting and maintenance extension accepted
-- [ ] Async/concurrency C0–C5, boundedness, stale/deadline and route-policy contract accepted
-- [ ] `HDC-001..094` origin/approval treatment accepted
-- [ ] Fast-cancel documentation conflict accepted as external revalidation item
+There is no “approve with changes.” Documentation approval triggers no switchover, merge, branch, implementation, research or capital action.
 
-Unresolved non-blocking Research/Future items may remain open: [ ] YES  [ ] NO
+## Stage 2 — Genuine Human Policy Decisions
 
-## Switchover
+Consume the derived Phase-14 registry, never a fixed HD-01..08 list. Current registry has two genuine scoped families:
 
-- [ ] AUTHORIZE the exact 20-step `docs_v2` → `docs` switchover
-- [ ] RETAIN `_analysis` in canonical `/docs`
-- [ ] RETAIN `_review` in canonical `/docs`
-- [ ] DO NOT authorize switchover
+| Decision | Blocking scope | Allowed future disposition | Current status |
+|---|---|---|---|
+| HPD-01 Maker/TM/MM activation | Phase 23/maker only; not Phase 1 or conservative TT | APPROVE eligible exact scope / NARROW / DEFER / REJECT / REQUEST_EVIDENCE | PENDING |
+| HPD-02 license/product mechanism | client distribution only | APPROVE eligible mechanism / NARROW / DEFER / REJECT / REQUEST_EVIDENCE | PENDING |
 
-## Implementation
+Evidence selects calibrated/learned candidates; policy approval cannot override failed evidence/Risk/OOD/q. Non-blocking Research/Future and deferred Formula/Sizing/Model/Infra/Capital items may remain open when Phase 1 does not consume them.
 
-- [ ] AUTHORIZE PHASE 1 ONLY — Domain Types / Schemas under the reviewed scope and DoD
-- [ ] DO NOT authorize Phase 1
+`HDC-001..094` is a traced post-source requirement package, not 94 Human Policy Decisions and not one blanket approval. CORR-01..06, scientific and async extensions are review-package components with their own lineage; accepting documentation does not activate their capabilities.
 
-Explicitly not authorized by this form unless a later evidence gate and separate decision exists:
+## Stage 3 — Switchover Authorization
 
-- [ ] Phase 2
-- [ ] Shadow
-- [ ] Micro-live
-- [ ] Live
-- [ ] MT/MTT
-- [ ] Bridge
-- [ ] Scaling
-- [ ] Strategy Discovery / parameter search / Monte Carlo
-- [ ] Champion/Challenger / strategy drift automation
+Prerequisite: `DocumentationDecision(A)=APPROVED`. Current status: `NOT_AVAILABLE`.
 
-Reviewer notes / required changes: `PENDING`
+Future mutually exclusive decision: `AUTHORIZE_SWITCHOVER(A)` or `DO_NOT_AUTHORIZE(A)`. The record must freeze the approved artifact manifest, allowed transformations and `_analysis`/`_review` retention policy. Proposed retention is both directories; any change creates A2 and new documentation review.
 
-Human approval: **PENDING**
-Implementation: **NOT STARTED**
-Real capital: **NOT AUTHORIZED**
+`SwitchoverAuthorization(A) != MergeAuthorization` and does not accept unknown output B or authorize Phase 1.
+
+## Stage 4 — Switchover Result
+
+Prerequisite: Stage 3 authorized and Phase-20 procedure executed. Current status: `NOT_AVAILABLE`; Commit B does not exist.
+
+Future machine/human-prepared evidence records exact B SHA/tree, A→B SwitchoverRecord, normalized artifact/link manifests, semantic-equivalence result, Phase-18 delta recertification and push ref. No false B SHA is entered now.
+
+## Stage 5 — Switchover Acceptance
+
+Prerequisites: B exists; every Phase-20 validation passes; B is pushed/reviewable. Current status: `NOT_AVAILABLE`.
+
+Future mutually exclusive decision: `ACCEPT(B)`, `REQUEST_CHANGES(B)` or `REJECT(B)`. Successful transformation/push is not acceptance. Acceptance is distinct from any Git merge mechanism and does not start implementation.
+
+## Stage 6 — Phase 1 Authorization
+
+Prerequisite: `SwitchoverAcceptance(B)=ACCEPTED`. Current status: `NOT_AVAILABLE`.
+
+Future mutually exclusive decision: `AUTHORIZE_PHASE1(B, exact_scope)` or `DO_NOT_AUTHORIZE_PHASE1(B)`. The branch may be created only from exact B after this record.
+
+Exact possible scope: strong IDs/units; event envelopes; schema/snapshot versions; deterministic ordering foundations; Clock/RNG/RunManifest foundations; serialization/compatibility; unit/property/misuse tests. It excludes network/adapters, books, Formula implementation, opportunity/strategy, Risk behavior, order transport/signing/effects, capital, deployment and Phase 2+. After Phase-1 DoD, STOP; Phase 2 requires a new authorization.
+
+## Stage 7 — Explicit Non-Authorizations
+
+| Scope | Current status |
+|---|---|
+| Phase 1 | NOT_AUTHORIZED / prerequisite unavailable |
+| Phase 2+ | NOT_AUTHORIZED |
+| Shadow | NOT_AUTHORIZED |
+| Micro-live | NOT_AUTHORIZED |
+| Live | NOT_AUTHORIZED |
+| MT/MTT/TM/MM | NOT_AUTHORIZED |
+| Bridge | NOT_AUTHORIZED |
+| Scaling / q expansion | NOT_AUTHORIZED |
+| Strategy Discovery / Parameter Search / Monte Carlo | NOT_AUTHORIZED |
+| model/strategy Champion activation or drift automation | NOT_AUTHORIZED |
+| real capital / exchange effects | NOT_AUTHORIZED |
+| `docs_v2 -> docs` switchover | NOT_AUTHORIZED / UNEXECUTED |
+
+An empty or unchecked field never means “maybe allowed.” Research documentation promoted to canonical docs is not Research capability authorization. External facts remain freshness-gated per consumer.
+
+## Stage 8 — Decision Status and Supersession
+
+Decision states are `PENDING`, `APPROVED_WITH_EXPLICIT_SCOPE`, `REQUEST_CHANGES`, `REJECTED`, `NOT_AVAILABLE`, `STALE` and `SUPERSEDED`. Every DecisionRecord includes ID/type/version/status, exact commit/tree, explicit scope/exclusions, prerequisites/evidence/certificate/manifest links, blocker disposition, reviewer/role/date, validity triggers and supersession lineage.
+
+Semantic change to the approved commit, scope, applicable invariant or certificate makes the affected record `STALE`. A replacement `SUPERSEDES` rather than rewriting history. No decision auto-propagates to the next stage.
+
+## Final status summary
+
+```text
+ReviewPackageIdentity: PENDING FINAL FREEZE
+DocumentationDecision: PENDING
+HumanPolicyDecisions: PENDING / MAY BE DEFERRED BY SCOPE
+SwitchoverAuthorization: NOT_AVAILABLE
+SwitchoverResultB: NOT_AVAILABLE
+SwitchoverAcceptance: NOT_AVAILABLE
+Phase1Authorization: NOT_AVAILABLE
+Implementation: NOT_STARTED
+ResearchRuntime: NOT_AUTHORIZED
+RealCapital: NOT_AUTHORIZED
+```
