@@ -181,6 +181,8 @@ The maker model predicts more than eventual fill:
 
 For fill time `T_f`, QF-051 defines `S_f(t|X)=P(T_f>t|X)` and QF-052 defines `F_f=1-S_f`. QF-053 integrates fill survival for expected fill time. QF-054/055 define positive adverse selection as a movement against the filled maker position.
 
+SRC-004 does not say whether `T_f` is first positive fill or full requested fill. That event target is therefore OPEN and any forecast must declare target, horizon, requested-size semantics, censoring, support, conditioning, model version and confidence/OOD. `AnyFillByH`, `FirstFillTime`, `FullFillByH`, `FullFillTime`, partial probability and filled quantity are distinct analytical targets; none substitutes for route completion.
+
 Maker fee advantage alone is insufficient: fill can arrive precisely when the quote becomes toxic, the second leg can deteriorate, and recovery may be required. QF-058 MT EV is referenced but owned by Formula/Execution.
 
 Exact cancellation allocation and queue evolution under L2 remain Simulator/Exchange concerns for PASS 03. Participant models forecast distributions under declared queue observability; they do not pretend to reconstruct an exact queue from snapshots.
@@ -243,6 +245,8 @@ For OOD, stale/incompatible features, unavailable/corrupt artifacts, NaN output,
 - reject model-dependent routes or disable the affected strategy when no safe fallback exists.
 
 Failure must reduce capability.
+
+A fallback may operate only inside its own validated market/route/size/regime/feed/horizon support. It may abstain, narrow capability or reduce size through Risk; it may not expand `Q_validated`, enable Maker, assert unseen support, override OOD/hard Risk or self-promote. If fallback support is absent, the dependent capability rejects.
 
 ## 16. Hot-path constraints
 

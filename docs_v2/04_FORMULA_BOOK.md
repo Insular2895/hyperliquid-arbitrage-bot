@@ -138,9 +138,9 @@ QF-007, QF-008, QF-014–016 and every minimum/fee/debit-asset/precision assumpt
 
 | ID | Canonical name | Source status | Exact canonical equation | Essential semantics / invalid case |
 |---|---|---|---|---|
-| QF-051 | Maker Fill Survival | LEARNED | `S_f(t∣X)=P(T_f>t∣X)` | Probability; learned conditional time-to-fill artifact. |
+| QF-051 | Maker Fill Survival | LEARNED / OPEN TARGET | `S_f(t∣X)=P(T_f>t∣X)` | Probability; source says time-to-fill but does not disambiguate first versus full fill. Target/horizon must be typed before use. |
 | QF-052 | Maker Fill CDF | LOCKED FROM SURVIVAL | `F_f(t∣X)=1-S_f(t∣X)=P(T_f≤t∣X)` | Probability; same event/horizon/model as QF-051. |
-| QF-053 | Expected Fill Time | LOCKED DEFINITION | `E[T_f]=∫_0^∞S_f(t)dt`; discrete approximation by survival bins | Time; conditional/truncated variant must be labelled; finite support/censoring explicit. |
+| QF-053 | Expected Fill Time | LOCKED DEFINITION / OPEN TARGET | `E[T_f]=∫_0^∞S_f(t)dt`; discrete approximation by survival bins | Time; same typed event as QF-051/052; target is OPEN, conditional/truncated variant and censoring explicit. |
 | QF-054 | Adverse Selection BUY | LOCKED | `AS_buy(h)=(P_f-Mid_{t_f+h})/P_f` | Dimensionless; positive is adverse; filled BUY, positive fill price, explicit horizon/reference. |
 | QF-055 | Adverse Selection SELL | LOCKED | `AS_sell(h)=(Mid_{t_f+h}-P_f)/P_f` | Dimensionless; positive is adverse; filled SELL, positive fill price, explicit horizon/reference. |
 

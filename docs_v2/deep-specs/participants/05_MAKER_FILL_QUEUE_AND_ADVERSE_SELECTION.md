@@ -33,6 +33,8 @@ E[T_f] = integral_0^infinity S_f(t) dt                    QF-053, LOCKED
 
 Discrete evaluation may sum survival over bins. If fills beyond the model horizon are not observable/supported, report the conditioning convention, such as expected time conditional on fill within horizon, rather than creating an artificial finite unconditional mean.
 
+The source does not disambiguate `T_f` as first versus full fill. QF-051–053 therefore require an explicit target contract before activation. Any-fill probability, full-fill probability, first/full-fill time, filled quantity/fraction and partial-fill probability are not interchangeable. Adverse selection is conditioned on the realized fill event/quantity/time where material; independence from fill toxicity is never assumed by default.
+
 Fill curves must be coherent: survival in `[0,1]` and non-increasing, CDF non-decreasing, and partial/full-fill definitions explicit.
 
 ## Queue observability

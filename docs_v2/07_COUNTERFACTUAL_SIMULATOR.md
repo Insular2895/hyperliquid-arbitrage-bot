@@ -176,6 +176,8 @@ QF-104 forbids a decorative fixed weighted score. Explicit gates cover data fide
 
 Confidence cannot create evidence. Higher nominal fidelity with uncalibrated models may deserve lower confidence than a supported F1 baseline. Low confidence reduces size, requests fallback, or rejects through Risk; it never upgrades capital authority.
 
+Every material stochastic dependence is classified as supported joint/conditional, coherent empirical resampling, empirically supported independence, unknown dependence, or immaterial for the stated claim. Independent marginals are never the default for latency/edge survival, fill/adverse selection, partial/recovery, volatility/liquidity or linked-market response. Unknown material tail dependence lowers fidelity/confidence and constrains or rejects the affected `Q_validated`; no copula/correlation constant is invented.
+
 ## 23. Branch-and-rejoin
 
 An interactive intervention creates a bounded branch. As QF-043 liquidity resilience and modeled response residuals decay, an explicit `CounterfactualRejoinEvent` may rejoin the historical baseline when a calibrated compatibility rule is satisfied. The event records the fact and reason through Data Contracts; no silent snap-back is permitted.

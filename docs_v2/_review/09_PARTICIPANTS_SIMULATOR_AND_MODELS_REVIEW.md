@@ -2,6 +2,10 @@
 
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
+Phase 09 separates economic opportunity death, right censoring and our system ineligibility; only the first can label market survival death, and system failures cannot train competition hazard. Latency and survival use compatible conditional context or coherent empirical resampling. Material dependence is never silently replaced by independent marginals.
+
+Maker fill forecasts are typed by event, horizon, requested size, support and censoring. SRC-004 leaves QF-051–053 first-versus-full-fill target OPEN, so maker-dependent authority fails closed until resolved. EconomicLift uses a common point-in-time candidate cohort and keeps unchosen outcomes counterfactual. A conservative fallback needs its own support and may only narrow authority. Simple interpretable models remain preferred until added complexity proves statistical, economic, runtime and failure-safety value.
+
 ## What is modelled
 
 Production models describe collective observable behavior: opportunity-edge survival, replenishment/resilience, competition intensity, maker fill/time/adverse selection and sparse cross-market response. Public data does not justify fabricated competitor identities. Explicit agents are an F4 Research construction, not production truth.

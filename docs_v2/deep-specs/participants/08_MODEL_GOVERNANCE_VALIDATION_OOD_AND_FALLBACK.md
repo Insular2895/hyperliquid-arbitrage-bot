@@ -86,6 +86,8 @@ EconomicLift = NetPnL_model - NetPnL_baseline             QF-100
 
 Both arms use the same dataset, capital, fees and risk budget. Also compare drawdown, CVaR, partial fills, recovery loss and capital utilization.
 
+Both arms also start from the same point-in-time candidate/episode cohort and feature snapshot. Accepted-only survivor sets are not compared as if randomized. Different accept/reject/size/mode choices remain in the cohort; an unchosen action retains counterfactual provenance rather than fabricated actual PnL.
+
 ```text
 ModelValue = PnL_with - PnL_without
              - PnLLostDueToAddedLatency - OperationalCost QF-101
@@ -126,6 +128,8 @@ For unavailable/corrupt models, NaN, schema mismatch, stale inputs, OOD, large d
 4. reject model-dependent routes or disable the affected strategy if no safe fallback exists.
 
 Test model corruption, feature omission, stale forecasts, unsupported size/regime, disagreement, drift, feed degradation and fallback itself. Complexity must fail safe.
+
+Fallback has no inherited authority from the failed primary. It must carry its own validated support and cannot enlarge q, mode, market, regime or capital permission. Unsupported fallback rejects the dependent capability.
 
 ## Promotion decision record
 

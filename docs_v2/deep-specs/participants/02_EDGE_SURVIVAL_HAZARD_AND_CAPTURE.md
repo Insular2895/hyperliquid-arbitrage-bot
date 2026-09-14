@@ -94,6 +94,8 @@ Start with empirical survival stratified by route, edge, liquidity, volatility a
 
 Failures include label contamination, lookahead, censor mishandling, regime/feature drift, OOD size, stale inputs, tail extrapolation, invalid/nonmonotone probabilities and latency-support mismatch. Safe behaviour is conservative empirical fallback, reduced capability or rejection.
 
+Labeling separates market/economic death, right censoring and system/policy ineligibility. Feed/dataset end is censoring; account/Risk/model/infra ineligibility does not prove edge death or competition. Market-opportunity lifetime and our executable-opportunity lifetime are distinct targets. QF-048 integrates latency and survival only under compatible point-in-time context/support; mismatched regimes or unknown material dependence cannot be silently combined.
+
 ## Sources
 
 SRC-004 QF-044..050, 082, 083, 085 and 094..096; SRC-005 Risk/Data contracts; SRC-006 validation; SRC-007 participant and quant sections; SRC-008 infrastructure/simulator interfaces.
