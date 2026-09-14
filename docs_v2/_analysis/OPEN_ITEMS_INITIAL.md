@@ -6,6 +6,8 @@
 
 All `OPEN-001`–`OPEN-028` remain traceable with their existing owner, evidence need and capability scope. The **79** PASS 15 recovered concepts introduce no unanswered architecture question and no new OPEN ID: current semantics already had equal/stronger owners, calibrated/external values remain gated, and the only canonical wording gap was corrected. Open source gaps: **0**; OPEN-BLOCKING source gaps: **0**.
 
+This file is the historical inventory, not current decision authority. Phase 14 deterministically reclassifies the 28 items in `phase14_human_decision_governance/OPEN_DISPOSITION_LEDGER.md`; only two remain current genuine human-policy families, and none blocks the documentation baseline or Phase 1.
+
 OPEN signifie décision réellement non prise. Les paramètres simplement calibrés restent `CALIBRATED`.
 
 | Open ID | Item | Why open | Review pass |
