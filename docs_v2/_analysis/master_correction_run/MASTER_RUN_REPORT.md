@@ -42,7 +42,7 @@ No dedicated formal correction prompt for Phases 01–04 is present in the suppl
 | 012 | `repository 2/…md:941–1900` | 16 | `_review/16_EXTERNAL_REVALIDATION_CHECKLIST.md` | corrected 14–15 | `PASS` |
 | 013 | `repository 2/…md:1901–3026` | 17 | `_review/17_RESEARCH_AND_FUTURE_SCOPE.md` | corrected 01–16 | `PASS` |
 | 014 | `repository/…md:1–874` | 18 | `_review/18_SOURCE_AND_TRACEABILITY_CERTIFICATE.md` | corrected 01–17 | `PASS` |
-| 015 | `repository/…md:875–1908` | 19 | `_review/19_IMPLEMENTATION_AUTHORIZATION_CHECKLIST.md` | corrected 14–18 | `PENDING` |
+| 015 | `repository/…md:875–1908` | 19 | `_review/19_IMPLEMENTATION_AUTHORIZATION_CHECKLIST.md` | corrected 14–18 | `PASS` |
 | 016 | `repository/…md:1909–2952` | 20 | `_review/20_FINAL_SWITCHOVER_PLAN.md` | corrected 18–19 | `PENDING` |
 | 017 | `repository/…md:2953–4002`; duplicate `4003–5052` | 21 | `_review/21_FINAL_HUMAN_DECISION_FORM.md` | corrected 14–20 | `PENDING` |
 
@@ -75,8 +75,9 @@ There is no dependency cycle, unexplained duplicate phase or missing predecessor
 | 011 | 15 | `PASS` | `27f2756` / `91d6776` | `3493ee5` / `83959aa` | review/calibration map + ledger/report | candidate values/artifacts remain unselected | none for documentation review | four axes/QF targets/q/fallback/freshness PASS |
 | 012 | 16 | `PASS` | `3493ee5` / `83959aa` | `df23164` / `ad13b38` | external register/review + ID audit/report | current facts still consumer-gated | none for documentation review | 23/23 IDs; stage/status/scope/fallback PASS |
 | 013 | 17 | `PASS` | `df23164` / `ad13b38` | `caaa251` / `4375c50` | scope reviews/research trigger + audit/report | Research/Future items remain inactive | none for documentation review | strict classes/baseline/q/MC/authority PASS |
-| 014 | 18 | `PASS` | `caaa251` / `4375c50` | recorded after commit | traceability review + manifest/report | later L3 semantic deltas require recertification | none for documentation review | 8/8 hashes; L0–L4/count/snapshot PASS |
-| 015–017 | 19–21 | `PENDING` | — | — | — | — | — | — |
+| 014 | 18 | `PASS` | `caaa251` / `4375c50` | `0cbe2f6` / `7f12d49` | traceability review + manifest/report | later L3 semantic deltas require recertification | none for documentation review | 8/8 hashes; L0–L4/count/snapshot PASS |
+| 015 | 19 | `PASS` | `0cbe2f6` / `7f12d49` | recorded after commit | authorization review/invariant map + manifest/audit/report | final Candidate A freeze and human decisions pending | none for documentation review | gates A–G/SHA/scope/stops/default deny PASS |
+| 016–017 | 20–21 | `PENDING` | — | — | — | — | — | — |
 
 ## 6. Final audit
 
