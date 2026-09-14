@@ -2,30 +2,66 @@
 
 `DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
 
-Research may produce evidence but has no production authority. Future means compatible direction without current V1 commitment. Rejected means a known unsafe/misleading approach, not a backlog item.
+## Scope taxonomy and authority
 
-| Topic | Classification | Why outside initial path | Re-entry gate |
-|---|---|---|---|
-| F4 interactive simulation and explicit participant agents | Research | identities/interactions are not observed truth | calibrated benefit over F2/F3; no authority leakage |
-| Deep survival, Hawkes, Queue-Reactive, advanced ML/challengers | Research | complexity and transferability unproven | primary provenance, temporal OOS, calibration, runtime and EconomicLift |
-| Sparse cross-market response enrichment | Research/later V1 | support and causality may be weak | point-in-time support and drift evidence |
-| Complex portfolio optimization | Research/later V1 | simple allocation is safer baseline | correctness plus lift under shared constraints |
-| Cross-exchange routes and transfer edges | Future | settlement/transfer/venue Risk/Data/Ops absent | separate approved architecture and evidence roadmap |
-| Perpetual hedge | Future | new product, funding/liquidation/basis risks | separate approved spec |
-| Private node / higher fidelity feed | Future/evidence-gated | capability, reliability and ROI current facts absent | official revalidation and robust benchmark economics |
-| Hot standby / HA | Future | dual-owner and reconciliation risks | fencing/failover design and fault evidence |
-| High-end/low-latency infrastructure | Future/evidence-gated | prestige/median latency is not net value | positive robust incremental value after all costs |
-| Priority policy optimization | Research/evidence-gated | current mechanisms exist, but optimal rate/slot and outcome value are unvalidated | matched policy evidence, actual charge/outcomes, Risk and human promotion |
-| Reusable InfraProfile replay | Research/selection evidence | historical profile is not current network truth | simultaneous calibration, freshness and actual/counterfactual provenance |
-| TM/MM modes | Future/type-supported, default-disabled | no initial activation/evidence sequence | explicit product choice and mode-specific safety/evidence plan |
-| Bridge/Capital Relocation | later V1, separately gated | needs history, exits, persistence and `STAY` comparison | phases/stages 25/17 evidence and approval |
-| Horizontal/vertical capital scale | later evidence scope | current validation does not transfer automatically | new market/route or next-q-band CapabilityManifest |
-| Strategy Discovery / Feature Registry / StrategySpec | Future, activation-forbidden | baseline and deterministic evidence/reporting must exist first | complete baseline gate plus point-in-time and OOS evidence |
-| Parameter search | Future Research | search can amplify overfit and cannot tune Risk gates | declared family/budget, untouched temporal OOS, stability and multiplicity controls |
-| Monte Carlo robustness | Future Research | calibrated distributions and canonical Simulator integration are prerequisites | Replay first; support/correlation/convergence/exact-once validation |
-| Champion/Challenger | Future last layer | promotion/ownership/rollback must remain explicit | Replay/OOS/MC, Shadow, separately authorized Micro-live, human decision |
-| Strategy drift research | Future final layer | no online Live self-learning or automatic mutation | calibrated detectors, hysteresis, safe demotion/fallback and human authority |
+Every topic has exactly one scope class:
 
-Rejected production claims include: exact alternate-world simulation; invented competitor identities; generic graph search on every tick; BBO-only acceptance; planned fills as Inventory; blind order retry; unbounded Recovery; license as safety authority; “more capital means more size”; and a throwaway MVP that bypasses final-capable interfaces.
+- `FOUNDATION`: required final-capable baseline contracts/components.
+- `LATER_V1`: planned inside the 26-phase V1 roadmap after prerequisites.
+- `RESEARCH`: evidence-generating candidate, activation-forbidden until its gate.
+- `FUTURE`: outside current V1 commitment; requires a separate approved architecture/roadmap.
+- `REJECTED`: unsafe or misleading production approach, not backlog.
 
-The human may approve the documentation and Phase 1 while every non-blocking Research/Future item remains open. The detailed [strategy-research specification](../deep-specs/strategy-research/README.md) documents compatibility only; it is not an activation backlog commitment.
+Research may propose evidence and candidates; it is never a second Formula Book, Risk, Execution, Accounting or Capital authority. Masters/Formula/Risk/ESM > Data/Recorder/Simulator/Validation > research specifications > reports/interpretations.
+
+## Baseline gate
+
+Inert documentation, templates, schemas and hypotheses may exist before the gate. Automated search, Monte Carlo programs, strategy portfolios, strategy Champion/Challenger activation, drift-driven selection and capital-bearing research may not run until the complete measurable/reconcilable same-venue baseline, canonical Simulator, deterministic reporting, Shadow and separately authorized bounded actual evidence exist. Documentation presence is not activation.
+
+## Deterministic scope register
+
+| Topic | Scope class | Baseline dependency / why not earlier | Allowed pre-gate activity | Activation / re-entry gate | Capital effect |
+|---|---|---|---|---|---|
+| simple empirical Participant/Survival Champion | LATER_V1 | Phase 21 data and temporal support | labels/interface/baseline design | OOS calibration, OOD/fallback and explicit consumer promotion | none directly |
+| deep survival, Hawkes, Queue-Reactive, advanced ML | RESEARCH | incremental value/transferability unproven | hypotheses and offline design | primary provenance, temporal OOS, runtime and EconomicLift | none until promoted consumer |
+| simple sparse cross-market response | LATER_V1 | Phase 21 supported data | feature/interface design | point-in-time support and drift validation | none directly |
+| deep/causal/generative response models | RESEARCH | causal support absent | hypotheses only | local temporal evidence and incremental lift | none directly |
+| simple deterministic portfolio allocator | LATER_V1 | Phase 24 after valid single opportunities | interfaces/goldens | shared-constraint proof and baseline evidence | bounded only after promotion |
+| complex/regime portfolio optimization | RESEARCH | complexity/overfit/switching risk | offline spec | member validation, OOS/multiplicity, lift and switching safety | separately promoted only |
+| Bridge / Capital Relocation | LATER_V1 | Technical Phase 25 / Evidence Stage 17 | STAY/path/evidence specification | terminal/exit/history/persistence plus separate probe | separately promoted |
+| horizontal scaling | LATER_V1 | each new market/route is a new scope | experiment proposals | exact CapabilityManifest/evidence per scope | no automatic expansion |
+| vertical/q scaling | LATER_V1 | q validity may be non-monotonic | propose exact q experiments | every exact q passes all current gates | no capital-based increase |
+| private node / higher-fidelity feed challenger | RESEARCH | current capability/reliability/economics uncertain | isolated capture/benchmark spec | external revalidation, paired evidence, security and promotion | public-feed baseline unaffected |
+| hot standby/HA | FUTURE | fencing/reconciliation architecture outside current activation | design only | separately approved architecture and fault evidence | none |
+| infra/host/kernel challengers | RESEARCH | mechanism/median speed is insufficient | benchmark design | parity, tails, reliability, security, cost and EconomicLift | no automatic switch |
+| priority policy optimization | RESEARCH | feature existence ≠ advantage ≠ benefit | evidence schema/fixtures | current facts, charges, matched outcomes, Risk and promotion | disabled until exact scope |
+| reusable InfraProfile laboratory | RESEARCH | profiles are counterfactual evidence, not current truth | bounded measurement design | freshness, uncertainty, actual/counterfactual provenance | no permission |
+| Parameter Search | RESEARCH | overfit/multiplicity risk | declare parameter family/budget | baseline gate, untouched temporal OOS and stability | cannot modify Risk or raise Q_validated |
+| Monte Carlo robustness | RESEARCH | calibrated coherent distributions required | specification only | canonical Simulator, correlation/support/convergence and exact-once proof | no permission |
+| F4 interactive simulation/explicit agents | RESEARCH | identities/interactions not observed truth | hypotheses/interfaces | benefit over F2/F3 with no authority leakage | never truth by itself |
+| strategy-level Champion/Challenger | RESEARCH | full baseline/rollback/ownership required | dormant specs | OOS/Replay/MC/Shadow/separate Micro-live and human promotion | one economic owner |
+| cross-exchange routes/transfers | FUTURE | venue/settlement/custody/Risk/Data/Ops absent | separate concept note | approved future architecture and evidence roadmap | none in V1 |
+| perpetual hedge | FUTURE | funding/liquidation/basis product risks absent | separate concept note | approved future spec | none in V1 |
+| TM/MM modes | FUTURE | no initial activation/evidence sequence | type compatibility only | separate product/safety/evidence program | disabled |
+
+## Model versus strategy Champion/Challenger
+
+A model Challenger may be trained/evaluated observe-only within Later-V1 model work and cannot affect decisions before artifact promotion. A strategy Challenger changes decision policy and belongs to the last-layer Research program behind the full baseline gate. Neither can self-promote; exactly one economic execution owner remains active unless separately isolated allocation is authorized.
+
+## Search, Simulator and Monte Carlo
+
+Search proposes candidate configurations. The canonical Simulator evaluates scenarios. Monte Carlo repeats coherent supported Simulator scenarios to estimate uncertainty. None may change Formula/Risk, create actual labels, raise `Q_validated` or authorize execution. `q <= sup(Q_validated)` is not permission; exact-q evidence and gates are mandatory.
+
+## Scientific lifecycle, claims and drift
+
+`OBSERVE -> UNDERSTAND -> HYPOTHESIZE -> TEST -> MEASURE -> VALIDATE -> PROMOTE -> MONITOR -> DEMOTE/RESEARCH`. Claims remain typed as FACT, MEASURED, DERIVED, MODELLED, COUNTERFACTUAL, HYPOTHESIS, INTERPRETATION or DECISION with provenance. Failed, censored, negative and inconclusive research remains append-only evidence.
+
+Live observations feed immutable evidence and offline recalibration/training. They never mutate production weights/config/Risk. Automatic safety demotion may contract scope; recovered health does not auto-promote. Research success means only “candidate eligible for the next evidence review,” never implementation or capital authority.
+
+## Rejected production claims
+
+REJECTED: exact alternate-world simulation; invented competitor identities; generic graph search each tick; BBO-only acceptance; planned fills as Inventory; blind retry; unbounded Recovery; license as safety authority; capital-as-size; throwaway interfaces; online self-learning; research/AI promotion authority.
+
+## Authorization boundaries
+
+Documentation approval != Phase-1 implementation authorization. Phase 1 requires explicit authorization for the exact reviewed commit and does not authorize Phase 2. `TechnicalPhaseExit(N) != ImplementationAuthorization(N+1)`. Research/Future work creates no Phase 27; the canonical roadmap remains 26 phases. Any future extension needs its own approved roadmap.

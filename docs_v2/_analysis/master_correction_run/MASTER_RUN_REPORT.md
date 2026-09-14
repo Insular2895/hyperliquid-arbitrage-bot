@@ -40,7 +40,7 @@ No dedicated formal correction prompt for Phases 01–04 is present in the suppl
 | 010 | `part 2/# CORRECTION…md:8808–9574` | 14 | `_review/14_OPEN_HUMAN_DECISIONS.md` | corrected 05–13 | `PASS` |
 | 011 | `repository 2/…md:1–940` | 15 | `_review/15_CALIBRATION_AND_LEARNED_ITEMS.md` | corrected 14 | `PASS` |
 | 012 | `repository 2/…md:941–1900` | 16 | `_review/16_EXTERNAL_REVALIDATION_CHECKLIST.md` | corrected 14–15 | `PASS` |
-| 013 | `repository 2/…md:1901–3026` | 17 | `_review/17_RESEARCH_AND_FUTURE_SCOPE.md` | corrected 01–16 | `PENDING` |
+| 013 | `repository 2/…md:1901–3026` | 17 | `_review/17_RESEARCH_AND_FUTURE_SCOPE.md` | corrected 01–16 | `PASS` |
 | 014 | `repository/…md:1–874` | 18 | `_review/18_SOURCE_AND_TRACEABILITY_CERTIFICATE.md` | corrected 01–17 | `PENDING` |
 | 015 | `repository/…md:875–1908` | 19 | `_review/19_IMPLEMENTATION_AUTHORIZATION_CHECKLIST.md` | corrected 14–18 | `PENDING` |
 | 016 | `repository/…md:1909–2952` | 20 | `_review/20_FINAL_SWITCHOVER_PLAN.md` | corrected 18–19 | `PENDING` |
@@ -73,8 +73,9 @@ There is no dependency cycle, unexplained duplicate phase or missing predecessor
 | 009 | 13 | `PASS` | `311aed7` / `61d03a7` | `bc6e8e6` / `e900ea4` | roadmaps/review/PASS12 matrices + 11 artifacts | codec/width choices; scoped current facts | none for documentation review | 26 phases/Graph/bootstrap/models/auth/TTT PASS |
 | 010 | 14 | `PASS` | `bc6e8e6` / `e900ea4` | `27f2756` / `91d6776` | review/OPEN/HDC + 15 governance artifacts | 2 scoped policy families; 26 non-policy residuals | none for docs/Phase 1 | 28/28 OPEN; 94/94 HDC; approval ceiling PASS |
 | 011 | 15 | `PASS` | `27f2756` / `91d6776` | `3493ee5` / `83959aa` | review/calibration map + ledger/report | candidate values/artifacts remain unselected | none for documentation review | four axes/QF targets/q/fallback/freshness PASS |
-| 012 | 16 | `PASS` | `3493ee5` / `83959aa` | recorded after commit | external register/review + ID audit/report | current facts still consumer-gated | none for documentation review | 23/23 IDs; stage/status/scope/fallback PASS |
-| 013–017 | 17–21 | `PENDING` | — | — | — | — | — | — |
+| 012 | 16 | `PASS` | `3493ee5` / `83959aa` | `df23164` / `ad13b38` | external register/review + ID audit/report | current facts still consumer-gated | none for documentation review | 23/23 IDs; stage/status/scope/fallback PASS |
+| 013 | 17 | `PASS` | `df23164` / `ad13b38` | recorded after commit | scope reviews/research trigger + audit/report | Research/Future items remain inactive | none for documentation review | strict classes/baseline/q/MC/authority PASS |
+| 014–017 | 18–21 | `PENDING` | — | — | — | — | — | — |
 
 ## 6. Final audit
 
