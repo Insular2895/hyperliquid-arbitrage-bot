@@ -62,6 +62,8 @@ SRC-003's older P2-derived/P3-general-RAW ordering is superseded by SRC-005. Pri
 
 Saturation never silently blocks the hot path. P0 is preserved first, then P1. Lower-priority capture degrades explicitly from P3 upward according to a versioned policy; dropping, sampling or suspending P2/P3 emits counters, health events and alerts. No loss is relabeled as complete data. If critical P0 cannot be durably preserved, the state is critical and new-risk policy must react.
 
+If a bounded handoff threatens P0 integrity, the Core still applies an already received fill exactly once and updates Inventory/reservations/exposure. RecorderHealth disables new risk while cancel, Recovery, Reconciliation and containment remain available. Core never waits for file/fsync work. Exact critical-lane or emergency-buffer representation remains an implementation choice; detecting exhaustion and failing safer is locked.
+
 ## 9. dataset quality
 
 Every dataset/run reports coverage, sequence gaps, clock quality, missing markets, events received/written/dropped and applicable source fidelity. `INVALID_FOR_REPLAY` marks a region that cannot support claimed replay semantics; `LOW_FIDELITY` permits only explicitly compatible uses. Selection filters and exclusions are stored in DatasetId lineage.
@@ -77,6 +79,8 @@ Feed gap, corrupted clock, invalid book, checksum failure, missing required mark
 ## 12. trade/incident windows
 
 Every real execution and incident pins pre-, execution- and post-windows of relevant RAW market/account/infra evidence to a longer class. Exploratory examples such as 5 seconds before/10 after or 10 before/20 after are calibration candidates only. The retained window must support predicted-versus-actual fill, slippage, latency, participant response, recovery and PnL reconstruction.
+
+Before a trigger exists, a bounded calibrated recent horizon of enabled evidence remains provisionally available. The trigger pins its relevant immutable PRE range and promotes only retention metadata to P1. If part was already lost, exact gaps/scope/reason remain explicit and the bundle is `LOW_FIDELITY` or `INVALID_FOR_REPLAY`; history is never backfilled or relabeled complete.
 
 These **trade windows** and incident windows are retention evidence, not a new event-ordering mechanism.
 
@@ -97,6 +101,8 @@ The minimum event set is `ExecutionCreated`, `ReservationCreated`, `OrderIntentC
 ## 15. checkpoints
 
 Versioned checkpoints accelerate seeking and restart. They store compatible canonical state and the exact journal/Recorder cursor they cover. They never override later journal entries or exchange truth. Corrupt/incompatible checkpoint means reject, migrate explicitly, or rebuild from earlier evidence; never boot READY by discarding it silently.
+
+Checkpoint-assisted equality requires matching canonical state, every suffix input and an authenticated prefix identity. A complete DecisionTrace hash can be continued without replaying the prefix only when covered hash-chain state is preserved or referenced; otherwise the claim is final state + suffix trace + resolved prefix identity, not a fabricated full-hash recomputation.
 
 ## 16. Replay architecture
 
@@ -134,6 +140,8 @@ Equal ordered events, ResolvedConfig, artifacts, formula version and seed yield 
 ## 21. ReplayClock/RNG
 
 Core obtains now/timers from `ReplayClock` and randomness from seeded `RngProvider`. Acceleration changes wall-clock execution speed, not domain intervals. Counterfactual timing policies and seeds are versioned. Live nondeterministic outputs that matter to later audit are recorded.
+
+Exact and accelerated Replay consume recorded canonical TimerEvents and suppress regeneration of the same logical occurrence. Live/Shadow/MicroLive derive timers once from the mode Clock and record their occurrence. Counterfactual/interactive timing regenerates only explicitly replaced timer families under a pinned policy/run identity. `random_seed?` may be absent only when no decision-relevant stochastic component is active; otherwise a resolvable versioned seed is mandatory and hidden time-based seeding is forbidden.
 
 ## 22. Golden datasets
 

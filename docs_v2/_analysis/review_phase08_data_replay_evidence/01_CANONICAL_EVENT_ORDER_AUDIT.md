@@ -1,0 +1,3 @@
+# Canonical Event Order Audit
+
+The former tuple `(recv_monotonic_ns, source_priority, recorder_seq)` conflicted with the source statement that `recorder_seq` is definitive local observation order. Within one fixed capture context, sequence assignment is now the serialization boundary and Core/Replay order is ascending `recorder_seq`. Time/priority can resolve arrivals only before assignment. Same-source, cross-source, reconnect and missing-source-sequence events follow assigned sequence; gaps are quality evidence. Cross-recorder order needs an explicit merge policy, clock uncertainty and identity; otherwise the claim is degraded or invalid.

@@ -14,7 +14,7 @@ Replay replaces the source and ExecutionTransport; it does not replace Core. Mar
 
 EventTime (`exchange_ts`) is source chronology; ReceiveTime is bot knowledge. Late events are applied when received. At ReplayClock T, events with receive time greater than T are inaccessible. Timers are recorded/derived deterministically through Clock semantics, not host scheduler behavior.
 
-The local order key is `(recv_monotonic_ns, source_priority, recorder_seq)` and recorder sequence is the definitive final tie-break. Equal timestamp batches use the same key. Priority queues for persistence cannot reorder Core economic evidence.
+The captured local order key is ascending `recorder_seq` in the fixed Recorder context. Receive monotonic time and source priority may resolve concurrency only before that sequence is assigned. Equal-time batches and persistence queues cannot reorder assigned Core evidence.
 
 RunMode remains `Replay|Paper|Shadow|MicroLive|Live`. Replay mode, RunMode and Simulator fidelity/SimulationMode are independent fields and must all be reported where relevant.
 

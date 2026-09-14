@@ -14,6 +14,10 @@
 
 Critical execution/account/fill and incident evidence outranks general market data and derived diagnostics under backpressure. Recorder loss or degradation is explicit data-quality/Risk evidence; the Recorder must not synchronously block the trading hot path.
 
+Canonical captured order is ascending `recorder_seq` within one fixed Recorder context. Receive monotonic time and source priority may inform pre-assignment serialization/quality but never reorder assigned events; cross-recorder ambiguity needs a versioned merge or degraded/invalid status. P0–P3 are retention priorities only. Recent evidence is provisionally retained for a calibrated horizon so later triggers can pin immutable PRE/active/POST windows; missing PRE stays missing.
+
+P0 integrity threat disables new risk without blocking Core or ignoring received fills. Exact/accelerated Replay consumes recorded timers once; counterfactual timing explicitly replaces affected families. A stochastic deterministic run requires a seed. Checkpoint seeking requires cursor continuity and authenticated prefix identity; a checkpoint never creates truth.
+
 ## Determinism contract
 
 ```text

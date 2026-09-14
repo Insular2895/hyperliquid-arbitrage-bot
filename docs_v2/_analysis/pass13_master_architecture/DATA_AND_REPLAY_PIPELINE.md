@@ -18,7 +18,7 @@ flowchart TD
   CORE --> DT[DecisionTrace + state hashes/ReplayReport]
 ```
 
-Ordering in one capture context is `(recv_monotonic_ns, source_priority, recorder_seq)`, with `recorder_seq` the definitive final local observation order. Exchange time does not replace bot-knowledge order. Cross-recorder merge requires an explicit versioned policy.
+Phase 08 clarifies that captured ordering in one fixed context is ascending `recorder_seq`. Receive monotonic time/source priority may act only before sequence assignment; exchange time never replaces bot-knowledge order. Cross-recorder merge requires an explicit versioned policy.
 
 `RunManifest` pins run/mode, build/config, optional dataset, models, FormulaVersion, event schemas, start and seed. DecisionTrace retains ordered decisions, order intents, state transitions and Risk decisions. Complete identical inputs must produce identical trace/hash regardless of worker scheduling.
 

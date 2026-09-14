@@ -15,7 +15,7 @@ AWAITING HUMAN REVIEW
 
 ## Canonical total order
 
-Within a Recorder/capture context, actual-knowledge replay orders by `(recv_monotonic_ns, source_priority, recorder_seq)`, with `recorder_seq` the definitive unique local observation order. Source priority handles true equal-time concurrency but cannot move a dependent event across an already established receive order. Exchange time never replaces this rule.
+Within a Recorder/capture context, sequence assignment is the serialization boundary. Before assignment, an explicitly versioned ingest policy may use local `recv_monotonic_ns` and `source_priority` to resolve simultaneous arrivals. After assignment, actual-knowledge Core and Replay order is exactly ascending `recorder_seq`; neither priority nor timestamp may reorder it. The captured comparator is `(fixed recorder/capture context, recorder_seq)`. Nonmonotonic receive-time evidence is quality evidence, not a reason to rewrite sequence. Exchange time never replaces this rule.
 
 Multi-recorder merge is not silently defined: it requires a versioned merge policy, clock-quality record and deterministic tie-break. If the evidence cannot support a total order, mark the region `LOW_FIDELITY` or `INVALID_FOR_REPLAY` for the claimed use.
 

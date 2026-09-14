@@ -57,6 +57,8 @@ RawEvent {
 
 `event_id` supports uniqueness, deduplication, trace and replay. `recorder_seq` is strictly increasing per Recorder and is the definitive local observation order; it is never replaced by exchange time. `payload_bytes` preserves the ability to re-normalize after a parser correction. Optional source fields remain absent when unavailable; they are never fabricated.
 
+Within one Recorder/capture context, canonical Core and stored Replay order is ascending `recorder_seq`. `recv_monotonic_ns` supplies local knowledge/latency evidence and must be nondecreasing or explicitly quality-flagged; `source_priority` may resolve concurrency only before sequence assignment and cannot reorder serialized events. The captured comparator is therefore `(fixed recorder/capture context, recorder_seq)`. Cross-recorder ordering is never inferred from local monotonic clocks: it requires a versioned merge artifact, otherwise the affected use is low-fidelity or invalid.
+
 ## 6. Time semantics
 
 `exchange_ts?` represents chronology asserted by the exchange and may be absent. It is useful for market research, not for proving when the bot learned something. `recv_wallclock_ts` supports historical logs and cross-machine comparison subject to synchronization quality. `recv_monotonic_ns` owns local elapsed-time, timer and internal-latency differences. Cross-machine results attach uncertainty and are valid only under a declared rule. See [Clock and Time Contract](_analysis/pass06_data_recorder_replay/CLOCK_AND_TIME_CONTRACT.md).
@@ -165,7 +167,7 @@ Correlation IDs link MarketEvent → Opportunity → RiskDecision → ExecutionP
 
 ## 18. Deterministic ordering
 
-For recorded truth, the primary key is local receive chronology. The canonical total-order key is `(recv_monotonic_ns, source_priority, recorder_seq)` within one capture context; `recorder_seq` is the final unique tie-break and definitive local observation order. Cross-recorder merging must first define a versioned merge policy and clock-uncertainty handling; it must not pretend exchange time supplies local knowledge order. Source priority may resolve equal-time concurrency but may never reorder economically dependent evidence across established receive order.
+For captured truth, the canonical total-order key within one fixed context is ascending `recorder_seq`. Receive time and source priority may participate only in the pre-assignment serialization policy; after assignment they cannot reorder events. Cross-recorder merging must first define a versioned merge policy and clock-uncertainty handling; it must not pretend exchange time supplies local knowledge order.
 
 Live adapters publish concurrently into one ordered core coordinator. Replay preserves the recorded order. Workers may run in parallel, but only the ordered coordinator commits decisions and state transitions.
 

@@ -7,6 +7,8 @@ AWAITING HUMAN REVIEW
 
 The closure `RunManifest` fields are `run_id`, `mode`, `git_commit`, `build_hash`, `config_hash`, optional `dataset_id`, `model_versions`, `formula_schema_version`, `event_schema_version`, `start_time`, and optional `random_seed`. Deployment/image digest and language dependency locks are linked when required to reproduce the binary or research environment.
 
+Seed optionality is conditional. No active decision-relevant RNG permits absence; active stochastic simulation/queue/participant/policy behavior requires a resolvable versioned seed. A stochastic run without it is invalid/non-reproducible and cannot claim deterministic Replay. No hidden seed is generated.
+
 `mode` is one of `Replay`, `Paper`, `Shadow`, `MicroLive`, `Live`. It cannot switch strategy math, formulas, gates or state machines. Differences live at explicit source, transport, effect or feature-flag/config boundaries.
 
 ## Trace identity

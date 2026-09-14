@@ -20,3 +20,5 @@ Startup validates schema, checksum and cursor continuity. A compatible checkpoin
 ## Replay equivalence
 
 For the same terminal cursor, full replay from origin and checkpoint-assisted replay must produce the same canonical state and DecisionTrace suffix/hash. Corrupt checkpoint, missing journal range, duplicate event and exchange mismatch tests must fail closed and enter reconciliation/rebuild rather than READY.
+
+`StateHash` covers canonical state at a cursor; DecisionTrace hash covers the ordered trace; prefix/suffix are cursor-delimited. Checkpoint integrity authenticates bytes and covered cursor, not exchange truth. Full-hash continuation requires authenticated trace-prefix hash/state. Without it, equality is explicitly final state + suffix trace + resolved prefix identity.

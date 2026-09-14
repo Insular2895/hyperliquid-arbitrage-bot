@@ -5,20 +5,20 @@ AWAITING HUMAN REVIEW
 
 ## Canonical rule
 
-For one Recorder/capture context, the total-order key for actual-knowledge processing is:
+For one Recorder/capture context, the Phase 08 correction supersedes the former tuple. The captured total-order key for actual-knowledge processing is:
 
 ```text
-(recv_monotonic_ns, source_priority, recorder_seq)
+recorder_seq
 ```
 
-`recorder_seq` is strictly increasing per Recorder and is the definitive unique local observation order. `recv_monotonic_ns` establishes the receive timeline; `source_priority` resolves declared equal-time concurrency; `recorder_seq` is the final tie-break. The stored sequence may never be rewritten from `exchange_ts`.
+`recorder_seq` is strictly increasing per Recorder and is the definitive unique local observation order. `recv_monotonic_ns` and `source_priority` may resolve pre-assignment arrivals under a versioned ingest policy. The assigned sequence may never be reordered or rewritten from any timestamp.
 
 ## Semantics
 
 | Case | Required handling |
 |---|---|
 | Older exchange timestamp arrives late | Apply at its receive position; retain exchange time for chronology research |
-| Equal receive timestamp | Apply configured source priority, then recorder sequence |
+| Equal receive timestamp | Pre-assignment policy may use source priority; commit/storage follows assigned recorder sequence |
 | Concurrent adapters | Ingest through central ordered coordinator |
 | Priority/backpressure class differs | Does not alter Core economic order |
 | Missing source sequence | Preserve optional absence; local order still exists |

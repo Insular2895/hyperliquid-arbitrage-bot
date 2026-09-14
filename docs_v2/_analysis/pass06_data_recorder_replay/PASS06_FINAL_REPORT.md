@@ -21,7 +21,7 @@ Normalized contracts: **YES** — MarketEvent, AccountEvent and central EngineIn
 
 Clock/time contract: **YES** — exchange time is optional source chronology; wall clock supports history/cross-machine comparison with uncertainty; monotonic time owns local ordering, timers and latency; ReplayClock owns replay cutoff; strategic timers are events.
 
-Event ordering rule: **YES** — within a Recorder/capture context `(recv_monotonic_ns, source_priority, recorder_seq)`, with `recorder_seq` the definitive final local observation order. Exchange time never replaces receive order. Cross-recorder merge requires an explicit versioned policy.
+Event ordering rule: **SUPERSEDED BY PHASE 08 CLARIFICATION** — within a fixed Recorder/capture context, assigned `recorder_seq` is the captured Core/Replay order. Receive time/source priority act only before assignment. Exchange time never replaces receive order; cross-recorder merge requires an explicit versioned policy.
 
 Single-writer/reducer architecture: **YES** — one logical writer for canonical states, immutable versioned snapshots, pure deterministic `EventReducer`, separate Effect Executor, command/event separation, input-state-version checks and ordered coordinator commits.
 
