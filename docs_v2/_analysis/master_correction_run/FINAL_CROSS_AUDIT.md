@@ -80,4 +80,4 @@ This supplement supersedes the prior post-run result only as the current review-
 | authority separation | documentation approval ≠ switchover authorization ≠ switchover acceptance ≠ Phase-1 authorization ≠ Phase-2 authorization ≠ capital authorization |
 | code/legacy docs/runtime | unchanged; no switchover, implementation, deployment, research activation or capital action |
 
-Final Review Envelope C exact identity: `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` / tree `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION` / `docs_v2` tree `REVIEW_ENVELOPE_C_DOCS_TREE_PENDING_ATTESTATION`. Commit B remains `ABSENT`; documentation remains `AWAITING HUMAN REVIEW`.
+Final Review Envelope C exact identity: `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` / tree `c6588a09465dca730f39646bec08231eb7df7ede` / `docs_v2` tree `59d67e253380a23d3470747caf257402040d9863`. Commit B remains `ABSENT`; documentation remains `AWAITING HUMAN REVIEW`.

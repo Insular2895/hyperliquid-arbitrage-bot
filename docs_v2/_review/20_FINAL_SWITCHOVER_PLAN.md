@@ -11,7 +11,7 @@ This is a deterministic future procedure only. Phase 19 owns permission; Phase 2
 | Identity | Meaning | Current state |
 |---|---|---|
 | Semantic Candidate A | immutable corrected semantic documentation content | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
-| Review Envelope C | exact final post-run package that attests A and adds review/audit/governance alignment without new production capability | `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION`; tree `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION`; `docs_v2` tree `REVIEW_ENVELOPE_C_DOCS_TREE_PENDING_ATTESTATION` |
+| Review Envelope C | exact final post-run package that attests A and adds review/audit/governance alignment without new production capability | `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269`; tree `c6588a09465dca730f39646bec08231eb7df7ede`; `docs_v2` tree `59d67e253380a23d3470747caf257402040d9863` |
 | Commit B | separate future canonical-path result transformed from exact approved C while retaining semantic identity A | `ABSENT` |
 
 The expected reviewed context was `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8`. The first aligned envelope `fd2bca5b4a16263723692d2a9c6536235577af69` and its child attestation `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` are historical inputs to the final review-alignment correction. They remain documentary lineage, not moving authority and not the final Review Envelope C.

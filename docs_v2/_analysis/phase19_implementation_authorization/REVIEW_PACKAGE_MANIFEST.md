@@ -24,11 +24,11 @@ Candidate A is the immutable semantic content snapshot. No review-package commit
 | verified pre-alignment envelope/input HEAD | `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8` |
 | actual final-alignment input HEAD/tree | `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` / `c63352342d608fcf06a21947e1a9c60bd44b655a` |
 | prior aligned envelope / attestation | `fd2bca5b4a16263723692d2a9c6536235577af69` / `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa`; documentary lineage, superseded as review source |
-| review_envelope_C_sha | `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` |
-| review_envelope_C_tree | `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION` |
-| review_envelope_C_docs_v2_tree | `REVIEW_ENVELOPE_C_DOCS_TREE_PENDING_ATTESTATION` |
-| review_envelope_C_review_tree | `REVIEW_ENVELOPE_C_REVIEW_TREE_PENDING_ATTESTATION` |
-| review_envelope_C_analysis_tree | `REVIEW_ENVELOPE_C_ANALYSIS_TREE_PENDING_ATTESTATION` |
+| review_envelope_C_sha | `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` |
+| review_envelope_C_tree | `c6588a09465dca730f39646bec08231eb7df7ede` |
+| review_envelope_C_docs_v2_tree | `59d67e253380a23d3470747caf257402040d9863` |
+| review_envelope_C_review_tree | `843834434890ea63b7af937667f4704808adf058` |
+| review_envelope_C_analysis_tree | `20c1076874483c4b4d4eaf3b56e281f9d5ace428` |
 | C file counts | `docs_v2=938`; `_review=22`; `_analysis=683` |
 | candidate_to_envelope_delta_classification | `L3/L4 REVIEW_GOVERNANCE_ALIGNMENT_ONLY`; no production implementation/capability |
 | relationship | C attests immutable A and adds review/audit/governance alignment only; C does not redefine A |

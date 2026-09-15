@@ -8,7 +8,7 @@
 
 This package turns the reconstructed corpus into a finite human decision. It is documentary evidence only: implementation, the `docs_v2` → `docs` switchover, Micro-live and Live all remain unauthorized.
 
-Semantic Candidate A is the immutable corrected content at `4b1b2ea2a2cc179c01707ec6eed175fde898e808` (tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`). Review Envelope C is the exact final governance/review package at `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` (tree `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION`) that attests A without redefining it; its full identity is recorded by a separate post-C attestation in the [review manifest](../_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md). Commit B is the future canonical-path switchover output and remains absent.
+Semantic Candidate A is the immutable corrected content at `4b1b2ea2a2cc179c01707ec6eed175fde898e808` (tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`). Review Envelope C is the exact final governance/review package at `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` (tree `c6588a09465dca730f39646bec08231eb7df7ede`) that attests A without redefining it; its full identity is recorded by a separate post-C attestation in the [review manifest](../_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md). Commit B is the future canonical-path switchover output and remains absent.
 
 ## Decision sequence
 

@@ -12,9 +12,9 @@
 | moved-HEAD classification | `DOCUMENTARY_ONLY / COMPATIBLE`: `fd2bca5` applied the first A/C/B, maker-scope and gate-state alignment; `bf5fa0e` only attested that envelope's exact identity |
 | immutable Semantic Candidate A | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
 | prior aligned envelope / attestation | `fd2bca5b4a16263723692d2a9c6536235577af69` / `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa`; preserved as lineage, superseded as review source |
-| output Review Envelope C SHA | `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` |
-| output Review Envelope C tree | `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION` |
-| output Review Envelope C `docs_v2` tree | `REVIEW_ENVELOPE_C_DOCS_TREE_PENDING_ATTESTATION` |
+| output HEAD / Review Envelope C SHA | `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` |
+| output Review Envelope C tree | `c6588a09465dca730f39646bec08231eb7df7ede` |
+| output Review Envelope C `docs_v2` tree | `59d67e253380a23d3470747caf257402040d9863` |
 | output attestation | separate post-C child commit records the exact immutable C identities without claiming C can self-hash |
 
 The exact C checkpoint contains every normative correction below. Because a Git commit cannot contain its own final SHA without changing that SHA, the separate post-C attestation is identity evidence only; it adds no architecture, capability or authorization.

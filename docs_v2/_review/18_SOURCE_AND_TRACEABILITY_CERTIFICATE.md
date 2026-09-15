@@ -72,7 +72,7 @@ Future corrections supersede through lineage; they do not rewrite PASS00/PASS15 
 
 ## Candidate-A delta status
 
-The [Candidate-A delta recertification](../_analysis/phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md) binds Semantic Candidate A at `4b1b2ea2a2cc179c01707ec6eed175fde898e808`. It confirms unchanged L0 source identities and unchanged critical extraction/mapping artifacts. Review Envelope C at `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` separately holds post-freeze L3/L4 audit/governance/review-alignment overlays and attests A without becoming part of A. The human review binds exact A+C; future B preserves that lineage during path relocation. This makes the certificate current for review of A through C; it does not grant semantic approval or implementation authority.
+The [Candidate-A delta recertification](../_analysis/phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md) binds Semantic Candidate A at `4b1b2ea2a2cc179c01707ec6eed175fde898e808`. It confirms unchanged L0 source identities and unchanged critical extraction/mapping artifacts. Review Envelope C at `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` separately holds post-freeze L3/L4 audit/governance/review-alignment overlays and attests A without becoming part of A. The human review binds exact A+C; future B preserves that lineage during path relocation. This makes the certificate current for review of A through C; it does not grant semantic approval or implementation authority.
 
 ## Acceptance boundaries
 
