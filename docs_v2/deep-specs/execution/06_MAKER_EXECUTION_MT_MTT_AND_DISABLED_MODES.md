@@ -44,7 +44,7 @@ MTT is maker `A -> X`, then two protected taker legs. Every maker partial/full b
 | `TM` | yes | no | no | second maker wait follows real first-leg exposure |
 | `MM` | yes | no | no | multiple resting/partial/cancel races compound exposure |
 
-Activation requires explicit human/strategy enablement, calibrated queue/fill and adverse-selection models, dedicated Risk limits, partial/dust/cancel/recovery tests, and Shadow/Micro-live evidence. Passing type checks or Replay mechanics is not capital validation.
+TM/MM are representable only for interface/type compatibility. They are `FUTURE`, outside Technical Phase 23 and outside HPD-01; neither that policy family nor MT/MTT evidence can activate them. Any future activation requires a separate product/safety/evidence specification and approval chain, calibrated queue/fill and adverse-selection models, dedicated Risk limits, partial/dust/cancel/recovery tests, and Shadow/Micro-live evidence. `representable != implemented != validated != authorized`.
 
 ## Feed and Dead Man’s Switch response
 

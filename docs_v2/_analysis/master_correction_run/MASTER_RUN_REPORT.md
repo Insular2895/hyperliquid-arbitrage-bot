@@ -110,3 +110,22 @@ Evidence: [final cross-audit](FINAL_CROSS_AUDIT.md), [repository-wide search](RE
 `PASS WITH NON-BLOCKING OPEN ITEMS — READY FOR HUMAN DOCUMENTATION REVIEW`
 
 This is a documentary result only. Documentation approval remains pending. Implementation, research runtime, deployment, `docs_v2 -> docs` switchover, Commit B creation, Phase 1, later phases, Micro-live, Live, Bridge, scaling and real capital remain unexecuted or unauthorized according to their respective gates.
+
+## 8. Post-run governance alignment
+
+This section is a separate addendum. It does not alter, renumber or retroactively reinterpret the 17-prompt historical checkpoint ledger above.
+
+| Field | Value |
+|---|---|
+| reason | remove residual A/C/B identity ambiguity, MT/MTT–TM/MM scope leakage and Phase-19 prerequisite-state inconsistency |
+| input HEAD / tree | `b6c03d10867ccef180518424ffc311bfc8a55fa4` / `92d0b53070e749ac98877fafdb7ccd14f9af3ed8` — matched expected post-run state |
+| immutable Semantic Candidate A | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
+| pre-alignment envelope | `b6c03d10867ccef180518424ffc311bfc8a55fa4`; retained as historical input |
+| aligned Review Envelope C | `PENDING_POST_ALIGNMENT_FREEZE — exact identity recorded by post-C attestation` |
+| Commit B | `ABSENT` |
+| architecture/formula/Risk/Replay/economics change | none |
+| implementation/switchover/deployment/capital action | none |
+
+The correction makes exact C—not A or moving HEAD—the future switchover source while preserving A as semantic identity. HPD-01 now covers only Phase-23 MT/MTT bounded maker probes; TM/MM remain Future. Phase 19 now uses `PENDING` only for currently eligible Gate B, `NOT_AVAILABLE` for prerequisite-blocked later gates, `NOT_STARTED` for Phase-1 evidence and `NOT_AUTHORIZED` for capabilities.
+
+Evidence and exact output identity: [Post-run Governance Alignment](POST_RUN_GOVERNANCE_ALIGNMENT.md). Final focused result: `PASS — POST-RUN GOVERNANCE ALIGNMENT COMPLETE`; human review remains pending.

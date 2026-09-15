@@ -208,7 +208,7 @@ Every leg has independent zero/full/partial/reject/unknown outcomes. Batching ca
 
 ## 24. TM / MM disabled
 
-`TM` and `MM` remain representable in `ExecutionMode`, but disabled by default. A maker leg after earlier exposure can strand the intermediate asset while waiting. Activation requires an explicit strategy flag, validated queue/fill/adverse-selection model, dedicated Risk limits, recovery evidence, and a human decision. “Type supported,” “enabled,” and “capital validated” are three different claims.
+`TM` and `MM` remain representable in `ExecutionMode` for interface/type compatibility, but they are `FUTURE`, disabled and outside the current V1 activation roadmap. A maker leg after earlier exposure can strand the intermediate asset while waiting. Phase-23 HPD-01 governs only MT/MTT and cannot activate TM/MM. Any TM/MM activation would require a separate future product/safety/evidence specification and approval chain, including validated queue/fill/adverse-selection models, dedicated Risk limits and recovery evidence. `representable != implemented != validated != authorized`.
 
 ## 25. Recovery
 

@@ -23,10 +23,10 @@ Only two current genuine policy families remain:
 
 | ID | Policy question | OPEN | Earliest scope | Evidence ceiling | Safe fallback |
 |---|---|---|---|---|---|
-| `HPD-01` | authorize a specific Maker/TM/MM capability scope after evidence | 012 | Phase 23 / maker probe | queue/fill/adverse/cancel/recovery plus Risk/readiness | maker disabled; conservative TT path unaffected |
+| `HPD-01` | authorize a specific MT/MTT maker-mode scope after evidence | 012 | Technical Phase 23 / bounded MT or MTT probe | queue/fill/adverse/cancel/recovery plus Risk/readiness | MT/MTT disabled; TT/TTT unaffected |
 | `HPD-02` | accept a license/product mechanism and its policy envelope | 014 | client distribution | threat model, outage/revocation and safe-exit proof | local isolated Core; distribution disabled |
 
-Node activation and cross-exchange product scope are deferred, not current decisions. Infrastructure/model/grid/threshold winners are selected by evidence; a human may approve, narrow, defer or reject promotion but may not substitute preferences for failed evidence.
+TM/MM remain `FUTURE`, outside Technical Phase 23 and outside HPD-01. Their presence in an enum/interface establishes compatibility only: representable does not mean implemented, validated or authorized. They require a separate future product/safety/evidence specification. Node activation and cross-exchange product scope are deferred, not current decisions. Infrastructure/model/grid/threshold winners are selected by evidence; a human may approve, narrow, defer or reject promotion but may not substitute preferences for failed evidence.
 
 ## Human approval ceiling
 
@@ -47,6 +47,6 @@ Human approval cannot override failed evidence, hard Risk, stale/invalid state, 
 
 ## Blocker scope
 
-Maker pending does not block baseline TT. Bridge or cross-exchange pending does not block same-venue V1. Scaling policy does not block Phase 1. Deferred decisions remain disabled in their exact capability scope. Documentation acceptance, Phase-1 authorization, Micro-live authorization, Live authorization and `docs_v2 -> docs` switchover are all separate gates and remain ungranted.
+MT/MTT maker activation pending under HPD-01 does not block TT/TTT. TM/MM are Future and cannot be activated by HPD-01. Bridge or cross-exchange pending does not block same-venue V1. Scaling policy does not block Phase 1. Deferred decisions remain disabled in their exact capability scope. Documentation acceptance, Phase-1 authorization, Micro-live authorization, Live authorization and `docs_v2 -> docs` switchover are all separate gates and remain ungranted.
 
 See [Phase-14 governance analysis](../_analysis/phase14_human_decision_governance/FINAL_PHASE14_REPORT.md) for the complete 28-OPEN and 94-HDC mappings.

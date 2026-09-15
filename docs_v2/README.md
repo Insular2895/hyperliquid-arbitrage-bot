@@ -13,6 +13,7 @@ PASS 00 cartographie les exigences, formules, concepts, conflits et destinations
 - [Final human review — Start here](./_review/00_REVIEW_START_HERE.md)
 - [Master correction run — exact prompt/pass ledger](./_analysis/master_correction_run/MASTER_RUN_REPORT.md)
 - [Prompt-by-prompt coverage 01–21](./_analysis/master_correction_run/PROMPT_COVERAGE.md)
+- [Post-run governance alignment — A/C/B, mode scope and gate states](./_analysis/master_correction_run/POST_RUN_GOVERNANCE_ALIGNMENT.md)
 - [CORR-06 final handoff](./_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md)
 - [PASS 16 final report](./_analysis/pass16_human_review/PASS16_FINAL_REPORT.md)
 - [Scientific iteration / future strategy research](./deep-specs/strategy-research/README.md)

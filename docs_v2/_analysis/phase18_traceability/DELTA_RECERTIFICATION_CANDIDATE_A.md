@@ -51,4 +51,14 @@ No source, extraction ledger, destination map or row-level traceability denomina
 
 These are post-source governance/semantic overlays with explicit provenance. They are not retro-attributed to SRC-001..008, do not mutate L0–L2 evidence and do not authorize any runtime action.
 
+## A / C / B lineage
+
+```text
+L0–L2 source and semantic-correction lineage -> Semantic Candidate A
+post-freeze audit/governance package          -> Review Envelope C
+future path-only relocation                   -> Commit B (ABSENT)
+```
+
+The verified pre-alignment review envelope was `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8`. The exact aligned C identity is populated by the post-C identity attestation after the narrow governance correction is frozen. C contains L3/L4 review-package overlays only: it references and certifies A but is not part of A and does not mutate historical PASS00/PASS15 identities. Future B must preserve the A semantic lineage and the approved C package while relocating paths.
+
 **RESULT: CANDIDATE A TRACEABILITY IS CURRENT FOR HUMAN DOCUMENTATION REVIEW.**

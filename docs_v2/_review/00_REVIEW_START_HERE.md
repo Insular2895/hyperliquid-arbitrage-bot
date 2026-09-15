@@ -8,11 +8,11 @@
 
 This package turns the reconstructed corpus into a finite human decision. It is documentary evidence only: implementation, the `docs_v2` → `docs` switchover, Micro-live and Live all remain unauthorized.
 
-Frozen content candidate A is `4b1b2ea2a2cc179c01707ec6eed175fde898e808` (tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`). The later attestation commit records that identity and audit evidence without authorizing any decision or executing the switchover.
+Semantic Candidate A is the immutable corrected content at `4b1b2ea2a2cc179c01707ec6eed175fde898e808` (tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`). Review Envelope C is the exact post-run review/governance package that attests A without redefining it; its alignment identity is recorded in the [review manifest](../_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md). Commit B is the future canonical-path switchover output and remains absent.
 
 ## Decision sequence
 
-First freeze/review exact Candidate A. Documentation approval does not authorize switchover. A separate switchover authorization permits only the Phase-20 procedure; generated Commit B then requires separate human acceptance. Only after B acceptance can a later record authorize **technical Phase 1 only** on exact B. Phase 1 contains domain types, units, identifiers, schema/version contracts, `Clock`, explicit RNG, `RunManifest` foundations and tests. It contains no network connection, exchange adapter, strategy decision, order, signer or capital effect.
+First verify immutable Semantic Candidate A and exact Review Envelope C. The human documentation decision binds A together with C. Documentation approval does not authorize switchover. A separate `SwitchoverAuthorization(C, semantic_candidate=A)` may later permit only the Phase-20 transformation from exact approved C; generated Commit B then requires separate human acceptance. Only after B acceptance can a later record authorize **technical Phase 1 only** on exact B. Phase 1 contains domain types, units, identifiers, schema/version contracts, `Clock`, explicit RNG, `RunManifest` foundations and tests. It contains no network connection, exchange adapter, strategy decision, order, signer or capital effect.
 
 ## Required reading — first
 
@@ -52,22 +52,25 @@ First freeze/review exact Candidate A. Documentation approval does not authorize
 - [Scientific iteration extension report](../_analysis/future_strategy_research_and_lifecycle/FINAL_REPORT.md)
 - [Async/concurrency final report](../_analysis/async_concurrency_architecture/ASYNC_ARCHITECTURE_FINAL_REPORT.md)
 - [Source and traceability certificate](18_SOURCE_AND_TRACEABILITY_CERTIFICATE.md)
+- [Post-run governance alignment](../_analysis/master_correction_run/POST_RUN_GOVERNANCE_ALIGNMENT.md)
 - [PASS 15 final report](../_analysis/pass15_source_no_loss/PASS15_FINAL_REPORT.md)
 - [PASS 14 consistency report](../_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md)
 - [Formula Book](../04_FORMULA_BOOK.md), 17 [canonical Masters](../README.md), indexed deep specs and PASS00–PASS16/post-reconstruction analysis artifacts.
 
 ## Review protocol
 
-1. Record exact Candidate A, tree, manifest and Phase-18 delta certificate in the decision form.
-2. Read Tier 1 and Tier 2 in order.
-3. Resolve or explicitly defer each scoped item in the decision form.
-4. Perform the prepared spot checks and red-team questions.
-5. Approve, request changes to, or reject Candidate A documentation.
-6. If approved, separately authorize or reject the deterministic switchover.
-7. Review and separately accept or reject resulting Commit B.
-8. Stop. Only after B acceptance may a later record authorize or reject Phase 1 on exact B.
+1. Verify immutable Semantic Candidate A SHA/tree.
+2. Verify exact Review Envelope C SHA/tree, `docs_v2` tree, manifest and Phase-18 lineage.
+3. Read exact package C, understanding that A is its underlying semantic candidate.
+4. Resolve or explicitly defer each scoped item and perform the spot checks/red-team questions.
+5. Approve, request changes to, or reject the exact A+C documentation package.
+6. If approved, separately authorize or reject `SwitchoverAuthorization(C, semantic_candidate=A)`.
+7. Execute the Phase-20 transformation only from exact approved C and produce Commit B.
+8. Review and separately accept or reject B.
+9. Stop.
+10. Only after B acceptance may a later record authorize or reject Phase 1 on exact B.
 
-All approval boxes are intentionally unchecked. Semantic edits after approval require a new reviewed commit.
+All approval boxes are intentionally unchecked. A semantic edit creates A2 plus a new envelope C2; a governance-only package edit creates a new C2 attesting the unchanged A. Either case requires exact re-review before switchover.
 
 ## Recommended source spot checks
 

@@ -312,7 +312,7 @@ Canonical order governs integration and exit gates. Work may overlap when a prod
 
 - **WHY NOW / OBJECTIVE:** activate maker-led execution only after queue/fill/adverse behavior and taker continuations are evidenced.
 - **INPUTS / OUTPUTS:** maker opportunity/forecast, current Risk/q and ESM → actual maker fill then TT/TTT continuation or bounded Recovery.
-- **IMPLEMENT / NOT YET:** MT and MTT separately, actual-output propagation, cancel/expiry/partial maker handling; TM/MM remain type-supported/default-disabled.
+- **IMPLEMENT / NOT YET:** MT and MTT separately, actual-output propagation, cancel/expiry/partial maker handling. TM/MM remain type/interface-representable only, `FUTURE`, default-disabled, outside HPD-01 and outside the current 26-phase activation roadmap.
 - **DEPENDENCIES / QF:** 12–14, 17, 19–22; QF-025, 044–063, 073–080, 095–104.
 - **DATA / TESTS:** fill/time/adverse calibration, cancel race, no-fill/partial, later-leg/recovery, mode-specific predicted↔actual.
 - **MATURITY / EVIDENCE:** M3 dependencies→M4 separately per mode/scope.

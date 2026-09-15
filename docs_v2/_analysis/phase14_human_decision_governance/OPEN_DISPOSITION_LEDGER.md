@@ -13,7 +13,7 @@
 | 009 | inventory bands/penalties | CALIBRATED | Inventory/Capital | Risk, Sizing | — | affected sizing/capital | evidence; conservative bands |
 | 010 | survival parameters | LEARNED | Participants/Data | Simulator, Validation | — | configured consumer | censor-aware fit |
 | 011 | recorder capacity/retention | CALIBRATED | Data/Recorder | Infra, Ops | — | recorder/deployment | measured load; protect critical evidence |
-| 012 | maker/TM/MM activation | HUMAN_POLICY_DECISION | Execution Product | Risk, Validation | HPD-01 | Phase 23 maker | evidence eligible or disabled |
+| 012 | MT/MTT maker-mode activation | HUMAN_POLICY_DECISION | Execution Product | Risk, Validation | HPD-01 | Phase 23 bounded MT/MTT probe | evidence eligible or MT/MTT disabled; TM/MM Future outside this item |
 | 013 | cross-exchange product scope | DEFERRED | Product/Architecture | Risk, Legal | — | future workstream | same-venue V1 |
 | 014 | license/product mechanism | HUMAN_POLICY_DECISION | Commercial Product | Security, Ops | HPD-02 | client distribution | safe local/distribution-off fallback |
 | 015 | telemetry/export backend | IMPLEMENTATION_CHOICE | Operations | Security, Client Privacy | — | chosen export only | consent/minimization contract |

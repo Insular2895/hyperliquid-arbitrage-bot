@@ -38,3 +38,24 @@ The remaining calibrated, learned, implementation-choice, external-revalidation,
 Human documentation approval is still pending. The `docs_v2 -> docs` transformation is unexecuted; Commit B is absent. Implementation, research runtime, deployment, Micro-live, Live, Bridge, scaling and real capital are not authorized.
 
 **FINAL RESULT: PASS WITH NON-BLOCKING OPEN ITEMS — READY FOR HUMAN DOCUMENTATION REVIEW.**
+
+## Post-run governance verification
+
+This supplement is outside the historical 17-prompt sequence and leaves its checkpoint ledger untouched.
+
+| Required invariant | Focused result |
+|---|---|
+| A, C and B | distinct: A immutable semantic candidate; C exact review/attestation envelope; B absent future path output |
+| C binds A | yes; C adds L3/L4 audit/governance metadata without redefining A |
+| human review subject | exact A together with exact C |
+| switchover source | exact approved C:`docs_v2/**`, never older A or moving HEAD |
+| semantic preservation | B must preserve A semantic corrections plus C review/governance additions |
+| MT/MTT | Later V1, Technical Phase 23, separately bounded maker probes |
+| TM/MM | Future, outside Phase 23 and outside HPD-01 |
+| Phase-19/21 status semantics | aligned: Gate B `PENDING`; Gates C/D/E/G `NOT_AVAILABLE`; Gate F/Phase 1 `NOT_STARTED`; capabilities `NOT_AUTHORIZED` |
+| authorization separation | documentation approval ≠ switchover authorization ≠ B acceptance ≠ Phase-1 authorization ≠ Phase-2 authorization |
+| master-run history | 17 formal checkpoints unchanged |
+
+Aligned Review Envelope C exact identity: `PENDING_POST_ALIGNMENT_FREEZE — populated by post-C attestation`. Commit B remains `ABSENT`.
+
+**POST-RUN RESULT: PASS — POST-RUN GOVERNANCE ALIGNMENT COMPLETE.**

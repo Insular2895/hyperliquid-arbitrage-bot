@@ -42,7 +42,7 @@ Inert documentation, templates, schemas and hypotheses may exist before the gate
 | strategy-level Champion/Challenger | RESEARCH | full baseline/rollback/ownership required | dormant specs | OOS/Replay/MC/Shadow/separate Micro-live and human promotion | one economic owner |
 | cross-exchange routes/transfers | FUTURE | venue/settlement/custody/Risk/Data/Ops absent | separate concept note | approved future architecture and evidence roadmap | none in V1 |
 | perpetual hedge | FUTURE | funding/liquidation/basis product risks absent | separate concept note | approved future spec | none in V1 |
-| TM/MM modes | FUTURE | no initial activation/evidence sequence | type compatibility only | separate product/safety/evidence program | disabled |
+| TM/MM modes | FUTURE | outside the current 26-phase activation roadmap and not covered by Phase 23/HPD-01 | type/interface compatibility only | separate future product/safety/evidence specification and approval chain | disabled / not authorized |
 
 ## Model versus strategy Champion/Challenger
 

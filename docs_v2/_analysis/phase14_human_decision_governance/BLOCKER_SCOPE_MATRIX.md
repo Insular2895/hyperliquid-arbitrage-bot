@@ -2,7 +2,7 @@
 
 | Pending item | Blocks | Does not block |
 |---|---|---|
-| Maker HPD-01 | Phase 23/maker probe | Phase 1, conservative TT |
+| MT/MTT HPD-01 | Phase 23 bounded MT/MTT maker probe | Phase 1, TT/TTT and all TM/MM Future specification |
 | License HPD-02 | client distribution | local documentation/Core |
 | node activation | future node profile | public-feed baseline |
 | cross-exchange scope | future multi-venue work | same-venue V1 |
