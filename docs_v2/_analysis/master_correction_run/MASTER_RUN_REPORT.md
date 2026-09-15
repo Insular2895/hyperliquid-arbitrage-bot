@@ -121,7 +121,7 @@ This section is a separate addendum. It does not alter, renumber or retroactivel
 | input HEAD / tree | `b6c03d10867ccef180518424ffc311bfc8a55fa4` / `92d0b53070e749ac98877fafdb7ccd14f9af3ed8` — matched expected post-run state |
 | immutable Semantic Candidate A | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
 | pre-alignment envelope | `b6c03d10867ccef180518424ffc311bfc8a55fa4`; retained as historical input |
-| aligned Review Envelope C | `PENDING_POST_ALIGNMENT_FREEZE — exact identity recorded by post-C attestation` |
+| aligned Review Envelope C | `fd2bca5b4a16263723692d2a9c6536235577af69` / tree `6f6bbf156f1a1534919b6f0368f51b15c1128b2c` |
 | Commit B | `ABSENT` |
 | architecture/formula/Risk/Replay/economics change | none |
 | implementation/switchover/deployment/capital action | none |

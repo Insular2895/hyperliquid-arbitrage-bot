@@ -11,8 +11,8 @@ This form records decisions; it executes none. `DEFAULT STATE = NOT_AUTHORIZED`.
 | Field | Value / status |
 |---|---|
 | Semantic Candidate A SHA/tree | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` on `codex-docs`; immutable semantic content |
-| Review Envelope C SHA/tree | exact post-alignment values recorded by the post-C attestation and the [review manifest](../_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md); never moving HEAD |
-| Review Envelope C `docs_v2` tree | exact post-alignment value recorded in the review manifest; future switchover source |
+| Review Envelope C SHA/tree | `fd2bca5b4a16263723692d2a9c6536235577af69` / `6f6bbf156f1a1534919b6f0368f51b15c1128b2c`; never moving HEAD |
+| Review Envelope C `docs_v2` tree | `6128fc8d07bb6fa5925f54a5b4637e5e9b957b43`; future switchover source |
 | Review Package Manifest | [exact A/C relationship and package](../_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md) |
 | Phase-18 delta certificate for A | `PRESENT` — [Candidate-A recertification](../_analysis/phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md) |
 | post-freeze attestation status | `A ATTESTED BY C; ALIGNMENT IDENTITY RECORDED POST-C; NOT HUMAN APPROVED` |

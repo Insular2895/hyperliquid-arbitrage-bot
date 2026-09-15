@@ -22,9 +22,12 @@ Candidate A is the immutable semantic content snapshot. No review-package commit
 | Field | Exact value |
 |---|---|
 | verified pre-alignment envelope/input HEAD | `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8` |
-| review_envelope_C_sha | `PENDING_POST_ALIGNMENT_FREEZE — populated by post-C identity attestation` |
-| review_envelope_C_tree | `PENDING_POST_ALIGNMENT_FREEZE — populated by post-C identity attestation` |
-| review_envelope_C_docs_v2_tree | `PENDING_POST_ALIGNMENT_FREEZE — populated by post-C identity attestation` |
+| review_envelope_C_sha | `fd2bca5b4a16263723692d2a9c6536235577af69` |
+| review_envelope_C_tree | `6f6bbf156f1a1534919b6f0368f51b15c1128b2c` |
+| review_envelope_C_docs_v2_tree | `6128fc8d07bb6fa5925f54a5b4637e5e9b957b43` |
+| review_envelope_C_review_tree | `2b506a9064e38a672fa2cae135e0041886852e96` |
+| review_envelope_C_analysis_tree | `eb41a4e7cc9fdf33eae96bdb20f4cf6af4ae273a` |
+| C file counts | `docs_v2=938`; `_review=22`; `_analysis=683` |
 | relationship | C attests immutable A and adds review/audit/governance metadata only; C does not redefine A |
 | future_switchover_source | exact human-approved C |
 | future_semantic_candidate | A |

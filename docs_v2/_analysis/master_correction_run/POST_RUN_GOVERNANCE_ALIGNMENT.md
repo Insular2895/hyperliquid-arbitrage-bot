@@ -12,9 +12,9 @@
 | input HEAD | `b6c03d10867ccef180518424ffc311bfc8a55fa4` |
 | input tree | `92d0b53070e749ac98877fafdb7ccd14f9af3ed8` |
 | expected input matched | yes; local and remote `codex-docs` both matched before editing |
-| output Review Envelope C HEAD | `PENDING_POST_ALIGNMENT_FREEZE — populated by post-C identity attestation` |
-| output Review Envelope C tree | `PENDING_POST_ALIGNMENT_FREEZE — populated by post-C identity attestation` |
-| output Review Envelope C `docs_v2` tree | `PENDING_POST_ALIGNMENT_FREEZE — populated by post-C identity attestation` |
+| output Review Envelope C HEAD | `fd2bca5b4a16263723692d2a9c6536235577af69` |
+| output Review Envelope C tree | `6f6bbf156f1a1534919b6f0368f51b15c1128b2c` |
+| output Review Envelope C `docs_v2` tree | `6128fc8d07bb6fa5925f54a5b4637e5e9b957b43` |
 | post-C identity attestation | separate child commit; exact final branch tip verified at handoff |
 
 The output C checkpoint contains every normative correction below. The child attestation records C's exact Git identities without changing production semantics. This is the same non-self-referential pattern by which an outer record can identify an immutable content commit.

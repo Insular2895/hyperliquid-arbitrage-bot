@@ -13,7 +13,7 @@ No gate below is approved. `PENDING` means a decision is currently eligible but 
 | Field | Current value |
 |---|---|
 | Semantic Candidate A SHA/tree | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
-| Review Envelope C SHA/tree | exact post-alignment values recorded by the post-C attestation and in the review manifest; never moving HEAD |
+| Review Envelope C SHA/tree | `fd2bca5b4a16263723692d2a9c6536235577af69` / `6f6bbf156f1a1534919b6f0368f51b15c1128b2c`; never moving HEAD |
 | branch | `codex-docs` |
 | review manifest | `_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md` |
 | review subject | exact semantic A together with exact review/governance envelope C |

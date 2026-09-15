@@ -11,7 +11,7 @@ This is a deterministic future procedure only. Phase 19 owns permission; Phase 2
 | Identity | Meaning | Current state |
 |---|---|---|
 | Semantic Candidate A | immutable corrected semantic documentation content | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
-| Review Envelope C | exact post-run package that attests A and adds review/audit/governance metadata without new production semantics | exact post-alignment SHA/tree/`docs_v2` tree recorded by the post-C attestation and review manifest |
+| Review Envelope C | exact post-run package that attests A and adds review/audit/governance metadata without new production semantics | `fd2bca5b4a16263723692d2a9c6536235577af69`; tree `6f6bbf156f1a1534919b6f0368f51b15c1128b2c`; `docs_v2` tree `6128fc8d07bb6fa5925f54a5b4637e5e9b957b43` |
 | Commit B | separate future canonical-path result transformed from exact approved C while retaining semantic identity A | `ABSENT` |
 
 The verified pre-alignment envelope was `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8`. It is historical input to this correction, not moving authority and not the final aligned C.

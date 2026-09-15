@@ -56,6 +56,6 @@ This supplement is outside the historical 17-prompt sequence and leaves its chec
 | authorization separation | documentation approval ≠ switchover authorization ≠ B acceptance ≠ Phase-1 authorization ≠ Phase-2 authorization |
 | master-run history | 17 formal checkpoints unchanged |
 
-Aligned Review Envelope C exact identity: `PENDING_POST_ALIGNMENT_FREEZE — populated by post-C attestation`. Commit B remains `ABSENT`.
+Aligned Review Envelope C exact identity: `fd2bca5b4a16263723692d2a9c6536235577af69` / tree `6f6bbf156f1a1534919b6f0368f51b15c1128b2c` / `docs_v2` tree `6128fc8d07bb6fa5925f54a5b4637e5e9b957b43`. Commit B remains `ABSENT`.
 
 **POST-RUN RESULT: PASS — POST-RUN GOVERNANCE ALIGNMENT COMPLETE.**
