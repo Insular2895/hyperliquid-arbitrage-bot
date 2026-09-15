@@ -1,8 +1,8 @@
 # Documentation v2 — Clean-room rebuild
 
-`DOCUMENTATION STATUS: CORR-01..06 + SCIENTIFIC ITERATION EXTENSION COMPLETE — HUMAN REVIEW PENDING`
+`DOCUMENTATION STATUS: MASTER CORRECTION PHASES 05–21 COMPLETE — HUMAN REVIEW PENDING`
 
-> **CURRENT REVIEW CANDIDATE.** CORR-01 through CORR-06 and the deferred scientific-iteration/strategy-research extension are complete. Human approval, implementation, research activation and the `docs_v2` → `docs` switchover remain unauthorized.
+> **CURRENT REVIEW CANDIDATE.** CORR-01 through CORR-06, the deferred scientific/async extensions and the final master correction run are complete. The 17 supplied formal prompts, Phases 05–21, were applied sequentially; review passages 01–04 were verified against the cumulative candidate because no separate formal prompts for them were supplied. Human approval, implementation, research activation and the `docs_v2` → `docs` switchover remain unauthorized.
 
 `docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception. La reconstruction, l'audit transversal et la vérification source sans perte sont terminés comme **candidat**; l'approbation humaine, le basculement documentaire et toute implémentation restent en attente.
 
@@ -11,6 +11,7 @@ Les corrections et extensions postérieures `HDC-001..094` ont une origine humai
 PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques. PASS 12 reconstruit séparément l'ordre technique et le parcours scientifique qui mène de la donnée à une capacité validée. PASS 13 assemble ces autorités dans une architecture transversale sans les remplacer. PASS 14 vérifie leurs interfaces, propriétaires, unités, états, modes et dépendances comme un seul système. PASS 15 rouvre les huit sources, vérifie leurs empreintes et leur couverture ligne par ligne, puis joint 2 577 unités PASS 00, 13 dérivations explicites et 79 récupérations documentées à leur sort final. PASS 16 fournit enfin un package fini de revue, de décisions, d'autorisation et de basculement sans s'auto-approuver.
 
 - [Final human review — Start here](./_review/00_REVIEW_START_HERE.md)
+- [Master correction run — exact prompt/pass ledger](./_analysis/master_correction_run/MASTER_RUN_REPORT.md)
 - [CORR-06 final handoff](./_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md)
 - [PASS 16 final report](./_analysis/pass16_human_review/PASS16_FINAL_REPORT.md)
 - [Scientific iteration / future strategy research](./deep-specs/strategy-research/README.md)

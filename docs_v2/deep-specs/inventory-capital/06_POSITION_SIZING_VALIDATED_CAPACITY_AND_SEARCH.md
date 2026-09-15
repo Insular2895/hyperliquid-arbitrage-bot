@@ -7,7 +7,7 @@ AWAITING HUMAN REVIEW
 
 Position Sizing chooses total exposure for an already viable, Risk-eligible opportunity. QF-075 maximizes Risk-Adjusted EV over a constrained quantity region. It is nonlinear: NetConvert/book levels, edge, impact, completion, P+, CVaR, confidence, inventory and Recovery all vary with quantity.
 
-QF-027 Maximum Profitable Size is an edge/profitability boundary. QF-076 Validated Capacity, `Q_validated`, is the largest quantity for which every required gate is true. They are not interchangeable.
+QF-027 Maximum Profitable Size is an edge/profitability boundary. QF-076 Validated Capacity, `Q_validated`, is the supremum (and, where attained, the largest member) of the exact possibly non-monotonic quantity set for which every required gate is true. It does not certify all smaller quantities. QF-027 and QF-076 are not interchangeable.
 
 That largest/supremum quantity is an upper boundary, never a sufficient predicate `q <= Q_validated`. The validated set may contain holes; every candidate point must pass exact gates. Any interval shortcut requires separately proved, versioned monotonicity.
 

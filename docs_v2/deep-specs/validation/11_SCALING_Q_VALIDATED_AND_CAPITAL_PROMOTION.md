@@ -3,7 +3,7 @@
 DOCUMENTATION STATUS:
 AWAITING HUMAN REVIEW
 
-`Q_validated` is the largest q for which market data, route economics, model/simulator support, Risk, inventory/capital, execution/recovery, infrastructure and operations all pass. The first failed gate bounds it; if none pass, q is zero.
+Let `S_validated` be the exact set of candidate quantities for which market data, route economics, model/simulator support, Risk, inventory/capital, execution/recovery, infrastructure and operations all pass at the same versioned state. `Q_validated = sup(S_validated)` when that set is non-empty, otherwise zero. The set may have holes: a failed quantity does not invalidate every larger quantity and a passing boundary does not certify every smaller quantity. Every selected q is therefore evaluated independently unless a separate, versioned monotonicity proof applies to the exact scope.
 
 Vertical promotion advances by explicit q bands. Current-band actual observations plus next-band Simulator support, impact/tail/fill/Recovery/inventory calibration and stable operations precede the new manifest entry. Horizontal scale additionally proves shared balance/book/asset/Risk capacity, reservations and portfolio allocation without double counting.
 

@@ -15,7 +15,7 @@
 | Opportunity | Current size-specific economic candidate | candidate | permission, reservation or order | Opportunity |
 | `NetConvert(q)` | Canonical exact directed conversion output with depth/fees/precision | conversion | midpoint estimate or second fee/slippage pass | Formula |
 | Maximum Profitable Size | QF-027 economic threshold result | profitable capacity | `Q_validated` | Route/Sizing |
-| `Q_validated` | QF-076 largest size passing all exact support/safety/evidence gates | validated capacity | visible depth, balance or target q | Validation/Sizing/Risk |
+| `Q_validated` | QF-076 supremum/largest member of the exact possibly non-monotonic q set passing all support/safety/evidence gates | validated capacity | continuous interval, visible depth, balance or target q | Validation/Sizing/Risk |
 | Position Sizing | Select total proposed exposure `q*` | Sizer | child-order schedule | Inventory/Capital |
 | Order Slicing | Decompose fixed validated q into child actions | Slicing | new capacity or sizing | Execution |
 | actual | Exchange-observed, deduplicated and reconciled fact | realized | planned, predicted, simulated, would-* | Execution/Data |

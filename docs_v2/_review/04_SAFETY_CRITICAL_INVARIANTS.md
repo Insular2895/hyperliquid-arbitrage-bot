@@ -4,6 +4,8 @@
 
 Every review box is intentionally unchecked. Evidence references are documentary; no invariant is claimed proven in code.
 
+The table currently resolves to 29 identifiers from this exact candidate. The candidate manifest stores the enumerated set/hash/count; `29` is a derived diagnostic, not a permanent authority or an automatic approval.
+
 | Review | Invariant ID | Exact rule | Why | Owner | Consumers | Failure consequence | Validation evidence | Source authority |
 |---:|---|---|---|---|---|---|---|---|
 | [ ] | SI-001 | `Safety > StateConsistency > ExistingExposure > RiskLimits > ExpectedPnL > Opportunity` | resolves competing objectives | Risk | all decision makers | unsafe priority choice | Risk property/fault suite | [Risk](../09_RISK_CONSTITUTION.md) |
@@ -27,7 +29,7 @@ Every review box is intentionally unchecked. Evidence references are documentary
 | [ ] | SI-019 | OWA requires a fair direct comparator | otherwise alpha is misclassified | Opportunity | Formula, Validation | false OWA claim | comparator vectors | Graph/Routes |
 | [ ] | SI-020 | Bridge is not OWA | moving capital is a distinct economic action | Capital | Risk, Accounting | bypassed relocation gates/double count | classification tests | Inventory/Capital |
 | [ ] | SI-021 | Strategy, Bridge, Rebalance and Recovery are distinct | disjoint attribution prevents double counting | Accounting | Operations, Validation | misleading PnL and decisions | ledger reconciliation | Inventory/Capital |
-| [ ] | SI-022 | More capital does not imply more `Q_validated` | size support is empirical and nonlinear | Validation | Sizer, Risk | unsupported larger exposure | next-band evidence | Validation |
+| [ ] | SI-022 | `Q_validated` is the exact possibly non-monotonic supported q set/supremum; more capital does not enlarge it | size support is empirical, versioned and may contain holes | Validation | Sizer, Risk | unsupported or interval-inferred exposure | per-q gates plus any explicit monotonicity proof | Validation |
 | [ ] | SI-023 | Implemented does not mean validated | code existence is not evidence | Validation | Deployment, Capability | unproven feature activates | manifest gate tests | Validation |
 | [ ] | SI-024 | Licensed does not mean validated | commercial permission is not safety | Deployment | Capability, Risk | commercial state grants unsafe action | license-failure tests | Deployment |
 | [ ] | SI-025 | Running does not mean ready | process health is not coherent exchange state | Operations | Execution | effects before reconciliation/readiness | startup gate suite | Operations |

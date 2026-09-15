@@ -13,6 +13,6 @@ AWAITING HUMAN REVIEW
 | infrastructure upgrade | comparable benchmark, attributable economic LCB, stability, Shadow and required Micro-live | degraded tails/economics/host identity |
 | capital increase | Q_validated support across size/portfolio/market plus explicit approval | Q_validated shrink or portfolio/Risk limit |
 
-`Q_validated` is the largest quantity that passes every required gate in the current evidence scope. It can rise only in evidence-gated steps and can shrink immediately. Account capital, raw book depth, elapsed time or positive aggregate PnL cannot expand it.
+`Q_validated` is the supremum/largest valid member of the exact candidate-q set that passes every required gate in the current evidence scope. That set may be non-monotonic; every selected q needs independent support unless monotonicity is separately proved and versioned. It can rise only in evidence-gated steps and can shrink immediately. Account capital, raw book depth, elapsed time or positive aggregate PnL cannot expand it.
 
 Vertical scale means a larger q band for otherwise equal scope; horizontal scale means more concurrent opportunities/markets under shared constraints. Both capacity expansion and capacity reduction create new audited manifest/evidence state.
