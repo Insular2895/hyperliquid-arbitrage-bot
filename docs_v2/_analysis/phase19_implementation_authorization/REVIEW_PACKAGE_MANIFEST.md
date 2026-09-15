@@ -22,13 +22,16 @@ Candidate A is the immutable semantic content snapshot. No review-package commit
 | Field | Exact value |
 |---|---|
 | verified pre-alignment envelope/input HEAD | `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8` |
-| review_envelope_C_sha | `fd2bca5b4a16263723692d2a9c6536235577af69` |
-| review_envelope_C_tree | `6f6bbf156f1a1534919b6f0368f51b15c1128b2c` |
-| review_envelope_C_docs_v2_tree | `6128fc8d07bb6fa5925f54a5b4637e5e9b957b43` |
-| review_envelope_C_review_tree | `2b506a9064e38a672fa2cae135e0041886852e96` |
-| review_envelope_C_analysis_tree | `eb41a4e7cc9fdf33eae96bdb20f4cf6af4ae273a` |
+| actual final-alignment input HEAD/tree | `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` / `c63352342d608fcf06a21947e1a9c60bd44b655a` |
+| prior aligned envelope / attestation | `fd2bca5b4a16263723692d2a9c6536235577af69` / `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa`; documentary lineage, superseded as review source |
+| review_envelope_C_sha | `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` |
+| review_envelope_C_tree | `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION` |
+| review_envelope_C_docs_v2_tree | `REVIEW_ENVELOPE_C_DOCS_TREE_PENDING_ATTESTATION` |
+| review_envelope_C_review_tree | `REVIEW_ENVELOPE_C_REVIEW_TREE_PENDING_ATTESTATION` |
+| review_envelope_C_analysis_tree | `REVIEW_ENVELOPE_C_ANALYSIS_TREE_PENDING_ATTESTATION` |
 | C file counts | `docs_v2=938`; `_review=22`; `_analysis=683` |
-| relationship | C attests immutable A and adds review/audit/governance metadata only; C does not redefine A |
+| candidate_to_envelope_delta_classification | `L3/L4 REVIEW_GOVERNANCE_ALIGNMENT_ONLY`; no production implementation/capability |
+| relationship | C attests immutable A and adds review/audit/governance alignment only; C does not redefine A |
 | future_switchover_source | exact human-approved C |
 | future_semantic_candidate | A |
 | future Commit B | `ABSENT` |
@@ -41,7 +44,7 @@ The human documentation decision binds `semantic_candidate_sha=A` together with 
 |---|---|
 | review passages | `01..21`: 21/21 present in the package; `00_REVIEW_START_HERE.md` is the additional entrypoint |
 | supplied formal correction prompts | 17/17 executed sequentially for Phases 05–21; duplicated Phase 21 executed once |
-| safety invariants | 29 unique IDs; normalized-ID SHA-256 `02fd8b6450535dd81cece48fec313c46b7210585ecd4ad9f7859497f2806b60d` |
+| safety invariants | 29 unique IDs; SI-022 wording is aligned to QF-076 without adding/removing an ID; normalized ID-list SHA-256 `02fd8b6450535dd81cece48fec313c46b7210585ecd4ad9f7859497f2806b60d` |
 | OPEN dispositions | 28/28; normalized expanded-ID SHA-256 `977b3f25e856e9c7ba6c4e6daee8889562277fef33123cc947aa18a1a74c8685` |
 | HDC mapping | 94/94, 0 unmapped; normalized expanded-ID SHA-256 `f549a2e256aae09af8967fd993ddf86f70f968a8087ace8c02ce6ff7a2401e9d` |
 | external revalidation | 23/23 unique EXT IDs; normalized-ID SHA-256 `c1e75a761154c2c8fc3256b275b088eee1330f271a4d0b851e25d71a722a99d6` |

@@ -3,6 +3,8 @@
 DOCUMENTATION STATUS:
 AWAITING HUMAN REVIEW
 
+`HISTORICAL NUMBERING NOTE:` evidence-stage numbers in this PASS-12 crosswalk are zero-based legacy indices `0..20`. Current review uses the canonical one-based ordinal `1..21`, so add one when reading these numeric cells. In particular, legacy index 11 is Evidence Stage 12 `VALIDATE TT`, and legacy index 12 is Evidence Stage 13 `VALIDATE TTT`.
+
 | Technical phase | Primary evidence stage | Secondary / ongoing stages | First real use | First possible maturity | First capital | Ongoing evidence |
 |---:|---|---|---|---|---|---|
 | 1 Domain Types / Schemas | 0 SPECIFY | 1–20 | Unit/golden harness | M1 | None | Compatibility/regression |

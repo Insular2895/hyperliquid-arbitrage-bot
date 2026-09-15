@@ -15,16 +15,16 @@ SPECIFY → OBSERVE/RECORD → RECONSTRUCT → MAP → IDENTIFY
 
 ## Evidence classes by stage family
 
-| Family | Stages | What becomes knowable | What remains unknowable |
+| Family | Evidence Stages | What becomes knowable | What remains unknowable |
 |---|---|---|---|
-| Specification | 0 | Contract completeness and planned evidence | Runtime correctness/value |
-| Source/state | 1–2 | What arrived and whether state reconstructs | Economic opportunity/execution |
-| Structure/economics | 3–4 | Legal routes and exact current-book candidate economics | Real capture/fill/causal response |
-| Historical experiment | 5–6 | Deterministic behavior and explicit-fidelity distributions | Live-system and intervention truth |
-| Live no-effect | 7–9 | Real-time stability, forecasts, survival/response observation | Own fill/impact/recovery truth |
-| Controlled intervention | 10–14 | Actual exchange/mechanical/mode calibration | Unprobed market/mode/q regimes |
-| Capital productivity | 15–17 | Utility, shared allocation and relocation evidence | Unsupported future capacity |
-| Scale | 18–20 | Wider/deeper/infra-specific value inside support | Unlimited/generalized scale |
+| Specification | 1 | Contract completeness and planned evidence | Runtime correctness/value |
+| Source/state | 2–3 | What arrived and whether state reconstructs | Economic opportunity/execution |
+| Structure/economics | 4–5 | Legal routes and exact current-book candidate economics | Real capture/fill/causal response |
+| Historical experiment | 6–7 | Deterministic behavior and explicit-fidelity distributions | Live-system and intervention truth |
+| Live no-effect | 8–10 | Real-time stability, forecasts, survival/response observation | Own fill/impact/recovery truth |
+| Controlled intervention | 11–15 | Actual exchange/mechanical/mode calibration | Unprobed market/mode/q regimes |
+| Capital productivity | 16–18 | Utility, shared allocation and relocation evidence | Unsupported future capacity |
+| Scale | 19–21 | Wider/deeper/infra-specific value inside support | Unlimited/generalized scale |
 
 ## Exit law
 

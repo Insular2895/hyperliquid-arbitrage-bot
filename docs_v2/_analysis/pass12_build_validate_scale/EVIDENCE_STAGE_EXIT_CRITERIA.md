@@ -3,6 +3,8 @@
 DOCUMENTATION STATUS:
 AWAITING HUMAN REVIEW
 
+`HISTORICAL NUMBERING NOTE:` rows retain the original PASS-12 zero-based index `0..20`. Current review uses one-based Evidence Stage ordinals `1..21` (`ordinal = legacy_index + 1`).
+
 No elapsed time or capital balance completes a stage. Evidence sufficiency follows PASS 10 and remains scope-specific.
 
 | Stage | Required evidence before exit | Stop / remain in stage | What the next stage receives |

@@ -59,6 +59,6 @@ post-freeze audit/governance package          -> Review Envelope C
 future path-only relocation                   -> Commit B (ABSENT)
 ```
 
-The verified pre-alignment review envelope was `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8`. The exact aligned C is `fd2bca5b4a16263723692d2a9c6536235577af69` / tree `6f6bbf156f1a1534919b6f0368f51b15c1128b2c` / `docs_v2` tree `6128fc8d07bb6fa5925f54a5b4637e5e9b957b43`. C contains L3/L4 review-package overlays only: it references and certifies A but is not part of A and does not mutate historical PASS00/PASS15 identities. Future B must preserve the A semantic lineage and the approved C package while relocating paths.
+The expected reviewed context was `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8`. The prior aligned envelope `fd2bca5b4a16263723692d2a9c6536235577af69` and attestation tip `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` are preserved lineage. The exact final Review Envelope C is `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` / tree `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION` / `docs_v2` tree `REVIEW_ENVELOPE_C_DOCS_TREE_PENDING_ATTESTATION`. C contains L3/L4 review-package overlays only: it references and certifies A but is not part of A and does not mutate historical PASS00/PASS15 identities. Future B must preserve the A semantic lineage and the approved C package while relocating paths.
 
 **RESULT: CANDIDATE A TRACEABILITY IS CURRENT FOR HUMAN DOCUMENTATION REVIEW.**

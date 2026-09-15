@@ -3,6 +3,8 @@
 DOCUMENTATION STATUS:
 AWAITING HUMAN REVIEW
 
+`HISTORICAL NUMBERING NOTE:` this PASS-12 artifact preserves its original zero-based stage index `0..20`. Current review surfaces use the canonical one-based Evidence Stage ordinal `1..21`, with `ordinal = legacy_index + 1`; therefore legacy index 11 is Evidence Stage 12 `VALIDATE TT`, and legacy index 12 is Evidence Stage 13 `VALIDATE TTT`.
+
 | Stage | Name | Primary question | Technical center | Capital permission | Maturity relation | Persistent evidence |
 |---:|---|---|---|---|---|---|
 | 0 | SPECIFY | Are purpose/contracts/invariants/tests unambiguous? | All specs | None | M0 | Specs, requirement ledger, planned tests |

@@ -54,4 +54,4 @@ The state machines may represent TT, MT, TTT, MTT and type-supported disabled TM
 
 ## Capital hard gate
 
-Before Stage 10 Micro-live, all of the following must exist and be current: Recorder evidence, actual-fill/account state, reservations, Risk, ESM, transport conformance, Recovery, Reconciliation, safe deployment/ownership, operations/alerts, safe shutdown and rollback, plus M3 Shadow.
+Before Evidence Stage 11 Micro-live, all of the following must exist and be current: Recorder evidence, actual-fill/account state, reservations, Risk, ESM, transport conformance, Recovery, Reconciliation, safe deployment/ownership, operations/alerts, safe shutdown and rollback, plus M3 Shadow.

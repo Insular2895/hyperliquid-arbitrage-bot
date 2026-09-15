@@ -129,3 +129,18 @@ This section is a separate addendum. It does not alter, renumber or retroactivel
 The correction makes exact C—not A or moving HEAD—the future switchover source while preserving A as semantic identity. HPD-01 now covers only Phase-23 MT/MTT bounded maker probes; TM/MM remain Future. Phase 19 now uses `PENDING` only for currently eligible Gate B, `NOT_AVAILABLE` for prerequisite-blocked later gates, `NOT_STARTED` for Phase-1 evidence and `NOT_AUTHORIZED` for capabilities.
 
 Evidence and exact output identity: [Post-run Governance Alignment](POST_RUN_GOVERNANCE_ALIGNMENT.md). Final focused result: `PASS — POST-RUN GOVERNANCE ALIGNMENT COMPLETE`; human review remains pending.
+
+## 9. Post-run governance & review alignment
+
+This second, narrow post-run addendum supersedes §8 as the current review-envelope description without changing the historical 17-prompt ledger, its commits or Semantic Candidate A.
+
+| Field | Value |
+|---|---|
+| prompt-expected context | `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8` |
+| actual input HEAD / tree | `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` / `c63352342d608fcf06a21947e1a9c60bd44b655a` |
+| intervening-change classification | documentary-only and compatible; first alignment `fd2bca5`, then identity attestation `bf5fa0e` |
+| immutable Semantic Candidate A | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
+| final Review Envelope C | `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` / tree `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION` |
+| Commit B | `ABSENT` |
+
+This addendum corrects Review 01's Micro-live TT and QF-076 wording, replaces Review 02's competing letter-based scope classes with the canonical taxonomy and puts TTT at Evidence Stage 13, and aligns Review 04 SI-022 with the validated-set/supremum distinction. It also makes the one-based evidence-stage ordinal explicit while preserving the original zero-based PASS-12 analysis indices as labeled historical records. Formula QF-076, Risk, Execution transitions, the 26 technical phases, source lineage and authorization states are unchanged. Full evidence is in [Post-run Governance & Review Alignment](POST_RUN_GOVERNANCE_ALIGNMENT.md).

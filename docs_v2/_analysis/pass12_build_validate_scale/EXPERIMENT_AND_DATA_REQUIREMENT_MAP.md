@@ -3,6 +3,8 @@
 DOCUMENTATION STATUS:
 AWAITING HUMAN REVIEW
 
+`HISTORICAL NUMBERING NOTE:` `Earliest stage` values preserve the original PASS-12 zero-based index; add one for the canonical current Evidence Stage ordinal.
+
 | Learning target | Required data | Earliest stage | Replay? | Shadow? | Micro-live / Live? | Label / source of truth | Bias risk | Consumer |
 |---|---|---:|---|---|---|---|---|---|
 | Opportunity frequency | Valid books, graph/routes, exact opportunity/reject episodes | 4 | Yes | Improves | No | Count per valid support interval; DecisionTrace | Missing/gapped data, selection | Atlas, strategy |

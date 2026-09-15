@@ -3,6 +3,8 @@
 DOCUMENTATION STATUS:
 AWAITING HUMAN REVIEW
 
+`HISTORICAL NUMBERING NOTE:` stage labels preserve the original PASS-12 zero-based index `0..20`; current review uses one-based Evidence Stage ordinals `1..21`. Any `q <= Q_validated` wording below is only a necessary upper-bound check, never proof of validated-set membership; every selected q must also pass all exact-q gates.
+
 Capital permission is the intersection of compiled, configured, licensed, release-channel, validated, ready and Risk-permitted scope. “Maximum concept” is qualitative; the actual maximum is always the current lower bound across Risk, inventory, book, model, operations and `Q_validated`.
 
 | Stage | Real strategy capital? | Maximum concept | Required maturity / Risk / Execution | Simulator and Q_validated | Operations evidence | Automatic stop examples |

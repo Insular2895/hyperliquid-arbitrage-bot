@@ -11,7 +11,7 @@ This document explains the evidence journey from an empty data directory to sust
 
 ## 2. Why this differs from the implementation roadmap
 
-[Technical Implementation Roadmap](17_IMPLEMENTATION_ROADMAP.md) answers **what to build and in which dependency order**. This journey answers **when evidence has earned the right to trust a specific capability with capital**. Technical Phase 3 Recorder serves nearly every later evidence stage; Stage 10 Micro-live requires many technical phases. The two axes are deliberately not 1:1.
+[Technical Implementation Roadmap](17_IMPLEMENTATION_ROADMAP.md) answers **what to build and in which dependency order**. This journey answers **when evidence has earned the right to trust a specific capability with capital**. Technical Phase 3 Recorder serves nearly every later evidence stage; Evidence Stage 11 Micro-live requires many technical phases. The two axes are deliberately not 1:1.
 
 ## 3. Scientific philosophy
 
@@ -32,33 +32,35 @@ Implemented does not mean validated. More capital does not mean more size. Capit
 
 Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models**; same Core across Replay/Shadow/Live; Micro-live as a measurement instrument; **M5 reversible**. There is **no coding before human approval** after PASS 13–16 review.
 
-## 5. Stage overview
+## 5. Evidence-stage overview
 
-| Stage | Name | Capital ceiling |
-|---:|---|---|
-| 0 | SPECIFY | None |
-| 1 | OBSERVE / RECORD | None |
-| 2 | RECONSTRUCT | None |
-| 3 | MAP | None |
-| 4 | IDENTIFY | None |
-| 5 | REPLAY | None |
-| 6 | SIMULATE | None |
-| 7 | SHADOW LIVE | None |
-| 8 | PREDICTED VS ACTUAL PREPARATION | None |
-| 9 | LEARN COMPETITION / SURVIVAL | None normally |
-| 10 | MICRO-LIVE | Probe |
-| 11 | VALIDATE TT | Validated bounded |
-| 12 | VALIDATE TTT | Separate probe→validated bounded |
-| 13 | MAKER INTELLIGENCE | None / dedicated measurement probe |
-| 14 | VALIDATE MT / MTT | Separate probe→validated bounded |
-| 15 | CAPITAL INTELLIGENCE | Existing validated scopes |
-| 16 | PORTFOLIO ALLOCATION | After separate promotion |
-| 17 | BRIDGE / CAPITAL RELOCATION | Separate probe→validated bounded |
-| 18 | HORIZONTAL SCALE | Scaled validated |
-| 19 | VERTICAL SCALE | Scaled validated |
-| 20 | INFRASTRUCTURE SCALE | No direct capital grant |
+The canonical evidence-stage ordinal is one-based (`1..21`). Historical PASS-12 matrices used a zero-based index (`0..20`); those immutable analysis records retain that legacy index, with `ordinal = legacy_index + 1`. The sequence itself is unchanged. In particular, `VALIDATE TT` is Evidence Stage 12 (legacy index 11) and `VALIDATE TTT` is Evidence Stage 13 (legacy index 12).
 
-## 6. Stage 0 — SPECIFY
+| Evidence Stage | Legacy PASS-12 index | Name | Capital ceiling |
+|---:|---:|---|---|
+| 1 | 0 | SPECIFY | None |
+| 2 | 1 | OBSERVE / RECORD | None |
+| 3 | 2 | RECONSTRUCT | None |
+| 4 | 3 | MAP | None |
+| 5 | 4 | IDENTIFY | None |
+| 6 | 5 | REPLAY | None |
+| 7 | 6 | SIMULATE | None |
+| 8 | 7 | SHADOW LIVE | None |
+| 9 | 8 | PREDICTED VS ACTUAL PREPARATION | None |
+| 10 | 9 | LEARN COMPETITION / SURVIVAL | None normally |
+| 11 | 10 | MICRO-LIVE | Probe |
+| 12 | 11 | VALIDATE TT | Validated bounded |
+| 13 | 12 | VALIDATE TTT | Separate probe→validated bounded |
+| 14 | 13 | MAKER INTELLIGENCE | None / dedicated measurement probe |
+| 15 | 14 | VALIDATE MT / MTT | Separate probe→validated bounded |
+| 16 | 15 | CAPITAL INTELLIGENCE | Existing validated scopes |
+| 17 | 16 | PORTFOLIO ALLOCATION | After separate promotion |
+| 18 | 17 | BRIDGE / CAPITAL RELOCATION | Separate probe→validated bounded |
+| 19 | 18 | HORIZONTAL SCALE | Scaled validated |
+| 20 | 19 | VERTICAL SCALE | Scaled validated |
+| 21 | 20 | INFRASTRUCTURE SCALE | No direct capital grant |
+
+## 6. Evidence Stage 1 — SPECIFY (legacy index 0)
 
 - **OBJECTIVE / WHY:** eliminate critical ambiguity before code can crystallize accidental architecture.
 - **WE MUST ALREADY KNOW:** source authority, project scope and which facts remain external/open.
@@ -69,7 +71,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** critical ambiguity, missing owner or contradiction stops. Exit when purpose/contracts/formulas/schemas/errors/tests/performance budget are explicit. Next stage receives an implementable final-interface scope.
 - **LIMITATION:** M0 proves specification completeness, not correctness or usefulness.
 
-## 7. Stage 1 — OBSERVE / RECORD
+## 7. Evidence Stage 2 — OBSERVE / RECORD (legacy index 1)
 
 - **OBJECTIVE / WHY:** create trustworthy source evidence before prediction; data that was never captured cannot be reconstructed later.
 - **WE MUST ALREADY KNOW:** Phase-1 envelopes/clock/order and adapter boundary.
@@ -80,7 +82,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** silent loss, ambiguous order or critical durability stops. Exit with admissible data/quality support. Next receives source truth for reconstruction.
 - **LIMITATION:** RAW proves local observation, not exchange correctness.
 
-## 8. Stage 2 — RECONSTRUCT
+## 8. Evidence Stage 3 — RECONSTRUCT (legacy index 2)
 
 - **OBJECTIVE / WHY:** derive valid books and boundary state before searching for economics.
 - **WE MUST ALREADY KNOW:** ordered RAW and current/historical metadata/fee/precision interpretation.
@@ -91,7 +93,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** gaps, silent repair, invalid/crossed book, rule ambiguity or nondeterminism stop. Exit with reproducible RAW→normalized→BookState. Next receives point-in-time state.
 - **LIMITATION:** a correct book is not an opportunity.
 
-## 9. Stage 3 — MAP
+## 9. Evidence Stage 4 — MAP (legacy index 3)
 
 - **OBJECTIVE / WHY:** know legal structures and supported market places before selecting where to trade.
 - **WE MUST ALREADY KNOW:** valid metadata and reconstructed books.
@@ -102,7 +104,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** invalid continuity, comparator confusion, duplicate/stale route or future leakage stops. Exit with reproducible legal universe. Next receives route candidates.
 - **LIMITATION:** a route is structure; an opportunity is current size-specific economics.
 
-## 10. Stage 4 — IDENTIFY
+## 10. Evidence Stage 5 — IDENTIFY (legacy index 4)
 
 - **OBJECTIVE / WHY:** detect exact economic candidates and their rejection reasons without claiming execution success.
 - **WE MUST ALREADY KNOW:** coherent book, graph, fees, precision and FormulaVersion.
@@ -113,7 +115,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** parity/unit/sign/precision/depth or comparator failure stops the economic claim. Exit with reproducible candidate/reject episodes. Next receives a measurable deterministic baseline.
 - **LIMITATION:** positive theoretical/executable-book edge is not Risk permission or realized PnL.
 
-## 11. Stage 5 — REPLAY
+## 11. Evidence Stage 6 — REPLAY (legacy index 5)
 
 - **OBJECTIVE / WHY:** prove what the same Core would decide using only information available at each historical instant.
 - **WE MUST ALREADY KNOW:** valid DatasetId, resolved config, formula/model/schema versions and deterministic order.
@@ -124,7 +126,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** nondeterminism, lookahead, invalid region, hidden clock/RNG or separate strategy logic stops. Exit with repeatable trace/hash and checkpoint parity. Next receives trusted experimental substrate.
 - **LIMITATION:** Replay cannot prove counterfactual causal market response.
 
-## 12. Stage 6 — SIMULATE
+## 12. Evidence Stage 7 — SIMULATE (legacy index 6)
 
 - **OBJECTIVE / WHY:** estimate distributions of execution outcomes under explicit F0/F1 assumptions before capital.
 - **WE MUST ALREADY KNOW:** deterministic Replay, actual exchange mechanics contracts and candidate q.
@@ -135,7 +137,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** single deterministic PnL, unsupported mechanics/bias or inflated fidelity stops. Exit with reproducible distributions and stated limitations. Next receives pre-live forecasts.
 - **LIMITATION:** F0/F1 cannot prove maker queue or participant response.
 
-## 13. Stage 7 — SHADOW LIVE
+## 13. Evidence Stage 8 — SHADOW LIVE (legacy index 7)
 
 - **OBJECTIVE / WHY:** prove the full real-time Core, state and operations without placing strategy orders.
 - **WE MUST ALREADY KNOW:** critical components M2, real deployment/readiness and no-effect transport.
@@ -146,7 +148,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** strategy account mutation, leak/instability, stale state, incomplete evidence, owner/rollback/readiness failure stops. Exit with sustained scoped Shadow validation. Next receives credible pre-intervention forecasts.
 - **LIMITATION:** Shadow cannot prove real fill, queue priority, causal impact, ACK/cancel races, actual fees or Recovery.
 
-## 14. Stage 8 — Predicted-versus-Actual preparation
+## 14. Evidence Stage 9 — Predicted-versus-Actual preparation (legacy index 8)
 
 - **OBJECTIVE / WHY:** prevent post-hoc success criteria by declaring comparisons before any real probe.
 - **WE MUST ALREADY KNOW:** Shadow forecast fields, intended TT scope and all stable correlation IDs.
@@ -157,7 +159,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** unjoinable predictions, missing source of truth or unbounded probe stops. Exit with approved pre-registration and rollback. Next receives an auditable experiment.
 - **LIMITATION:** a plan is not evidence that predictions are correct.
 
-## 15. Stage 9 — Learn Competition / Survival
+## 15. Evidence Stage 10 — Learn Competition / Survival (legacy index 9)
 
 - **OBJECTIVE / WHY:** learn how opportunities die and whether they can be captured, after episodes exist.
 - **WE MUST ALREADY KNOW:** point-in-time opportunity episodes, censoring, microstructure and live Shadow observations.
@@ -168,7 +170,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** absent labels, leakage, poor calibration/OOD or no EconomicLift retains baseline. Exit only for supported slices. Next receives calibrated competition evidence.
 - **LIMITATION:** learning may run in parallel; it does not block initial opportunity recording or necessarily the first conservative TT probe.
 
-## 16. Stage 10 — MICRO-LIVE
+## 16. Evidence Stage 11 — MICRO-LIVE (legacy index 10)
 
 - **OBJECTIVE / WHY:** observe real exchange intervention under minimal, bounded and recoverable exposure.
 - **WE MUST ALREADY KNOW:** Recorder/Risk/ESM/transport/Recovery/Reconciliation/accounting/ops/Shadow/rollback are current and the experiment is predeclared.
@@ -179,7 +181,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** safety incident, unresolved UNKNOWN, recovery/reconcile/accounting/evidence/security failure, OOD or unsupported tail stops immediately. Exit with usable real calibration evidence, not automatic Live. Next receives TT actuals.
 - **LIMITATION:** tiny probes measure mechanics; they do not validate large size.
 
-## 17. Stage 11 — Validate TT
+## 17. Evidence Stage 12 — Validate TT (legacy index 11)
 
 - **OBJECTIVE / WHY:** promote the simplest taker→taker capability before adding a third leg or maker uncertainty.
 - **WE MUST ALREADY KNOW:** sufficient supported TT probes and current dependency health.
@@ -190,7 +192,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** insufficient sample/support, rising error, tail/recovery/ops degradation or incident blocks/demotes. Exit with CapabilityManifest TT scope. Next gains a trusted baseline and comparison anchor.
 - **LIMITATION:** TT evidence does not validate TTT, MT, other markets or larger q.
 
-## 18. Stage 12 — Validate TTT
+## 18. Evidence Stage 13 — Validate TTT (legacy index 12)
 
 - **OBJECTIVE / WHY:** separately validate the extra leg, latency and intermediate exposure of taker→taker→taker.
 - **WE MUST ALREADY KNOW:** TT is validated; TTT route closure, ESM and per-leg Recovery are M3-capable.
@@ -201,7 +203,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** applying TT evidence to TTT, planned instead of actual output, unresolved intermediate exposure or unsupported tail stops. Exit with separate TTT CapabilityManifest scope.
 - **LIMITATION:** TTT can be detected/replayed/shadowed before sophisticated models; model dependency is capability-specific, not universal.
 
-## 19. Stage 13 — Maker Intelligence
+## 19. Evidence Stage 14 — Maker Intelligence (legacy index 13)
 
 - **OBJECTIVE / WHY:** collect and validate queue/fill/adverse-selection evidence before maker-led execution.
 - **WE MUST ALREADY KNOW:** maker arrival/rest/cancel/fill evidence can be labeled; L2 uncertainty is explicit.
@@ -212,7 +214,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** ALO availability without data, severe queue ambiguity, miscalibration/OOD or no lift stops promotion. Exit with supported maker forecast. Next receives MT/MTT experiment inputs.
 - **LIMITATION:** code support and order-type support are not behavioral validation.
 
-## 20. Stage 14 — Validate MT / MTT
+## 20. Evidence Stage 15 — Validate MT / MTT (legacy index 14)
 
 - **SEPARATE GATES:** `VALIDATE MT` and `VALIDATE MTT`; one mode's evidence never promotes the other.
 - **OBJECTIVE / WHY:** validate maker→taker and maker→taker→taker as distinct capabilities.
@@ -224,7 +226,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** fill/adverse/recovery miscalibration, unsupported queue/regime or using MT proof for MTT stops. Exit with mode-specific CapabilityManifest.
 - **LIMITATION:** successful ALO placement alone proves nothing about profitable/safe maker execution.
 
-## 21. Stage 15 — Capital Intelligence
+## 21. Evidence Stage 16 — Capital Intelligence (legacy index 15)
 
 - **OBJECTIVE / WHY:** learn where capital is productive, reachable and safely exit-capable after real opportunity statistics exist.
 - **WE MUST ALREADY KNOW:** actual inventory/reservations, Atlas history, terminal viability, current `Q_validated` and exits.
@@ -235,7 +237,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** raw route count/balance, missing exit or no point-in-time support blocks conclusion. Exit with supported capital-state and q curves. Next receives allocation inputs.
 - **LIMITATION:** Strategy, Bridge, Rebalance, Recovery and Stay remain distinct.
 
-## 22. Stage 16 — Portfolio Allocation
+## 22. Evidence Stage 17 — Portfolio Allocation (legacy index 16)
 
 - **OBJECTIVE / WHY:** move from one opportunity at a time to jointly constrained choices only after individual validity.
 - **WE MUST ALREADY KNOW:** each candidate is viable/Risk-eligible with size curves; shared balances/depth/inventory/Risk are modeled.
@@ -246,7 +248,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** double allocation, Risk bypass, instability/runtime excess or no lift rejects Challenger. Exit with scoped allocation evidence. Next receives joint capital context.
 - **LIMITATION:** portfolio optimization is not needed for initial one-route TT.
 
-## 23. Stage 17 — Bridge / Capital Relocation
+## 23. Evidence Stage 18 — Bridge / Capital Relocation (legacy index 17)
 
 - **OBJECTIVE / WHY:** determine whether an intentional move to another capital state beats STAY after all costs and risks.
 - **WE MUST ALREADY KNOW:** Atlas opportunity history, terminal viability, exits, sizing, Risk, portfolio/resource state and future utilization labels.
@@ -257,7 +259,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** transient edge, missing history/exit/support, flip-flop, unsafe terminal or STAY superiority rejects. Exit with separate Bridge capability evidence.
 - **LIMITATION:** Bridge is not OWA/arbitrage and never inherits strategy alpha validation.
 
-## 24. Stage 18 — Horizontal Scale
+## 24. Evidence Stage 19 — Horizontal Scale (legacy index 18)
 
 - **OBJECTIVE / WHY:** capture more independent validated opportunities before forcing size through finite depth.
 - **WE MUST ALREADY KNOW:** each added market/route/instance repeats required support and shared/correlation constraints are known.
@@ -268,7 +270,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** hidden shared depth/capital/risk, lost support or operations degradation stops/demotes. Exit only when added scope is independently validated.
 - **LIMITATION:** horizontal-first is a guiding heuristic, not a mathematical theorem; evidence may favor another choice.
 
-## 25. Stage 19 — Vertical Scale
+## 25. Evidence Stage 20 — Vertical Scale (legacy index 19)
 
 - **OBJECTIVE / WHY:** increase q on an existing capability only when the next size region is empirically supported.
 - **WE MUST ALREADY KNOW:** size-dependent fill, slippage, impact, completion, tails, Recovery, confidence, inventory and operations at/near next band.
@@ -279,7 +281,7 @@ Permanent roadmap shorthand: **Recorder first**; **Replay before advanced models
 - **FAILURE / EXIT / NEXT:** slippage/tail/recovery/OOD/infra/inventory degradation shrinks or revokes the band. Exit with explicit larger scope; poor evidence produces hold/downscale.
 - **LIMITATION:** `€50 worked → €5,000 works` and automatic compounding are invalid.
 
-## 26. Stage 20 — Infrastructure Scale
+## 26. Evidence Stage 21 — Infrastructure Scale (legacy index 20)
 
 - **OBJECTIVE / WHY:** buy/deploy speed or resilience only when attributable economics justify the complexity/cost.
 - **WE MUST ALREADY KNOW:** opportunity survival/capture and same-event benchmark can attribute recoverable loss.
@@ -322,7 +324,7 @@ Implementation flows into evidence, not capital. Only an explicit CapabilityMani
 
 ## 32. Capital permission matrix
 
-The stage-by-stage authority is [CAPITAL_PERMISSION_MATRIX.md](_analysis/pass12_build_validate_scale/CAPITAL_PERMISSION_MATRIX.md). Stages 0–9 carry no normal strategy capital. Stage 10 allows only an explicitly approved probe. Later capital remains bounded by the narrow current validated scope and can be withdrawn.
+The stage-by-stage authority is [CAPITAL_PERMISSION_MATRIX.md](_analysis/pass12_build_validate_scale/CAPITAL_PERMISSION_MATRIX.md). Evidence Stages 1–10 carry no normal strategy capital. Evidence Stage 11 allows only an explicitly approved probe. Later capital remains bounded by the narrow current validated scope and can be withdrawn. The linked historical matrix labels the same rows with legacy indices 0–20.
 
 ### Scaling evidence matrix
 
@@ -338,7 +340,7 @@ The authoritative PASS 12 map is [STOP_CONDITION_MATRIX.md](_analysis/pass12_bui
 
 ## 35. Technical-phase mapping
 
-[TECHNICAL_PHASE_TO_EVIDENCE_STAGE_MAP.md](_analysis/pass12_build_validate_scale/TECHNICAL_PHASE_TO_EVIDENCE_STAGE_MAP.md) maps all 26 technical phases to primary and continuing evidence stages. Recorder, Replay, Shadow and Micro-live remain recurring tools.
+[TECHNICAL_PHASE_TO_EVIDENCE_STAGE_MAP.md](_analysis/pass12_build_validate_scale/TECHNICAL_PHASE_TO_EVIDENCE_STAGE_MAP.md) maps all 26 technical phases to primary and continuing evidence stages. That historical PASS-12 artifact retains legacy zero-based indices; the one-based ordinal above is canonical for current review. Recorder, Replay, Shadow and Micro-live remain recurring tools.
 
 ## 36. What remains FUTURE
 
@@ -361,7 +363,7 @@ The path is: specify final contracts; record source truth; reconstruct state; ma
 
 ## 39. CORR-01 — Evidence journey integration
 
-CORR-01 adds no evidence stage. Stage 0 freezes funnel/metric/label/timing definitions; Stage 1 records bounded evidence; Stage 2 proves deterministic reconstruction and episode derivation; Stages 4–6 identify opportunities and forecasts without conflating them with attempts; Stage 7 reports only `would_*`; Stage 8 freezes join/calibration policy; Stage 10 obtains actual fills/reconciliation/economics under existing authority; Stages 11–20 use comparable funnel and economic evidence for capability/scale decisions.
+CORR-01 adds no evidence stage. Evidence Stage 1 freezes funnel/metric/label/timing definitions; Stage 2 records bounded evidence; Stage 3 proves deterministic reconstruction and episode derivation; Stages 5–7 identify opportunities and forecasts without conflating them with attempts; Stage 8 reports only `would_*`; Stage 9 freezes join/calibration policy; Stage 11 obtains actual fills/reconciliation/economics under existing authority; Stages 12–21 use comparable funnel and economic evidence for capability/scale decisions.
 
 The recurring doctrine is `measure -> attribute -> change -> remeasure -> capture-stage effect -> actual economic effect`. A technically faster system that cannot prove a comparable funnel/economic improvement remains unvalidated for scale.
 
@@ -371,7 +373,7 @@ Every performance change follows:
 
 `BASELINE → PROFILE → IDENTIFY HOTSPOT → FORM HYPOTHESIS → MAKE SEMANTICALLY SAFE CHANGE → PARITY → MICROBENCH → REPLAY → SHADOW → CAPTURE COMPARISON → ECONOMIC VALIDATION IF MATERIAL`.
 
-Stages 1–4 establish realistic event, book, graph, BBO and NetConvert workloads; Stage 5 supplies deterministic parity; later stages establish behavior under forecasts, Shadow and bounded capital only through their existing gates. A transparent optimization must retain the same DecisionTrace. A scheduling/coalescing change is explicitly semantic, versioned and human-reviewed. A local latency win without stable end-to-end, capture and robust economic evidence cannot justify promotion or infrastructure/language escalation. See the [Profiling and Bottleneck Protocol](_analysis/corr02_hot_path_performance/PROFILING_AND_BOTTLENECK_PROTOCOL.md).
+Evidence Stages 2–5 establish realistic event, book, graph, BBO and NetConvert workloads; Stage 6 supplies deterministic parity; later stages establish behavior under forecasts, Shadow and bounded capital only through their existing gates. A transparent optimization must retain the same DecisionTrace. A scheduling/coalescing change is explicitly semantic, versioned and human-reviewed. A local latency win without stable end-to-end, capture and robust economic evidence cannot justify promotion or infrastructure/language escalation. See the [Profiling and Bottleneck Protocol](_analysis/corr02_hot_path_performance/PROFILING_AND_BOTTLENECK_PROTOCOL.md).
 
 ## 41. CORR-03 — Observe, resolve, calibrate, then consider influence
 

@@ -28,7 +28,7 @@ Inert documentation, templates, schemas and hypotheses may exist before the gate
 | deep/causal/generative response models | RESEARCH | causal support absent | hypotheses only | local temporal evidence and incremental lift | none directly |
 | simple deterministic portfolio allocator | LATER_V1 | Phase 24 after valid single opportunities | interfaces/goldens | shared-constraint proof and baseline evidence | bounded only after promotion |
 | complex/regime portfolio optimization | RESEARCH | complexity/overfit/switching risk | offline spec | member validation, OOS/multiplicity, lift and switching safety | separately promoted only |
-| Bridge / Capital Relocation | LATER_V1 | Technical Phase 25 / Evidence Stage 17 | STAY/path/evidence specification | terminal/exit/history/persistence plus separate probe | separately promoted |
+| Bridge / Capital Relocation | LATER_V1 | Technical Phase 25 / Evidence Stage 18 | STAY/path/evidence specification | terminal/exit/history/persistence plus separate probe | separately promoted |
 | horizontal scaling | LATER_V1 | each new market/route is a new scope | experiment proposals | exact CapabilityManifest/evidence per scope | no automatic expansion |
 | vertical/q scaling | LATER_V1 | q validity may be non-monotonic | propose exact q experiments | every exact q passes all current gates | no capital-based increase |
 | private node / higher-fidelity feed challenger | RESEARCH | current capability/reliability/economics uncertain | isolated capture/benchmark spec | external revalidation, paired evidence, security and promotion | public-feed baseline unaffected |
@@ -50,7 +50,7 @@ A model Challenger may be trained/evaluated observe-only within Later-V1 model w
 
 ## Search, Simulator and Monte Carlo
 
-Search proposes candidate configurations. The canonical Simulator evaluates scenarios. Monte Carlo repeats coherent supported Simulator scenarios to estimate uncertainty. None may change Formula/Risk, create actual labels, raise `Q_validated` or authorize execution. `q <= sup(Q_validated)` is not permission; exact-q evidence and gates are mandatory.
+Search proposes candidate configurations. The canonical Simulator evaluates scenarios. Monte Carlo repeats coherent supported Simulator scenarios to estimate uncertainty. None may change Formula/Risk, create actual labels, raise `Q_validated` or authorize execution. `q <= Q_validated` is not permission; exact-q evidence and gates are mandatory.
 
 ## Scientific lifecycle, claims and drift
 

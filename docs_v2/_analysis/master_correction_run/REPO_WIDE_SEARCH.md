@@ -31,3 +31,19 @@ The focused correction searched `Maker/TM/MM`, `TM/MM activation`, `HPD-01`, `Ph
 | former moving/final-freeze placeholders on live surfaces | zero after post-C identity attestation |
 
 No formula, Risk, execution transition, Replay ordering, Bridge, Participant, Simulator, infrastructure or external-fact domain was reopened.
+
+## Final governance & review search supplement
+
+The second focused search added Review 01–04, canonical scope classes, TTT evidence numbering and the validated-set/supremum distinction.
+
+| Search/match class | Classification and disposition |
+|---|---|
+| `A — foundation`, `B — first strategy`, `C — later V1`, `D — Research`, `E — Future` | `STALE` on current Review 02 and removed; historical occurrence elsewhere is not ScopeClass authority |
+| TTT under `Stage 12` | zero-based PASS-12 index is `HISTORICAL/LEGACY`; current ordinal is Evidence Stage 13 and is explicitly mapped |
+| `Q_validated is the set`, `Q_validated support set`, `sup(Q_validated)`, non-monotonic `Q_validated` | `STALE` on current Masters/reviews and corrected; older analysis/report prose is `HISTORICAL/SUPERSEDED` |
+| `q <= Q_validated` | `CURRENT NORMATIVE` only where explicitly stated insufficient/not permission |
+| `Maker/TM/MM`, `TM/MM activation`, OPEN-012 broad wording | `HISTORICAL` in point-in-time PASS/source ledgers; current HPD-01 is MT/MTT-only and TM/MM is Future |
+| Candidate/Commit A, Review Envelope/Package C, Commit B | `CURRENT NORMATIVE` only with exact A+C review, exact-C future source and B absent; earlier envelope identities are lineage |
+| `PENDING FINAL FREEZE`, `freeze after Phase 21`, moving HEAD authority | no live current-review authority; historical statements remain classified by their reports |
+
+Current normative contradictions after correction: `0`. The Formula Book, Risk, Execution transitions, Replay ordering, Bridge economics, participant/simulator semantics and external-fact claims were not changed.

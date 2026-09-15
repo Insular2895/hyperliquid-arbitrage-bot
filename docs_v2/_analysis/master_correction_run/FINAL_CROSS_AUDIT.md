@@ -59,3 +59,25 @@ This supplement is outside the historical 17-prompt sequence and leaves its chec
 Aligned Review Envelope C exact identity: `fd2bca5b4a16263723692d2a9c6536235577af69` / tree `6f6bbf156f1a1534919b6f0368f51b15c1128b2c` / `docs_v2` tree `6128fc8d07bb6fa5925f54a5b4637e5e9b957b43`. Commit B remains `ABSENT`.
 
 **POST-RUN RESULT: PASS — POST-RUN GOVERNANCE ALIGNMENT COMPLETE.**
+
+## Final governance & review alignment supplement
+
+This supplement supersedes the prior post-run result only as the current review-envelope record. It does not rewrite the original run or Candidate A.
+
+| Required invariant | Focused result |
+|---|---|
+| identity chain | A immutable; final C exact and separately attested; B absent; human review binds A+C; future switchover source is exact approved C |
+| moved HEAD | expected `b6c03d1`; actual input `bf5fa0e`; intervening `fd2bca5`/`bf5fa0e` changes are documentary-only and compatible |
+| MT/MTT | `LATER_V1`, Technical Phase 23 and HPD-01 bounded scope only |
+| TM/MM | `FUTURE`, outside Phase 23 and HPD-01; representable is not implemented/validated/authorized |
+| Gate semantics | Phase 19 = Phase 21: B pending; C/D/E/G not available; F not started; capabilities not authorized |
+| Review 01 | same-venue/OWA/Triangle/ActualFill/UNKNOWN/Core/Bridge boundaries retained; TT enters bounded Micro-live only after Replay and sustained Shadow |
+| Review 02 taxonomy | exactly `FOUNDATION`, `LATER_V1`, `RESEARCH`, `FUTURE`, `REJECTED`; program role is separate |
+| TTT evidence | Evidence Stage 13, following Evidence Stage 12 TT; historical zero-based index 12 explicitly labeled |
+| Review 03 | unchanged; no conflicting Formula/Risk/Execution authority or auto-promotion |
+| Review 04 SI-022 | validated-q set may contain holes; `Q_validated` is its QF-076 supremum/boundary, never the set itself |
+| exact-q implication | every selected q passes `Gates(q)` independently unless exact-scope monotonicity is separately proved; `q <= Q_validated` is insufficient |
+| authority separation | documentation approval ≠ switchover authorization ≠ switchover acceptance ≠ Phase-1 authorization ≠ Phase-2 authorization ≠ capital authorization |
+| code/legacy docs/runtime | unchanged; no switchover, implementation, deployment, research activation or capital action |
+
+Final Review Envelope C exact identity: `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` / tree `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION` / `docs_v2` tree `REVIEW_ENVELOPE_C_DOCS_TREE_PENDING_ATTESTATION`. Commit B remains `ABSENT`; documentation remains `AWAITING HUMAN REVIEW`.

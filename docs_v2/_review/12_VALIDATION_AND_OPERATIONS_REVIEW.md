@@ -15,7 +15,7 @@
 
 Maturity belongs to a versioned capability scope, never the whole bot. `CapabilityManifest` binds dependencies and their maturity, market/route/mode/q band, artifacts, evidence, expiry and demotion rules. A dependency regression, drift, incident or semantic change demotes or disables dependent scopes.
 
-`NOT_APPLICABLE` excludes a dependency stage from the maturity minimum only with recorded rationale, substitute proof and review showing that the stage has no independent live-economic meaning. It is not a low maturity or a testing bypass. `size_range` is only an envelope; exact-q membership in the evidenced, potentially non-monotonic `Q_validated` set and current `Gates(q)` remain mandatory.
+`NOT_APPLICABLE` excludes a dependency stage from the maturity minimum only with recorded rationale, substitute proof and review showing that the stage has no independent live-economic meaning. It is not a low maturity or a testing bypass. `size_range` is only an envelope; exact-q membership in the evidenced, potentially non-monotonic validated-q set and current `Gates(q)` remain mandatory. QF-076's scalar `Q_validated` is only that set's supremum/boundary.
 
 ## Required evidence progression
 

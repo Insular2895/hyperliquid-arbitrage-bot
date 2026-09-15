@@ -68,7 +68,7 @@ Risk owns hard invariants, gate order, action classes and fail-safe behavior. Th
 
 ## 7. Sizing and exact-q validity
 
-`Q_validated` is q-specific and potentially non-monotonic. `q <= sup(Q_validated)` and membership in `size_range` do not prove q valid. Every capital-bearing q must be inside the manifest envelope, supported by linked evidence and pass current gates at that exact q. Grids/bands never create fictitious continuous permission.
+The documentary `ValidatedQSet = {q : Gates(q)=TRUE}` is q-specific and potentially non-monotonic; QF-076's scalar `Q_validated = sup(ValidatedQSet)` is only its boundary. `q <= Q_validated` and membership in `size_range` do not prove q valid. Every capital-bearing q must be inside the manifest envelope, supported by linked evidence and pass current gates at that exact q. Grids/bands never create fictitious continuous permission.
 
 ## 8. Evidence stage versus activation maturity
 

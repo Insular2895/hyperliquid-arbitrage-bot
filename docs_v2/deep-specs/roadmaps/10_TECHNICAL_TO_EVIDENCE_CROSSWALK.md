@@ -7,8 +7,8 @@ AWAITING HUMAN REVIEW
 
 Technical phases order producer/consumer implementation. Evidence stages order what claims become defensible. A many-to-many mapping is unavoidable:
 
-- Recorder starts in Phase 3/Stage 1 and serves every later stage.
-- Replay starts in Phase 8/Stage 5 and remains the regression, incident, model and capacity instrument.
+- Recorder starts in Technical Phase 3 / Evidence Stage 2 and serves every later stage.
+- Replay starts in Technical Phase 8 / Evidence Stage 6 and remains the regression, incident, model and capacity instrument.
 - Execution phases 12–14 progress from M1 deterministic tests through M2 Replay, M3 Shadow, M4 probes and M5 scoped Live.
 - Participant Phase 21 consumes data collected by phases/stages much earlier.
 - Scaling Phase 26 uses evidence generated across nearly the entire system.

@@ -67,7 +67,7 @@ An EvidenceId identifies an immutable package containing claim/scope, requiremen
 
 ## 15. CapabilityManifest
 
-Source-backed `ValidatedCapability` fields are `strategy`, `market_scope`, `size_range`, `execution_mode`, `model_versions`, `validation_level`, `valid_from`, `last_review`, and `restrictions`. `size_range` is a declared envelope, not proof that every interior quantity is valid. Every requested exact `q` must be in the manifest envelope, in the evidenced `Q_validated` support set, and pass all current gates. A release carries zero or more entries linked to evidence. Other version identities remain in linked manifests unless Data governance extends the schema.
+Source-backed `ValidatedCapability` fields are `strategy`, `market_scope`, `size_range`, `execution_mode`, `model_versions`, `validation_level`, `valid_from`, `last_review`, and `restrictions`. `size_range` is a declared envelope, not proof that every interior quantity is valid. Every requested exact `q` must be in the manifest envelope, in the evidenced validated-q set, and pass all current gates. QF-076's scalar `Q_validated` is the supremum/boundary of that set, not a membership predicate. A release carries zero or more entries linked to evidence. Other version identities remain in linked manifests unless Data governance extends the schema.
 
 ## 16. Runtime capability intersection
 
@@ -170,7 +170,7 @@ DoD is evidence-backed completion of a declared scope, not a global project labe
 
 ## 37. Q_validated and scaling
 
-`Q_validated` is the set of exact quantities that pass every gate in current support. Its supremum may be reported, but it does not imply a continuous interval: `100` and `200` can be valid while `150` is invalid. Increase only through evidenced quantity points/bands with next-scope Simulator, execution, impact/tail/inventory and operational proof. It contracts on drift, incidents, stale evidence or lost support. Larger account capital and raw book depth do not increase it.
+Let `ValidatedQSet = {q : Gates(q)=TRUE}` denote the exact quantities that pass every gate in current support. The set may contain holes: `100` and `200` can be valid while `150` is invalid. QF-076 defines `Q_validated = sup(ValidatedQSet)`; `q <= Q_validated` does not establish membership. Every selected q must independently pass current gates unless exact-scope monotonicity is separately proved and versioned. The set can expand or contract through evidence, drift, incidents or lost support. Larger account capital and raw book depth do not enlarge it.
 
 ## 49. Phase 12 — current evidence and permission
 

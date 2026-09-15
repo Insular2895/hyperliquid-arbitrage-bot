@@ -13,13 +13,13 @@ No gate below is approved. `PENDING` means a decision is currently eligible but 
 | Field | Current value |
 |---|---|
 | Semantic Candidate A SHA/tree | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
-| Review Envelope C SHA/tree | `fd2bca5b4a16263723692d2a9c6536235577af69` / `6f6bbf156f1a1534919b6f0368f51b15c1128b2c`; never moving HEAD |
+| Review Envelope C SHA/tree | `REVIEW_ENVELOPE_C_SHA_PENDING_ATTESTATION` / `REVIEW_ENVELOPE_C_TREE_PENDING_ATTESTATION`; never moving HEAD |
 | branch | `codex-docs` |
 | review manifest | `_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md` |
 | review subject | exact semantic A together with exact review/governance envelope C |
 | traceability | Phase-18 Candidate-A certificate plus explicit A→C L3/L4 review-package lineage |
 | human-policy count | 2 as derived in A; C narrows HPD-01 to MT/MTT without changing the count; never hard-coded |
-| safety-invariant set | all applicable `SI-*` in A and carried unchanged by C (currently derived 29), never hard-coded |
+| safety-invariant set | all applicable `SI-*` from A, with SI-022 review wording aligned in C to QF-076 (currently 29 unique IDs), never hard-coded |
 
 ## Independent gates
 
@@ -30,7 +30,7 @@ No gate below is approved. `PENDING` means a decision is currently eligible but 
 | C — Switchover Authorization | human permits procedural `docs_v2 -> docs` transformation from exact approved C while preserving semantic identity A | separate exact-scope record | NOT_AVAILABLE — Gate B not approved |
 | D — Canonical Switchover Acceptance | human accepts generated Commit B after manifest/diff/link/rollback proof | Commit C→B evidence carrying semantic A and reviewer record | NOT_AVAILABLE — Gate C not approved; Commit B absent |
 | E — Phase 1 Implementation Authorization | human permits exact Phase-1 scope from accepted Commit B | AuthorizationRecord bound to Commit B SHA | NOT_AVAILABLE — Gate D not accepted |
-| F — Phase 1 Exit | Phase-1 DoD evidence is accepted | versioned M1 report and deviations | NOT STARTED |
+| F — Phase 1 Exit | Phase-1 DoD evidence is accepted | versioned M1 report and deviations | NOT_STARTED |
 | G — Phase 2 Authorization | human separately permits Phase 2 after Gate F | new exact-scope AuthorizationRecord | NOT_AVAILABLE — Gate F not accepted |
 
 Completing one row does not change any other row. No checkbox or blanket signature can cover multiple decision types.
@@ -43,7 +43,7 @@ Transitions are explicit and non-automatic: Gate-B approval makes Gate C `PENDIN
 
 Phase 14 recomputes genuine human-policy families; Phase 19 consumes that result rather than “exactly eight.” Each applicable family receives its own scoped disposition. HDC-001..094 are a traced post-source requirements package, not 94 policy decisions and not blanket-approved through documentation acceptance; any per-item activation/promotion boundary remains governed by its owner.
 
-The invariant review enumerates all applicable `SI-*` resolved from Semantic Candidate A and carried in Review Envelope C. The current set contains 29, but the gate stores IDs/hash/count derived from the exact package, not a permanent “29” assumption. Source no-loss is necessary evidence, not sufficient semantic approval.
+The invariant review enumerates all applicable `SI-*` resolved from Semantic Candidate A and reviewed in Review Envelope C. C does not add or remove an invariant ID; it corrects SI-022's summary wording to distinguish the validated-q set from QF-076's scalar supremum. The current set contains 29, but the gate stores IDs/hash/count derived from the exact package, not a permanent “29” assumption. Source no-loss is necessary evidence, not sufficient semantic approval.
 
 ## Phase 1 exact authorized scope
 

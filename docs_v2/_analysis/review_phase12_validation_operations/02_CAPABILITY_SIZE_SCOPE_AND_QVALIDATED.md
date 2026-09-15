@@ -1,6 +1,6 @@
 # Capability Size Scope and Q_validated
 
-`size_range` is a coarse manifest envelope. `Q_validated` is exact evidenced support and may be non-monotonic; runtime also evaluates current `Gates(q)`.
+`size_range` is a coarse manifest envelope. Documentary `ValidatedQSet` is the exact evidenced support and may be non-monotonic; QF-076's scalar `Q_validated` is its supremum/boundary, while runtime evaluates current `Gates(q)` for every selected q.
 
 | q | In envelope 0..200 | Evidence support | Current gates | New risk |
 |---:|---:|---:|---:|---:|
