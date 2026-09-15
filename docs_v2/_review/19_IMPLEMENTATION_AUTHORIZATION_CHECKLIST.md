@@ -12,10 +12,10 @@ No gate below is approved. `PENDING` is a documentary state, not an unchecked im
 
 | Field | Current value |
 |---|---|
-| Candidate A SHA/tree | `PENDING — freeze after Phase 21; one canonical field only` |
+| Candidate A SHA/tree | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
 | branch | `codex-docs` |
 | review manifest | `_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md` |
-| traceability | Phase-18 certificate; delta recertification required for final Candidate A |
+| traceability | Phase-18 certificate plus Candidate-A delta recertification: present |
 | human-policy count | derived from Candidate A Phase 14 (currently 2), never hard-coded |
 | safety-invariant set | all applicable `SI-*` in Candidate A (currently derived 29), never hard-coded |
 
@@ -23,7 +23,7 @@ No gate below is approved. `PENDING` is a documentary state, not an unchecked im
 
 | Gate | Decision | Required record/evidence | Current status |
 |---|---|---|---|
-| A — Review Package Completeness | package is internally complete and exact-snapshot traceable | manifest, cross-audit, non-stale Phase-18 certificate | PENDING |
+| A — Review Package Completeness | package is internally complete and exact-snapshot traceable | manifest, cross-audit, non-stale Phase-18 certificate | MECHANICAL CHECK PASS; HUMAN CONFIRMATION PENDING |
 | B — Documentation Approval | human accepts Candidate A as documentation baseline | reviewer/time/exact SHA/scope/decision | PENDING |
 | C — Switchover Authorization | human permits procedural `docs_v2 -> docs` transformation | separate exact-scope record | PENDING |
 | D — Canonical Switchover Acceptance | human accepts generated Commit B after manifest/diff/link/rollback proof | Commit A→B evidence and reviewer record | PENDING; Commit B absent |

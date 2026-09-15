@@ -10,13 +10,13 @@ This form records decisions; it executes none. `DEFAULT STATE = NOT_AUTHORIZED`.
 
 | Field | Value / status |
 |---|---|
-| Candidate commit A | `PENDING FINAL FREEZE — recorded by the post-Phase-21 attestation; never moving HEAD` |
-| Candidate tree / manifest hash | `PENDING` |
-| Phase-18 delta certificate for A | `PENDING` |
-| review package completeness | `PENDING` |
+| Candidate commit A | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` on `codex-docs` — immutable content snapshot, never moving HEAD |
+| Candidate tree / manifest | tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`; [review manifest](../_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md) |
+| Phase-18 delta certificate for A | `PRESENT` — [Candidate-A recertification](../_analysis/phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md) |
+| review package completeness | `MECHANICAL CHECK PASS — HUMAN CONFIRMATION PENDING` |
 | reviewer / date | `PENDING` |
 
-No later stage is available until one exact A/tree/manifest and non-stale certificate are verified.
+The exact A/tree/manifest and non-stale certificate are mechanically verified. No later stage is available until a human confirms Stage 0 and records Stage 1.
 
 ## Stage 1 — Documentation Decision
 
@@ -97,7 +97,7 @@ Semantic change to the approved commit, scope, applicable invariant or certifica
 ## Final status summary
 
 ```text
-ReviewPackageIdentity: PENDING FINAL FREEZE
+ReviewPackageIdentity: EXACT CANDIDATE RECORDED / HUMAN CONFIRMATION PENDING
 DocumentationDecision: PENDING
 HumanPolicyDecisions: PENDING / MAY BE DEFERRED BY SCOPE
 SwitchoverAuthorization: NOT_AVAILABLE

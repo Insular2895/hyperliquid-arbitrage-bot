@@ -70,6 +70,10 @@ Status is `CERTIFIED_AT_SNAPSHOT`, `DELTA_RECERTIFICATION_REQUIRED` after semant
 
 Future corrections supersede through lineage; they do not rewrite PASS00/PASS15 history. A current certificate always binds exact commit/tree, artifact hashes and generation time.
 
+## Candidate-A delta status
+
+The [Candidate-A delta recertification](../_analysis/phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md) binds final content snapshot `4b1b2ea2a2cc179c01707ec6eed175fde898e808`. It confirms unchanged L0 source identities and unchanged critical extraction/mapping artifacts, then classifies the later Phase-18–21 and final cross-domain edits as L3/L4 overlays. This makes the certificate current for review of Candidate A; it does not grant semantic approval or implementation authority.
+
 ## Acceptance boundaries
 
 Traceability certification != documentation approval. Documentation approval != Phase-1 implementation authorization. Phase-1 authorization != Phase-2 authorization. Source hashes != current external truth. No-loss != semantic correctness. Formula source coverage != formula validation. All approval/implementation/capital/switchover gates remain pending.

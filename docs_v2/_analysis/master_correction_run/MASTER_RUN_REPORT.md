@@ -1,6 +1,6 @@
 # Master Correction Run Report
 
-`DOCUMENTATION STATUS: IN PROGRESS — AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: CORRECTION RUN COMPLETE — AWAITING HUMAN REVIEW`
 
 ## 1. Run identity
 
@@ -16,13 +16,15 @@
 | Real capital | `NOT AUTHORIZED` |
 | `docs_v2 -> docs` | `NOT EXECUTED` |
 
+Final content Candidate A is commit `4b1b2ea2a2cc179c01707ec6eed175fde898e808`, tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`. The post-freeze attestation records that immutable content identity and does not redefine it through moving HEAD.
+
 The pre-run worktree contained no tracked change. The pre-existing untracked `.DS_Store` is unrelated, excluded from every commit and not treated as correction input.
 
 ## 2. Corpus discovery
 
-The supplied containers hold 17 unique formal correction prompts, ordered unambiguously by their internal phase numbers 05–21. The Phase 21 prompt appears twice in the same source; comparison excluding the duplicate copy’s leading Unicode whitespace is byte-identical, so it is one prompt represented twice, not two correction phases. The master prompt is excluded.
+The supplied containers hold 17 unique formal correction prompts, ordered unambiguously by their internal phase numbers 05–21. The Phase 21 prompt appears twice in the same source; after removing the duplicate copy's two leading `U+2028` separators, both copies have SHA-256 `2425d3ae1e924a3746a3573a7f23addccf967c068b472f84d577732e380c768a`. It is one prompt represented twice, not two correction phases. The master prompt is excluded.
 
-No dedicated formal correction prompt for Phases 01–04 is present in the supplied corpus. The first source contains preliminary notes relevant to strong typing, scoped quarantine, Recorder priorities, Book readiness and architecture, but those notes do not identify themselves as Phase 01–04 correction prompts or prescribe four deterministic checkpoints. They are supporting evidence, not invented prompts. Because the user requested coverage of passages 1–21, review files 01–04 receive an explicit verification-only audit before Phase 05; no absent correction is fabricated.
+No dedicated formal correction prompt for Phases 01–04 is present in the supplied corpus. The first source contains preliminary notes relevant to strong typing, scoped quarantine, Recorder priorities, Book readiness and architecture, but those notes do not identify themselves as Phase 01–04 correction prompts or prescribe four deterministic checkpoints. They are supporting evidence, not invented prompts. Because the user requested coverage of passages 1–21, review files 01–04 received an explicit verification-only audit during the final cross-audit after Phase 21; no absent correction is fabricated.
 
 ## 3. Ordered execution manifest
 
@@ -52,11 +54,13 @@ There is no dependency cycle, unexplained duplicate phase or missing predecessor
 
 | Passage | Review document | Prompt supplied | Run treatment | Status |
 |---:|---|---|---|---|
-| 01 | `01_EXECUTIVE_PROJECT_SUMMARY.md` | no dedicated prompt | verify against cumulative final state | `PENDING` |
-| 02 | `02_FINAL_SYSTEM_SCOPE.md` | no dedicated prompt | verify against cumulative final state | `PENDING` |
-| 03 | `03_CANONICAL_DECISIONS_SUMMARY.md` | no dedicated prompt | verify against cumulative final state | `PENDING` |
-| 04 | `04_SAFETY_CRITICAL_INVARIANTS.md` | no dedicated prompt | verify against cumulative final state | `PENDING` |
-| 05–21 | corresponding review documents | yes; Phase 21 duplicated | execute sequentially with dedicated checkpoints | `PENDING` |
+| 01 | `01_EXECUTIVE_PROJECT_SUMMARY.md` | no dedicated prompt | verified against cumulative Candidate A | `PASS` |
+| 02 | `02_FINAL_SYSTEM_SCOPE.md` | no dedicated prompt | verified against cumulative Candidate A | `PASS` |
+| 03 | `03_CANONICAL_DECISIONS_SUMMARY.md` | no dedicated prompt | verified against cumulative Candidate A | `PASS` |
+| 04 | `04_SAFETY_CRITICAL_INVARIANTS.md` | no dedicated prompt | verified against cumulative Candidate A | `PASS` |
+| 05–21 | corresponding review documents | yes; Phase 21 duplicated | executed sequentially with 17 dedicated checkpoints | `PASS` |
+
+The exact per-passage ledger is [PROMPT_COVERAGE.md](PROMPT_COVERAGE.md); the verification-only treatment of 01–04 is [PASSAGES_01_04_AUDIT.md](PASSAGES_01_04_AUDIT.md).
 
 ## 5. Cumulative progress ledger
 
@@ -78,12 +82,31 @@ There is no dependency cycle, unexplained duplicate phase or missing predecessor
 | 014 | 18 | `PASS` | `caaa251` / `4375c50` | `0cbe2f6` / `7f12d49` | traceability review + manifest/report | later L3 semantic deltas require recertification | none for documentation review | 8/8 hashes; L0–L4/count/snapshot PASS |
 | 015 | 19 | `PASS` | `0cbe2f6` / `7f12d49` | `0d74da7` / `0353f76` | authorization review/invariant map + manifest/audit/report | final Candidate A freeze and human decisions pending | none for documentation review | gates A–G/SHA/scope/stops/default deny PASS |
 | 016 | 20 | `PASS` | `0d74da7` / `0353f76` | `d7546a4` / `8d5c971` | switchover review + manifest/link/record templates/report | A freeze and all human gates pending | none for documentation review | A/B/retention/equivalence/rollback/STOP PASS |
-| 017 | 21 | `PASS` | `d7546a4` / `8d5c971` | recorded after commit | final form/Start Here + stage audit/report | all human decisions pending/not available | none for documentation review | stages 0–8/default deny/A-B/Phase1 STOP PASS |
+| 017 | 21 | `PASS` | `d7546a4` / `8d5c971` | `129d3ad` / `4b44d7c` | final form/Start Here + stage audit/report | all human decisions pending/not available | none for documentation review | stages 0–8/default deny/A-B/Phase1 STOP PASS |
 
 ## 6. Final audit
 
-`PENDING`
+Final cross-domain corrections and the passage-01–04 verification were frozen as Candidate A `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`.
+
+| Control | Result |
+|---|---|
+| formal supplied prompts | 17/17 executed one by one, Phases 05–21 |
+| duplicated Phase 21 | one normalized-identical duplicate; executed once |
+| review passages | 01–21 present; 01–04 explicitly verified, 05–21 formally corrected |
+| source identity | 8/8 local SHA-256 matches |
+| traceability | five critical L0–L2 artifacts unchanged; Candidate-A delta recertified |
+| OPEN/HDC | 28/28 classified; 94/94 mapped; zero unmapped |
+| derived policy families | 2 current genuine families, scope-bounded |
+| external facts | 23/23 EXT IDs present; still consumer-freshness gated |
+| invariants | SI-001..SI-029, 29 unique; count derived from exact candidate |
+| `Q_validated` | exact possibly non-monotonic supported set/supremum; no interval inference |
+| local Markdown targets | zero missing targets in final scan |
+| unrelated worktree content | pre-existing `.DS_Store` excluded from all commits |
+
+Evidence: [final cross-audit](FINAL_CROSS_AUDIT.md), [repository-wide search](REPO_WIDE_SEARCH.md), [invariant check](INVARIANT_CHECK.md), [Candidate-A delta certificate](../phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md) and [review manifest](../phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md).
 
 ## 7. Final state
 
-`PENDING — run in progress`
+`PASS WITH NON-BLOCKING OPEN ITEMS — READY FOR HUMAN DOCUMENTATION REVIEW`
+
+This is a documentary result only. Documentation approval remains pending. Implementation, research runtime, deployment, `docs_v2 -> docs` switchover, Commit B creation, Phase 1, later phases, Micro-live, Live, Bridge, scaling and real capital remain unexecuted or unauthorized according to their respective gates.

@@ -10,7 +10,7 @@ This is a deterministic future procedure only. Phase 19 owns permission; Phase 2
 
 | Identity | Meaning | Current state |
 |---|---|---|
-| Commit A | exact final reviewed `docs_v2` candidate plus approved manifest | `PENDING — freeze after Phase 21; never substitute moving HEAD or CORR-06` |
+| Commit A | exact frozen `docs_v2` content candidate; its post-freeze attestation/manifest does not redefine its semantic content | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
 | Commit B | separate path-only switchover result produced from A | `ABSENT` |
 
 Target chain:

@@ -8,6 +8,8 @@
 
 This package turns the reconstructed corpus into a finite human decision. It is documentary evidence only: implementation, the `docs_v2` → `docs` switchover, Micro-live and Live all remain unauthorized.
 
+Frozen content candidate A is `4b1b2ea2a2cc179c01707ec6eed175fde898e808` (tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`). The later attestation commit records that identity and audit evidence without authorizing any decision or executing the switchover.
+
 ## Decision sequence
 
 First freeze/review exact Candidate A. Documentation approval does not authorize switchover. A separate switchover authorization permits only the Phase-20 procedure; generated Commit B then requires separate human acceptance. Only after B acceptance can a later record authorize **technical Phase 1 only** on exact B. Phase 1 contains domain types, units, identifiers, schema/version contracts, `Clock`, explicit RNG, `RunManifest` foundations and tests. It contains no network connection, exchange adapter, strategy decision, order, signer or capital effect.
