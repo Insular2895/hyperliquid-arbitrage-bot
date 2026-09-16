@@ -49,7 +49,7 @@ Only:
 4. preserve `_analysis`, `_review`, source timestamps and historical provenance according to the approved retention policy;
 5. remove the temporary legacy copy only after every validation passes, relying on recorded Git pre-state for recovery.
 
-The B diff may affect only `docs/**` and `docs_v2/**`. No source code, Cargo, Docker, CI, runtime config, tests or semantic documentation edits are allowed. Historical prose mentioning `docs_v2` remains when it describes chronology; only resolvable path/link targets listed in `LinkRewriteManifest` change. Ambiguity is STOP and requires C2 review; any necessary semantic change additionally creates A2.
+The B diff may affect only `docs/**` and `docs_v2/**`. No source code, Cargo, Docker, CI, runtime config, tests or semantic documentation edits are allowed. Historical prose mentioning `docs_v2` remains when it describes chronology; only resolvable path/link targets listed in `LinkRewriteManifest` change. Ambiguity is STOP and requires a new candidate F2 and a new documentation review. Any semantic or governance correction creates F2; nothing is modified during migration.
 
 ## Deterministic execution sequence
 
@@ -71,7 +71,7 @@ The B diff may affect only `docs/**` and `docs_v2/**`. No source code, Cargo, Do
 16. If accepted, mark B as canonical baseline and STOP.
 17. Phase 1 still requires separate `Phase1Authorization(B)` and a branch based exactly on B.
 
-Counts are diagnostics; the ApprovedDocumentationManifest is primary. Missing file/link, count/tree/hash mismatch, unclassified diff, certificate failure, unreachable A or changed A causes STOP.
+Counts are diagnostics; the ApprovedDocumentationManifest is primary. Missing file/link, count/tree/hash mismatch, unclassified diff, certificate failure, unreachable F, or any mismatch/change in the exact approved F commit SHA, tree SHA, `docs_v2` tree or manifest causes STOP.
 
 ## Manifest and semantic-equivalence evidence
 
