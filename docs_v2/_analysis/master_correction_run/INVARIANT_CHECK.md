@@ -1,8 +1,10 @@
 # Candidate-A Invariant Check
 
-`STATUS: PASS AS DOCUMENTATION — NOT PROVEN IN CODE`
+`STATUS: HISTORICAL CANDIDATE-A CHECK — SUPERSEDED FOR CURRENT REVIEW IDENTITY`
 
 Candidate A: `4b1b2ea2a2cc179c01707ec6eed175fde898e808`.
+
+This remains immutable audit evidence for the historical checkpoint. The applicable invariant set for current review is derived from exact Final Review Candidate F; A is not the current review or switchover source.
 
 | Check | Result |
 |---|---|

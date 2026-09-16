@@ -2,7 +2,7 @@
 
 `DOCUMENTATION STATUS: MASTER CORRECTION PHASES 05–21 COMPLETE — HUMAN REVIEW PENDING`
 
-> **CURRENT REVIEW CANDIDATE.** CORR-01 through CORR-06, the deferred scientific/async extensions and the final master correction run are complete. The 17 supplied formal prompts, Phases 05–21, were applied sequentially; review passages 01–04 were verified against the cumulative candidate because no separate formal prompts for them were supplied. Human approval, implementation, research activation and the `docs_v2` → `docs` switchover remain unauthorized.
+> **FINAL REVIEW CANDIDATE.** CORR-01 through CORR-06, the deferred scientific/async extensions, the final master correction run and the self-reference-safe freeze are complete. The exact immutable commit selected by the human reviewer becomes Final Review Candidate F and is recorded externally in the DecisionRecord; this corpus does not self-embed its own Git identity. Human approval, implementation, research activation and the `docs_v2` → `docs` switchover remain unauthorized.
 
 `docs_v2` est reconstruit exclusivement depuis les huit sources originales. Le dossier `/docs` est une référence legacy en lecture seule et n'est pas une autorité de conception. La reconstruction, l'audit transversal et la vérification source sans perte sont terminés comme **candidat**; l'approbation humaine, le basculement documentaire et toute implémentation restent en attente.
 
@@ -13,7 +13,8 @@ PASS 00 cartographie les exigences, formules, concepts, conflits et destinations
 - [Final human review — Start here](./_review/00_REVIEW_START_HERE.md)
 - [Master correction run — exact prompt/pass ledger](./_analysis/master_correction_run/MASTER_RUN_REPORT.md)
 - [Prompt-by-prompt coverage 01–21](./_analysis/master_correction_run/PROMPT_COVERAGE.md)
-- [Post-run governance & review alignment — A/C/B, mode/gate scope and Reviews 01/02/04](./_analysis/master_correction_run/POST_RUN_GOVERNANCE_ALIGNMENT.md)
+- [Final documentation freeze — self-reference-safe F/B governance](./_analysis/master_correction_run/FINAL_DOCUMENTATION_FREEZE.md)
+- [Historical post-run A/C alignment](./_analysis/master_correction_run/POST_RUN_GOVERNANCE_ALIGNMENT.md)
 - [CORR-06 final handoff](./_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md)
 - [PASS 16 final report](./_analysis/pass16_human_review/PASS16_FINAL_REPORT.md)
 - [Scientific iteration / future strategy research](./deep-specs/strategy-research/README.md)

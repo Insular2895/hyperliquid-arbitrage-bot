@@ -12,26 +12,27 @@ No gate below is approved. `PENDING` means a decision is currently eligible but 
 
 | Field | Current value |
 |---|---|
-| Semantic Candidate A SHA/tree | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
-| Review Envelope C SHA/tree | `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` / `c6588a09465dca730f39646bec08231eb7df7ede`; never moving HEAD |
+| Final Review Candidate | exact immutable Git commit selected for review as F |
+| Candidate identity location | future human `DocumentationDecision` / `ReviewRecord`: exact F commit SHA, tree SHA and `codex-docs` branch |
 | branch | `codex-docs` |
 | review manifest | `_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md` |
-| review subject | exact semantic A together with exact review/governance envelope C |
-| traceability | Phase-18 Candidate-A certificate plus explicit A→C L3/L4 review-package lineage |
-| human-policy count | 2 as derived in A; C narrows HPD-01 to MT/MTT without changing the count; never hard-coded |
-| safety-invariant set | all applicable `SI-*` from A, with SI-022 review wording aligned in C to QF-076 (currently 29 unique IDs), never hard-coded |
+| review subject | complete exact F corpus; moving HEAD or the latest branch tip is never sufficient identity |
+| historical lineage | A/C/post-C preserved in `_analysis`; superseded for current review identity |
+| traceability | Phase-18 source certificate plus explicit historical and post-certificate L3/L4 lineage through F |
+| human-policy count | 2 as derived by Phase 14; HPD-01 is MT/MTT-only; never hard-coded as permanent |
+| safety-invariant set | all applicable `SI-*` resolved from exact F (currently 29 unique IDs), never hard-coded as permanent |
 
 ## Independent gates
 
 | Gate | Decision | Required record/evidence | Current status |
 |---|---|---|---|
-| A — Review Package Completeness | package is internally complete and exact-snapshot traceable | manifest, cross-audit, non-stale Phase-18 certificate | MECHANICAL CHECK PASS; HUMAN CONFIRMATION PENDING |
-| B — Documentation Approval | human accepts exact semantic A together with exact envelope C | reviewer/time/A SHA/C SHA/scope/decision | PENDING |
-| C — Switchover Authorization | human permits procedural `docs_v2 -> docs` transformation from exact approved C while preserving semantic identity A | separate exact-scope record | NOT_AVAILABLE — Gate B not approved |
-| D — Canonical Switchover Acceptance | human accepts generated Commit B after manifest/diff/link/rollback proof | Commit C→B evidence carrying semantic A and reviewer record | NOT_AVAILABLE — Gate C not approved; Commit B absent |
-| E — Phase 1 Implementation Authorization | human permits exact Phase-1 scope from accepted Commit B | AuthorizationRecord bound to Commit B SHA | NOT_AVAILABLE — Gate D not accepted |
+| A — Review Package Completeness | package is internally complete and exact-snapshot traceable | manifest, cross-audit, non-stale traceability lineage | MECHANICAL CHECK PASS / HUMAN CONFIRMATION PENDING |
+| B — Documentation Approval | human accepts exact Final Review Candidate F | reviewer/time/F SHA/tree/branch/scope/decision | PENDING |
+| C — Switchover Authorization | human permits procedural `docs_v2 -> docs` transformation from exact approved F | separate exact-scope record bound to F | NOT_AVAILABLE |
+| D — Canonical Switchover Acceptance | human accepts generated Commit B after manifest/diff/link/rollback proof | F→B evidence and separate reviewer record bound to B | NOT_AVAILABLE |
+| E — Phase 1 Implementation Authorization | human permits exact Phase-1 scope from accepted Commit B | AuthorizationRecord bound to Commit B SHA/tree | NOT_AVAILABLE |
 | F — Phase 1 Exit | Phase-1 DoD evidence is accepted | versioned M1 report and deviations | NOT_STARTED |
-| G — Phase 2 Authorization | human separately permits Phase 2 after Gate F | new exact-scope AuthorizationRecord | NOT_AVAILABLE — Gate F not accepted |
+| G — Phase 2 Authorization | human separately permits Phase 2 after Gate F | new exact-scope AuthorizationRecord | NOT_AVAILABLE |
 
 Completing one row does not change any other row. No checkbox or blanket signature can cover multiple decision types.
 
@@ -43,7 +44,7 @@ Transitions are explicit and non-automatic: Gate-B approval makes Gate C `PENDIN
 
 Phase 14 recomputes genuine human-policy families; Phase 19 consumes that result rather than “exactly eight.” Each applicable family receives its own scoped disposition. HDC-001..094 are a traced post-source requirements package, not 94 policy decisions and not blanket-approved through documentation acceptance; any per-item activation/promotion boundary remains governed by its owner.
 
-The invariant review enumerates all applicable `SI-*` resolved from Semantic Candidate A and reviewed in Review Envelope C. C does not add or remove an invariant ID; it corrects SI-022's summary wording to distinguish the validated-q set from QF-076's scalar supremum. The current set contains 29, but the gate stores IDs/hash/count derived from the exact package, not a permanent “29” assumption. Source no-loss is necessary evidence, not sufficient semantic approval.
+The invariant review enumerates all applicable `SI-*` resolved from exact F. Historical C corrected SI-022's summary wording to distinguish the validated-q set from QF-076's scalar supremum; F includes that correction. The current set contains 29, but the gate stores IDs/hash/count derived from exact F, not a permanent “29” assumption. Source no-loss is necessary evidence, not sufficient semantic approval.
 
 ## Phase 1 exact authorized scope
 
@@ -59,7 +60,9 @@ An unresolved item blocks Phase 1 only if Phase 1 consumes it, no canonical cons
 
 ## AuthorizationRecord
 
-Required fields: record ID/version/type/status; exact semantic A, review-envelope C and/or output B identities applicable to the gate; branch; authorized and explicitly excluded scope; prerequisites/evidence links; applicable SI IDs/hash; human-policy dispositions consumed; external freshness assumptions; start/stop conditions; required exit evidence; reviewer/role/time/signature; validity/supersession triggers; and next action. Decision states include `PENDING`, `NOT_AVAILABLE`, `APPROVED_WITH_EXPLICIT_SCOPE`, `REJECTED`, `STALE` and `SUPERSEDED`; execution evidence may additionally be `NOT_STARTED`.
+Required fields: `decision_id`; `decision_type`; exact `subject_commit_sha`; exact `subject_tree_sha`; `branch`; `status`; `authorized_scope`; `explicitly_excluded_scope`; `prerequisites`; `evidence_refs`; applicable SI IDs/hash; human-policy dispositions consumed; external freshness assumptions; start/stop conditions; required exit evidence; `reviewer`; `decision_timestamp`; `validity`; `supersedes`; and `notes`. Decision states include `PENDING`, `NOT_AVAILABLE`, `APPROVED_WITH_EXPLICIT_SCOPE`, `REJECTED`, `STALE` and `SUPERSEDED`; execution evidence may additionally be `NOT_STARTED`.
+
+For `DOCUMENTATION_APPROVAL`, `subject_commit_sha` and `subject_tree_sha` identify exact F. For `PHASE1_AUTHORIZATION`, they identify exact accepted B. These identities are supplied by the applicable record; no documentation file needs to know or embed its own future subject SHA.
 
 An AuthorizationRecord cannot interpret itself beyond `authorized_scope`. A semantic commit/scope/invariant/traceability change makes affected approval stale. A proven-independent Research/Future edit need not invalidate Phase 1, but that independence must be recorded.
 

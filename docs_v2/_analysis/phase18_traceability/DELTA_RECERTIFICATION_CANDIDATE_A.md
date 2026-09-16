@@ -1,6 +1,8 @@
 # Candidate-A Delta Recertification
 
-`STATUS: DELTA RECERTIFIED FOR DOCUMENTATION REVIEW — NOT HUMAN APPROVED`
+`STATUS: HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE — TRACEABILITY EVIDENCE PRESERVED`
+
+> This record preserves the Candidate-A and A/C lineage exactly as it was established. It is **SUPERSEDED FOR CURRENT REVIEW IDENTITY** by the self-reference-safe Final Review Candidate F model. A and C are not the active human-review subject, switchover source or Phase-1 authorization source.
 
 ## Identity and scope
 
@@ -51,7 +53,7 @@ No source, extraction ledger, destination map or row-level traceability denomina
 
 These are post-source governance/semantic overlays with explicit provenance. They are not retro-attributed to SRC-001..008, do not mutate L0–L2 evidence and do not authorize any runtime action.
 
-## A / C / B lineage
+## Historical A / C / B lineage
 
 ```text
 L0–L2 source and semantic-correction lineage -> Semantic Candidate A
@@ -59,6 +61,10 @@ post-freeze audit/governance package          -> Review Envelope C
 future path-only relocation                   -> Commit B (ABSENT)
 ```
 
-The expected reviewed context was `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8`. The prior aligned envelope `fd2bca5b4a16263723692d2a9c6536235577af69` and attestation tip `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` are preserved lineage. The exact final Review Envelope C is `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` / tree `c6588a09465dca730f39646bec08231eb7df7ede` / `docs_v2` tree `59d67e253380a23d3470747caf257402040d9863`. C contains L3/L4 review-package overlays only: it references and certifies A but is not part of A and does not mutate historical PASS00/PASS15 identities. Future B must preserve the A semantic lineage and the approved C package while relocating paths.
+The expected reviewed context was `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8`. The prior aligned envelope `fd2bca5b4a16263723692d2a9c6536235577af69` and attestation tip `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` are preserved lineage. Historical Review Envelope C is `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` / tree `c6588a09465dca730f39646bec08231eb7df7ede` / `docs_v2` tree `59d67e253380a23d3470747caf257402040d9863`. Its post-C attestation is `6812b53ed087129582795beb1ed9239c58d0c050`. These commits remain valid historical evidence and do not mutate PASS00/PASS15 identities, but the A/C/attestation package is superseded as current review identity.
 
-**RESULT: CANDIDATE A TRACEABILITY IS CURRENT FOR HUMAN DOCUMENTATION REVIEW.**
+## Current final-review binding
+
+Source traceability remains valid through the final review corpus because the original L0–L2 identities and denominators remain unchanged and later corrections are explicitly classified L3/L4 overlays. The active human review binds the exact Final Review Candidate F selected externally in the `DocumentationDecision` / `ReviewRecord`. F does not self-embed its Git SHA or tree. Future Commit B, still absent, must be derived from exact approved F.
+
+**RESULT: HISTORICAL A/C TRACEABILITY PRESERVED; FINAL-CORPUS TRACEABILITY CURRENT — DOCUMENTATION APPROVAL PENDING.**

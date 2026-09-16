@@ -13,4 +13,4 @@
 | evidence/permission | capital≠Qvalidated; implemented≠validated; licensed≠validated; running≠ready | `16_VALIDATION_MATRIX.md`, `14_DEPLOYMENT_AND_DOCKER.md` | manifest/readiness/permission tests |
 | ownership/rollback | rollback≠exchange rollback; no dual owner | `00_MASTER_ARCHITECTURE.md`, `14_DEPLOYMENT_AND_DOCKER.md` | ownership audit + rollback drill |
 
-Mapped safety rules at the current snapshot: 29/29 in `_review/04_SAFETY_CRITICAL_INVARIANTS.md`. Authorization must derive the applicable ID set/count/hash from the exact Candidate A rather than hard-code either 28 or 29. Documentary presentation does not claim implemented proof.
+Mapped safety rules at the current snapshot: 29/29 in `_review/04_SAFETY_CRITICAL_INVARIANTS.md`. Authorization must derive the applicable ID set/count/hash from the exact Final Review Candidate F selected in the DecisionRecord rather than hard-code either 28 or 29. Documentary presentation does not claim implemented proof.

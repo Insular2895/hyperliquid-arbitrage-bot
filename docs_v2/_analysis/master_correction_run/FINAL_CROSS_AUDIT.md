@@ -1,6 +1,8 @@
 # Final Cross-Audit
 
-`STATUS: PASS WITH NON-BLOCKING OPEN ITEMS — READY FOR HUMAN DOCUMENTATION REVIEW`
+`STATUS: HISTORICAL CROSS-AUDIT PRESERVED — CURRENT IDENTITY SUPERSEDED BY FINAL CANDIDATE F`
+
+> The Candidate-A and A/C results below are point-in-time evidence. They are **HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE**, not the active review subject or switchover source.
 
 ## Frozen content candidate
 
@@ -47,8 +49,8 @@ This supplement is outside the historical 17-prompt sequence and leaves its chec
 |---|---|
 | A, C and B | distinct: A immutable semantic candidate; C exact review/attestation envelope; B absent future path output |
 | C binds A | yes; C adds L3/L4 audit/governance metadata without redefining A |
-| human review subject | exact A together with exact C |
-| switchover source | exact approved C:`docs_v2/**`, never older A or moving HEAD |
+| historical checkpoint review subject | exact A together with exact C; superseded by F |
+| historical checkpoint switchover source | exact approved C:`docs_v2/**`; superseded by exact approved F |
 | semantic preservation | B must preserve A semantic corrections plus C review/governance additions |
 | MT/MTT | Later V1, Technical Phase 23, separately bounded maker probes |
 | TM/MM | Future, outside Phase 23 and outside HPD-01 |
@@ -60,7 +62,7 @@ Aligned Review Envelope C exact identity: `fd2bca5b4a16263723692d2a9c6536235577a
 
 **POST-RUN RESULT: PASS — POST-RUN GOVERNANCE ALIGNMENT COMPLETE.**
 
-## Final governance & review alignment supplement
+## Historical final governance & review alignment supplement
 
 This supplement supersedes the prior post-run result only as the current review-envelope record. It does not rewrite the original run or Candidate A.
 
@@ -81,3 +83,16 @@ This supplement supersedes the prior post-run result only as the current review-
 | code/legacy docs/runtime | unchanged; no switchover, implementation, deployment, research activation or capital action |
 
 Final Review Envelope C exact identity: `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` / tree `c6588a09465dca730f39646bec08231eb7df7ede` / `docs_v2` tree `59d67e253380a23d3470747caf257402040d9863`. Commit B remains `ABSENT`; documentation remains `AWAITING HUMAN REVIEW`.
+
+## Final documentation freeze supplement
+
+| Required invariant | Current result |
+|---|---|
+| active review identity | exact Final Review Candidate F selected externally by commit/tree in the human DecisionRecord |
+| self-reference | F contains no requirement to embed its own SHA/tree; no post-F attestation commit required |
+| historical lineage | A/C/post-C retained as audit history; superseded as current review source |
+| future switchover source | exact approved F, never moving HEAD or historical C |
+| Commit B | `ABSENT` |
+| authorization separation | documentation approval ≠ switchover authorization ≠ switchover acceptance ≠ Phase-1 authorization ≠ Phase-2 authorization ≠ capital authorization |
+
+The architecture, formulas, execution, Risk, Replay, economic, scope, evidence-stage and validated-q corrections audited above remain intact. The active result is recorded in [Final Documentation Freeze](FINAL_DOCUMENTATION_FREEZE.md).

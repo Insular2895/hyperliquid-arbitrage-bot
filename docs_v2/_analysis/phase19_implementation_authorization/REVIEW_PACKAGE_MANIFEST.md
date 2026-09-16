@@ -2,41 +2,33 @@
 
 `STATUS: READY FOR HUMAN DOCUMENTATION REVIEW — NOT APPROVED`
 
-## Semantic Candidate A identity
+## Final Review Candidate F identity contract
 
-| Field | Exact value |
+| Field | Value / rule |
 |---|---|
-| semantic_candidate_A_sha | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` |
-| semantic_candidate_A_tree | `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
+| candidate | complete final corrected `docs_v2` corpus selected as Final Review Candidate F |
+| subject_commit_sha | exact F commit selected and recorded externally by the human `DocumentationDecision` / `ReviewRecord` |
+| subject_tree_sha | corresponding exact F tree recorded by the same record |
 | branch | `codex-docs` |
-| `docs_v2` tree | `6d5c9bb15425720450bd29ebe54c8d0d14e15c51` |
-| `_review` tree | `f379e82ea05d121c600592dbde467024fdc612b9` |
-| `_analysis` tree | `55761a52349e67f7de0665a6d9d667d155070fe5` |
-| A file counts | `docs_v2=931`; `_review=22` including Start Here; `_analysis=676` |
-| delta certificate | `_analysis/phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md` |
-
-Candidate A is the immutable semantic content snapshot. No review-package commit, attestation or later path move silently redefines A.
-
-## Review Envelope C identity
-
-| Field | Exact value |
-|---|---|
-| verified pre-alignment envelope/input HEAD | `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8` |
-| actual final-alignment input HEAD/tree | `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` / `c63352342d608fcf06a21947e1a9c60bd44b655a` |
-| prior aligned envelope / attestation | `fd2bca5b4a16263723692d2a9c6536235577af69` / `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa`; documentary lineage, superseded as review source |
-| review_envelope_C_sha | `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` |
-| review_envelope_C_tree | `c6588a09465dca730f39646bec08231eb7df7ede` |
-| review_envelope_C_docs_v2_tree | `59d67e253380a23d3470747caf257402040d9863` |
-| review_envelope_C_review_tree | `843834434890ea63b7af937667f4704808adf058` |
-| review_envelope_C_analysis_tree | `20c1076874483c4b4d4eaf3b56e281f9d5ace428` |
-| C file counts | `docs_v2=938`; `_review=22`; `_analysis=683` |
-| candidate_to_envelope_delta_classification | `L3/L4 REVIEW_GOVERNANCE_ALIGNMENT_ONLY`; no production implementation/capability |
-| relationship | C attests immutable A and adds review/audit/governance alignment only; C does not redefine A |
-| future_switchover_source | exact human-approved C |
-| future_semantic_candidate | A |
+| current identity rule | exact immutable commit from the applicable DecisionRecord; never moving HEAD or latest branch tip |
+| self-reference rule | F never embeds or requires its own commit/tree identity; no post-F attestation commit is needed |
+| traceability | Phase-18 certificate plus historical A/C and later classified L3/L4 lineage through F |
+| future_switchover_source | exact human-reviewed and approved F |
 | future Commit B | `ABSENT` |
 
-The human documentation decision binds `semantic_candidate_sha=A` together with `review_package_sha=C`. The future Phase-20 transformation reads C:`docs_v2/**`, not A:`docs_v2/**`, so required post-A review and governance artifacts cannot disappear.
+The Git object selected at review time supplies immutable physical identity. The documentation supplies the identity contract. Recording `subject_commit_sha=F` and `subject_tree_sha=F tree` after F exists does not mutate F.
+
+## Historical / superseded review-package lineage
+
+| Historical identity | Exact value / classification |
+|---|---|
+| Semantic Candidate A | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
+| first aligned envelope / attestation | `fd2bca5b4a16263723692d2a9c6536235577af69` / `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` |
+| Review Envelope C | `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269` / tree `c6588a09465dca730f39646bec08231eb7df7ede` / `docs_v2` tree `59d67e253380a23d3470747caf257402040d9863` |
+| post-C attestation child | `6812b53ed087129582795beb1ed9239c58d0c050` |
+| current classification | `HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE` |
+
+A/C/post-C explain how F was reached and remain valid audit evidence. They are not the active review subject, future switchover source or Phase-1 authorization source. The post-master-run corrections changed current normative review/governance wording, so the final corpus cannot be represented as A plus external metadata alone.
 
 ## Derived sets and evidence identities
 
@@ -48,7 +40,7 @@ The human documentation decision binds `semantic_candidate_sha=A` together with 
 | OPEN dispositions | 28/28; normalized expanded-ID SHA-256 `977b3f25e856e9c7ba6c4e6daee8889562277fef33123cc947aa18a1a74c8685` |
 | HDC mapping | 94/94, 0 unmapped; normalized expanded-ID SHA-256 `f549a2e256aae09af8967fd993ddf86f70f968a8087ace8c02ce6ff7a2401e9d` |
 | external revalidation | 23/23 unique EXT IDs; normalized-ID SHA-256 `c1e75a761154c2c8fc3256b275b088eee1330f271a4d0b851e25d71a722a99d6` |
-| genuine human-policy families | 2, derived by Phase 14; C narrows HPD-01 to MT/MTT only without changing the count; not a permanent fixed count |
+| genuine human-policy families | 2, derived by Phase 14; HPD-01 is MT/MTT-only; not a permanent fixed count |
 | source identity | 8/8 local SHA-256 matches at Phase 18 and Candidate-A recertification |
 
 ## Required review artifacts
@@ -60,8 +52,8 @@ The human documentation decision binds `semantic_candidate_sha=A` together with 
 - Phase-15 calibration and learned-item ledger;
 - Phase-16 external revalidation checklist;
 - Phase-17 scope audit;
-- Phase-18 certificate and Candidate-A delta recertification;
+- Phase-18 certificate, historical Candidate-A delta recertification and final-corpus lineage;
 - Phase-19 authorization gates, Phase-20 switchover procedure and Phase-21 decision form;
-- all applicable `SI-*` enumerated in Candidate A.
+- all applicable `SI-*` enumerated in exact F.
 
-Mechanical completeness is `PASS`; human Gate-A confirmation remains `PENDING`. Gate B is the only currently decision-eligible authorization gate. Documentation approval is pending; switchover authorization/acceptance and Phase-1/Phase-2 authorization are `NOT_AVAILABLE`; implementation is `NOT_STARTED`/`NOT_AUTHORIZED`; research runtime, deployment and real capital remain unauthorized.
+Mechanical completeness is `PASS`; human Gate-A confirmation remains `PENDING`. Gate B is the only currently decision-eligible authorization gate. Documentation approval must record exact F externally. Switchover authorization/acceptance and Phase-1/Phase-2 authorization are `NOT_AVAILABLE`; implementation is `NOT_STARTED`/`NOT_AUTHORIZED`; research runtime, deployment and real capital remain unauthorized.

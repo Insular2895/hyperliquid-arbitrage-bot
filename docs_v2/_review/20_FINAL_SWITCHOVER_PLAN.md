@@ -6,25 +6,25 @@
 
 This is a deterministic future procedure only. Phase 19 owns permission; Phase 20 owns procedure and cannot self-authorize or widen scope. No move, deletion, branch, merge, switchover commit, Phase-1 branch or code action has occurred.
 
-## Semantic A / Review Envelope C / future B model
+## Final Review Candidate F / future B model
 
 | Identity | Meaning | Current state |
 |---|---|---|
-| Semantic Candidate A | immutable corrected semantic documentation content | `4b1b2ea2a2cc179c01707ec6eed175fde898e808` / tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b` |
-| Review Envelope C | exact final post-run package that attests A and adds review/audit/governance alignment without new production capability | `65c03b2c2f6dd131a045810f71c9e1aa5c3cf269`; tree `c6588a09465dca730f39646bec08231eb7df7ede`; `docs_v2` tree `59d67e253380a23d3470747caf257402040d9863` |
-| Commit B | separate future canonical-path result transformed from exact approved C while retaining semantic identity A | `ABSENT` |
+| Final Review Candidate F | complete final corrected `docs_v2` corpus selected as one exact immutable commit for human review | identity recorded externally by the future `DocumentationDecision`; not self-embedded |
+| Commit B | separate future canonical-path result transformed deterministically from exact approved F | `ABSENT` |
 
-The expected reviewed context was `b6c03d10867ccef180518424ffc311bfc8a55fa4` / tree `92d0b53070e749ac98877fafdb7ccd14f9af3ed8`. The first aligned envelope `fd2bca5b4a16263723692d2a9c6536235577af69` and its child attestation `bf5fa0e13ff4b0cc4f3107b94c1e728fc6096efa` are historical inputs to the final review-alignment correction. They remain documentary lineage, not moving authority and not the final Review Envelope C.
+Semantic Candidate A, Review Envelope C and their attestation commits are **HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE**. They remain audit evidence in `_analysis`, but they are not the current review subject, switchover source or Phase-1 authorization source.
 
 Target chain:
 
 ```text
-Semantic Candidate A frozen
- -> exact Review Envelope C attests A
- -> DocumentationApproval(A,C)
- -> SwitchoverAuthorization(C, semantic_candidate=A)
+exact Final Review Candidate F selected
+ -> Human Documentation Review
+ -> DocumentationApproval(F)
+ -> SwitchoverAuthorization(F)
+ -> checkout exact F
  -> deterministic path-only transformation
- -> Commit B + SwitchoverRecord(C,B; semantic_candidate=A)
+ -> Commit B + SwitchoverRecord(F,B)
  -> push for review (not merge)
  -> SwitchoverAcceptance(B)
  -> STOP
@@ -35,16 +35,16 @@ Phase 1 is not decided before B exists and is accepted. Acceptance of B does not
 
 ## Preconditions and input identities
 
-Require valid Phase-19 Gates A–C; exact reachable A and C SHA/tree identities; a non-stale Phase-18 Candidate-A certificate plus A→C L3/L4 package lineage; `DocumentationApproval(A,C)`; an `ApprovedDocumentationManifest`; explicit `_analysis`/`_review` retention policy; a clean isolated worktree created at C; allowed-path policy; and recorded pre-state branch/HEAD/status plus C:`docs`, C:`docs_v2` trees/inventories/hashes. Any dirty/unrelated file, missing identity or mismatch is STOP, not “acknowledged.”
+Require valid Phase-19 Gates A–C; exact reachable F commit/tree identity recorded in the `DocumentationDecision`; non-stale Phase-18 source traceability plus documented L3/L4 lineage through F; `DocumentationApproval(F)=APPROVED`; `SwitchoverAuthorization(F)=APPROVED`; an `ApprovedDocumentationManifest`; explicit `_analysis`/`_review` retention policy; a clean isolated worktree created at exact F; allowed-path policy; and recorded pre-state branch/HEAD/status plus F:`docs` and F:`docs_v2` trees/inventories/hashes. Any dirty/unrelated file, missing identity or mismatch is STOP, not “acknowledged.” Moving HEAD or the latest branch tip is never a substitute for exact F.
 
-The proposed retention policy is `RETAIN _analysis AND _review` because they carry source lineage, OPEN/HDC/EXT dispositions, certificates and authorization evidence. It has no authority until explicitly included in the approved manifest. A governance-only policy change creates C2 attesting unchanged A and requires review; it is never decided during migration.
+The proposed retention policy is `RETAIN _analysis AND _review` because they carry source lineage, OPEN/HDC/EXT dispositions, certificates and authorization evidence. It has no authority until explicitly included in the approved manifest. Any required change creates a new candidate F2 and restarts review; it is never decided during migration.
 
 ## Approved transformation and paths
 
 Only:
 
 1. preserve legacy `docs` in an uncommitted unique temporary recovery path;
-2. materialize C:`docs_v2/**` as B:`docs/**` so the approved A semantics and C review/governance additions are both retained;
+2. materialize F:`docs_v2/**` as B:`docs/**` so the complete approved corpus is retained;
 3. apply only manifest-approved relative path/link rewrites caused by this root move;
 4. preserve `_analysis`, `_review`, source timestamps and historical provenance according to the approved retention policy;
 5. remove the temporary legacy copy only after every validation passes, relying on recorded Git pre-state for recovery.
@@ -53,18 +53,18 @@ The B diff may affect only `docs/**` and `docs_v2/**`. No source code, Cargo, Do
 
 ## Deterministic execution sequence
 
-1. Verify `SwitchoverAuthorization(C, semantic_candidate=A)` and exact approved A+C review package.
-2. Create a clean isolated worktree at C and record repository/pre-state identities.
+1. Verify `DocumentationApproval(F)=APPROVED`, `SwitchoverAuthorization(F)=APPROVED` and exact F identity from their DecisionRecords.
+2. Create a clean isolated worktree at exact F and record repository/pre-state identities.
 3. Load approved artifact manifest, retention and allowed-path policies.
-4. Verify C:`docs_v2` inventory/hashes, C's attested relationship to A and the legacy `docs` tree/hash.
+4. Verify F:`docs_v2` inventory/hashes, source/overlay lineage and the legacy `docs` tree/hash.
 5. Preserve legacy docs at a unique temporary local recovery path.
 6. Materialize `docs_v2 -> docs` without semantic editing.
 7. Generate and apply only the preclassified `LinkRewriteManifest` mappings.
 8. Generate B-side normalized artifact inventory; require set/hash equality after approved path normalization.
 9. Run Markdown/referenced-file checks and classify every remaining `docs_v2` occurrence.
 10. Compute normalized semantic diff: strip only approved root/link substitutions, compare every file byte/content, list/classify every residual difference, fail on anything not allowlisted.
-11. Run Phase-18 lineage recertification mapping A source/traceability evidence through C to B paths.
-12. Generate `SwitchoverRecord` with A/C/B identities, manifests, checks and zero-semantic-drift result.
+11. Run Phase-18 lineage recertification mapping source/traceability evidence through F to B paths.
+12. Generate `SwitchoverRecord(F,B)` with exact identities, manifests, checks and zero-semantic-drift result.
 13. Remove temporary legacy tree only after all checks pass.
 14. Create separate Commit B; push its branch for human review without merging.
 15. Obtain explicit `SwitchoverAcceptance(B)` or reject.
@@ -75,17 +75,17 @@ Counts are diagnostics; the ApprovedDocumentationManifest is primary. Missing fi
 
 ## Manifest and semantic-equivalence evidence
 
-- `ApprovedDocumentationManifest`: semantic A SHA/tree, exact review-envelope C SHA/tree/`docs_v2` tree, A→C relationship, every approved C artifact path/hash/class, required review/analysis retention, expected normalized B path, allowed transformations and reviewer decision.
+- `ApprovedDocumentationManifest`: exact approved F SHA/tree/`docs_v2` tree from the DecisionRecord, every approved F artifact path/hash/class, required review/analysis retention, expected normalized B path, allowed transformations and reviewer decision.
 - `LinkRewriteManifest`: source file, old target, new target, reason, transformation class, ambiguity result and verification.
-- normalized equivalence: C:`docs_v2/<p>` must equal B:`docs/<p>` after only approved path substitutions; no wording/number/status/authority change. The check separately preserves A semantic content and C-only attestation/governance additions.
-- Phase-18 lineage: source hashes may remain L0-equal, but A→C→B L2/L3/L4 path, package and certificate identities must be recertified.
-- `SwitchoverRecord`: exact C→B transformation with semantic candidate A retained, pre/post trees/manifests, all checks, author/time, deviations, push ref and acceptance status.
+- normalized equivalence: F:`docs_v2/<p>` must equal B:`docs/<p>` after only approved path substitutions; no wording/number/status/authority change.
+- Phase-18 lineage: source hashes may remain L0-equal, but F→B L2/L3/L4 path, package and certificate identities must be recertified.
+- `SwitchoverRecord`: exact F→B transformation, pre/post trees/manifests, all checks, author/time, deviations, push ref and acceptance status.
 
 ## Push, acceptance, rejection and rollback
 
 Push != merge; successful checks != acceptance; B push != canonical baseline. Before merge/integration, rejection abandons the candidate branch and leaves canonical state unchanged—no revert commit is needed. After integration, rollback restores the exact recorded pre-state (normally by reverting B under review), regenerates/verifies links/manifests/certificate, and never “reconciles links” freely. Exchange truth is unaffected because this is documentation only.
 
-Any semantic correction after A+C approval creates A2 and C2; a governance-only package correction creates C2 attesting unchanged A. Either makes affected approvals stale and restarts review. Nothing is smuggled into B.
+Any correction after F approval creates a new candidate F2. It makes affected approvals stale and restarts review. Nothing is smuggled into B, and there is no “approve with changes.”
 
 ## Post-acceptance boundary
 

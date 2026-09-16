@@ -1,6 +1,8 @@
 # Prompt and Passage Coverage — 01 to 21
 
-`STATUS: COMPLETE — HUMAN DOCUMENTATION REVIEW PENDING`
+`STATUS: COMPLETE HISTORICAL CHECKPOINT LEDGER — FINAL CANDIDATE F REVIEW PENDING`
+
+Candidate-A rows below record the exact historical execution checkpoints. They are **HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE** and do not identify the current review source; exact Final Review Candidate F is selected externally by the human DecisionRecord.
 
 ## Interpretation rule
 

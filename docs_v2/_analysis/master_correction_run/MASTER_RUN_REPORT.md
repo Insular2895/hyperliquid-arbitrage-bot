@@ -1,6 +1,8 @@
 # Master Correction Run Report
 
-`DOCUMENTATION STATUS: CORRECTION RUN COMPLETE — AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: HISTORICAL CORRECTION-RUN LEDGER — AWAITING HUMAN REVIEW OF FINAL CANDIDATE F`
+
+> Sections 1–9 preserve the run and A/C/post-C history. Their former active review-package identity is **SUPERSEDED FOR CURRENT REVIEW IDENTITY**. The current review source is the exact Final Review Candidate F selected externally by the human DecisionRecord; F does not self-embed its own SHA/tree.
 
 ## 1. Run identity
 
@@ -16,7 +18,7 @@
 | Real capital | `NOT AUTHORIZED` |
 | `docs_v2 -> docs` | `NOT EXECUTED` |
 
-Final content Candidate A is commit `4b1b2ea2a2cc179c01707ec6eed175fde898e808`, tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`. The post-freeze attestation records that immutable content identity and does not redefine it through moving HEAD.
+Historical content Candidate A is commit `4b1b2ea2a2cc179c01707ec6eed175fde898e808`, tree `2b11be1bdcd4f1ac3382fe5683664cb5b432a96b`. The historical post-freeze attestation records that checkpoint identity. This model is preserved as lineage but superseded as the current review source.
 
 The pre-run worktree contained no tracked change. The pre-existing untracked `.DS_Store` is unrelated, excluded from every commit and not treated as correction input.
 
@@ -111,7 +113,7 @@ Evidence: [final cross-audit](FINAL_CROSS_AUDIT.md), [repository-wide search](RE
 
 This is a documentary result only. Documentation approval remains pending. Implementation, research runtime, deployment, `docs_v2 -> docs` switchover, Commit B creation, Phase 1, later phases, Micro-live, Live, Bridge, scaling and real capital remain unexecuted or unauthorized according to their respective gates.
 
-## 8. Post-run governance alignment
+## 8. Historical post-run governance alignment
 
 This section is a separate addendum. It does not alter, renumber or retroactively reinterpret the 17-prompt historical checkpoint ledger above.
 
@@ -130,9 +132,9 @@ The correction makes exact C—not A or moving HEAD—the future switchover sour
 
 Evidence and exact output identity: [Post-run Governance Alignment](POST_RUN_GOVERNANCE_ALIGNMENT.md). Final focused result: `PASS — POST-RUN GOVERNANCE ALIGNMENT COMPLETE`; human review remains pending.
 
-## 9. Post-run governance & review alignment
+## 9. Historical post-run governance & review alignment
 
-This second, narrow post-run addendum supersedes §8 as the current review-envelope description without changing the historical 17-prompt ledger, its commits or Semantic Candidate A.
+This second, narrow post-run addendum superseded §8 at that historical checkpoint without changing the historical 17-prompt ledger, its commits or Semantic Candidate A. It is itself superseded for current review identity by §10.
 
 | Field | Value |
 |---|---|
@@ -144,3 +146,11 @@ This second, narrow post-run addendum supersedes §8 as the current review-envel
 | Commit B | `ABSENT` |
 
 This addendum corrects Review 01's Micro-live TT and QF-076 wording, replaces Review 02's competing letter-based scope classes with the canonical taxonomy and puts TTT at Evidence Stage 13, and aligns Review 04 SI-022 with the validated-set/supremum distinction. It also makes the one-based evidence-stage ordinal explicit while preserving the original zero-based PASS-12 analysis indices as labeled historical records. Formula QF-076, Risk, Execution transitions, the 26 technical phases, source lineage and authorization states are unchanged. Full evidence is in [Post-run Governance & Review Alignment](POST_RUN_GOVERNANCE_ALIGNMENT.md).
+
+## 10. Final self-reference-safe documentation freeze
+
+The complete corrected corpus is now represented by a single Final Review Candidate F rather than active A+C indirection. A, C and their attestation commits remain immutable historical lineage. Exact F identity is selected and recorded externally by the future human `DocumentationDecision` / `ReviewRecord`; it is never embedded into F, so no post-F attestation commit is required.
+
+The current decision chain is `DocumentationApproval(F) -> SwitchoverAuthorization(F) -> deterministic F:docs_v2/** to B:docs/** -> SwitchoverAcceptance(B) -> STOP -> possible later Phase1Authorization(B)`. Commit B remains absent. Documentation approval is pending; switchover, implementation, research runtime and real capital remain unauthorized.
+
+Current evidence: [Final Documentation Freeze](FINAL_DOCUMENTATION_FREEZE.md). Final result: `PASS — FINAL DOCUMENTATION CANDIDATE FROZEN`; readiness is limited to human documentation review.

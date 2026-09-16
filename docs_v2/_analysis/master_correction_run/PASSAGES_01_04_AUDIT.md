@@ -15,7 +15,7 @@ Cross-checks: all four files exist; their links resolve; none grants implementat
 
 ## Post-run review supersession
 
-Final human inspection found residual summary-level ambiguity that the original verification did not catch. The historical verification above remains evidence of what was checked at Candidate A; it is superseded for current review by the final Review Envelope C.
+Final human inspection found residual summary-level ambiguity that the original verification did not catch. The historical verification above remains evidence of what was checked at Candidate A; the corrections first captured by historical Review Envelope C are now included directly in Final Review Candidate F. A/C/C-attestation identities are superseded for current review identity.
 
 | Passage | C-level correction | Current result |
 |---:|---|---|

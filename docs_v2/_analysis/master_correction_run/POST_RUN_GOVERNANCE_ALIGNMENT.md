@@ -1,6 +1,8 @@
 # Post-Run Governance & Review Alignment
 
-`DOCUMENTATION STATUS: AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE`
+
+> This report preserves the A/C/post-C correction history. Its identity model is **SUPERSEDED FOR CURRENT REVIEW IDENTITY**. Final Candidate F is the current review source; exact F identity is recorded externally by the future human DecisionRecord and is never self-embedded.
 
 ## Run identity and moved-HEAD analysis
 
@@ -19,7 +21,7 @@
 
 The exact C checkpoint contains every normative correction below. Because a Git commit cannot contain its own final SHA without changing that SHA, the separate post-C attestation is identity evidence only; it adds no architecture, capability or authorization.
 
-## A / C / B identity model
+## Historical A / C / B identity model
 
 | Identity | Exact meaning | Status |
 |---|---|---|
@@ -27,7 +29,7 @@ The exact C checkpoint contains every normative correction below. Because a Git 
 | Review Envelope C | exact final review package containing A identity, audit, manifest, certificate lineage, corrected review/governance surfaces and entrypoint | exact output identity above |
 | Commit B | future `docs_v2 -> docs` canonical-path output transformed from approved C | `ABSENT` |
 
-C attests A and adds L3/L4 review/governance alignment; C does not redefine A and is not part of A. Human documentation review binds `semantic_candidate_sha=A` together with `review_package_sha=C`. The future switchover source is exact approved C:`docs_v2/**`; its equivalence proof must retain A semantics plus C review/governance additions. Moving HEAD, the older A tree, `b6c03d1`, `fd2bca5` and `bf5fa0e` are not substitutes for final C.
+At this historical checkpoint, C attested A and added L3/L4 review/governance alignment; C did not redefine A or become part of A. The then-proposed human review bound `semantic_candidate_sha=A` together with `review_package_sha=C`, and the then-proposed switchover source was exact approved C:`docs_v2/**`. This entire identity model is now superseded by Final Review Candidate F; the paragraph is retained only as audit history.
 
 ## MT/MTT versus TM/MM
 
@@ -99,7 +101,7 @@ Files intentionally unchanged include Review 03, Formula Book QF-076, Inventory/
 | `VALIDATE TTT` under Stage/index 12 | current canonical ordinal is Evidence Stage 13; zero-based PASS-12 index 12 is explicitly labeled legacy |
 | `Q_validated is the set`, `sup(Q_validated)`, “non-monotonic Q_validated” | corrected on current Masters/reviews; historical reports are superseded by this addendum |
 | `q <= Q_validated` | retained only in explicit statements that it is insufficient/not permission |
-| A/C/B, freeze and authorization wording | current review surfaces bind exact A+C, use exact approved C for future switchover and keep B absent |
+| A/C/B, freeze and authorization wording | historical checkpoint surfaces bound exact A+C and proposed exact C as source; superseded by exact F while B remains absent |
 
 ## Remaining OPEN items and blockers
 
@@ -109,4 +111,6 @@ Documentation approval remains `PENDING`. Switchover authorization, B acceptance
 
 ## Final verdict
 
-**PASS — POST-RUN GOVERNANCE & REVIEW ALIGNMENT COMPLETE**
+**PASS — HISTORICAL POST-RUN GOVERNANCE & REVIEW ALIGNMENT PRESERVED**
+
+Current active governance is defined by [Final Documentation Freeze](FINAL_DOCUMENTATION_FREEZE.md): review exact F, approve or reject exact F, and—only through a separate authorization—derive future B from exact approved F. No A/C identity is current authority.

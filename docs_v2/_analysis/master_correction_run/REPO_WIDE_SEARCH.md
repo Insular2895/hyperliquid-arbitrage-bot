@@ -16,7 +16,7 @@ The final audit searched current Masters, deep specs, review files and run artif
 
 Older `_analysis/pass*` reports preserve point-in-time wording as audit history. Where a later correction supersedes it, current review/canonical surfaces and the master ledger state the governing result; history was not rewritten to fake contemporaneous knowledge.
 
-## Post-run governance search
+## Historical post-run governance search
 
 The focused correction searched `Maker/TM/MM`, `TM/MM activation`, `HPD-01`, `Phase 23`, `PENDING / NOT IMPLIED`, switchover/Phase-1 authorization terms, `Candidate A`, `Commit A/B`, Review Envelope/Package and former freeze markers.
 
@@ -25,7 +25,7 @@ The focused correction searched `Maker/TM/MM`, `TM/MM activation`, `HPD-01`, `Ph
 | live Phase-14 HPD-01 surfaces | corrected to MT/MTT only |
 | live Execution/roadmap surfaces | MT/MTT retained at Phase 23; TM/MM made explicitly Future/type-compatible only |
 | live Phase-19 gate surfaces | corrected from premature `PENDING` to prerequisite-aware `NOT_AVAILABLE` |
-| live Phase-20/21/review identity surfaces | corrected to exact A+C review and C→B path transformation |
+| then-live Phase-20/21/review identity surfaces | corrected at that checkpoint to exact A+C review and C→B path transformation; later superseded by F |
 | historical PASS02/PASS04/PASS05/PASS16/OPEN-initial wording | retained as point-in-time provenance; superseded by current Phase-14/17/21 governance |
 | historical Phase-19/20/21 final reports | retained; post-run addendum records the correction instead of rewriting history |
 | former moving/final-freeze placeholders on live surfaces | zero after post-C identity attestation |
@@ -43,7 +43,22 @@ The second focused search added Review 01–04, canonical scope classes, TTT evi
 | `Q_validated is the set`, `Q_validated support set`, `sup(Q_validated)`, non-monotonic `Q_validated` | `STALE` on current Masters/reviews and corrected; older analysis/report prose is `HISTORICAL/SUPERSEDED` |
 | `q <= Q_validated` | `CURRENT NORMATIVE` only where explicitly stated insufficient/not permission |
 | `Maker/TM/MM`, `TM/MM activation`, OPEN-012 broad wording | `HISTORICAL` in point-in-time PASS/source ledgers; current HPD-01 is MT/MTT-only and TM/MM is Future |
-| Candidate/Commit A, Review Envelope/Package C, Commit B | `CURRENT NORMATIVE` only with exact A+C review, exact-C future source and B absent; earlier envelope identities are lineage |
+| Candidate/Commit A, Review Envelope/Package C | `HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE`; never current review or switchover authority |
+| Final Review Candidate F, Commit B | `CURRENT NORMATIVE`: exact F selected externally; exact approved F is the future source; B absent |
 | `PENDING FINAL FREEZE`, `freeze after Phase 21`, moving HEAD authority | no live current-review authority; historical statements remain classified by their reports |
 
 Current normative contradictions after correction: `0`. The Formula Book, Risk, Execution transitions, Replay ordering, Bridge economics, participant/simulator semantics and external-fact claims were not changed.
+
+## Final freeze self-reference search supplement
+
+The final freeze searched all current `docs_v2/**` for former machine placeholders, active A+C/C→B instructions, moving-HEAD authority and self-hash requirements.
+
+| Search class | Current result |
+|---|---|
+| `REVIEW_ENVELOPE_C_*_PENDING_ATTESTATION`, `FINAL_*_SHA_PENDING`, `PENDING_ATTESTATION`, `TO_BE_FILLED_BY_CODEX`, `REPLACE_ME` | zero current machine-replacement placeholders |
+| `DocumentationApproval(A,C)`, `SwitchoverAuthorization(C`, `checkout C`, active `C:docs_v2` source | zero current normative instructions; any remaining A/C mention is explicitly historical/superseded |
+| current HEAD/latest branch tip as authority | zero; exact immutable commit from the applicable DecisionRecord governs |
+| F self-embedded SHA/tree requirement | zero; F identity is external to F |
+| post-F attestation requirement | zero; explicitly prohibited by the final model |
+
+The current review chain is exact F → human documentation decision → separate switchover authorization → deterministic F→B transformation → separate B acceptance → STOP. Documentation approval and every runtime/capital authorization remain absent.
