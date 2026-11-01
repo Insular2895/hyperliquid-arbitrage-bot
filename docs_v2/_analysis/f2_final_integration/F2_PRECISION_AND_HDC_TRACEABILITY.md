@@ -14,6 +14,54 @@ That reference is preserved as provenance; it is not an SRC-001..008 identity, c
 fact proof or the F2 baseline. Current exchange facts remain subject to dated primary-source
 revalidation.
 
+## 1A. Original precision IDs and source-text reconciliation (proposed F2 delta)
+
+The original document is **`Hyperliquid_Fiche_precisions_conception_v1.md`**, version 1.0,
+dated **2026-10-19** (206 rendered text lines in the accessible source). Its source labels are
+`HYP-P01` through `HYP-P19`; the F2 ledger deliberately uses `PREC-P01` through
+`PREC-P19` to distinguish design precisions from research `HYP-*` hypotheses. The mapping
+is exactly ordinal: **`HYP-PNN` (source) = `PREC-PNN` (F2) for NN=01..19**. These
+are aliases for traceability, not 38 requirements or a new executable ID family.
+
+A content-by-content source-versus-F2 comparison confirms the 19 corresponding requirement
+subjects and retains the following qualifiers that must remain visible to all consumers:
+
+- **P03/P04:** scenario outcomes must be exclusive and probabilities sum to one; realized
+  charges are never double counted with L2 consumption, modeled adverse selection,
+  Recovery, or a second RAEV uncertainty adjustment.
+- **P05:** the initial entry gate is different from the later Risk-governed defensive exit;
+  the latter can rationally realize a loss to contain exposure.
+- **P06/P07:** an indirect conversion with no comparable direct reference is **not**
+  an OWA advantage. A maker result must not be compared to an ex-post selected taker
+  quote; the decision-time comparator, deadline and budget are frozen.
+- **P08/P09:** conversion savings are a comparative metric and may not be added again
+  to portfolio profit; residual-asset valuation and executable liquidation value differ;
+  starting-asset gain does not imply profit in every reporting currency.
+- **P10/P14:** conditional-on-fill and all-attempt maker outcomes are different
+  populations; opportunity cost is an estimate, not an actual fee. **Maker and taker
+  viability are independently evidenced**, including when the corresponding taker
+  variant is not profitable. TT-first in the technical roadmap defines the staged
+  *operational activation order*, not a requirement that TT be economically profitable
+  before maker research may be evaluated or MT/MTT may later be authorized.
+- **P11/P12/P13:** fill quantity must come from unique actual fills; late/partial fills
+  after cancel requests preserve exposure/reservations; `expiresAfter` must not be
+  interpreted as a guaranteed cancellation of a resting order.
+- **P15/P17/P18/P19:** sampled L2 snapshots do not reveal every intervening order
+  event or the exact queue position. `OFI_snapshot` remains a proxy. Own actual order
+  and fill evidence is required for maker calibration. Distinguish change-triggered
+  channel silence from a verified outage; do not retroactively upgrade historical data
+  fidelity.
+
+The source's October 2026 descriptions of `l2Book` frequency/depth, ALO/IOC,
+`expiresAfter`, account fees and rate limits remain dated external claims requiring
+fresh official-source verification before implementation. This documentary comparison is
+**not** that external revalidation.
+
+**Result:** 19/19 original requirements matched one-to-one to the F2 dispositions,
+with the above cross-cutting qualifiers explicitly carried forward. No historical HDC
+or QF/SI/ESM contract is changed; all material new implementation/profitability
+claims remain unvalidated and permissions remain `NOT_AUTHORIZED`.
+
 ## 2. Complete PREC disposition matrix
 
 | PREC ID | Purpose | Canonical owner | Existing contract | New requirement / disposition | Test evidence | Review status |
@@ -31,7 +79,7 @@ revalidation.
 | `PREC-P11` | maker waiting reassessment and Risk/ESM ownership | Execution + Risk | ordered ESM, current-state Risk, cancel/expiry semantics | strengthen timed reassessment evidence without new state owner | book/risk change while resting, expiry, cancel and continuation/Recovery tests | covered / pending F2 review |
 | `PREC-P12` | actual fill quantities and exact-once updates | Execution/FillLedger + Inventory | SI-010/SI-011; unique actual fills only | exact reuse; no research or Simulator label authority | duplicate/out-of-order/partial fill, fee and inventory reconciliation tests | covered / pending F2 review |
 | `PREC-P13` | cancel races, UNKNOWN reservations and timer distinctions | Execution + Reservations/Reconciliation | SI-007..009; no blind retry; ordered timer/effect events | strengthen explicit timer/cancel evidence | cancel-requested-late-fill, UNKNOWN restart, timeout/query and reservation-lock fixtures | covered / pending F2 review |
-| `PREC-P14` | separate maker/taker validation; TT/TTT before MT/MTT | Validation + Roadmaps | Phases 20/23; Evidence Stages 12–15; HPD-01 MT/MTT only | exact reuse and navigation strengthening | mode-specific Replay/Shadow/Micro-live, Recovery and promotion records | covered / pending F2 review |
+| `PREC-P14` | economically independent maker/taker validation; TT/TTT before MT/MTT only in staged operational activation | Validation + Roadmaps | Phases 20/23; Evidence Stages 12–15; HPD-01 MT/MTT only | maker may be viable where taker is not; mode-specific evidence/authorization; no automatic scope transfer | independent mode-specific Replay/Shadow/Micro-live, Recovery and promotion records | covered / pending F2 review |
 | `PREC-P15` | feed capability and historical subscription metadata | Data/Adapters/Recorder | point-in-time source profile, immutable RAW, RunManifest and EXT gates | require historical subscription/capability identity in datasets | schema/subscription/version, reconnect/gap and source-profile replay tests | covered / external freshness gated |
 | `PREC-P16` | no invented depth beyond observed support | Book + Formula/Simulator | valid BookState, QF L2 walk, F0–F4 fidelity boundaries | strengthen explicit unsupported-depth outcome | truncated book, insufficient depth, extrapolation rejection and Simulator support tests | covered / pending F2 review |
 | `PREC-P17` | snapshot-derived OFI identified honestly | Microstructure/Data | QF-030..033 proxy boundary and feature provenance | require method/version label such as snapshot-derived OFI; no event-level claim | snapshot cadence, gap, offline parity, leakage and alternate-method comparison | covered / pending F2 review |
