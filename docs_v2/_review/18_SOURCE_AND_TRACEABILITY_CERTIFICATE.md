@@ -62,7 +62,7 @@ Fixing one canonical overcompression and six PASS00 atomicity/destination issues
 
 ## Post-source overlays, OPEN and external facts
 
-HDC-001..094, CORR passes, async/scientific extensions and external refreshes remain L3 with their actual provenance. They do not become original-source statements. OPEN is classified by Phase 14 and is not synonymous with human decision. External fact snapshots are dated evidence outside L0–L2 and require consumer-specific revalidation.
+HDC-001..094, CORR passes, async/scientific extensions and external refreshes remain historical L3 with their actual provenance. F2 `HDC-095..100`, Falsifier/Strategy Research contracts and `PREC-P01..P19` are later L3 user/design overlays. They do not become original-source statements. OPEN is classified by Phase 14 and is not synonymous with human decision. External fact snapshots are dated evidence outside L0–L2 and require consumer-specific revalidation.
 
 ## Staleness and recertification
 
@@ -70,11 +70,25 @@ Status is `CERTIFIED_AT_SNAPSHOT`, `DELTA_RECERTIFICATION_REQUIRED` after semant
 
 Future corrections supersede through lineage; they do not rewrite PASS00/PASS15 history. A current certificate always binds exact commit/tree, artifact hashes and generation time.
 
-## Final-corpus delta status
+## F2 delta status
 
-The [Candidate-A delta recertification](../_analysis/phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md) preserves the exact A/C/post-C chain as **HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE**. It confirms unchanged L0 source identities and unchanged critical extraction/mapping artifacts through that checkpoint. Subsequent documented governance corrections are explicit L3/L4 overlays; none changes the L0–L2 denominators or critical artifact identities.
+The [Candidate-A delta recertification](../_analysis/phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md) preserves the exact A/C/post-C chain as **HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE**. It confirms unchanged L0 source identities and unchanged critical extraction/mapping artifacts through that checkpoint. Final Review Candidate F, F2 Prompt-1 commits `46ecd4f…` / `3cce15a…`, Prompt-2 commits `197a3a9…` / `9940899…`, and the proposed Prompt-3 integration are later explicit L3/L4 lineage.
 
-Source traceability therefore remains valid through the final review corpus. Historical A/C attestations are lineage evidence, not the active review source. Final human documentation approval binds the exact Final Review Candidate F selected externally by commit/tree identity in the `DocumentationDecision` / `ReviewRecord`. F never self-embeds that identity. Future B must preserve the approved F corpus during path relocation.
+F2 preserves the historical L0 source identities, L1 extraction artifacts and denominators. It adds
+semantic routing, scope, HDC and active-review-package changes and has not executed a new exact-
+snapshot Phase-18 delta certification. Its honest current status is therefore:
+
+`DELTA_RECERTIFICATION_REQUIRED`
+
+This does not block mechanical F2 review-package completeness if the final exact diff, links,
+inventories and identity checks pass. It blocks any claim that F2 is already fully delta-certified
+or source-certified at its new exact snapshot. See the [F2 non-regression audit](../_analysis/f2_final_integration/F2_NON_REGRESSION_AUDIT.md)
+and [handoff](../_analysis/f2_final_integration/F2_FINAL_HUMAN_REVIEW_HANDOFF.md).
+
+Historical A/C/F attestations are lineage evidence, not the active review source. Final human
+documentation review binds the exact proposed F2 commit/tree/branch externally in the
+`DocumentationDecision` / `ReviewRecord`. F2 never self-embeds that identity. Future B must
+preserve the exact approved F2 corpus during path relocation.
 
 ## Acceptance boundaries
 

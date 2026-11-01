@@ -22,6 +22,7 @@ This directory expands [16_VALIDATION_MATRIX.md](../../16_VALIDATION_MATRIX.md).
 
 These specifications define future evidence and permission contracts only. They do not implement tests or authorize a Live capability.
 
-Specifications 13–14 are `F2 PART 1 / INTERMEDIATE DOCUMENTARY WORK`. They define a narrow
-validation protocol, do not activate the deferred Strategy Research program, and require Prompt-3
-authority/roadmap reconciliation before any final F2 review-candidate claim.
+Specifications 13–14 are integrated into the proposed F2 review candidate. They define a narrow
+Foundation validation protocol and do not activate the deferred Strategy Research program. Their
+roadmap/authority placement is in the [F2 crosswalk](../../_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md)
+and their temporal/failure/governance navigation is in the [F2 atlas](../../_analysis/f2_final_integration/F2_ARCHITECTURE_DIAGRAM_ATLAS.md).

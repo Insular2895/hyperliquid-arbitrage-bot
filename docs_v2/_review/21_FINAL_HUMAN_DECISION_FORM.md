@@ -12,22 +12,22 @@ This form records decisions; it executes none. `DEFAULT STATE = NOT_AUTHORIZED`.
 |---|---|
 | Candidate commit SHA | `[to be recorded by reviewer in the DecisionRecord]` |
 | Candidate tree SHA | `[to be recorded by reviewer in the DecisionRecord]` |
-| Branch | `codex-docs` |
-| Candidate name | `Final Review Candidate F` for the exact commit recorded above |
+| Branch | `f2-governance-p3` |
+| Candidate name | `Final Review Candidate F2` for the exact Prompt-3 commit recorded above |
 | Review Package Manifest | [self-reference-safe candidate contract and historical lineage](../_analysis/phase19_implementation_authorization/REVIEW_PACKAGE_MANIFEST.md) |
-| Phase-18 traceability | `PRESENT` — [historical Candidate-A recertification and final-corpus lineage](../_analysis/phase18_traceability/DELTA_RECERTIFICATION_CANDIDATE_A.md) |
+| Phase-18 traceability | historical certificate/lineage present; F2 status `DELTA_RECERTIFICATION_REQUIRED` — see [F2 audit](../_analysis/f2_final_integration/F2_NON_REGRESSION_AUDIT.md) |
 | Mechanical completeness | `PASS / HUMAN CONFIRMATION PENDING` |
 | reviewer / date | `PENDING` |
 
-These are future human review fields, not machine-replacement placeholders and not a request to mutate this Git corpus. The exact immutable commit selected and recorded becomes F. Moving HEAD, the latest branch tip and historical A/C identities are never substitutes. Historical A/C/post-C commits remain preserved analysis lineage, **SUPERSEDED FOR CURRENT REVIEW IDENTITY**. No later authorization stage is available until the human records Stage 1.
+These are future human review fields, not machine-replacement placeholders and not a request to mutate this Git corpus. The exact immutable Prompt-3 commit selected and recorded becomes F2. Moving HEAD, the latest branch tip and historical A/C/F identities are never substitutes. Historical A/C/post-C/F commits and the F2 Prompt-1/2 commits remain preserved analysis lineage, **SUPERSEDED FOR CURRENT REVIEW IDENTITY**. No later authorization stage is available until the human records Stage 1.
 
 ## Stage 1 — Documentation Decision
 
-Prerequisite: Stage 0 mechanically complete. Current status: `PENDING`. Choose exactly one in a future DecisionRecord bound to exact F:
+Prerequisite: Stage 0 mechanically complete. Current status: `PENDING`. Choose exactly one in a future DecisionRecord bound to exact F2:
 
-- `APPROVE(F)`;
-- `REQUEST_CHANGES(F)` — create a new candidate F2 and restart review;
-- `REJECT(F)`.
+- `APPROVE(F2)`;
+- `REQUEST_CHANGES(F2)` — create a new candidate and restart review;
+- `REJECT(F2)`.
 
 There is no “approve with changes.” Documentation approval triggers no switchover, merge, branch, implementation, research or capital action.
 
@@ -46,21 +46,21 @@ These HPD rows are policy-review dispositions, not later authorization-gate avai
 
 TM/MM are `FUTURE`, outside the current 26-phase activation roadmap and outside HPD-01. Enum/type compatibility means only representable; it does not mean implemented, validated or authorized. TM/MM require a separate future product/safety/evidence specification and approval chain.
 
-`HDC-001..094` is a traced post-source requirement package, not 94 Human Policy Decisions and not one blanket approval. CORR-01..06, scientific and async extensions are review-package components with their own lineage; accepting documentation does not activate their capabilities.
+`HDC-001..094` is the historical traced post-source package. F2 `HDC-095..100` is a separate traced overlay, not six new Human Policy Decisions and not one blanket approval. CORR-01..06, scientific, async, Falsifier and Strategy Research extensions are review-package components with their own lineage; accepting documentation does not activate their capabilities.
 
 ## Stage 3 — Switchover Authorization
 
-Prerequisite: `DocumentationDecision(F)=APPROVED`. Current status: `NOT_AVAILABLE`.
+Prerequisite: `DocumentationDecision(F2)=APPROVED`. Current status: `NOT_AVAILABLE`.
 
-Future mutually exclusive decision: `AUTHORIZE_SWITCHOVER(F)` or `DO_NOT_AUTHORIZE_SWITCHOVER(F)`. The record must freeze the approved F artifact manifest, allowed transformations and `_analysis`/`_review` retention policy. Proposed retention is both directories; any required corpus change creates F2 and requires new documentation review.
+Future mutually exclusive decision: `AUTHORIZE_SWITCHOVER(F2)` or `DO_NOT_AUTHORIZE_SWITCHOVER(F2)`. The record must freeze the approved F2 artifact manifest, allowed transformations and `_analysis`/`_review` retention policy. Proposed retention is both directories; any required corpus change creates a new candidate and requires new documentation review.
 
-`SwitchoverAuthorization(F) != MergeAuthorization` and does not accept unknown output B or authorize Phase 1.
+`SwitchoverAuthorization(F2) != MergeAuthorization` and does not accept unknown output B or authorize Phase 1.
 
 ## Stage 4 — Switchover Result
 
 Prerequisite: Stage 3 authorized and Phase-20 procedure executed. Current status: `NOT_AVAILABLE`; Commit B does not exist.
 
-Future machine/human-prepared evidence records exact B SHA/tree, F→B `SwitchoverRecord`, normalized artifact/link manifests, semantic-equivalence result, Phase-18 lineage recertification and push ref. No false B SHA is entered now.
+Future machine/human-prepared evidence records exact B SHA/tree, F2→B `SwitchoverRecord`, normalized artifact/link manifests, semantic-equivalence result, Phase-18 lineage recertification and push ref. No false B SHA is entered now.
 
 ## Stage 5 — Switchover Acceptance
 
@@ -100,12 +100,12 @@ An empty or unchecked field never means “maybe allowed.” Research documentat
 
 Decision states are `PENDING`, `APPROVED_WITH_EXPLICIT_SCOPE`, `REQUEST_CHANGES`, `REJECTED`, `NOT_AVAILABLE`, `STALE` and `SUPERSEDED`; execution/evidence stages may be `NOT_STARTED`, and capability permission remains `NOT_AUTHORIZED`. Every DecisionRecord includes `decision_id`, `decision_type`, exact `subject_commit_sha`, exact `subject_tree_sha`, `branch`, `status`, `authorized_scope`, `explicitly_excluded_scope`, `prerequisites`, `evidence_refs`, `reviewer`, `decision_timestamp`, `validity`, `supersedes` and `notes`.
 
-For `DOCUMENTATION_APPROVAL`, the subject is exact F. For `PHASE1_AUTHORIZATION`, the subject is exact accepted B. A candidate, scope, applicable invariant or certificate change makes the affected record `STALE`. A replacement `SUPERSEDES` rather than rewriting history. No decision auto-propagates to the next stage.
+For `DOCUMENTATION_APPROVAL`, the subject is exact F2. For `PHASE1_AUTHORIZATION`, the subject is exact accepted B. A candidate, scope, applicable invariant or certificate change makes the affected record `STALE`. A replacement `SUPERSEDES` rather than rewriting history. No decision auto-propagates to the next stage.
 
 ## Final status summary
 
 ```text
-FinalReviewCandidate: SELECT EXACT F IN HUMAN DECISION RECORD
+FinalReviewCandidate: SELECT EXACT F2 IN HUMAN DECISION RECORD
 ReviewPackageIdentity: MECHANICALLY COMPLETE / HUMAN CONFIRMATION PENDING
 DocumentationDecision: PENDING
 HumanPolicyDecisions: PENDING / MAY BE DEFERRED BY SCOPE

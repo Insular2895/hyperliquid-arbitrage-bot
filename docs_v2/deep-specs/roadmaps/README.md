@@ -15,5 +15,6 @@ These specifications decompose the two PASS 12 masters without creating a second
 - [08 — Capital Permission, Scaling and Demotion](08_CAPITAL_PERMISSION_SCALING_AND_DEMOTION.md)
 - [09 — Stop Conditions, External Gates and Blockers](09_STOP_CONDITIONS_EXTERNAL_GATES_AND_BLOCKERS.md)
 - [10 — Technical-to-Evidence Crosswalk](10_TECHNICAL_TO_EVIDENCE_CROSSWALK.md)
+- [F2 Falsifier and Research dependency overlay](../../_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md)
 
 Authority order: Formula Book for QF mathematics; Risk Constitution for permissions; Execution for state; Data/Recorder/Replay for truth/determinism; Validation/Operations for M0–M5, evidence, promotion and demotion; PASS 12 only sequences their contracts. These files do not authorize code or capital.

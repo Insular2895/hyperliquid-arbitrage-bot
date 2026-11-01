@@ -1,12 +1,14 @@
 # 11 — Research Orchestration and Workers
 
-`DOCUMENTATION STATUS: F2 PART 2 / INTERMEDIATE DOCUMENTARY WORK / AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: PROPOSED F2 REVIEW CANDIDATE / AWAITING HUMAN REVIEW`
 
 `CAPABILITY STATUS: FUTURE SPECIFIED / NOT ACTIVE / NO DRAGONFLY DEPENDENCY`
 
 This document specifies the future architectural problem named **Distributed Research / Experiment
 Orchestration** before selecting a product. It implements nothing, authorizes no research runtime
 and places no distributed component in the production trading hot path.
+
+Navigation: [F2 Functional, Failure and Governance maps](../../_analysis/f2_final_integration/F2_ARCHITECTURE_DIAGRAM_ATLAS.md).
 
 ## 1. Component boundaries
 
@@ -246,5 +248,7 @@ stand in for `EvidenceId`.
 | DragonflyDB or alternative benchmark/selection | `HUMAN_DECISION_REQUIRED / DEFERRED` | no dependency, deployment or production use |
 | dashboard/analytics implementation | `HUMAN_DECISION_REQUIRED / DEFERRED` | reports/indexes only; read-only semantics |
 
-No decision above may widen the full baseline gate or the absolute authority exclusions. Prompt 3
-may reconcile placement/governance without selecting these implementation choices.
+No decision above may widen the full baseline gate or the absolute authority exclusions. Proposed
+F2 reconciles placement/governance without selecting these implementation choices; the
+[F2 crosswalk](../../_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md) keeps local
+workers optional and distributed/Dragonfly orchestration deferred.

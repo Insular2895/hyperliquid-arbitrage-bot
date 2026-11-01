@@ -409,7 +409,16 @@ The same Core may later host a research plane following `OBSERVE -> UNDERSTAND -
 
 `Trading Core -> Evidence/Recorder/Replay -> Research/Experiment -> Strategy Validation -> Operations/Monitoring -> reviewed candidate back to Trading Core`. Every arrow carries stable evidence/version lineage. Only the reviewed promotion gate can return a candidate; the research side cannot mutate canonical economic truth.
 
-This future plane is activation-forbidden until the complete end-to-end baseline, deterministic evidence/reporting, Shadow and reconciled Micro-live outcome gates exist. Monte Carlo drives the existing canonical Simulator; it is not a second economic engine. Champion/Challenger and drift are later controlled layers with one execution owner, explicit human promotion and no online Live self-learning. Hyperliquid or infrastructure changes create evidence/revalidation and fail safe; they do not mutate production automatically. The roadmap remains exactly 26 phases. See [deferred strategy-research specifications](deep-specs/strategy-research/README.md). `HDC-080..090` await final human review.
+The complete future Factory plane is activation-forbidden until the first fixed OWA/TT path has
+earned a bounded validated baseline with deterministic evidence/reporting, Shadow and separately
+authorized reconciled Micro-live outcomes. The Factory is not a prerequisite for documenting that
+first DRAFT candidate or progressing it through those distinct existing gates. Generalized search,
+later Monte Carlo research programs, automated Champion/Challenger, drift-driven selection and
+distributed research remain behind the full gate. Monte Carlo drives the existing canonical
+Simulator; it is not a second economic engine. One execution owner, explicit human promotion and
+no online Live self-learning remain mandatory. Hyperliquid or infrastructure changes create
+evidence/revalidation and fail safe; they do not mutate production automatically. The roadmap
+remains exactly 26 phases. See [deferred strategy-research specifications](deep-specs/strategy-research/README.md). `HDC-080..090` and F2 `HDC-097..099` await final human review.
 
 ## 52. Async concurrency and ordered commit
 
@@ -421,7 +430,7 @@ Initial V1 keeps `pair_to_routes`, BBO, FastL1, full-L2 QF-016, small q-grid, cu
 
 This is specified in [Async Concurrency and Ordered Commit](deep-specs/architecture/14_ASYNC_CONCURRENCY_AND_ORDERED_COMMIT.md) and the [analysis workspace](_analysis/async_concurrency_architecture/BASELINE_AND_SCOPE.md). `HDC-091..094` await final human review; implementation remains unauthorized.
 
-## 53. F2 Part 1 — Economic Falsifier and bounded validation
+## 53. F2 — Economic Falsifier and bounded baseline validation
 
 The [Economic Falsifier](deep-specs/validation/13_ECONOMIC_FALSIFIER_AND_BOUNDED_SWEEP.md)
 is a Validation-owned evidence projection over the existing Graph, Formula, Replay, Simulator,
@@ -436,7 +445,26 @@ not a winning strategy or permission. It is distinct from QF-077 Sizing Search a
 generalized Strategy Research Parameter Search. All candidate q values remain experimental;
 `ValidatedQSet` may have holes and QF-076 `Q_validated` remains only its scalar supremum.
 
-This is `F2 PART 1 / INTERMEDIATE DOCUMENTARY WORK`. It changes no Formula, Risk, ESM, phase,
-evidence-stage, HDC, review or capital authority and authorizes no implementation, Shadow,
-Micro-live or Live action. Prompt 2 owns later Strategy Research capabilities; Prompt 3 owns final
-roadmap/authority/human-review integration.
+For the first fixed OWA/TT hypothesis, qualifying falsification evidence may support a documentary
+DRAFT Strategy Candidate. It does not create that candidate automatically and never authorizes
+development, Shadow or capital. The candidate proceeds only through separately governed Replay,
+Shadow and Micro-live evidence to establish a bounded validated baseline. Only after that baseline
+may the complete gate make the future Research Factory eligible for separate activation review.
+
+This proposed F2 integration changes no Formula, Risk, ESM, technical phase, evidence stage or
+maturity meaning. `ROBUST_CANDIDATE` is not Shadow permission. No candidate q becomes
+`ValidatedQSet` membership or capital authority through simulation. `HDC-095..100` remain pending
+human review.
+
+## 54. F2 canonical navigation and review boundary
+
+The five human-readable architecture views are in the [F2 Architecture Diagram Atlas](_analysis/f2_final_integration/F2_ARCHITECTURE_DIAGRAM_ATLAS.md).
+The [canonical integration matrix](_analysis/f2_final_integration/F2_CANONICAL_INTEGRATION_MATRIX.md)
+routes each new requirement to its existing authority; the [technical/evidence crosswalk](_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md)
+keeps exactly 26 phases, 21 evidence stages and M0–M5; and the [PREC/HDC matrix](_analysis/f2_final_integration/F2_PRECISION_AND_HDC_TRACEABILITY.md)
+routes `PREC-P01..P19` without creating 19 equations or modules.
+
+F2 is a proposed documentary review candidate only. Its exact future commit/tree identity is
+recorded externally after the commit exists. Human documentation review, switchover authorization,
+Commit B acceptance, Phase-1 authorization, research activation and capital permission remain
+independent and ungranted. See the [F2 review handoff](_analysis/f2_final_integration/F2_FINAL_HUMAN_REVIEW_HANDOFF.md).

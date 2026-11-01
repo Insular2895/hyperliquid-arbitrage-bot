@@ -1,12 +1,12 @@
 # Strategy Research — Deferred Canonical Specifications
 
-`DOCUMENTATION STATUS: F2 PART 2 / INTERMEDIATE DOCUMENTARY WORK / AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: PROPOSED F2 REVIEW CANDIDATE / AWAITING HUMAN REVIEW`
 
 `CAPABILITY STATUS: FUTURE SPECIFIED / NOT ACTIVE`
 
 This directory specifies the future research layer of the same production Core. It is not a second
 economic engine, a second Strategy/Formula/Risk authority, a Phase 27, or permission to implement,
-run research or trade. F2 Part 2 adds documentary lifecycle and orchestration contracts only.
+run research or trade. F2 adds documentary lifecycle and orchestration contracts only.
 
 ## Baseline-first activation gate
 
@@ -19,10 +19,12 @@ reconciled attempt outcomes must already exist.
 
 The first success target remains one simple, correct, measurable and reconcilable same-venue
 Hyperliquid spot baseline: TT, simple direct/OWA comparison, exact executable L2 economics,
-conservative Risk and bounded q. It does not depend on Strategy Discovery, regime portfolios,
-Monte Carlo search, AI optimization or drift-driven research. A separately authorized, bounded
-local Falsifier batch may become available earlier when all of its Replay/T1 dependencies exist;
-that narrow capability does not satisfy or bypass the full Factory gate.
+conservative Risk and bounded q. Its fixed hypothesis may use the narrow Falsifier/Sweep, become a
+documentary DRAFT candidate and progress through separately governed Replay, Shadow and Micro-live
+without an active Factory. It does not depend on Strategy Discovery, regime portfolios, Monte
+Carlo search, AI optimization or drift-driven research. Optional bounded local workers may support
+an authorized experiment but are never a first-TT prerequisite. This path establishes, rather than
+assumes, the bounded baseline required by the full Factory gate.
 
 ## Authority and ownership
 
@@ -54,7 +56,7 @@ owns evidence maturity; the authorization system owns activation. No research st
 | materiality boundary, schema/storage, worker/queue policy and dashboard implementation | `HUMAN_DECISION_REQUIRED` | safe defaults remain documentary/local/disabled |
 | DragonflyDB | `DEFERRED` and `HUMAN_DECISION_REQUIRED` | optional benchmark candidate; no dependency or deployment |
 | structure proposal serialization and any Core integration | `HUMAN_DECISION_REQUIRED` / `DEFERRED` | human Architecture Review and separate specification |
-| master roadmap, HDC, final review, switchover and authorization reconciliation | `DEFERRED` | Prompt 3 |
+| master roadmap, HDC, final review, switchover and authorization reconciliation | `CROSS_LINK_ONLY` | integrated by the proposed F2 package; approvals remain pending |
 
 No accepted `CONFLICT` or authorized `SEMANTIC_CHANGE` was found. If later implementation exposes a
 conflict, canonical owners win and the research proposal stops for review.
@@ -91,7 +93,7 @@ smallest frozen experiment, bounded local execution if separately authorized, im
 manifests, no distributed dependency, no dashboard authority, no promotion and no structure
 integration.
 
-## Non-regression and Prompt-3 boundary
+## Non-regression and F2 review boundary
 
 This package changes zero QF equations, SI invariants, Risk/ESM transitions, technical phases,
 evidence stages, maturity levels or authorization states. It preserves exactly 26 Technical
@@ -100,6 +102,9 @@ lookahead, immutable RAW, deterministic Replay, OWA/Bridge/Rebalance distinction
 `ValidatedQSet`, scalar-supremum `Q_validated`, no automatic promotion, no Live self-learning, no
 research trading authority, no production hot-path Dragonfly and no automatic Structure change.
 
-Prompt 3 alone may reconcile the roadmap, HDC/precision ledgers, artifact-schema authority, human
-review package, switchover and final F2 governance integration. Documentation presence here does
-not approve that work or authorize Phase 1, Research, Shadow, Micro-live, Live or capital.
+The proposed F2 integration reconciles the roadmap, HDC/precision ledgers, authority and human
+review package through the [integration matrix](../../_analysis/f2_final_integration/F2_CANONICAL_INTEGRATION_MATRIX.md),
+[crosswalk](../../_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md) and
+[architecture atlas](../../_analysis/f2_final_integration/F2_ARCHITECTURE_DIAGRAM_ATLAS.md).
+Documentation presence does not approve F2 or authorize Phase 1, Research, Shadow, Micro-live,
+Live, switchover or capital.

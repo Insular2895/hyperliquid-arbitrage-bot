@@ -399,16 +399,36 @@ The existing journey gains no new stage. OBSERVE/RECORD can run a bounded simult
 
 Stored profiles can be reused across GoldenDatasets and new recordings, saving recurring rental cost, but every result retains actual/counterfactual provenance and profile freshness. Passive Replay cannot replace actual capital-bearing evidence. `HDC-077..079` remain pending final human review and authorize no implementation.
 
-## 45. Baseline first, scientific iteration last
+## 45. First baseline before the generalized research plane
 
-The existing journey remains unchanged and contains 26 phases. Complete and evidence the one-strategy end-to-end baseline first. Only then may the future loop add feature/strategy registries, bounded search, temporal OOS/walk-forward, calibrated Monte Carlo through the existing Simulator, Shadow Champion/Challenger, separately authorized Micro-live comparison and finally drift-driven research/demotion governance.
+The evidence journey remains exactly 21 stages. The first fixed OWA/TT hypothesis may use the
+Economic Falsifier and narrow Bounded Sweep as Foundation validation methods inside the applicable
+existing stages: freeze at SPECIFY; consume admissible OBSERVE/RECONSTRUCT/MAP/IDENTIFY evidence;
+run supported T1 in REPLAY/SIMULATE; complete independent temporal validation and frozen T2 before
+the final untouched holdout; then issue only a scientific disposition. These methods create no new
+stage and no automatic maturity.
+
+A documentary DRAFT candidate may then progress through the separate REPLAY, SHADOW LIVE and
+separately authorized MICRO-LIVE/VALIDATE TT gates. This path may establish the first bounded
+validated baseline; it does not require an active Research Factory. Only after that baseline may
+the full future loop activate generalized Parameter Search, Factory Challenger generation,
+advanced Monte Carlo research, automated Champion/Challenger/drift selection or distributed
+research.
 
 The later operating loop is `OPERATE -> MONITOR -> RESEARCH -> CHALLENGER -> VALIDATE -> PROMOTE OR REJECT -> OPERATE`. A drift path is `detect -> scope/demote if required -> ResearchTrigger -> offline candidate -> Replay/Simulator/Monte Carlo/OOS -> Shadow -> Micro-live if required -> explicit decision`; never `drift -> optimizer -> Live`.
 
-Promotion is explicit and human-controlled. AI can propose and summarize but cannot change Risk, capital, q, Live thresholds or strategy status. There is no automatic promotion, no online Live self-learning and no second economic engine. External/infra change and drift can force revalidation, scope contraction, safe rollback or NON-READY. See [Scientific Iteration](deep-specs/strategy-research/01_SCIENTIFIC_ITERATION_LOOP.md). `HDC-080..090` are pending final review and authorize no implementation or capital.
+Promotion is explicit and human-controlled. AI can propose and summarize but cannot change Risk, capital, q, Live thresholds or strategy status. There is no automatic promotion, no online Live self-learning and no second economic engine. External/infra change and drift can force revalidation, scope contraction, safe rollback or NON-READY. See [Scientific Iteration](deep-specs/strategy-research/01_SCIENTIFIC_ITERATION_LOOP.md). `HDC-080..100` are pending final review and authorize no implementation or capital.
 
 ## 46. Async baseline before parallel scale
 
 The evidence loop is `mostly-inline ordered baseline -> profile -> bounded pure-compute challenger -> semantic/replay proof -> end-to-end queue/scheduler comparison -> Shadow capture/economic comparison -> explicit promotion or rejection`. Full L2 and a small q-grid begin inline; route fanout, parallel q, Participant/F2/F3 and worker-count variants remain challengers. `BATCH_SELECT` and deterministic `EARLY_COMMIT` are separately versioned policies with no current winner.
 
 Scaling never means adding workers by core count alone. It preserves one ordered commit authority, actual-fill leg dependencies, current Risk/Reservation and bounded queues while measuring two-vCPU oversubscription, safety-event starvation, stale/deadline rates and Recorder interference. Offline research cannot consume Live resources without an explicit isolated deployment/budget. The journey and roadmap remain 21 evidence stages and 26 technical phases.
+
+## 47. F2 Falsifier and research evidence crosswalk
+
+The [F2 Technical and Evidence Crosswalk](_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md)
+maps T0/T1/T2, the finite Sweep, StrategySpec lineage, Registry, optional local workers, the future
+Factory, distributed orchestration and Structure Discovery onto these 21 stages. Every activity
+inherits the evidence class and authority of the canonical engine it consumes. A stage exit,
+technical phase exit and implementation/capital authorization remain different records.

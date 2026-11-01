@@ -443,14 +443,40 @@ No Phase 27 is added. Phase 2 revalidates current priority/cancel/API schemas; P
 
 Candidate VPS rental is bounded to calibration/revalidation campaigns. Profiles are reusable evidence artifacts, not a Live dependency. The existing 26-phase order and all authorization gates remain unchanged. See the [CORR-06 handoff](_analysis/corr06_final_consistency/FINAL_HUMAN_REVIEW_HANDOFF.md).
 
-## 49. Deferred research work in the existing 26 phases
+## 49. First-baseline methods and deferred research in the existing 26 phases
 
-No Phase 27 is added. Phase 3 eventually provides immutable Dataset/Run/report inputs; Phases 7–8 first prove the canonical Simulator and deterministic Replay, then may host a future Monte Carlo ensemble; Phases 16–18 may later add point-in-time features, `StrategySpec`, search and temporal OOS evidence; Phase 19 owns Shadow challenger comparison; Phase 20 alone can add separately authorized actual Micro-live evidence; Phase 26 can monitor a human-promoted champion. Strategy drift/research triggers are implemented last.
+No Phase 27 is added. The first fixed OWA/TT hypothesis may use T0 as its Phase-5–7 truth becomes
+available, a finite pre-registered Bounded Sweep with deterministic Phase-8 evidence, and full T1
+only after Phases 8–14 plus supported Phase-18 Simulator dependencies exist. T2 follows supported
+T1/temporal validation and precedes the final untouched holdout. These are validation methods, not
+new build phases.
 
-This mapping is inactive until the complete baseline—adapters through bounded validated baseline and deterministic evidence/reporting—is demonstrated. One Core, all prior phase dependencies, one execution owner, Risk/ESM/Recovery/Reconciliation authority and actual-fill truth remain unchanged. See the [deferred-activation audit](_analysis/future_strategy_research_and_lifecycle/ROADMAP_DEFERRED_ACTIVATION_AUDIT.md). `HDC-080..090` await final review.
+Qualifying evidence may support a documentary DRAFT `StrategySpec`. The same candidate then uses
+the existing Phase-8 Replay, Phase-19 Shadow and separately authorized Phase-20 Micro-live gates to
+establish a bounded validated baseline. The Research Factory is not a dependency of that first
+path. Local workers are optional bounded implementation choices; inline execution remains valid.
+
+The complete baseline gate still blocks generalized Parameter Search, Factory Challenger
+generation, later Monte Carlo research programs, automated Champion/Challenger/drift selection and
+distributed workers. Phase 3 eventually supplies immutable Dataset/Run/report inputs; Phases 7–8
+and 18/22 supply canonical Replay/Simulator; Phase 19 owns no-effect comparison; Phase 20 alone can
+add separately authorized actual evidence; Phase 26 may monitor a human-promoted champion.
+DragonflyDB remains only an optional deferred Research coordinator candidate. Structure Discovery
+is Future and requires human Architecture Review.
+
+One Core, all prior phase dependencies, one execution owner, Risk/ESM/Recovery/Reconciliation
+authority and actual-fill truth remain unchanged. See the [F2 crosswalk](_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md).
+`HDC-080..100` await final review; no HDC authorizes work.
 
 ## 50. Async/concurrency work in the existing 26 phases
 
 No Phase 27 is added and no phase responsibility changes. Phase 1 supplies job/generation/version/deadline primitives; Phase 2 async adapters; Phase 3 bounded Recorder/background handoff; Phase 4 ordered Book ownership and incremental state; Phase 7 bounded full-L2 baseline; Phase 8 scheduler-permuted deterministic Replay; Phase 9 route-fanout policy/benchmark; Phase 11 current-Risk stale-result safeguards; Phase 12 ordered Execution/effect separation; Phase 13 async order/cancel/query transport; Phase 14 async reconciliation effects; Phase 18 Simulator concurrency benchmarks; Phase 19 Shadow policy comparison; Phase 20 separately authorized real capture/latency evidence; Phase 26 evidence-gated scaling.
 
 The initial implementation remains mostly inline and ordered. Worker pools, parallel q-grid, `BATCH_SELECT`/`EARLY_COMMIT`, pool sizing and queue/deadline values are later measured choices. See [Async Concurrency and Ordered Commit](deep-specs/architecture/14_ASYNC_CONCURRENCY_AND_ORDERED_COMMIT.md). This mapping authorizes no phase.
+
+## 51. F2 dependency overlay
+
+The canonical capability table, including earliest support, evidence, capital effect, authority,
+STOP condition and no-new-phase rationale, is the [F2 Technical and Evidence Crosswalk](_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md).
+It is an overlay only: phase meanings 1–26 above remain unchanged. Technical phase exit, evidence
+maturity and authorization are distinct records; none advances automatically.

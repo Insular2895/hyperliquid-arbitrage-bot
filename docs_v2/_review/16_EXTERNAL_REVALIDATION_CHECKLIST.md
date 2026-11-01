@@ -63,3 +63,9 @@ OCI registry, signature/SBOM/scanner and vulnerability-tool facts are registered
 ## Non-authority invariants
 
 Official existence is not enablement. SDK implementation is not protocol truth. A provider claim is not a benchmark. A paper is not Hyperliquid calibration. Node compatibility is not node dependency. Priority feature existence is distinct from measured advantage, economic benefit and production authorization. External change may invalidate Formula inputs or Risk assumptions but cannot silently alter Formula architecture, accounting ownership, units, invalid semantics or hard Risk rules.
+
+The complementary `PREC-P01..P19` design document is dated 19 October 2026 and remains a
+post-source user requirement, not proof that fees, modifiers, feed/snapshot behavior, depth or
+maker/queue semantics are current. `PREC-P02`, `P15`, `P17` and `P18` therefore inherit this
+checklist and the exact consumer-specific dated primary-source gate. F2 makes no new current-
+exchange-fact assertion.

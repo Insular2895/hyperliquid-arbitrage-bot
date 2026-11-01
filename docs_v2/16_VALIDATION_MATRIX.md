@@ -248,7 +248,7 @@ Validate the C0–C5 boundary before performance: no worker/effect/background di
 
 `CT-001..015` permute result order, staleness, no-return, Recorder/export pressure, ACK/fill/cancel order, slow reconciliation, worker flood, panic, archive outage, feed gap, worker counts and two-vCPU oversubscription. Transparent candidates require exact state/result/reason/version/DecisionTrace parity. Full-L2 worker, parallel q-grid, Participant/F2/F3, worker-count and `BATCH_SELECT`/`EARLY_COMMIT` candidates additionally report EventToDecision/Send P50/P95/P99/P99.9, queue/compute/scheduler, context switches, CPU/allocations, stale/deadline/saturation, Recorder interference, state age and capture/economics where material. See the [experiment matrix](_analysis/async_concurrency_architecture/ASYNC_PERFORMANCE_EXPERIMENT_MATRIX.md).
 
-## 51. F2 Part 1 — Falsifier and robust-region evidence
+## 51. F2 — Falsifier, first baseline and robust-region evidence
 
 The namespaced tiers `FALSIFIER_T0`, `FALSIFIER_T1` and `FALSIFIER_T2` are validation protocol
 layers, not Simulator fidelity, Risk checkpoints or new maturity levels. T0 validates mathematical
@@ -266,5 +266,28 @@ not a single optimum.
 `ROBUST_CANDIDATE` is a namespaced diagnostic, never a capability, strategy status, promotion or
 authorization. Final holdout evaluation is once per locked decision family; a failed candidate is
 not retuned on that holdout. Region/sample/uncertainty thresholds and final artifact serialization
-remain `CALIBRATED / HUMAN_DECISION_REQUIRED`. This intermediate F2 Part-1 addition changes no
+remain `CALIBRATED / HUMAN_DECISION_REQUIRED`. This proposed F2 integration changes no
 roadmap stage and grants no implementation, Shadow, Micro-live, Live or capital permission.
+
+For the first fixed OWA/TT path, this evidence may be linked to a documentary DRAFT
+`StrategySpec`; neither the link nor `ROBUST_CANDIDATE` creates M2/M3/M4 status. Replay, Shadow and
+Micro-live each require their normal prerequisites, exact-scope evidence and separate authority.
+If those applicable gates later earn a bounded validated baseline, only then may the full Strategy
+Research gate make generalized search, Factory, later Monte Carlo, automated Challenger selection
+or distributed research eligible for separate activation review.
+
+## 52. F2 capability dependency summary
+
+| Capability | Earliest technical support | Evidence requirements | Activation gate | Status |
+|---|---|---|---|---|
+| T0 | Phases 5–7; data-dependent claims also require admissible Phases 3–4/8 evidence | M0 protocol, M1 goldens, frozen pre-registration | experiment authorization where execution is required | Foundation method; diagnostic |
+| narrow Bounded Sweep | Phase 7 mechanics and Phase 8 deterministic evidence; each cell inherits its consumers | fixed finite domain/budget, locked truth, temporal split, all outcomes | separate experiment authority | Foundation method; not generalized search |
+| full T1 | Phases 8–14 and supported Phase-18 Simulator fidelity | M2 Replay/ESM/Inventory/Reservation/Risk/Recovery mechanics | Validation review | unavailable before dependencies |
+| T2 | supported T1 plus applicable Phases 15–18 scenario evidence | frozen candidate, temporal OOS/walk-forward, declared adversarial family | Validation review | before final untouched holdout |
+| first DRAFT OWA/TT candidate | documentary M0 after linked evidence; execution path Phases 8–20 | lineage plus separately earned M2/M3/M4 evidence | Replay, Shadow and Micro-live authorities remain distinct | may precede Factory; non-authorizing |
+| local research workers | only after each job's canonical dependencies | semantic parity, bounded deterministic jobs, isolation | optional implementation/experiment authority | optional; inline fallback valid |
+| generalized search / Factory / advanced MC | bounded validated baseline plus full reporting/rollback support | multiplicity, OOS, support/OOD, deterministic reports and later exact gates | full Research baseline gate plus separate authorization | Research / inactive |
+| distributed workers / DragonflyDB | after Factory gate and distributed-system proof | idempotence, durable evidence, security/operations and coordinator-failure proof | separate future Research infrastructure decision | optional / deferred |
+| Structure Discovery | no current V1 activation phase | architecture impact and proof canonical structures are insufficient | human Architecture Review and new approved authority specs | Future proposal only |
+
+The complete row-level placement is the [F2 Technical and Evidence Crosswalk](_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md).

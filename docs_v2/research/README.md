@@ -7,6 +7,10 @@ This directory is the future human-readable and machine-indexable evidence regis
 It consumes the canonical [Strategy Research registry contract](../deep-specs/strategy-research/09_REPORTING_AND_KNOWLEDGE_BASE.md)
 and [orchestration boundary](../deep-specs/strategy-research/11_RESEARCH_ORCHESTRATION_AND_WORKERS.md).
 There are still zero real hypotheses, experiments, strategies or registry runs in this directory.
+The first fixed OWA/TT Falsifier evidence and DRAFT StrategySpec may eventually be indexed before
+Factory activation when separately authorized and actually produced; this empty structure is not
+evidence that such work ran. The [F2 crosswalk](../_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md)
+keeps the Registry documentary and non-authorizing.
 
 | Family | Identity authority | Index | Initial count |
 |---|---|---|---:|

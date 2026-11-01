@@ -56,3 +56,11 @@ The governing chain remains `SPECIFICATION → IMPLEMENTATION → EVIDENCE → V
 CORR-06 adds no Phase 27 or evidence stage. Phase 3 records multi-VPS/priority evidence, Phase 8 applies stored profiles, Phase 19 compares without effects, Phase 20 obtains actual priority/fill/completion evidence only after separate authorization, and Phase 26 selects/revalidates the winner. Permanent challenger rental is not required; profiles are reusable but freshness-gated.
 
 Async/concurrency adds no Phase 27 and changes no responsibility. The first baseline is mostly inline and ordered; async adapters/effects, bounded Recorder/background work and scheduler-permuted Replay are integrated into their existing phases. Worker fanout, parallel q-grid, pool sizing and route policy remain profiling/Replay/Shadow candidates. Phase 1 remains types/schemas only and is still unauthorized.
+
+F2 adds no phase or evidence stage. T0/narrow Sweep consume existing Phases 5–8 initially; full T1
+waits for Phases 8–14 plus supported Simulator fidelity; T2/holdout consume supported temporal
+evidence. The first DRAFT OWA/TT candidate then uses existing Replay, Phase-19 Shadow and separately
+authorized Phase-20 Micro-live to establish the bounded baseline. Factory/generalized search,
+advanced Monte Carlo and distributed workers remain deferred. Local workers are optional. The
+[F2 crosswalk](../_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md) records every
+dependency, authority and STOP condition.

@@ -34,3 +34,11 @@ M5 is not permanent. It requires continuous calibration, observed support and re
 CORR-06 adds HP-001–005 priority fixtures and VP-001–010 profile/Replay fixtures. They test typed IOC/ALO mechanics, cost once, cancel scope, adverse economics, event alignment, clock uncertainty, actual/counterfactual labels, profile expiry, tail-aware ranking, deterministic Replay, FastL1 parity, brief refresh, actual Micro-live precedence and critical Recorder preservation. Approval remains documentary; none of these tests has been implemented or passed in runtime code.
 
 The async gate additionally requires bounded queues/tasks, stale/deadline/cancellation dispositions, no direct worker/effect mutation, no network/disk coordinator wait, deterministic scheduler permutations and safety-event priority under worker/Recorder pressure. Benchmark candidates report P50/P95/P99/P99.9 plus queue, compute, scheduler, state-age, stale/deadline, capture and economic evidence. No runtime test has yet been implemented or passed.
+
+## F2 scientific disposition versus capability maturity
+
+`FALSIFIER_T0/T1/T2`, Bounded Sweep, `RobustnessRegion`, `ROBUST_CANDIDATE`, DRAFT
+`StrategySpec` and final holdout success are scientific/documentary states, not M0–M5 promotions.
+The first fixed OWA/TT candidate may precede Factory activation, but M2 Replay, M3 Shadow and M4
+Micro-live remain separate exact-scope evidence and authorization gates. The final holdout follows
+frozen T2 and cannot be optimized. See the [F2 crosswalk](../_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md).

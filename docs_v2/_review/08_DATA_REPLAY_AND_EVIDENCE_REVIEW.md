@@ -43,3 +43,12 @@ A simultaneous bounded multi-VPS Recorder campaign aligns the same events by aut
 Later Counterfactual Replay pins Dataset/Profile/modes/fidelity/build/config/formulas/models/feed/seed/clock/policy and labels results `COUNTERFACTUAL`. Profiles expire or drift and are not Live dependencies. Winner monitoring plus occasional brief challenger revalidation replaces permanent rental. Passive Replay cannot prove actual IOC/partial/completion/Recovery/priority benefit; Micro-live remains required. Multi-VPS pressure that loses P0/P1 invalidates the experiment.
 
 Concurrency does not alter the determinism equation. Jobs/results bind their complete input versions, generation and deadline; C0 sorts/accepts by identity and policy rather than completion time. `CT-001..015` vary scheduling, stale/no-return workers, Recorder/export pressure, ACK/fill/cancel ordering, reconciliation delay and two-vCPU pressure. Disk/checkpoint serialization remains background and P0 loss is never silent. See [Concurrency Replay Determinism](../_analysis/async_concurrency_architecture/CONCURRENCY_REPLAY_DETERMINISM_CONTRACT.md).
+
+## F2 experiment evidence boundary
+
+The Bounded Sweep freezes its protocol and retains negative, invalid, failed, duplicate and
+censored cells. The Experiment Registry indexes immutable domain evidence; it does not replace RAW,
+RunManifest, Replay order or actual labels. Local/distributed workers return deterministic results
+only; coordinator state and dashboards are non-authoritative. `PREC-P15..P19` strengthen feed,
+depth, OFI-proxy, maker-queue and point-in-time/no-lookahead review through the existing Data/
+Replay owners. See [F2 PREC/HDC traceability](../_analysis/f2_final_integration/F2_PRECISION_AND_HDC_TRACEABILITY.md).

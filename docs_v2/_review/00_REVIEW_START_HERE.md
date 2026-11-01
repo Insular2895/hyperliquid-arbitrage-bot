@@ -1,21 +1,21 @@
 # Final Human Review — Start Here
 
-> **CURRENT REVIEW PACKAGE — CORRECTIONS 05–21, CORR-01 THROUGH CORR-06, SCIENTIFIC ITERATION AND ASYNC/CONCURRENCY INTEGRATED.**
+> **PROPOSED FINAL REVIEW CANDIDATE F2 — FALSIFIER, STRATEGY RESEARCH AND FINAL CANONICAL INTEGRATION INCLUDED.**
 >
 > Human approval is `PENDING`. Implementation and legacy switchover are `NOT_AUTHORIZED`.
 
-`DOCUMENTATION STATUS: CURRENT — AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: PROPOSED F2 — AWAITING HUMAN REVIEW`
 
-This repository state is the Final Review Candidate. The exact immutable commit selected for human review becomes **Final Review Candidate F**. The reviewer records F's commit SHA, tree SHA and branch externally in the `DocumentationDecision` / `ReviewRecord`; F deliberately does not contain or require its own Git identity. This package is documentary evidence only: implementation, the `docs_v2` → `docs` switchover, Micro-live and Live all remain unauthorized.
+This repository state proposes **Final Review Candidate F2**. The exact Prompt-3 commit selected for human review becomes the F2 subject only when a reviewer records its commit SHA, tree SHA and branch `f2-governance-p3` externally in the `DocumentationDecision` / `ReviewRecord`; F2 deliberately does not contain or require its own future Git identity. This package is documentary evidence only: implementation, Research runtime, the `docs_v2` → `docs` switchover, Shadow, Micro-live, Live and capital all remain unauthorized.
 
-Historical Semantic Candidate A, Review Envelope C and their attestation commits remain available in `_analysis` as **HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE**. They explain how the corpus was reached, but they are not the active human-review subject, switchover source or Phase-1 authorization source. Commit B is the future canonical-path switchover output and remains absent.
+Historical Semantic Candidate A, Review Envelope C, Final Review Candidate F and their attestation commits remain available in `_analysis` as **HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE**. They explain how the corpus was reached, but they are not the active human-review subject, switchover source or Phase-1 authorization source. Commit B is the future canonical-path switchover output and remains absent.
 
 ## Decision sequence
 
-1. Select the exact Final Review Candidate F commit and record its SHA/tree externally in the human review record.
-2. Review exact F and choose `APPROVE(F)`, `REQUEST_CHANGES(F)` or `REJECT(F)`.
-3. If F is approved, separately consider `SwitchoverAuthorization(F)`.
-4. Execute the future Phase-20 transformation only from exact approved F and produce Commit B.
+1. Select the exact Final Review Candidate F2 commit and record its SHA/tree/branch externally in the human review record.
+2. Review exact F2 and choose `APPROVE(F2)`, `REQUEST_CHANGES(F2)` or `REJECT(F2)`.
+3. If F2 is approved, separately consider `SwitchoverAuthorization(F2)`.
+4. Execute the future Phase-20 transformation only from exact approved F2 and produce Commit B.
 5. Separately accept or reject exact B, then stop.
 6. Only later may a distinct record consider **technical Phase 1 only** on exact accepted B.
 
@@ -27,6 +27,7 @@ Documentation approval does not authorize switchover. Switchover authorization d
 2. [Open human decisions](14_OPEN_HUMAN_DECISIONS.md)
 3. [Implementation authorization checklist](19_IMPLEMENTATION_AUTHORIZATION_CHECKLIST.md)
 4. [Final human decision form](21_FINAL_HUMAN_DECISION_FORM.md)
+5. [F2 final human-review handoff](../_analysis/f2_final_integration/F2_FINAL_HUMAN_REVIEW_HANDOFF.md)
 
 ## Required reading — then
 
@@ -39,6 +40,9 @@ Documentation approval does not authorize switchover. Switchover authorization d
 7. [Implementation and scale roadmaps](13_IMPLEMENTATION_AND_SCALE_ROADMAP_REVIEW.md)
 8. [Deferred scientific iteration and strategy research](../deep-specs/strategy-research/README.md)
 9. [Async/concurrency architecture finalization](../_analysis/async_concurrency_architecture/ASYNC_ARCHITECTURE_FINAL_REPORT.md)
+10. [F2 five-map architecture atlas](../_analysis/f2_final_integration/F2_ARCHITECTURE_DIAGRAM_ATLAS.md)
+11. [F2 PREC/HDC traceability](../_analysis/f2_final_integration/F2_PRECISION_AND_HDC_TRACEABILITY.md)
+12. [F2 non-regression audit](../_analysis/f2_final_integration/F2_NON_REGRESSION_AUDIT.md)
 
 ## Should review
 
@@ -66,18 +70,18 @@ Documentation approval does not authorize switchover. Switchover authorization d
 
 ## Review protocol
 
-1. Select one exact immutable commit as Final Review Candidate F; never substitute moving HEAD or the latest branch tip.
-2. Record `reviewed_candidate_sha`, `reviewed_candidate_tree` and `reviewed_branch=codex-docs` in the external human DecisionRecord.
-3. Review exact F, including its manifest, Phase-18 lineage and scoped OPEN items.
+1. Select one exact immutable commit as Final Review Candidate F2; never substitute moving HEAD or the latest branch tip.
+2. Record `reviewed_candidate_sha`, `reviewed_candidate_tree` and `reviewed_branch=f2-governance-p3` in the external human DecisionRecord.
+3. Review exact F2, including the Falsifier/Sweep, first-baseline path, Registry/workers/Dragonfly boundaries, `PREC-P01..P19`, `HDC-095..100`, five maps, Phase-18 lineage and scoped OPEN items.
 4. Resolve or explicitly defer each scoped item and perform the spot checks/red-team questions.
-5. Approve, request changes to, or reject exact F.
-6. If approved, separately authorize or reject `SwitchoverAuthorization(F)`.
-7. Execute the Phase-20 transformation only from exact approved F and produce Commit B.
+5. Approve, request changes to, or reject exact F2.
+6. If approved, separately authorize or reject `SwitchoverAuthorization(F2)`.
+7. Execute the Phase-20 transformation only from exact approved F2 and produce Commit B.
 8. Review and separately accept or reject exact B.
 9. Stop.
 10. Only after B acceptance may a later record authorize or reject Phase 1 on exact B.
 
-All approval boxes are intentionally unchecked. A change to the review corpus creates a new candidate F2 and restarts exact review. There is no “approve with changes,” and no post-F identity or attestation commit is required.
+All approval boxes are intentionally unchecked. A material change to the selected F2 review corpus creates a new candidate and restarts exact review. There is no “approve with changes,” and no self-identity or attestation commit is required.
 
 ## Recommended source spot checks
 

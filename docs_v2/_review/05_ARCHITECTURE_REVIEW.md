@@ -74,3 +74,9 @@ PASS 14 result: 0 duplicate critical owners, 0 unowned critical states and an ac
 CORR-06 adds no owner. `InfraProfile` is immutable research evidence and priority policy is a typed treatment; neither becomes a state writer, execution authority or production dependency.
 
 The async/concurrency finalization classifies responsibilities C0–C5. External I/O is asynchronous; full L2/small q-grid remain inline initially; expensive pure snapshot work may use bounded workers; disk/telemetry are background; research is offline. Only C0 commits after current-version revalidation, Risk and Reservation. Worker completion never sets economic priority. `BATCH_SELECT` and deterministic `EARLY_COMMIT` remain pending Replay + Shadow comparison. See [Architecture spec 14](../deep-specs/architecture/14_ASYNC_CONCURRENCY_AND_ORDERED_COMMIT.md).
+
+F2 adds no state writer. The Falsifier validates a fixed claim; the finite Sweep enumerates declared
+cells; the Manager/workers orchestrate optional scientific computation; the Registry stores
+lineage; Analytics presents; and the future Factory proposes Challengers. The first OWA/TT
+candidate may precede Factory activation but still traverses separate existing gates. Review the
+[five canonical navigation maps](../_analysis/f2_final_integration/F2_ARCHITECTURE_DIAGRAM_ATLAS.md).

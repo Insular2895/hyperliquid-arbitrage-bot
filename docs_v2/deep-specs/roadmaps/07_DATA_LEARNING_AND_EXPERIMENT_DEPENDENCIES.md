@@ -17,6 +17,7 @@ Before a predictive model exists, its target must be observable, defined, labela
 | Q_validated | Full q curve plus every safety/evidence gate | Exact market/mode/model/regime/infra/version scope | Conservative minimum of known gates |
 | Bridge utility | Atlas history plus capital/exit/utilization outcomes | STAY comparator and future horizon declared | STAY |
 | Infra economics | Same-event host evidence plus survival/capture | Clock uncertainty and selection bias explicit | Current validated host |
+| Fixed OWA/TT falsification | Point-in-time Book/Graph/Fee/Formula plus Replay/Simulator fidelity actually available | frozen hypothesis/protocol, finite domain, temporal partitions, failures/censoring and no holdout reuse | no candidate claim; fail closed or diagnostic region |
 
 ## Experimental protocol
 
@@ -31,3 +32,15 @@ At decision time T, the run may consume only data, metadata, fees, models, Atlas
 A prediction is immutable before intervention and linked by stable IDs to actual arrival, ACK, fills, fees, slippage, Recovery, account and PnL. Reports include missing joins, count, support slices, bias, calibration, quantiles, coverage and tails. Post-hoc bucketing cannot define success.
 
 The row-level map is [EXPERIMENT_AND_DATA_REQUIREMENT_MAP.md](../../_analysis/pass12_build_validate_scale/EXPERIMENT_AND_DATA_REQUIREMENT_MAP.md).
+
+## F2 baseline and research dependency split
+
+The narrow Bounded Falsifier Sweep is a Foundation validation method for one fixed hypothesis. T0
+uses only canonical current truth; full T1 waits for Replay/ESM/Inventory/Reservations/Risk/
+Recovery/Simulator support; T2 acts on the frozen supported candidate before the final untouched
+holdout. A resulting `ROBUST_CANDIDATE` is diagnostic only.
+
+Experiment Registry schemas may be specified early, but actual records require their producing
+technical dependencies. Local workers are optional bounded computation, never a first-TT
+prerequisite. Generalized Parameter Search, Factory/Challenger generation, later Monte Carlo and
+distributed workers remain behind the full bounded-validated-baseline gate. See the [F2 crosswalk](../../_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md).

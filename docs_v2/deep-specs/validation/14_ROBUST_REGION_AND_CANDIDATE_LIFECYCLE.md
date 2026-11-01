@@ -1,6 +1,6 @@
 # 14 — Robust Region and Candidate Lifecycle
 
-`DOCUMENTATION STATUS: F2 PART 1 / INTERMEDIATE DOCUMENTARY WORK / AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: PROPOSED F2 REVIEW CANDIDATE / AWAITING HUMAN REVIEW`
 
 This specification defines how a Bounded Falsifier Sweep is summarized, challenged and disposed.
 It contains no real experiment result, validated quantity, profitable market, strategy promotion or
@@ -397,7 +397,8 @@ scientific `NO-GO`.
 Existing research reports use `PROMOTE`, `REJECT`, `HOLD` or `INCONCLUSIVE`, while hypothesis
 indexes use `OPEN`, `SUPPORTED_WITHIN_SCOPE`, `NOT_SUPPORTED`, `INCONCLUSIVE`, `INVALIDATED` and
 `SUPERSEDED`. Falsifier dispositions are intentionally not mapped automatically to those statuses.
-Prompt 3 must decide whether they remain a report-local vocabulary or receive a Data-owned schema.
+They remain a report-local vocabulary in proposed F2. A future Data-owned serialized enum/schema
+requires a separate reviewed schema decision and implementation authorization.
 
 ## 11. `PREC-P01` through `PREC-P19` coverage matrix
 
@@ -408,12 +409,12 @@ historical source snapshot is not treated as current exchange truth.
 |---|---|---|---|
 | `PREC-P01` | QF-007–016; Graph exact L2 pipeline | T0 rejects midpoint/BBO-only whole-route claims and binds every leg/q to observed support | current feed depth/capability requires dated revalidation; no conflict |
 | `PREC-P02` | QF-014/015; Fee/Data versioning; Risk unknown-fee gate | `DataAdmissibilityReport` and runs bind account/market/role/time fee rules, modifiers, rebates and debit assets | current fee/API facts require primary-source revalidation |
-| `PREC-P03` | Formula double-count audit; QF-056/057/063/090/106 | run/report cost-owner map; exclusive scenario population; invalid on ambiguous overlap | final serialized cost-lineage field is Prompt 3/Data-owned |
+| `PREC-P03` | Formula double-count audit; QF-056/057/063/090/106 | run/report cost-owner map; exclusive scenario population; invalid on ambiguous overlap | proposed F2 routes ownership to Formula/Accounting; final serialized field remains a later Data schema decision |
 | `PREC-P04` | QF-026/076/077; prediction errors QF-097–099 | exact candidate-q grid, uncertainty and holes; never raises `Q_validated` or duplicates penalties | robustness/sample thresholds human-calibrated |
 | `PREC-P05` | Risk safe set; QF-063/075; Recovery exception | objective vector separates new-route admission from defensive loss-taking | no Falsifier authorization; Risk remains owner |
 | `PREC-P06` | Graph/Inventory taxonomy; QF-017–023/070–072 | every experiment freezes structure/class/intent; conversion benefit is not absolute profit | Bridge remains later; no conflict |
 | `PREC-P07` | OWA comparator contract; QF-019/024/025 | matched decision-time information/deadline/Risk scope and route-vs-execution effects | deadline/comparator valuation conventions remain declared/calibrated |
-| `PREC-P08` | Accounting authority; QF-106–108 | disposition report requires separate attributable buckets and exact-once reconciliation | Prompt 3 authority reconciliation only; no formula change |
+| `PREC-P08` | Accounting authority; QF-106–108 | disposition report requires separate attributable buckets and exact-once reconciliation | proposed F2 confirms Accounting authority; no formula change |
 | `PREC-P09` | Inventory/Capital; ESM partial exposure; QF-068 | T1 reports exposure duration/limits/residuals and conservative executable liquidation separately from accounting valuation | valuation method remains explicit per experiment, not universally invented |
 | `PREC-P10` | Participant maker forecasts; ESM maker path; Recorder negative retention | later maker analysis reports conditional-on-fill and all-attempt populations, wait/reservations/cancel/Recovery/opportunity cost | maker capability remains gated and inactive |
 | `PREC-P11` | Risk T5; ESM maker lifecycle/Recovery | maker diagram requires repeated remaining-leg economics/Risk through canonical decisions | no new cancel/continue policy; later maker evidence required |
@@ -503,19 +504,17 @@ This specification preserves:
 - documentation acceptance does not authorize implementation or capital.
 
 QF equation changes: **0**. Risk/ESM transition changes: **0**. Phase/evidence-stage additions:
-**0**. Review/HDC/authorization changes: **0**.
+**0**. F2 adds post-source traceability records `HDC-095..100` and refreshes the review package;
+authorization changes remain **0**.
 
-## 16. Deferred integration
+## 16. F2 integration boundary
 
-### Prompt 2
+Prompt 2 specifies StrategySpec/Registry/Manager/workers/optional Dragonfly/Structure Discovery,
+while Prompt 3 routes them into the unchanged canonical authorities and roadmaps. The narrow
+Bounded Sweep remains a Foundation validation method and is not generalized Parameter Search.
 
-Deferred: Strategy Research/Registry/Workers/Dragonfly/Structure Discovery, generalized Parameter
-Search, AI proposal boundaries, distributed research mechanics and any research runtime. This
-Prompt-1 Bounded Sweep must not be generalized silently into those capabilities.
-
-### Prompt 3
-
-Deferred: roadmap placement without renumbering, cross-authority reconciliation, final artifact
-schema ownership, HDC/precision ledgers, human review package, final F2 integration and any change
-to review-candidate identity. Until then, this is an intermediate documentary addition and not an
-approved Final Review Candidate.
+See the [F2 integration matrix](../../_analysis/f2_final_integration/F2_CANONICAL_INTEGRATION_MATRIX.md),
+[technical/evidence crosswalk](../../_analysis/f2_final_integration/F2_TECHNICAL_EVIDENCE_CROSSWALK.md)
+and [five-map atlas](../../_analysis/f2_final_integration/F2_ARCHITECTURE_DIAGRAM_ATLAS.md).
+This remains a proposed review candidate, not approved documentation or authority for any runtime,
+Shadow, Micro-live, Live, capital or switchover action.

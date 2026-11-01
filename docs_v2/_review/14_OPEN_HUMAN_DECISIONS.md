@@ -43,10 +43,10 @@ Human approval cannot override failed evidence, hard Risk, stale/invalid state, 
 - Historical `HD-03`: Data/Participants selects the candidate artifact, horizons, coefficients and internals through temporal OOS evidence. Human authority is limited to approve/narrow/defer/reject promotion.
 - Historical `HD-07`: undefined mathematical semantics, statistical estimator choice and typed representation are separate. No reviewer invents a number for undefined division.
 - Historical `HD-08`: grid/refinement and solver representation are calibrated or implementation choices. A complex optimizer requires evidence eligibility plus human promotion approval; simple deterministic enumeration remains the fallback.
-- `HDC-001..094` are mapped as one post-reconstruction review package with per-item deterministic dispositions. They do not require 94 independent policy decisions.
+- `HDC-001..094` remain the historical mapped package. F2 `HDC-095..100` are six aggregate post-source requirements for Falsifier/robustness, the first-baseline dependency correction, research orchestration, Structure review and `PREC-P01..P19`. They do not create six new independent policy families.
 
 ## Blocker scope
 
 MT/MTT maker activation pending under HPD-01 does not block TT/TTT. TM/MM are Future and cannot be activated by HPD-01. Bridge or cross-exchange pending does not block same-venue V1. Scaling policy does not block Phase 1. Deferred decisions remain disabled in their exact capability scope. Documentation acceptance, Phase-1 authorization, Micro-live authorization, Live authorization and `docs_v2 -> docs` switchover are all separate gates and remain ungranted.
 
-See [Phase-14 governance analysis](../_analysis/phase14_human_decision_governance/FINAL_PHASE14_REPORT.md) for the complete 28-OPEN and 94-HDC mappings.
+See [Phase-14 governance analysis](../_analysis/phase14_human_decision_governance/FINAL_PHASE14_REPORT.md) for the historical complete 28-OPEN and 94-HDC mappings, and the [F2 PREC/HDC traceability](../_analysis/f2_final_integration/F2_PRECISION_AND_HDC_TRACEABILITY.md) for the separate HDC-095..100 overlay. The current genuine human-policy family count remains two.

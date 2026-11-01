@@ -1,10 +1,12 @@
 # 13 — Economic Falsifier and Bounded Falsifier Sweep
 
-`DOCUMENTATION STATUS: F2 PART 1 / INTERMEDIATE DOCUMENTARY WORK / AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: PROPOSED F2 REVIEW CANDIDATE / AWAITING HUMAN REVIEW`
 
 This specification defines a documentation-only scientific validation method. It implements no
 application code, exchange connection, order, signer, worker, database or dashboard. It grants no
 implementation, Shadow, Micro-live, Live, capital, promotion or switchover authority.
+
+Navigation: [F2 Global, Functional, Temporal, Failure and Governance maps](../../_analysis/f2_final_integration/F2_ARCHITECTURE_DIAGRAM_ATLAS.md).
 
 ## 1. Purpose and scientific question
 
@@ -77,7 +79,7 @@ The requirement audit uses these exact labels:
 | Final serialized fields/enums/storage | `HUMAN_DECISION_REQUIRED` | Data/Validation integration review required before implementation |
 | Formula, Risk, ESM, accounting or roadmap redefinition | `SEMANTIC_CHANGE` | prohibited; Prompt 1 records no such change |
 | Future generalized Parameter Search or Strategy Discovery activation | `DEFERRED` | Prompt 2; baseline gate unchanged |
-| Roadmap/authority/HDC/final-review reconciliation | `DEFERRED` | Prompt 3 |
+| Roadmap/authority/HDC/final-review reconciliation | `CROSS_LINK_ONLY` | proposed F2 integration; human review remains pending |
 | External Hyperliquid fee/API/feed/order facts | `DEFERRED` | dated primary-source revalidation before any consuming implementation |
 
 No accepted `CONFLICT` was found. The apparent overlap with future Parameter Search is resolved by
@@ -682,6 +684,6 @@ This specification does not:
 - update HDC ledgers, final review decision forms or switchover authorization;
 - authorize implementation, Shadow, Micro-live, Live, strategy promotion or capital.
 
-Prompt 2 owns later Strategy Research/Registry/Workers/Dragonfly/Structure Discovery work. Prompt 3
-owns roadmap and authority reconciliation, HDC/human review and final F2 integration. Until those
-controlled steps occur, these contracts remain intermediate documentary proposals.
+Prompt 2 specifies later Strategy Research/Registry/Workers/Dragonfly/Structure Discovery work.
+The proposed F2 package integrates roadmap/authority/HDC/review navigation without activating any
+capability. These contracts remain documentary proposals awaiting exact-snapshot human review.

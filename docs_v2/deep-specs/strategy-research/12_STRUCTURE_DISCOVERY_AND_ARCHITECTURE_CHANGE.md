@@ -1,6 +1,6 @@
 # 12 — Structure Discovery and Architecture Change
 
-`DOCUMENTATION STATUS: F2 PART 2 / INTERMEDIATE DOCUMENTARY WORK / AWAITING HUMAN REVIEW`
+`DOCUMENTATION STATUS: PROPOSED F2 REVIEW CANDIDATE / AWAITING HUMAN REVIEW`
 
 `CAPABILITY STATUS: FUTURE PROPOSAL MECHANISM / NOT ACTIVE`
 
@@ -130,8 +130,9 @@ All rejected, superseded and failed proposals remain in lineage so the same unsu
 is not repeatedly rediscovered. A later material fact may open a new linked proposal version; it
 does not rewrite the prior decision.
 
-## 5. Prompt-3 boundary
+## 5. F2 review boundary
 
-F2 Part 2 creates only this proposal contract. It does not modify master architecture, Formula,
-Graph, Risk, ESM, Inventory, roadmaps, HDC ledgers, review forms or authorization. Prompt 3 may
-reconcile governance placement, but may not infer approval of any proposed Structure.
+F2 creates only this proposal contract and classifies Structure Discovery as `FUTURE`. It does not
+modify Formula, Graph, Risk, ESM, Inventory or authorization. The proposed integration updates
+navigation, scope and HDC traceability only; it does not approve a proposed Structure. Human
+Architecture Review and separately approved authority/roadmap changes remain mandatory.

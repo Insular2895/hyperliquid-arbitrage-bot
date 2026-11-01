@@ -39,3 +39,8 @@ The table currently resolves to 29 identifiers from this exact candidate. The ca
 | [ ] | SI-029 | Priority payment and InfraProfile evidence cannot bypass Risk or create actual truth | performance evidence is not permission/state | Risk + Execution + Validation | Simulator, Infra, Accounting | unsafe permission or false fill/PnL | HP/VP and provenance fixtures | CORR-05/06 |
 
 Reviewer red-team prompts: What happens during ambiguous submit plus restart? Can any telemetry/license outage strand exposure? Can a second instance share an account? Can stale worker output commit? Can a model or larger balance expand permission without a new manifest? Any “yes” is a blocking rejection.
+
+F2 adds no SI identifier. The computed exact-candidate set remains `SI-001..SI-029`: Falsifier,
+Factory, Manager, workers, Registry, Dashboard and optional DragonflyDB inherit SI-015/016/017/
+022/023/027/028/029 and cannot become truth, Risk, execution, capital or Live authorities. See the
+[F2 non-regression audit](../_analysis/f2_final_integration/F2_NON_REGRESSION_AUDIT.md).
