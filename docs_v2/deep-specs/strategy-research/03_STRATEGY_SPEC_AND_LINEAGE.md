@@ -27,46 +27,80 @@ example, `Route2Leg` is structural; OWA is economic classification requiring a f
 comparator; TT is execution mode; Strategy is accounting intent. Bridge is intentional capital
 relocation, not a missing OWA comparator, and Rebalance is separate.
 
-### D1 — Structure to documentary Strategy candidate
+### D1 — First OWA/TT baseline path and later Challengers
 
 ```text
-CANONICAL ECONOMIC STRUCTURE
-Direct / OWA / Triangle / later separately approved Bridge
-               |
-               v
-       HYP-* FALSIFIABLE CLAIM
-               |
-               v
-   EXP-* FROZEN PROTOCOL + CONFIGURATIONS
-               |
-       +-------+-------+
-       |       |       |
-       v       v       v
-     RunId   RunId   RunId ... every outcome retained
-       +-------+-------+
-               |
-               v
-       ROBUSTNESS REGION EVIDENCE
-Discovery -> independent validation -> T2 -> final holdout
-               |
-               v
-  OPTIONAL DRAFT STRAT-* VERSION / CHALLENGER CANDIDATE
-               |
-               v
-SEPARATE EVIDENCE + HUMAN-GOVERNED CAPABILITY PROGRESSION
+FIRST BASELINE PATH
+
+OWA/TT HYP-* Hypothesis
+          |
+          v
+Falsifier + Bounded Sweep
+(RobustnessRegion / possible ROBUST_CANDIDATE evidence only)
+          |
+          v
+DRAFT Strategy Candidate
+          |
+          v
+Separate Evidence / Authorizations
+          |
+          v
+Replay -> Shadow -> Micro-live
+each through its own existing gate
+          |
+          v
+Bounded Validated Baseline
+          |
+          v
+FUTURE STRATEGY RESEARCH FACTORY
+full baseline gate now satisfied
+          |
+          v
+New HYP-* / Challengers
+          |
+          v
+full frozen experiment and evidence chain again
 ```
 
-Read top-to-bottom: a Structure scopes the claim; the frozen experiment creates configurations and
-runs; retained evidence may justify a documentary candidate, never an automatic Strategy or
-capability.
+Read top-to-bottom: the first simple OWA/TT claim is falsified without depending on the future
+Factory. Its evidence may justify documenting a DRAFT StrategySpec. That exact candidate can then
+enter Replay, Shadow and Micro-live only through their distinct prerequisites, evidence and
+authorizations. A bounded baseline becomes validated only after those applicable gates succeed.
+Only then may the complete baseline gate permit the future Factory to propose new hypotheses and
+Challengers, each of which re-enters the full frozen evidence chain.
 
-Contract — **Inputs:** canonical Structure/class/mode/intent, `HYP-*`, frozen `EXP-*`, admissible
-datasets. **Operations:** canonical Replay/Simulator/Falsifier evaluation and region construction.
-**Outputs:** immutable runs, region evidence and optionally a DRAFT `STRAT-*` version. **Canonical
-authority:** Graph/Formula/Data/Simulator/Validation, followed by separate human authorization.
-**Failure/uncertainty:** invalid, failed, negative, censored and unsupported runs remain; no region
-or candidate is forced. **Activation timing:** bounded Falsifier only after its dependencies and
-authorization; Strategy candidate progression only after the full baseline gate.
+Contract — **Inputs:** the initial canonical OWA structure/class, TT mode, Strategy intent,
+`HYP-*`, frozen `EXP-*`, admissible datasets and current canonical versions. Future Factory work
+additionally requires the already bounded Validated Baseline. **Operations:** the initial path uses
+the Bounded Falsifier contract and may produce region/candidate evidence; the same immutable DRAFT
+candidate then progresses through separately gated Replay, Shadow and Micro-live. The later
+Factory may propose new hypotheses/Challengers but cannot skip their experiments or validation.
+**Outputs:** immutable runs, `RobustnessRegion`, a possible non-authorizing `ROBUST_CANDIDATE`, an
+optional DRAFT `STRAT-*` version, and—only after separate gates—a bounded Validated Baseline.
+Future Factory outputs remain proposals/Challengers. **Canonical authority:** Graph/Formula/Data/
+Replay/Simulator/Validation retain scientific and economic truth; Risk, capability governance and
+the named human authorization processes retain permission at every stage. **Failure/uncertainty:**
+invalid, failed, negative, censored and unsupported evidence remains; failure at any gate stops or
+narrows only that exact scope, never fabricates a baseline. **Activation timing:** the initial
+OWA/TT DRAFT and its separately authorized Replay/Shadow/Micro-live progression may precede
+activation of the Factory. The full baseline gate remains mandatory for the Strategy Research
+Factory, generalized Parameter Search, advanced Strategy Discovery and other deferred research
+programs.
+
+The bootstrap rule removes a circular dependency: the first bounded OWA/TT StrategySpec helps
+establish the baseline that later gates the Factory; the Factory is not a prerequisite for that
+first StrategySpec. `DRAFT`, `ROBUST_CANDIDATE`, `OOS_VALIDATED`, `SHADOW_CANDIDATE` and every other
+documentary status are evidence labels only. In particular, `ROBUST_CANDIDATE` is not Shadow
+permission, and neither a Falsifier result nor a Strategy status authorizes development,
+activation, q/capital, an order or Live use. M0–M5, Replay, Risk, Shadow, Micro-live and capital
+gates remain independent, explicit and non-transitive.
+
+| D1 part | Inputs and step | Result | Authority | Restriction |
+|---|---|---|---|---|
+| first OWA/TT falsification | scoped `HYP-*`, frozen `EXP-*`, admissible evidence; run the Bounded Falsifier | retained runs, region and possible `ROBUST_CANDIDATE` evidence | Formula/Data/Replay/Simulator/Validation | no automatic `STRAT-*`, development or next-stage permission |
+| first documentary candidate | qualifying evidence is linked to an immutable DRAFT `STRAT-*` version | inspectable candidate lineage | Strategy Research owns documentation only | DRAFT is not implementation, Shadow, capital or Live authorization |
+| baseline capability progression | exact candidate plus each stage's prerequisites, evidence and separate authorization | Replay, then Shadow, then Micro-live evidence; bounded Validated Baseline only if all applicable gates pass | M0–M5, Risk, Replay, Shadow, Micro-live and authorization owners | no inherited or automatic transition; failure stops/narrows the exact scope |
+| future Research Factory | complete bounded Validated Baseline and full baseline gate | new hypotheses and Challenger proposals | Factory proposes; canonical engines and human governance decide evidence/permission | Factory, generalized search and advanced discovery remain inactive before the full gate |
 
 ## 2. StrategySpec contract
 
