@@ -182,22 +182,46 @@ unlock a reservation.
 ## Map 5 — Evidence, governance and F2 identity
 
 ```text
-Actual evidence | Replay evidence | Simulated/counterfactual evidence
+ACTUAL / REPLAY / SIMULATED EVIDENCE
+                  |
+                  v
+          Immutable Registry
+       (provenance explicitly typed)
+                  |
+                  v
+      Validation assesses CURRENT
+      earned maturity level M0–M5
+                  |
+                  v
+      Proposed NEXT scoped activity
+      M1 Tests / M2 Replay /
+      M3 Shadow / M4 Micro-live /
+      M5 Live
+                  |
+                  v
+      Check exact prerequisites
+      + separate authorization
+                  |
+            +-----+-----+
+            |           |
+          DENIED      APPROVED
+            |           |
+            v           v
+           STOP     Execute only
+                    authorized scope
                          |
                          v
-       immutable Registry with explicit provenance classes
+                    New Evidence
                          |
                          v
-        Validation M0 -> M1 -> M2 -> M3 -> M4 -> M5
+                 Validation Review
                          |
                          v
- exact-scope human review / separate authorization record
+                 Earned Maturity
                          |
                          v
-          CapabilityManifest AND readiness AND Risk
-                         |
-                         v
-              possible bounded runtime effect
+               Next separate gate
+              (never automatic)
 
 DOCUMENTATION GOVERNANCE (SEPARATE CHAIN)
 historical Final Review Candidate F
@@ -220,13 +244,28 @@ future separate Phase1Authorization(B), if ever granted
 
 | Required field | Map-5 meaning |
 |---|---|
-| Inputs | provenance-typed evidence; exact candidate commit/tree/branch in external records |
-| Operations | immutable indexing, M0–M5 assessment, scoped review, independent authorization intersections |
+| Inputs | provenance-typed evidence, current earned maturity and a proposed next scoped activity; exact candidate commit/tree/branch in external records |
+| Operations | immutable indexing; Validation assesses current earned maturity; exact prerequisites and separate prior authorization are checked for the proposed activity; only the authorized scope executes; new evidence returns to Validation review |
 | Outputs | evidence disposition or decision record; never implicit next-gate approval |
 | Canonical owner | Data/Registry for evidence lineage; Validation for maturity; named human authority for decisions; Risk at runtime |
-| Dependencies | complete exact snapshot, current evidence, applicable SI set, traceability and non-stale prerequisites |
-| Failure / STOP | mixed evidence classes, moving-HEAD identity, stale certificate, approve-with-changes, absent prerequisite |
+| Dependencies | complete exact snapshot, current evidence, applicable SI set, traceability and non-stale prerequisites; exact CapabilityManifest, readiness, Risk and applicable capital/order authorization before any capital/order effect |
+| Failure / STOP | mixed evidence classes, moving-HEAD identity, stale certificate, approve-with-changes, failed prerequisite, denied authorization or activity outside the authorized scope |
 | Status | proposed F2 review package pending; no documentation approval, switchover, B, Phase 1 or capital authority |
+
+Maturity records evidence already earned; authorization permits only a separately reviewed future
+scope. The following rules therefore apply:
+
+- M0 is documentation maturity, not execution permission.
+- M1/M2 evidence does not automatically authorize Shadow.
+- Shadow requires prior authorization; successful evidence may subsequently establish M3.
+- Micro-live requires separate prior authorization and applicable capital controls; successful
+  evidence may establish M4.
+- Live requires its own prior authorization; M5 is earned only from valid scoped Live evidence.
+- Every capital/order effect requires the exact CapabilityManifest, readiness, Risk and applicable
+  capital/order authorization.
+- A failed prerequisite or denied authorization prevents the next risk-increasing activity.
+- Existing exposure remains governed by canonical Risk, Recovery and Reconciliation.
+- No stage promotes itself or another stage.
 
 The final F2 commit SHA/tree are deliberately absent from its own corpus. A reviewer records them
 externally after the commit exists. Any material post-selection change creates another candidate
