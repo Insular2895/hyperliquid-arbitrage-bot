@@ -214,3 +214,19 @@ Opportunity evaluation supplies the frozen E0 candidate and exact QF-016 path me
 `pair_to_routes`, BBO, FastL1 and full-L2 QF-016 run inline in the initial baseline. A bounded route/q worker pool is a benchmark challenger only; every job/result carries the complete Graph/index, ordered Book, fee, metadata, Formula, q, feature/model/config and generation identity consumed. Current C0 revalidation precedes deterministic sizing/allocation, final Risk and Reservation.
 
 Worker arrival cannot choose a route. `BATCH_SELECT` and a deterministically prioritized `EARLY_COMMIT` are both safe candidates under bounded deadlines and explicit missing/stale dispositions; the current architecture selects neither. Replay + Shadow must compare them before human approval. See the [Route Fanout Policy](./_analysis/async_concurrency_architecture/ROUTE_FANOUT_DECISION_POLICY_CONTRACT.md).
+
+## 36. Falsifier projection over canonical routes
+
+The [Economic Falsifier](deep-specs/validation/13_ECONOMIC_FALSIFIER_AND_BOUNDED_SWEEP.md)
+consumes the existing `DirectRoute`, `Route2Leg` and `Cycle3Leg` structures without adding an
+alternative route enumeration. Every experiment freezes route structure independently from
+economic classification, execution mode and accounting intent. OWA still requires the fair,
+decision-time `A -> B` comparator; a missing comparator invalidates OWA and does not automatically
+create Bridge.
+
+Sweep route/market subsets are predeclared validation inputs, not Graph truth, HOT state or
+permission. Candidate q cells use exact QF-016 economics and preserve invalid points and
+non-monotonic support. The resulting
+[Robustness Region](deep-specs/validation/14_ROBUST_REGION_AND_CANDIDATE_LIFECYCLE.md) is a
+diagnostic evidence artifact only; it cannot create a route, strategy, Bridge classification,
+`Q_validated` membership or execution authorization.

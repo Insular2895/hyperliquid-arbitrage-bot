@@ -247,3 +247,24 @@ Additional negative fixtures prove that `StrategySpec` status grants no Risk/Liv
 Validate the C0–C5 boundary before performance: no worker/effect/background direct mutation; bounded queues/task population; complete job/result versions; stale/late/duplicate disposition; no indefinite hot-path await; current final Risk; atomic Reservation; actual-fill-driven later legs; effect responses through ordered events; P0 Recorder preservation; deterministic startup/shutdown.
 
 `CT-001..015` permute result order, staleness, no-return, Recorder/export pressure, ACK/fill/cancel order, slow reconciliation, worker flood, panic, archive outage, feed gap, worker counts and two-vCPU oversubscription. Transparent candidates require exact state/result/reason/version/DecisionTrace parity. Full-L2 worker, parallel q-grid, Participant/F2/F3, worker-count and `BATCH_SELECT`/`EARLY_COMMIT` candidates additionally report EventToDecision/Send P50/P95/P99/P99.9, queue/compute/scheduler, context switches, CPU/allocations, stale/deadline/saturation, Recorder interference, state age and capture/economics where material. See the [experiment matrix](_analysis/async_concurrency_architecture/ASYNC_PERFORMANCE_EXPERIMENT_MATRIX.md).
+
+## 51. F2 Part 1 — Falsifier and robust-region evidence
+
+The namespaced tiers `FALSIFIER_T0`, `FALSIFIER_T1` and `FALSIFIER_T2` are validation protocol
+layers, not Simulator fidelity, Risk checkpoints or new maturity levels. T0 validates mathematical
+and economic sanity, T1 evaluates supported mechanical execution realism through the canonical
+Replay/Simulator/ESM semantics, and T2 attempts to invalidate a frozen candidate region under
+predeclared plausible adverse scenarios.
+
+The [Bounded Falsifier Sweep](deep-specs/validation/13_ECONOMIC_FALSIFIER_AND_BOUNDED_SWEEP.md)
+freezes the hypothesis, family, parameter domains, locked safety/exchange truth, data splits,
+budget, stopping rule, multiplicity family, robustness method and holdout policy before results.
+It retains every negative, invalid, failed, duplicate and censored attempt. Its principal result is
+a [Robustness Map / Candidate Region](deep-specs/validation/14_ROBUST_REGION_AND_CANDIDATE_LIFECYCLE.md),
+not a single optimum.
+
+`ROBUST_CANDIDATE` is a namespaced diagnostic, never a capability, strategy status, promotion or
+authorization. Final holdout evaluation is once per locked decision family; a failed candidate is
+not retuned on that holdout. Region/sample/uncertainty thresholds and final artifact serialization
+remain `CALIBRATED / HUMAN_DECISION_REQUIRED`. This intermediate F2 Part-1 addition changes no
+roadmap stage and grants no implementation, Shadow, Micro-live, Live or capital permission.

@@ -420,3 +420,23 @@ Only C0 owners mutate canonical Book, Account, Fill, Inventory, Reservation, Ris
 Initial V1 keeps `pair_to_routes`, BBO, FastL1, full-L2 QF-016, small q-grid, current Risk, Reservation, immutable plan and local signing bounded/inline. Route/q/model workers are measured challengers, not assumed improvements. External order/cancel/query/reconciliation work is asynchronous and returns through ordered events. Recorder disk/checkpoint serialization/compression/archive and telemetry formatting/export are background. Research stays offline. `BATCH_SELECT` and deterministic `EARLY_COMMIT` remain policy candidates requiring Replay + Shadow; first-worker-wins is forbidden.
 
 This is specified in [Async Concurrency and Ordered Commit](deep-specs/architecture/14_ASYNC_CONCURRENCY_AND_ORDERED_COMMIT.md) and the [analysis workspace](_analysis/async_concurrency_architecture/BASELINE_AND_SCOPE.md). `HDC-091..094` await final human review; implementation remains unauthorized.
+
+## 53. F2 Part 1 — Economic Falsifier and bounded validation
+
+The [Economic Falsifier](deep-specs/validation/13_ECONOMIC_FALSIFIER_AND_BOUNDED_SWEEP.md)
+is a Validation-owned evidence projection over the existing Graph, Formula, Replay, Simulator,
+Inventory, Risk, Execution and Accounting authorities. Its fully qualified tiers
+`FALSIFIER_T0`, `FALSIFIER_T1` and `FALSIFIER_T2` do not replace Simulator `F0–F4`, Risk
+checkpoints, maturity or evidence stages. It creates no second Simulator, formula engine, ESM or
+state owner.
+
+The Bounded Falsifier Sweep tests one frozen economic hypothesis over a finite predeclared space
+and produces a [Robustness Map / Candidate Region](deep-specs/validation/14_ROBUST_REGION_AND_CANDIDATE_LIFECYCLE.md),
+not a winning strategy or permission. It is distinct from QF-077 Sizing Search and the deferred
+generalized Strategy Research Parameter Search. All candidate q values remain experimental;
+`ValidatedQSet` may have holes and QF-076 `Q_validated` remains only its scalar supremum.
+
+This is `F2 PART 1 / INTERMEDIATE DOCUMENTARY WORK`. It changes no Formula, Risk, ESM, phase,
+evidence-stage, HDC, review or capital authority and authorizes no implementation, Shadow,
+Micro-live or Live action. Prompt 2 owns later Strategy Research capabilities; Prompt 3 owns final
+roadmap/authority/human-review integration.

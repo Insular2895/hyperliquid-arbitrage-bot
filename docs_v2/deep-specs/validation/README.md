@@ -17,5 +17,11 @@ This directory expands [16_VALIDATION_MATRIX.md](../../16_VALIDATION_MATRIX.md).
 10. [Fault injection and recovery](10_FAULT_INJECTION_CHAOS_AND_RECOVERY_VALIDATION.md)
 11. [Q_validated and capital promotion](11_SCALING_Q_VALIDATED_AND_CAPITAL_PROMOTION.md)
 12. [Scientific evidence and reproducibility](12_SCIENTIFIC_EVIDENCE_REPORTING_AND_REPRODUCIBILITY.md)
+13. [Economic Falsifier and Bounded Falsifier Sweep](13_ECONOMIC_FALSIFIER_AND_BOUNDED_SWEEP.md)
+14. [Robust Region and candidate lifecycle](14_ROBUST_REGION_AND_CANDIDATE_LIFECYCLE.md)
 
 These specifications define future evidence and permission contracts only. They do not implement tests or authorize a Live capability.
+
+Specifications 13–14 are `F2 PART 1 / INTERMEDIATE DOCUMENTARY WORK`. They define a narrow
+validation protocol, do not activate the deferred Strategy Research program, and require Prompt-3
+authority/roadmap reconciliation before any final F2 review-candidate claim.
