@@ -254,10 +254,25 @@ show that a Sweep is finite, predeclared and interpretable.
 ## 8. Candidate lifecycle
 
 ```text
-Structure + HYP-* -> Data admissibility -> T0 per-cell prefilter
+Structure + HYP-*
       |
       v
-T1 machinery available -> frozen experimental protocol
+PRELIMINARY NON-EMPIRICAL STRUCTURAL CHECKS
+formula/schema consistency only
+      |
+      v
+DATASET AVAILABILITY / ADMISSIBILITY ASSESSMENT
+      |
+      v
+FREEZE EXPERIMENTAL PROTOCOL
+domains / budget / splits / selection / T2 / final holdout
+      |
+      v
+FALSIFIER_T0 PER-CELL PREFILTER
+under the frozen protocol
+      |
+      v
+T1 MACHINERY AVAILABLE
       |
       v
 BOUNDED DISCOVERY SWEEP USING T1
@@ -343,8 +358,9 @@ Required semantic fields:
 
 - report identity/version, `EXP-*`, `HYP-*`, optional `STRAT-*` reference and EvidenceIds;
 - question, scope, tier completion and dependency availability;
-- Data Admissibility, T0, T1, Discovery Sweep, independent Validation, walk-forward, T2 and final
-  holdout results in authoritative order;
+- preliminary non-empirical checks, Data Admissibility, frozen-protocol reference, T0, T1,
+  Discovery Sweep, independent Validation, walk-forward, T2 and final holdout results in
+  authoritative order;
 - diagnostic disposition and scientific `GO`/`NO-GO`/`INCONCLUSIVE` conclusion;
 - complete population counts, failures, invalidity, censoring and missingness;
 - supported claims separated from unsupported claims and interpretation;

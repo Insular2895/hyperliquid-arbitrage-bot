@@ -1,6 +1,8 @@
 # 10 — Drift and Research Triggers
 
-STATUS: FUTURE SPECIFIED / LAST-LAYER ACTIVATION / NOT ACTIVE
+`DOCUMENTATION STATUS: F2 PART 2 / INTERMEDIATE DOCUMENTARY WORK / AWAITING HUMAN REVIEW`
+
+`CAPABILITY STATUS: FUTURE SPECIFIED / LAST-LAYER ACTIVATION / NOT ACTIVE`
 
 Strategy drift is evidence that a previously supported artifact or scope may no longer be supported. It is not permission for autonomous adaptation.
 
@@ -19,3 +21,72 @@ Demotion preserves one execution owner, stops new risk where required, lets ESM/
 This capability is implemented last: only after the baseline, deterministic reporting, StrategySpec lineage, temporal OOS, Champion/Challenger and safe rollback exist. Initial production artifacts do not self-learn online.
 
 Hard safety monitors may stop new risk immediately under the Risk Constitution. Weak statistical strategy drift normally creates research/demotion evidence and never overrides hard Risk semantics. A single bad day is not automatically a new regime; minimum samples, economic materiality and hysteresis apply.
+
+## Immutable StrategyVersion lifecycle
+
+Drift never edits a deployed artifact. The exact observed `StrategyVersion`, detector/window and
+external-fact/fee/feed/model versions remain linked to the evidence. A proposed change creates a new
+`HYP-*`/`EXP-*` and, if material, a candidate immutable version with explicit parent and evidence
+transfer limits. Failed, demoted, retired and superseded versions remain queryable.
+
+### D9 — Drift to candidate v2 and human-controlled progression
+
+```text
+Validated StrategyVersion v1
+             |
+             v
+reconciled Actual Evidence + support/external-fact versions
+             |
+             v
+       Drift Detection
+             |
+     +-------+--------------------+
+     |                            |
+insufficient support         hard safety issue
+     |                            |
+     v                            v
+REVIEW / UNAVAILABLE       canonical Risk action
+     |                            |
+     +-------------+--------------+
+                   |
+                     v
+        Research Trigger (if warranted)
+                     |
+                     v
+              new HYP-* / EXP-*
+                     |
+                     v
+       offline Research / Falsifier
+                     |
+                     v
+       candidate StrategyVersion v2
+                     |
+                     v
+ independent Validation / OOS / T2 / holdout
+                     |
+                     v
+        human-controlled promotion pathway
+
+v1 is never mutated; v2 never self-promotes.
+```
+
+Read top-to-bottom: reconciled actual evidence may reveal unsupported behavior; safety remains with
+Risk, while research creates new immutable lineage and can only forward a validated candidate to a
+human-controlled pathway.
+
+Contract — **Inputs:** exact v1, reconciled actual evidence, detector/support and dated fee/feed/
+external-fact versions. **Operations:** typed drift evaluation, support check, Risk escalation or
+research trigger, frozen offline experiment and independent validation. **Outputs:** alert,
+evidence, scope contraction/demotion/retirement or non-authorizing v2 candidate. **Canonical
+authority:** Execution/Reconciliation for actual facts, Risk for safety, Validation for evidence,
+humans for promotion. **Failure/uncertainty:** insufficient samples/support are `UNAVAILABLE`/
+review; contradictory actual outcomes dominate simulations; no silent refit. **Activation timing:**
+last-layer capability after baseline, reporting, lineage, Champion/Challenger and rollback exist.
+
+External fee, feed, metadata, schema or market-rule changes do not rewrite historical results. They
+create dated version boundaries, affected-artifact queries and revalidation triggers. Safe
+consequences may contract or demote scope; recovered health cannot auto-resume or auto-promote.
+
+Detector thresholds, materiality, hysteresis, re-entry policy and version evidence-transfer rules
+remain `CALIBRATED / HUMAN_DECISION_REQUIRED`. Safe default is alert/review or conservative scope
+contraction through existing authority, never online learning or automatic v2 activation.

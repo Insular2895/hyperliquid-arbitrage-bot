@@ -124,9 +124,20 @@ capital relocation for expected future utility. Rebalance remains a separate acc
 Structure + fixed HYP-* hypothesis and exact intended scope
                               |
                               v
-                    Data admissibility
+       Preliminary non-empirical structural checks
+              (formula/schema consistency only)
+                       | invalid exact scope
+                       `-------------------> scoped STOP
+                              |
+                              v
+          Dataset availability / admissibility assessment
                        | material deficit in exact scope
                        `-------------------> DATA_INSUFFICIENT / scoped STOP
+                              |
+                              v
+                 Frozen experimental protocol
+          domains / budget / splits / selection rules
+             T2 plan / final holdout policy
                               |
                               v
                     FALSIFIER_T0
@@ -140,9 +151,6 @@ Structure + fixed HYP-* hypothesis and exact intended scope
                   T1 machinery available
                    | unavailable
                    `-----------------------> INCONCLUSIVE
-                              |
-                              v
-                 Frozen experimental protocol
                               |
                               v
              Bounded Discovery Sweep using T1
@@ -177,15 +185,17 @@ Structure + fixed HYP-* hypothesis and exact intended scope
                    Later candidate review only
 ```
 
-Contract — **In:** fixed structure/class/mode/intent and versioned evidence. **Does:** applies
-admissibility, a per-cell T0 prefilter, T1-driven bounded Discovery, independent temporal
-confirmation and predeclared T2 attacks in that order. **Out:** diagnostic evidence and a scoped
-scientific disposition. **Truth owners:** Graph, Formula, Simulator, Execution, Data and Validation.
+Contract — **In:** fixed structure/class/mode/intent and versioned evidence. **Does:** permits only
+non-empirical formula/schema checks before dataset assessment, then freezes the complete protocol
+before any data-dependent T0 cell, followed by T1-driven bounded Discovery, independent temporal
+confirmation and predeclared T2 attacks. **Out:** diagnostic evidence and a scoped scientific
+disposition. **Truth owners:** Graph, Formula, Simulator, Execution, Data and Validation.
 **Stop:** a genuinely invalid structure/formula/comparator/data precondition stops only the exact
 scope it invalidates; unavailable T1 mechanics or incomplete evidence yields `INCONCLUSIVE` or
 `DATA_INSUFFICIENT`. A failed individual cell is retained and does not stop evaluation of other
-admissible cells. **Available:** T0 after Formula/Data/Replay dependencies; full T1/T2 only when
-their existing technical dependencies are evidenced. No tier grants runtime permission.
+admissible cells. **Available:** data-dependent T0 only after Formula/Data/Replay dependencies and
+the frozen protocol; full T1/T2 only when their existing technical dependencies are evidenced. No
+tier grants runtime permission.
 
 ## 7. Falsifier tiers
 
@@ -556,20 +566,23 @@ Simulator fidelity, untested configurations and incomplete coverage produce `DAT
 The mandatory sequence is:
 
 1. declare the structure, `HYP-*`, rationale and exact intended evaluation scope;
-2. establish data admissibility for that scope;
-3. apply `FALSIFIER_T0` as the cheap mathematical/economic prefilter, retaining cell-scoped results;
-4. prove the required `FALSIFIER_T1` machinery is available for the claim;
-5. freeze `EXP-*`, parameter space, datasets, budget, selection, robustness, T2 and holdout rules;
-6. run the Bounded Discovery Sweep using T1 for every admissible supported configuration;
-7. produce the Discovery Robustness Map and preliminary candidate regions, retaining all attempts;
-8. evaluate the frozen method in independent temporal Validation windows;
-9. execute the predeclared walk-forward policy;
-10. freeze the validation-supported candidate and bind it to the already predeclared T2 protocol;
-11. run `FALSIFIER_T2` adverse tests without consulting the final holdout;
-12. lock every final selection, assumption and decision rule;
-13. evaluate the untouched final temporal holdout once for the declared decision family;
-14. issue a scoped scientific `GO`, `NO-GO` or `INCONCLUSIVE` conclusion plus diagnostic disposition;
-15. if warranted, propose a candidate for later authorization review—never direct trading.
+2. perform only preliminary non-empirical structural, formula and schema consistency checks;
+3. assess dataset availability and admissibility for that scope without selecting configurations;
+4. freeze `EXP-*`, parameter domains, datasets/splits, budget, selection, robustness, T2 and final
+   holdout rules;
+5. apply data-dependent `FALSIFIER_T0` as the cheap mathematical/economic per-cell prefilter under
+   that frozen protocol, retaining cell-scoped results;
+6. prove the required `FALSIFIER_T1` machinery is available for the claim;
+7. run the Bounded Discovery Sweep using T1 for every admissible supported configuration;
+8. produce the Discovery Robustness Map and preliminary candidate regions, retaining all attempts;
+9. evaluate the frozen method in independent temporal Validation windows;
+10. execute the predeclared walk-forward policy;
+11. freeze the validation-supported candidate and bind it to the already predeclared T2 protocol;
+12. run `FALSIFIER_T2` adverse tests without consulting the final holdout;
+13. lock every final selection, assumption and decision rule;
+14. evaluate the untouched final temporal holdout once for the declared decision family;
+15. issue a scoped scientific `GO`, `NO-GO` or `INCONCLUSIVE` conclusion plus diagnostic disposition;
+16. if warranted, propose a candidate for later authorization review—never direct trading.
 
 `GO` means only that the declared evidence supports forwarding the candidate to the next existing
 review. `NO-GO` rejects only the explicitly declared claim/scope and requires the coverage or formal
