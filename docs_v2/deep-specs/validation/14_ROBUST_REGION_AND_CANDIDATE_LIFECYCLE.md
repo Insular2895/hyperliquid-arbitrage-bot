@@ -8,9 +8,10 @@ capital authorization.
 
 ## 1. Purpose and authority
 
-The primary Sweep output is a **Robustness Map / Candidate Region**, not the historically best
-point. This document owns the documentary region method and candidate evidence lifecycle. It is
-subordinate to the same authorities listed in
+The primary Discovery Sweep output is a **Discovery Robustness Map / Discovery Candidate Region**,
+not the historically best point and not an independently confirmed region. This document owns the
+documentary region method and candidate evidence lifecycle. It is subordinate to the same
+authorities listed in
 [13 — Economic Falsifier and Bounded Sweep](13_ECONOMIC_FALSIFIER_AND_BOUNDED_SWEEP.md): Formula
 owns economics, Simulator owns counterfactual distributions, Data/Recorder owns provenance,
 Execution/Inventory owns actual truth, Risk owns permission and Validation owns evidence maturity.
@@ -21,9 +22,10 @@ interior q is valid.
 
 ## 2. What counts as a candidate region
 
-A candidate region is a predeclared connected or neighborhood-supported set of **evaluated valid
-cells** whose complete metric vector remains acceptable under the declared Discovery method and
-continues to receive support in independent Validation windows. Region construction must state:
+During Discovery, a candidate region is a predeclared connected or neighborhood-supported set of
+**evaluated valid cells** whose complete metric vector remains acceptable under the declared
+Discovery method. It is a **DISCOVERY CANDIDATE REGION**: preliminary, exploratory and not
+independently validated. Region construction must state:
 
 - dimensions, scales, adjacency/neighborhood relation and distance method;
 - which metrics are pass/fail guardrails and which are descriptive;
@@ -34,6 +36,14 @@ continues to receive support in independent Validation windows. Region construct
 - stability tests across period, regime, seed and predeclared scenarios;
 - exact rules for merging or splitting regions;
 - the rule for choosing zero, one or more frozen candidates from the region.
+
+Independent temporal Validation and walk-forward may support, narrow or reject that preliminary
+region under the frozen protocol. Only the surviving exact subset may be described as a
+**VALIDATION-SUPPORTED REGION**. That label means independent temporal evidence exists; it does not
+mean validated strategy, capability, `ValidatedQSet` membership, `Q_validated` increase or runtime
+permission. `DISCOVERY CANDIDATE REGION` and `VALIDATION-SUPPORTED REGION` are documentary lifecycle
+labels over the immutable `RobustnessRegion` evidence lineage, not new canonical IDs, runtime enums
+or authorization states.
 
 No universal numeric neighbor count, confidence level, sample minimum or robustness score is
 invented here. Each value is `CALIBRATED / HUMAN_DECISION_REQUIRED`, predeclared before results,
@@ -52,8 +62,8 @@ q v        1     2     3     4     5     6     7
   50       .     +     +     +     .     .     *
  100       x     x     .     .     .     .     .
 
-+ = neighboring supported illustrative cells
-[C] = one candidate selected from the supported region, not necessarily peak PnL
++ = neighboring Discovery-supported illustrative cells
+[C] = one preliminary Discovery candidate, not necessarily peak PnL or independently confirmed
 * = isolated illustrative historical optimum; fails neighborhood support
 x = invalid/unsupported; does not certify or refute adjacent q
 . = evaluated illustrative failure or no support as declared by the legend
@@ -61,10 +71,10 @@ x = invalid/unsupported; does not certify or refute adjacent q
 
 Contract — **In:** complete evaluated grid and predeclared adjacency/support rules. **Does:**
 distinguishes stable neighboring support from a sharp isolated optimum. **Out:** zero or more
-descriptive candidate regions plus boundary/coverage warnings. **Truth owner:** immutable run
-population; Validation owns the inference. **Stop:** invalid connectivity, unstable neighbors,
-boundary attraction or insufficient coverage. **Available:** after the Bounded Sweep; the diagram
-contains no real result or `Q_validated` claim.
+preliminary Discovery candidate regions plus boundary/coverage warnings. **Truth owner:** immutable
+run population; Validation owns the inference. **Stop:** invalid connectivity, unstable neighbors,
+boundary attraction or insufficient coverage. **Available:** after the Bounded Discovery Sweep;
+the diagram contains no real result, independent confirmation or `Q_validated` claim.
 
 An isolated positive point is a red flag, not a region. A region touching a domain boundary is not
 automatically invalid, but the report must state that the optimum may lie outside the declared
@@ -75,32 +85,54 @@ domain and must not expand the domain post hoc. Expanding the domain is a new ex
 ```text
 time -------------------------------------------------------------------------->
 
-[ DISCOVERY ] gap/embargo [ VALIDATION 1 ] [ VALIDATION 2 ] ... [ WALK-FORWARD ]
-      |                         |                  |
-      | search/map              | frozen method    | frozen method
-      +-------------------------+------------------+
-                                |
-                         freeze candidate region
-                                |
-                  [ T2 PREDECLARED ADVERSE TESTS ]
-                                |
-                    lock selections and decision rule
-                                |
-                 gap/embargo [ FINAL UNTOUCHED HOLDOUT ]
-                                             |
-                                      evaluate once
-                                             |
-                              GO / NO-GO / INCONCLUSIVE
+[ BOUNDED DISCOVERY SWEEP USING T1 ]
+                   |
+                   v
+      DISCOVERY ROBUSTNESS MAP / CANDIDATE REGION
+               (preliminary only)
+                   |
+        gap/embargo v
+[ INDEPENDENT TEMPORAL VALIDATION ]
+                   |
+                   v
+             [ WALK-FORWARD ]
+                   |
+                   v
+        VALIDATION-SUPPORTED REGION
+        (non-authorizing evidence)
+                   |
+                   v
+       freeze candidate / T2 protocol
+                   |
+                   v
+      [ T2 PREDECLARED ADVERSE TESTS ]
+                   |
+                   v
+       ADVERSARIALLY TESTED CANDIDATE
+                   |
+                   v
+      lock final selection and decision rules
+                   |
+        gap/embargo v
+         [ FINAL UNTOUCHED HOLDOUT ]
+          evaluate once per decision family
+                   |
+                   v
+  ROBUST_CANDIDATE or scoped NO-GO / INCONCLUSIVE
 
 Final holdout cannot flow backward into Discovery, region shape, thresholds or T2 severity.
 ```
 
+T2 scenarios and severity are predeclared in the frozen experimental protocol before Discovery;
+the later freeze step binds the validation-supported candidate to that unchanged protocol. A final
+holdout failure cannot trigger retuning or reselection on the same holdout.
+
 Contract — **In:** chronologically ordered Dataset intervals with availability boundaries. **Does:**
-separates exploration, independent confirmation, adversarial testing and one-time final decision.
-**Out:** leakage-audited fold evidence and one final disposition. **Truth owners:** Data point-in-time
-lineage and Validation. **Stop:** repeated holdout access, overlap without purge/embargo, future
-artifact leakage or post-result rule change. **Available:** after admissible temporal datasets
-exist; Shadow and Micro-live remain later distinct gates.
+separates preliminary exploration, independent confirmation, walk-forward, adversarial testing and
+one-time final decision. **Out:** immutable stage-linked region evidence and one final disposition.
+**Truth owners:** Data point-in-time lineage and Validation. **Stop:** repeated holdout access,
+overlap without purge/embargo, future artifact leakage or post-result rule change. **Available:**
+after admissible temporal datasets exist; Shadow and Micro-live remain later distinct gates.
 
 The embargo width is evidence-justified from label/episode/position/rolling-feature overlap. It is
 not a universal duration. Every walk-forward fold declares training/calibration/test boundaries,
@@ -136,7 +168,8 @@ substituted for positive PnL.
 A cell enters region analysis only when its data, configuration, canonical formulas, lineage and
 required tier result are valid. An unsupported cell is `INVALID_OR_UNSUPPORTED`, not a poor score.
 This distinction prevents missing evidence from becoming a conservative-looking loss or a hidden
-pass.
+pass. A failed cell refutes only that cell unless sufficient declared-domain coverage or a canonical
+scope-wide bound supports a broader conclusion.
 
 ### 6.2 Complete objective vector
 
@@ -147,7 +180,8 @@ The region criterion consumes the predeclared vector rather than a single scalar
 - tail and drawdown guardrails;
 - exposure/capital usage;
 - support, uncertainty and missingness;
-- stability across neighbors, periods/regimes and T2 scenarios.
+- stability across neighbors and the periods/regimes available at the current evidence stage; T2
+  sensitivity is appended only after the candidate and adverse protocol are frozen.
 
 A scalar display score may summarize only if its construction is predeclared, decomposable and
 cannot conceal a failed hard guardrail. No scalar may replace Risk.
@@ -172,6 +206,12 @@ timing or comparator perturbations that remain economically meaningful and prede
 to distinguish the hypothesis from its negative control lowers the claim. Boundary tests inspect
 rounding/minimum discontinuities, first unsupported depth, threshold edges and missing-data
 sensitivity without extending the search after results.
+
+Independent Validation applies the frozen region rule to new temporal evidence. It may support the
+Discovery region, narrow it to the exact independently supported subset or reject it; it may not
+expand or repair it after seeing results. Any material post-result modification to dimensions,
+thresholds, adjacency, selection, exclusions, dataset policy or T2 rules creates new experiment and
+region lineage and requires an appropriate new untouched evaluation period.
 
 ## 7. Example Bounded Sweep
 
@@ -199,9 +239,13 @@ Locked:
 Scenario axes (not tuned parameters):
   declared arrival-latency treatments, liquidity deterioration and later-leg failures
 
-Outputs:
+Discovery outputs:
   complete 4 x 4 cell population, invalid/missing cells, metric vectors,
-  neighborhood regions, validation-fold stability and T2 fragility
+  preliminary neighborhood-supported Discovery candidate regions
+
+Later linked evidence (not produced by Discovery itself):
+  independent Validation and walk-forward support/narrow/reject results,
+  T2 fragility and final untouched holdout disposition
 ```
 
 The example does not state that any q, threshold, asset, route or region passes. Its purpose is to
@@ -210,36 +254,60 @@ show that a Sweep is finite, predeclared and interpretable.
 ## 8. Candidate lifecycle
 
 ```text
-DRAFT EXPERIMENT
+Structure + HYP-* -> Data admissibility -> T0 per-cell prefilter
       |
       v
-T0 VALID / T0 REJECTED
+T1 machinery available -> frozen experimental protocol
       |
       v
-T1 SUPPORTED / INCONCLUSIVE
+BOUNDED DISCOVERY SWEEP USING T1
       |
       v
-SWEEP COMPLETE -> NO ROBUST REGION
+DISCOVERY CANDIDATE REGION
+preliminary / exploratory / not independently validated
       |
       v
-CANDIDATE REGION (diagnostic only)
+INDEPENDENT TEMPORAL VALIDATION
       |
       v
-VALIDATION + WALK-FORWARD -> OOS FAILURE
+WALK-FORWARD
+      |
+      +---------------------------> OOS_FAILURE / INCONCLUSIVE
+      v
+VALIDATION-SUPPORTED REGION
+independent temporal evidence / still not a validated strategy
       |
       v
-FROZEN CANDIDATE + T2 -> ADVERSARIAL FRAGILE
+FREEZE CANDIDATE / T2 PROTOCOL
       |
       v
-FINAL HOLDOUT ONCE -> ROBUST_CANDIDATE or other disposition
+FALSIFIER_T2 — PREDECLARED ADVERSARIAL TESTS
+      |
+      +---------------------------> ADVERSARIAL_FRAGILE
+      v
+ADVERSARIALLY TESTED CANDIDATE
       |
       v
-LATER AUTHORIZATION REVIEW (separate owner/process)
+LOCK FINAL SELECTION AND DECISION RULES
+      |
+      v
+FINAL UNTOUCHED HOLDOUT ONCE
+per declared decision family
+      |
+      +---------------------------> scoped NO-GO / INCONCLUSIVE
+      v
+ROBUST_CANDIDATE
+      |
+      v
+LATER HUMAN/EVIDENCE REVIEW ONLY (separate owner/process)
 ```
 
-The lifecycle never creates a Strategy or capability implicitly. If a later process creates or
-updates `STRAT-*`, that is separate lineage and must reference the Falsifier evidence without
-rewriting it.
+The lifecycle never creates a Strategy or capability implicitly. A validation-supported region is
+still non-authorizing, T2 may invalidate it, and `ROBUST_CANDIDATE` is issued only after all required
+declared tests including the one-time untouched final holdout succeed. If a later process creates or
+updates `STRAT-*`, that is separate lineage and must reference the immutable Falsifier evidence
+without rewriting it. No stage automatically creates a `StrategySpec`, `ValidatedCapability`,
+`ValidatedQSet` membership, `Q_validated` capacity or production permission.
 
 ## 9. Documentary contract outlines
 
@@ -256,11 +324,18 @@ Required semantic fields:
 - dataset split/fold identities, tier, mode/fidelity and support scope;
 - complete metric vector, uncertainty method and guardrail outcomes;
 - neighborhood, stability, boundary and negative-control evidence;
-- regime/period/seed/T2 sensitivity and worst supported slice;
+- regime/period/seed/T2 sensitivity and worst supported slice, with Discovery and linked independent
+  Validation/walk-forward evidence separated by lifecycle stage;
 - q membership represented as an exact set/list, never inferred interval;
 - limitations, unresolved thresholds, candidate selection rationale and artifact hashes;
 - `EvidenceId`, author/reviewer, immutable status and supersession linkage;
 - explicit `authorization_state: NONE` in the documentary meaning, not as a new runtime enum.
+
+A Discovery region is never mutated in place to look independently confirmed. Validation support,
+narrowing, rejection or any materially revised experiment is appended through immutable linked or
+superseding lineage, preserving the original region and every excluded, invalid and missing cell.
+The lifecycle labels are derived documentary descriptions of that evidence context; they require no
+new `RobustnessRegion` identifier, serialized runtime enum or authorization state.
 
 ### 9.2 `FalsifierDispositionReport`
 
@@ -268,7 +343,8 @@ Required semantic fields:
 
 - report identity/version, `EXP-*`, `HYP-*`, optional `STRAT-*` reference and EvidenceIds;
 - question, scope, tier completion and dependency availability;
-- Data Admissibility, T0, T1, Sweep, independent Validation, T2 and final-holdout results;
+- Data Admissibility, T0, T1, Discovery Sweep, independent Validation, walk-forward, T2 and final
+  holdout results in authoritative order;
 - diagnostic disposition and scientific `GO`/`NO-GO`/`INCONCLUSIVE` conclusion;
 - complete population counts, failures, invalidity, censoring and missingness;
 - supported claims separated from unsupported claims and interpretation;
@@ -285,15 +361,22 @@ The following values are local to `FalsifierDiagnosticDisposition`. They do not 
 
 | Disposition | Meaning | Compatibility |
 |---|---|---|
-| `DATA_INSUFFICIENT` | admissibility/support cannot sustain the claim | new namespaced diagnostic; consistent with invalid/low-fidelity data policies |
-| `STRUCTURAL_INVALID` | route/class/comparator/math precondition fails | new diagnostic; canonical reason remains owned by Graph/Formula |
-| `ECONOMIC_NO_EDGE` | valid T0 economics fail the frozen criterion | new diagnostic; not a Risk reject |
+| `DATA_INSUFFICIENT` | admissibility/support or declared-domain coverage cannot sustain the scoped claim | new namespaced diagnostic; consistent with invalid/low-fidelity data policies |
+| `STRUCTURAL_INVALID` | route/class/comparator/math precondition fails for the stated cell or exact scope | new diagnostic; canonical reason remains owned by Graph/Formula |
+| `ECONOMIC_NO_EDGE` | valid T0 economics fail for a cell by default; hypothesis-level only after sufficient domain coverage or a canonical scope-wide bound | new diagnostic; not a Risk reject and never an automatic structure-wide rejection |
 | `MECHANICAL_NO_EDGE` | T1 path economics/failures remove the edge | new diagnostic; not an ESM status |
-| `NO_ROBUST_REGION` | no neighborhood-supported region under frozen method | new diagnostic; compatible with future search red flags |
-| `OOS_FAILURE` | independent temporal evidence fails | new diagnostic; does not overwrite per-run facts |
-| `ADVERSARIAL_FRAGILE` | frozen candidate fails predeclared T2 | new diagnostic; scenario-specific evidence retained |
-| `ROBUST_CANDIDATE` | survives the declared protocol inside stated support | new diagnostic; explicitly non-authorizing |
+| `NO_ROBUST_REGION` | adequately covered scoped Discovery domain has no neighborhood-supported region under the frozen method | new diagnostic; insufficient coverage is instead `DATA_INSUFFICIENT`/`INCONCLUSIVE` |
+| `OOS_FAILURE` | independent temporal Validation or walk-forward rejects the preliminary region | new diagnostic; does not overwrite Discovery or per-run facts |
+| `ADVERSARIAL_FRAGILE` | frozen validation-supported candidate fails predeclared T2 | new diagnostic; scenario-specific evidence retained |
+| `ROBUST_CANDIDATE` | survives independent Validation, walk-forward, T2 and the final untouched holdout inside stated support | new diagnostic; explicitly non-authorizing |
 | `INCONCLUSIVE` | evidence cannot decide | exact generic term already used in evidence; namespaced context avoids collision |
+
+The documentary labels `DISCOVERY CANDIDATE REGION`, `VALIDATION-SUPPORTED REGION` and
+`ADVERSARIALLY TESTED CANDIDATE` describe evidence maturity; they are not additional values in this
+disposition vocabulary. Every negative conclusion remains scoped to the declared hypothesis,
+domain, markets/routes, period, q set and execution assumptions. Unsupported fidelity, untested
+cells or incomplete coverage cannot silently become `ECONOMIC_NO_EDGE`, `NO_ROBUST_REGION` or a
+scientific `NO-GO`.
 
 Existing research reports use `PROMOTE`, `REJECT`, `HOLD` or `INCONCLUSIVE`, while hypothesis
 indexes use `OPEN`, `SUPPORTED_WITHIN_SCOPE`, `NOT_SUPPORTED`, `INCONCLUSIVE`, `INVALIDATED` and

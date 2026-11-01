@@ -71,7 +71,7 @@ The requirement audit uses these exact labels:
 | `ValidatedQSet` holes and scalar `Q_validated` supremum | `EXACT_REUSE` | QF-076 and Validation |
 | `FALSIFIER_T0`, `FALSIFIER_T1`, `FALSIFIER_T2` | `NEW_REQUIREMENT` | namespaced validation tiers; not Simulator fidelity or Risk checkpoints |
 | Bounded Falsifier Sweep | `NEW_REQUIREMENT` | restricted validation protocol, not generalized Parameter Search |
-| Robustness Map / Candidate Region | `NEW_REQUIREMENT` | diagnostic evidence artifact; no capability or strategy status |
+| Discovery Robustness Map / preliminary Candidate Region | `NEW_REQUIREMENT` | diagnostic evidence artifact; no capability or strategy status |
 | Five Falsifier documentary contract outlines | `NEW_REQUIREMENT` | linked artifacts using existing identities |
 | Universal robustness, sample or GO threshold | `HUMAN_DECISION_REQUIRED` | method is specified; numeric values remain calibrated and predeclared |
 | Final serialized fields/enums/storage | `HUMAN_DECISION_REQUIRED` | Data/Validation integration review required before implementation |
@@ -121,49 +121,71 @@ capital relocation for expected future utility. Rebalance remains a separate acc
 ## 6. End-to-end architecture
 
 ```text
-INPUTS                 VALIDATION LAYER                     OUTPUT
-------                 ----------------                     ------
-Route structure  --->  HYP-* fixed hypothesis
-Economic class   --->  EXP-* frozen protocol
-Dataset/versions --->  Data admissibility gate
+Structure + fixed HYP-* hypothesis and exact intended scope
                               |
                               v
-                    +---------------------+
-                    | FALSIFIER_T0        |--invalid------> STOP / diagnostic
-                    | math + economics    |
-                    +----------+----------+
-                               |
-                               v
-                    +---------------------+
-                    | FALSIFIER_T1        |--unsupported--> INCONCLUSIVE
-                    | execution realism   |
-                    +----------+----------+
-                               |
-                               v
-                    +---------------------+
-                    | BOUNDED SWEEP       |--no region----> NO_ROBUST_REGION
-                    | candidate regions   |
-                    +----------+----------+
-                               |
-                               v
-                    +---------------------+
-                    | FALSIFIER_T2        |--fragile------> ADVERSARIAL_FRAGILE
-                    | predeclared attacks |
-                    +----------+----------+
-                               |
-                Validation / walk-forward / final holdout
-                               |
-                               v
-                    FalsifierDispositionReport
-                    (evidence, never authorization)
+                    Data admissibility
+                       | material deficit in exact scope
+                       `-------------------> DATA_INSUFFICIENT / scoped STOP
+                              |
+                              v
+                    FALSIFIER_T0
+              per-cell math/economic prefilter
+                       | invalid/no-edge cell
+                       +-------------------> retain diagnostic; continue other cells
+                       | whole-scope canonical invalidity or formal impossibility
+                       +-------------------> scoped early rejection
+                              |
+                              v
+                  T1 machinery available
+                   | unavailable
+                   `-----------------------> INCONCLUSIVE
+                              |
+                              v
+                 Frozen experimental protocol
+                              |
+                              v
+             Bounded Discovery Sweep using T1
+                              |
+                              v
+                Discovery Robustness Map
+                 (preliminary candidates)
+                              |
+                              v
+             Independent Temporal Validation
+                              |
+                              v
+                        Walk-Forward
+                              |
+                              v
+                Freeze candidate / T2 protocol
+                              |
+                              v
+          FALSIFIER_T2 — predeclared adverse tests
+                              |
+                              v
+             Lock final selection and decision rules
+                              |
+                              v
+                 FINAL UNTOUCHED OOS HOLDOUT
+             (once per declared decision family)
+                              |
+                              v
+              Scientific GO / NO-GO / INCONCLUSIVE
+                              |
+                              v
+                   Later candidate review only
 ```
 
 Contract — **In:** fixed structure/class/mode/intent and versioned evidence. **Does:** applies
-admissibility, the three namespaced tiers, bounded region analysis and temporal confirmation.
-**Out:** diagnostic evidence and a scientific disposition. **Truth owners:** Graph, Formula,
-Simulator, Execution, Data and Validation. **Stop:** invalid math/data, unavailable T1 mechanics or
-failed predeclared criteria. **Available:** T0 after Formula/Data/Replay dependencies; full T1/T2
-only when their existing technical dependencies are evidenced. No tier grants runtime permission.
+admissibility, a per-cell T0 prefilter, T1-driven bounded Discovery, independent temporal
+confirmation and predeclared T2 attacks in that order. **Out:** diagnostic evidence and a scoped
+scientific disposition. **Truth owners:** Graph, Formula, Simulator, Execution, Data and Validation.
+**Stop:** a genuinely invalid structure/formula/comparator/data precondition stops only the exact
+scope it invalidates; unavailable T1 mechanics or incomplete evidence yields `INCONCLUSIVE` or
+`DATA_INSUFFICIENT`. A failed individual cell is retained and does not stop evaluation of other
+admissible cells. **Available:** T0 after Formula/Data/Replay dependencies; full T1/T2 only when
+their existing technical dependencies are evidenced. No tier grants runtime permission.
 
 ## 7. Falsifier tiers
 
@@ -181,9 +203,19 @@ T0 evaluates:
 - correct cycle/conversion accounting;
 - no lookahead and exact-once cost ownership.
 
-T0 rejects stale/unknown/invalid inputs rather than coercing them to zero. It may establish that a
-claim is structurally invalid or has no edge under observed-book economics. It cannot establish
-that the route would have completed at those prices.
+T0 rejects stale/unknown/invalid inputs rather than coercing them to zero. Its result is
+configuration-scoped by default: an invalid or economically unsuccessful q/route/market cell is
+retained as that cell's diagnostic, while the Sweep continues over the other predeclared admissible
+configurations. One failed configuration never invalidates the whole OWA structure or fixed
+hypothesis family.
+
+T0 may stop the exact declared scope early when a genuinely invalid structure, canonical formula,
+fair comparator or data precondition applies to that whole scope. It may also support a
+hypothesis-level `ECONOMIC_NO_EDGE` and scientific `NO-GO` without completing the Sweep only when a
+canonical, documented mathematical/economic bound proves impossibility across the exact stated
+scope. Otherwise a hypothesis-level negative conclusion requires sufficient, reproducible coverage
+of the declared admissible evaluation domain under the frozen protocol. T0 cannot establish that a
+route would have completed at observed-book prices.
 
 ### 7.2 `FALSIFIER_T1` — Mechanical execution realism
 
@@ -225,6 +257,9 @@ candidate parameters to produce survival.
 The Bounded Falsifier Sweep is a restricted validation method for one already-declared economic
 hypothesis and fixed strategy family. It exists to determine whether neighboring admissible
 configurations show stable behavior. It is not the future generalized `Parameter Search`.
+T0 cheaply filters each planned cell; T1 then mechanically evaluates every remaining admissible
+cell. The Sweep orchestrates those bounded T1 experiments and retains all T0/T1 outcomes rather
+than acting as a separate economic engine.
 
 | Boundary | Bounded Falsifier Sweep | Future Parameter Search |
 |---|---|---|
@@ -233,7 +268,7 @@ configurations show stable behavior. It is not the future generalized `Parameter
 | Purpose | falsify and map a narrow declared claim | compare broader bounded strategy versions |
 | Dimensions | small predeclared validation axes | governed parameter schema and later search methods |
 | Method | bounded grid/enumeration or declared deterministic policy | manual/grid/random/LHS/Bayesian/evolutionary progression |
-| Output | Robustness Map / Candidate Region | candidate strategy set and search report |
+| Output | Discovery Robustness Map / preliminary Candidate Region | candidate strategy set and search report |
 | Authority | none; diagnostic only | none directly; later OOS/Shadow/Micro-live gates |
 | Activation | only as dependencies become available | forbidden before complete baseline gate |
 
@@ -246,7 +281,7 @@ declared dimensions to test robustness. It does not select live size and cannot 
 
 Before any run, freeze:
 
-1. hypothesis, causal/economic rationale and explicit falsification criteria;
+1. hypothesis, causal/economic rationale, exact conclusion scope and explicit falsification criteria;
 2. structure, economic classification, execution mode and accounting intent;
 3. target routes/markets and supported/unsupported scope;
 4. dimensions, types, units, defensible domains and exact candidate generation policy;
@@ -256,7 +291,7 @@ Before any run, freeze:
 8. trial/evaluation budget, resolution and deterministic/adaptive policy;
 9. RNG seed/stream policy where stochastic;
 10. invalid, unsupported, failed, duplicate and censored-run policy;
-11. stopping rule;
+11. stopping rule and criterion for sufficient reproducible domain coverage;
 12. neighborhood and robustness methodology;
 13. multiple-testing family and limits on inference;
 14. predeclared T2 scenarios;
@@ -292,6 +327,8 @@ HYP-* + EXP-* + DatasetIds + versions + q grid + edge grid + scenarios
              v                v                v
         Eval job 001     Eval job 002     Eval job ...N
         exact config     exact config     exact config
+        T0 -> T1*        T0 -> T1*        T0 -> T1*
+        (*when admissible and mechanically supported)
              |                |                |
              v                v                v
           RunId(s)          RunId(s)          RunId(s)
@@ -303,17 +340,19 @@ HYP-* + EXP-* + DatasetIds + versions + q grid + edge grid + scenarios
                    immutable run population
                               |
                               v
-             robustness surfaces + candidate regions
+       Discovery surfaces + preliminary candidate regions
                               |
                               v
                     EvidenceId + disposition
 ```
 
-Contract — **In:** frozen experiment and bounded job plan. **Does:** evaluates every planned point
-through canonical mechanics and retains every outcome. **Out:** complete run population and
-robustness surfaces. **Truth owners:** Data IDs, Replay, Simulator and Formula. **Stop:** budget
-exhaustion, invalid lineage, unreproducible result or predeclared stopping rule. **Available:** only
-for tiers whose dependencies are present; absent jobs are missing evidence, never favorable cells.
+Contract — **In:** frozen experiment and bounded job plan. **Does:** applies T0 to every planned
+point, evaluates each admissible point through T1 canonical mechanics and retains every outcome.
+**Out:** complete run population and Discovery robustness surfaces. **Truth owners:** Data IDs,
+Replay, Simulator and Formula. **Stop:** budget exhaustion, invalid lineage, unreproducible result
+or predeclared stopping rule; a cell-level T0/T1 rejection does not stop other admissible planned
+jobs. **Available:** only for tiers whose dependencies are present; absent or unsupported jobs are
+missing evidence, never negative economic evidence or favorable cells.
 
 ### 8.4 Illustrative q × edge-threshold grid
 
@@ -423,7 +462,7 @@ canonical Replay + ReplayClock + explicit versions/seed
 canonical Simulator (declared mode/fidelity/scenarios)
   |
   v
-FalsifierRunRecord -> Robustness Map -> EvidenceId
+FalsifierRunRecord -> Discovery Robustness Map -> EvidenceId
                           |
                           v
                  human/AI interpretation
@@ -461,55 +500,82 @@ deterministic ownership; T1/T2 add path distributions. No Falsifier-specific PnL
 ## 12. Failure/rejection funnel
 
 ```text
-planned observations
+declared HYP-* + admissible evaluation domain
    |
-   +-- data inadmissible ----------------------> DATA_INSUFFICIENT
+   +-- whole-scope data precondition fails ----> DATA_INSUFFICIENT / scoped STOP
    |
-   +-- route/comparator/math invalid ----------> STRUCTURAL_INVALID
+   +-- whole-scope structure/comparator/math
+   |   precondition is canonically invalid ----> STRUCTURAL_INVALID / scoped STOP
    |
-   +-- T0 valid but no net edge ---------------> ECONOMIC_NO_EDGE
+   +-- canonical documented bound proves
+   |   impossibility over the exact scope -----> scoped ECONOMIC_NO_EDGE / NO-GO
    |
-   +-- T1 machinery/support unavailable -------> INCONCLUSIVE
+   v
+planned configuration population
    |
-   +-- T1 mechanics destroy edge --------------> MECHANICAL_NO_EDGE
+   +-- individual T0 invalid cell -------------> retain cell diagnostic; continue
+   +-- individual T0 no-edge cell -------------> ECONOMIC_NO_EDGE (cell only); continue
+   +-- T1 machinery/support unavailable -------> INCONCLUSIVE (unsupported scope)
+   +-- individual T1 edge destroyed -----------> MECHANICAL_NO_EDGE (cell only); continue
    |
-   +-- Sweep has isolated wins only -----------> NO_ROBUST_REGION
+   v
+immutable evaluated population + coverage audit
    |
-   +-- independent validation fails -----------> OOS_FAILURE
+   +-- incomplete/unsupported coverage --------> DATA_INSUFFICIENT / INCONCLUSIVE
+   +-- sufficient Discovery, no supported
+   |   neighborhood ---------------------------> scoped NO_ROBUST_REGION
+   +-- independent Validation/Walk-Forward
+   |   rejects preliminary region ------------> OOS_FAILURE
+   +-- T2 invalidates validation-supported
+   |   frozen candidate -----------------------> ADVERSARIAL_FRAGILE
+   +-- final untouched holdout fails ----------> scoped scientific NO-GO or INCONCLUSIVE
    |
-   +-- T2 invalidates frozen region -----------> ADVERSARIAL_FRAGILE
-   |
-   `-- survives declared gates ----------------> ROBUST_CANDIDATE
+   `-- survives every declared gate ----------> ROBUST_CANDIDATE
                                                    |
                                                    `-> later review only
 ```
 
 Contract — **In:** the complete eligible population, including negative, failed, invalid and
 censored observations. **Does:** assigns the narrowest supported diagnostic reason without hiding
-earlier failures. **Out:** scientific NO-GO/INCONCLUSIVE/candidate reasoning. **Truth owner:**
-Validation. **Stop:** unresolved coverage or incompatible evidence prevents `ROBUST_CANDIDATE`.
-**Available:** as each tier completes; every disposition is non-authorizing.
+earlier failures or widening their scope. **Out:** scoped scientific
+`NO-GO`/`INCONCLUSIVE`/candidate reasoning. **Truth owner:** Validation. **Stop:** unresolved coverage
+or incompatible evidence prevents `ROBUST_CANDIDATE` and cannot be converted into negative
+economic evidence. **Available:** as each tier completes; every disposition is non-authorizing.
+
+A hypothesis-level `ECONOMIC_NO_EDGE` or scientific `NO-GO` is permitted only after sufficient,
+reproducible coverage of the declared admissible domain under the frozen protocol, or after a
+canonical documented bound proves impossibility across that exact scope. Every conclusion names
+the hypothesis, markets/routes, period, candidate q set and execution assumptions it covers. For
+example, “NO-GO for HYP-X under the evaluated Hyperliquid spot markets, period, candidate q set and
+execution assumptions” must never be shortened to “OWA never works.” Invalid cells, unsupported
+Simulator fidelity, untested configurations and incomplete coverage produce `DATA_INSUFFICIENT` or
+`INCONCLUSIVE` where material; they are not silent evidence of economic failure.
 
 ## 13. Experimental sequence
 
 The mandatory sequence is:
 
-1. define `HYP-*` and `EXP-*`, rationale, falsifier and protocol;
-2. validate `DataAdmissibilityReport` and `FALSIFIER_T0`;
-3. prove the required `FALSIFIER_T1` machinery is available for the claim;
-4. pre-register parameter space, budget, selection, robustness and T2 protocols;
-5. run bounded Discovery experiments;
-6. produce surfaces and candidate regions, retaining all attempts;
-7. evaluate independent Validation windows under the frozen walk-forward policy;
-8. freeze candidates and run T2 without consulting final holdout;
-9. lock every selection, assumption and decision rule;
-10. evaluate the untouched final temporal holdout once for the declared decision family;
-11. issue a scientific `GO`, `NO-GO` or `INCONCLUSIVE` conclusion plus diagnostic disposition;
-12. if warranted, propose a candidate for later authorization review—never direct trading.
+1. declare the structure, `HYP-*`, rationale and exact intended evaluation scope;
+2. establish data admissibility for that scope;
+3. apply `FALSIFIER_T0` as the cheap mathematical/economic prefilter, retaining cell-scoped results;
+4. prove the required `FALSIFIER_T1` machinery is available for the claim;
+5. freeze `EXP-*`, parameter space, datasets, budget, selection, robustness, T2 and holdout rules;
+6. run the Bounded Discovery Sweep using T1 for every admissible supported configuration;
+7. produce the Discovery Robustness Map and preliminary candidate regions, retaining all attempts;
+8. evaluate the frozen method in independent temporal Validation windows;
+9. execute the predeclared walk-forward policy;
+10. freeze the validation-supported candidate and bind it to the already predeclared T2 protocol;
+11. run `FALSIFIER_T2` adverse tests without consulting the final holdout;
+12. lock every final selection, assumption and decision rule;
+13. evaluate the untouched final temporal holdout once for the declared decision family;
+14. issue a scoped scientific `GO`, `NO-GO` or `INCONCLUSIVE` conclusion plus diagnostic disposition;
+15. if warranted, propose a candidate for later authorization review—never direct trading.
 
 `GO` means only that the declared evidence supports forwarding the candidate to the next existing
-review. `NO-GO` rejects the declared claim/scope. `INCONCLUSIVE` means the evidence cannot decide.
-None is a `RiskDecision`, capability state or authorization.
+review. `NO-GO` rejects only the explicitly declared claim/scope and requires the coverage or formal
+bound described above. `INCONCLUSIVE` means the evidence cannot decide; `DATA_INSUFFICIENT` records
+the applicable admissibility/support deficit. None is a `RiskDecision`, capability state or
+authorization.
 
 A failed final holdout is not retuned on that holdout. A material new hypothesis, dimension,
 selection rule or dataset policy creates new lineage and requires a new untouched evaluation
