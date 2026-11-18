@@ -41,8 +41,9 @@ Documentation approval does not authorize switchover. Switchover authorization d
 8. [Deferred scientific iteration and strategy research](../deep-specs/strategy-research/README.md)
 9. [Async/concurrency architecture finalization](../_analysis/async_concurrency_architecture/ASYNC_ARCHITECTURE_FINAL_REPORT.md)
 10. [F2 five-map architecture atlas](../_analysis/f2_final_integration/F2_ARCHITECTURE_DIAGRAM_ATLAS.md)
-11. [F2 PREC/HDC traceability](../_analysis/f2_final_integration/F2_PRECISION_AND_HDC_TRACEABILITY.md)
-12. [F2 non-regression audit](../_analysis/f2_final_integration/F2_NON_REGRESSION_AUDIT.md)
+11. [Maintained Mermaid architecture atlas and operational walkthroughs](../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md)
+12. [F2 PREC/HDC traceability](../_analysis/f2_final_integration/F2_PRECISION_AND_HDC_TRACEABILITY.md)
+13. [F2 non-regression audit](../_analysis/f2_final_integration/F2_NON_REGRESSION_AUDIT.md)
 
 ## Should review
 

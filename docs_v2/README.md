@@ -25,6 +25,7 @@ PASS 00 cartographie les exigences, formules, concepts, conflits et destinations
 
 - [00 — Master Architecture](00_MASTER_ARCHITECTURE.md)
 - [Architecture deep specs](deep-specs/architecture/README.md)
+- [Architecture visual atlas — Mermaid maps and walkthroughs](deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md)
 - [PASS 13 evidence](./_analysis/pass13_master_architecture/PASS13_FINAL_REPORT.md)
 - [PASS 14 cross-domain consistency evidence](./_analysis/pass14_cross_domain_consistency/PASS14_FINAL_REPORT.md)
 - [PASS 15 source-by-source no-loss evidence](./_analysis/pass15_source_no_loss/PASS15_FINAL_REPORT.md)
