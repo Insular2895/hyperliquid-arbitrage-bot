@@ -79,6 +79,59 @@ HyperliquidPublicWs | HyperliquidRest | HyperliquidNode | Replay | SyntheticTest
 
 Every `NormalizedEvent` carries `normalized_schema_version`, `source_raw_event_id` and the typed payload. An unknown exchange event is recorded in RAW, alerted, and left unnormalized until understood. A missing required field or impossible value is rejected and cannot mutate canonical state.
 
+### Public Hyperliquid `l2Book` contract — dated external snapshot
+
+`VERIFIED_AS_OF 2026-11-18`, the official public WebSocket documents `l2Book` as a `WsBook`
+**snapshot feed**, pushed on each block that is at least 0.5 seconds after the previous push. The
+subscription accepts optional `nSigFigs`, `mantissa` and `fast`; the documented `fast` view carries
+5 levels and the slow/default view 20. The HTTP info endpoint returns an L2 snapshot with at most
+20 levels per side. These are source limits, not a license to invent missing depth or to treat a
+fixed number of levels as sufficient for every q.
+
+The public snapshot replaces the adapter's source-book image for that market after validation. It
+is not an order-level diff, queue-position feed or proof of L3 truth. The generic `BookDiff`
+normalized variant may be emitted only by a source whose current verified contract actually
+provides incremental semantics; public `l2Book` snapshots are never converted into fabricated
+diffs. Exact economics walks all observed supported levels required by q and returns insufficient
+depth when the source snapshot cannot support the calculation.
+
+The official standalone `order_book_server` documents a distinct L4 snapshot-then-diff stream and
+up to 100 L2 levels, but is non-core/as-is and currently does not support spot order books. The
+official node local info server currently does not support `l2Book`. Neither is a V1 spot dependency.
+Sources: [WebSocket subscriptions](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions),
+[Info endpoint](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint),
+[order_book_server](https://github.com/hyperliquid-dex/order_book_server), and
+[node](https://github.com/hyperliquid-dex/node). Revalidate `EXT-002/005/007` before adapter
+implementation or release.
+
+### Reconnect readiness and unknown-event containment
+
+Market readiness progresses through distinct evidence states:
+
+```text
+CONNECTED → SUBSCRIBED → DATA_RECEIVED → BOOK_VALID → MARKET_ADMISSIBLE
+```
+
+Reconnect begins a new source-connection context and leaves the market non-ready until a usable
+snapshot has reconstructed a valid Book and freshness, metadata, fee/precision, capability and
+Risk conditions have been reassessed. A connected socket or subscription ACK is not Book readiness.
+
+An unknown/invalid event always keeps RAW lineage, schema/source/connection context and a
+machine-readable rejection reason. If its affected market is proven, that market and dependent
+routes are quarantined while independent scopes may remain usable. If the affected scope cannot be
+proved, containment widens conservatively to the source/venue scope that could be affected. The
+event never mutates canonical state and is not relabeled as a known event.
+
+### Live normalization versus historical re-normalization
+
+Live normalization is bounded adapter work before ordered ingress and produces the exact versioned
+events consumed by the active Core. Historical re-normalization runs outside the critical path from
+immutable L0 RAW into a distinct versioned dataset/manifest. It may correct interpretation for a
+new Replay or research run, but never rewrites RAW, the original live event stream, or the state and
+decisions actually produced by that historical run. Both paths retain source provenance and
+normalization version; only an explicitly selected dataset/run context chooses the historical
+interpretation.
+
 ## 9. Exact numeric representation
 
 Exchange-boundary prices and quantities use integer `price_ticks` and `quantity_lots`/`size_lots`, with the same versioned precision and rounding code in every run mode. Identifiers (`MarketId`, `AssetId`, `FillId`, and related IDs) are strong types. Units are explicit through names such as `_ns`, `_ms`, `_bps`, `_ticks`, `_lots`, `_quote`, `_base`, and `_usd`. Statistical models may use floats; exchange-critical comparisons do not.
@@ -86,6 +139,18 @@ Exchange-boundary prices and quantities use integer `price_ticks` and `quantity_
 ## 10. Canonical state
 
 Per run/context there is one logical `BookState` per market and one canonical `AccountState`, `InventoryState`, `ReservationState` and execution state. There is no untraceable parallel truth. `BookState` enforces sorted sides, non-negative sizes, valid best prices and monotonic versioning; a gap or impossible state marks it invalid until resynchronization. Fills are deduplicated by `FillId` across stream, snapshot and reconciliation.
+
+### Non-trade balance changes and valuation
+
+Deposits, withdrawals and external transfers are ordered account facts with stable external/source
+identity and provenance. They mutate `AccountState`; the Inventory reducer then reflects the proven
+available/held asset state according to its classification rules. Accounting records the matching
+capital-flow entry outside Strategy/Recovery/Rebalance/Bridge trading PnL. A transfer is not a
+Fill, and a deposit is not trading profit. Point-in-time mark-to-market changes only the Accounting
+valuation record (`INVENTORY_MTM`); it does not change actual balance or inventory quantity.
+Duplicate stream/snapshot/reconciliation observations are idempotently joined by their stable
+identity. Unknown or contradictory non-trade balance changes keep the affected account scope
+unreconciled and block dependent new risk.
 
 ## 11. Snapshot/version ownership
 

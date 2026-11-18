@@ -51,7 +51,7 @@ The closure hierarchy is exact:
 
 | Priority | Evidence |
 |---|---|
-| P0 | fills, account and execution |
+| P0 | orders, fills, account, fees, Risk, Reservations, Execution, Recovery, Reconciliation and journal evidence |
 | P1 | market windows around executions/incidents |
 | P2 | general market events |
 | P3 | derived diagnostics |

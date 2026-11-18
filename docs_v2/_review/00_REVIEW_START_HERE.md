@@ -6,7 +6,18 @@
 
 `DOCUMENTATION STATUS: PROPOSED F2 — AWAITING HUMAN REVIEW`
 
-This repository state proposes **Final Review Candidate F2**. The exact Prompt-3 commit selected for human review becomes the F2 subject only when a reviewer records its commit SHA, tree SHA and branch `f2-governance-p3` externally in the `DocumentationDecision` / `ReviewRecord`; F2 deliberately does not contain or require its own future Git identity. This package is documentary evidence only: implementation, Research runtime, the `docs_v2` → `docs` switchover, Shadow, Micro-live, Live and capital all remain unauthorized.
+> **POST-F2 CORRECTION NOTICE.** Prompt 1/6 materially corrects architecture diagrams, active
+> secondary contracts and dated external assumptions on branch `audit-corrections-p1`. The prior
+> candidate history does not certify this changed snapshot. Select the future exact corrected
+> commit/tree externally and perform differential recertification before any approval decision.
+
+This repository working state proposes a **corrected Final Review Candidate F2**. It becomes a
+review subject only when a reviewer records its future exact commit SHA, tree SHA and selected
+branch (currently proposed as `audit-corrections-p1`) externally in the `DocumentationDecision` /
+`ReviewRecord`; this corpus deliberately does not self-embed its own future Git identity. The
+pre-correction `f2-governance-p3` candidate remains lineage, not a substitute for the corrected
+snapshot. This package is documentary evidence only: implementation, Research runtime, the
+`docs_v2` → `docs` switchover, Shadow, Micro-live, Live and capital all remain unauthorized.
 
 Historical Semantic Candidate A, Review Envelope C, Final Review Candidate F and their attestation commits remain available in `_analysis` as **HISTORICAL / SUPERSEDED REVIEW-PACKAGE LINEAGE**. They explain how the corpus was reached, but they are not the active human-review subject, switchover source or Phase-1 authorization source. Commit B is the future canonical-path switchover output and remains absent.
 
@@ -28,6 +39,7 @@ Documentation approval does not authorize switchover. Switchover authorization d
 3. [Implementation authorization checklist](19_IMPLEMENTATION_AUTHORIZATION_CHECKLIST.md)
 4. [Final human decision form](21_FINAL_HUMAN_DECISION_FORM.md)
 5. [F2 final human-review handoff](../_analysis/f2_final_integration/F2_FINAL_HUMAN_REVIEW_HANDOFF.md)
+6. [Prompt 1/6 global architecture correction report](../_analysis/f2_final_integration/PROMPT1_GLOBAL_ARCHITECTURE_CORRECTION_REPORT.md)
 
 ## Required reading — then
 
@@ -44,6 +56,7 @@ Documentation approval does not authorize switchover. Switchover authorization d
 11. [Maintained Mermaid architecture atlas and operational walkthroughs](../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md)
 12. [F2 PREC/HDC traceability](../_analysis/f2_final_integration/F2_PRECISION_AND_HDC_TRACEABILITY.md)
 13. [F2 non-regression audit](../_analysis/f2_final_integration/F2_NON_REGRESSION_AUDIT.md)
+14. [Prompt 1/6 corrected ARCH-001–029 disposition and Prompt-2 handoff](../_analysis/f2_final_integration/PROMPT1_GLOBAL_ARCHITECTURE_CORRECTION_REPORT.md)
 
 ## Should review
 
@@ -72,7 +85,8 @@ Documentation approval does not authorize switchover. Switchover authorization d
 ## Review protocol
 
 1. Select one exact immutable commit as Final Review Candidate F2; never substitute moving HEAD or the latest branch tip.
-2. Record `reviewed_candidate_sha`, `reviewed_candidate_tree` and `reviewed_branch=f2-governance-p3` in the external human DecisionRecord.
+2. Record `reviewed_candidate_sha`, `reviewed_candidate_tree` and the exact selected branch
+   (currently proposed as `audit-corrections-p1`) in the external human DecisionRecord.
 3. Review exact F2, including the Falsifier/Sweep, first-baseline path, Registry/workers/Dragonfly boundaries, `PREC-P01..P19`, `HDC-095..100`, five maps, Phase-18 lineage and scoped OPEN items.
 4. Resolve or explicitly defer each scoped item and perform the spot checks/red-team questions.
 5. Approve, request changes to, or reject exact F2.

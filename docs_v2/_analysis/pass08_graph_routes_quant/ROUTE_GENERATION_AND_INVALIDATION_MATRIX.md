@@ -15,6 +15,8 @@ AWAITING HUMAN REVIEW
 
 ## Update protocol
 
-`MetadataUpdate → validate affected metadata → publish new GraphVersion → regenerate only affected edges/routes → rebuild affected reverse-index entries → publish RouteVersion(s) → deactivate invalid definitions`. Fee changes invalidate economic caches and force re-evaluation; they need not change structural identity unless the route definition embeds material fee context. Historical route definitions remain retained for Replay.
+`MetadataUpdate → validate affected metadata → build affected Graph edges, route definitions and reverse-index entries off to the side → validate one coherent immutable generation → atomically publish the compatible GraphVersion + RouteDefinitionVersion + reverse-index generation → retire/deactivate superseded definitions for new readers`. Publication is one reader-visible generation boundary, not a sequence in which a new Graph can be paired with old routes or indexes. Readers already holding the previous immutable generation may finish against it; new work acquires the published generation. A worker result tagged with an older incompatible generation is rejected or explicitly recomputed.
+
+Fee changes invalidate economic caches and force re-evaluation; they need not change structural identity unless the route definition embeds material fee context. Historical route definitions remain retained for Replay. This protocol is an in-process immutable publication contract and does not introduce a distributed transaction system.
 
 Structural generation never asks whether the edge is profitable now. A structurally valid route can be inactive; an active route can stop producing opportunities; an `Opportunity` never becomes a `RouteDefinition`.

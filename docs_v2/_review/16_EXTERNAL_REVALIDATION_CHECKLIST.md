@@ -20,17 +20,17 @@ Allowed documentary states include `UNVERIFIED`, `VERIFIED_AS_OF`, `NOT_FOUND_CU
 
 ## EXT-001..023 current checklist
 
-`Snapshot` below references the dated CORR-04 (2026-09-08) and CORR-06 (2026-09-09) primary-source ledgers where applicable; unrefreshed source-corpus claims remain historical. “Consumer entry” replaces the misleading “earliest technical phase”: work may start earlier, but the fact must be current before the named consumer relies on it.
+`Snapshot` below references the dated CORR-04 (2026-09-08), CORR-06 (2026-09-09) and Prompt-1 public-book refresh (2026-11-18) primary-source ledgers where applicable; unrefreshed source-corpus claims remain historical. “Consumer entry” replaces the misleading “earliest technical phase”: work may start earlier, but the fact must be current before the named consumer relies on it.
 
 | ID | Fact family | Source class | Documentary status / snapshot | Consumer entry | Local conformance and capability gate | Safe fallback |
 |---|---|---|---|---|---|---|
 | EXT-001 | order/matching/batching, IOC/ALO semantics | official exchange docs | VERIFIED_AS_OF 2026-09-09; revalidate before encoding/use | phases 12–13; emulator/transport | fixtures, Replay, then mode-specific validation/promotion | reject unsupported order/mode |
-| EXT-002 | API/WS endpoints/subscriptions/reconnect | official exchange docs | VERIFIED_AS_OF 2026-09-09 | phase 2 adapter | payload/reconnect conformance; Shadow before capital | adapter NON-READY |
+| EXT-002 | API/WS endpoints/subscriptions/reconnect | official exchange docs | VERIFIED_AS_OF 2026-11-18 for public `l2Book`: snapshot feed; reconnect still requires local conformance | phase 2 adapter | payload/reconnect conformance; Shadow before capital | adapter NON-READY |
 | EXT-003 | fees/tiers/debit asset | official exchange/account facts | REVALIDATION_REQUIRED; historical source snapshot | phase 5/economics | point-in-time goldens and account reconciliation | no economic permission |
 | EXT-004 | metadata/precision/lot/tick/minimums | official exchange metadata | REVALIDATION_REQUIRED; historical source snapshot | phase 5/formulas/orders | boundary goldens and invalidation tests | reject affected market/q |
-| EXT-005 | public-feed cadence/fields/identity | official exchange docs + observed capture | VERIFIED_AS_OF 2026-09-09; measurement still required | phase 2/data/book | sequence/gap/reconnect capture; Shadow | public-feed scope NON-READY if invalid |
+| EXT-005 | public-feed cadence/fields/identity | official exchange docs + observed capture | VERIFIED_AS_OF 2026-11-18: `WsBook` snapshot; fast 5 levels, slow/default 20, at-least-0.5-second block push rule; measurement still required | phase 2/data/book | sequence/gap/reconnect capture; source-profile fixtures; Shadow | public-feed scope NON-READY if invalid |
 | EXT-006 | node requirements/flags/outputs/region | official node repo/docs | VERIFIED_AS_OF 2026-09-09 at pinned commit | future node challenger | install/capture/benchmark then scoped validation | public-feed V1 baseline |
-| EXT-007 | order_book_server L2/L4/spot | official repository | VERIFIED_AS_OF 2026-09-09: current spot support absent | phases 18/22 if consumed | repository/version conformance before any fidelity claim | no V1 spot-L4 dependency |
+| EXT-007 | order_book_server L2/L4/spot | official repository | VERIFIED_AS_OF 2026-11-18: standalone non-core/as-is; L4 snapshot then diffs; current spot support absent; node local info lacks `l2Book` | phases 18/22 if consumed | repository/version conformance before any fidelity claim | no V1 spot-L4 dependency |
 | EXT-008 | rate limits/CLOID/nonce/`scheduleCancel` | official exchange docs | VERIFIED_AS_OF 2026-09-09 | phase 13 transport | signer/idempotence/rate fixtures then Shadow | no blind retry; no new risk |
 | EXT-009 | TradingFX offer | provider snapshot | REVALIDATION_REQUIRED before spend | infra benchmark/phase 19+ | offer admission then comparable benchmark | exclude candidate |
 | EXT-010 | Akamai/Linode offer | provider snapshot | REVALIDATION_REQUIRED before spend | infra benchmark/phase 19+ | offer admission then comparable benchmark | exclude candidate |

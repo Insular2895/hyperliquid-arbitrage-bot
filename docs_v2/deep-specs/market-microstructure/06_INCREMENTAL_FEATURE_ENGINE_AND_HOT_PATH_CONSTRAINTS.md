@@ -5,7 +5,11 @@ AWAITING HUMAN REVIEW
 
 ## Ownership
 
-Book Engine owns canonical books. Feature Engine owns deterministic incremental QF measurements. Route Engine owns topology. Opportunity Engine owns current route economics. Participants owns forecasts; Simulator owns distributions/counterfactuals; Risk owns eligibility; PASS07 owns sizing/allocation.
+Book Engine owns canonical books. Feature Engine owns deterministic incremental QF measurements.
+Route Engine owns topology. Opportunity Engine owns current route economics. Participants owns
+forecasts; Simulator owns distributions/counterfactuals. Risk owns preliminary eligibility and the
+later full authorization; PASS07 owns sizing/allocation inside the safe candidate domain. These are
+one Risk authority's two checkpoints, not two writers.
 
 ## Update model
 

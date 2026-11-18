@@ -144,3 +144,20 @@ CORR-06 revalidated official sources on 2026-09-09. Repository HEADs were `hyper
 | `EXT-023` | fast cancel | endpoint supports `fast`; latency guide recommends it; endpoint says it currently has no other effect and future upgrade may prioritize it | `DOC-SCOPE CONFLICT / REVALIDATION REQUIRED`; assume no measurable benefit | before implementation and on either page change |
 
 External fact verification authorizes no priority policy, node, order, Risk change or production deployment.
+
+## Prompt-1 architecture refresh — public book semantics (2026-11-18)
+
+This refresh is a dated external-fact update for `ARCH-013/014/015`; it does not rewrite the
+historical CORR-04/CORR-06 snapshots and does not establish local adapter conformance.
+
+| ID | Refreshed family | Official result retrieved 2026-11-18 | Documentary consequence | Revalidate |
+|---|---|---|---|---|
+| `EXT-002/005` | public WebSocket `l2Book` and HTTP snapshot | official WebSocket defines `WsBook` as a snapshot feed pushed per block when at least 0.5 seconds elapsed; optional `fast` is 5 levels and slow/default is 20; HTTP `l2Book` returns at most 20 levels per side | public V1 adapter treats each valid message as a replacement snapshot, preserves aggregation/source profile, never fabricates diffs/L3/queue truth, and remains non-ready through reconnect until a usable snapshot passes all gates | immediately before adapter implementation and every release/schema change |
+| `EXT-007` | standalone local book service and node local info | official `order_book_server` offers distinct L4 snapshot-then-diff and up to 100 L2 levels but is non-core/as-is and still lacks spot support; official node local info still does not support `l2Book` | neither becomes a V1 spot dependency or silently defines public-feed semantics | before any node/local-book prototype or dependency |
+
+Sources: [official WebSocket subscriptions](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/websocket/subscriptions),
+[official info endpoint](https://hyperliquid.gitbook.io/hyperliquid-docs/for-developers/api/info-endpoint),
+[official order_book_server repository](https://github.com/hyperliquid-dex/order_book_server), and
+[official node repository](https://github.com/hyperliquid-dex/node). Verification establishes
+point-in-time documentary meaning only. Capture fixtures, reconnect/gap tests, observed cadence and
+Shadow evidence remain required before any capability or capital use.

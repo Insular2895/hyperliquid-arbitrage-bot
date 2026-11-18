@@ -11,9 +11,14 @@ The hot path performs only a minimal bounded handoff of an already-identified ty
 | Priority | Examples | Saturation rule |
 |---|---|---|
 | P0 | intents, order/fill/account, Risk, Reservations, Execution, Recovery, Reconciliation, journal | never silently drop; declare critical Recorder health and stop new risk before evidence integrity is lost |
-| P1 | RAW/normalized market evidence required for reconstruction | explicit dataset/Book-quality invalidation and controlled degradation |
-| P2 | derived features/opportunities/performance detail | versioned sample/coarsen/drop with missingness |
-| P3 | verbose diagnostics/formatted logs | shed first, counted |
+| P1 | protected RAW/normalized market and infrastructure windows around executions or incidents | preserve while pinned; any missing range invalidates or lowers the fidelity of the affected incident/execution evidence |
+| P2 | general market RAW/normalized events outside protected windows | versioned sample/coarsen/drop only under explicit pressure policy, with scoped gaps and quality invalidation |
+| P3 | derived features, opportunities, performance detail, verbose diagnostics and formatted logs | shed, delay or recompute first; every loss is counted and lineage remains explicit |
+
+This table uses the canonical retention/backpressure taxonomy from the Recorder master and PASS 06:
+P1 is protected incident/execution context, P2 is general market capture, and P3 is derived or
+diagnostic evidence. Priority controls preservation under pressure; it never changes canonical
+economic event order or IncidentSeverity.
 
 ## Checkpoints
 

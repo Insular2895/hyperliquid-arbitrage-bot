@@ -19,9 +19,13 @@
 | `ExecutionState` | Execution Coordinator | Risk, Recovery, Reconciliation, Accounting, Ops | separate Engine/Route/Order versions | execution journal/checkpoint | intents + observed order/fill events |
 | `RecoveryState` | Recovery Engine reducer | Execution, Risk, Ops, Accounting | RecoveryVersion | journal | actual exposure + recovery events |
 | `ReconciliationState` | Reconciliation Engine reducer | Engine readiness, Risk, Inventory, Ops | ReconciliationVersion | journal/report | orders→fills→balances observations |
+| Accounting records (no separate frozen aggregate-state type) | Accounting reducer | Operations, Validation, reporting/research | stable action/accounting-entry identity + ledger cursor and applicable valuation version | exact-once accounting ledger/reconciliation evidence | unique fills, fees, non-trade capital flows and point-in-time valuation events through the same Accounting rules |
 | Capability state | Capability Manager | Risk, Execution, Deployment, Operations | signed `CapabilityManifest` | immutable manifest/evidence | load exact historical manifest |
 | `RecorderState` | Recorder coordinator | Operations, Validation | recorder seq/chunk/quality versions | recorder metadata/chunks | reconstructed from recorder control records |
 | Model artifact state | Model Artifact Manager | Participants, Simulator, Risk, Replay | ModelArtifactId/manifest | immutable artifact registry/local cache | exact point-in-time artifact from RunManifest |
 | Infrastructure health state | Infrastructure Monitor | Risk, Execution, Operations, Validation | InfraInstanceId + observation/policy version | metrics/incident evidence | recorded health events or declared counterfactual |
 
-Unowned canonical state: **0**. Duplicate logical ownership: **0**. Components may hold immutable read caches but cannot treat them as independently mutable truth.
+Unowned canonical state: **0**. Duplicate logical ownership: **0**. The exact serialized Accounting
+record schema remains Data-owned and is not invented by this matrix. Accounting consumes unique
+economic events and valuation inputs; it does not mutate Account, Fill or Inventory truth.
+Components may hold immutable read caches but cannot treat them as independently mutable truth.

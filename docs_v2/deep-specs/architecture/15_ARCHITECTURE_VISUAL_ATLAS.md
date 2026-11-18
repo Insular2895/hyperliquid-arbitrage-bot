@@ -10,6 +10,14 @@ overrides them.
 The diagrams describe documentary contracts. They are not implementation evidence, passed tests,
 capability activation, Live permission or capital authorization.
 
+## Atlas authority boundary
+
+This is the sole **maintained cross-domain visual catalog**. It owns stable `ARCH-MAP-*`
+identifiers, navigation and current explanatory renderings, but never the underlying domain
+semantics. Masters and owning deep contracts remain authoritative. The F2 five-map atlas is a
+candidate-specific review snapshot: it may link here for drill-down, but future diagrams are not
+duplicated there and changes here do not retroactively certify or rewrite a selected F2 snapshot.
+
 ## 1. How to extend this atlas
 
 Future architecture diagrams belong here when they explain a cross-domain flow or provide a
@@ -41,6 +49,9 @@ normal architecture and human-review process.
 | `ARCH-MAP-008` | Recorder P0 failure walkthrough | Recorder, Risk and Reconciliation | Operational walkthrough |
 | `ARCH-MAP-009` | Partial TT execution walkthrough | Execution, Inventory, Reservations and Accounting | Operational walkthrough |
 | `ARCH-MAP-010` | Scientific candidate walkthrough | Falsifier, Validation and Capability | Scientific walkthrough |
+| `ARCH-MAP-011` | Risk and Execution pipeline | Risk, Sizing, Reservations and Execution | Operational walkthrough |
+| `ARCH-MAP-012` | Shared L2 liquidity and atomic capacity | Book, Sizing, Allocation and Reservations | Capacity walkthrough |
+| `ARCH-MAP-013` | Favorable Simulator output refused by Risk | Simulator, Risk and Execution | Authorization walkthrough |
 
 ## 3. `ARCH-MAP-001` — Global system
 
@@ -93,6 +104,7 @@ flowchart TB
     O --> EW["Execution writer"]
     O --> CW["Recovery and Reconciliation writers"]
     O --> TW["Accounting writer"]
+    O -.-> RCW["Recorder state writer"]
 
     BW -->|BookSnapshot| G["Graph and Route writer"]
     G -->|GraphRouteGeneration| C["Formula Opportunity Capital readers"]
@@ -104,11 +116,12 @@ flowchart TB
     X -->|observation event| O
     CW -->|reconciled observations| O
     IW -->|unique fills and fees| TW
+    RCW -->|chunks manifests quality| EA["Replay Validation and audit readers"]
 ```
 
 | Field | Meaning |
 |---|---|
-| Inputs | Ordered observations and immutable versioned snapshots |
+| Inputs | Ordered observations, bounded capture/health events and immutable versioned snapshots |
 | Outputs | One canonical state version per logical owner |
 | Owner | Each named domain is sole logical writer for its state family |
 | Dependencies | Ordered event boundary, exact versions and authoritative return events |
@@ -385,7 +398,108 @@ Risk owns current permission; Execution alone creates `OrderIntent` after every 
 Authority: [Economic Falsifier](../validation/13_ECONOMIC_FALSIFIER_AND_BOUNDED_SWEEP.md), [candidate lifecycle](../validation/14_ROBUST_REGION_AND_CANDIDATE_LIFECYCLE.md),
 [Validation Matrix](../../16_VALIDATION_MATRIX.md).
 
-## 13. Known open documentary boundaries
+## 13. `ARCH-MAP-011` — Risk and Execution pipeline
+
+```mermaid
+flowchart LR
+    OP["Opportunity with immutable dependency versions"] --> PE{"Risk preliminary eligibility"}
+    PE -->|ineligible or unsupported| RJ["Reject with reason and no reservation"]
+    PE -->|safe candidate domain| SZ["Supported Sizing and Allocation"]
+    SZ -->|no feasible q| RJ
+    SZ -->|bounded q proposal| FR{"Risk full authorization"}
+    FR -->|reject expired or recovery-only for new risk| RJ
+    FR -->|current bounded action| AR{"Atomic shared-capacity reservation"}
+    AR -->|conflict or insufficient capacity| RJ
+    AR -->|reservation committed| EP["Immutable ExecutionPlan"]
+    EP --> PS{"Pre-send versions readiness action and bounds valid"}
+    PS -->|stale expired or incompatible| RL["Do not submit and reconcile or release proven remainder"]
+    PS -->|valid| OI["OrderIntent"]
+    OI --> TX["Transport external effect"]
+    TX -->|ACK reject fill status or timeout| EV["Ordered ExecutionEvent"]
+    EV -->|possibly transmitted unresolved| UN["UNKNOWN retain reservations and reconcile"]
+    EV -->|proven terminal result| UP["Inventory Execution and Accounting owners update from actual events"]
+```
+
+| Field | Meaning |
+|---|---|
+| Purpose | Show the single Risk authority at preliminary and full checkpoints without treating either checkpoint as a Submit command |
+| Inputs | Versioned Opportunity, Book/Graph/Account/Inventory snapshots, supported model outputs and current capability/readiness |
+| Outputs | Reject reason, bounded `RiskDecision`, reservation, immutable plan, `OrderIntent` or ordered result event |
+| Owner | Risk owns both Risk checkpoints; Sizing proposes q; Reservations own claims; Execution owns plan/order lifecycle; Transport performs effects |
+| Decisions / errors | Unsupported model, no feasible q, Risk rejection, reservation conflict, expiry/staleness and `UNKNOWN` all fail closed for new risk |
+| Version / freshness | Full authorization and pre-send checks require current compatible versions; an early eligibility check never substitutes for them |
+| Authority | [Risk](../../09_RISK_CONSTITUTION.md), [Execution](../../10_EXECUTION_STATE_MACHINE.md), [decision pipeline](../../_analysis/pass13_master_architecture/DECISION_PIPELINE_MAP.md) |
+| Related | `ARCH-006`, `ARCH-009`, `ARCH-024`, `ARCH-026`, `ARCH-027`; A-05, A-07, A-16–A-18, A-23 |
+| Status | Documentary ordering clarified; exact `allowed`/`action` compatibility and field-level `RiskReservation` schema remain OPEN human/source decisions; implementation not verified |
+
+## 14. `ARCH-MAP-012` — Two routes share L2 liquidity
+
+```mermaid
+flowchart TB
+    BS["One immutable BookSnapshot generation"] --> R1["Route A candidate walk"]
+    BS --> R2["Route B candidate walk"]
+    R1 --> D1["Claimed market level slices and asset deltas"]
+    R2 --> D2["Claimed market level slices and asset deltas"]
+    D1 --> JO["Joint Sizing and Allocation constraints"]
+    D2 --> JO
+    JO --> OV{"Any overlapping L2 capacity"}
+    OV -->|yes| ONCE["Count shared executable liquidity once"]
+    OV -->|no| INDEP["Keep proven independent capacity"]
+    ONCE --> RS{"Atomic Book Capacity Balance and Risk reservations"}
+    INDEP --> RS
+    RS -->|both fit current shared state| COM["Commit compatible reservation set"]
+    RS -->|conflict state change or insufficient depth| REJ["Reject reduce or recompute before any plan"]
+```
+
+Illustrative example: two apparent opportunities reference the same executable book level. Their
+standalone quantities may each look feasible, but the common units are available only once. The
+Allocator and Reservation owners must compare both against one current shared-capacity state; no
+sum of standalone simulations may manufacture extra depth.
+
+| Field | Meaning |
+|---|---|
+| Purpose | Make A-19 and the no-double-reservation rule visible |
+| Inputs | Immutable Book versions, per-route depth dependencies, candidate q and existing reservations |
+| Outputs | Compatible atomic reservation set, reduced/recomputed candidates or rejection |
+| Owner | Book owns observed depth; Sizing/Allocation owns joint proposal; Reservations own the atomic capacity claim |
+| Decisions / errors | Overlap, stale generation, competing claim or insufficient observed depth prevents double use |
+| Version / freshness | Every claim carries compatible Book/Graph/route/account/risk versions and is revalidated before effect |
+| Authority | [Graph and Routes](../../03_MARKET_GRAPH_AND_ROUTES.md), [Inventory and Capital](../../08_INVENTORY_AND_CAPITAL.md), [Execution](../../10_EXECUTION_STATE_MACHINE.md) |
+| Related | `ARCH-009`, `ARCH-014`, `ARCH-018`, `ARCH-023`, `ARCH-027`; A-07, A-18, A-19 |
+| Status | Documentary capacity semantics; numerical allocator/search policy and implementation tests remain unverified |
+
+## 15. `ARCH-MAP-013` — Simulator says profitable, Risk refuses
+
+```mermaid
+flowchart LR
+    C["Supported candidate and current snapshots"] --> SI["Simulator ExecutionForecast"]
+    SI -->|illustrative favorable expected outcome| EC["Economic comparison"]
+    EC --> RG{"Risk hard gates model support OOD limits readiness"}
+    RG -->|any gate fails| NO["REJECT or scoped HALT no reservation no Submit"]
+    RG -->|all applicable gates pass| BD["Bounded RiskDecision subject to action size TTL and versions"]
+    BD --> RV{"Reservation and pre-send revalidation"}
+    RV -->|conflict stale or expired| NO
+    RV -->|valid| EX["Execution may accept the bounded intent"]
+    SI -.->|forecast is evidence not permission| NOAUTH["No direct authority"]
+```
+
+Illustrative example: a forecast can show positive expected economics while a hard inventory
+limit, unsupported q band, OOD model state, stale dependency or readiness failure causes Risk to
+refuse new exposure. Positive model output is never converted into permission or capital.
+
+| Field | Meaning |
+|---|---|
+| Purpose | Separate model/economic evidence from Risk sovereignty and effect authorization |
+| Inputs | `ExecutionForecast`, economic output, model support/OOD evidence, current snapshots, readiness and capability |
+| Outputs | Reject/halt reason or a bounded current `RiskDecision`; never a direct Simulator order |
+| Owner | Simulator owns forecast; Formula owns economics; Risk owns permission; Reservations/Execution own later stages |
+| Decisions / errors | Unsupported/OOD model, hard-gate failure, stale decision, reservation conflict or pre-send mismatch prevents Submit |
+| Version / freshness | Forecast support, q band, state/config/model versions, TTL and pre-send state must remain compatible |
+| Authority | [Simulator](../../07_COUNTERFACTUAL_SIMULATOR.md), [Risk](../../09_RISK_CONSTITUTION.md), [model execution risk](../risk/04_MODEL_EXECUTION_AND_TAIL_RISK.md) |
+| Related | `ARCH-002`, `ARCH-006`, `ARCH-024`–`ARCH-027`; A-05, A-08, A-11, A-12, A-14, A-23 |
+| Status | Documentary refusal path clarified; model calibration, support evidence and implementation remain unverified |
+
+## 16. Known open documentary boundaries
 
 The atlas intentionally preserves these unresolved or review-scoped boundaries rather than drawing
 an invented solution:

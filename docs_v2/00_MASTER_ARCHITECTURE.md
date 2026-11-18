@@ -81,27 +81,45 @@ Tokio/async may implement I/O and bounded concurrency, but runtime-library types
 
 ```mermaid
 flowchart LR
-  A[Adapters/Normalizer] --> O[Ordered Coordinator]
-  O --> B[Book/Metadata/Fee/Precision]
-  B --> G[Graph/Routes/Watcher/HWC]
-  G --> Q[Formula/Features/Opportunity]
-  Q --> P[Participants]
-  P --> S[Simulator]
-  S --> C[Inventory/Terminal/Sizing/Portfolio]
-  C --> R[Risk/Reservations]
-  R --> E[Execution/Transport]
-  E --> X[Recovery/Reconciliation]
-  E --> AC[Accounting]
-  O --> REC[Recorder]
-  REC --> RP[Replay/Research/Atlas/Models]
-  RP -. promoted versions .-> O
+  H["Hyperliquid public and account interfaces"] -->|payloads| A["Adapter reception"]
+  A -->|bounded live decode| N["Live Normalizer"]
+  N -->|typed observations| O["Ordered ingress recorder_seq and Coordinator"]
+  A -.->|immutable RAW capture envelope| REC["Recorder background IO"]
+  O -.->|bounded canonical evidence handoff| REC
+  O -->|ordered events| B["Book Metadata Fee Precision"]
+  B -->|immutable snapshots| G["Graph Routes Watcher HWC"]
+  G -->|affected routes| Q["Formula Features Opportunity"]
+
+  Q -->|candidate| R0["Risk preliminary eligibility"]
+  R0 -->|safe candidate domain| C["Inventory Terminal Sizing Portfolio"]
+  C -->|sized proposal| R1["Risk full authorization and pre-send revalidation"]
+  R1 -->|authorized action| RSV["Atomic Reservations"]
+  RSV -->|reserved immutable plan| E["Execution Coordinator"]
+  E -->|effect request| T["Transport"]
+  T -->|ACK status fill timeout| O
+  E --> X["Recovery and Reconciliation"]
+  O -->|unique actual fills| I["Inventory"]
+  I -->|unique economic events| AC["Accounting"]
+
+  Q -.->|optional promoted forecast input| P["Participants"]
+  P -.->|optional supported model| S["Simulator"]
+  S -.->|versioned forecast| C
+
+  REC -->|ordered evidence source| RP["Replay and offline Research"]
+  RP -.->|reviewed versioned artifacts only| O
 ```
 
+The two Risk nodes are checkpoints of the one Risk authority, not separate owners. Participants and
+advanced Simulator fidelity are optional only where the active capability does not require them; a
+capability that declares either dependency fails closed when its promoted artifact is unavailable.
+The conservative fixed TT baseline may use its documented bounded path without activating the
+generalized Research Factory. Recorder disk work is not between reception and canonical mutation:
+the ordered Core emits a bounded capture handoff and reacts to typed Recorder health separately.
 The exact catalog and per-component contract are in [Component Catalog](./_analysis/pass13_master_architecture/COMPONENT_CATALOG.md).
 
 ## 10. State ownership
 
-Each canonical mutable state family has one logical writer: Book, Metadata, Fee, Graph, Atlas, Feature, Account, Inventory, Reservation, Risk, Execution, Recovery, Reconciliation, Capability, Recorder, ModelArtifact and InfrastructureHealth. Readers consume immutable versioned snapshots. Strategy never owns a private account balance; Risk never owns a second inventory; Execution never invents fills; Capital never ignores reservations.
+Each canonical mutable state family has one logical writer: Book, Metadata, Fee, Graph, Atlas, Feature, Account, Inventory, Reservation, Risk, Execution, Recovery, Reconciliation, Accounting records, Capability, Recorder, ModelArtifact and InfrastructureHealth. Readers consume immutable versioned snapshots. Strategy never owns a private account balance; Risk never owns a second inventory; Execution never invents fills; Capital never ignores reservations; Accounting never mutates Inventory or Account truth.
 
 Parallel workers return results tagged with input versions. A stale worker result is discarded or revalidated before commit. Persistence supports reconstruction; it is not a second mutable runtime truth. See [State Ownership Matrix](./_analysis/pass13_master_architecture/STATE_OWNERSHIP_MATRIX.md).
 
@@ -327,7 +345,12 @@ Safe update and rollback are economic-state transactions: risk-off → resolve/r
 
 ## 38. Dependency DAG
 
-The synchronous decision DAG is acyclic. Apparent cycles are staged: Opportunity episodes train Participants offline; Simulator evaluates q candidates and Sizer selects; Atlas consumes historic capital outcomes and emits later versions; Recovery proposes under Risk and Execution applies a new plan; Validation emits manifests outside runtime; runtime only reads current versions.
+The synchronous decision DAG is acyclic. Apparent cycles are staged: Opportunity episodes train
+Participants offline; where supported and required, promoted Simulator artifacts help evaluate q
+candidates inside Risk's preliminary safe domain; Sizer proposes and Risk later performs full
+authorization. Atlas consumes historic capital outcomes and emits later versions; Recovery
+proposes under Risk and Execution applies a new plan; Validation emits manifests outside runtime;
+runtime only reads current versions.
 
 Data feedback loops are allowed only through ordered events, datasets, reports, artifacts and controlled promotion. See [Architecture Dependency DAG](./_analysis/pass13_master_architecture/ARCHITECTURE_DEPENDENCY_DAG.md).
 

@@ -15,7 +15,11 @@ RouteDefinition + coherent current state + input q
   → Execution forecast interface
   → ExecutionAlpha
   → Edge(q) and QF-027 boundary
-  → Participants / Simulator / Risk / PASS07 Sizing & Capital
+  → Risk preliminary eligibility and safe candidate domain
+  → supported Participants / Simulator forecast when required
+  → PASS07 Sizing / Capital / Allocation proposal
+  → Risk full authorization
+  → atomic Reservations before Execution
 ```
 
 ## Stages and owners
@@ -32,8 +36,11 @@ RouteDefinition + coherent current state + input q
 | Conversion alpha | QF-024 structural conversion advantage | Route economics | include maker-fill forecast |
 | Execution alpha | QF-025 execution-method advantage | Execution/Simulator interface | redefine route topology |
 | Size curve | QF-026 and QF-027 | Route economics | equate with QF-076 |
-| Forecast | full/partial/fail/recovery distribution | Participants/Simulator | authorize action |
-| Eligibility/allocation | RiskDecision then `Q_validated`/sizing/capital | Risk/PASS07 | enlarge capacity from positive edge |
+| Preliminary eligibility | safe supported candidate domain | Risk | authorize Submit or replace final Risk |
+| Forecast | full/partial/fail/recovery distribution when supported/required | Participants/Simulator | authorize action or block an independent conservative baseline |
+| Sizing/allocation | bounded q/allocation proposal inside safe domain | PASS07 | claim permission or enlarge capacity from positive edge |
+| Full authorization | current semantic action, reasons, bounds, TTL and versions | Risk | infer permission from preliminary eligibility or `allowed` alone |
+| Reservation | atomic balance/book/risk capacity claims | Reservations | double-count shared capital or depth |
 
 ## Current-state coherence
 

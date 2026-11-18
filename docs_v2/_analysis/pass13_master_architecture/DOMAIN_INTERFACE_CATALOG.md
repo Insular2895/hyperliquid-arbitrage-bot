@@ -28,7 +28,7 @@
 | FillLedger | Account/Execution reducer | Inventory, Recovery, Accounting, Replay | unique/idempotent actual fills only |
 | Recovery plan/state | Recovery Engine | Risk, Execution, Accounting, Ops | current exposure, bounded actions, no route loyalty/sunk-cost widening |
 | Reconciliation report/state | Reconciliation Engine | readiness, Risk, Inventory, Ops | orders→fills→balances proof, mismatch/consistency version |
-| Accounting record | Accounting | Ops, Validation, research | disjoint action/PnL classification, actual units/fees |
+| Accounting record | Accounting | Ops, Validation, research | stable action/accounting-entry identity; disjoint Strategy/Recovery/Rebalance/Bridge/InfraCost/InventoryMTM classification; actual units/fees; deposits, withdrawals and external transfers remain capital flows outside trading PnL |
 | `RunManifest` | Data/Replay/Deployment | Replay, Validation, research | build/config/models/formulas/schemas/mode/dataset/seed identities |
 | `DecisionTrace` | ordered Core | Replay, Validation, incidents | ordered decisions/intents/transitions/Risk decisions + hashes |
 | `ModelArtifact` / manifest | Model Artifact Manager | Participants, Simulator, Risk, Replay | training range, features, support, metrics, fallback, approval |
