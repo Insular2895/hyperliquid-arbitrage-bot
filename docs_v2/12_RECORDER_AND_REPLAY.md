@@ -5,7 +5,7 @@ AWAITING HUMAN REVIEW
 
 ## 1. Purpose
 
-Recorder preserves sufficient source, decision and execution evidence to reproduce the bot's knowledge and calibrate simulation against reality. Replay feeds that evidence into the same production Core. Research prioritizes return to the past; production prioritizes explanation of every real decision while retaining representative market evidence.
+Recorder preserves sufficient source, decision and execution evidence to reproduce the bot's knowledge and calibrate simulation against reality. Replay feeds that evidence into an isolated Core instance using the same production reducer, formula, Risk and state-transition implementation. Research prioritizes return to the past; production prioritizes explanation of every real decision while retaining representative market evidence.
 
 Production recording has four explicit, durable purposes: reconstruct a real trade or decision from its evidence; compare predicted/simulated behaviour with what actually happened; detect regime change, drift, and loss of support; and build new point-in-time datasets for offline recalibration. These purposes do not authorize online self-training or automatic promotion.
 
@@ -28,6 +28,14 @@ Core never performs file writes, fsync, compression or cloud upload in the decis
 
 L0 stores the exact `payload_bytes` plus RawEvent envelope, append-only and immutable. Compact binary serialization plus ZSTD is the locked architectural direction; the exact binary codec is an implementation decision gated by roundtrip, compatibility and performance evidence. JSON is limited to debugging/human exports, not giant RAW streams.
 
+Reception first preserves original bytes and provisional source/connection/receive provenance. The
+authorized ordered-ingress boundary binds the stable `event_id`, assigns `recorder_seq` once and
+finalizes the canonical `RawEvent` envelope. Bounded Live normalization may already have run or may
+overlap this boundary; its valid or rejected outcome is associated with that finalized RAW identity
+before the bounded Recorder handoff. An unknown or invalid payload is therefore retained even when
+it emits no admissible `NormalizedEvent`. Assigned sequence is independent of writer completion and P0–P3
+storage priority. The precise pre-assignment arbitration is still OPEN under `ARCH-016`.
+
 ## 5. chunks/checksums
 
 RAW is segmented into small independently closeable chunks. The exploratory 5–15 minute duration is `CALIBRATED`, not a constant. Each closed chunk has:
@@ -43,7 +51,7 @@ The cryptographic checksum is verified before archive acceptance or local cleanu
 
 ## 6. normalized/derived data
 
-Normalization is asynchronous and reproducible: `RAW → versioned NormalizedEvent → Parquet + ZSTD` for analytics. The canonical partitioning direction is date/hour/market, adjusted only by measured workload. Derived features, forecasts, opportunities and research tables are versioned and trace back to RAW; none can become the sole historical source of a decision.
+Historical/analytical normalization is asynchronous and reproducible: `RAW → versioned normalization outcome → Parquet + ZSTD` for analytics. A valid outcome may contain a `NormalizedEvent`; an invalid/unknown outcome retains its typed reason and RAW lineage without fabricating an event. This offline path must not be confused with bounded Live normalization allowed before ordered ingress. The canonical partitioning direction is date/hour/market, adjusted only by measured workload. Derived features, forecasts, opportunities and research tables are versioned and trace back to RAW; none can become the sole historical source of a decision.
 
 ## 7. priorities
 
@@ -108,11 +116,12 @@ Checkpoint-assisted equality requires matching canonical state, every suffix inp
 
 ```text
 historical Raw/Normalized source → ReplayClock → ordered EngineInputEvents
-→ same reducers/engines/risk/execution state machine
-→ ReplayTransport/ExchangeEmulator → same AccountEvents
+→ isolated Replay Core and Replay-owned canonical state
+→ same reducers/engines/risk/execution state-machine implementation
+→ ReplayTransport/ExchangeEmulator or disabled effects → Replay AccountEvents
 ```
 
-Replay does not fork formulas, strategy, risk, recovery, inventory, reservation or state-machine logic. SimulatedAccountState conforms to AccountState. Shadow keeps actual and counterfactual account states strictly separate.
+Replay does not fork formulas, strategy, risk, recovery, inventory, reservation or state-machine logic, but it never shares mutable Live state. Its `ReplayClock`, Account/Inventory/Reservation/Execution state and effect boundary belong to the Replay run. Replay cannot call the production Transport, create an actual exchange fill, mutate Live balances or grant Live permission. SimulatedAccountState conforms to AccountState. Shadow keeps actual and counterfactual account states strictly separate. Scientific evidence or a historical artifact reaches Live only through the independent validation, human-review and versioned promotion process.
 
 ## 17. Replay modes
 

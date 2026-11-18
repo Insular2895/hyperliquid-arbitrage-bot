@@ -33,17 +33,18 @@ one OCI client container
 
 separate process/resource envelope
 └── C5 Replay campaigns / Monte Carlo / training / discovery / search
+    └── independent ReplayClock, C0 instance, canonical state and simulated/disabled effects
 ```
 
 ## State and message law
 
-1. Concurrent adapters timestamp and normalize observations, then enter one explicit canonical ordering boundary.
+1. Concurrent adapters preserve original bytes plus provisional receive provenance and may perform bounded normalization, then enter one explicit canonical ordering boundary. That boundary assigns `recorder_seq` once, finalizes RAW identity and orders admissible events; invalid/unknown outcomes retain RAW lineage without canonical mutation. The exact pre-assignment arbitration remains OPEN under `ARCH-016`.
 2. Only `C0` mutates `Book`, `Account`, `Fill`, `Inventory`, `Reservation`, Risk, Execution, Recovery, Reconciliation or Accounting truth.
 3. `C1` is cheap, bounded and deterministic. It does not block on network, disk or remote services.
 4. `C2` receives immutable snapshots plus complete versions, deadline and generation; it returns a proposal. The coordinator may accept only after current-state revalidation.
 5. `C3` executes an intention without mutating Core. ACK, timeout, fill and query responses become normalized ordered events.
 6. `C4` receives bounded handoffs. Loss or failure is handled by evidence criticality; it never silently blocks the economic coordinator.
-7. `C5` is isolated from Live resources and returns only versioned evidence/artifact candidates through existing promotion authority.
+7. `C5` is isolated from Live resources. Replay uses the same reducer/contracts implementation in an independent C0/state context and returns only versioned evidence/artifact candidates through existing promotion authority; it never targets the Live C0 instance.
 
 ## Canonical authorities
 

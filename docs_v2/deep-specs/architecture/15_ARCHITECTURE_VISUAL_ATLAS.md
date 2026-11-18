@@ -52,44 +52,67 @@ normal architecture and human-review process.
 | `ARCH-MAP-011` | Risk and Execution pipeline | Risk, Sizing, Reservations and Execution | Operational walkthrough |
 | `ARCH-MAP-012` | Shared L2 liquidity and atomic capacity | Book, Sizing, Allocation and Reservations | Capacity walkthrough |
 | `ARCH-MAP-013` | Favorable Simulator output refused by Risk | Simulator, Risk and Execution | Authorization walkthrough |
+| `ARCH-MAP-014` | RAW identity, normalization outcome and ordered evidence | Data, Recorder, Async and Replay | Ingestion/evidence walkthrough |
 
 ## 3. `ARCH-MAP-001` — Global system
 
 ```mermaid
-flowchart LR
-    EX["Exchange APIs and WebSockets"] -->|observations| AD["Adapters and Normalizer"]
-    AD -->|typed ingress| OC["C0 Ordered Commit"]
-    OC -->|market events| BK["Book and Metadata"]
-    BK -->|immutable snapshots| GR["Graph and Routes"]
-    GR -->|eligible routes| OP["Opportunity and Formula"]
-    OP -->|candidate| SZ["Sizer and Allocator"]
-    SZ -->|proposal| RK["Risk"]
-    RK -->|authorized action| RS["Reservations"]
-    RS -->|reserved plan| EC["Execution Coordinator"]
-    EC -->|OrderIntent| TR["C3 Transport"]
-    TR -->|ACK status fill timeout| OC
-    OC -->|unique actual fills| IV["Inventory"]
-    OC -->|order transitions| EC
-    EC -->|unresolved exposure| RC["Recovery and Reconciliation"]
-    RC -->|observed truth| OC
-    IV -->|unique economic events| AC["Accounting"]
-    OC -.->|bounded evidence enqueue| RE["C4 Recorder"]
-    RE -->|ordered historical source| RP["Replay"]
-    RP -->|same typed events in isolated context| OC
+flowchart TB
+    subgraph LIVE["Live run context"]
+        EX["Exchange APIs and WebSockets"] -->|observations| AD["Live adapters and Normalizer"]
+        AD --> OUT["RAW-linked valid or rejected outcome"]
+        OUT -->|admissible typed event| LI["Live ordered ingress"]
+        LI --> OC["Live C0 ordered commit"]
+        OUT -->|invalid or unknown; no canonical mutation| RJ["Typed rejection evidence"]
+        OC -->|market events| BK["Live Book and Metadata"]
+        BK -->|immutable snapshots| GR["Graph and Routes"]
+        GR -->|eligible routes| OP["Opportunity and Formula"]
+        OP -->|candidate| SZ["Sizer and Allocator"]
+        SZ -->|proposal| RK["Risk"]
+        RK -->|authorized action| RS["Reservations"]
+        RS -->|reserved plan| EC["Execution Coordinator"]
+        EC -->|OrderIntent| TR["Authorized production Transport"]
+        TR -->|ACK status fill timeout observations| AD
+        OC -->|unique actual fills| IV["Live Inventory"]
+        OC -->|order transitions| EC
+        EC -->|unresolved exposure| RC["Recovery and Reconciliation"]
+        RC -->|observed truth| OC
+        IV -->|unique economic events| AC["Live Accounting"]
+    end
+
+    OUT -.->|bounded RAW and outcome enqueue| RE["C4 Recorder"]
+    OC -.->|bounded canonical evidence enqueue| RE
+    RE -->|chunks checksums gaps| DS["Immutable Dataset and RunManifest"]
+
+    subgraph REPLAY["Independent Replay run context"]
+        DS -->|recorded order and ReplayClock| RI["Replay ordered ingress"]
+        RI --> ROC["Isolated Replay C0 instance"]
+        ROC --> RST["Replay-only Book Account Inventory Risk Execution state"]
+        ROC -->|simulated intent only| RTX["ReplayTransport emulator or disabled effects"]
+        RTX -->|Replay AccountEvents only| RI
+    end
+
+    SH["Shared contracts reducers formulas versions and state transitions"] -.-> OC
+    SH -.-> ROC
+    DS --> SCI["Offline scientific evidence"]
+    SCI --> VG["Validation human review and promotion"]
+    VG --> PA["Admitted immutable artifact or configuration version"]
+    PA -.->|Live resolves version; no Replay state injection| OC
 ```
 
 | Field | Meaning |
 |---|---|
 | Inputs | Exchange market, metadata, account, order and fill observations |
-| Outputs | Canonical state, effect intents, reconciled economic state and durable evidence |
+| Outputs | Live canonical/economic state, isolated Replay state, effect intents and durable evidence |
 | Owner | Ordered domain reducers; the ordered boundary sequences commits but is not a second writer |
 | Dependencies | Data versions, Book readiness, Graph generation, Formula, Risk, Reservations and Capability |
-| Exceptional paths | Stale/unknown state stops affected new risk; transport results return as events; Recorder handoff stays bounded |
+| Exceptional paths | Stale/unknown state stops affected new risk; transport results return as events; Recorder handoff stays bounded; Replay cannot target Live state/Transport |
 | Authority | [Master Architecture](../../00_MASTER_ARCHITECTURE.md), [state ownership](../../_analysis/pass13_master_architecture/STATE_OWNERSHIP_MATRIX.md), [command/event ownership](../../_analysis/pass13_master_architecture/EVENT_AND_COMMAND_OWNERSHIP_MATRIX.md) |
 | Status | Intended current V1 architecture; implementation not verified |
 
 No adapter, transport callback, Recorder, model or operator command may directly mutate economic
-truth owned by another reducer.
+truth owned by another reducer. Live and Replay reuse the same implementation semantics but never
+the same mutable Account, Inventory, Reservation, Execution or Risk state.
 
 ## 4. `ARCH-MAP-002` — Functional domains and state ownership
 
@@ -145,7 +168,8 @@ flowchart LR
     C0 -.->|bounded handoff| C4["C4 durability health and maintenance"]
     C4 -->|quality or health event| C0
     C5["C5 offline research"] -->|versioned artifact candidate| VG["Validation and promotion gate"]
-    VG -->|reviewed exact scope only| C0
+    VG -->|reviewed exact scope only| PA["Promoted artifact or configuration admission"]
+    PA -.->|read at explicit Live version boundary; no state injection| C0
 ```
 
 | Field | Meaning |
@@ -499,7 +523,60 @@ refuse new exposure. Positive model output is never converted into permission or
 | Related | `ARCH-002`, `ARCH-006`, `ARCH-024`–`ARCH-027`; A-05, A-08, A-11, A-12, A-14, A-23 |
 | Status | Documentary refusal path clarified; model calibration, support evidence and implementation remain unverified |
 
-## 16. Known open documentary boundaries
+## 16. `ARCH-MAP-014` — RAW identity, normalization outcome and ordered evidence
+
+```mermaid
+flowchart TB
+    AR["Adapter reception"] -->|copy original bytes and receive metadata| PC["Provisional capture: payload_bytes source connection local clocks"]
+    AR -->|bounded work may execute before or overlap ingress| NM["Live normalization attempt"]
+
+    PC --> ARB["Pre-assignment ingress arbitration: exact policy OPEN ARCH-016"]
+    ARB -->|one admitted capture event| SQ["Assign recorder_seq once and finalize canonical RawEvent identity"]
+    NM -->|valid event or typed invalid/unknown reason| JO["Associate normalization outcome with source_raw_event_id"]
+    SQ --> JO
+
+    JO --> OK{"Admissible NormalizedEvent"}
+    OK -->|yes| EV["Versioned typed event"]
+    EV -->|assigned recorder_seq position| C0["Ordered canonical reducer"]
+    C0 --> ST["Canonical domain state"]
+    OK -->|no| RJ["Retain RAW plus rejection provenance"]
+    RJ -->|forbidden| NO["No Book Account Inventory or permission mutation"]
+
+    SQ -.->|canonical RAW envelope| BH["Bounded evidence handoff"]
+    JO -.->|valid or rejected outcome| BH
+    BH --> WR["C4 background writer compression checksum"]
+    PR["P0-P3 retention and backpressure class"] -.->|storage behavior only; never event order| WR
+    WR --> DS["Closed chunks Dataset RunManifest and explicit gaps"]
+
+    SQ -.->|crash before durability| GP["ARCH-019 evidence gap: never claim completeness"]
+    GP --> RR["Restart detection Recovery and Reconciliation as applicable"]
+
+    DS -->|ascending recorder_seq within one capture context| RI["ReplayClock and Replay ordered ingress"]
+    RI --> RC["Isolated Replay C0"]
+    RC --> RS["Replay-owned canonical state and DecisionTrace"]
+```
+
+The arrows show required data dependencies and ownership, not a mandatory total physical schedule.
+In particular, bounded normalization may run before or overlap ingress; the valid/rejected outcome
+becomes usable only after association with the finalized RAW identity. What is fixed is one
+`recorder_seq` assignment per admitted capture event, immutable post-assignment order, evidence for
+both success and rejection, ordered application of valid events, and background persistence that
+cannot create another sequence authority.
+
+| Field | Meaning |
+|---|---|
+| Purpose | Explain how an invalid or unknown payload remains ordered RAW evidence even though no valid event reaches a reducer |
+| Inputs | Original source bytes, source/connection identity, local receive clocks and versioned normalization rules |
+| Outputs | Final `RawEvent`, valid `NormalizedEvent` or typed rejection, bounded persistence handoff, Dataset/RunManifest and isolated Replay input |
+| Owner | Data owns schema/ordering; ingress assigns `recorder_seq`; domain reducers own state; Recorder owns durability; Replay owns its independent run state |
+| Decisions / errors | Exact pre-assignment arbitration and cross-recorder merge remain OPEN; invalid/unknown input cannot mutate state or fabricate a type |
+| Version / freshness | Capture context, RAW/normalization schema, source connection, dataset/run manifest and Replay versions remain explicit |
+| Exceptional paths | Writer priority/completion never reorders; a crash after assignment creates an explicit gap and invokes the ARCH-019 safety/reconciliation boundary |
+| Authority | [Data Contracts](../../11_DATA_CONTRACTS.md), [Recorder/Replay](../../12_RECORDER_AND_REPLAY.md), [Event Ordering](../../_analysis/pass06_data_recorder_replay/EVENT_ORDERING_CONTRACT.md), [Async map](../../_analysis/async_concurrency_architecture/ASYNC_SYSTEM_MAP.md) |
+| Related | `ARCH-001`, `ARCH-003`, `ARCH-016`–`ARCH-021`; RAW-ORDER-01–07 and REPLAY-ISO-01–04 |
+| Status | Documentary lifecycle specified; acceptance/runtime/durability tests NOT EXECUTED; implementation not verified |
+
+## 17. Known open documentary boundaries
 
 The atlas intentionally preserves these unresolved or review-scoped boundaries rather than drawing
 an invented solution:

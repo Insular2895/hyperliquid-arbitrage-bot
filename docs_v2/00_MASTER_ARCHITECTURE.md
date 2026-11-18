@@ -48,11 +48,11 @@ Cross-exchange routing, transfer edges, perpetual hedging (`perp hedge`), privat
 5. Reserve shared resources before any order effect.
 6. Exchange truth and unique actual fills define economic state.
 7. Recovery and Reconciliation are first-class systems.
-8. Replay, Paper, Shadow, MicroLive and Live preserve the same Core contracts.
+8. Replay, Paper, Shadow, MicroLive and Live preserve the same Core contracts and implementation semantics while keeping independent mutable run state.
 9. Recorder and observability do not synchronously block the hot path.
 10. Use final-capable interfaces from the start and activate progressively; no throwaway MVP.
 
-The source shorthand “Know everything / expensive compute follows capital” means broad cheap awareness plus selective bounded computation; it does not let capital bypass HWC, capability or Risk. Operationally, the same Core spans Replay, Paper, Shadow, MicroLive and Live, while the Recorder is non-blocking. This is a final-capable architecture with progressive activation.
+The source shorthand “Know everything / expensive compute follows capital” means broad cheap awareness plus selective bounded computation; it does not let capital bypass HWC, capability or Risk. Operationally, one authoritative Core implementation spans Replay, Paper, Shadow, MicroLive and Live through isolated run contexts; mutable Live and Replay economic state is never shared. Recorder remains non-blocking. This is a final-capable architecture with progressive activation.
 
 ## 7. System context
 
@@ -80,33 +80,54 @@ Tokio/async may implement I/O and bounded concurrency, but runtime-library types
 ## 9. Domain/component map
 
 ```mermaid
-flowchart LR
-  H["Hyperliquid public and account interfaces"] -->|payloads| A["Adapter reception"]
-  A -->|bounded live decode| N["Live Normalizer"]
-  N -->|typed observations| O["Ordered ingress recorder_seq and Coordinator"]
-  A -.->|immutable RAW capture envelope| REC["Recorder background IO"]
+flowchart TB
+  subgraph LIVE["Live run context"]
+    H["Hyperliquid public and account interfaces"] -->|payloads| A["Live adapter reception"]
+    A -->|original bytes and provisional provenance| CP["Provisional capture"]
+    A -->|bounded live decode may overlap ingress| N["Live normalization attempt"]
+    CP -->|assign recorder_seq once and finalize RAW identity| LI["Live ordered ingress"]
+    N -->|valid event or typed rejection| JO["Outcome linked to finalized RAW identity"]
+    LI --> JO
+    JO -->|admissible event at assigned position| O["Live C0 instance"]
+    JO -->|invalid or unknown; no canonical mutation| RJ["Typed rejection evidence"]
+    O -->|ordered events| B["Live Book Metadata Fee Precision"]
+    B -->|immutable snapshots| G["Graph Routes Watcher HWC"]
+    G -->|affected routes| Q["Formula Features Opportunity"]
+
+    Q -->|candidate| R0["Risk preliminary eligibility"]
+    R0 -->|safe candidate domain| C["Inventory Terminal Sizing Portfolio"]
+    C -->|sized proposal| R1["Risk full authorization and pre-send revalidation"]
+    R1 -->|authorized action| RSV["Atomic Reservations"]
+    RSV -->|reserved immutable plan| E["Execution Coordinator"]
+    E -->|effect request| T["Authorized production Transport"]
+    T -->|ACK status fill timeout observations| A
+    E --> X["Recovery and Reconciliation"]
+    O -->|unique actual fills| I["Live Inventory"]
+    I -->|unique economic events| AC["Live Accounting"]
+
+    Q -.->|optional promoted forecast input| P["Participants"]
+    P -.->|optional supported model| S["Simulator"]
+    S -.->|versioned forecast| C
+  end
+
+  JO -.->|bounded RAW and outcome handoff| REC["C4 Recorder background IO"]
   O -.->|bounded canonical evidence handoff| REC
-  O -->|ordered events| B["Book Metadata Fee Precision"]
-  B -->|immutable snapshots| G["Graph Routes Watcher HWC"]
-  G -->|affected routes| Q["Formula Features Opportunity"]
+  REC -->|closed chunks checksums gaps| DS["Immutable Dataset and RunManifest"]
 
-  Q -->|candidate| R0["Risk preliminary eligibility"]
-  R0 -->|safe candidate domain| C["Inventory Terminal Sizing Portfolio"]
-  C -->|sized proposal| R1["Risk full authorization and pre-send revalidation"]
-  R1 -->|authorized action| RSV["Atomic Reservations"]
-  RSV -->|reserved immutable plan| E["Execution Coordinator"]
-  E -->|effect request| T["Transport"]
-  T -->|ACK status fill timeout| O
-  E --> X["Recovery and Reconciliation"]
-  O -->|unique actual fills| I["Inventory"]
-  I -->|unique economic events| AC["Accounting"]
+  subgraph REPLAY["Independent Replay run context"]
+    DS -->|recorded recorder_seq order| RI["Replay ordered ingress and ReplayClock"]
+    RI --> RC["Isolated Replay C0 instance"]
+    RC --> RS["Replay-only Book Account Inventory Risk Execution state"]
+    RC -->|simulated intent only| RT["ReplayTransport emulator or disabled effects"]
+    RT -->|Replay AccountEvents only| RI
+  end
 
-  Q -.->|optional promoted forecast input| P["Participants"]
-  P -.->|optional supported model| S["Simulator"]
-  S -.->|versioned forecast| C
-
-  REC -->|ordered evidence source| RP["Replay and offline Research"]
-  RP -.->|reviewed versioned artifacts only| O
+  SH["Shared domain contracts reducers formulas versions and state-transition implementation"] -.-> O
+  SH -.-> RC
+  DS --> LAB["Offline Research and scientific evidence"]
+  LAB --> VG["Independent validation human review and promotion"]
+  VG --> MA["Approved immutable artifact or configuration version"]
+  MA -.->|Live may read at an admitted version boundary; no state injection| O
 ```
 
 The two Risk nodes are checkpoints of the one Risk authority, not separate owners. Participants and
@@ -115,6 +136,10 @@ capability that declares either dependency fails closed when its promoted artifa
 The conservative fixed TT baseline may use its documented bounded path without activating the
 generalized Research Factory. Recorder disk work is not between reception and canonical mutation:
 the ordered Core emits a bounded capture handoff and reacts to typed Recorder health separately.
+Replay reuses the authoritative implementation but has its own clock, C0, domain state and effect
+boundary. It cannot mutate Live Account/Inventory, invoke the production Transport or convert
+simulated fills into actual fills. A promoted artifact is admitted through governance, never by
+injecting Replay state or events into the Live C0 instance.
 The exact catalog and per-component contract are in [Component Catalog](./_analysis/pass13_master_architecture/COMPONENT_CATALOG.md).
 
 ## 10. State ownership
@@ -134,15 +159,13 @@ Parallel workers return results tagged with input versions. A stale worker resul
 ## 12. Ordered core / reducers
 
 ```text
-External or Replay payload
-→ adapter/normalizer
-→ ordered EngineInputEvent
-→ pure state reducers under one logical coordinator
-→ immutable versioned snapshots
-→ bounded decisions and effect requests
-→ EffectExecutor / transport
-→ observed result event
-→ ordered reducer commit
+Live: external payload → provisional RAW provenance + bounded normalization outcome
+    → Live ordered ingress / recorder_seq → Live reducers and state
+    → authorized EffectExecutor / production Transport → observed result → Live ingress
+
+Replay: immutable dataset / RunManifest → ReplayClock + recorded order
+      → isolated Replay C0 → Replay-owned reducers and state
+      → ReplayTransport / emulator / disabled effects → Replay-only observations
 ```
 
 Core ordering follows receive chronology and `recorder_seq` within a capture context; exchange time remains source chronology. Each canonical state transition uses its deterministic `EventReducer`; external actions use the separate `EffectExecutor`. Determinism is independent of worker completion order and map iteration.
@@ -155,11 +178,17 @@ All inputs are in-memory, versioned and freshness checked. Work is bounded by af
 
 ## 14. Async / research path
 
-Recorder writes, compression, archive transfer, historical Replay jobs, Atlas slow aggregation, infrastructure analytics, diagnostics, license/release checks, reports, model training and Challenger evaluation are asynchronous/background/offline. Results re-enter the Core only as validated, immutable artifacts or atomic versioned configuration/capability changes—never through uncontrolled shared-memory mutation.
+Recorder writes, compression, archive transfer, historical Replay jobs, Atlas slow aggregation, infrastructure analytics, diagnostics, license/release checks, reports, model training and Challenger evaluation are asynchronous/background/offline. Offline results never re-enter Live as mutable Replay state or events. Only validated immutable artifacts or atomic versioned configuration/capability changes may be admitted through the independent promotion authority and then read by Live at an explicit version boundary.
 
 ## 15. Market data pipeline
 
-Hyperliquid market/account payloads are first captured as immutable RAW, then normalized into typed events. Ordered reducers produce coherent Book/Account/Metadata/Fee/Precision state. Gaps, stale data, unknown event types or invalid rules cannot mutate usable state. Feed and account adapters expose provenance, connection health and versioned semantics.
+Hyperliquid market/account reception immediately preserves original bytes and provisional source,
+connection and local-receive provenance. Bounded Live normalization may occur before or overlap the
+ordered-ingress boundary. That boundary assigns `recorder_seq` once, finalizes canonical RAW
+identity and associates the valid or rejected normalization outcome. Only admissible typed events
+reach ordered reducers; unknown/invalid payloads remain RAW evidence with typed rejection and
+cannot mutate usable state. Background persistence receives a bounded handoff and cannot reorder
+the assigned sequence. The exact pre-assignment arbitration remains OPEN under `ARCH-016`.
 
 ## 16. Graph / Routes
 
@@ -194,7 +223,7 @@ The Participant engine models collective edge survival, liquidity response, comp
 
 The Simulator returns plausible execution outcome distributions, never an exact alternate universe. F0 Historical and F1 latency/mechanical behavior bootstrap; F2 queue and F3 responsive behavior activate only with evidence; F4 interactive agents remain Research. Mechanical `Δour`, historical compatibility and modeled response stay distinct. Low confidence can only narrow permission.
 
-Replay reconstructs an event history through the Core; Simulator models counterfactual execution. They share types, states and formulas but remain different subsystems.
+Replay reconstructs an event history through an isolated Core instance; Simulator models counterfactual execution. They share types, reducer/formula semantics and state definitions with Live, but never its mutable state or production effect boundary and remain different subsystems.
 
 ## 21. Inventory / Capital
 
@@ -250,20 +279,24 @@ Accounting is a logical owner, not a missing standalone V2 master. Its canonical
 Data is layered: L0 immutable RAW; L1 normalized events; L2 canonical state; L3 derived features/forecasts; L4 decisions/results. Recorder priority preserves fills/account/execution and incident evidence before general market data and derived diagnostics. Recorder non-blocking behavior is mandatory. The Execution Journal is distinct from broad RAW.
 
 ```mermaid
-flowchart LR
-  EP[External payload] --> RAW[L0 RAW]
-  RAW --> N[L1 normalized events]
-  N --> S[L2 state]
-  S --> F[L3 features/forecasts]
-  F --> D[L4 decisions/results]
-  D --> J[Journal/outcomes]
-  RAW --> R[Replay source]
-  R --> C[Same ordered reducers/Core]
-  C --> DT[DecisionTrace]
-  RAW --> DS[Point-in-time datasets]
-  DS --> LAB[Python research]
-  LAB --> V[Validation/promotion]
-  V --> MA[Versioned model artifact]
+flowchart TB
+  EP["External payload"] --> CP["Original bytes and provisional receive provenance"]
+  EP -->|bounded work may overlap ingress| NO["Normalization attempt"]
+  CP -->|ARCH-016 arbitration then assign recorder_seq once| IN["Ordered ingress finalizes canonical RawEvent"]
+  NO -->|valid event or typed rejection| JO["Outcome linked to source_raw_event_id"]
+  IN --> JO
+  JO -->|valid only in assigned order| S["Live L2 canonical state"]
+  JO -->|invalid or unknown no state mutation| RJ["Rejected outcome evidence"]
+  JO -.->|bounded evidence handoff| REC["C4 background persistence"]
+  REC --> DS["Closed chunks Dataset RunManifest gaps"]
+  DS -->|ascending recorder_seq within capture context| RI["ReplayClock and Replay ordered ingress"]
+  RI --> RC["Isolated Replay C0 and Replay-owned state"]
+  RC --> DT["Replay DecisionTrace"]
+  SH["Shared reducers formulas contracts and versions"] -.-> S
+  SH -.-> RC
+  DS --> LAB["Offline research"]
+  LAB --> V["Validation human review promotion"]
+  V --> MA["Approved immutable artifact"]
 ```
 
 `DecisionTrace = F(OrderedEvents, ResolvedConfig, ModelArtifacts, FormulaVersion, Seed)`. Wall, monotonic, exchange and Replay logical time remain distinct. RNG is explicit in `RunManifest`; no lookahead or hidden randomness is permitted.
@@ -282,7 +315,7 @@ Production Rust inference consumes only approved versioned artifacts. Recorder/l
 
 | Mode | Market/account source | Transport/effect | Real orders/capital | Clock | Risk / capability |
 |---|---|---|---|---|---|
-| Replay | Recorded ordered events | Recorded/simulated | No | `ReplayClock` | Same Core; M2 scope |
+| Replay | Recorded ordered events | ReplayTransport/emulator or disabled | No | `ReplayClock` | Same implementation, isolated C0/state; M2 scope |
 | Paper | Live or replay market; synthetic account | Paper transport | No | Mode-appropriate | Same Risk contracts; no fill claim |
 | Shadow | Live inputs; shadow account projection | No-effect transport | No | Live monotonic/wall | M3 exact scope |
 | MicroLive | Live market/account | Real protected transport | Probe only | Live clocks | M4 predeclared scope |
@@ -370,7 +403,7 @@ Current/Core interfaces cover the Rust modular Core, public-feed adapters, deter
 
 ## 42. Cross-domain invariants
 
-No stale Book for new risk; no unknown fee/precision; no double spending; reserve before order; no blind retry; actual fills only; cancel sent is not cancel confirmed; SENT may have executed; UNKNOWN locks reservations; reconcile before new risk; Recovery remains available; no hard-Risk bypass; no lookahead; same Core across RunModes; no hot-path disk; no silent model/formula/config version change; more capital does not expand `Q_validated`; Strategy, Bridge, Rebalance and Recovery remain distinct; Sizing differs from Slicing; Graph differs from Atlas and HWC; implemented/licensed/container-running differ from validated/ready; software rollback differs from exchange truth; no dual active owner.
+No stale Book for new risk; no unknown fee/precision; no double spending; reserve before order; no blind retry; actual fills only; cancel sent is not cancel confirmed; SENT may have executed; UNKNOWN locks reservations; reconcile before new risk; Recovery remains available; no hard-Risk bypass; no lookahead; same Core implementation semantics but isolated mutable state across RunModes; no hot-path disk; no silent model/formula/config version change; more capital does not expand `Q_validated`; Strategy, Bridge, Rebalance and Recovery remain distinct; Sizing differs from Slicing; Graph differs from Atlas and HWC; implemented/licensed/container-running differ from validated/ready; software rollback differs from exchange truth; no dual active owner.
 
 Exact wording, owner and violation response are cataloged in [Cross-domain Invariants](./_analysis/pass13_master_architecture/CROSS_DOMAIN_INVARIANT_CATALOG.md).
 
@@ -428,9 +461,9 @@ Recorder can support bounded simultaneous multi-VPS campaigns that create empiri
 
 ## 51. Scientific iteration and deferred strategy research
 
-The same Core may later host a research plane following `OBSERVE -> UNDERSTAND -> HYPOTHESIZE -> TEST -> MEASURE -> VALIDATE -> PROMOTE -> MONITOR -> DEMOTE/RESEARCH`. Observation, hypothesis, simulation, authorization, execution truth and accounting remain separate. `StrategySpec`, feature/search artifacts, experiment reports and AI interpretations own no Risk, q, capital, ESM, Recovery, Reconciliation or Live authority.
+The same authoritative Core contracts and implementation may later support an isolated research plane following `OBSERVE -> UNDERSTAND -> HYPOTHESIZE -> TEST -> MEASURE -> VALIDATE -> PROMOTE -> MONITOR -> DEMOTE/RESEARCH`. It does not run inside or share mutable state with the Live C0 instance. Observation, hypothesis, simulation, authorization, execution truth and accounting remain separate. `StrategySpec`, feature/search artifacts, experiment reports and AI interpretations own no Risk, q, capital, ESM, Recovery, Reconciliation or Live authority.
 
-`Trading Core -> Evidence/Recorder/Replay -> Research/Experiment -> Strategy Validation -> Operations/Monitoring -> reviewed candidate back to Trading Core`. Every arrow carries stable evidence/version lineage. Only the reviewed promotion gate can return a candidate; the research side cannot mutate canonical economic truth.
+`Trading Core -> Evidence/Recorder/Replay -> Research/Experiment -> Strategy Validation -> Operations/Monitoring -> reviewed candidate back to Trading Core`. Every arrow carries stable evidence/version lineage. “Back” means admission of an immutable reviewed artifact/configuration version through the promotion authority, never Replay-state/event injection. The research side cannot mutate canonical economic truth.
 
 The complete future Factory plane is activation-forbidden until the first fixed OWA/TT path has
 earned a bounded validated baseline with deterministic evidence/reporting, Shadow and separately

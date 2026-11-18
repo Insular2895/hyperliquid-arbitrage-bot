@@ -5,7 +5,7 @@ AWAITING HUMAN REVIEW
 
 ## 1. Purpose
 
-This document fixes the contracts that let the system prove what it received, knew, derived, decided and observed. The target identity is one decision engine across Replay, Paper, Shadow, MicroLive and Live; only sources, transports, effects and explicit configuration differ.
+This document fixes the contracts that let the system prove what it received, knew, derived, decided and observed. The target identity is one authoritative decision-engine implementation and contract family across Replay, Paper, Shadow, MicroLive and Live; each run has an independent mutable state context, while sources, clocks, transports, effects and explicit configuration vary by mode.
 
 ## 2. Authority
 
@@ -58,6 +58,23 @@ RawEvent {
 `event_id` supports uniqueness, deduplication, trace and replay. `recorder_seq` is strictly increasing per Recorder and is the definitive local observation order; it is never replaced by exchange time. `payload_bytes` preserves the ability to re-normalize after a parser correction. Optional source fields remain absent when unavailable; they are never fabricated.
 
 Within one Recorder/capture context, canonical Core and stored Replay order is ascending `recorder_seq`. `recv_monotonic_ns` supplies local knowledge/latency evidence and must be nondecreasing or explicitly quality-flagged; `source_priority` may resolve concurrency only before sequence assignment and cannot reorder serialized events. The captured comparator is therefore `(fixed recorder/capture context, recorder_seq)`. Cross-recorder ordering is never inferred from local monotonic clocks: it requires a versioned merge artifact, otherwise the affected use is low-fidelity or invalid.
+
+### Capture, identity and normalization lifecycle
+
+Adapter reception immediately retains the original `payload_bytes` and provisional source,
+connection and local-receive provenance. This provisional capture is not yet a complete canonical
+`RawEvent`: a stable `event_id` is bound into the envelope and `recorder_seq` is assigned exactly
+once at the authorized ordered-ingress serialization boundary. Bounded Live normalization may
+execute before or overlap that boundary, as allowed by the async contract, but its outcome is
+joined back to the finalized RAW identity.
+
+A valid outcome emits a versioned `NormalizedEvent` linked by `source_raw_event_id`, then enters the
+appropriate ordered reducer position. An invalid or unknown outcome emits a typed rejection linked
+to the same finalized RAW evidence and cannot mutate canonical state. Both valid and rejected
+outcomes use a bounded evidence handoff for background persistence. Disk completion, Recorder
+priority, worker completion, exchange time and later parser corrections cannot rewrite an assigned
+sequence. The exact deterministic arbitration before assignment remains OPEN under `ARCH-016`;
+this lifecycle does not invent a physical instruction schedule.
 
 ## 6. Time semantics
 
@@ -130,7 +147,8 @@ immutable L0 RAW into a distinct versioned dataset/manifest. It may correct inte
 new Replay or research run, but never rewrites RAW, the original live event stream, or the state and
 decisions actually produced by that historical run. Both paths retain source provenance and
 normalization version; only an explicitly selected dataset/run context chooses the historical
-interpretation.
+interpretation. A Live normalization failure remains associated with its assigned RAW identity and
+typed rejection; absence of a valid `NormalizedEvent` never means absence of the source evidence.
 
 ## 9. Exact numeric representation
 

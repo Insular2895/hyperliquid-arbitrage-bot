@@ -22,22 +22,33 @@ that historical review subject; a material change creates a new candidate/delta 
 
 ```mermaid
 flowchart TB
-    HL["Hyperliquid market account and metadata interfaces"] -->|observations| AD["Adapters and live Normalizer"]
-    AD -->|typed ingress| IN["Ordered ingress and recorder_seq"]
-    IN -->|canonical events| C0["Ordered Canonical Core"]
-    AD -.->|immutable capture envelope| RAW["L0 RAW capture"]
-    C0 -.->|bounded evidence handoff| REC["Recorder C4 background persistence"]
-    RAW -.-> REC
+    HL["Hyperliquid market account and metadata interfaces"] -->|observations| AD["Live adapter reception"]
+    AD -->|original bytes and provisional provenance| PC["Provisional capture"]
+    AD -->|bounded work may overlap ingress| NN["Live normalization attempt"]
+    PC -->|assign recorder_seq once and finalize RawEvent| IN["Live ordered ingress"]
+    NN -->|valid or rejected typed outcome| JO["Outcome linked to RAW identity"]
+    IN --> JO
+    JO -->|admissible ordered event only| C0["Live C0 instance"]
+    JO -->|invalid or unknown no mutation| RJ["Rejection evidence"]
+    JO -.->|bounded RAW outcome handoff| REC["Recorder C4 background persistence"]
+    C0 -.->|bounded canonical evidence handoff| REC
 
-    C0 -->|owned reductions| TR["Book Graph Fee Precision Inventory Account"]
+    C0 -->|owned reductions| TR["Live Book Graph Fee Precision Inventory Account"]
     TR -->|versioned snapshots| DEC["Formula Opportunity Sizing Risk Reservations Execution"]
-    DEC -->|effect intent| EX["Transport effect executor"]
-    EX -->|ACK status fill timeout| C0
+    DEC -->|effect intent| EX["Authorized production Transport"]
+    EX -->|ACK status fill timeout observations| IN
     C0 -->|actual fills and observations| RR["Recovery Reconciliation Accounting"]
 
-    REC -->|ordered evidence| RP["Deterministic Replay"]
-    RP -->|same isolated Core semantics| C0R["Replay Core context"]
-    RP -->|dataset and manifests| FS["Falsifier and finite Bounded Sweep"]
+    REC -->|closed chunks gaps checksums| DS["Immutable Dataset and RunManifest"]
+    DS -->|recorded order and ReplayClock| RI["Replay ordered ingress"]
+    RI --> C0R["Isolated Replay C0 instance"]
+    C0R --> RST["Replay-only canonical state"]
+    C0R -->|simulated intent only| RTX["ReplayTransport emulator or disabled effects"]
+    RTX -->|Replay AccountEvents only| RI
+    SH["Shared contracts reducers formulas versions and transition implementation"] -.-> C0
+    SH -.-> C0R
+
+    DS -->|dataset and manifests| FS["Falsifier and finite Bounded Sweep"]
     FS -->|robustness validation T2 holdout| SC["DRAFT scientific candidate"]
     SC -->|separate reviewed gates| VG["Replay Shadow authorized Micro-live validation"]
     VG -->|only if earned| BL["Bounded validated baseline"]
@@ -59,6 +70,8 @@ flowchart TB
 
 The first DRAFT candidate and its separately gated validation path do not depend on activating the
 Factory. Conversely, no scientific result skips a technical dependency or permission gate.
+Shared implementation does not mean shared mutable state: Replay owns its clock, C0, state and
+effect boundary and cannot write Live Account/Inventory or call the production Transport.
 
 ## Map 2 — Functional ownership map
 
@@ -139,14 +152,15 @@ flowchart TB
 
     C5["C5 offline scientific workers"] -->|append-only evidence| PR["Pre-registered T0 T1 Sweep validation T2 holdout"]
     PR -->|scientific disposition only| REV["Separate Validation and human review"]
-    REV -.->|reviewed artifact version only| C0
+    REV -->|reviewed artifact version only| PA["Promoted artifact or configuration admission"]
+    PA -.->|Live may read at explicit version boundary; no state injection| C0
 ```
 
 | Required field | Map-3 meaning |
 |---|---|
 | Inputs | concurrent observations; immutable runtime snapshots; pre-registered scientific datasets/protocols |
 | Operations | ingress sequencing; ordered commits; bounded runtime proposals; async effects/durability; isolated scientific work |
-| Outputs | canonical versions, accepted/rejected proposals, effect observations and append-only scientific evidence |
+| Outputs | canonical versions, accepted/rejected proposals, effect observations, append-only scientific evidence and separately admitted immutable artifacts |
 | Canonical owner | ordered domain reducers for runtime; Validation/Data for scientific evidence; no worker owns economic truth |
 | Dependencies | versioned ingress policy, bounded queues/deadlines, current-version revalidation, no-lookahead experiment protocol |
 | Failure / STOP | C2 completion order cannot decide; stale results drop; C4 cannot block indefinitely; C5 cannot mutate Live state |
