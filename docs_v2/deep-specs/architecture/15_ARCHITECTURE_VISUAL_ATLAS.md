@@ -53,6 +53,16 @@ normal architecture and human-review process.
 | `ARCH-MAP-012` | Shared L2 liquidity and atomic capacity | Book, Sizing, Allocation and Reservations | Capacity walkthrough |
 | `ARCH-MAP-013` | Favorable Simulator output refused by Risk | Simulator, Risk and Execution | Authorization walkthrough |
 | `ARCH-MAP-014` | RAW identity, normalization outcome and ordered evidence | Data, Recorder, Async and Replay | Ingestion/evidence walkthrough |
+| `ARCH-MAP-015` | Feed Adapter, Normalizer and Book functions | Data, Book and readiness contracts | Functional drill-down |
+| `ARCH-MAP-016` | Metadata, Graph, Routes and reverse indexes | Graph/Routes and generation contracts | Functional drill-down |
+| `ARCH-MAP-017` | NetConvert, Formula and Opportunity functions | Formula Book and Opportunity contracts | Functional drill-down |
+| `ARCH-MAP-018` | Features, Participants and Simulator functions | Quant, Participants and Simulator contracts | Functional drill-down |
+| `ARCH-MAP-019` | Inventory, Reachability, Terminal and Sizing functions | Inventory/Capital and Risk contracts | Functional drill-down |
+| `ARCH-MAP-020` | Risk, Reservation and Execution functions | Risk and Execution contracts | Functional drill-down |
+| `ARCH-MAP-021` | Partial fill, Recovery and Reconciliation functions | Execution, Inventory and Risk contracts | Functional drill-down |
+| `ARCH-MAP-022` | Accounting functions and economic truth | Accounting, Formula and Data contracts | Functional drill-down |
+| `ARCH-MAP-023` | Recorder, Replay and DecisionTrace functions | Data, Recorder and Replay contracts | Functional drill-down |
+| `ARCH-MAP-024` | Capability, Validation and Deployment functions | Validation, Deployment and Risk contracts | Functional drill-down |
 
 ## 3. `ARCH-MAP-001` — Global system
 
@@ -576,7 +586,322 @@ cannot create another sequence authority.
 | Related | `ARCH-001`, `ARCH-003`, `ARCH-016`–`ARCH-021`; RAW-ORDER-01–07 and REPLAY-ISO-01–04 |
 | Status | Documentary lifecycle specified; acceptance/runtime/durability tests NOT EXECUTED; implementation not verified |
 
-## 17. Known open documentary boundaries
+## 17. Functional navigation contract
+
+`ARCH-MAP-015..024` are the maintained functional drill-down layer for Prompt 2. They use
+documentary operation IDs from the functional correction report until an implementation exists;
+they do not assert Rust symbol names. Each map exposes the same navigation chain:
+
+`L0 system context -> L1 domain -> L2 module/interface -> L3 documented operation -> L4 contract/acceptance scenario`.
+
+The authoritative component and producer/consumer inventories remain the PASS 13
+[Component Catalog](../../_analysis/pass13_master_architecture/COMPONENT_CATALOG.md) and
+[Domain Interface Catalog](../../_analysis/pass13_master_architecture/DOMAIN_INTERFACE_CATALOG.md).
+The [Prompt 2 functional report](../../_analysis/f2_final_integration/PROMPT2_FUNCTIONAL_ARCHITECTURE_CORRECTION_REPORT.md)
+provides the complete operation and `FUNC-*` traceability matrices without becoming a domain
+authority. A later implementation review may attach verified source symbols to these stable
+documentary operations; it must not silently replace their owning contracts.
+
+## 18. `ARCH-MAP-015` — Feed Adapter, Normalizer and Book functions
+
+```mermaid
+flowchart LR
+    X15["External payload and connection observation"] --> C15["FOP-A01 capture bytes and provisional provenance"]
+    X15 --> N15["FOP-A04 bounded normalization"]
+    C15 --> S15["FOP-A06 assign recorder_seq once"]
+    N15 --> J15["Join valid or rejected outcome to RawEvent identity"]
+    S15 --> J15
+    J15 --> V15{"Admissible typed MarketEvent"}
+    V15 -->|no| Q15["Typed rejection and scoped quarantine; no state mutation"]
+    V15 -->|yes in assigned order| B15["FOP-B01 reduce BookState"]
+    B15 --> R15{"Coherent fresh ready Book"}
+    R15 -->|no| I15["Invalid BookSnapshot; dependent routes ineligible"]
+    R15 -->|yes| O15["Immutable BookSnapshot and affected-route trigger"]
+    O15 --> T15["L4 FUNC-001 FUNC-004 FUNC-008"]
+    Q15 --> T15
+    I15 --> T15
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Original bytes, source/connection clocks and schema; unknown/invalid input is retained but cannot mutate Book |
+| Processing / decision | One ingress sequence, ordered reducer, snapshot invariants and distinct `CONNECTED -> ... -> BOOK_VALID` readiness |
+| Output / state effect | `RawEvent`, typed event or rejection, then one Book-writer mutation and immutable `BookSnapshot` |
+| Failure / fallback | Reject/quarantine invalid scope; gap/stale/crossed state invalidates the affected Book until snapshot/resync |
+| Versions / consumers | RAW/normalization schema, connection, `recorder_seq`, Book/metadata versions; Graph/Features/Opportunity/Risk consume |
+| Source / status | [Data Contracts](../../11_DATA_CONTRACTS.md), [Data schemas](../data/02_RAW_NORMALIZED_AND_DOMAIN_EVENT_SCHEMAS.md); specified, implementation tests absent |
+
+## 19. `ARCH-MAP-016` — Metadata, Graph, Routes and `pair_to_routes`
+
+```mermaid
+flowchart LR
+    M16["Validated MetadataEvent"] --> MS16["FOP-B02 reduce MetadataState"]
+    MS16 --> K16{"Material change class"}
+    K16 -->|fee only| FE16["FOP-B03 publish FeeVersion; invalidate economics"]
+    K16 -->|precision or topology| BG16["FOP-B05 build Graph edges off-side"]
+    BG16 --> BR16["FOP-B06 enumerate RouteDefinitions"]
+    BR16 --> PI16["FOP-B07 build pair_to_routes including comparator dependencies"]
+    PI16 --> G16{"Graph Route Index generation complete and compatible"}
+    G16 -->|no| H16["Withhold generation; readers retain prior immutable generation"]
+    G16 -->|yes| P16["Atomic compatible publication"]
+    P16 --> U16["Book update looks up only affected RouteIds"]
+    U16 --> W16{"Worker generation still current"}
+    W16 -->|no| D16["Discard or explicitly revalidate stale result"]
+    W16 -->|yes| E16["Route evaluation input"]
+    E16 --> T16["L4 FUNC-005 FUNC-029 FUNC-031"]
+    H16 --> T16
+    D16 --> T16
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Point-in-time metadata/status/precision; invalid or contradictory material metadata disables affected conversions |
+| Processing / decision | Two directed edges per eligible market, deterministic fixed-route enumeration and reverse-index build |
+| Output / state effect | Sole Graph/Route writer publishes one coherent immutable Graph/Route/index generation |
+| Failure / fallback | No mixed generation; previous readers may finish on the old generation; stale worker cannot commit |
+| Versions / consumers | Metadata, Graph, Route and index generation; Opportunity/Execution/Replay consume stable canonical IDs |
+| Source / status | [Graph master](../../03_MARKET_GRAPH_AND_ROUTES.md), [precomputation](../market-graph/04_ROUTE_PRECOMPUTATION_PAIR_TO_ROUTES_AND_INVALIDATION.md); specified, implementation atomicity unverified |
+
+## 20. `ARCH-MAP-017` — NetConvert, Formula and Opportunity functions
+
+```mermaid
+flowchart LR
+    I17["RouteDefinition coherent Books rules q and FormulaVersion"] --> P17{"QF preconditions and unit checks"}
+    P17 -->|invalid| R17["Typed RejectEpisode"]
+    P17 -->|valid| B17{"FOP-C05 BBO class"}
+    B17 -->|C1 invalid or proved C2 reject| R17
+    B17 -->|C3 exact one-level eligible| L17["FOP-C05 FastL1 exact QF-016"]
+    B17 -->|otherwise including q beyond L1| F17["FOP-C02 full-L2 NetConvert QF-016"]
+    L17 --> E17["Asset deltas gross net fees precision consumed levels"]
+    F17 --> E17
+    E17 --> C17{"Route classification valid"}
+    C17 -->|OWA comparator absent or invalid| R17
+    C17 -->|exact-valid Direct OWA Triangle or conversion| O17["FOP-C03 Opportunity and RouteEconomics"]
+    O17 --> T17["L4 FUNC-006 FUNC-007 FUNC-008 FUNC-009"]
+    R17 --> T17
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Exact q/asset units, directed side, observed protected L2, point-in-time fee/precision/minimum and coherent versions |
+| Processing / decision | QF-009/010 walk, QF-014/015 fee, QF-016 result; FastL1 changes traversal only and otherwise falls back |
+| Output / state effect | Pure `RouteEconomics`, Opportunity or typed rejection; no Book, Inventory, Risk or order mutation |
+| Failure / fallback | Insufficient depth, unknown rule, invalid minimum/precision or missing fair OWA comparator rejects; no invented liquidity |
+| Versions / consumers | Book/Graph/Route/metadata/fee/precision/Formula/q; Opportunity/Sizer/Risk/evidence consume |
+| Source / status | [Formula Book](../../04_FORMULA_BOOK.md), [Opportunity economics](../market-graph/05_OPPORTUNITY_DETECTION_AND_SIZE_DEPENDENT_ECONOMICS.md); QF unchanged, implementation parity unverified |
+
+## 21. `ARCH-MAP-018` — Features, Participants and Simulator functions
+
+```mermaid
+flowchart LR
+    B18["Ready Book trade route and versions"] --> F18["FOP-C04 incremental FeatureSnapshot"]
+    F18 --> D18{"Exact capability declares promoted model dependency"}
+    D18 -->|no| C18["Conservative supported baseline input"]
+    D18 -->|yes| A18{"Artifact feature support q band current"}
+    A18 -->|no| X18["Reject dependent capability or use separately supported fallback"]
+    A18 -->|yes| P18["FOP-D01 Participant forecasts with confidence OOD"]
+    P18 --> S18["FOP-D03 configured Simulator fidelity"]
+    C18 --> S18
+    S18 --> V18{"Finite reproducible supported distribution"}
+    V18 -->|no| X18
+    V18 -->|yes| E18["ExecutionForecast F P R X tails confidence"]
+    E18 --> N18["Sizer and Risk consume; actual Account Inventory unchanged"]
+    N18 --> T18["L4 FUNC-010 FUNC-013 FUNC-030"]
+    X18 --> T18
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Point-in-time `FeatureSnapshot`, candidate/q, artifact support, feed fidelity, model/fidelity/config and explicit seed where stochastic |
+| Processing / decision | Bounded inference then one configured Simulator; F0/F1 baseline may omit advanced models, F4 remains offline Research |
+| Output / state effect | Forecasts and `ExecutionForecast`; model/Simulator state only, never actual Fill/Account/Inventory truth or permission |
+| Failure / fallback | Missing/OOD/stale model blocks only dependent scope; supported conservative fallback carries its own validation envelope |
+| Versions / consumers | Feature/model/formula/book/route/config/fidelity/seed; Simulator, Sizer, Risk, Atlas and Validation consume |
+| Source / status | [Participants](../../06_MARKET_PARTICIPANTS.md), [Simulator](../../07_COUNTERFACTUAL_SIMULATOR.md); specified, model calibration/implementation not established |
+
+## 22. `ARCH-MAP-019` — Inventory, Reachability, Terminal and Sizing functions
+
+```mermaid
+flowchart LR
+    F19["Unique actual fills reconciled balances and ReservationState"] --> I19["FOP-E01 Inventory reducer"]
+    I19 --> C19["FOP-E02 reserved-adjusted Capital Reachability"]
+    O19["Exact-valid Opportunity and preliminary safe candidate domain"] --> V19["FOP-E03 project post-action Terminal Viability"]
+    C19 --> V19
+    V19 --> G19{"Hard inventory class exit liquidity confidence valid"}
+    G19 -->|no| R19["Typed no-feasible-terminal rejection"]
+    G19 -->|yes| Q19["FOP-E04 evaluate deterministic q candidates"]
+    Q19 --> S19{"Candidate belongs to exact ValidatedQSet and all gates pass"}
+    S19 -->|no| R19
+    S19 -->|yes| A19["FOP-E05 optional joint allocation over shared constraints"]
+    A19 --> P19["Bounded size allocation proposal only"]
+    P19 --> K19["Full Risk still required before Reservation"]
+    K19 --> T19["L4 FUNC-011 FUNC-012 FUNC-030"]
+    R19 --> T19
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Actual Inventory, available balance/book after claims, Graph/Atlas/exits, opportunity distributions and preliminary Risk-safe domain |
+| Processing / decision | Reachability, projected terminal state, full candidate q curve and optional shared-resource allocation |
+| Output / state effect | Inventory writer mutates only from actual facts; other stages emit viability/size/allocation proposals with no permission |
+| Failure / fallback | Hard band/no exit/OOD/unsupported q/shared capacity yields rejection or q=0; `Q_validated` supremum is not membership proof |
+| Versions / consumers | Account/Inventory/Reservation/Book/Graph/Atlas/model/capability/Risk config; full Risk and Reservations consume |
+| Source / status | [Inventory/Capital](../../08_INVENTORY_AND_CAPITAL.md), [Sizing](../inventory-capital/06_POSITION_SIZING_VALIDATED_CAPACITY_AND_SEARCH.md); later Portfolio/Bridge scope remains capability-gated |
+
+## 23. `ARCH-MAP-020` — Risk, Reservation and Execution functions
+
+```mermaid
+flowchart LR
+    P20["Bounded q proposal and immutable current snapshots"] --> R20["FOP-F01 full Risk assessment"]
+    R20 --> D20{"RiskDecision semantic action bounds TTL current"}
+    D20 -->|reject halt recovery-only for ordinary new risk| N20["No new-risk reservation or Submit"]
+    D20 -->|bounded ordinary action| A20["FOP-F02 atomic balance book risk reservation"]
+    A20 -->|conflict| N20
+    A20 -->|committed| E20["FOP-F03 build immutable ExecutionPlan"]
+    E20 --> C20{"Pre-send Book Graph Account capability Risk still compatible"}
+    C20 -->|no| L20["No submit; release only proven remainder or reconcile"]
+    C20 -->|yes| O20["Create quantized OrderIntent with stable CLOID"]
+    O20 --> X20{"RunMode effect boundary"}
+    X20 -->|Replay Paper Shadow| S20["Emulator or WouldSubmit; no production effect"]
+    X20 -->|authorized MicroLive Live| T20["FOP-F04 Transport effect"]
+    T20 --> Y20["Observed result returns as ordered event"]
+    Y20 --> Z20["L4 FUNC-013 FUNC-014 FUNC-026"]
+    N20 --> Z20
+    L20 --> Z20
+    S20 --> Z20
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Size proposal, immutable RiskSnapshot dependencies, exact capability/readiness and available shared resources |
+| Processing / decision | Structured Risk action, atomic claims, immutable plan, pre-send T2 revalidation, intent/effect separation |
+| Output / state effect | Risk/Reservation/Execution are separate writers; Transport performs mode-specific effect and returns observations |
+| Failure / fallback | Hard reject, invalid `allowed/action`, missing open `RiskReservation` fields, conflict, expiry or stale state means no new-risk effect |
+| Versions / consumers | Risk/account/inventory/reservation/book/graph/model/config/capability/plan/order; ordered reducers consume results |
+| Source / status | [Risk](../../09_RISK_CONSTITUTION.md), [Execution](../../10_EXECUTION_STATE_MACHINE.md); ARCH-026/027 remain open and implementation unverified |
+
+## 24. `ARCH-MAP-021` — Partial fill, Recovery and Reconciliation functions
+
+```mermaid
+flowchart LR
+    O21["Ordered unique FillEvent or ambiguous order result"] --> K21{"Known unique actual fill"}
+    K21 -->|yes| F21["FOP-F03 append FillLedger and consume reservation"]
+    F21 --> I21["Inventory updates actual quantity fees and exposure"]
+    I21 --> C21{"Actual quantity supports safe current continuation"}
+    C21 -->|yes| P21["New versioned continuation proposal Risk reservation plan"]
+    C21 -->|no| R21["FOP-F05 Recovery from current exposure"]
+    K21 -->|possible send unresolved| U21["UNKNOWN; retain all affected claims"]
+    U21 --> Q21["FOP-F06 query orders then fills then balances"]
+    R21 --> Q21
+    Q21 --> V21{"Reconciliation consistent"}
+    V21 -->|no| H21["UNRESOLVED stop affected new risk and escalate"]
+    V21 -->|yes| A21["Commit missing unique facts release proven remainder readiness reassessment"]
+    A21 --> T21["L4 FUNC-015 FUNC-016 FUNC-017 FUNC-018 FUNC-019"]
+    H21 --> T21
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Actual unique fills/order states, current exposure, reservations, books/rules and exchange query evidence |
+| Processing / decision | Actual-fill-driven continuation, bounded Recovery and canonical reconciliation order `orders -> fills -> balances` |
+| Output / state effect | Fill/Inventory/Execution/Recovery/Reconciliation owners update their families; original plan stays immutable evidence |
+| Failure / fallback | Cancel race applies fill; timeout is `UNKNOWN`; no blind resend; unsafe/no exit remains locked or `RECOVERY_FAILED` |
+| Versions / consumers | Fill/order/account/inventory/reservation/recovery/reconciliation/plan versions; Accounting/Risk/Ops consume |
+| Source / status | [Execution](../../10_EXECUTION_STATE_MACHINE.md), [partial fills](../execution/07_PARTIAL_FILLS_DUST_AND_INTERMEDIATE_BUFFERS.md); five machines preserved, tests absent |
+
+## 25. `ARCH-MAP-022` — Accounting functions and economic truth
+
+```mermaid
+flowchart LR
+    F22["Unique actual FillLedger entries and actual fees"] --> C22["FOP-G01 classify action identity"]
+    N22["Deposit withdrawal external transfer"] --> A22["Account and Inventory owners apply proven asset fact"]
+    A22 --> CF22["Capital-flow record outside trading PnL"]
+    M22["Point-in-time valuation event"] --> MT22["InventoryMTM record; no quantity mutation"]
+    C22 --> B22{"Disjoint bucket"}
+    B22 -->|Strategy| S22["Strategy record"]
+    B22 -->|Recovery Rebalance Bridge| R22["Named action record"]
+    S22 --> G22["QF-106 global close and scoped QF-108 reconciliation"]
+    R22 --> G22
+    CF22 --> G22
+    MT22 --> G22
+    G22 --> D22{"Stable entry already applied"}
+    D22 -->|yes| X22["Idempotent no-op or reconciliation"]
+    D22 -->|no| P22["Persist Accounting record with actual versus expected provenance"]
+    P22 --> T22["L4 FUNC-020 FUNC-027"]
+    X22 --> T22
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Reconciled fills/fees, action identity, external capital flows and point-in-time valuations with stable provenance |
+| Processing / decision | Exact-once classification into disjoint buckets and QF-106/QF-108 scope reconciliation |
+| Output / state effect | Accounting alone writes accounting records; Account/Inventory alone write quantities; prediction never becomes realized truth |
+| Failure / fallback | Duplicate/conflicting entry opens reconciliation; deposit is not profit; MTM changes value but never units |
+| Versions / consumers | Action/entry/fill/account/inventory/valuation/Formula versions; Ops/Validation/research consume read-only |
+| Source / status | [Accounting deep spec](../inventory-capital/10_ECONOMIC_PNL_ACCOUNTING_AND_CAPITAL_EFFICIENCY.md), [Data non-trade flows](../../11_DATA_CONTRACTS.md#non-trade-balance-changes-and-valuation); serialized record schema remains Data-owned/open |
+
+## 26. `ARCH-MAP-023` — Recorder, Replay and DecisionTrace functions
+
+```mermaid
+flowchart LR
+    E23["Ordered RAW outcomes canonical transitions and P0 evidence"] --> H23["FOP-A07 bounded Recorder handoff"]
+    H23 --> P23{"Priority and capacity"}
+    P23 -->|P3 then P2 degradation| Q23["Explicit drops gaps and quality state"]
+    P23 -->|P0 integrity threatened| S23["RecorderHealth stops new risk; safety paths remain"]
+    P23 -->|accepted| W23["C4 write flush checksum rotate journal chunks"]
+    W23 --> D23["Closed Dataset and RunManifest"]
+    D23 --> R23["FOP-A08 isolated Replay ingress ReplayClock C0 state"]
+    R23 --> X23["ReplayTransport emulator or disabled effects"]
+    X23 --> C23["Canonical reducers produce DecisionTrace and state hashes"]
+    C23 --> V23{"Repeat with same manifest and seed"}
+    V23 -->|different| F23["Report first divergence; evidence invalid"]
+    V23 -->|same| O23["Deterministic Replay evidence only"]
+    O23 --> T23["L4 FUNC-021 FUNC-022 FUNC-025 FUNC-028"]
+    Q23 --> T23
+    S23 --> T23
+    F23 --> T23
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Assigned ordered evidence, criticality class and complete point-in-time run identities |
+| Processing / decision | Bounded enqueue versus background persistence/durability, manifest closure, isolated Replay with explicit Clock/RNG |
+| Output / state effect | Recorder writes evidence state; Replay mutates only Replay-owned state and emits `DecisionTrace`/report |
+| Failure / fallback | No silent loss/completeness claim; P0 threat stops new risk; sequence-before-durability crash stays explicit; Replay never calls Live Transport |
+| Versions / consumers | Capture/schema/chunk/dataset/run/config/model/formula/seed; Validation/audit consume, Live admits only separately promoted artifacts |
+| Source / status | [Recorder/Replay](../../12_RECORDER_AND_REPLAY.md), [priority](../recorder-replay/03_PRIORITY_BACKPRESSURE_AND_DATA_QUALITY.md); ARCH-019 durability implementation unproved |
+
+## 27. `ARCH-MAP-024` — Capability, Validation and Deployment functions
+
+```mermaid
+flowchart LR
+    E24["Immutable EvidenceIds including negative outcomes"] --> V24["FOP-G03 exact-scope Validation assessment"]
+    V24 --> D24{"Required maturity and dependencies earned"}
+    D24 -->|no| N24["No promotion; retain restriction or demotion"]
+    D24 -->|yes| H24["Separate human approval"]
+    H24 --> C24["FOP-G02 signed CapabilityManifest"]
+    B24["Verified digest config license host and one owner"] --> P24["FOP-G05 botctl preflight startup sync reconcile"]
+    P24 --> R24{"Current readiness established"}
+    C24 --> I24{"Runtime authority intersection"}
+    R24 --> I24
+    L24["License and release scope"] --> I24
+    K24["Current RiskDecision"] --> I24
+    I24 -->|all exact operands valid| A24["Execution may consider bounded intent"]
+    I24 -->|any absent stale or broader request| N24
+    A24 --> T24["L4 FUNC-023 FUNC-024 FUNC-032"]
+    N24 --> T24
+```
+
+| Contract field | Functional meaning |
+|---|---|
+| Input / validation | Immutable evidence, exact capability tuple, verified artifact/config/license/host, exclusive owner and reconciled runtime state |
+| Processing / decision | M0–M5 assessment, explicit approval/manifest, non-ready startup and seven-way runtime intersection |
+| Output / state effect | Validation/Capability/Deployment own evidence, promoted scope and lifecycle state; none writes economic truth or directly submits |
+| Failure / fallback | Missing/stale evidence, license, ownership or reconciliation blocks new risk; cancel/Recovery/Reconciliation/read access remain per policy |
+| Versions / consumers | Evidence/manifest/build/config/license/infra/readiness/Risk versions; Deployment/Risk/Execution/Ops consume |
+| Source / status | [Validation](../../16_VALIDATION_MATRIX.md), [Deployment](../../14_DEPLOYMENT_AND_DOCKER.md); documentation specified, approval/implementation/capital absent |
+
+## 28. Known open documentary boundaries
 
 The atlas intentionally preserves these unresolved or review-scoped boundaries rather than drawing
 an invented solution:

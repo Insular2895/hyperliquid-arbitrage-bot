@@ -109,13 +109,23 @@ Book update
 → exact QF-016 via proved-equivalent FastL1 or full-L2 fallback
 → fees, precision, minimums and version checks
 → direct / indirect / cycle economics
-→ Participants and Simulator forecasts
-→ Risk eligibility
-→ PASS07 sizing/capital allocation
-→ immutable candidate/decision trace
+→ required bounded features
+→ optional promoted Participants / configured Simulator inputs when the exact capability declares them
+→ preliminary Risk eligibility / safe candidate domain
+→ Terminal Viability and PASS07 sizing/capital allocation
+→ full Risk authorization
+→ atomic Reservations
+→ immutable ExecutionPlan and pre-send revalidation
 ```
 
 BBO permanently rejects only canonical invalid state (C1) or a proved conservative loser with no full-L2 false negative (C2); it never proves executable edge. C3 selects exact FastL1 or full-L2 fallback, and C4 only prioritizes. Current BookState is truth, not a stale Atlas aggregate. All hot-path inputs are bounded and in memory; no blocking REST/service call is allowed.
+
+The two Risk positions are checkpoints of the one Risk authority. Preliminary eligibility removes
+constitutionally impossible work before expensive optional computation; it is not permission to
+reserve or submit. Full authorization follows the supported quantity/terminal proposal, and
+Execution still performs current pre-send and later-leg checks. A missing optional forecast blocks
+only a capability that declares it critical; it does not make advanced Participants or Simulator
+fidelity a universal prerequisite for the conservative TT baseline.
 
 ## 18. NetConvert
 

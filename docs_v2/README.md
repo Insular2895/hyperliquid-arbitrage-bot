@@ -13,10 +13,16 @@ La correction d'architecture post-F2 est tracée séparément dans le
 Elle ne réécrit pas les certifications historiques : son futur commit/tree exact exigera une
 nouvelle sélection et une recertification différentielle.
 
+La correction fonctionnelle suivante est tracée dans le
+[rapport Prompt 2/6](_analysis/f2_final_integration/PROMPT2_FUNCTIONAL_ARCHITECTURE_CORRECTION_REPORT.md).
+Elle ajoute la couverture des composants, interfaces, opérations, scénarios et cartes
+fonctionnelles sans constituer une preuve d'implémentation ni une autorisation.
+
 PASS 00 cartographie les exigences, formules, concepts, conflits et destinations documentaires. PASS 01–10 reconstruisent Infrastructure, Participants, Simulator, Execution, Risk, Data/Replay, Inventory/Capital, Graph/Quant, Deployment/Security et Validation/Operations. PASS 11 audite les 110 contrats mathématiques. PASS 12 reconstruit séparément l'ordre technique et le parcours scientifique qui mène de la donnée à une capacité validée. PASS 13 assemble ces autorités dans une architecture transversale sans les remplacer. PASS 14 vérifie leurs interfaces, propriétaires, unités, états, modes et dépendances comme un seul système. PASS 15 rouvre les huit sources, vérifie leurs empreintes et leur couverture ligne par ligne, puis joint 2 577 unités PASS 00, 13 dérivations explicites et 79 récupérations documentées à leur sort final. PASS 16 fournit enfin un package fini de revue, de décisions, d'autorisation et de basculement sans s'auto-approuver.
 
 - [Final human review — Start here](./_review/00_REVIEW_START_HERE.md)
 - [Prompt 1/6 — global architecture correction report](./_analysis/f2_final_integration/PROMPT1_GLOBAL_ARCHITECTURE_CORRECTION_REPORT.md)
+- [Prompt 2/6 — functional architecture correction report](./_analysis/f2_final_integration/PROMPT2_FUNCTIONAL_ARCHITECTURE_CORRECTION_REPORT.md)
 - [Master correction run — exact prompt/pass ledger](./_analysis/master_correction_run/MASTER_RUN_REPORT.md)
 - [Prompt-by-prompt coverage 01–21](./_analysis/master_correction_run/PROMPT_COVERAGE.md)
 - [Final documentation freeze — self-reference-safe F/B governance](./_analysis/master_correction_run/FINAL_DOCUMENTATION_FREEZE.md)
