@@ -109,23 +109,30 @@ Book update
 → exact QF-016 via proved-equivalent FastL1 or full-L2 fallback
 → fees, precision, minimums and version checks
 → direct / indirect / cycle economics
+→ current canonical market/account/resource eligibility
+→ cheap preliminary hard Risk screening / safe candidate domain
 → required bounded features
 → optional promoted Participants / configured Simulator inputs when the exact capability declares them
-→ preliminary Risk eligibility / safe candidate domain
 → Terminal Viability and PASS07 sizing/capital allocation
 → full Risk authorization
 → atomic Reservations
-→ immutable ExecutionPlan and pre-send revalidation
+→ immutable ExecutionPlan
+→ current pre-send revalidation
+→ mode-authorized Transport effect
 ```
 
 BBO permanently rejects only canonical invalid state (C1) or a proved conservative loser with no full-L2 false negative (C2); it never proves executable edge. C3 selects exact FastL1 or full-L2 fallback, and C4 only prioritizes. Current BookState is truth, not a stale Atlas aggregate. All hot-path inputs are bounded and in memory; no blocking REST/service call is allowed.
 
-The two Risk positions are checkpoints of the one Risk authority. Preliminary eligibility removes
-constitutionally impossible work before expensive optional computation; it is not permission to
-reserve or submit. Full authorization follows the supported quantity/terminal proposal, and
-Execution still performs current pre-send and later-leg checks. A missing optional forecast blocks
-only a capability that declares it critical; it does not make advanced Participants or Simulator
-fidelity a universal prerequisite for the conservative TT baseline.
+The two Risk positions are checkpoints of the one Risk authority. Current canonical state and the
+cheap preliminary hard screen remove constitutionally impossible work before an expensive optional
+model invocation is required; neither grants permission to reserve or submit. Required bounded
+features may already be maintained incrementally, and independent pure work may overlap, so the
+list is a dependency/authorization order rather than a mandatory synchronous schedule. When the
+exact capability declares a Participant or Simulator artifact mandatory, unsupported or OOD input
+rejects only that dependent capability. The conservative TT baseline is not made universally
+dependent on advanced models. Full authorization follows the supported terminal/quantity proposal;
+Reservations precede the immutable plan and every new exchange effect; current pre-send and
+later-leg checks still apply.
 
 ## 18. NetConvert
 
