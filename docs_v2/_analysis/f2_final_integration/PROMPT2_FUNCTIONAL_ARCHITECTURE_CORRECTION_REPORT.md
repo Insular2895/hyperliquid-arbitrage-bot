@@ -23,8 +23,9 @@ DEPENDENCIES**.
   preliminary Risk, Terminal/Sizing, full Risk, Reservations, immutable plan and pre-send checks.
 - The interface catalog lacked an inspectable validity/failure/test dimension. It now records these
   for every interface without inventing wire fields.
-- The maintained atlas now contains `ARCH-MAP-015..024`, ten function-level maps with input,
-  validation, decision, output, state effect, downstream consumer, failure and `FUNC-*` anchors.
+- The maintained atlas contains `ARCH-MAP-015..024`, ten module-level functional maps, plus
+  `ARCH-MAP-025..037`, thirteen selected operation-level maps after an explicit 46-operation
+  complexity assessment. All retain input, decision, owner, version, failure and test anchors.
 - No formula, Risk rule, Execution state, current/Future classification or Recorder durability
   claim was changed. `ARCH-016`, `ARCH-019`, `ARCH-026`, `ARCH-027`, Accounting serialization and
   calibrated constants remain open under their existing owners.
@@ -36,13 +37,13 @@ DEPENDENCIES**.
 | Field | Exact value / boundary |
 |---|---|
 | Branch | `audit-corrections-p1` |
-| Prompt-2 reference/base HEAD | `49da9413c49f2be24a0711578d3e3d6763ec1805` |
-| Reference tree | `10c99a668b7530c45546a421dd8a6e56bd1d2606` |
-| Upstream at start | `origin/audit-corrections-p1` |
-| Prompt-2 changes | intentionally uncommitted working-tree documentation delta |
+| Prompt-2 original reference/base | `49da9413c49f2be24a0711578d3e3d6763ec1805`; tree `10c99a668b7530c45546a421dd8a6e56bd1d2606` |
+| Prompt-2 completion commit | `377e500dfe1d776ea4a57745c9d48c5882f58be8`; tree `910f5fd9e280f3ec52c609396fc5999031dd942f` |
+| Current deepening base / upstream | `377e500dfe1d776ea4a57745c9d48c5882f58be8`; `origin/audit-corrections-p1` equal before this delta |
+| Current deepening changes | intentionally uncommitted working-tree documentation delta |
 | Production code | unchanged; mission edits only `docs_v2/` |
 | Unrelated file | untracked `.DS_Store`, preserved and excluded |
-| Commit/push/PR | not performed, as required |
+| Commit/push/PR | original completion was later pushed by explicit user command; this deepening is not committed, pushed or submitted as a PR |
 
 Primary local sources read for this audit were the full Master Architecture, source-authority,
 cross-domain dependency, contradiction and human-decision registers; all ten PASS 13 catalogs;
@@ -255,6 +256,7 @@ to “contradictions” where their owner has not closed the field-level contrac
 | `FGAP-010` — queue sizes, search grids, thresholds, fan-out, retry and timeout constants require evidence | `CALIBRATION_REQUIRED` | domain masters, calibration register and Validation authority | no new numeric constants frozen | `BENCHMARK_REQUIRED` |
 | `FGAP-011` — mutable Hyperliquid API/fee/precision/transport behavior requires current primary-source confirmation before implementation | `EXTERNAL_REVALIDATION` | External Revalidation Register and domain owners | preserve documented boundary; no web claim promoted here | `EXTERNAL_VERIFICATION_REQUIRED` |
 | `FGAP-012` — F4, complex allocator/Bridge activation, maker modes, optional nodes and distributed research remain outside initial scope | `FUTURE_DEFERRED` | `00`, `06`–`08`, `16`, roadmaps | keep disabled unless separately evidenced and approved | `FUTURE_DEFERRED` |
+| `FGAP-013` — the 46 FOP contracts had no explicit per-operation decision on whether their parent map was sufficient | `DOCUMENTARY_GAP` | §5 inventory, `ARCH-MAP-015..024` and each selected owner contract | assess 46/46; add children only for 13 branch/state/version/effect-heavy operations; retain parent+table for 33 | `DIAGRAM_CORRECTION_APPLIED` |
 
 No owner ambiguity, second state writer, forecast-to-actual mutation, Risk bypass or sixth
 Execution state machine was confirmed after the source-authority comparison. That is an M0
@@ -266,17 +268,20 @@ document review result, not implementation proof.
 |---|---|---|---|---|---|---|
 | `docs_v2/03_MARKET_GRAPH_AND_ROUTES.md` §17 | linear representation made Participants and Simulator appear universal and placed a single Risk step before Sizing | required features; optional capability-declared forecasts; preliminary Risk; Terminal/Sizing; full Risk; Reservations; immutable plan/pre-send | align a secondary Graph representation without changing any owner semantics | `00`, `08`, `09`, `10`; Participants/Simulator support contracts | `FGAP-001` | semantic diff and dependency searches; see §12 |
 | `docs_v2/_analysis/pass13_master_architecture/DOMAIN_INTERFACE_CATALOG.md` | 31 rows had producer/consumer/version but no explicit per-interface validity/failure/test columns | same 31 interfaces with validity/failure handling and existing/`FUNC-*` anchors | make producer→consumer absence and negative behavior inspectable without inventing schemas | Data/domain owners; PASS13 dependency/invariant catalogs | `FGAP-002` | `31/31`, links and table structure checked; see §12 |
-| `docs_v2/deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md` | stable maps ended at `ARCH-MAP-014`; function/decision/failure navigation was distributed across domain prose | `ARCH-MAP-015..024`, ten focused maps plus contract tables | add L3/L4 navigation while keeping domain owners authoritative | masters/deep contracts cited beside each map | `FGAP-003` | `24/24` Mermaid render and contiguous IDs; see §12 |
+| `docs_v2/deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md` | stable maps ended at `ARCH-MAP-014`; function/decision/failure navigation was distributed across domain prose | `ARCH-MAP-015..024`, ten focused maps plus contract tables | add L3/L4 navigation while keeping domain owners authoritative | masters/deep contracts cited beside each map | `FGAP-003` | initial maps retained inside the current `37/37` Mermaid render and contiguous-ID check; see §12 |
 | `docs_v2/_analysis/f2_final_integration/PROMPT2_FUNCTIONAL_ARCHITECTURE_CORRECTION_REPORT.md` | no Prompt-2 disposition artifact | 42-component, 31-interface and 46-operation traceability; findings, examples, scenarios, backlog and handoff | record the audit delta without becoming semantic authority | all sources listed in §2 | `FGAP-001..012` | counts, links, tables, whitespace and structure checked; see §12 |
 | `docs_v2/README.md` | navigation stopped at Prompt 1 | Prompt-2 report linked with an explicit no-proof/no-authorization warning | keep the growing correction series discoverable | focused report and maintained atlas | `FGAP-002/003` navigation | link resolved; diff inspected; see §12 |
+| `docs_v2/deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md` operation deepening | 46 FOP rows existed, but only the ten module parents exposed Mermaid navigation | 13 complexity-selected operation maps `ARCH-MAP-025..037`, each linked to its parent and L4 test | deepen only operations with material branching/state/version/effect/failure complexity | selected owner contracts listed in §8 | `FGAP-013` | all 37 Mermaid blocks, anchors and IDs checked; see §12 |
+| `docs_v2/_analysis/f2_final_integration/PROMPT2_FUNCTIONAL_ARCHITECTURE_CORRECTION_REPORT.md` operation deepening | no explicit diagram disposition for each FOP | 46/46 selection matrix, 13 selected maps and 33 parent/table-sufficient dispositions | prove diagrams were selected rather than generated mechanically | FOP inventory plus parent/owner contracts | `FGAP-013` | counts, links and tables checked; see §12 |
 
 The changes are review deltas. They do not rewrite historical PASS reports, inherit prior human
 approval, or authorize implementation, deployment, trading or capital.
 
 ## 8. Deep Mermaid maps
 
-The maintained atlas keeps `ARCH-MAP-001..014` unchanged in identity and adds the following
-functional navigation layer. The atlas is a consumer of the listed owners, never their replacement.
+The maintained atlas keeps `ARCH-MAP-001..014` unchanged in identity. `ARCH-MAP-015..024` are the
+module parents; `ARCH-MAP-025..037` are selected detailed-operation children. The atlas is a
+consumer of the listed owners, never their replacement.
 
 | Diagram | Location / authority | Components and contract depth | Scenario anchors | Validation status |
 |---|---|---|---|---|
@@ -294,6 +299,86 @@ functional navigation layer. The atlas is a consumer of the listed owners, never
 Each map has an adjacent L4 contract table covering input validation, ordered processing/decision,
 output/state effect, failure, versions/consumers and acceptance anchors. Diagram completion does
 not close ARCH-016, ARCH-019, ARCH-026 or ARCH-027 and does not prove runtime correctness.
+
+### 8.1 Diagram-selection assessment for all 46 FOP operations
+
+Selection rule: add a child diagram only when the parent plus the complete §5 contract row cannot
+show the important internal branching/state/version/effect/failure path without ambiguity.
+`PARENT + TABLE` is therefore a positive coverage disposition, not an omitted operation.
+
+| FOP | Existing parent | Disposition | Complexity assessment | Maintained coverage |
+|---|---|---|---|---|
+| `FOP-A01` | [`ARCH-MAP-015`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-015) | `PARENT + TABLE` | capture/reconnect failure is already explicit; it owns connection state only | parent map + §5 row + `FUNC-001/004/028` |
+| `FOP-A02` | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) / [`021`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-021) | `PARENT + TABLE` | account observation boundary is covered by Transport/UNKNOWN/Reconciliation children | parents + §5 row + `FUNC-014..020/027` |
+| `FOP-A03` | [`ARCH-MAP-016`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-016) | `PARENT + TABLE` | one validated metadata-event output; no canonical Graph mutation | parent + §5 row + `FUNC-001/005/029` |
+| `FOP-A04` | [`ARCH-MAP-015`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-015) | `PARENT + TABLE` | validate-or-reject branch and no-mutation result already occupy the parent | parent + §5 row + `FUNC-001/025` |
+| `FOP-A05` | [`ARCH-MAP-023`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-023) | `PARENT + TABLE` | Clock emits explicit mode timers; hidden scheduler risk is covered by Replay child | parent + §5 row + `FUNC-025/026` |
+| `FOP-A06` | [`ARCH-MAP-015`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-015) | `DETAIL MAP 025` | canonical commit, multiple input classes, stale worker rejection and asynchronous effects | child map + §5 row + `FUNC-002/025/031` |
+| `FOP-A07` | [`ARCH-MAP-023`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-023) | `DETAIL MAP 026` | P0–P3 pressure, persistence/durability distinction, crash gap and Risk response | child map + §5 row + `FUNC-021/028` |
+| `FOP-A08` | [`ARCH-MAP-023`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-023) | `DETAIL MAP 027` | isolated mutable state, ordered time/RNG, hash divergence and no-Live-effect boundary | child map + §5 row + `FUNC-022/025` |
+| `FOP-B01` | [`ARCH-MAP-015`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-015) | `DETAIL MAP 028` | single-writer mutation, snapshot/delta/gap/reconnect branches and readiness restoration | child map + §5 row + `FUNC-001/004/008` |
+| `FOP-B02` | [`ARCH-MAP-016`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-016) | `PARENT + TABLE` | material-change classification and Metadata writer are already explicit in parent | parent + §5 row + `FUNC-003/005/029` |
+| `FOP-B03` | [`ARCH-MAP-017`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-017) | `PARENT + TABLE` | point-in-time fee resolution has one fail-closed result; NetConvert child consumes it | parent + §5 row + `FUNC-006/009/020` |
+| `FOP-B04` | [`ARCH-MAP-017`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-017) | `PARENT + TABLE` | precision validation/quantization is source-owned and fully traced into NetConvert | parent + §5 row + `FUNC-003/006/029` |
+| `FOP-B05` | [`ARCH-MAP-016`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-016) | `DETAIL MAP 029` | off-side build, forward/reverse consistency, stale completion and atomic generation switch | child map + §5 row + `FUNC-005/029/031` |
+| `FOP-B06` | [`ARCH-MAP-016`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-016) / [`017`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-017) | `PARENT + TABLE` | structural enumeration is detailed by Map 029 and economic evaluation by Map 030 | parents + §5 row + `FUNC-005..009/031` |
+| `FOP-B07` | [`ARCH-MAP-016`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-016) | `PARENT + TABLE` | bounded deterministic lookup/index publication is covered by Graph child | parent + §5 row + `FUNC-005/031` |
+| `FOP-B08` | [`ARCH-MAP-016`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-016) / [`024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | evidence proposal only; no permission/state-owner ambiguity | parents + §5 row + `FUNC-004/023/024` |
+| `FOP-B09` | [`ARCH-MAP-024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | compute-priority classification is not authorization; calibrated policy stays open | parent + §5 row + `FUNC-010/023/024` |
+| `FOP-B10` | [`ARCH-MAP-019`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-019) / [`024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | evidence aggregation cannot replace current truth; no effect path | parents + §5 row + `FUNC-003/010/024` |
+| `FOP-C01` | [`ARCH-MAP-017`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-017) | `PARENT + TABLE` | QF-001..110 already have canonical formula/golden contracts; a generic duplicate would obscure ownership | parent + §5 row + `FUNC-006/008/009` |
+| `FOP-C02` | [`ARCH-MAP-017`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-017) | `DETAIL MAP 030` | bid/ask walk, depth residual, fee asset, quantization and numerical rejection branches | child map + §5 row + `FUNC-006/008/009` |
+| `FOP-C03` | [`ARCH-MAP-017`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-017) | `PARENT + TABLE` | comparator/classification decisions already dominate the focused parent map | parent + §5 row + `FUNC-005..009/013` |
+| `FOP-C04` | [`ARCH-MAP-018`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-018) | `PARENT + TABLE` | incremental feature validity/support and consumers are complete in parent/table | parent + §5 row + `FUNC-003/010/031` |
+| `FOP-C05` | [`ARCH-MAP-017`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-017) | `PARENT + TABLE` | C1/C2/C3/fallback parity branch is already explicit beside full-L2 NetConvert | parent + §5 row + `FUNC-006/007/008` |
+| `FOP-D01` | [`ARCH-MAP-018`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-018) | `PARENT + TABLE` | support/OOD/fallback and no-authority path are already the parent decision spine | parent + §5 row + `FUNC-010/030/031` |
+| `FOP-D02` | [`ARCH-MAP-018`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-018) | `PARENT + TABLE` | same scoped forecast contract; Future/maker dependency remains optional | parent + §5 row + `FUNC-010/024/030` |
+| `FOP-D03` | [`ARCH-MAP-018`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-018) | `PARENT + TABLE` | fidelity/support/reproducibility and synthetic-not-actual semantics are already explicit | parent + §5 row + `FUNC-006/010/013/030` |
+| `FOP-D04` | [`ARCH-MAP-024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | integrity/support/approval intersection is covered by capability parent | parent + §5 row + `FUNC-010/023/030` |
+| `FOP-E01` | [`ARCH-MAP-019`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-019) / [`021`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-021) / [`022`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-022) | `PARENT + TABLE` | actual-fill, non-trade and accounting boundaries are split across three focused parents without ambiguity | parents + §5 row + `FUNC-002/017/019/020/027` |
+| `FOP-E02` | [`ARCH-MAP-019`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-019) | `PARENT + TABLE` | pure reachability proposal and absent-path rejection are complete in parent/table | parent + §5 row + `FUNC-003/011/030` |
+| `FOP-E03` | [`ARCH-MAP-019`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-019) | `PARENT + TABLE` | pure terminal bands/exit/OOD decision is explicit before Sizing | parent + §5 row + `FUNC-011/013/030` |
+| `FOP-E04` | [`ARCH-MAP-019`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-019) | `DETAIL MAP 031` | non-monotonic validated set, exact-q search, stale result and proposal-only boundary | child map + §5 row + `FUNC-011/012/030/031` |
+| `FOP-E05` | [`ARCH-MAP-019`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-019) / [`020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) | `PARENT + TABLE` | shared-resource proposal is covered before atomic Reservation; Later-V1 remains gated | parents + §5 row + `FUNC-012/024` |
+| `FOP-E06` | [`ARCH-MAP-019`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-019) / [`022`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-022) / [`024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | Future MOVE/STAY proposal has no initial effect/permission path | parents + §5 row + `FUNC-020/024/030` |
+| `FOP-F01` | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) | `DETAIL MAP 032` | immutable snapshot, preliminary/full gates, action/TTL and unresolved compatibility mapping | child map + §5 row + `FUNC-003/013/030` |
+| `FOP-F02` | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) | `DETAIL MAP 033` | atomic shared claims, field-level open schema, UNKNOWN retention and proof-based release | child map + §5 row + `FUNC-012/015/017` |
+| `FOP-F03` | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) | `DETAIL MAP 034` | five machines, event distinctions, actual-fill continuation, UNKNOWN and Recovery signal | child map + §5 row + `FUNC-003/014..018/026` |
+| `FOP-F04` | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) | `DETAIL MAP 035` | mode-correct external effect, possible transmission, asynchronous response and no blind retry | child map + §5 row + `FUNC-014..016/026` |
+| `FOP-F05` | [`ARCH-MAP-021`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-021) | `DETAIL MAP 036` | current-exposure planning, Risk/Reservation, bounded retries, partial/UNKNOWN and failed Recovery | child map + §5 row + `FUNC-017/018` |
+| `FOP-F06` | [`ARCH-MAP-021`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-021) | `DETAIL MAP 037` | orders→fills→balances proof, crash points, claim retention and READY gate | child map + §5 row + `FUNC-015/019/032` |
+| `FOP-G01` | [`ARCH-MAP-022`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-022) | `PARENT + TABLE` | parent is already an operation-level exact-once/classification diagram | parent + §5 row + `FUNC-020/027` |
+| `FOP-G02` | [`ARCH-MAP-024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | exact-scope evidence/approval intersection already forms parent decision spine | parent + §5 row + `FUNC-023/024/030` |
+| `FOP-G03` | [`ARCH-MAP-024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | observe/alert/runbook without economic ownership; no additional complex branch | parent + §5 row + `FUNC-021/023/032` |
+| `FOP-G04` | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) / [`023`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-023) / [`024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | health classification effects are already visible at Risk/Recorder/readiness consumers | parents + §5 row + `FUNC-013/021/032` |
+| `FOP-G05` | [`ARCH-MAP-024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | startup/readiness/one-owner path is complete; detailed concurrency belongs to later authorized mission | parent + §5 row + `FUNC-023/026/032` |
+| `FOP-G06` | [`ARCH-MAP-024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | license is one operand of authority intersection and preserves safety paths | parent + §5 row + `FUNC-023/026/032` |
+| `FOP-G07` | [`ARCH-MAP-023`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-023) / [`024`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-024) | `PARENT + TABLE` | manifest/trace closure and promotion boundary are already explicit across both parents | parents + §5 row + `FUNC-022/023/025/031` |
+
+Assessment result: **13 `DETAIL MAP` + 33 `PARENT + TABLE` = 46/46 operations**. No Rust
+symbol, serialized field, numeric policy, QF formula, Risk rule or Execution transition was added.
+
+### 8.2 Added detailed-operation maps
+
+| Child map | Selected operation | Parent link | Primary complexity | ARCH / QF / FUNC test anchor | Documentary status |
+|---|---|---|---|---|---|
+| [`ARCH-MAP-025`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-025) | `FOP-A06` Ordered Event Coordinator | [`ARCH-MAP-015`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-015) | ordered commit, stale results, async effects | ARCH-002/004/016; QF N/A; `FUNC-002/025/031` | specified; runtime test absent |
+| [`ARCH-MAP-026`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-026) | `FOP-A07` Recorder | [`ARCH-MAP-023`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-023) | priority/backpressure, persistence, crash/durability | ARCH-001/018/019/021; QF N/A; `FUNC-021/028` | specified; ARCH-019/test open |
+| [`ARCH-MAP-027`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-027) | `FOP-A08` Replay | [`ARCH-MAP-023`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-023) | isolation, Clock/RNG/order, hash divergence | ARCH-003/011/020/021; shared QF; `FUNC-022/025` | specified; determinism test absent |
+| [`ARCH-MAP-028`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-028) | `FOP-B01` Book reducer | [`ARCH-MAP-015`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-015) | canonical mutation, gap/resync/readiness | ARCH-002/014/017; QF-001–013 downstream; `FUNC-001/004/008` | specified; reducer test absent |
+| [`ARCH-MAP-029`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-029) | `FOP-B05` Graph generation | [`ARCH-MAP-016`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-016) | off-side build, atomic publication, stale completion | ARCH-003/009/015/022; QF N/A; `FUNC-005/029/031` | specified; atomicity test absent |
+| [`ARCH-MAP-030`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-030) | `FOP-C02` NetConvert | [`ARCH-MAP-017`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-017) | exact units/depth/fees/precision/numerical failure | ARCH-007/014; QF-007–010/014–016; `FUNC-006/008/009` | formula unchanged; parity test absent |
+| [`ARCH-MAP-031`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-031) | `FOP-E04` Position Sizer | [`ARCH-MAP-019`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-019) | non-monotonic set/search, shared limits, stale proposal | ARCH-008/009/024; QF-027/073–077; `FUNC-011/012/030/031` | specified; calibration/test absent |
+| [`ARCH-MAP-032`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-032) | `FOP-F01` Risk | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) | snapshot/actions/TTL/revalidation and open compatibility | ARCH-006/009/026; QF-056–078 applicable; `FUNC-003/013/030` | specified; ARCH-026 open |
+| [`ARCH-MAP-033`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-033) | `FOP-F02` Reservation | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) | atomic claims, UNKNOWN retention, proven release | ARCH-006/009/027; QF-073/074; `FUNC-012/015/017` | specified; ARCH-027 open |
+| [`ARCH-MAP-034`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-034) | `FOP-F03` Execution Coordinator | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) | five machines, actual-fill continuation, UNKNOWN/Recovery | ARCH-004/005/006/010; owner QFs; `FUNC-003/014..018/026` | specified; state-machine tests absent |
+| [`ARCH-MAP-035`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-035) | `FOP-F04` Execution Transport | [`ARCH-MAP-020`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-020) | external effect, mode isolation, possible-send ambiguity | ARCH-005/006/010; QF N/A; `FUNC-014..016/026` | specified; API/runtime proof absent |
+| [`ARCH-MAP-036`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-036) | `FOP-F05` Recovery | [`ARCH-MAP-021`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-021) | current exposure, bounded replan, partial/UNKNOWN/failure | ARCH-005/006/010; QF-079/080; `FUNC-017/018` | specified; calibration/test absent |
+| [`ARCH-MAP-037`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-037) | `FOP-F06` Reconciliation | [`ARCH-MAP-021`](../../deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md#arch-map-021) | proof order, crash consistency, claims/readiness | ARCH-005/010/019; QF-073/074; `FUNC-015/019/032` | specified; external/runtime proof absent |
+
+Remaining gap: all 13 children are documentary specifications. The 33 operations without a child
+remain completely traceable through parent+table, but must be reconsidered if implementation adds
+new internal branches, mutable state, concurrency, effects or failure semantics.
 
 ## 9. Eight explanatory walkthroughs
 
@@ -470,10 +555,10 @@ cross-reference remains a named missing input.
 
 | Category | Deduplicated items | Status / exit evidence |
 |---|---|---|
-| Documentary corrections completed | reconcile Graph §17 stage ordering and optional models; enrich all 31 live interfaces with validity/failure/tests; add ten deep maps; create 42/31/46 traceability and 32 scenarios; expose Prompt-2 navigation | working-tree review delta; quality checks in §12 |
+| Documentary corrections completed | reconcile Graph §17 stage ordering and optional models; enrich all 31 live interfaces; add ten module maps; assess 46/46 FOPs and add 13 selected operation children; retain complete parent+table coverage for 33; preserve 32 scenarios | review delta; quality checks in §12 |
 | Documentary corrections blocked | ARCH-016 arbitration, ARCH-026 mapping, ARCH-027 fields, Accounting serialized schema, any unavailable human scenario text | owner/human decision required; no placeholder schema/truth table |
 | Implementation gaps | all 46 FOP mappings to actual Rust; reducers/writers/transports/artifact/capability/deployment mechanisms; exact Data schemas | implementation review and symbol-level traceability required |
-| Tests required | `FUNC-001..032`; exact-once/idempotency; generation races; version skew; state machines; UNKNOWN/cancel/partial-fill/restart; Replay isolation/determinism; Recorder crash/disk; capability negatives | automated results with immutable EvidenceIds required; documentary specification is not PASS |
+| Tests required | `FUNC-001..032`; operation-child expectations in `ARCH-MAP-025..037`; exact-once/idempotency; generation races; version skew; state machines; UNKNOWN/cancel/partial-fill/restart; Replay determinism; Recorder crash/disk | automated results with immutable EvidenceIds required; documentary specification is not PASS |
 | Benchmarks required | C0–C5 allocation, queue/batch/fan-out/deadlines, Formula/FastL1 parity and performance, q search, inference/simulator bounds | workload and hardware-scoped benchmark evidence |
 | External verification | current Hyperliquid API/WS/account/order/error, fee and precision semantics | dated primary-source evidence in External Revalidation Register |
 | Future deferred functions | F4, complex portfolio allocator/Bridge activation, maker modes, optional nodes, distributed research/advanced model dependencies | remain disabled until separate maturity, capability and human approval |
@@ -487,16 +572,17 @@ check does not mean implementation, runtime, scientific, maturity or capital val
 
 | Check actually executed | Result |
 |---|---|
-| branch / HEAD / tree / upstream | `PASS` — `audit-corrections-p1`; `49da9413c49f2be24a0711578d3e3d6763ec1805`; tree `10c99a668b7530c45546a421dd8a6e56bd1d2606`; `origin/audit-corrections-p1` |
-| working-tree scope | `PASS` — exactly five task files under `docs_v2/`; unrelated untracked `.DS_Store` excluded; no production source modified |
-| `git diff --check` plus new-report no-index whitespace check | `PASS` — no whitespace error after removing the report's extra terminal blank line |
-| full changed-file review | `PASS` at documentary level — Graph/README/interface/atlas diffs and complete focused report inspected; no historical report rewritten |
-| Markdown internal links | `PASS` — local-target checker resolved links across all five task files |
-| Markdown tables | `PASS` — column-count parser accepted every table across all five task files |
-| Mermaid syntax/render | `PASS` — local Mermaid CLI `12.2.0` rendered all `24/24` blocks in the maintained atlas; initial sandbox Chromium launch failed, then the same cached tool succeeded outside the sandbox |
+| branch / HEAD / tree / upstream | `PASS` — `audit-corrections-p1`; `377e500dfe1d776ea4a57745c9d48c5882f58be8`; tree `910f5fd9e280f3ec52c609396fc5999031dd942f`; `origin/audit-corrections-p1` equals HEAD before this uncommitted delta |
+| working-tree scope | `PASS` — exactly two task files under `docs_v2/`; unrelated untracked `.DS_Store` excluded; no production source modified |
+| `git diff --check` | `PASS` — no whitespace error in the current two-file delta |
+| full changed-file review | `PASS` at documentary level — the complete atlas/report delta was inspected; no domain owner, production file or historical conclusion was edited |
+| Markdown internal links and fragments | `PASS` — local-target and fragment checkers resolved links across both modified files, including every parent/child map anchor |
+| Markdown tables | `PASS` — column-count parser accepted every table across both modified files |
+| Mermaid syntax/render | `PASS` — cached local Mermaid CLI `12.2.0` rendered all `37/37` blocks in the maintained atlas; Chromium execution required the permitted local out-of-sandbox run |
 | component inventory | `PASS` — canonical catalog `42/42`; report matrix `42/42` |
 | interface inventory | `PASS` — maintained catalog `31/31`; report matrix `31/31` |
-| function/scenario/map identifiers | `PASS` — 46 unique `FOP-*`; contiguous `FUNC-001..032`; contiguous `ARCH-MAP-001..024`, preserving `001..014` |
+| function-level diagram assessment | `PASS` — all `46/46` unique `FOP-*` rows have one explicit disposition: `13` detailed child maps and `33` parent-plus-contract-table dispositions |
+| function/scenario/map identifiers | `PASS` — 46 unique `FOP-*`; contiguous `FUNC-001..032`; contiguous `ARCH-MAP-001..037`, preserving `001..014`; explicit parent/child anchors cover `015..037` |
 | preserved architecture/invariant inventories | `PASS` — `ARCH-001..029`, QF-001..110, INV-001..030, SI-001..029, HDC-001..100 and `PREC-P01..P19` present and contiguous in their governing inventories |
 | preserved roadmaps/maturity/priority | `PASS` — Formula, Risk, Execution, Data, Recorder, Validation and roadmap owner files are unchanged; therefore the five ESMs, 26 technical phases, 21 evidence stages, M0–M5, P0–P3 and `DELTA_RECERTIFICATION_REQUIRED` were not edited |
 | state-writer uniqueness | `PASS` documentary review — 42-row component matrix, PASS13 ownership and new maps compared; no second canonical writer introduced |
@@ -516,17 +602,15 @@ calibration, implementation or human approval.
 
 ## 13. Modified-file ledger
 
-| Path | Diff vs HEAD | Prompt-2 delta | Authority role | Scope guard |
+| Path | Diff vs HEAD | Current deepening delta | Authority role | Scope guard |
 |---|---:|---|---|---|
-| `docs_v2/03_MARKET_GRAPH_AND_ROUTES.md` | `+14/-4` | corrected §17 functional pipeline ordering and optional-dependency presentation | Graph master representation; Risk/Capital/Execution remain owners of their stages | no formula, Risk policy or route algorithm changed |
-| `docs_v2/_analysis/pass13_master_architecture/DOMAIN_INTERFACE_CATALOG.md` | `+33/-33` | added validity/failure and acceptance anchors to the existing 31-row catalog | maintained PASS13 interface catalog | no wire fields or second catalog created |
-| `docs_v2/deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md` | `+326/-1` | added `ARCH-MAP-015..024` and adjacent L4 contract tables | maintained navigation atlas | maps consume domain authorities; `001..014` identities preserved |
-| `docs_v2/_analysis/f2_final_integration/PROMPT2_FUNCTIONAL_ARCHITECTURE_CORRECTION_REPORT.md` | `+577/-0` new | new focused disposition/report | non-authoritative audit artifact | records sources, gaps, tests and handoff only |
-| `docs_v2/README.md` | `+6/-0` | Prompt-2 report navigation | top-level navigation | no status/approval claim changed |
+| `docs_v2/deep-specs/architecture/15_ARCHITECTURE_VISUAL_ATLAS.md` | `+535/-2` | added `ARCH-MAP-025..037`, stable parent anchors, navigation contract and operation-level contract tables | maintained navigation atlas | maps consume domain authorities; `001..024` identities preserved; no algorithm or implementation claim added |
+| `docs_v2/_analysis/f2_final_integration/PROMPT2_FUNCTIONAL_ARCHITECTURE_CORRECTION_REPORT.md` | `+117/-31` | added the 46/46 selection matrix, 13-map coverage, remaining gaps and current non-regression evidence | non-authoritative audit artifact | records disposition and evidence only; no owner contract or prior conclusion replaced |
 
-The complete patch is inspectable with `git diff` for the four tracked files. Use
-`git diff --no-index /dev/null docs_v2/_analysis/f2_final_integration/PROMPT2_FUNCTIONAL_ARCHITECTURE_CORRECTION_REPORT.md`
-for the new report; `.DS_Store` is unrelated/excluded, and no historical PASS, legacy `/docs` or production file changed.
+The prior five-file Prompt-2 completion is preserved in commit
+`377e500dfe1d776ea4a57745c9d48c5882f58be8`. The current complete two-file deepening patch is
+inspectable with `git diff --` followed by the two paths above. `.DS_Store` is unrelated/excluded,
+and no historical PASS, legacy `/docs`, domain-owner or production file changed.
 
 ## 14. Prompt 3/6 handoff
 
@@ -538,6 +622,7 @@ contract only; no temporal/concurrency design is begun here.
 | Temporal input | Prompt-2 baseline to preserve |
 |---|---|
 | Functional producer/consumer map | the 31-row maintained Domain Interface Catalog and §4; every absence/failure is explicit |
+| Detailed operation map | `ARCH-MAP-025..037` expose the selected C0/C2/C3/C4, state, version, effect and failure paths; the other 33 FOPs remain governed by parent+§5 table |
 | Canonical writers | Book, Metadata, Fee, Precision, Graph, Route generation, Feature, Atlas, Inventory, Risk, Reservation, Execution-family, Recovery, Reconciliation, Accounting, Recorder, artifact, capability, infra, deployment and license states each retain their named single writer; readers/workers never commit directly |
 | Commands/events/effects | command expresses intent to owner; event is ordered evidence/observation; external effect is executed only by mode-correct Execution Transport after current Risk/Reservation/plan gates; ACK/cancel request are not fill/terminal proof |
 | Snapshot requirements | immutable inputs carry Book/Graph/Route/index/Metadata/Fee/Precision/Feature/Inventory/account/model/formula/config/capability and time identities as applicable; incompatible or expired combinations reject/recompute |
@@ -568,8 +653,9 @@ contract only; no temporal/concurrency design is begun here.
 - Use `FUNC-001..032` as temporal test inputs, with particular focus on event permutations,
   deadlines, worker staleness, generation publication, UNKNOWN/cancel races, partial fills,
   Recorder pressure/crash, Replay schedule equivalence and restart/split-brain behavior.
-- Reuse `ARCH-MAP-015..024` as navigation, then link temporal claims back to the owning master and
-  future implementation symbols. Do not create a second functional authority.
+- Reuse `ARCH-MAP-015..024` as module navigation and `ARCH-MAP-025..037` as detailed operation
+  inputs, then link temporal claims to owning contracts and future verified symbols. Do not create
+  a second functional authority or treat these documentary maps as Prompt-3 completion.
 
 Prompt 3 must report decisions it needs rather than treating this M0 functional completion as
 runtime proof or human approval.
